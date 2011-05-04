@@ -1,0 +1,620 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[bf,hang,small]{caption}
+%\usepackage[sf,bf,raggedright]{titlesec}
+\definecolor{LinkColor}{rgb}{0,0,0.4}
+\usepackage[mmddyyyy,nodayofweek]{datetime}
+%\usepackage{pdfpages}
+%\usepackage{lineno}
+%\runninglinenumbers
+%\newrefformat{sub}{subsection \ref{#1}}
+%\newrefformat{app}{Appendix \ref{#1}}
+\newrefformat{app}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{par}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{sec}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{sub}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{fig}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{tab}{\hyperlink{#1}{\autoref{#1}}}
+\end_preamble
+\use_default_options false
+\master ../../000 master 01.lyx
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans helvet
+\font_typewriter beramono
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc true
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 85
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing other 1.1499999999999999
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 10
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=LinkColor,anchorcolor=LinkColor,citecolor=LinkColor,filecolor=LinkColor,menucolor=LinkColor,urlcolor=LinkColor"
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\branch Long appendices
+\selected 1
+\filename_suffix 0
+\color #ffffff
+\end_branch
+\branch Not in master doc
+\selected 1
+\filename_suffix 0
+\color #ffffff
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2cm
+\rightmargin 2.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle plain
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Supplementary information for ESM
+\end_layout
+
+\begin_layout Section
+Database schema
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:db-schema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},numbers=left,numberstyle={\tiny}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+CREATE TABLE users(
+\end_layout
+
+\begin_layout Plain Layout
+
+  id                       bigserial                     PRIMARY KEY, 
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\end_layout
+
+\begin_layout Plain Layout
+
+  hashed_secret            character varying(40)         ,             
+\end_layout
+
+\begin_layout Plain Layout
+
+  device_token             character varying(64)         ,
+\end_layout
+
+\begin_layout Plain Layout
+
+  token_updated_at         timestamp without time zone   ,
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+  active                   boolean                       NOT NULL DEFAULT
+ true,
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+  created_at               timestamp without time zone   NOT NULL DEFAULT
+ localtimestamp,
+\end_layout
+
+\begin_layout Plain Layout
+
+  marked_inactive_at       timestamp without time zone   ,
+\end_layout
+
+\begin_layout Plain Layout
+
+  superseded_at            timestamp without time zone   ,
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+  beeps_per_day            smallint                      NOT NULL DEFAULT
+ 2, 
+\end_layout
+
+\begin_layout Plain Layout
+
+  beeps_not_before         time without time zone        NOT NULL DEFAULT
+ '08:00', 
+\end_layout
+
+\begin_layout Plain Layout
+
+  beeps_not_after          time without time zone        NOT NULL DEFAULT
+ '22:00', 
+\end_layout
+
+\begin_layout Plain Layout
+
+  beeps_sound              character varying(32)         NOT NULL DEFAULT
+ 'Ding',
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+  beeps_recalculate_after  timestamp without time zone   NOT NULL DEFAULT
+ '2001-01-01',
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  data_secret              character varying(24)
+\end_layout
+
+\begin_layout Plain Layout
+
+) WITH (OIDS = FALSE);
+\end_layout
+
+\begin_layout Plain Layout
+
+CREATE INDEX recalculate_after_idx ON users (beeps_recalculate_after);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+CREATE TABLE pending_beeps(
+\end_layout
+
+\begin_layout Plain Layout
+
+  id                        bigserial                     PRIMARY KEY,
+\end_layout
+
+\begin_layout Plain Layout
+
+  user_id                   bigint                        NOT NULL REFERENCES
+ users,
+\end_layout
+
+\begin_layout Plain Layout
+
+  send_after                timestamp without time zone   NOT NULL
+\end_layout
+
+\begin_layout Plain Layout
+
+) WITH (OIDS = FALSE);
+\end_layout
+
+\begin_layout Plain Layout
+
+CREATE INDEX beep_schedule_idx ON pending_beeps (send_after);
+\end_layout
+
+\begin_layout Plain Layout
+
+CREATE INDEX beep_user_idx ON pending_beeps (user_id);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+CREATE TABLE sent_beeps(
+\end_layout
+
+\begin_layout Plain Layout
+
+  id                        bigserial                     PRIMARY KEY,
+\end_layout
+
+\begin_layout Plain Layout
+
+  user_id                   bigint                        NOT NULL REFERENCES
+ users,
+\end_layout
+
+\begin_layout Plain Layout
+
+  send_after                timestamp without time zone   NOT NULL,
+\end_layout
+
+\begin_layout Plain Layout
+
+  sent_at                   timestamp without time zone   NOT NULL,
+\end_layout
+
+\begin_layout Plain Layout
+
+  sound                     character varying(32)         NOT NULL,
+\end_layout
+
+\begin_layout Plain Layout
+
+  ignored                   boolean                       NOT NULL DEFAULT
+ false
+\end_layout
+
+\begin_layout Plain Layout
+
+) WITH (OIDS = FALSE);
+\end_layout
+
+\begin_layout Plain Layout
+
+CREATE INDEX beep_sent_at_idx ON sent_beeps (sent_at);
+\end_layout
+
+\begin_layout Plain Layout
+
+CREATE INDEX beep_sent_user_idx ON sent_beeps (user_id);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+CREATE TABLE esm_answer_sets (
+\end_layout
+
+\begin_layout Plain Layout
+
+  id                        bigserial                     PRIMARY KEY,
+\end_layout
+
+\begin_layout Plain Layout
+
+  user_id                   bigint                        NOT NULL REFERENCES
+ users,
+\end_layout
+
+\begin_layout Plain Layout
+
+  ip_addr                   inet,
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+  answers_json              text                          ,
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+  _start                    timestamp without time zone   ,
+\end_layout
+
+\begin_layout Plain Layout
+
+  _img_id                   integer                       ,
+\end_layout
+
+\begin_layout Plain Layout
+
+  _has_pic                  boolean                       ,
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+  pic_received              boolean                       DEFAULT 'f',
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  _badge                    smallint                      ,
+\end_layout
+
+\begin_layout Plain Layout
+
+  _apnsdata                 character varying(32)         ,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  feel_hpy                  real                          ,
+\end_layout
+
+\begin_layout Plain Layout
+
+  feel_rlx                  real                          ,
+\end_layout
+
+\begin_layout Plain Layout
+
+  feel_awk                  real                          ,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  place                     character varying(8)          ,
+\end_layout
+
+\begin_layout Plain Layout
+
+  place2                    character varying(8)          ,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  public                    boolean                       ,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  vol_pk_max                real                          ,
+\end_layout
+
+\begin_layout Plain Layout
+
+  vol_ave_mean              real                          ,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  vol_pk_90                 real                          ,
+\end_layout
+
+\begin_layout Plain Layout
+
+  vol_ave_50                real                          ,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  sent_beep_id              bigint                        REFERENCES sent_beeps
+\end_layout
+
+\begin_layout Plain Layout
+
+) WITH (OIDS = FALSE);
+\end_layout
+
+\begin_layout Plain Layout
+
+SELECT AddGeometryColumn('esm_answer_sets', 'location', 4326, 'POINT', 3);
+ -- 4326 = WGS84
+\end_layout
+
+\begin_layout Plain Layout
+
+CREATE INDEX esm_user_idx ON esm_answer_sets (user_id);
+\end_layout
+
+\begin_layout Plain Layout
+
+CREATE INDEX esm_start_idx ON esm_answer_sets (_start);
+\end_layout
+
+\begin_layout Plain Layout
+
+CREATE INDEX esm_img_id_idx ON esm_answer_sets (_img_id);
+\end_layout
+
+\begin_layout Plain Layout
+
+CREATE INDEX esm_beep_id_idx ON esm_answer_sets (sent_beep_id);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+CREATE TABLE esm_duplicates (
+\end_layout
+
+\begin_layout Plain Layout
+
+  id                        bigserial                     PRIMARY KEY,
+\end_layout
+
+\begin_layout Plain Layout
+
+  user_id                   bigint                        NOT NULL REFERENCES
+ users,
+\end_layout
+
+\begin_layout Plain Layout
+
+  _img_id                   integer                       ,
+\end_layout
+
+\begin_layout Plain Layout
+
+  answers_json              text 
+\end_layout
+
+\begin_layout Plain Layout
+
+) WITH (OIDS = FALSE);
+\end_layout
+
+\begin_layout Plain Layout
+
+CREATE INDEX esmdup_user_idx   ON esm_duplicates (user_id);
+\end_layout
+
+\begin_layout Plain Layout
+
+CREATE INDEX esmdup_img_id_idx ON esm_duplicates (_img_id);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+CREATE TABLE demographic_answer_sets(
+\end_layout
+
+\begin_layout Plain Layout
+
+  id                        bigserial                     PRIMARY KEY,
+\end_layout
+
+\begin_layout Plain Layout
+
+  user_id                   bigint                        NOT NULL REFERENCES
+ users,
+\end_layout
+
+\begin_layout Plain Layout
+
+  answers_json              text
+\end_layout
+
+\begin_layout Plain Layout
+
+) WITH (OIDS=FALSE);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

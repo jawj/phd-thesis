@@ -1,0 +1,5467 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[bf,hang,small]{caption}
+%\usepackage[sf,bf,raggedright]{titlesec}
+\definecolor{LinkColor}{rgb}{0,0,0.4}
+\usepackage[mmddyyyy,nodayofweek]{datetime}
+%\usepackage{pdfpages}
+%\usepackage{lineno}
+%\runninglinenumbers
+%\newrefformat{sub}{subsection \ref{#1}}
+%\newrefformat{app}{Appendix \ref{#1}}
+\newrefformat{app}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{par}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{sec}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{sub}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{fig}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{tab}{\hyperlink{#1}{\autoref{#1}}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans helvet
+\font_typewriter beramono
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc true
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 84
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing other 1.1499999999999999
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 4
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref page
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=LinkColor,anchorcolor=LinkColor,citecolor=LinkColor,filecolor=LinkColor,menucolor=LinkColor,urlcolor=LinkColor"
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\branch Not in master doc
+\selected 1
+\filename_suffix 0
+\color #ffffff
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2cm
+\rightmargin 2.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\bullet 2 0 9 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Literature review
+\begin_inset CommandInset label
+LatexCommand label
+name "part:lit-review"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+What is 
+\begin_inset Quotes eld
+\end_inset
+
+happiness economics
+\begin_inset Quotes erd
+\end_inset
+
+? At first glance, happiness might seem an unlikely subject of study for
+ a dismal science in which, traditionally, 
+\begin_inset Quotes eld
+\end_inset
+
+every mind is inscrutable to every other mind, and no common denominator
+ of feeling seems possible
+\begin_inset Quotes erd
+\end_inset
+
+ (Jevons, in 
+\begin_inset CommandInset citation
+LatexCommand citealp
+after "p. 9"
+key "black:1990"
+
+\end_inset
+
+).
+ It could also seem a slightly presumptuous one: does it suggest an attempt
+ by economists to colonise not just neighbouring disciplines 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "george:2007"
+
+\end_inset
+
+, but the whole search for meaning in life? It might even come across as
+ somewhat sinister---a cold, rational calculus of human emotion could recall
+ dystopian visions such as those of Orwell's 
+\emph on
+1984
+\emph default
+ or Huxley's 
+\emph on
+Brave New World
+\emph default
+.
+ But it is potentially an intriguing subject too: it almost appears to hold
+ out the impossible prospect of an analytical solution to the world's ills.
+ And, for economists, it offers a new (or rediscovered) intellectual territory
+ where the returns to exploration remain relatively high.
+\end_layout
+
+\begin_layout Standard
+This combination of characteristics has assured happiness economics sustained
+ media coverage, certainly out of proportion to the volume of economic research
+ it represents.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The UK media regularly reports on happiness research.
+ For example: a BBC TV series, 
+\emph on
+Making Slough Happy
+\emph default
+, aired in Autumn 2005 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bbc-news:2005"
+
+\end_inset
+
+, and another, 
+\emph on
+The Happiness Formula
+\emph default
+, was shown in Spring 2006 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rudin:2006"
+
+\end_inset
+
+.
+ Happiness was front page news in the Economist's 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "the-economist:2006"
+
+\end_inset
+
+ Christmas edition--- 'Economics discovers its feelings: not quite as dismal
+ as it was'---and an Independent on Sunday supplement early in January 2007
+ was devoted to it 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "leith:2007"
+
+\end_inset
+
+.
+ It has also found a place in popular non-fiction 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "layard:2005,gilbert:2006,haidt:2007a"
+
+\end_inset
+
+.
+ All this is in spite of the fact that, to those not familiar with the preferenc
+e satisfaction economic orthodoxy, economists' recent findings regarding
+ SWB can sometimes seem underwhelming: 
+\begin_inset Quotes eld
+\end_inset
+
+money can't buy happiness
+\begin_inset Quotes erd
+\end_inset
+
+ is arguably a cultural commonplace, and related ground was covered over
+ 40 years ago, for example, in Robert Kennedy's celebrated 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "kennedy:1968"
+
+\end_inset
+
+ speech listing all those things not accounted for by the Gross National
+ Product (GNP).
+ 
+\end_layout
+
+\end_inset
+
+ But that volume is increasing rapidly: Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:econlit-citations"
+
+\end_inset
+
+, which plots by year the number of journal article results for a simple
+ EconLit search, gives some indication of its extraordinary growth.
+ And the topic has more recently begun to receive attention---if not always
+ approval---in some of the more prestigious economic journals.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For example, the Journal of Economic Literature, the Journal of Economic
+ Perspectives and the Journal of Political Economy---three of the top five
+ economics journals by impact factor in the 2008 ISI Web of Knowledge Journal
+ Citation Reports---have all published papers on happiness in the recent
+ past 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "frey:2002a,tella:2006,rayo:2007"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+There are many applied papers that report empirical associations between
+ happiness and other variables.
+ There are rather fewer that treat happiness economics in relation to its
+ origins, definitions, theory, methods, applications, critiques, relations
+ with other areas of economic research, political and policy connections,
+ and promising areas for future research.
+ This paper aims to provide a broad overview of the happiness economics
+ literature to date in relation to all of these.
+\end_layout
+
+\begin_layout Standard
+Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:happiness-to-economists"
+
+\end_inset
+
+ explores what 'happiness' has meant and can mean in economics, principally
+ through the contrast between utility theory and subjective approaches.
+ Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:What-do"
+
+\end_inset
+
+ considers how this research proceeds, while 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Is-happiness-valid"
+
+\end_inset
+
+ asks if it really constitutes economics.
+ Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Who"
+
+\end_inset
+
+ asks in what specific areas of the discipline the resurgence of subjective
+ approaches has taken place, and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:findings"
+
+\end_inset
+
+ outlines the main findings.
+ The implications of these findings for public policy are discussed briefly
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:public-policy"
+
+\end_inset
+
+.
+ Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Where-next"
+
+\end_inset
+
+ suggests some future directions for happiness research in economics, and
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Conclusions"
+
+\end_inset
+
+ concludes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename econlit graph v2.pdf
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:econlit-citations"
+
+\end_inset
+
+Number of EconLit journal articles with titles including the terms 'happiness',
+ 'wellbeing', 'well-being' or 'life satisfaction', by year.
+ The series plotted with filled circles excludes articles from the Journal
+ of Happiness Studies.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+What does happiness mean in economics?
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:happiness-to-economists"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this paper, the terms 'happiness' and 'wellbeing' are used interchangeably
+ (the weaknesses of this approach are considered in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Concepts-and-terminology"
+
+\end_inset
+
+, but it is widespread---see, for example, 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "ferrer-i-carbonell:2005"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "ormerod:2007"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "rehdanz:2005"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "bruni:2006b"
+
+\end_inset
+
+).
+ Absent any disciplinary affiliation, there is a range of ideas that I might
+ want to convey by such words.
+ A useful typology, distinguishing five broad accounts of wellbeing, is
+ offered by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "dolan:2006b"
+
+\end_inset
+
+.
+ Their five accounts are: (1) 
+\emph on
+preference satisfaction
+\emph default
+, in which wellbeing consists in the freedom and resources to meet one's
+ own wants and desires; (2) 
+\emph on
+objective lists 
+\emph default
+(or 
+\emph on
+basic needs
+\emph default
+), in which wellbeing is the fulfilment of a fixed set of material, psychologica
+l and social needs, which are identified exogenously; (3) 
+\emph on
+flourishing
+\emph default
+ (or 
+\emph on
+eudaimonic
+\emph default
+), in which well-being means the realisation of one's potential, along dimension
+s such as autonomy, personal growth, or positive relatedness 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "ryff:1995"
+
+\end_inset
+
+; (4) 
+\emph on
+hedonic
+\emph default
+ (or 
+\emph on
+affective
+\emph default
+), in which wellbeing is synonymous with positive affect balance, a relative
+ predominance of positive moods and feelings; and (5) 
+\emph on
+evaluative
+\emph default
+ (or 
+\emph on
+cognitive
+\emph default
+), in which wellbeing is the individual's own assessment of his or her life
+ according to some positive criterion.
+ 
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:ps-and-swb"
+
+\end_inset
+
+Preference satisfaction and subjective wellbeing
+\end_layout
+
+\begin_layout Standard
+Orthodox, neo-classical economics relies overwhelmingly on the preference
+ satisfaction (PS) account of wellbeing.
+ The new (and perhaps still somewhat heterodox) happiness economics concerns
+ itself predominantly with the evaluative account, and to some extent with
+ the hedonic account, generally lumping these two together under the banner
+ of 'subjective wellbeing' (SWB).
+ These two principal approaches to happiness in contemporary economics---PS
+ and SWB---do share certain core premises.
+ In particular, they both generally reject external criteria or judgements,
+ privileging the individual as the only one qualified to assess his or her
+ own wellbeing (this allowing both of them potential compatibility with
+ both egalitarian and libertarian political views).
+\end_layout
+
+\begin_layout Standard
+There is much that differentiates them, however.
+ In fact, it is possible to sketch the development over time of each approach
+ as motivated by perceived shortcomings of the other.
+ Several authors point to 'paradoxes' and 'revolutions' in this process
+ (e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "frey:2008"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "tella:2005"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "gowdy:2004"
+
+\end_inset
+
+).
+ First, the neo-classical (PS) project is born at least partly out of dissatisfa
+ction with the strongly hedonic flavour of late nineteenth-century economics.
+ The cardinalist and utilitarian ideas of those such as Bentham, Mill, and
+ later Edgeworth
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Edgeworth went so far as to imagine the 'hedonimeter', 
+\begin_inset Quotes eld
+\end_inset
+
+an ideally perfect instrument, a psychophysical machine, continually registering
+ the height of pleasure experienced by an individual...
+\begin_inset Quotes erd
+\end_inset
+
+, whose readings one might 
+\begin_inset Quotes eld
+\end_inset
+
+integrate through all time and over all sentience
+\begin_inset Quotes erd
+\end_inset
+
+ (1881, in 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "colander:2007"
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+ are challenged by others, including Jevons, Pareto, and later Robbins,
+ for whom inter-personal comparisons of happiness are impossible, and for
+ whom neither psychology nor ethics belong within a positivist economic
+ science (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "sen:2008"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "bruni:2007"
+
+\end_inset
+
+).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The hedonic and utilitarian economics of the late nineteenth century can
+ in itself be understood partly as a reaction to the classical political
+ economy of those such as Smith, Ricardo and Malthus.
+ Their work is not expressed in the language of (or equipped with the methods
+ now associated with) PS.
+ But it is nonetheless concerned primarily with income, wealth and material
+ needs---understandably, at a time when these were more pressing problems
+ for more people than they are today in what is now the developed world
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pasinetti:2006"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ Later, deficiencies of the PS account and its associated methods spur a
+ 'counter-revolution': the rediscovery within economics of SWB accounts,
+ by Easterlin (whose 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "easterlin:1974"
+
+\end_inset
+
+ paper is often cited as a beginning of this process), the 'Leyden school'
+ (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:who-Others"
+
+\end_inset
+
+), and others.
+ Differing judgements as to the meaningfulness and inter-personal comparability
+ of subjective self-ratings of wellbeing are thus at the heart of the distinctio
+n between the PS and SWB approaches.
+ Out of these, each approach has developed its own apparatus of methods,
+ theories and assumptions.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Preference satisfaction
+\end_layout
+
+\begin_layout Standard
+In its strictest form the PS approach, since it steers clear of subjective
+ data and rules out interpersonal comparisons, is left with a limited number
+ of interesting things to say directly regarding happiness, or its closest
+ available synonym, utility.
+ In utility theory, utility is only an index, an analytically instrumental
+ quantity, which individuals need not be assumed to experience or understand.
+ Assuming only that individuals' preferences conform to the axioms of completene
+ss, transitivity, reflexivity and continuity, and that they always choose
+ their most preferred option, then individuals will behave 
+\emph on
+as if
+\emph default
+ they are maximising utility, and their behaviour can be modelled and analysed
+ as such.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In respect of the axioms of consumer preference: 
+\emph on
+completeness
+\emph default
+ means that for any two options or 'bundles', an individual must prefer
+ one or the other, or be indifferent; 
+\emph on
+transitivity
+\emph default
+ means that---for options A, B and C---if the individual prefers A to B
+ and B to C, he or she must also prefer A to C; and 
+\emph on
+reflexivity
+\emph default
+ means that if A and B are the same, then the individual must be indifferent
+ between them.
+ These three axioms define economic rationality.
+ To produce defined and 'well-behaved' utility functions, we may also assume:
+ 
+\emph on
+continuity
+\emph default
+, such that if A is preferred to B then things that are sufficiently close
+ to A will also be preferred to B; 
+\emph on
+non-satiation
+\emph default
+, such that having more of A is always preferred, however slightly, to having
+ less; and 
+\emph on
+strict convexity
+\emph default
+, such that some balance of items X and Y is preferred to an extreme quantity
+ of either.
+ A fuller treatment of consumer preference and utility theory can be found
+ in any microeconomics textbook.
+\end_layout
+
+\end_inset
+
+ The set of choices an individual can make is understood to be constrained
+ by his or her budget and, assuming non-satiation, a larger budget always
+ implies that more highly preferred options can be chosen.
+ It then follows that utility will be increasing in income: for utility
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $u$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang british
+ and income 
+\begin_inset Formula $y$
+\end_inset
+
+, 
+\begin_inset Formula $u=U(y)$
+\end_inset
+
+, 
+\begin_inset Formula $U'>0$
+\end_inset
+
+ and (optionally) 
+\begin_inset Formula $U''<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Subjective wellbeing
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+*** on the one hand, SWB theory is not of the same kind as PS theory: it's
+ essentially about measurement and modelling, and rather agnostic as to
+ the causes of happiness; whereas PS is predicated on the basis of measurement
+ being impossible, and confines itself to considering income and the consumer
+ choices income creates ***
+\end_layout
+
+\begin_layout Plain Layout
+*** on the other hand, the basics are rather similar; rather than saying
+ 'all other things being equal' as in PS, in SWB we just dump the other
+ things in our utility/happiness function; wrap it in a reporting function;
+ and proceed to estimate s empirically *** 
+\end_layout
+
+\end_inset
+
+The empirical SWB literature often leaves its theoretical base largely unstated.
+ The premises are also straightforward, though.
+ The fundamental distinction from PS is the conviction that there is a quantity,
+ 'happiness', that individuals experience and that can be measured and modelled
+ directly.
+ SWB research thus throws any and every potential influence on happiness
+ into a function together, wraps this in a reporting function, and proceeds
+ to estimate parameters empirically.
+\end_layout
+
+\begin_layout Standard
+Implicitly, then, there is a mental quantity representing experienced happiness,
+ 
+\begin_inset Formula $h$
+\end_inset
+
+, which is explicable by a vector of characteristics 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+, and can be evaluated and reported as a quantity 
+\begin_inset Formula $r$
+\end_inset
+
+: 
+\begin_inset Formula $h=H(\mathbf{x})$
+\end_inset
+
+, 
+\begin_inset Formula $r=R(h)$
+\end_inset
+
+.
+ To be a useful insight into 
+\begin_inset Formula $h$
+\end_inset
+
+, the form of the reporting function 
+\begin_inset Formula $R(\cdot)$
+\end_inset
+
+ must satisfy 
+\begin_inset Formula $R'>0$
+\end_inset
+
+ or at least 
+\begin_inset Formula $R'\geq0$
+\end_inset
+
+.
+ Usually, both 
+\begin_inset Formula $H(\cdot)$
+\end_inset
+
+ and 
+\begin_inset Formula $R(\cdot)$
+\end_inset
+
+ must be the same across individuals 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "senik:2005"
+
+\end_inset
+
+.
+ 
+\begin_inset Formula $R(\cdot)$
+\end_inset
+
+ must also be assumed independent of 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ except as mediated by 
+\begin_inset Formula $H(\cdot)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Various further assumptions are necessary according to the method of analysis.
+ 
+\begin_inset Formula $R(\cdot)$
+\end_inset
+
+ is generally bounded between a lower and upper limit and, depending on
+ our precise SWB concept, may in fact represent a series of psychological
+ processes including recollection and aggregation of experiences through
+ time; it is generally assumed that 
+\begin_inset Formula $R(H(\mathbf{x}))$
+\end_inset
+
+ can be modelled as a linear or log-linear function of 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+; analysis of panel data assumes stability of 
+\begin_inset Formula $H(\cdot)$
+\end_inset
+
+ and 
+\begin_inset Formula $R(\cdot)$
+\end_inset
+
+ over time; use of OLS, or of 
+\begin_inset Formula $r$
+\end_inset
+
+ values averaged across individuals, assumes cardinality; and so on.
+ The assumptions required by different methods of analysis are discussed
+ further in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:analysing-happiness"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The vector 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ can be include just about anything, but economists have been especially
+ interested in relative income parameters (both time-lagged and peer incomes:
+ 
+\begin_inset Formula $y_{i,t}-y_{i,t-1}$
+\end_inset
+
+, 
+\begin_inset Formula $y_{i}-\bar{y}$
+\end_inset
+
+) and macroeconomic variables, including unemployment, inflation, and governance.
+ Most of the happiness research published in mainstream economics journals
+ to date has concerned itself with these explanatory factors, but there
+ is perhaps increasing interest in other influences, such as indicators
+ of social and environmental capital.
+\end_layout
+
+\begin_layout Standard
+There is no easy mapping between the PS concept of utility and SWB measures
+ of happiness.
+ Neither is defined explicitly; each is a black box, only truly comprehensible
+ to the individual concerned---if even to them---and then perhaps only tacitly.
+ Utility is whatever individuals (prospectively) behave as if to maximise;
+ SWB is whatever individuals understand by the question they are asked,
+ used (generally retrospectively) as a guide to recollecting, filtering,
+ aggregating and reporting their experience.
+ Intuitively, some understanding of happiness probably is what most people
+ are trying to maximise, and SWB measures are sometimes described as measures
+ of 'experienced' utility, in contrast to the expected or 'decision' utility
+ yielded by the PS approach 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kahneman:1997,kahneman:2005"
+
+\end_inset
+
+.
+ But while this does capture a useful distinction between the two quantities,
+ it would be wrong to take them, as this terminology might imply, as simply
+ prospective and retrospective versions of an equivalent metric.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Although compare 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "487"
+key "rayo:2007a"
+
+\end_inset
+
+: 
+\begin_inset Quotes eld
+\end_inset
+
+we consider that maximising happiness is closely linked, if not identical,
+ to maximising utility in the standard economic way
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand Citet
+key "praag:1991"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "clark:2008a"
+
+\end_inset
+
+ discuss this relationship in greater depth.
+\end_layout
+
+\begin_layout Section
+What do happiness economists do?
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:What-do"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Having considered broadly what is meant by happiness economics, this section
+ asks: how does research in happiness economics proceed?
+\end_layout
+
+\begin_layout Subsection
+Measuring happiness
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:measuring-happiness"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+SWB data consist, more or less by definition, of the aggregated self-reports
+ of individuals---what people say about themselves when asked.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Studies of happiness have also used data based on reports by others (the
+ subjects' friends or colleagues, or mental health professionals, for example)
+ and on subjects' observed behaviour (such as smiling, or even suicide attempts).
+ Whether these measures constitute 
+\emph on
+subjective 
+\emph default
+wellbeing data is debatable.
+ On the one hand, they are certainly not objective data as understood within
+ a strict objective list or preference satisfaction approach---for example,
+ data on suicide attempts would not be relevant under these approaches to
+ wellbeing, since suicide may be attempted by people who are objectively
+ well provided for, and well able to satisfy their consumption preferences.
+ On the other, they are clearly not subjective in the sense of data arising
+ more or less directly from subjects' experiences and perceptions of their
+ own mental states---even if they may still be powerful indicators of those
+ experiences and perceptions.
+\end_layout
+
+\end_inset
+
+ Widely used data sets with wellbeing items include those from the World
+ Values Survey, European Social Survey, German Socio-Economic Panel and
+ British Household Panel Survey.
+\end_layout
+
+\begin_layout Standard
+As noted at the end of 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:ps-and-swb"
+
+\end_inset
+
+, what exactly people report must depend on the questions that are asked
+ of them and on the interpretations they give these.
+ This simple observation raises a number of issues.
+\end_layout
+
+\begin_layout Subsubsection
+Concepts and terminology
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Concepts-and-terminology"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This paper has up to this point contrasted SWB with other accounts of or
+ approaches to wellbeing and happiness.
+ But SWB is not a monolithic concept; it is itself an umbrella term for
+ a number of distinct ways of conceiving of a person's wellbeing.
+ Many different survey questions have been taken as measuring SWB in the
+ literature to date: the World Database of Happiness catalogues over a thousand
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "veenhoven:2007"
+
+\end_inset
+
+.
+ These questions differ in a number of respects, including the breadth and
+ timescale of experience encompassed, and the words in which the idea of
+ wellbeing is expressed (which have included, for example: happiness; satisfacti
+on with one's life situation, with life as a whole, or with quality of life;
+ enjoyment of life; contentment; and many other variants).
+ 
+\end_layout
+
+\begin_layout Standard
+Authors generally seem to have reflected rather little on the wide range
+ of terms employed in research under the SWB banner, and to have shown a
+ perhaps surprising lack of unease about this.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Even some who have noted the inconsistency of terminology in a context rather
+ critical of SWB have have not flagged it as a potential issue 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "22"
+before "e.g."
+key "johns:2007"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ Empirically, studies asking different questions have produced results that
+ are generally fairly consistent with each other.
+ But the use of different questions does make comparison of findings between
+ studies problematic: it is difficult to be sure that any differences are
+ not simply the result of nuances in the terms (and therefore concepts)
+ in the questions.
+ 
+\end_layout
+
+\begin_layout Standard
+Communication and policy considerations may be one reason for the use of
+ different terms, and the terminology used in reporting research may not
+ match that used in the research itself.
+ For example, a New Economics Foundation policy workshop identified 
+\begin_inset Quotes eld
+\end_inset
+
+confusion/conflation with happiness
+\begin_inset Quotes erd
+\end_inset
+
+ as a threat to the use of wellbeing in policy 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 24"
+key "thompson:2008"
+
+\end_inset
+
+ even though in the report of this same workshop those terms are used interchang
+eably and without clarification.
+ On the other hand, 'happiness' seems to be used more widely than 'wellbeing'
+ in media reporting of SWB research.
+ Hence a study that actually asked respondents about 'life satisfaction'
+ may be reported in the media as dealing with 'happiness' and to policy-makers
+ as a 'wellbeing' study.
+\end_layout
+
+\begin_layout Standard
+As noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:happiness-to-economists"
+
+\end_inset
+
+, certain terms are used interchangeably in this paper too---since essentially
+ all the literature does so, it now appears impractical to do otherwise.
+\end_layout
+
+\begin_layout Subsubsection
+Domains and timescales
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:domains-and-timescales"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+SWB can be measured using either single- or multiple-item scales.
+ Multiple-item scales pose the question whether and how to aggregate the
+ individual items.
+ Some multiple-item scales focus purely on the evaluative aspects of SWB,
+ asking about satisfaction in different life domains (work, relationships,
+ finances, and so on---
+\begin_inset CommandInset citation
+LatexCommand citealp
+before "e.g."
+key "cummins:2003"
+
+\end_inset
+
+).
+ Others take a wider view, with items covering evaluative, hedonic and eudaimoni
+c aspects 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "huppert:2009"
+
+\end_inset
+
+.
+ Still others, such as the General Health Questionnaire (GHQ), focus more
+ on symptoms of unhappiness or psychological distress 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "Clark:1994"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So far, research within economics has tended overwhelmingly to focus on
+ single-item measures.
+ On a pragmatic level, single-item measures have good data availability:
+ they are included in several major surveys.
+ Analysing a unitary quantity of something utility-like is familiar economic
+ territory, and makes monetary valuation straightforward.
+ And use of a single-item scale may be justified by the contention that
+ the individual concerned is best placed to aggregate all the different
+ aspects of his or her own wellbeing.
+ On the other hand, single-item measures have poorer reliability 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "huppert:2009"
+
+\end_inset
+
+ and, outside the discipline at least, not everyone is happy with an opaque
+ and individualised aggregation function (for example, 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "michalos:2008"
+
+\end_inset
+
+---
+\begin_inset CommandInset citation
+LatexCommand citeyear
+after "360"
+key "michalos:2008"
+
+\end_inset
+
+---writes that 
+\begin_inset Quotes eld
+\end_inset
+
+moving Pandora’s Box of aggregation problems from the visible world to the
+ invisible Black Box inside people’s heads does not strike me as a progressive
+ research programme
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+SWB can also be measured over various timescales.
+ In the data most commonly used by economists, respondents are asked about
+ the vague present (
+\begin_inset Quotes eld
+\end_inset
+
+these days
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+nowadays
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+the last few weeks
+\begin_inset Quotes erd
+\end_inset
+
+, and so on).
+ These data are termed 
+\begin_inset Quotes eld
+\end_inset
+
+retrospective assessments
+\begin_inset Quotes erd
+\end_inset
+
+ by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "kahneman:2006a"
+
+\end_inset
+
+, although in some cases future expectations could arguably be relevant
+ too.
+ In either case, there is a problematic lack of clarity as to what exactly
+ is to be assessed on the time dimension.
+ Even where the timescale of the assessment is more precise,
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For example, some of the items devised by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "huppert:2009"
+
+\end_inset
+
+ ask specifically about the past week.
+\end_layout
+
+\end_inset
+
+ the recollection and aggregation of experiences has been shown to be systematic
+ally distorted---such as by neglect of experiences' duration 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kahneman:2006b"
+
+\end_inset
+
+---relative to a simple average of momentary utilities.
+ On the other hand, in respect of this benchmark, it could also be argued
+ that a recollected and aggregated assessment is as valid a measure of SWB
+ as a perfect integral of momentary experiences over time: humans do not
+ live exclusively in the immediate present.
+\end_layout
+
+\begin_layout Standard
+As implied by the above, SWB measures have been devised to approximate the
+ average or integral of individuals' momentary utilities too 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 5"
+key "kahneman:1999a"
+
+\end_inset
+
+.
+ With a flavour of Edgeworth's 'hedonimeter', these come from either Experience
+ Sampling Method (ESM) or Day Reconstruction Method (DRM) studies.
+ In ESM studies, participants are signalled a number of times over a given
+ period---say, eight times a day, for seven days---and are asked about aspects
+ of their mental state, where they are, what they are doing, and who they
+ are with 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hektner:2007"
+
+\end_inset
+
+.
+ Especially in the medical literature, the term Ecological Momentary Assessment
+ (EMA) describes a broad family of similar methodologies 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shiffman:2008,smyth:2003"
+
+\end_inset
+
+.
+ The logistics of supplying and requiring participants to carry handheld
+ computers or pre-printed response forms have until recently limited the
+ scale of ESM studies, but technological developments look set to obviate
+ this issue 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "collins:2003,goodwin:2008a"
+
+\end_inset
+
+, and large-scale ESM studies using participants' own mobile devices have
+ recently been set up at Harvard 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "killingsworth:2010"
+
+\end_inset
+
+ and, by the author, at the London School of Economics (these studies are
+ described at http://trackyourhappiness.org and http://mappiness.org.uk).
+\end_layout
+
+\begin_layout Standard
+DRM studies aim to collect similar information to ESM, but to do so more
+ efficiently and less intrusively.
+ These studies simply ask participants to break the previous day into episodes
+ and to report the context of, and their feelings during, each episode.
+ DRM data may be subject to greater recall bias than ESM data---which is
+ regarded as the 
+\begin_inset Quotes eld
+\end_inset
+
+gold standard
+\begin_inset Quotes erd
+\end_inset
+
+ here---but it also offers richer information on time use, given a fixed
+ period of data collection, since it deals in periods rather than moments
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kahneman:2004a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Finally, if it is judged most important to increase the wellbeing of those
+ who have less of it (potentially for good philosophical and political reasons),
+ this moment-in-time data is sometimes reduced to a measure of the proportion
+ of time respondents report spending below some predefined threshold.
+ This measure has been dubbed the U-Index 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kahneman:2006a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Interpretation and response
+\end_layout
+
+\begin_layout Standard
+Regardless of the terminology used and the timescale asked about, what a
+ respondent reports will depend on his or her own understanding of the question.
+ Random variation between different individuals' interpretations---as long
+ as they are not wholly dissimilar---may simply be regarded as a source
+ of measurement error.
+ The extent of this error may depend partly on the choice of terms, since
+ some appear more capable of multiple interpretations than others (the word
+ 'happy' seems especially problematic, capable of expressing anything from
+ momentary 
+\begin_inset Quotes eld
+\end_inset
+
+smiley-face feelings
+\begin_inset Quotes erd
+\end_inset
+
+ to self-realisation, flourishing and achievement---
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "annas:2004"
+
+\end_inset
+
+).
+ Multi-item scales, using a variety of terms, may help to reduce it.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+*** mention social desirability bias too (discussed wrt SWB by 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "371"
+key "tella:2005"
+
+\end_inset
+
+) ***
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Culture and language
+\end_layout
+
+\begin_layout Standard
+Non-random variation in interpretations represents a more serious challenge
+ to the validity of SWB research.
+ An obvious source of such variation is individuals' cultural and linguistic
+ backgrounds.
+ And there are identifiable cultural groupings in SWB ratings: historically
+ communist countries may tend to lower scores; historically Protestant,
+ island and south-American nations to higher ones 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "inglehart:2003,nef:2006"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Given ratings' subjectivity, it is arguably impossible to determine how
+ far cultural differences in ratings reflect varying levels of actual, experienc
+ed SWB.
+ However, different interpretation and reporting styles seem likely to be
+ at least part of the story.
+ While there may be some simple, universal concepts, 'happy', 'satisfied'
+ and 'wellbeing' are probably not among them; for example, 'happy' appears
+ weaker in meaning than straightforward translations in some other European
+ languages---including the French 'heureux', Italian 'felice' and Russian
+ 'sčastlivyj' 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "wierzbicka:2004"
+
+\end_inset
+
+.
+ In some cultures it may also be important to distinguish public values
+ from private values 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 3"
+key "littlewood:2008"
+
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "littlewood:2008"
+
+\end_inset
+
+'s example concerns 
+\begin_inset Quotes eld
+\end_inset
+
+blood feuding clans in Northern Albania where the feud is regarded as a
+ normal, even laudable and enjoyable, enterprise: families with a recently-kille
+d member appeared to mourn only briefly and slightly...
+ But on close questioning the women of the community, while subscribing
+ to the public male ethos of the feud, would privately confide their distress
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ More generally, the potential for social desirability biases needs to be
+ acknowledged and, ideally, minimised 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "tella:2005"
+
+\end_inset
+
+.
+ For example, in some cultures it may be socially undesirable to be unhappy,
+ or even to be too happy.
+ In relation to East Asian cultures 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "226"
+key "uchida:2004"
+
+\end_inset
+
+ write that 
+\begin_inset Quotes erd
+\end_inset
+
+emphasizing a success of the self may lead to jealousy and envy by others.
+ The personal form of happiness is therefore often perceived to be tainted
+ and incomplete
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This all makes naïve comparisons of SWB between nations---and perhaps even
+ between different ethnic groups within nations---problematic.
+ Unfortunately, this has not stopped such comparisons being drawn.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "inglehart:2003"
+
+\end_inset
+
+, for example, describe surprisingly large differences in SWB ratings between
+ European countries in a paper that barely admits the possibility of cultural
+ variability in interpretation and reporting.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+These authors dismiss the possibility of 
+\begin_inset Quotes eld
+\end_inset
+
+translation problems
+\begin_inset Quotes erd
+\end_inset
+
+ on the basis that the German-, Italian- and French-speaking Swiss report
+ different levels of happiness than the Germans, Italians and French 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "167"
+key "inglehart:2003"
+
+\end_inset
+
+.
+ All this fact really demonstrates is that the differences in reported happiness
+ between European nations are not 
+\emph on
+exclusively
+\emph default
+ due to language.
+ Using similar data, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "layard:2003"
+
+\end_inset
+
+ notes that all three Swiss groups report similar levels of happiness to
+ each other.
+ But this does not rule out the possibility that differences in both their
+ actual levels of happiness 
+\emph on
+and
+\emph default
+ their interpretations of the question serve to cancel each other out.
+ And even if that were ruled out, extrapolating from this evidence to the
+ much greater diversity of all the world's cultures seems weak, at best.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+On the other hand, there are ways around this issue.
+ Studies limited to relatively local areas or relatively homogeneous cultural
+ groups can produce interesting and valid data.
+ Panel data can allow comparative analysis of SWB trends over time (at least
+ if we can assume certain commonalities in the shapes of different countries'
+ reporting functions).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+However data from successive time periods could be unreliable over the long
+ term if the meanings of words are not fixed.
+ For example, 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "carlyle:1849"
+
+\end_inset
+
+ noted that economics was not a 
+\begin_inset Quotes eld
+\end_inset
+
+gay science
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+after "530"
+key "carlyle:1849"
+
+\end_inset
+
+; we would not now consider asking respondents how gay they feel.
+ There is evidence of change in the meaning of 'wellbeing' too 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "2--3"
+key "littlewood:2008"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ Biological markers such as saliva cortisol levels or heart rate---to be
+ discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Is-happiness-valid"
+
+\end_inset
+
+---might help us to calibrate subjective responses cross-culturally 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "layard:2010"
+
+\end_inset
+
+.
+ And the use of anchoring vignettes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "king:2003"
+
+\end_inset
+
+, which attempt to correct for differences in reporting functions between
+ individuals, may prove informative, at least for the less subjective end
+ of the spectrum of SWB questions.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Response bias
+\end_layout
+
+\begin_layout Standard
+The probability of obtaining any response to a SWB question may also vary
+ from individual to individual.
+ SWB questions generally receive very few missing responses relative to
+ other survey items 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 654"
+before "e.g."
+key "ferrer-i-carbonell:2004"
+
+\end_inset
+
+, but the surveys of which they are a part tend, like all surveys, to attract
+ response rates well short of 100%.
+ Those who do not respond may be different in ways that are important for
+ our understanding of SWB, at least at the population level.
+ In the notation used above, the probability of even observing 
+\begin_inset Formula $R$
+\end_inset
+
+ may depend on 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+.
+ For example, it is plausible that depressed people would be less likely
+ to participate in social research, and that standard telephone and face-to-face
+ survey methods might well attract respondents who are unrepresentatively
+ lonely and/or trusting, both of which characteristics tend to correlate
+ highly with SWB ratings.
+\end_layout
+
+\begin_layout Subsubsection
+Dimensionality and boundedness
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:dimensionality-and-boundedness"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Some writers have questioned whether SWB is reducible to a single dimension,
+ and thus whether it is meaningful to ask---as single-item SWB questions
+ often do---for a global evaluation of happiness, wellbeing, or satisfaction
+ with life.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p. 46"
+key "annas:2004"
+
+\end_inset
+
+ gives an example: 
+\begin_inset Quotes eld
+\end_inset
+
+Suppose that you have just won the Nobel Prize; this surely merits the smiliest
+ face.
+ But suppose also that you have just lost your family in a car crash; this
+ surely warrants the frowniest face.
+ So, how happy are you? There is no coherent answer
+\begin_inset Quotes erd
+\end_inset
+
+.
+ But although such an extreme example illustrates the problem clearly, real
+ experience is rarely like this: affect is much more typically bipolar (happy
+ -- sad) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "larsen:2001"
+
+\end_inset
+
+,
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citet
+after "684"
+key "larsen:2001"
+
+\end_inset
+
+ explain: 
+\begin_inset Quotes eld
+\end_inset
+
+positive and negative affect are separable and...
+ mixed feelings of happiness and sadness can co-occur...
+ [M]any participants surveyed immediately after watching the film Life Is
+ Beautiful, moving out of their dormitories, or graduating from college
+ felt both happy and sad...
+ [A]lthough affective experience may typically be bipolar, the underlying
+ processes, and occasionally the resulting experience of emotion, are better
+ characterized as bivariate.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ and the great majority of people have no difficulty in answering along
+ one dimension 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 80"
+key "praag:2004a"
+
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+*** also -- you could alternatively use more indicators -- or use a method
+ that might at least treat your one indicator more subtly 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "boes:2004"
+
+\end_inset
+
+ ***
+\end_layout
+
+\begin_layout Plain Layout
+*** also reference 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "huppert:2003"
+
+\end_inset
+
+ -- recommendations from reverse POV (should include +ve wellbeing in QoL
+ -- whereas maybe econ should include some -ve wellbeing) ***
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The boundedness of typical SWB scales has also been criticised.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p. 10"
+key "wilkinson:2007"
+
+\end_inset
+
+, for instance, imagines: 
+\begin_inset Quotes eld
+\end_inset
+
+there will be a point at which the entire population has finally climbed
+ into the top happiness bracket.
+ From that moment forward, average happiness must remain flat, simply as
+ an artifact of the bounded scale, even if people continue to become happier
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Philosophically, such an argument presupposes that the 
+\emph on
+experience
+\emph default
+ of SWB is 
+\emph on
+not
+\emph default
+ bounded, and that people cannot therefore know how happy it is possible
+ to become---an assumption that is at least open to doubt 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 18"
+key "thompson:2008"
+
+\end_inset
+
+.
+ This issue is also raised on a more practical level, in relation to analyses
+ of longitudinal data where a bounded dependent SWB variable is regressed
+ on potentially unbounded explanatory variables such as GDP.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p. 33"
+key "johns:2007"
+
+\end_inset
+
+, like 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "wilkinson:2007"
+
+\end_inset
+
+, argue that a genuine correlation between experienced SWB and GDP could
+ go undetected in such analyses because of a ceiling effect, and suggest
+ that this could be behind the SWB flat-line in 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "easterlin:1974"
+
+\end_inset
+
+'s seminal paper on the subject 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "easterlin:1974"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+There are a number of counter-arguments to this: first, bounded variables
+ can and do show time trends (fear of crime and social trust, for example,
+ have varied over the recent past---
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "dittmann:2005,putnam:1995"
+
+\end_inset
+
+); current data (in this case, ESS Round 3) place median SWB ratings at
+ 7 out of 10 and have fewer than 1 in 10 respondents answering in the top
+ bracket, which suggests substantial room for upward movement; and analysis
+ of time-trends against unbounded indicators is just one of many strands
+ of SWB research.
+ Finally, 
+\emph on
+unbounded
+\emph default
+ SWB scales are not impossible in principle---for example, marketers sometimes
+ use an 'unbounded write-in scale' where respondents make a number of marks
+ of their choosing 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "stapleton:2005"
+
+\end_inset
+
+; alternatively, a scale could be developed using reference points that
+ are not at the extremes.
+\end_layout
+
+\begin_layout Subsection
+Analysing happiness
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:analysing-happiness"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:ps-and-swb"
+
+\end_inset
+
+, the basic model underlying most SWB research relates an individual's reported
+ happiness 
+\begin_inset Formula $r$
+\end_inset
+
+ to a vector of characteristics 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+, via a happiness or utility function 
+\begin_inset Formula $H$
+\end_inset
+
+ and a reporting function 
+\begin_inset Formula $R$
+\end_inset
+
+: 
+\begin_inset Formula $r=R(h)$
+\end_inset
+
+, 
+\begin_inset Formula $h=H(\mathbf{x})$
+\end_inset
+
+.
+ The reporting and the underlying experience of happiness can rarely be
+ disentangled, so 
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $H$
+\end_inset
+
+ are commonly collapsed into a single function mapping 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ to 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The techniques used to estimate a particular model from the data depend
+ on three factors.
+ First, what questions are to be addressed? Economists are usually interested
+ in determining whether and how much particular factors affect SWB---commonly
+ with a special focus on income measures and (un)employment, while controlling
+ for other impacts.
+ Second, what data sets are available? Are these at the micro (individual)
+ level, or aggregated (for example, by country); do they comprise cross-sectiona
+l, time-series, or panel data; what SWB items are included, what scales
+ are the responses given on, and what other data is available for analysis?
+ Third, and finally, what assumptions can reasonably be made regarding the
+ SWB variables and the explanatory variables (both observed and unobserved)?
+\end_layout
+
+\begin_layout Standard
+Of course these factors, and the statistical methods that follow from them,
+ are in practice at least partially co-determined.
+ In particular, one element of the development of the field has been the
+ development or application of new statistical techniques in order to relax
+ some of the more restrictive (and potentially unrealistic) assumptions
+ required by earlier techniques.
+\end_layout
+
+\begin_layout Subsubsection
+SWB variable treatment and econometric models
+\end_layout
+
+\begin_layout Standard
+The interpretation of SWB responses is one of the key subjects about which
+ differing assumptions can be made.
+ There are three main assumptions, of increasing restrictiveness, which
+ are associated with a variety of different models 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ferrer-i-carbonell:2004"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+A1.
+ Reported SWB is a positive monotonic transformation of an unobservable
+ underlying quantity of interest: 
+\begin_inset Formula $R'>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+A2.
+ Reported SWB is ordinally comparable between people: if 
+\begin_inset Formula $r_{i}>r_{j}$
+\end_inset
+
+ then 
+\begin_inset Formula $h_{i}>h_{j}$
+\end_inset
+
+, where subscripts 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+ represent different individuals.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+A3.
+ Reported SWB is cardinally comparable between people: 
+\begin_inset Formula $h_{i}-h_{j}=\omega(r_{i},r_{j})$
+\end_inset
+
+, where the function 
+\begin_inset Formula $\omega(\cdot)$
+\end_inset
+
+ is known up to a multiplicative constant; 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $h_{i}-h_{j}=r_{i}-r_{j}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang british
+ is commonly assumed.
+\end_layout
+
+\begin_layout Paragraph
+Cardinal SWB comparability
+\end_layout
+
+\begin_layout Standard
+Under the cardinality assumption, A3, simple OLS regressions are appropriate.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Alternatively, if respondents are thought to answer scale questions by the
+ rounding up or down of a continuous latent quantity, interval regression
+ would be suitable 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "36"
+key "praag:2004a"
+
+\end_inset
+
+.
+ For example, a response of 9 would suggest an underlying value for interval
+ regression of 8.5 -- 9.5; a response of 10 would suggest an underlying value
+ of 9.5 or higher.
+ Interval regression has not been widely used in the literature, however.
+\end_layout
+
+\end_inset
+
+ If a panel data set is available, the use of OLS makes it straightforward
+ to include individual fixed effects (or use first differencing) to control
+ for time-invariant unobserved influences on SWB 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ferrer-i-carbonell:2004"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+OLS models have been widely used in the psychology literature, but economists
+ have tended to turn to them only when the use of aggregated (mean) SWB
+ ratings has forced them to assume cardinality in any case (
+\emph on
+ibid.
+\emph default
+)---see, for instance, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "welsch:2006"
+
+\end_inset
+
+---or when the OLS results have been shown to be qualitatively indistinguishable
+ from the results of models not requiring cardinality---as in the case of
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "moro:2008"
+
+\end_inset
+
+, for example.
+ In the latter case, OLS models may be preferred because of the straightforward
+ interpretation of the coefficients.
+\end_layout
+
+\begin_layout Standard
+The subjectivity of SWB makes it difficult to assess the realism of the
+ cardinality assumption.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "schwarz:1995"
+
+\end_inset
+
+ argues that respondents strive to make responses informative, and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "praag:1991"
+
+\end_inset
+
+ argues that respondents may try to distribute reporting categories evenly
+ with respect to the possible values of an underlying, unobservable quantity
+ in order to maximise the information conveyed 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ferrer-i-carbonell:2004"
+
+\end_inset
+
+.
+ Although these psychological arguments are undoubtedly highly speculative,
+ results obtained using models that do and models that do not assume cardinality
+ are usually extremely similar (
+\emph on
+ibid.
+\emph default
+).
+\end_layout
+
+\begin_layout Paragraph
+Ordinal SWB comparability
+\end_layout
+
+\begin_layout Standard
+Relaxing the assumption of cardinality and turning to ordinal comparability,
+ A2, many researchers have used the standard ordered probit and logit models.
+ These models treat ordinal data (
+\begin_inset Formula $r=1\ldots J$
+\end_inset
+
+) as the discrete expression of a continuous latent variable of arbitrary
+ scale.
+ On this basis they estimate two sets of parameters using maximum likelihood:
+ first, a coefficient vector used to predict the latent variable from the
+ explanatory variable vector (
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+); and second, a set of 
+\begin_inset Formula $J-1$
+\end_inset
+
+ cut-points, which are the values of the latent variable where there is
+ a change in the observed discrete rating.
+\end_layout
+
+\begin_layout Standard
+In empirical economic research with ordinal data, including SWB research,
+ these models 
+\begin_inset Quotes eld
+\end_inset
+
+fully dominate the literature
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 192"
+key "winkelmann:2009"
+
+\end_inset
+
+.
+ These models do not lend themselves easily to the inclusion of individual
+ fixed effects for panel data (to control for heterogeneity in individual
+ happiness and/or reporting functions), however; fixed effects specifications
+ have therefore been rather little used in the economic literature to date
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ferrer-i-carbonell:2004"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subparagraph
+Generalised ordered models
+\end_layout
+
+\begin_layout Standard
+The standard ordered models assume (as OLS does) that the relative magnitudes
+ of the effects of each of the explanatory variables are constant across
+ the distribution of outcomes 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 5"
+key "boes:2006a"
+
+\end_inset
+
+.
+ For example, the impact of income relative to the impact of marriage or
+ divorce must be the same for those with low and high SWB levels alike.
+ This is variously termed the proportional odds, parallel lines or parallel
+ regression assumption.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "boes:2006a"
+
+\end_inset
+
+ argue that single-scale SWB measures may be understood as measuring both
+ unhappiness ('negative wellbeing') at the lower end and happiness ('positive
+ wellbeing') at the higher end
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This recalls the discussion in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:dimensionality-and-boundedness"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ and that, since different factors may have different effects on these two
+ dimensions, the parallel regression assumption might need to be relaxed.
+ While the multinomial logit could be employed for this purpose, discarding
+ information about the ordering of the response scale, this is inefficient.
+ Instead, researchers have turned to generalised ordered response models
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "williams:2006,boes:2004,boes:2006,boes:2007,fu:1997"
+
+\end_inset
+
+, principally the generalised ordered logit and probit.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "boes:2004"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "boes:2004,boes:2006"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "winkelmann:2009"
+
+\end_inset
+
+ also describe a sequential ordered model and a finite mixture model; these
+ are not discussed further here.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+These generalised models effectively estimate a separate vector of coefficients
+ for each cut-point of the latent variable 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 126"
+key "boes:2007"
+
+\end_inset
+
+; they give results that are similar to those of a series of binary logits
+ or probits, taking each response level in turn and grouping responses on
+ either side of it 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 59"
+key "williams:2006"
+
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For clarification, this grouping would proceed as follows.
+ First, the lowest response (
+\begin_inset Formula $r=1)$
+\end_inset
+
+ is contrasted with all higher ones (
+\begin_inset Formula $r=2\ldots J)$
+\end_inset
+
+; next, the lowest two responses (
+\begin_inset Formula $r=1,2)$
+\end_inset
+
+ are contrasted with all higher ones (
+\begin_inset Formula $r=3\ldots J)$
+\end_inset
+
+; and so on.
+ Finally, all responses but the highest (
+\begin_inset Formula $r=1\ldots J-1)$
+\end_inset
+
+ are contrasted with the highest one (
+\begin_inset Formula $r=J)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ A 
+\emph on
+partial
+\emph default
+ proportional odds model is also possible, and potentially the most useful
+ variant: this is effectively a hybrid of the standard and generalised models,
+ in which the parallel regression assumption is imposed on certain explanatory
+ variables, which then take a single coefficient throughout the outcome
+ distribution, but not on others (this can be automated by a stepwise process
+ using likelihood-ratio tests).
+ Applications of this model to BHPS and GSOEP data (with the inclusion,
+ in some cases, of random effects) potentially vindicate concern over the
+ parallel regression assumption; they suggest, amongst other things, that
+ higher incomes may have a significant 
+\emph on
+negative
+\emph default
+ effect on the probability of answering in the very topmost SWB category
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mentzakis:2009,boes:2004,boes:2006a,winkelmann:2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subparagraph
+Probit-adapted OLS
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand Citet
+after "p. 28"
+key "praag:2004a"
+
+\end_inset
+
+ note that the standard ordered logit and probit models implicitly cardinalise
+ SWB through the cardinal continuous latent variable underlying them, and
+ on this basis suggest a method they term probit OLS or probit-adapted OLS.
+ The probit-adapted OLS is a simple OLS model using a 'rough cardinalisation'
+ of the ordinal SWB variable: a transformation such that the new dependent
+ variable takes the conditional mean (given the original ordinal rating)
+ of a standardised normally-distributed continuous variable, calculated
+ based on the frequencies of the ordinal ratings in the sample (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "cornelisen:2006"
+
+\end_inset
+
+, provides a worked example).
+ Where the assumption of normality in the continuous variable holds---and
+ in 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "praag:2004a"
+
+\end_inset
+
+'s examples, the results suggest it does---probit-adapted OLS is equivalent
+ to the ordered probit.
+ Its advantage is that it is quicker to compute and can be used as a building
+ block in more complex models.
+ It does not appear to have been very widely used, although its results
+ are reported by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "luechinger:2009"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "stevenson:2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Limited SWB comparability
+\end_layout
+
+\begin_layout Standard
+Abandoning or weakening the assumption of ordinal comparability is possible
+ using techniques only relatively recently applied to SWB (there appears
+ to be significant potential for the wider application of all of the following
+ methods).
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferrer-i-carbonell:2004"
+
+\end_inset
+
+ develop and apply an ordered logit model with fixed individual effects
+ and individual-specific thresholds.
+ They find that inclusion of time-invariant individual effects qualitatively
+ changes the results of their model; this contradicts the finding of 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p. 12"
+key "clark:2002"
+
+\end_inset
+
+, whose cardinal models suggest that 
+\begin_inset Quotes eld
+\end_inset
+
+cross-section and panel equations seem to have similar general structures
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "clark:2005a"
+
+\end_inset
+
+ assume that different groups or types of individuals have different happiness
+ and/or reporting functions (which cannot be separated using their data),
+ and hence estimate an ordered latent class model in which the classes vary
+ both in the marginal contribution of income to SWB and in the cut-points
+ used to translate a latent continuous variable into observed SWB ratings.
+ Their data identify 4 or 5 classes with significantly different reported
+ happiness functions, suggesting that inter-individual heterogeneity is
+ more complicated than can be fully modelled by simple fixed effects.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferrer-i-carbonell:2005"
+
+\end_inset
+
+ estimates SWB effects of an individual's own and reference group income
+ using an ordered probit model with individual random effects (allowing
+ for correlation between the random effects and a subset of explanatory
+ variables using the Mundlak correction).
+ The results are consistent with findings from cross-sectional methods:
+ own income has a small but significant effect on SWB.
+\end_layout
+
+\begin_layout Subparagraph
+Anchoring vignettes
+\end_layout
+
+\begin_layout Standard
+Data sets in which anchoring vignette items are included alongside an SWB
+ self-assessment permit two further approaches to correcting for differing
+ reporting functions (
+\begin_inset Formula $R$
+\end_inset
+
+) across individuals, given two key assumptions 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "king:2003"
+
+\end_inset
+
+.
+ The assumptions are: vignette equivalence, which means different respondents
+ need to understand the vignettes in the same way; and response consistency,
+ which means that respondents need to use the response scale for the vignettes
+ and for their self-assessment in the same way.
+ 
+\end_layout
+
+\begin_layout Standard
+A non-parametric transformation of the original ordinal SWB response into
+ a new (potentially vector-valued) ordinal variable can be made 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "lau:2007"
+
+\end_inset
+
+.
+ This can then be analysed with a variant of the standard ordered logit
+ or probit which allows vector-valued ordinal responses.
+ Alternatively, a parametric technique---compound hierarchical ordered probit
+ (chopit)---can be used.
+ This predicts individuals' cut-points on a latent continuous variable based
+ on both their vignette responses and the values of independent variables,
+ and does not require that every respondent answer the vignette items 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rabe-hesketh:2002,king:2003"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Using the chopit model with the Survey of Health, Ageing and Retirement
+ in Europe (SHARE) data set---the only known study incorporating vignettes
+ for SWB---
+\begin_inset CommandInset citation
+LatexCommand citet
+key "angelini:2008"
+
+\end_inset
+
+ find that higher life satisfaction ratings among Danish as compared to
+ Italian retirees may be largely explained by differing interpretations
+ of the response scale.
+\end_layout
+
+\begin_layout Subsubsection
+Explanatory variable treatment
+\end_layout
+
+\begin_layout Standard
+While the nature and appropriate treatment of the SWB data has been debated
+ at length, comparatively little attention has been given to the treatment
+ of explanatory factors in SWB research.
+ Explanatory variables are generally entered into models in a linear specificati
+on, save for income (usually logged) and age (usually in linear and quadratic
+ forms).
+ Most researchers have also assumed the effects of different explanatory
+ variables to be independent, and potential interactions have not been widely
+ explored (for example, could the SWB effect of having---or not having---childre
+n be partly contingent on age and gender?).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "yang:2008"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "yang:2008,yang:2008a"
+
+\end_inset
+
+ looks at interactions with life-course variables such as age and would
+ represent an exception here, but writes outside of economics.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Although several analyses incorporate spatially-derived data 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "luechinger:2009,mackerron:2008,brereton:2007"
+
+\end_inset
+
+, only one so far seems to have attempted the econometric modelling of any
+ spatial effects 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "stanca:2010"
+
+\end_inset
+
+.
+ Relevant spatial models could include: spatial explanatory variables models
+ (in which a person's SWB is correlated with other observed characteristics
+ of nearby individuals); spatial error models (in which SWB is correlated
+ with unobserved characteristics of nearby individuals); spatial lag models
+ (in which SWB is correlated with the SWB of nearby individuals); and models
+ accounting for spatial heterogeneity in the relationships between variables.
+ The lack of use of spatial models in economic SWB research to date may
+ be at least partly explained by the relative scarcity of data that are
+ spatially referenced at an appropriately high resolution.
+ Spatial models could also be applied to relations in conceptual spaces,
+ such as social networks (where by 'nearby', one means 'well known' or 'strongly
+ related'), as they have begun to be in the medical literature 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fowler:2008,christakis:2009"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Finally, the degree of inter-correlation between many of the more important
+ factors influencing SWB (such as age, income and employment) might suggest
+ the use of techniques such as structural equation modelling (SEM) or principal
+ components analysis (PCA), but these have not been widely used (although
+ for SEM using domain satisfactions data, see 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "praag:2003"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsubsection
+Causality
+\end_layout
+
+\begin_layout Standard
+Establishing causality, especially with cross-sectional data, is a particularly
+ difficult problem in happiness research.
+ Happiness and wellbeing are such all-encompassing ideas that it is often
+ difficult to be sure that happiness is not a cause of another variable
+ (rather than, or as well as, being caused by it); or that an unobserved
+ variable is not a cause of happiness (leading to omitted variables bias);
+ or even that an 
+\emph on
+observed
+\emph default
+ variable does not cause happiness (for the purposes of an instrumental
+ variables treatment, for example).
+ 
+\end_layout
+
+\begin_layout Standard
+Studies using aggregated data---usually mean SWB ratings at a whole-country
+ level alongside other aggregated statistics such as GDP, or mean air pollution
+ levels---are potentially subject to the 'ecological fallacy' (the spurious
+ inference of individual-level characteristics from group-level characteristics)
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "robinson:2009"
+
+\end_inset
+
+, and face particular difficulties in establishing causality.
+ And individual-level data sets, which have usually not been collected specifica
+lly for the study of SWB, generally omit some things which might reasonably
+ be expected to have a significant impact---such as personality indicators,
+ childhood experiences, traumatic events, or being in a relationship (even
+ if unmarried)---and which might not be independent of the variables that
+ are the focus of the investigation.
+\end_layout
+
+\begin_layout Standard
+Fixed effects treatments with panel data can of course help with some of
+ these factors---for example, genetic elements of SWB are fixed by definition,
+ and other personality traits can be reasonably assumed to be broadly stable---b
+ut even with panel data, omitted time-variant variables may be a problem.
+ For example, 
+\begin_inset Quotes eld
+\end_inset
+
+income movements and wellbeing movements may merely be linked because of
+ omitted variables (such as seniority in the workplace)
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 50"
+key "gardner:2007a"
+
+\end_inset
+
+.
+ As usual, the most robust evidence of causality is provided by natural
+ experiments, in the form of exogenous shocks such as lottery wins (
+\emph on
+ibid.
+\emph default
+) or political shifts 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "frijters:2004"
+
+\end_inset
+
+.
+ Also as usual, natural experiments are not easy to identify, although the
+ conclusions of the two studies cited, which focus on income, are encouragingly
+ consistent with the broad consensus in the literature.
+\end_layout
+
+\begin_layout Section
+Is happiness valid economics?
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Is-happiness-valid"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Despite the growth of SWB research within economics, it is not currently
+ a fully mainstream approach.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Please note that the 'mainstream' is not here equated directly with the
+ neo-classical orthodoxy presented in caricature above, nor is it suggested
+ that it is a single, static, or easily-defined quantity; like the core
+ of any discipline, it is in constant flux 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "colander:2004"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ It continues to attract varying degrees of scepticism from within the PS
+ tradition---perhaps unsurprisingly, given the historical roots of the two
+ approaches.
+ For example, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "smith:2008"
+
+\end_inset
+
+ writes: 
+\begin_inset Quotes eld
+\end_inset
+
+I am 'unhappy' with happiness economics...
+ It is amazing to me that the best economics journals have devoted so much
+ attention to what Dan 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "hamermesh:2004"
+
+\end_inset
+
+ has previously described as 'rather silly' analyses
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Most criticism can be classified into three major levels, which are decreasingl
+y fundamental: the epistemological, the practical, and the disciplinary.
+ 
+\end_layout
+
+\begin_layout Standard
+First, epistemologically, it is held that subjective experiences are ultimately
+ unmeasurable and incommensurable: I can never prove that my experience
+ of 
+\begin_inset Quotes eld
+\end_inset
+
+yellow
+\begin_inset Quotes erd
+\end_inset
+
+ is the same as yours 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gilbert:2006"
+
+\end_inset
+
+, and the same goes for happiness concepts of all kinds.
+ This, of course, is the very same observation that turned 19th century
+ economists away from subjective accounts of wellbeing.
+ In principle, it is inescapable; in practice, for much of the time, it
+ seems to matter very little.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Although it may seem somewhat unsatisfactory, there are strong precedents
+ for disregarding basic philosophical challenges to a dominant world view:
+ free will, for example, is essentially philosophically impossible given
+ any meaningful definition 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "strawson:2004"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+There are many sources of evidence that SWB reports are meaningful, and
+ that different people mean similar things by them.
+ Current happiness or satisfaction is a strong predictor of future behaviour
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 136"
+key "clark:2008a"
+
+\end_inset
+
+.
+ It correlates strongly with objective indicators including neural activity
+ (measured with MRI), heart rate, blood pressure, smiling and suicide, and
+ subjective data including recall of positive and negative events and others'
+ SWB assessments---
+\begin_inset CommandInset citation
+LatexCommand citet
+after "pp. 370--371"
+key "tella:2005"
+
+\end_inset
+
+ summarise these connections concisely.
+ State-by-state variation in US SWB levels is also substantially correlated
+ with compensating differentials calculated using objective quality-of-life
+ data 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "oswald:2010,gabriel:2003"
+
+\end_inset
+
+.
+ Especially given our evolutionary/genetic similarity, none of this should
+ seem terribly surprising 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "veenhoven:2004"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Second, practically, it is argued that even if it is possible to use SWB
+ data, various measurement issues will bias the results, particularly where
+ a subjective measure is used as a dependent variable.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "bertrand:2001"
+
+\end_inset
+
+ offer a clear statement of this position; they are especially pessimistic,
+ in terms of the notation introduced in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:ps-and-swb"
+
+\end_inset
+
+, regarding the independence of 
+\begin_inset Formula $R(\cdot)$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+.
+ The availability of longitudinal or panel data offers some reassurance
+ in relation to such criticism, however, since individual fixed effects
+ can be used to control for the time-invariant elements of any such relationship
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "frey:2002a"
+
+\end_inset
+
+.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+** counter-argument here? **
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And third, in disciplinary terms, it is suggested that while SWB analyses
+ represent a valid and even interesting line of inquiry, it is not one to
+ be pursued within economics.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "hamermesh:2004"
+
+\end_inset
+
+ elaborates: 
+\begin_inset Quotes eld
+\end_inset
+
+we should not abandon our comparative advantage---our frameworks for analysing
+ maximising behaviour by individuals and how that behaviour affects individual
+ and group outcomes
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Conversely, happiness economics has drawn interest from those expressly
+ calling for a broadening of disciplinary scope: pluralist, heterodox and
+ 'post-autistic' movements 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "guerrien:2004,fullbrook:2005,george:2007,kaskarelis:2007"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Hamermesh (possibly alongside some of the more radical post-autists) arguably
+ presents a false choice here.
+ Accepting SWB research as a useful endeavour need not imply abandoning
+ other analytical frameworks 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 3"
+key "diener:2009"
+
+\end_inset
+
+.
+ Indeed, one of the strongest arguments in favour of the application of
+ SWB methods is that their strengths 
+\emph on
+and
+\emph default
+ weaknesses are quite different from---and even complementary to---the strengths
+ and weaknesses of methods recently favoured in the mainstream 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "welsch:2009,ott:2008"
+
+\end_inset
+
+.
+ For example, non-market valuation methods based on SWB scores require a
+ quite different set of assumptions and simplifications than more established
+ revealed- and stated-preference methods.
+ They can therefore offer corroboration (or otherwise) of those other methods'
+ results, or be applied where those methods' assumptions are plainly inapplicabl
+e.
+\end_layout
+
+\begin_layout Standard
+Ultimately, the status of SWB research is a matter of shifting social consensus
+ within the discipline; any attempt to put the issue on firmer ground appears
+ likely to turn out rather circular (a problem that is concisely encapsulated
+ in the popular definition of economics as 'what economists do'---
+\begin_inset CommandInset citation
+LatexCommand citealp
+after "2"
+key "backhouse:1997"
+
+\end_inset
+
+).
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+*** also -- plenty of the criticisms made of happiness research turn out
+ to apply only to a specific method, or a specific data set, or a specific
+ application of a method to a data set; while certain critics seem to urge
+ dismissal/abandonment of the entire subject of inquiry based on these limited
+ criticisms? ***
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Who are the happiness economists?
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Who"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are not, or at least were not until recently, any dedicated 'happiness
+ economists'.
+ Happiness economics has been done by people in various areas---and on various
+ edges---of the discipline.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In addition, of course, to being influenced by and indebted to those working
+ in other disciplines, most notably psychology (e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "cantril:1965"
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+ One may therefore ask which areas of economics, and which economists, have
+ been most closely associated with which aspects.
+ Three major areas are outlined below---as well as one area more notable
+ by its absence from this field.
+\end_layout
+
+\begin_layout Subsection
+Macroeconomics: growth, national accounting, unemployment and taxation
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Macroeconomics"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As noted above, Easterlin's 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "easterlin:1974"
+
+\end_inset
+
+ paper, 
+\begin_inset Quotes eld
+\end_inset
+
+Does economic growth improve the human lot?
+\begin_inset Quotes erd
+\end_inset
+
+, is often cited as an early (re)introduction of SWB into economics.
+ Connections between income and happiness at the national and international
+ scales have since been a important strand of happiness research (e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "oswald:1997"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "hagerty:2003"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "blanchflower:2004"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "brockmann:"
+
+\end_inset
+
+), and one which has obviously close ties with work looking at income and
+ happiness on the individual level (e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "easterlin:2001"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "boes:2006a"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "layard:2008a"
+
+\end_inset
+
+).
+ The precise nature of these connections remains a matter of some contention,
+ though (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "stevenson:2008"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+The macro-level research has naturally also led to consideration of SWB
+ as one of the alternatives---or complements---to GDP as an index of national
+ or social 'progress' (e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "diener:2004"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "kahneman:2004"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "tella:2008"
+
+\end_inset
+
+).
+ In this form---perhaps most famously championed by the Bhutanese government,
+ with its measures of Gross National Happiness (GNH)---it has been of substantia
+l interest to other governments and politicians (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:public-policy"
+
+\end_inset
+
+).
+ SWB measures also feature within composite indicators such as the New Economics
+ Foundation's 'Happy Planet Index' (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "nef:2006"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "nef:2007"
+
+\end_inset
+
+).
+ Of course, any aggregated indicator of social well-being raises challenging
+ questions in relation to social welfare functions and utilitarian ethics
+ (again, see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:public-policy"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Still at the macro level, the aggregate impacts of (un)employment, inflation
+ and tax policy have been studied in some depth (e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Clark:1994"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "layard:2005a"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "blanchflower:2007"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "clark:2008"
+
+\end_inset
+
+).
+ Rivalry, habituation, and other psychological and sociological factors
+ are involved in these effects, giving this work strong connections with
+ behavioural economics.
+\end_layout
+
+\begin_layout Subsection
+Behavioural economics
+\end_layout
+
+\begin_layout Standard
+Behavioural economics investigates how real economic actors actually behave
+ (make decisions), and seeks to provide explanations---primarily psychological
+ and sociological ones---as to why they behave as they do 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "rabin:2002"
+
+\end_inset
+
+.
+ Neo-classical utility theory provides a baseline for comparison with empirical
+ data: behavioural predictions based on rational individual (decision) utility
+ maximisation.
+ Behaviour may deviate from these predictions for reasons such as loss aversion,
+ anchoring effects, and myopia (e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "hsee:2006"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "kahneman:2006b"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "offer:2006"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "camerer:2005"
+
+\end_inset
+
+).
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Understanding these deviations can help us to form better predictions about
+ future behaviour, and potentially to devise means by which people's choices
+ could be 'improved' (such as by the use of well-chosen 'sticky' default
+ options or 'nudges'---such as automatically enrolling employees in match-funded
+ pension schemes---as envisaged in the 'libertarian paternalism' of Thaler
+ & Sunstein (
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "thaler:2003"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "thaler:2008"
+
+\end_inset
+
+)).
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Happiness economics provides an alternative baseline, allowing researchers
+ to assess how far behaviour deviates from that which would appear to have
+ maximised experienced utility or SWB.
+ By recognising a distinction between decision and experienced utility,
+ it permits analysis of a further reason for apparently sub-optimal behaviour:
+ imperfections in individuals' ability to predict their own future experienced
+ utility or SWB under different scenarios.
+ Established examples of such imperfections include over-estimation of the
+ extent to which one's future tastes will resemble one's current tastes
+ ('projection bias'---
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "loewenstein:2003"
+
+\end_inset
+
+), and failure to anticipate the extent of habituation to rises in one's
+ income 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "layard:2005a"
+
+\end_inset
+
+.
+ (The former may lead to over-consumption of durable goods, and the latter
+ to excess pursuit of income and consumption in general, relative to the
+ apparent SWB optima).
+\end_layout
+
+\begin_layout Standard
+Experienced utility or SWB measures also enable behavioural economics to
+ address questions beyond the scope of analyses limited to data on preferences
+ revealed through choices, including examining the contexts of choice and
+ the effects on (experienced) utility of choices made within different choice
+ 
+\emph on
+sets
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "koszegi:2008"
+
+\end_inset
+
+.
+ Such work can indicate, for example, that more choice is not always preferable
+ in SWB terms 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "schwartz:2002"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Environmental and ecological economics
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Environmental-and-ecological"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One interesting application of SWB data has been to non-market valuation.
+ Estimated relationships between levels of an arbitrary good and SWB, and
+ between SWB and income, can together be used to derive the good's marginal
+ value.
+ A particular strength of SWB-based valuation is its applicability to questions
+ where little individual choice is involved, such as mental health or community
+ life 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "layard:2010"
+
+\end_inset
+
+.
+ Valuation using SWB has so far attracted the attention of environmental
+ economists in particular.
+ The use of SWB for environmental valuation is thoroughly reviewed by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "welsch:2009"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferreira:2010"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Within 
+\emph on
+ecological
+\emph default
+ economics---which has, like happiness economics, been somewhat isolated
+ from the economic mainstream to date 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dasgupta:2008"
+
+\end_inset
+
+---SWB is of interest in part because it makes strong sustainability more
+ palatable.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Strong sustainability proposes limits to the substitutability of natural
+ capital with other forms, and this implies that the scale of resource extractio
+n and of the production of wastes requiring assimilation, relative to the
+ biosphere, is of some importance (the rather unfashionably expressed propositio
+n of 'limits to growth' (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "meadows:1972"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "meadows:2004"
+
+\end_inset
+
+).
+ It is increasingly widely accepted that the scale of certain activities---inclu
+ding in particular the emission of greenhouse gases---is already close to
+ or beyond sustainable limits (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "millennium-ecosystem-assessment:2005"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "treasury:2006"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "ipcc:2007"
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+ Strong sustainability appears to require future economic growth to rely
+ less on material goods, and/or to proceed at a slower (or even negative)
+ rate (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "victor:2007"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "nef:2006a"
+
+\end_inset
+
+).
+ Under the neo-classical PS model, growth in individual and national income
+ is effectively synonymous with growth in individual utility and social
+ welfare.
+ The PS approach therefore appears to predict a rather dismal future under
+ any feasible regime: reduced utility deriving from unintended ecological
+ overshoot on the one hand; intentionally reduced growth, and therefore
+ utility, on the other.
+ But since, at least in theory, growth in SWB could be de-coupled from GDP
+ growth, SWB might offer a theoretical route out of this dismal future (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "welsch:2009a"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "jackson:2005"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "gowdy:2005"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "dolan:2006b"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Marks:2006"
+
+\end_inset
+
+).
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+*** climate change => additional term for Kaya identity? ***
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To imagine such a way out requires an emphasis on non-income factors that
+ utility theory typically assumes to be held constant, and which happiness
+ research tends to find are strongly related to SWB, including family life,
+ social ties and environmental quality.
+ Ecological economists---as well as civil society groups, and policy-makers
+ and their advisers---have therefore become increasingly interested in the
+ relation of happiness to these factors.
+ And ecological and environmental economists are understandably particularly
+ interested in happiness in relation to environmental quality parameters
+ (such as noise, air pollution and access to green spaces---e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "praag:2005"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "welsch:2006"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "welsch:2007"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "brereton:2007"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "mackerron:2008"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "luechinger:2009,levinson:2009"
+
+\end_inset
+
+), to environmental attitudes and behaviours 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "brown:2005,ferrer-i-carbonell:2007"
+
+\end_inset
+
+, and to the potential disconnection between consumption and well-being
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "csikszentmihalyi:2000,sanne:2002,layard:2005,scitovsky:1977"
+
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The more radical end of the SWB and consumption literature, drawing on work
+ from psychology, suggests that the economic and social system in developed
+ economies is partly predicated on a level of structural or manufactured
+ dissatisfaction, in more-or-less direct opposition to SWB.
+ Such dissatisfaction, in which advertising plays an important role, helps
+ to ensure that people remain motivated to consume (e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "kasser:2002,jackson:2004,kasser:2007"
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Others
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:who-Others"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Of course, happiness work has not been exclusive to these areas.
+ For example, the work of the 'Leyden school', led by Bernard van Praag
+ and Arie Kapteyn at Leyden university from the early 1970s (e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "praag:1968"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "praag:1971"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "praag:1973"
+
+\end_inset
+
+), is sometimes taken to represent a precursor of or complement to more
+ recent work on SWB 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "praag:2006"
+
+\end_inset
+
+.
+ Although the Leyden school's primary focus has been on financial satisfaction,
+ it has also investigated broader life satisfaction measures---as commonly
+ employed in SWB research---and more general methodological issues around
+ subjective response data (e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "soest:2007"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "praag:2004a"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
+Development (or who 
+\emph on
+aren't 
+\emph default
+the happiness economists?)
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Development"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One area of the discipline which has 
+\emph on
+not
+\emph default
+ been a significant incubator for happiness research, despite a shared scepticis
+m regarding the sufficiency of income- or consumption-based welfare indicators,
+ is development economics.
+ 
+\end_layout
+
+\begin_layout Standard
+Recent development research has been increasingly influenced by the capability
+ approach described by Sen and others.
+ Capability relates to a person's positive freedom---envisaged as the range
+ and quality of opportunities (or 'functionings') that a person both has
+ reason to value and is able attain---and as such represents 
+\begin_inset Quotes eld
+\end_inset
+
+an unusual intermediary between objective wellbeing and subjective wellbeing
+ concepts
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 351"
+key "gasper:2007"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The problem of habituation or adaptation to bad circumstances (whether through
+ simple conditioning or broader cultural or religious indoctrination) has
+ largely been seen as precluding the use of SWB in development work: 
+\begin_inset Quotes eld
+\end_inset
+
+inequalities and exploitations survive in the world through making allies
+ out of the deprived and exploited.
+ The underdog learns to bear the burden...
+ Discontent is replaced by acceptance...
+ the horrors look less terrible in the metric of utilities
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 309"
+key "sen:1984"
+
+\end_inset
+
+.
+ However, it is possible that this position both overstates the problem
+ of adaptation in relation to SWB and understates it in respect of capabilities
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "clark:2009a"
+
+\end_inset
+
+.
+ Some have even suggested that SWB could encompass rather than compete with
+ capability in the evaluation of poverty 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kingdon:2006"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Of the wellbeing ideas discussed in this paper, capability probably shares
+ most with the objective lists account 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "see"
+key "dolan:2007a"
+
+\end_inset
+
+, and the relationship between capability and more subjective wellbeing
+ accounts is not straightforward.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p. 162"
+key "comim:2005"
+
+\end_inset
+
+ sees a 
+\begin_inset Quotes eld
+\end_inset
+
+remarkable
+\begin_inset Quotes erd
+\end_inset
+
+ lack of mutual acknowledgement between the two literatures, and describes
+ some key contrasts: while capability draws principally from moral and political
+ philosophy, SWB has a primarily neurological/psychological/sociological
+ base; capability assessments privilege qualitative aspects, whereas SWB's
+ empirical approach is almost exclusively quantitative; and where capability
+ admits of normative 'anchors' for assessing wellbeing---anchors such as
+ autonomy and fairness---SWB has no obvious normative content beyond standard
+ utilitarianism.
+\end_layout
+
+\begin_layout Section
+What does happiness economics tell us?
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:findings"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In general, the literature gives a fairly consistent picture of which factors
+ have what associations with SWB.
+ Where studies' findings do contrast, an important cause may be endogeneity,
+ in that one (or both) of the studies fails to control for correlated explanator
+y factors.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For example, the effects of gender and care-giving, of religion and sociable
+ group attendance, of age and wealth, or equivalised household income and
+ family size, could each be correlated; hence a study that did not control
+ for wealth might well report a different relationship between age and SWB
+ than one that did.
+\end_layout
+
+\end_inset
+
+ Since several authors have reviewed the specific findings of the SWB literature
+ in detail 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "frey:2002,dolan:2008"
+
+\end_inset
+
+, this paper touches on the topic only briefly.
+\end_layout
+
+\begin_layout Subsection
+Income and wealth
+\end_layout
+
+\begin_layout Standard
+The impact of income measures on SWB has, as stated above, been a major
+ focus of the SWB literature.
+ Researchers have investigated absolute income, income relative to others',
+ and income relative to past income.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "clark:2008a"
+
+\end_inset
+
+ provide a detailed survey.
+\end_layout
+
+\begin_layout Subsubsection
+Absolute income
+\end_layout
+
+\begin_layout Standard
+In general, absolute income is found to have a significant and positive
+ association with individuals' SWB, but one whose magnitude is dwarfed by
+ the effects of other factors (such as health, labour market status and
+ marital status), at least in developed countries.
+ There is perhaps surprisingly little discussion in the literature regarding
+ the appropriate measure(s) of absolute income: this could be individual
+ income, household income, or equivalised household income (adjusted for
+ household size and composition).
+ 
+\end_layout
+
+\begin_layout Standard
+On the assumption of decreasing marginal utility of income, most studies
+ use a log income measure as the explanatory variable; 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "layard:2008a"
+
+\end_inset
+
+ assume that the relationship is log-like (in that that the elasticity of
+ marginal utility with respect to income is constant), but find that the
+ marginal utility of income in fact declines somewhat 
+\emph on
+faster
+\emph default
+ than in proportion to the rise in income.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+They assume 
+\begin_inset Formula $u=\begin{cases}
+\dfrac{y^{1-\rho}-1}{1-\rho} & \rho\neq1\\
+\log y & \rho=1
+\end{cases}$
+\end_inset
+
+ where 
+\begin_inset Formula $u$
+\end_inset
+
+ is utility and 
+\begin_inset Formula $y$
+\end_inset
+
+ income, and estimate 
+\begin_inset Formula $\rho=1.26$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ Studies making use of exogenous income variation have helped to establish
+ that the apparent impact of income on SWB is at least partly causal 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "gardner:2007a"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Implications
+\end_layout
+
+\begin_layout Standard
+The relatively small effect of absolute income measures on happiness has
+ been one of the more interesting findings in the literature and---given
+ the emphasis placed on income in the standard economic account of wellbeing
+ as preference satisfaction---one that has seemed to demand explanation.
+ One line of reasoning is that consumption is ultimately the quantity of
+ interest under the preference satisfaction approach, and that reported
+ income is a noisy and biased proxy, excluding goods provided by the State
+ and deferred consumption via savings 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 111"
+key "clark:2008a"
+
+\end_inset
+
+.
+ Based on Australian survey data including items on net worth, 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "S24"
+key "headey:2004"
+
+\end_inset
+
+ conclude that wealth 
+\begin_inset Quotes eld
+\end_inset
+
+is at least as important to well-being and ill-being as income
+\begin_inset Quotes eld
+\end_inset
+
+.
+ An additional and more widely studied explanation is that the emphasis
+ on absolute income within the preference satisfaction account neglects
+ the more important contribution of relative income measures.
+\end_layout
+
+\begin_layout Subsubsection
+Past and relative income
+\end_layout
+
+\begin_layout Standard
+Individuals' own past incomes are negatively associated with their current
+ SWB.
+ This habituation or adaptation effect is very substantial---several studies
+ find that adaptation eliminates more than half of the positive effect of
+ income gains over the long term 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 111"
+key "clark:2008a"
+
+\end_inset
+
+---and is not fully anticipated by individuals 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "layard:2005a"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The income of an individual's reference group has also been widely found
+ to have a significantly negative effect on his or her SWB; in fact, reference
+ group income may be substantially more important than own absolute income
+ for individual happiness 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "knight:2009"
+
+\end_inset
+
+.
+ It is generally assumed that this effect is caused by status concerns,
+ sometimes described as rivalry or jealousy.
+ 
+\end_layout
+
+\begin_layout Standard
+Social comparisons could also work in the opposite direction if the rising
+ income of others were interpreted as a signal of one's own future income
+ possibilities.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "senik:2008a"
+
+\end_inset
+
+ identifies such an effect (described as the effect of information or ambition)
+ in transitional eastern European economies and the US.
+ Jealousy and ambition effects are not mutually exclusive.
+ Their relative importance may depend on perceived income mobility and uncertain
+ty---higher levels of either implying a stronger ambition effect (
+\emph on
+ibid.
+\emph default
+)---and on which of an individual's many potential reference groups is under
+ consideration.
+\end_layout
+
+\begin_layout Standard
+Most studies have defined the reference group as people who are similar
+ on a specific set of characteristics (e.g.
+ age, education, employment sector), using either cell averages (e.g.
+ average income for individuals in the same age 
+\begin_inset Formula $\times$
+\end_inset
+
+ education 
+\begin_inset Formula $\times$
+\end_inset
+
+ employment sector category) or predicted incomes from a wage regression
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "clark:2008a"
+
+\end_inset
+
+.
+ But reference groups can also be defined over a specific geographical area
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "luttmer:2005,knight:2009"
+
+\end_inset
+
+; as family members, friends, or work colleagues; or as explicitly reported
+ by the SWB survey respondent (these approaches require more data, and have
+ been less widely employed).
+ 
+\end_layout
+
+\begin_layout Paragraph
+Implications
+\end_layout
+
+\begin_layout Standard
+Income habituation and (if individuals make social comparisons primarily
+ within their own countries) rivalry both help to explain the Easterlin
+ Paradox---that, although individuals' incomes in cross-sectional studies
+ are positively related to their SWB, for many countries there appears to
+ be no corresponding effect of rising GDP on average national happiness
+ figures over time.
+ They also suggest that economic growth is of rather less importance than
+ economists have traditionally assumed (but this is a contested issue---e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "stevenson:2008a"
+
+\end_inset
+
+).
+ Rivalry implies that visible consumption imposes a negative externality
+ on others, while unanticipated habituation to income implies that people
+ will choose to work more and take less leisure than would be rational for
+ them.
+ Both of these effects could inspire corrective taxation policies (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "layard:2005a"
+
+\end_inset
+
+; see also 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:public-policy"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
+Other factors
+\end_layout
+
+\begin_layout Standard
+Except where other citations are given, the comprehensive review by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "dolan:2008"
+
+\end_inset
+
+ provides further detail on the factors identified here.
+\end_layout
+
+\begin_layout Paragraph
+Personal and demographic characteristics
+\end_layout
+
+\begin_layout Standard
+Good psychological and physical health both have a strong, positive effect
+ on SWB, in line with intuition.
+ Almost all studies find a U-shaped relationship between age and SWB, with
+ the young and old being happiest.
+ Where a gender difference is detected, women usually report slightly higher
+ happiness.
+ In the US, whites have on average higher SWB than African Americans.
+ The impact of education varies between studies: in some it has no significant
+ effect, while in others highest SWB is variously associated with lower,
+ higher, and intermediate levels of education.
+ Marriage and stable partnerships are highly positive for SWB (though the
+ potential for omitted variables bias is large here); separation, divorce
+ and widowhood are highly negative.
+ Parental divorce is found in some (but not all) studies to reduce children's
+ SWB in adulthood.
+ Evidence on the effect on parents of having children is rather mixed, depending
+ on the SWB measure, country, number and age of children, and parental situation.
+\end_layout
+
+\begin_layout Paragraph
+Work and time use
+\end_layout
+
+\begin_layout Standard
+Unemployment has one of the largest negative impacts on SWB, independent
+ of and larger than the associated material loss, reducing reported happiness
+ by 5--15% (where scale cardinality is assumed).
+ Evidence regarding the effects of different types and hours of employment
+ is scarce and somewhat mixed.
+ Commuting to work is associated with lower SWB levels, all other things
+ being equal.
+ Informal care-giving has a negative effect on SWB.
+ Community involvement and volunteering may have a positive effect, but
+ this finding is somewhat variable (depending on what is controlled for,
+ and whether fixed effects are included).
+ There is evidence, albeit somewhat limited, that physical activity promotes
+ SWB.
+ Finally, socialising and regularly attending church are both associated
+ with higher SWB, while TV viewing goes with lower SWB 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bruni:2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Attitudes and beliefs
+\end_layout
+
+\begin_layout Standard
+Trust in 'most people', in the people in one's neighbourhood, and in institution
+s such as the police and government are all positive predictors of SWB (although
+ great caution is required when regressing subjective variables on other
+ subjective variables).
+ Religious beliefs are generally associated with higher SWB too.
+ Political views have not been widely studied, but may affect the impacts
+ of other circumstances, including which party is in power 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tella:2005"
+
+\end_inset
+
+.
+ Satisfaction in specific life domains tends to correlate positively with
+ global SWB, and may partly or entirely mediate the effect of objective
+ circumstances.
+ SWB is also related to major personality traits such as extraversion and
+ conscientiousness 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weiss:2008"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Economic and political environment
+\end_layout
+
+\begin_layout Standard
+High unemployment rates may reduce SWB, although research is limited (high
+ local unemployment rates may also ameliorate the impact of an individual's
+ own unemployment, however).
+ Inflation may also have a negative influence on SWB, especially for those
+ with right wing politics.
+ Democracy, and particularly direct or participative democratic systems,
+ may be positive for SWB.
+ Evidence on income inequality is very mixed; its effect may depend partly
+ on real or perceived mobility.
+ There is little evidence concerning the effects of social insurance and
+ the welfare state.
+\end_layout
+
+\begin_layout Paragraph
+Natural and immediate environment
+\end_layout
+
+\begin_layout Standard
+Living in an unsafe or deprived area is, unsurprisingly, detrimental to
+ SWB.
+ Living in public housing may be negative for SWB 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "brereton:2007"
+
+\end_inset
+
+, but other aspects of housing quality seem to be little studied.
+ Living in large cities appears unfavourable, while rural living has a positive
+ impact in SWB terms (at least once lower rural incomes are controlled for).
+ The evidence of environmental quality effects is still very limited, although
+ several studies find a negative impact of air pollution on SWB.
+ Some studies also find a link between climate and SWB, such that more extreme
+ climates are detrimental.
+\end_layout
+
+\begin_layout Standard
+The variation in SWB explained by all observed factors is well below 50%
+ in all studies, which may partly owe to an important (and unobservable)
+ genetic component: one study of identical twins raised apart suggests that
+ up to half of the variation in SWB could be genetically based 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 240"
+key "tellegen:1988"
+
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+As with all heritability measures, however, this figure is as much dependent
+ on the range of variation in material circumstances in one society at one
+ time as it is on any genetic mechanism.
+ For example, if all of a society's children were raised in absolutely identical
+ circumstances, then the heritability of all traits---being the percentage
+ of variation accounted for by genetic factors---would necessarily be 100%.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+What does this mean for public policy?
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:public-policy"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Happiness research has been a subject of substantial interest in the political
+ and policy spheres.
+ Following a 2007 conference hosted by the European Commission, European
+ Parliament, Club of Rome, OECD and WWF, the OECD's 
+\emph on
+Measuring the Progress of Societies
+\emph default
+ and the European Commission's 
+\emph on
+Beyond GDP
+\emph default
+ projects aim to foster the development of non-GDP indicators, including
+ happiness (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "european-communities:2009"
+
+\end_inset
+
+; http://www.oecd.org/progress/; http://www.beyond-gdp.eu/).
+ 
+\end_layout
+
+\begin_layout Standard
+The French and German governments have commissioned recent reports on this
+ topic 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "stiglitz:2009,kroll:2009"
+
+\end_inset
+
+, with the French president subsequently instructing the national statistics
+ agency to give greater weight to quality of life issues 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jolly:2009"
+
+\end_inset
+
+.
+ In Canada a network of governmental and non-governmental organisations
+ is collaborating on a Canadian Index of Wellbeing 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "institute-of-wellbeing:2009"
+
+\end_inset
+
+.
+ In the UK, happiness entered electoral politics in the speeches of, and
+ Quality of Life policy commission set up by, the UK Conservative Party
+ leader 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "cameron:2006,watt:2007"
+
+\end_inset
+
+.
+ Its implications have been examined by a Strategy Unit report 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "donovan:2002"
+
+\end_inset
+
+, by Defra's Whitehall Well-being Working Group 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "easton:2006"
+
+\end_inset
+
+, by a Government Office for Science 'Foresight' project 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "foresight-mental-capital-and-wellbeing-project:2008"
+
+\end_inset
+
+ and in various other departments 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sustainable-development.gov.uk:2007"
+
+\end_inset
+
+, and the government has just announced that official 
+\begin_inset Quotes eld
+\end_inset
+
+general wellbeing
+\begin_inset Quotes erd
+\end_inset
+
+ indicators will in future be produced by the Office for National Statistics
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "stratton:2010"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Those championing SWB in policy have tended to argue as a first step for
+ just this kind of systematic measurement: the creation of wellbeing indicators,
+ standing alongside existing economic indicators, to assess performance
+ at national and/or regional levels 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "michaelson:2009"
+
+\end_inset
+
+.
+ Policy in an extremely wide range of areas has potential to affect individuals'
+ SWB; not only areas with an obvious and direct connection, such as mental
+ health services, but also taxation, (un)employment, environment, and many
+ more.
+ It could be argued, therefore, that SWB considerations should inform policy
+ development in those areas; 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "veenhoven:2004"
+
+\end_inset
+
+, for example, writes that 
+\begin_inset Quotes eld
+\end_inset
+
+the greatest happiness principle deserves a more prominent place in policy
+ making
+\begin_inset Quotes erd
+\end_inset
+
+.
+ This 'new utilitarianism' is potentially subject to the same variety of
+ critiques as the traditional brand, however.
+ 
+\end_layout
+
+\begin_layout Standard
+At a philosophical level, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "nozick:1974"
+
+\end_inset
+
+ finds a utilitarian system vulnerable to the so-called 'utility monster',
+ who derives greater utility from the sacrifice of others than those others
+ lose---such that total utility is increased by sacrificing everybody to
+ the monster---and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "parfit:1986"
+
+\end_inset
+
+ offers the 'repugnant conclusion' that a world of many people just barely
+ surviving could have greater total utility than a world of fewer people
+ with higher individual utilities.
+ In practice, these objections are easily dismissed: the 'utility monster'
+ does not exist, and both arguments rely on naïve interpretations of Bentham's
+ 'greatest good for the greatest number' as a simple sum (or alternatively,
+ in Nozick's case, average) of individual utilities.
+\end_layout
+
+\begin_layout Standard
+But this point does raise an important question---what 
+\emph on
+should
+\emph default
+ be the social welfare function that aggregates individual utilities?---to
+ which there is no clear answer.
+ International SWB research often uses mean self-ratings, but this assumes
+ cardinality and implies total agnosticism as to the distribution of happiness.
+ A 'U-index' is a further possibility (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:domains-and-timescales"
+
+\end_inset
+
+).
+ So too is an (ordinal-only) Pareto-optimality principle; but this is no
+ less problematic in relation to the allocation of wellbeing than it is
+ in relation to other resources 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sen:1978"
+
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Of the Pareto-optimality principle, 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "22"
+key "sen:1978"
+
+\end_inset
+
+ writes: "This may seem alright as far as it goes, but how far does it go?
+ ...
+ If preventing the burning of Rome would have made the emperor Nero feel
+ worse off, then letting him burn Rome would have been Pareto optimal.
+ In short, a society or an economy can be Pareto optimal and still be perfectly
+ disgusting."
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another class of objections to any role for SWB in the policy process concerns
+ ethics and rights: unconstrained maximisation of a happiness indicator
+ (or indeed any other indicator) could take societies in ethically questionable
+ directions 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 14"
+key "johns:2007"
+
+\end_inset
+
+.
+ For example, 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "ng:1997"
+
+\end_inset
+
+'s arguments 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+after "pp. 1849--50"
+key "ng:1997"
+
+\end_inset
+
+ for the 
+\begin_inset Quotes eld
+\end_inset
+
+widespread use
+\begin_inset Quotes erd
+\end_inset
+
+ of 
+\begin_inset Quotes eld
+\end_inset
+
+electrical, chemical and mechanical stimulation of...
+ the pleasure centres in our brain
+\begin_inset Quotes erd
+\end_inset
+
+ seems not so far removed from the widespread use in Huxley's 
+\emph on
+Brave New World
+\emph default
+ of the drug 'soma' to induce blissful contentment with caste-based roles
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "veenhoven:2004"
+
+\end_inset
+
+; whether this is vision is utopian or dystopian is open to debate.
+ As another example, the risk that the rights of minorities could be violated
+ under a utilitarian principle is raised---and alleged to have been realised
+ in the form of ethnic cleansing in the Kingdom of Bhutan 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 70"
+key "johns:2007"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In essence, the criticism here is that utilitarianism is a purely consequentiali
+st ethical theory, concerned only with the outcomes of actions, and therefore
+ fails to place off-limits actions which are widely held to be wrong.
+ But this criticism is of a straw man.
+ In practice, there is no reason why the consideration of likely happiness
+ outcomes in relation to policy should be accompanied by the jettisoning
+ of all ethical rules, including deontological ideas about what is inherently
+ right or wrong.
+ Maximising happiness is no more sinister than maximising income or any
+ other quantity; it is only that the most relevant rule-based constraints
+ on our means of doing so may not be the same for every maximand.
+\end_layout
+
+\begin_layout Standard
+As noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Development"
+
+\end_inset
+
+ in relation to development, adaptation is sometimes identified as a further
+ problem: what if people in objectively bad situations are subjectively
+ satisfied? Sen 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+after "p. 19"
+key "sen:1999"
+
+\end_inset
+
+ notes that an emphasis on 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+mental satisfaction
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+ (his italics) could be opposed to the 
+\begin_inset Quotes eld
+\end_inset
+
+creative discontent and constructive dissatisfaction
+\begin_inset Quotes erd
+\end_inset
+
+ necessary to overcoming deprivation and oppression.
+ More specifically, 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "pp. 30--31"
+key "deaton:2008"
+
+\end_inset
+
+ argues it is right that 
+\begin_inset Quotes eld
+\end_inset
+
+self-reports of satisfaction with life, with income, or health are given
+ little weight
+\begin_inset Quotes erd
+\end_inset
+
+ in evaluating development progress.
+ However, as also noted in that subsection, the problem of adaptation---which
+ is neither universal nor indiscriminate---may have been exaggerated, and
+ in practice does not seem so acute as to rule SWB out of policy consideration,
+ especially in richer countries.
+\end_layout
+
+\begin_layout Standard
+Finally, partisan political objections are made: generally, in relation
+ to government interest in SWB; and specifically, in relation to supposed
+ policy implications of some of the findings of SWB research.
+ In the general case it is sometimes argued, along classic liberal lines,
+ that making people happy is not a legitimate role of government, which
+ should confine itself to the protection of property rights and prevention
+ of harm: 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "thompson:2008"
+
+\end_inset
+
+ see this argument behind the association of government interest in wellbeing
+ with 'paternalism' and the 'nanny state' in sections of the media.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+They cite as examples columnists Minette Marrin---
+\begin_inset Quotes eld
+\end_inset
+
+The ‘national happiness audit’ would enable us to form and judge social
+ policies...
+ This is without a doubt the scariest idea I have read for many years
+\begin_inset Quotes erd
+\end_inset
+
+ (‘The dangerous business of happiness’, The Sunday Times, 18 June 2006)---and
+ Alexander Waugh---
+\begin_inset Quotes erd
+\end_inset
+
+...
+ if any of these foppish utilitarian suggestions were put into practice,
+ nothing short of national manic-depression would ensue
+\begin_inset Quotes erd
+\end_inset
+
+ (‘Enter the happiness police’, The Daily Telegraph, 13 March 2005).
+\end_layout
+
+\end_inset
+
+ As to the specifics, commentators on the Right have taken against the suggested
+ benefits of greater redistributive taxation 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "wilkinson:2007"
+
+\end_inset
+
+, for example, while the Left has baulked at findings of a positive association
+ of SWB with stable family life, religious faith, or ethnic homogeneity
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+See 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "layard:2003"
+
+\end_inset
+
+ on the work of Glaeser & DiPasquale (1999) and Sampson et al.
+ (1997) on ethnic homogeneity.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ormerod:2007"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+These partisan objections highlight what is perhaps the central issue.
+ SWB is not a technocratic panacea: it 
+\begin_inset Quotes eld
+\end_inset
+
+does not actually help us to solve the problem of divergent social values
+ and policy objectives...
+ and does not provide us with a set of recommendations that over-ride political
+ antagonisms and public debate
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "duncan:2008"
+
+\end_inset
+
+.
+ In summary, it is not clear exactly what maximising aggregate social happiness
+ means, and even if it were, this would not be sufficient as a guide to
+ policy.
+ 
+\end_layout
+
+\begin_layout Standard
+However, SWB research can inform
+\emph on
+ 
+\emph default
+our public discourse with valuable empirical data (
+\emph on
+ibid.
+\emph default
+).
+ It opens to serious and hard-headed scrutiny whether there are sources
+ of welfare beyond income and consumption, what those sources are, and what
+ some of the trade-offs between them may be.
+ It is therefore an especially valuable input into contemporary debates
+ regarding the desirability and feasibility of perpetual economic growth
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "jackson:2009,simms:2010"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "Chapter 4"
+key "diener:2009"
+
+\end_inset
+
+ explore a variety of additional ways in which SWB research can contribute
+ to policy development.
+\end_layout
+
+\begin_layout Section
+Where next for happiness economics?
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Where-next"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Despite the recent surge in interest in the economics of happiness, it is
+ still a relatively young area, with substantial scope for further research:
+ either answering new questions, or providing better answers to existing
+ questions.
+ These could be questions about the impacts of different factors on individuals'
+ SWB; questions about SWB itself; or questions which SWB can help to answer.
+\end_layout
+
+\begin_layout Paragraph
+Questions about what affects SWB
+\end_layout
+
+\begin_layout Standard
+Many of the factors already identified as influential on SWB could benefit
+ from further research, especially research using data collected for the
+ purpose: the secondary data sets used in many analyses lack detail on some
+ of the most important determinants of SWB.
+ For example, there still appears to be scope for research into income and
+ consumption effects on SWB---including measures of these relative to different
+ reference groups---and into the extents of rivalry and habituation in respect
+ of different kinds of consumption (and of other activities).
+\end_layout
+
+\begin_layout Standard
+A focus on how different factors interact would also help in producing a
+ more complete and nuanced picture of the factors affecting SWB.
+ For example, how do age or education or political, religious or environmental
+ views mediate the impacts of other variables and life events? Models here
+ include 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "finkelstein:2008a"
+
+\end_inset
+
+, who examine the impact of health status on the marginal utility of income,
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "clark:2005a"
+
+\end_inset
+
+, who estimate different SWB functions for different classes of individuals
+ emerging from their data.
+ In addition, studies might usefully deal more explicitly with factors among
+ which there is substantial multicolinearity, such as income, education,
+ and health.
+\end_layout
+
+\begin_layout Paragraph
+Questions about SWB itself
+\end_layout
+
+\begin_layout Standard
+As regards SWB itself, the temporal dimension has been relatively little
+ studied in the economic literature to date, but is important for the interpreta
+tion and use of SWB data.
+ Greater use of ESM/EMA and DRM could help in developing a better understanding
+ of how SWB varies hour by hour or day by day.
+ For example, individuals are commonly asked for SWB evaluations in the
+ ill-defined general present ('nowadays', 'these days', etc.).
+ What is the effect of past SWB (and past factors which affected it) on
+ such evaluations? And, perhaps more challengingly, what is the influence
+ of expectations regarding future SWB and future causal factors (income,
+ marital status, environmental quality and so on)? 
+\begin_inset CommandInset citation
+LatexCommand Citet
+after "ch. 7"
+key "praag:2004a"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "senik:2008"
+
+\end_inset
+
+ provide a first glimpse at these issues.
+ These methods could also provide rich and credible data sets for use in
+ various other kinds of analyses, such as examining the effects of different
+ health states on wellbeing 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dolan:2008a"
+
+\end_inset
+
+, or linking wellbeing measures to choice behaviour 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "smith:2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The spatial dimension of SWB also appears somewhat neglected.
+ Spatial techniques used in other disciplines and other areas of economics
+ (such as hedonic pricing studies) might valuably be applied to SWB data
+ (to date, only 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "stanca:2010"
+
+\end_inset
+
+ reports the use of such methods).
+ The social dimension of SWB is also a promising area, potentially using
+ the same spatial methods (since proximity in social network terms can provide
+ alternative conceptions of space, distance and neighbourhood).
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "fowler:2008"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "christakis:2009"
+
+\end_inset
+
+ appear to provide the only published research on this topic so far (and
+ are not working within economics); they relate SWB to social proximity
+ as measured in a long-term longitudinal medical study and using the social
+ networking site Facebook.
+\end_layout
+
+\begin_layout Standard
+Other areas that might be fertile ground for new economic research into
+ SWB include the use of anchoring vignettes---to try to correct for variation
+ in reporting functions, as attempted by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "angelini:2008"
+
+\end_inset
+
+---and of evolutionary or sociobiological reasoning---to provide a theoretical
+ grounding for hypotheses and interpretations regarding the factors that
+ influence SWB, as begun by 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "rayo:2007"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "rayo:2007,rayo:2007a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Questions that SWB can help answer
+\end_layout
+
+\begin_layout Standard
+Two additional kinds of economic questions could benefit from further applicatio
+n of the SWB approach.
+ First, as noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Environmental-and-ecological"
+
+\end_inset
+
+, SWB data provides a new and potentially powerful method for non-market
+ valuation.
+ And second, it could permit research into the utility impacts of differing
+ choice 
+\emph on
+sets 
+\emph default
+(if it is allowed that factors such as self-control may mean that more choice
+ is not always preferable), which is simply not possible using revealed
+ preference data 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "see"
+key "koszegi:2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Conclusions
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Conclusions"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The economics of happiness or SWB is a relatively new field within the disciplin
+e (albeit one with clear antecedents), and it continues to expand and mature.
+ Having arisen at the edges of several other research areas, increasingly
+ it has a momentum of its own.
+ 
+\end_layout
+
+\begin_layout Standard
+While there can be no formal proof that one person's happiness is comparable
+ to another's, a large body of evidence now indicates that such an assumption
+ can be both reasonable and useful.
+ Meanwhile, the application of increasingly sophisticated econometrics has
+ ensured that the additional assumptions required for the analysis of SWB
+ data become progressively less restrictive.
+ The assumptions implicit in some empirical work, especially with cross-sectiona
+l and cross-cultural data, can still be problematic, however.
+\end_layout
+
+\begin_layout Standard
+SWB research suggests---in line with intuition, but not always with the
+ emphasis of recent economic literature---that absolute income is only one
+ of a wide range of factors with important implications for human welfare.
+ SWB approaches can complement existing approaches to certain economic questions
+, such as non-market valuation, where both their strengths and their weaknesses
+ are different.
+ It also opens some new question to potential investigation.
+ In respect of pubic policy, it is of particular value in informing debate
+ around the desirability and feasibility of continuing economic growth.
+\end_layout
+
+\begin_layout Standard
+Scope remains for new research at many levels---theoretical, methodological,
+ and empirical---in the economics of SWB.
+ Temporal, spatial and social dimensions seem especially ripe for future
+ investigation.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Acknowledgements
+\end_layout
+
+\begin_layout Standard
+The author thanks Gordon MacKerron, Raphael Calel, and two anonymous reviewers
+ for their comments on earlier drafts, and the UK Economic & Social Research
+ Council (ESRC) for the funding enabling this work.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "~/Dropbox/Academic/all"
+options "bibtotoc,apalike2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

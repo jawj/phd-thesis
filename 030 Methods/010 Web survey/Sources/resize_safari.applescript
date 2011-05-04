@@ -1,0 +1,1 @@
+tell application "Safari" to set properties of front window to {bounds:{20, 20, 1010, 595}}

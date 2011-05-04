@@ -1,0 +1,10006 @@
+#LyX 1.6.4.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{microtype}
+\definecolor{grey}{gray}{0.3}
+\end_preamble
+\use_default_options false
+\language english
+\inputencoding auto
+\font_roman palatino
+\font_sans helvet
+\font_typewriter beramono
+\font_default_family default
+\font_sc true
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 85
+
+\graphics default
+\paperfontsize 11
+\spacing onehalf
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 10
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 2.5cm
+\topmargin 2cm
+\rightmargin 2.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle plain
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang british
+\begin_inset listings
+lstparams "basicstyle={\scriptsize\ttfamily},breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# encoding: utf-8
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#  London wellbeing and EQ survey
+\end_layout
+
+\begin_layout Plain Layout
+
+#  George MacKerron 2009
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+(# Reusable question types
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::Satisfaction = Q::ScaleHorizontal.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  insert_future_layout
+\end_layout
+
+\begin_layout Plain Layout
+
+  scale :range => 0..10,
+\end_layout
+
+\begin_layout Plain Layout
+
+        :start => "Extremely 
+\backslash
+n dissatisfied",
+\end_layout
+
+\begin_layout Plain Layout
+
+        :end => "Extremely 
+\backslash
+n satisfied"
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::Frequency = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  insert_future_layout
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  # from ESS q C2 -- required for ESS wellbeing module, social meeting q
+\end_layout
+
+\begin_layout Plain Layout
+
+  options [7, 'Every day'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [6, 'Several times a week'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [5, 'Once a week'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [4, 'Several times a month'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [3, 'Once a month'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [2, 'Less than once a month'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [1, 'Never']
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::YesNo = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  insert_future_layout
+\end_layout
+
+\begin_layout Plain Layout
+
+  options [1, 'Yes'], [0, 'No']
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::EssFrequency = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  insert_future_layout
+\end_layout
+
+\begin_layout Plain Layout
+
+  options [1, 'At least once a week'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [2, 'At least once a month'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [3, 'At least once every three months'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [4, 'At least once every six months'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [5, 'Less often'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [6, 'Never']
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::EssAgreement = Q::RadioHorizontal.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  insert_future_layout
+\end_layout
+
+\begin_layout Plain Layout
+
+  options [5, 'Disagree strongly'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [4, 'Disagree'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [3, 'Neither agree nor disagree'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [2, 'Agree'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [1, 'Agree strongly']
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::EssTime = Q::RadioHorizontal.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  insert_future_layout
+\end_layout
+
+\begin_layout Plain Layout
+
+  options [1, 'None or almost none of the time'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [2, 'Some of the time'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [3, 'Most of the time'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [4, 'All or almost all of the time']
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::EssTimeProportion = Q::ScaleHorizontal.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  insert_future_layout
+\end_layout
+
+\begin_layout Plain Layout
+
+  scale :range => 0..6,
+\end_layout
+
+\begin_layout Plain Layout
+
+        :start => "None of 
+\backslash
+n the time",
+\end_layout
+
+\begin_layout Plain Layout
+
+        :end => "All of 
+\backslash
+n the time",
+\end_layout
+
+\begin_layout Plain Layout
+
+        :others => [[:na, '', "Doesn't 
+\backslash
+n apply"]]
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::EssTimeProportionNoNa = Q::ScaleHorizontal.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  insert_future_layout
+\end_layout
+
+\begin_layout Plain Layout
+
+  scale :range => 0..6,
+\end_layout
+
+\begin_layout Plain Layout
+
+        :start => "None of 
+\backslash
+n the time",
+\end_layout
+
+\begin_layout Plain Layout
+
+        :end => "All of 
+\backslash
+n the time"
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::EssAgreementScale = Q::ScaleHorizontal.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  insert_future_layout
+\end_layout
+
+\begin_layout Plain Layout
+
+  scale :range => 0..6,
+\end_layout
+
+\begin_layout Plain Layout
+
+      :start => "Not 
+\backslash
+n at all",
+\end_layout
+
+\begin_layout Plain Layout
+
+      :end => "A great 
+\backslash
+n deal"
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::EssSatisfaction = Q::ScaleHorizontal.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  insert_future_layout
+\end_layout
+
+\begin_layout Plain Layout
+
+  scale :range => 0..10,
+\end_layout
+
+\begin_layout Plain Layout
+
+    :start => "Extremely 
+\backslash
+n dissatisfied",
+\end_layout
+
+\begin_layout Plain Layout
+
+    :end => "Extremely 
+\backslash
+n satisfied"
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::EssImportance = Q::ScaleHorizontal.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  insert_future_layout
+\end_layout
+
+\begin_layout Plain Layout
+
+  scale :range => 0..6,
+\end_layout
+
+\begin_layout Plain Layout
+
+    :start => "Not at all 
+\backslash
+n important",
+\end_layout
+
+\begin_layout Plain Layout
+
+    :end => "Very 
+\backslash
+n important"
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Q::BorderlessPostcode < Q::Postcode
+\end_layout
+
+\begin_layout Plain Layout
+
+  include Q::Borderlessness
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+class Q::UnclearedCheckbox < Q::Checkbox
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::ScaleOfProblem = Q::RadioHorizontal.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  insert_future_layout
+\end_layout
+
+\begin_layout Plain Layout
+
+  options [1, "A serious problem"],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [2, "A problem, 
+\backslash
+n but not serious"],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [3, "Not a problem"]
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::ReligiousFrequency = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  insert_future_layout
+\end_layout
+
+\begin_layout Plain Layout
+
+  options [1, 'Every day'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [2, 'More than once a week'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [3, 'Once a week'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [4, 'At least once a month'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [5, 'Only on special holy days'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [6, 'Less often'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [7, 'Never']
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::SleepHours = Q::Dropdown.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  insert_future_layout
+\end_layout
+
+\begin_layout Plain Layout
+
+  options [3, '3 hours or fewer'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [3.5, '3.5 hours'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [4, '4 hours'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [4.5, '4.5 hours'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [5, '5 hours'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [5.5, '5.5 hours'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [6, '6 hours'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [6.5, '6.5 hours'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [7, '7 hours'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [7.5, '7.5 hours'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [8, '8 hours'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [8.5, '8.5 hours'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [9, '9 hours'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [9.5, '9.5 hours'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [10, '10 hours or more']
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::Income = Q::Dropdown.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  insert_future_layout
+\end_layout
+
+\begin_layout Plain Layout
+
+  text 'If you are not certain of an amount, please give your best estimate.',
+ :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+  options monetary_bands [:unbounded,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          4000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          6000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          8000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          10000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          12000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          15000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          18000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          20000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          23000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          26000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          29000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          32000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          38000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          44000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          50000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          56000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          68000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          80000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          100000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          150000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          200000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          400000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          800000,
+\end_layout
+
+\begin_layout Plain Layout
+
+                          :unbounded]
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+(# Custom page stuff
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::MetaQuestion = Q::Text.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  text '*Survey pilot phase.* Please enter any comments or suggestions here.'
+\end_layout
+
+\begin_layout Plain Layout
+
+  text_box :size => '70x5', :full_width => true
+\end_layout
+
+\begin_layout Plain Layout
+
+  completion :optional
+\end_layout
+
+\begin_layout Plain Layout
+
+  no_next_prompt
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::PageComment = Q::Text.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  show_if :js_condition => "return window.Websperiment$add_comment;",
+\end_layout
+
+\begin_layout Plain Layout
+
+          :human_condition => "This question is completely optional."
+\end_layout
+
+\begin_layout Plain Layout
+
+  text "If there's anything you'd like to add, please use this space."
+\end_layout
+
+\begin_layout Plain Layout
+
+  text_box :size => '70x3', :full_width => true
+\end_layout
+
+\begin_layout Plain Layout
+
+  completion :optional
+\end_layout
+
+\begin_layout Plain Layout
+
+  no_next_prompt
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class P::Wellbeing < P::Base
+\end_layout
+
+\begin_layout Plain Layout
+
+  def suppress_comment; false; end
+\end_layout
+
+\begin_layout Plain Layout
+
+  declare do
+\end_layout
+
+\begin_layout Plain Layout
+
+    insert_future_layout
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Timing of first layout = first GET request
+\end_layout
+
+\begin_layout Plain Layout
+
+    question(eval("Datum::#{name.demodulize}PageFirstLook = Datum::FirstLayoutTim
+e.declare_new"))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Add a comment link
+\end_layout
+
+\begin_layout Plain Layout
+
+    unless (suppress_comment)
+\end_layout
+
+\begin_layout Plain Layout
+
+      question(eval("Q::#{name.demodulize}PageComment = Q::PageComment.declare_new
+"))
+\end_layout
+
+\begin_layout Plain Layout
+
+      markup %q{
+\end_layout
+
+\begin_layout Plain Layout
+
+        <div class="hide_bottom_border"></div>
+\end_layout
+
+\begin_layout Plain Layout
+
+        <div id="add_comment" style="display: none;"><a href="#comment"
+ onclick="window.Websperiment$add_comment = true; $(this).up('div').hide_animated()
+; return false;">add a comment</a></div>
+\end_layout
+
+\begin_layout Plain Layout
+
+      }
+\end_layout
+
+\begin_layout Plain Layout
+
+      local_js %Q{
+\end_layout
+
+\begin_layout Plain Layout
+
+        document.observe('dom:loaded', function() {
+\end_layout
+
+\begin_layout Plain Layout
+
+          var p = $('add_comment');
+\end_layout
+
+\begin_layout Plain Layout
+
+          if (p) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            var q = Page.questions.last();
+\end_layout
+
+\begin_layout Plain Layout
+
+            if (q.answer()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+              Websperiment$add_comment = true;
+\end_layout
+
+\begin_layout Plain Layout
+
+              q.show();
+\end_layout
+
+\begin_layout Plain Layout
+
+            } else p.show();
+\end_layout
+
+\begin_layout Plain Layout
+
+          }
+\end_layout
+
+\begin_layout Plain Layout
+
+        });
+\end_layout
+
+\begin_layout Plain Layout
+
+      }
+\end_layout
+
+\begin_layout Plain Layout
+
+    end
+\end_layout
+
+\begin_layout Plain Layout
+
+    css %Q{
+\end_layout
+
+\begin_layout Plain Layout
+
+      #add_comment { font-size: 0.85em; text-align: right; }
+\end_layout
+
+\begin_layout Plain Layout
+
+      #add_comment a {
+\end_layout
+
+\begin_layout Plain Layout
+
+        color: #666;
+\end_layout
+
+\begin_layout Plain Layout
+
+        padding-left: 11px;
+\end_layout
+
+\begin_layout Plain Layout
+
+        background: #fff url(/images/plus.png) 0% 50% no-repeat;
+\end_layout
+
+\begin_layout Plain Layout
+
+      }
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    help_page :text => 'Help & information', :name => 'P::MoreInfo'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Piloting meta-question
+\end_layout
+
+\begin_layout Plain Layout
+
+    css '.pilot_evaluation { color: #fff; padding: 0 1em; background: #666;
+ margin-top: 2em; }'
+\end_layout
+
+\begin_layout Plain Layout
+
+    if Respondent.current.andand.referral_data.andand.match(/
+\backslash
+bpilot
+\backslash
+b/)
+\end_layout
+
+\begin_layout Plain Layout
+
+      markup '<div class="pilot_evaluation">'
+\end_layout
+
+\begin_layout Plain Layout
+
+      question(eval("Q::#{name.demodulize}PageEvaluation = Q::MetaQuestion.declare
+_new"))
+\end_layout
+
+\begin_layout Plain Layout
+
+      markup '</div>'
+\end_layout
+
+\begin_layout Plain Layout
+
+    end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  end
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+(# Screening and quotas stuff
+\end_layout
+
+\begin_layout Plain Layout
+
+screening_completion_message = '*An answer is required here*, because it
+ helps us determine whether enough people with your profile have already
+ responded to the survey.'
+\end_layout
+
+\begin_layout Plain Layout
+
+toluna_respondent_cond = -> { Respondent.current.andand.referral_data.andand.match(/
+\backslash
+btoluna
+\backslash
+b/) }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::Male = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  text 'Are you male or female?'
+\end_layout
+
+\begin_layout Plain Layout
+
+  options [1, 'Male'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [0, 'Female']
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::ScreeningMale = Q::Male.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  completion :mandatory, :message => screening_completion_message
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::Age = Q::Dropdown.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  text 'What is your age?'
+\end_layout
+
+\begin_layout Plain Layout
+
+  option [0, 'Under 10 years']
+\end_layout
+
+\begin_layout Plain Layout
+
+  options discrete_numeric_bands [10, 16, 20, 25, 30, 35, 40, 45, 50, 55,
+ 60, 65, 70, 75, 80, 85, :unbounded],
+\end_layout
+
+\begin_layout Plain Layout
+
+    :bottom_unbounded => ' or under',
+\end_layout
+
+\begin_layout Plain Layout
+
+    :top_unbounded => ' or over'
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::ScreeningAge = Q::Age.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  completion :mandatory, :message => screening_completion_message
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::WorkStatus = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  # BHPS 2006, D29; and Families & Children Study 2006 - NatCen/DWP
+\end_layout
+
+\begin_layout Plain Layout
+
+  text 'Which of these best describes your current situation?'
+\end_layout
+
+\begin_layout Plain Layout
+
+  options [:self_emp, 'Self employed'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [:emp, 'In paid employment (full- or part-time)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [:unemp, 'Unemployed and seeking work'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [:retired, 'Retired from paid work altogether'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [:parental, 'On maternity leave'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [:fte, 'Full-time student or at school'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [:govt_train, 'On a government training scheme'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [:home_family, 'Looking after family or home'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [:caring, 'Caring for a sick, elderly or disabled person'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [:sick, 'Long term sick or disabled'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [:other, 'Something else']
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::ScreeningWorkStatus = Q::WorkStatus.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  completion :mandatory, :message => screening_completion_message
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::ScreeningEarnings = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  text 'What are your *gross* earnings in your *<%= Q::ScreeningWorkStatus.answer
+ == :emp ? "main (or only) job" : "training scheme" %>*?'
+\end_layout
+
+\begin_layout Plain Layout
+
+  options [:below_median, '£470 a week / £2,040 a month / £24,500 a year
+ or less'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [:above_median, 'More than £470 a week / £2,040 a month / £24,500
+ a year'],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [:not_sure, 'Not sure']
+\end_layout
+
+\begin_layout Plain Layout
+
+  completion :mandatory, :message => screening_completion_message
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+Quotas::Wellbeing = Quotas::Base.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  quota :on => :age,
+\end_layout
+
+\begin_layout Plain Layout
+
+        :categories => [:age_16_to_34, :age_35_to_54, :age_55_plus, :under_16],
+\end_layout
+
+\begin_layout Plain Layout
+
+        :classify => -> {
+\end_layout
+
+\begin_layout Plain Layout
+
+          a = Q::ScreeningAge.answer
+\end_layout
+
+\begin_layout Plain Layout
+
+          return nil unless a
+\end_layout
+
+\begin_layout Plain Layout
+
+          return :under_16 if [0, 10].include? a
+\end_layout
+
+\begin_layout Plain Layout
+
+          return :age_16_to_34 if [16, 20, 25, 30].include? a
+\end_layout
+
+\begin_layout Plain Layout
+
+          return :age_35_to_54 if [35, 40, 45, 50].include? a
+\end_layout
+
+\begin_layout Plain Layout
+
+          return :age_55_plus
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+  quota :on => :work_income,
+\end_layout
+
+\begin_layout Plain Layout
+
+        :categories => [:not_employee, :below_median, :above_median, :not_sure],
+\end_layout
+
+\begin_layout Plain Layout
+
+        :classify => -> {
+\end_layout
+
+\begin_layout Plain Layout
+
+          ws = Q::ScreeningWorkStatus.answer
+\end_layout
+
+\begin_layout Plain Layout
+
+          e = Q::ScreeningEarnings.answer
+\end_layout
+
+\begin_layout Plain Layout
+
+          if [:emp, :govt_train].include?(ws)
+\end_layout
+
+\begin_layout Plain Layout
+
+            e
+\end_layout
+
+\begin_layout Plain Layout
+
+          else
+\end_layout
+
+\begin_layout Plain Layout
+
+            :not_employee
+\end_layout
+
+\begin_layout Plain Layout
+
+          end
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+  quota :on => :location,
+\end_layout
+
+\begin_layout Plain Layout
+
+        :categories => [:inner_london, :outer_london, :elsewhere_or_not_sure],
+\end_layout
+
+\begin_layout Plain Layout
+
+        :classify => -> {
+\end_layout
+
+\begin_layout Plain Layout
+
+          a = Q::ScreeningBorough.answer
+\end_layout
+
+\begin_layout Plain Layout
+
+          return nil unless a
+\end_layout
+
+\begin_layout Plain Layout
+
+          london_inner_e = [:hackney, :haringey, :islington, :lambeth, :lewisham
+, :newham, :southwark, :tower]
+\end_layout
+
+\begin_layout Plain Layout
+
+          london_inner_w = [:camden, :city, :hammersmith, :kensington, :wandswor
+th, :westminster]
+\end_layout
+
+\begin_layout Plain Layout
+
+          london_outer_e = [:barking, :bexley, :enfield, :greenwich, :havering,
+ :redbridge, :waltham]
+\end_layout
+
+\begin_layout Plain Layout
+
+          london_outer_w = [:barnet, :brent, :ealing, :harrow, :hillingdon,
+ :hounslow, :richmond]
+\end_layout
+
+\begin_layout Plain Layout
+
+          london_outer_s = [:bromley, :croydon, :kingston, :merton, :sutton]
+\end_layout
+
+\begin_layout Plain Layout
+
+          return :inner_london if (london_inner_e + london_inner_w).include?
+ a
+\end_layout
+
+\begin_layout Plain Layout
+
+          return :outer_london if (london_outer_e + london_outer_w + london_oute
+r_s).include? a
+\end_layout
+
+\begin_layout Plain Layout
+
+          return :elsewhere_or_not_sure  # for Somewhere else & Don't know
+ answers
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+  quota :on => :sex,
+\end_layout
+
+\begin_layout Plain Layout
+
+        :categories => [:male, :female],
+\end_layout
+
+\begin_layout Plain Layout
+
+        :classify => -> {
+\end_layout
+
+\begin_layout Plain Layout
+
+          a = Q::ScreeningMale.answer
+\end_layout
+
+\begin_layout Plain Layout
+
+          return nil unless a
+\end_layout
+
+\begin_layout Plain Layout
+
+          return :male if a == 1
+\end_layout
+
+\begin_layout Plain Layout
+
+          return :female if a == 0
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  numbers contents_of_file 'quotas.yml'
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+class P::Welcome < P::Wellbeing
+\end_layout
+
+\begin_layout Plain Layout
+
+  def suppress_comment; true; end
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+class P::MoreInfo < P::Wellbeing
+\end_layout
+
+\begin_layout Plain Layout
+
+  def suppress_comment; true; end
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+class P::Thanks < P::Wellbeing
+\end_layout
+
+\begin_layout Plain Layout
+
+  def suppress_comment; true; end
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+S::Wellbeing = S::Base.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  title '*Wellbeing survey* -- LSE'
+\end_layout
+
+\begin_layout Plain Layout
+
+  quotas Quotas::Wellbeing
+\end_layout
+
+\begin_layout Plain Layout
+
+  pages(
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::Welcome.declare do
+\end_layout
+
+\begin_layout Plain Layout
+
+      text contents_of_file 'welcome_text.txt'
+\end_layout
+
+\begin_layout Plain Layout
+
+      text %Q{*Want to know more?* <a href="<%= eval(help_page[:name]).url
+ %>" target="_new">See more details now</a>, or click '<%= help_page[:text]
+ %>' at the top right of any page.}, :style => :info
+\end_layout
+
+\begin_layout Plain Layout
+
+      forward_prompt 'Start survey &#187;'
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_bar :hidden
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::MoreInfo.declare do  # mention MRS CoC, or Data Protection?
+\end_layout
+
+\begin_layout Plain Layout
+
+      title help_page[:text]
+\end_layout
+
+\begin_layout Plain Layout
+
+      text (contents_of_file (toluna_respondent_cond.call ? 'contact_text_toluna.t
+xt' : 'contact_text.txt')), :style => :float_info
+\end_layout
+
+\begin_layout Plain Layout
+
+      text contents_of_file 'info_text.txt'
+\end_layout
+
+\begin_layout Plain Layout
+
+      text '*Please <a href="#close_window" onclick="window.close();">close
+ this window or tab</a>* to return to the survey.', :style => :info
+\end_layout
+
+\begin_layout Plain Layout
+
+      suppress_forward on
+\end_layout
+
+\begin_layout Plain Layout
+
+      suppress_backward on
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_bar :hidden
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 0
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+        skip_always,
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::ScreeningOne = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Basic information (1)'
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::ScreeningMale,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::ScreeningAge,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::ScreeningWorkStatus
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 0.5
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+      skip_unless { toluna_respondent_cond.call },
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::ScreeningTwo = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Basic information (2)'
+\end_layout
+
+\begin_layout Plain Layout
+
+      question(Q::ScreeningEarnings) if [:emp, :govt_train].include?(Q::Screening
+WorkStatus.answer)
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::ScreeningBorough = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Are you *currently* living in Greater London?'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "*Yes* -- I'm living in..."
+\end_layout
+
+\begin_layout Plain Layout
+
+          markup '<div class="left_3_col">'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options  [:barking, 'Barking and Dagenham'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:barnet, 'Barnet'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:bexley, 'Bexley'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:brent, 'Brent'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:bromley, 'Bromley'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:camden, 'Camden'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:kensington, 'Chelsea (and Kensington)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:city, 'City of London'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:westminster, 'City of Westminster'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:croydon, 'Croydon'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:barking, 'Dagenham (and Barking)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:ealing, 'Ealing'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:enfield, 'Enfield']
+\end_layout
+
+\begin_layout Plain Layout
+
+          markup '</div><div class="centre_3_col">'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options  [:hammersmith, 'Fulham (and Hammersmith)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:greenwich, 'Greenwich'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:hackney, 'Hackney'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:hammersmith, 'Hammersmith and Fulham'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:haringey, 'Haringey'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:harrow, 'Harrow'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:havering, 'Havering'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:hillingdon, 'Hillingdon'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:hounslow, 'Hounslow'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:islington, 'Islington'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:kensington, 'Kensington and Chelsea'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:kingston, 'Kingston upon Thames'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:lambeth, 'Lambeth']
+\end_layout
+
+\begin_layout Plain Layout
+
+          markup '</div><div class="right_3_col">'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options  [:lewisham, 'Lewisham'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:merton, 'Merton'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:newham, 'Newham'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:redbridge, 'Redbridge'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:richmond, 'Richmond upon Thames'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:southwark, 'Southwark'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:sutton, 'Sutton'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:tower, 'Tower Hamlets'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:waltham, 'Waltham Forest'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:wandsworth, 'Wandsworth'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:westminster, 'Westminster (City of)']
+\end_layout
+
+\begin_layout Plain Layout
+
+          markup '</div><div style="clear: both;"></div>'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text '*No/not sure*'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options  [:na, "No, I'm living somewhere else at the moment"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:dk, "Not sure"]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          completion :mandatory, :message => screening_completion_message
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          css '.left_3_col, .centre_3_col, .right_3_col { width: 30%; float:
+ left; }
+\end_layout
+
+\begin_layout Plain Layout
+
+           .centre_3_col, .right_3_col { padding: 0 0 0 1em; }'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 0.5
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+      skip_unless { toluna_respondent_cond.call },
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::ScreenOut = P::Redirect.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      respondent_not_eligible true
+\end_layout
+
+\begin_layout Plain Layout
+
+      destination_url (RAILS_ENV == 'production' ? 'http://as.automatesurvey.com/S
+OP/P299943697303072S2S' : 'http://www.google.com/search?q=screen_out')
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+      skip_unless { toluna_respondent_cond.call && quotas.current_respondent_out_o
+f_scope? },
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::QuotaFull = P::Redirect.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      respondent_not_eligible true
+\end_layout
+
+\begin_layout Plain Layout
+
+      destination_url (RAILS_ENV == 'production' ? 'http://as.automatesurvey.com/S
+OP/P299943697303072S2F' : 'http://www.google.com/search?q=quota_full' )
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+      skip_unless { toluna_respondent_cond.call && quotas.current_respondent_quota
+_full? },
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::LifeSat = P::Wellbeing.declare_new do  # B24
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Satisfaction with life'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::LifeSat = Q::Satisfaction.declare_new do  # B24
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "All things considered, how satisfied are you with your life
+ as a whole nowadays?"
+\end_layout
+
+\begin_layout Plain Layout
+
+          completion :prompted,
+\end_layout
+
+\begin_layout Plain Layout
+
+                     :message => 'We would be very grateful if you would
+ provide a response to this question: it represents a key part of our research
+ topic.'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      # copy screening answers to standard answers -- naughty non-markup
+ use of markup to execute only when this page viewed
+\end_layout
+
+\begin_layout Plain Layout
+
+      markup '<%
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Male.answer Q::ScreeningMale.answer
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Age.answer Q::ScreeningAge.answer
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::WorkStatus.answer Q::ScreeningWorkStatus.answer
+\end_layout
+
+\begin_layout Plain Layout
+
+      %>' if toluna_respondent_cond.call
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 0.5
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::Vignettes = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title "Life satisfaction of others"
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "*On this page we very briefly describe four people's lives.
+ Please read the descriptions carefully,* and try to imagine how satisfied
+ with their lives these people might be."
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "*There are no right or wrong answers*--we'd just like to know
+ your impressions based on the information given.", :style => :info
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      # using 4 of top 10 names for approximate birth date and gender, plus
+ a contraction for each
+\end_layout
+
+\begin_layout Plain Layout
+
+      # (see http://www.askoxford.com/worldofwords/name/firstnames/namesappendices
+/1954/?view=uk)
+\end_layout
+
+\begin_layout Plain Layout
+
+      # except vignette 3: using 3 names each from arabic, indian, chinese,
+ spanish and english names
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      data(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Datum::VignetteOneName = Datum::Base.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          value %w(Jonathan John Stephen Steve Andrew Andy Robert Rob).randomly_p
+ick unless value  # 1964
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Datum::VignetteTwoName = Datum::Base.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          value %w(Joanne Jo Samantha Sam Nicola Nicky Rebecca Becky).randomly_pi
+ck unless value  # 1974 (except Rebecca, 1984)
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Datum::VignetteThreeName = Datum::Base.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          value %w(Yusuf Hakim Ahmad Rajiv Govind Prabhu Li Cheng Xin Fernando
+ Miguel Pablo James Daniel Matthew).randomly_pick unless value
+\end_layout
+
+\begin_layout Plain Layout
+
+          # value %w(Christopher Chris James Jim Daniel Dan Matthew Matt).randoml
+y_pick unless value  # 1984
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Datum::VignetteFourName = Datum::Base.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          value %w(Susan Sue Elizabeth Liz Margaret Maggie Patricia Pat).randomly
+_pick unless value  # 1954
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      vignettes = [
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::VignetteOne = Q::Satisfaction.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "_<%= Datum::VignetteOneName.value %> is 42 years old.
+ He's single, and has no children.
+ He makes £70,000 a year in a professional job, but some colleagues have
+ recently been laid off and his position isn't secure.
+ Outside work <%= Datum::VignetteOneName.value %> watches a lot of television,
+ and sees friends for a drink about once a month.
+ He's slightly overweight, and carries an inhaler for his asthma._"
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How satisfied with his life as a whole do you think <%=
+ Datum::VignetteOneName.value %> is?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::VignetteTwo = Q::Satisfaction.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "_<%= Datum::VignetteTwoName.value %> is 33 years old.
+ She got divorced 2 years ago, and during the week she looks after her 9-year-ol
+d son on her own.
+ <%= Datum::VignetteTwoName.value %> earns £20,000 a year in a public sector
+ job.
+ She's in good health, and has a circle of close friends whom she sees fairly
+ regularly._"
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How satisfied with her life as a whole do you think <%=
+ Datum::VignetteTwoName.value %> is?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::VignetteThree = Q::Satisfaction.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "_<%= Datum::VignetteThreeName.value %> is 25 years old.
+ He's married, without children, and works full-time from home.
+ Between them, he and his wife bring home £40,000 a year.
+ They go out with family or friends most weeks.
+ <%= Datum::VignetteThreeName.value %> keeps in good shape, and plays football
+ most weekends._"
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How satisfied with his life as a whole do you think <%=
+ Datum::VignetteThreeName.value %> is?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::VignetteFour = Q::Satisfaction.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "_<%= Datum::VignetteFourName.value %> is 58 years old.
+ She's married, with two grown-up children, and works for a large, successful
+ firm.
+ She and her husband have a combined income of £200,000 a year.
+ They entertain or go out with friends once or twice a week, and take several
+ holidays a year.
+ <%= Datum::VignetteFourName.value %> is close to her family, and looks forward
+ to seeing more of her grandchildren when she retires._"
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How satisfied with her life as a whole do you think <%=
+ Datum::VignetteFourName.value %> is?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      ]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      datum(Datum::VignetteOrder = Datum::Base.declare_new { value (0...vignettes.len
+gth).to_a.shuffle unless value })
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(vignettes.values_at(*Datum::VignetteOrder.value))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 2  # because difficult questions
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::EssOne = P::Wellbeing.declare_new do  # E4 - E7
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Wellbeing'
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "*Over the next few pages we'll ask some more questions about
+ how you feel about yourself and your life.*  Again, there are no right or
+ wrong answers."
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "*Some questions may seem a bit similar to each other*, but please
+ bear with us.
+ Try to consider each question in its own right.", :style => :info
+\end_layout
+
+\begin_layout Plain Layout
+
+      text 'Please say how much you agree or disagree with each of the following
+ statements.'
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssOptimistic = Q::EssAgreement.declare_new { text "I'm always
+ optimistic about my future" },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssPositivity = Q::EssAgreement.declare_new { text 'In general
+ I feel very positive about myself' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssFailure = Q::EssAgreement.declare_new { text 'At times I feel
+ as if I am a failure' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssNearlyIdeal = Q::EssAgreement.declare_new { text 'On the whole
+ my life is close to how I would like it to be' }
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssHappy = Q::ScaleHorizontal.declare_new do  # ESS C3
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Taking all things together, how happy would you say you
+ are?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          scale :range => 0..10,
+\end_layout
+
+\begin_layout Plain Layout
+
+                :start => "Extremely 
+\backslash
+n unhappy",
+\end_layout
+
+\begin_layout Plain Layout
+
+                :end => "Extremely 
+\backslash
+n happy"
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::EssTwo = P::Wellbeing.declare_new do  # E8 - E22
+\end_layout
+
+\begin_layout Plain Layout
+
+      title '%(small)Wellbeing (2/7)%'
+\end_layout
+
+\begin_layout Plain Layout
+
+      text 'Please tell us how much of the time *during the past week*...'
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssWeekDepressed = Q::EssTime.declare_new { text '...
+ you felt depressed?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssWeekEffort = Q::EssTime.declare_new { text '...
+ you felt that everything you did was an effort?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssWeekRestlessSleep = Q::EssTime.declare_new { text '...
+ your sleep was restless?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssWeekHappy = Q::EssTime.declare_new { text '...
+ you were happy?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssWeekLonely = Q::EssTime.declare_new { text '...
+ you felt lonely?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssWeekEnjoyedLife = Q::EssTime.declare_new { text '...
+ you enjoyed life?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssWeekSad = Q::EssTime.declare_new { text '...
+ you felt sad?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssWeekNotGetGoing = Q::EssTime.declare_new { text "...
+ you couldn't get going?" }
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+      text 'And please tell us how much of the time *during the past week*...'
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssWeekMuchEnergy = Q::EssTime.declare_new { text '...
+ you had a lot of energy?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssWeekAnxiety = Q::EssTime.declare_new { text '...
+ you felt anxious?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssWeekTired = Q::EssTime.declare_new { text '...
+ you felt tired?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssWeekAbsorbed = Q::EssTime.declare_new { text '...
+ you were absorbed in what you were doing?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssWeekCalm = Q::EssTime.declare_new { text '...
+ you felt calm and peaceful?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssWeekBored = Q::EssTime.declare_new { text '...
+ you felt bored?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssWeekRested = Q::EssTime.declare_new { text '...
+ you felt really rested when you woke up in the morning?' }
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 2.5
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::EssThree = P::Wellbeing.declare_new do  # E23 - E32
+\end_layout
+
+\begin_layout Plain Layout
+
+      title '%(small)Wellbeing (3/7)%'
+\end_layout
+
+\begin_layout Plain Layout
+
+      text 'To what extent do you agree or disagree with each of the following
+ statements?'
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssFreeDecide = Q::EssAgreement.declare_new { text 'I feel I am
+ free to decide for myself how to live my life' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssSeldomEnjoy = Q::EssAgreement.declare_new { text 'In my daily
+ life, I seldom have time to do the things I really enjoy' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssNoChanceCapable = Q::EssAgreement.declare_new { text 'In my
+ daily life I get very little chance to show how capable I am' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssLoveLearning = Q::EssAgreement.declare_new { text 'I love learning
+ new things' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssAccomplishment = Q::EssAgreement.declare_new { text 'Most days
+ I feel a sense of accomplishment from what I do' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssLikePlanning = Q::EssAgreement.declare_new { text 'I like planning
+ and preparing for the future' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssLongTimeNormal = Q::EssAgreement.declare_new { text 'When things
+ go wrong in my life, it generally takes me a long time to get back to normal'
+ },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssPhysicalActivity = Q::EssAgreement.declare_new { text 'My life
+ involves a lot of physical activity' }
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 1.5
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::EssFour = P::Wellbeing.declare_new do  # C2 & C3, E33 - E34
+\end_layout
+
+\begin_layout Plain Layout
+
+      title '%(small)Wellbeing (4/7)%'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssSatisfiedLifeSoFar = Q::Satisfaction.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How satisfied are you with how your life has turned out
+ so far?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssStandardOfLiving = Q::Satisfaction.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'And how satisfied are you with your present standard of
+ living (material circumstances)?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::SocialMeeting = Q::Frequency.declare_new do  # ESS C2
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How often do you meet *socially* with friends, relatives
+ or work colleagues?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::CloseFriend = Q::YesNo.declare_new do  # ESS C3
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Do you have anyone with whom you can discuss intimate and
+ personal matters?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      text 'How much of the time spent with your immediate family (children,
+ parents, siblings and partner) is...'
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssFamilyTimeEnjoyable = Q::EssTimeProportion.declare_new { text
+ '...
+ enjoyable?' },  # ESS E33
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssFamilyTimeStressful = Q::EssTimeProportion.declare_new { text
+ '...
+ stressful?' }  # ESS E34
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 1.5
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::EssFive = P::Wellbeing.declare_new do  # A8, E35 - E39
+\end_layout
+
+\begin_layout Plain Layout
+
+      title '%(small)Wellbeing (5/7)%'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      text 'Please tell us to what extent...'
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssChanceToLearn = Q::EssAgreementScale.declare_new { text '...
+ you get a chance to learn new things?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssLocalHelp = Q::EssAgreementScale.declare_new { text '...
+ you feel that people in your local area help one another?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssRespected = Q::EssAgreementScale.declare_new { text '...
+ you feel that people treat you with respect?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssUnfairlyTreated = Q::EssAgreementScale.declare_new { text '...
+ you feel that people treat you unfairly?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssRecognition = Q::EssAgreementScale.declare_new { text '...
+ you feel that you get the recognition you deserve for what you do?' }
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssTrust = Q::ScaleHorizontal.declare_new do  # A8
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "Generally speaking, would you say that most people can be
+ trusted, or that you can't be too careful in dealing with people?"
+\end_layout
+
+\begin_layout Plain Layout
+
+          scale :range => 0..10,
+\end_layout
+
+\begin_layout Plain Layout
+
+                :start => "You can't be 
+\backslash
+n too careful",
+\end_layout
+
+\begin_layout Plain Layout
+
+                :end => "Most people 
+\backslash
+n can be trusted"
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::EssSix = P::Wellbeing.declare_new do  # E40 - E47
+\end_layout
+
+\begin_layout Plain Layout
+
+      title '%(small)Wellbeing (6/7)%'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      text 'Please say to what extent you agree or disagree with each of
+ the following statements.'
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssDoValuable = Q::EssAgreement.declare_new { text 'I generally
+ feel that what I do in my life is valuable and worthwhile' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssHelpReturned = Q::EssAgreement.declare_new { text 'If I help
+ someone I expect some help in return' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssNoWorldHope = Q::EssAgreement.declare_new { text 'The way things
+ are now, I find it hard to be hopeful about the future of the world' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssCaredFor = Q::EssAgreement.declare_new { text 'There are people
+ in my life who really care about me' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssBritainWorse = Q::EssAgreement.declare_new { text 'For most
+ people in Britain, life is getting worse rather than better' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssCloseLocal = Q::EssAgreement.declare_new { text 'I feel close
+ to the people in my local area' },
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      question(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssTooMuchTelly = Q::Radio.declare_new do  # ESS E46
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Do you ever feel frustrated by having watched too much televisio
+n?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [1, 'Yes, often'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [2, 'Yes, sometimes'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [3, 'Occasionally'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [4, 'No, never']
+\end_layout
+
+\begin_layout Plain Layout
+
+          option_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+          option  [5, 'Never watch TV']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssRoutingWork = Q::YesNo.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Are you currently in paid work of any kind?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssRoutingWorkAnswerHistory = Q::AnswerHistory.declare_new { monitor
+ Q::EssRoutingWork }
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::EssSeven = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title '%(small)Wellbeing (7/7)%'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssJobSatisfaction = Q::EssSatisfaction.declare_new do  # E48
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'All things considered, how satisfied are you with your present
+ job?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'If you have more than one job, please answer about your
+ main job.', :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssWorkLifeBalance = Q::EssSatisfaction.declare_new do  # E49
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How satisfied are you with the balance between the time
+ you spend on your paid work and the time you spend on other aspects of
+ your life?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      text 'How much of the time do you find your job...'
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssJobInteresting = Q::EssTimeProportionNoNa.declare_new { text
+ '...
+ interesting?' },  # ESS E50
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssJobStressful = Q::EssTimeProportionNoNa.declare_new { text
+ '...
+ stressful?' }  # ESS E51
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssUnemploymentLikelihood = Q::Radio.declare_new do  # ESS E52
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How likely would you say it is that you will become unemployed
+ in the next 12 months?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [1, 'Very likely'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [2, 'Likely'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [3, 'Not very likely'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [4, 'Not at all likely']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      text 'To what extent do you agree or disagree with the following statement
+?'
+\end_layout
+
+\begin_layout Plain Layout
+
+      question(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssPaidAppropriately = Q::EssAgreement.declare_new do  # ESS E53
+\end_layout
+
+\begin_layout Plain Layout
+
+          # 'enough' might be less ambiguous than 'appropriately' here --
+ for people who feel like they're overpaid!
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Considering all my efforts and achievements in my job, I
+ feel I get paid appropriately.'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssCompareImpt = Q::EssImportance.declare_new { text "How important
+ is it for you to compare your income with other people's incomes?" }, 
+ # ESS E54
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssComparisonGroup = Q::Radio.declare_new do  # ESS E55
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Whose income would you be *most* likely to compare your
+ own with?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [1, 'Work colleagues'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [2, 'Family members'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [3, 'Friends'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [4, 'Others']
+\end_layout
+
+\begin_layout Plain Layout
+
+          option_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+          option  [5, "I don't compare"]
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 2
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+      skip_unless { Q::EssRoutingWork.answer == 1 },
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::NatureRelatedness = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Nature relatedness'
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "*Thanks--you've finished the section on wellbeing.* The remainder
+ of the survey is about a wide range of other topics.", :style => :info
+\end_layout
+
+\begin_layout Plain Layout
+
+      # this is the Nature Relatedness scale, Nisbet et al 2008, NR-Self
+ and NR-Experience (but excluding NR-Perspective)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "Please rate the extent to which you agree with each of these
+ statements.
+ There are no right or wrong answers."
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::NatRelEnjoyOutdoors = Q::EssAgreement.declare_new { text 'I enjoy
+ being outdoors, even in unpleasant weather' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        # Q::NatRelSpeciesToDie = Q::EssAgreement.declare_new { text 'Some
+ species are just meant to die out or become extinct' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        # Q::NatRelNaturalResourceRights = Q::EssAgreement.declare_new {
+ text 'Humans have the right to use natural resources any way we want' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::NatRelWildVacation = Q::EssAgreement.declare_new { text 'My ideal
+ vacation spot would be a remote, wilderness area' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::NatRelThinkEnvironment = Q::EssAgreement.declare_new { text 'I
+ always think about how my actions affect the environment' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::NatRelDigger = Q::EssAgreement.declare_new { text 'I enjoy digging
+ in the earth and getting dirt on my hands' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::NatRelSpiritualPart = Q::EssAgreement.declare_new { text 'My connectio
+n to nature and the environment is a part of my spirituality' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::NatRelEnvAware = Q::EssAgreement.declare_new { text 'I am very
+ aware of environmental issues' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::NatRelNoticeWildlife = Q::EssAgreement.declare_new { text 'I take
+ notice of wildlife wherever I am' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::NatRelRarelyInNature = Q::EssAgreement.declare_new { text "I don't
+ often go out in nature" },
+\end_layout
+
+\begin_layout Plain Layout
+
+        # Q::NatRelNoActionHelps = Q::EssAgreement.declare_new { text 'Nothing
+ I do will change problems in other places on the planet' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::NatRelNotSeparate = Q::EssAgreement.declare_new { text 'I am not
+ separate from nature, but a part of nature' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::NatRelWoodsScary = Q::EssAgreement.declare_new { text 'The thought
+ of being deep in the woods, away from civilization, is frightening' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::NatRelNatureNoEffect = Q::EssAgreement.declare_new { text 'My
+ feelings about nature do not affect how I live my life' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        # Q::NatRelNoAnimalRights = Q::EssAgreement.declare_new { text 'Animals,
+ birds and plants should have fewer rights than humans' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::NatRelNoticeCityNature = Q::EssAgreement.declare_new { text 'Even
+ in the middle of the city, I notice nature around me' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::NatRelIdentity = Q::EssAgreement.declare_new { text 'My relationship
+ to nature is an important part of who I am' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        # Q::NatRelNoConservation = Q::EssAgreement.declare_new { text 'Conservat
+ion is unnecessary because nature is strong enough to recover from any human
+ impact' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        # Q::NatRelAnimalsPredict = Q::EssAgreement.declare_new { text 'The
+ state of non-human species is an indicator of the future for humans' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::NatRelThinkSuffering = Q::EssAgreement.declare_new { text 'I think
+ a lot about the suffering of animals' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::NatRelConnectedness = Q::EssAgreement.declare_new { text 'I feel
+ very connected to all living things and the earth' }
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 3
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::HealthLifestyle = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Health and lifestyle'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::SelfReportedHealth = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How is your health in general?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [4, 'Very good'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [3, 'Good'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [2, 'Fair'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [1, 'Bad'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [0, 'Very bad']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Asthma = Q::YesNo.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Have you ever been told by a doctor that you have asthma?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Cardiovascular = Q::YesNo.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Have you ever been told by a doctor that you have a heart
+ or lung disease?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::SmokeAtAll = Q::YesNo.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          # BHPS 2006
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Do you ever smoke cigarettes?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::SmokeAtAllAnswerHistory = Q::AnswerHistory.declare_new { monitor
+ Q::SmokeAtAll },
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::SmokeNumber = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          # BHPS 2006 -- except original question asked to enter actual
+ number
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { Q::SmokeAtAll.answer == 1 },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "return <%= Q::SmokeAtAll.js_instance
+ %>.answer() == 1;",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete this question only
+ if you answered 'Yes' above."
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How many cigarettes a day do you usually smoke, including
+ those you roll yourself?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [1, 'Fewer than 1 a day'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [2, '1 - 5 a day'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [5, '5 - 14 a day'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [15, '15 - 24 a day'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [25, '25 a day or more']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        #Q::Alcohol = Q::Frequency.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+        #  # Scottish Health Survey 1998 -- but adapted frequencies
+\end_layout
+
+\begin_layout Plain Layout
+
+        #  text 'How often do you usually have an alcoholic drink?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        #end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::FruitVeg = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          # Guidance from http://www.5aday.nhs.uk/
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How many portions of fruit and vegetables do you usually
+ eat a day?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "Please do *not* count potatoes or grains.
+ 
+\backslash
+n Please *do* count pure juices, tinned, frozen and dried fruit and vegetables,
+ and fruit and vegetables found in other foods.", :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [0, 'Fewer than 1 a day'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [2, '1 - 2 a day'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [4, '3 - 4 a day'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [5, '5 a day or more']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Fish = Q::Frequency.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'And how often do you usually eat fish or shellfish?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::SleepLastNight = Q::SleepHours.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How much sleep did you get in the *past 24 hours*, to the
+ nearest half hour?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+         Q::SleepGot = Q::SleepHours.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How much sleep do you estimate that you *typically* get,
+ per day?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 2
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::HomeBasics = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Your home'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "*You're over halfway through the survey.* We really appreciate
+ your help.", :style => :info
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      text 'These questions are about the place where you usually live.'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      # questions mainly from/adapted from Survey of English Housing 2004/05
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::AccommType = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "Is your household's accommodation..."
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:house, "a house or bungalow"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:flat, "a flat or maisonette"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:room, "a room (or rooms)"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:other, "or something else?"]
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::HouseType = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { Q::AccommType.answer == :house },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "return <%= Q::AccommType.js_instance
+ %>.answer() == 'house';",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete this question only
+ if you answered 'house or bungalow' above."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Is the house or bungalow...'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:detached, "detached"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:semi, "semi-detached"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:terraced, "or terraced (including end-of-terrace)?"]
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::FlatType = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { Q::AccommType.answer == :flat },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "return <%= Q::AccommType.js_instance
+ %>.answer() == 'flat';",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete this question only
+ if you answered 'flat or maisonette' above."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Is the flat or maisonette...'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:block, "in a purpose-built block"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:conversion, "or in a converted house (or other kind
+ of building)?"]
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::OtherType = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { Q::AccommType.answer == :other },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "return <%= Q::AccommType.js_instance
+ %>.answer() == 'other';",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete this question only
+ if you answered 'something else' above."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Is the accommodation...'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:mobile, "a caravan, mobile home or houseboat"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:other, "or some other kind of accommodation?"]
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Tenure = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          # Question (but not options) from Scottish House Condition Survey
+ 1996, Q18
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Which of these best describes your tenure here?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:own, 'Own outright'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:mortgage, 'Buying with the help of a mortgage or loan'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:rent, 'Rent'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:shared, 'Pay part rent and part mortgage (shared ownership)'
+],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:rent_free, "Live rent-free (excluding squatting)"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:squat, 'Squatting'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:other, 'Other arrangement']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Landlord = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { [:rent, :shared].include?(Q::Tenure.answer)
+ },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "var a = <%= Q::Tenure.js_instance %>.answer();
+ return a == 'rent' || a == 'shared';",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete this question only
+ if you answered 'Rent' or 'Pay part rent and part mortgage' above."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Who is your landlord?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:council, 'The local authority (council) or New Town
+ Development'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:ha, 'A housing association, co-operative, charitable
+ trust or Local Housing Company'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:other, 'Any other individual or organisation']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::YearsLivedHere = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How long have you lived in this accommodation?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [0, 'Less than 12 months'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [1, '12 months but less than 2 years'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [2, '2 years but less than 5 years'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [5, '5 years but less than 10 years'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [10, '10 years but less than 20 years'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [20, '20 years or longer']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::WhereBefore = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'And where did you live just before you moved to this accommodati
+on?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options  [:london, 'Greater London'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:city, 'Another big city (population: over 1 million)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:big_town, 'A city or large town (population: 100,000
+ - 1 million)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:town, 'A town (population: 10,000 - 100,000)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:village, 'A village or hamlet (population: under 10,000)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                   [:rural, 'The countryside']
+\end_layout
+
+\begin_layout Plain Layout
+
+          option_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+          option   [:nowhere, "I've always lived in this accommodation"]
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 2
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::HomeDetails = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Inside your home'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      # household definition from
+\end_layout
+
+\begin_layout Plain Layout
+
+      # http://www.communities.gov.uk/housing/housingresearch/housingstatistics/hou
+singstatisticsby/householdestimates/notesdefinitions/
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "In this survey, a *household* means:
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      * one person living alone, or
+\end_layout
+
+\begin_layout Plain Layout
+
+      * a group of people living at the same address who share common housekeepi
+ng or a living room.", :style => :info
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::HouseholdSixteenPlus = Q::Dropdown.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How many adults (aged 16 or over) live in your household?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "Please *include yourself* if you're aged 16 or over.", :style
+ => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          options integer_scale 1..9
+\end_layout
+
+\begin_layout Plain Layout
+
+          option [10, '10 or more']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::HouseholdUnderSixteen = Q::Dropdown.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'And how many children (aged 15 or under) live in your household?
+'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "Please *include yourself* if you're aged 15 or under.", :style
+ => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          option [0, 'None']
+\end_layout
+
+\begin_layout Plain Layout
+
+          options integer_scale 1..9
+\end_layout
+
+\begin_layout Plain Layout
+
+          option [10, '10 or more']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::HouseholdRooms = Q::Dropdown.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How many rooms does your household have the use of, not
+ counting bathrooms and toilets?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options integer_scale 1..9
+\end_layout
+
+\begin_layout Plain Layout
+
+          option [10, '10 or more']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::LivingFloor = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'On what floor of the building as a whole is your main living
+ space?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'If your main living space is on more than one floor, please
+ choose the highest.', :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [-1, 'Basement or semi-basement'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [0, 'Ground floor (street level)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [1, '1st floor'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [2, '2nd floor'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [3, '3rd floor'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [4, '4th - 9th floor'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [10, '10th floor or higher']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::DoubleGlazing = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          # adapted from SoEH04/5
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Do you have double glazing?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Please count only factory-made sealed units.', :style =>
+ :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:all, 'Yes--in all windows'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:some, 'Yes--in some windows, but not all'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:none, 'No--none']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::HousingProblems = Q::Checkbox.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Does your home have any of the following problems?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "Please tick *all* that apply.", :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:mould, 'Mould growth (at least hand-sized patches) on
+ walls or carpets'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:cold, "Heating that doesn't keep you warm enough in
+ winter"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:draughts, 'Serious draughts due to poorly fitting windows
+ or doors'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:insects, 'Insect infestation (e.g.
+ moths, cockroaches, bedbugs or fleas)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:gloom, 'Lack of natural light']
+\end_layout
+
+\begin_layout Plain Layout
+
+          option_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+          exclusive_option [:none, 'None of the above']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::HomePostcode = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Home postcode'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "*We ask this question so we can work out environmental conditions*--
+things such as levels of air pollution, noise, and distance to green spaces--aro
+und where you live.
+ 
+\backslash
+n
+\backslash
+n *Please be assured that your information is confidential and secure* (click
+ '<%= help_page[:text] %>', above right, to find out more).", :style => :info
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::JavascriptEnabled,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::HomePostcode = Q::BorderlessPostcode.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "What is your full home postcode?"
+\end_layout
+
+\begin_layout Plain Layout
+
+          completion -> { Q::HomePostcodeUnknown.answer.blank? ? :prompted
+ : :optional }
+\end_layout
+
+\begin_layout Plain Layout
+
+          prompted_completion_message "*You don't have to give your postcode,
+ but we'd really appreciate it if you did, since location characteristics
+ are key to our research.* 
+\backslash
+n
+\backslash
+n If you don't know your postcode, please tick the box below and enter the
+ name of your street and town/city instead."
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::HomePostcodeUnknown = Q::UnclearedCheckbox.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          option [:dk, "I don't know my postcode"]
+\end_layout
+
+\begin_layout Plain Layout
+
+          no_next_prompt
+\end_layout
+
+\begin_layout Plain Layout
+
+          completion :optional
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::HomeStreetName = Q::Text.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { a = Q::HomePostcodeUnknown.answer; a
+ && a.length > 0 },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "var a = <%= Q::HomePostcodeUnknown.js_instanc
+e %>.answer(); return a && a.length > 0;",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete this question only
+ if you ticked 'I don't know my postcode' above."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'What are your street and city or town?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "Please write *Street, City* (separated with a comma).", :style
+ => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          text_box :size => '30x1', :default_text => 'e.g.
+ Downing Street, London'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          completion -> { Q::HomePostcodeUnknown.answer.blank? ? :optional
+ : :prompted }
+\end_layout
+
+\begin_layout Plain Layout
+
+          prompted_completion_message "You don't have to give your street
+ and town, but we would really appreciate it if you did, since location
+ characteristics are key to our research."
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      local_js %q{
+\end_layout
+
+\begin_layout Plain Layout
+
+        document.observe('dom:loaded', function() {
+\end_layout
+
+\begin_layout Plain Layout
+
+          var disenable = function() { <%= Q::HomePostcode.js_instance %>.set_enab
+led(<%= Q::HomePostcodeUnknown.js_instance %>.blank()); }
+\end_layout
+
+\begin_layout Plain Layout
+
+          $A(['click', 'keypress']).each(function(e) { document.observe(e,
+ disenable) });
+\end_layout
+
+\begin_layout Plain Layout
+
+          disenable(); // also do it now
+\end_layout
+
+\begin_layout Plain Layout
+
+        });
+\end_layout
+
+\begin_layout Plain Layout
+
+      }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 0.5
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::HomeMapLocation = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Your home on the map'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      has_postcode = Q::HomePostcode.answer &&
+\end_layout
+
+\begin_layout Plain Layout
+
+                     (Q::HomePostcode.answer.length > 6 || (Q::HomePostcode.answer.l
+ength > 1 && Q::HomeStreetName.answer.blank?))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "*We ask this question to help us work out environmental conditions
+ as accurately as possible*, since two buildings #{has_postcode ? 'with
+ the same postcode could be on different streets' : 'on the same street
+ could be a long distance apart'}, with different levels of traffic, noise,
+ and so on.
+ 
+\backslash
+n
+\backslash
+n *Please be assured that your information is confidential and secure* (click
+ '<%= help_page[:text] %>', above right, to find out more).", :style => :info
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::HomeMapLocation = Q::VirtualEarth.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          depends_on Q::HomePostcode
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "Many thanks for providing your #{has_postcode ? 'postcode'
+ : 'street and city'}.
+ Based on this, the satellite map below should show the neighbourhood around
+ your home."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "*Please click and drag to move the map so that your home
+ is in the centre, inside the yellow box.*#{' *(If a list of possible locations
+ is shown, first select a location from the list.)*' unless has_postcode}"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          map :start_location => has_postcode ?
+\end_layout
+
+\begin_layout Plain Layout
+
+                                 Q::HomePostcode.answer + ', UK' :
+\end_layout
+
+\begin_layout Plain Layout
+
+                                 (Q::HomeStreetName.answer ? Q::HomeStreetName.ans
+wer + ', UK' : nil)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          revealed_text :show_label => 'Show help using the map &#187;',
+\end_layout
+
+\begin_layout Plain Layout
+
+                        :hide_label => '&#171; Hide help',
+\end_layout
+
+\begin_layout Plain Layout
+
+                        :text => %Q{*Trouble finding your home?* 
+\backslash
+n
+\backslash
+n If you can't find your home on the map displayed here, please zoom out
+ a few levels to get your bearings, then zoom back in on your home location.
+ 
+\backslash
+n
+\backslash
+n *Map controls* 
+\backslash
+n
+\backslash
+n _Zoom in_: use the + button at the top left of the map, or double click
+ on the point you wish to zoom in on.
+ 
+\backslash
+n
+\backslash
+n _Zoom out_: use the - button at the top left of the map.
+ 
+\backslash
+n
+\backslash
+n _Move the map view_: click on the map, keeping the mouse button held down;
+ drag the map to a new location by moving your mouse; and release the mouse
+ button.
+ 
+\backslash
+n
+\backslash
+n }
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::HomeMapStatus = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How did you get on?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:confirmed, "My home is in the yellow box"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:approximate, "My home is in or near the yellow box--it
+ could be one or two buildings either way"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:not_found, "I couldn't find my home on the map"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:not_working, "The map didn't load/didn't work"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:refused, "I prefer not to say exactly where I live"]
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+      skip_unless {
+\end_layout
+
+\begin_layout Plain Layout
+
+      Q::JavascriptEnabled.answer == 'yes' && (
+\end_layout
+
+\begin_layout Plain Layout
+
+        (Q::HomePostcode.answer && Q::HomePostcode.answer.length > 1) || !
+ Q::HomeStreetName.answer.blank?
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+    },
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::LocalArea = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Your neighbourhood'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::SatArea = Q::Satisfaction.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How satisfied are you with the area in which you live?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::SafetyAfterDark = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          # ESS C6 -- options from BCS 06/07
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How safe do you -- or would you -- feel walking alone in
+ this area after dark?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [1, 'Very safe'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [2, 'Fairly safe'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [3, 'A bit unsafe'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [4, 'Very unsafe']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Neighbours = Q::Frequency.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "How often do you usually speak to your neighbours?"
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      if (! Q::HomePostcode.answer || Q::HomePostcode.answer.length < 3) &&
+ (! Q::HomeStreetName.answer || Q::HomeStreetName.answer.length < 3 )
+\end_layout
+
+\begin_layout Plain Layout
+
+        question(
+\end_layout
+
+\begin_layout Plain Layout
+
+          Q::HomeNearestStation = Q::Text.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+            text "What's your nearest tube or railway station?"
+\end_layout
+
+\begin_layout Plain Layout
+
+            text_box :size => '30x1'
+\end_layout
+
+\begin_layout Plain Layout
+
+          end
+\end_layout
+
+\begin_layout Plain Layout
+
+        )
+\end_layout
+
+\begin_layout Plain Layout
+
+      end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      text 'Below are some things that can cause problems for people in
+ their area.
+ Which of these are problems in the area where you live?'
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        # list adapted from Survey of English Housing 04/05 and BCS 06/07
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::AirPollution = Q::ScaleOfProblem.declare_new { text 'Air pollution'
+ },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::RoadRailNoise = Q::ScaleOfProblem.declare_new { text 'Noise from
+ road traffic and trains' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::AircraftNoise = Q::ScaleOfProblem.declare_new { text 'Noise from
+ aircraft' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::NeighbourNoise = Q::ScaleOfProblem.declare_new { text 'Noisy neighbour
+s or loud parties' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Litter = Q::ScaleOfProblem.declare_new { text 'Rubbish or litter
+ lying around' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Vandalism = Q::ScaleOfProblem.declare_new { text 'Vandalism or
+ graffiti' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Crime = Q::ScaleOfProblem.declare_new { text 'Crime' }
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 2
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::GreenSpace = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Green space'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      # some questions adapted from Survey of Public Attitudes toward the
+ Environment 2007 (ESRC QB)
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Garden = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Do you have a garden?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:own, 'Yes--own garden'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:shared, 'Yes--shared with others'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:none, 'No']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::GardenAnswerHistory = Q::AnswerHistory.declare_new { monitor Q::Garden
+ },
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::GardenUse = Q::Frequency.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { [:own, :shared].include?(Q::Garden.answer)
+ },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "return $A(['own', 'shared']).include(<%=
+ Q::Garden.js_instance %>.answer());",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete this question only
+ if you answered 'Yes' above."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'During the summer, how often do you spend time in the garden?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Allotment = Q::YesNo.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Do you have an allotment?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::AllotmentAnswerHistory = Q::AnswerHistory.declare_new { monitor
+ Q::Allotment },
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::AllotmentVisits = Q::Frequency.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { Q::Allotment.answer == 1 },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "return <%= Q::Allotment.js_instance %>.answer(
+) == 1;",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete this question only
+ if you answered 'Yes' above."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'During the summer, how often do you spend time at the allotment?
+'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::GreenSpaceAccess = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How well provided would you say your local area is with
+ public parks, gardens, commons, and other public recreational green spaces?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Please consider the *number*, *size* and *quality* of these
+ spaces.', :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [5, 'Very well'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [4, 'Well'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [3, 'Adequately'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [2, 'Poorly'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [1, 'Very poorly']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::GreenSpaceVisits = Q::Frequency.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'During the summer, how often do you visit these kinds of
+ green spaces for leisure?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "Please *don't count* occasions when you only pass through
+ on your way to somewhere else.", :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        # add golf courses?
+\end_layout
+
+\begin_layout Plain Layout
+
+        # add purpose of visits? e.g.
+ (dog) walking, running, cycling, other sports and games, picnicking, looking
+ after children
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::GreenSpacePassing = Q::Frequency.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'And how often do you walk or cycle through these kinds of
+ green spaces on your way to somewhere else?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::CountrysideVisits = Q::Frequency.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'During the summer, how often do you visit open countryside
+ for leisure?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        # add purpose of visits? e.g.
+ (dog) walking, running, cycling/mountain biking, climbing, other sports
+ and games, picnicking, birdwatching, fishing, hunting, drawing/painting,
+ foraging, other ...
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::HomeGreenViewshed = Q::Checkbox.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Which of the following can you see from *any* of the windows
+ in your home?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Please tick *all* that apply.', :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:trees, 'Trees'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:privaterec, 'Private recreational green space (e.g.
+ gardens or allotments)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:publicrec, 'Public recreational green space (e.g.
+ parks)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:nonrec, 'Other green space']
+\end_layout
+
+\begin_layout Plain Layout
+
+          option_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+          exclusive_option [:none, 'None of the above']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 2
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::OtherPlace = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Other location'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::OtherPlaceType = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Apart from your home, in what single location do you spend
+ most time?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:work, 'Workplace'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:study, 'Place of study'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:other, 'Other location']
+\end_layout
+
+\begin_layout Plain Layout
+
+          option_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+          option  [:none, 'No single location']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::OtherPlaceTypeAnswerHistory = Q::AnswerHistory.declare_new { monitor
+ Q::OtherPlaceType },
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::OtherPlaceOther = Q::Text.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { Q::OtherPlaceType.answer == :other },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "return <%= Q::OtherPlaceType.js_instance
+ %>.answer() == 'other';",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete this question only
+ if you answered 'Other location' above."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'What is this other location?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text_box :size => '30x1'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 0.5
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::OtherPlacePostcode = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      place_descriptor = case Q::OtherPlaceType.answer
+\end_layout
+
+\begin_layout Plain Layout
+
+        when :work  then 'workplace'
+\end_layout
+
+\begin_layout Plain Layout
+
+        when :study then 'place of study'
+\end_layout
+
+\begin_layout Plain Layout
+
+        else             'other location'
+\end_layout
+
+\begin_layout Plain Layout
+
+      end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      title "#{place_descriptor.humanize} postcode"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "*We ask this question so we can work out environmental conditions*--
+things such as levels of air pollution, noise, and distance to green spaces--aro
+und your #{place_descriptor}.
+ 
+\backslash
+n
+\backslash
+n *Please be assured that your information is confidential and secure* (click
+ '<%= help_page[:text] %>', above right, to find out more).", :style => :info
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::OtherPostcode = Q::BorderlessPostcode.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "What is the full postcode of your #{place_descriptor}?"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          completion -> { Q::OtherPostcodeUnknown.answer.blank? ? :prompted
+ : :optional }
+\end_layout
+
+\begin_layout Plain Layout
+
+          prompted_completion_message "You don't have to give a postcode
+ here, but we'd really appreciate it if you did, since location characteristics
+ are key to our research.
+ 
+\backslash
+n
+\backslash
+n If you don't know the postcode, please tick the box below and enter the
+ name of the street and town/city instead."
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::OtherPostcodeUnknown = Q::UnclearedCheckbox.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          option [:dk, "I don't know the postcode"]
+\end_layout
+
+\begin_layout Plain Layout
+
+          no_next_prompt
+\end_layout
+
+\begin_layout Plain Layout
+
+          completion :optional
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::OtherStreetName = Q::Text.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { a = Q::OtherPostcodeUnknown.answer;
+ a && a.length > 0 },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "a = <%= Q::OtherPostcodeUnknown.js_instance
+ %>.answer(); return a && a.length > 0;",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete this question only
+ if you ticked 'I don't know my postcode' above."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "What are your #{place_descriptor}'s street and city or town?"
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "Please write *Street, City* (separated with a comma).", :style
+ => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          text_box :size => '30x1', :default_text => 'e.g.
+ Downing Street, London'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          completion -> { Q::OtherPostcodeUnknown.answer.blank? ? :optional
+ : :prompted }
+\end_layout
+
+\begin_layout Plain Layout
+
+          prompted_completion_message "You don't have to give the street
+ and town, but we would really appreciate it if you did, since location
+ characteristics are key to our research."
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      local_js %q{
+\end_layout
+
+\begin_layout Plain Layout
+
+        document.observe('dom:loaded', function() {
+\end_layout
+
+\begin_layout Plain Layout
+
+          var disenable = function() { <%= Q::OtherPostcode.js_instance %>.set_ena
+bled(<%= Q::OtherPostcodeUnknown.js_instance %>.blank()); }
+\end_layout
+
+\begin_layout Plain Layout
+
+          $A(['click', 'keypress']).each(function(e) { document.observe(e,
+ disenable) });
+\end_layout
+
+\begin_layout Plain Layout
+
+          disenable(); // also do it now
+\end_layout
+
+\begin_layout Plain Layout
+
+        });
+\end_layout
+
+\begin_layout Plain Layout
+
+      }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 0.5
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+      skip_unless {
+\end_layout
+
+\begin_layout Plain Layout
+
+      Q::OtherPlaceType.answer && Q::OtherPlaceType.answer != :none
+\end_layout
+
+\begin_layout Plain Layout
+
+    },
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::OtherMapLocation = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      place_descriptor = case Q::OtherPlaceType.answer
+\end_layout
+
+\begin_layout Plain Layout
+
+        when :work  then 'workplace'
+\end_layout
+
+\begin_layout Plain Layout
+
+        when :study then 'place of study'
+\end_layout
+
+\begin_layout Plain Layout
+
+        else             'other location'
+\end_layout
+
+\begin_layout Plain Layout
+
+      end
+\end_layout
+
+\begin_layout Plain Layout
+
+      has_postcode = Q::OtherPostcode.answer &&
+\end_layout
+
+\begin_layout Plain Layout
+
+                    (Q::OtherPostcode.answer.length > 6 || (Q::OtherPostcode.answer.
+length > 1 && Q::OtherStreetName.answer.blank?))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      title "Your #{place_descriptor} on the map"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "*We ask this question to help us work out environmental conditions
+ as accurately as possible*, since two buildings #{has_postcode ? 'with
+ the same postcode could be on different streets' : 'on the same street
+ could be a long distance apart'}, with different levels of traffic, noise,
+ and so on.
+ 
+\backslash
+n
+\backslash
+n *Please be assured that your information is confidential and secure* (click
+ '<%= help_page[:text] %>', above right, to find out more).", :style => :info
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::OtherMapLocation = Q::VirtualEarth.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          depends_on Q::OtherPostcode
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "Many thanks for providing the #{has_postcode ? 'postcode'
+ : 'street and city'}.
+ Based on this, the satellite map below should show the neighbourhood around
+ your #{place_descriptor}."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "*Please click and drag to move the map so that your #{place_desc
+riptor} is in the centre, inside the yellow box.*#{' *(If a list of possible
+ locations is shown, first select a location from the list.)*' unless has_postcod
+e}"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          map :start_location => has_postcode ?
+\end_layout
+
+\begin_layout Plain Layout
+
+                                 Q::OtherPostcode.answer + ', UK' :
+\end_layout
+
+\begin_layout Plain Layout
+
+                                 (Q::OtherStreetName.answer ? Q::OtherStreetName.a
+nswer + ', UK' : nil)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          revealed_text :show_label => 'Show help using the map &#187;',
+\end_layout
+
+\begin_layout Plain Layout
+
+                        :hide_label => '&#171; Hide help',
+\end_layout
+
+\begin_layout Plain Layout
+
+                        :text => %Q{*Trouble finding the right location?*
+ 
+\backslash
+n
+\backslash
+n If you can't find the right location on the map displayed here, please
+ zoom out a few levels to get your bearings, then zoom back in on the right
+ location.
+ 
+\backslash
+n
+\backslash
+n *Map controls* 
+\backslash
+n
+\backslash
+n _Zoom in_: use the + button at the top left of the map, or double click
+ on the point you wish to zoom in on.
+ 
+\backslash
+n
+\backslash
+n _Zoom out_: use the - button at the top left of the map.
+ 
+\backslash
+n
+\backslash
+n _Move the map view_: click on the map, keeping the mouse button held down;
+ drag the map to a new location by moving your mouse; and release the mouse
+ button.
+ 
+\backslash
+n
+\backslash
+n }
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::OtherMapStatus = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How did you get on?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:confirmed, "My #{place_descriptor} is in the yellow
+ box"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:approximate, "My #{place_descriptor} is in or near the
+ yellow box--it could be one or two buildings either way"]
+\end_layout
+
+\begin_layout Plain Layout
+
+          #option_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:not_found, "I couldn't find my #{place_descriptor} on
+ the map"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:not_working, "The map didn't load/didn't work"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:refused, "I prefer not to say exactly where my #{place_descr
+iptor} is"]
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 0.5
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+      skip_unless {
+\end_layout
+
+\begin_layout Plain Layout
+
+      Q::JavascriptEnabled.answer == 'yes' && (
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::OtherPlaceType.answer && Q::OtherPlaceType.answer != :none && (
+\end_layout
+
+\begin_layout Plain Layout
+
+          (Q::OtherPostcode.answer && Q::OtherPostcode.answer.length > 1) ||
+ ! Q::OtherStreetName.answer.blank?
+\end_layout
+
+\begin_layout Plain Layout
+
+        )
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+    },
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::OtherPlaceDetails = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      place_descriptor = case Q::OtherPlaceType.answer
+\end_layout
+
+\begin_layout Plain Layout
+
+        when :work  then 'workplace'
+\end_layout
+
+\begin_layout Plain Layout
+
+        when :study then 'place of study'
+\end_layout
+
+\begin_layout Plain Layout
+
+        else             'other location'
+\end_layout
+
+\begin_layout Plain Layout
+
+      end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      title "#{place_descriptor.humanize} details"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::CommuteTime = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "About how much time does it usually take for you to get
+ to your #{place_descriptor} each day, door to door?"
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [5, 'Less than 15 minutes'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [20, '15 - 29 minutes'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [40, '30 - 44 minutes'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [60, '45 - 59 minutes'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [80, 'An hour or more']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::CommuteMeans = Q::Checkbox.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "Which of these means of transport do you usually use to
+ travel to and from your #{place_descriptor}?"
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Please tick *all* that apply.', :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:rail, 'Train (above ground)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:tube, 'Underground train (tube, metro)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:bus, 'Bus, minibus or coach (public or private)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:mbike, 'Motorcycle, scooter or moped'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:driver, 'Driving a car or van'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:driven, 'Passenger in a car, van or taxi'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:bike, 'Bicycle'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:walk, 'Walking (or running) _for at least 5 minutes_']
+\end_layout
+
+\begin_layout Plain Layout
+
+          option_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+          exclusive_option [:none, 'None of the above']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      if (! Q::OtherPostcode.answer || Q::OtherPostcode.answer.length < 3)
+ && (! Q::OtherStreetName.answer || Q::OtherStreetName.answer.length < 3 )
+\end_layout
+
+\begin_layout Plain Layout
+
+        question(
+\end_layout
+
+\begin_layout Plain Layout
+
+          Q::OtherNearestStation = Q::Text.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+            text "What's the nearest tube or railway station to your #{place_des
+criptor}?"
+\end_layout
+
+\begin_layout Plain Layout
+
+            text_box :size => '30x1'
+\end_layout
+
+\begin_layout Plain Layout
+
+          end
+\end_layout
+
+\begin_layout Plain Layout
+
+        )
+\end_layout
+
+\begin_layout Plain Layout
+
+      end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::OtherPlaceFloor = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "On what floor of the building as a whole do you spend most
+ time in your #{place_descriptor}?"
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [-1, 'Basement or semi-basement'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [0, 'Ground floor (street level)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [1, '1st floor'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [2, '2nd floor'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [3, '3rd floor'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [4, '4th - 9th floor'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [10, '10th floor or higher']
+\end_layout
+
+\begin_layout Plain Layout
+
+          option_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+          option  [:na, 'No single floor']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::OtherGreenViewshed = Q::Checkbox.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "Which of the following can you usually see from inside your
+ #{place_descriptor}?"
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Please tick *all* that apply.', :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:trees, 'Trees'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:privaterec, 'Private recreational green space (e.g.
+ gardens or allotments)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:publicrec, 'Public recreational green space (e.g.
+ parks)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:nonrec, 'Other kinds of green space']
+\end_layout
+
+\begin_layout Plain Layout
+
+          option_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+          exclusive_option [:none, 'None of the above']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      # how much time you spend there?
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+      skip_unless { Q::OtherPlaceType.answer && Q::OtherPlaceType.answer !=
+ :none },
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::LeisureActivities = P::Wellbeing.declare_new do  # ESS E1 - E3
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Leisure activities'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      text 'In the past 12 months how often have you...'
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        # partly adapted from BHPS 2006, RV10 & General Household Survey
+ 2006
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Newspaper = Q::Frequency.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text '...
+ read a newspaper?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Please *include* newspaper articles you read online.', :style
+ => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::DoSport = Q::Frequency.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text '...
+ played sport, or done other vigorous physical exercise?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'This could include going to the gym, taking exercise classes,
+ running, cycling, skating or swimming.', :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::SeeLiveArts = Q::Frequency.declare_new { text '...
+ gone to a concert, theatre or other live performance?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::SeeDeadArts = Q::Frequency.declare_new { text '...
+ visited historical monuments, museums, art galleries or archaeological
+ sites?' },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Meditation = Q::Frequency.declare_new { text '...
+ practiced meditation?' }
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      text 'Please take a moment to think of any groups, clubs or organisations
+ you take part in.
+ These could be youth groups, sports clubs or pub teams, religious groups,
+ evening classes, choirs, book groups, or any other groups, clubs or organisatio
+ns.'
+\end_layout
+
+\begin_layout Plain Layout
+
+       questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+         Q::ClubsGroupsEtc = Q::EssFrequency.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'In the past 12 months, how often did you take part in all
+ groups, clubs or organisations like this combined?'
+\end_layout
+
+\begin_layout Plain Layout
+
+         end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssVoluntaryOrgs = Q::EssFrequency.declare_new do  # ESS E1
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'In the past 12 months, how often did you get involved in
+ work for voluntary or charitable organisations?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssHelp = Q::EssFrequency.declare_new do  # ESS E2
+\end_layout
+
+\begin_layout Plain Layout
+
+          # What does this question MEAN?
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Not counting anything you do for your family, in your work,
+ or within voluntary organisations, how often, in the past 12 months, did
+ you actively provide help for other people?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EssLocalActivities = Q::EssFrequency.declare_new do  # ESS E3
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'And in the past 12 months, how often did you help with or
+ attend activities organised in your local area?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::CarOwnership = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Is there a car or van normally available for private use
+ by you or any members of your household?'  # BHPS 2006, H61
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [2, 'Yes--more than one'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [1, 'Yes--one'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [0, 'No--none']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 2
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::Demographics = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Demographics'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(Q::Male, Q::Age) unless toluna_respondent_cond.call
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::MaritalStatus = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'What is your marital status?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Please choose the *first* option that applies.
+ For all response options, please treat *Civil Partnership* as equivalent
+ to marriage.', :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:single, 'Single (never married--but may be in a relationship
+)'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:married, 'Married and living with your husband or wife'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:separated, 'Married and separated from your husband
+ or wife'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:divorced, 'Divorced'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:widowed, 'Widowed']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::InCoupleOrRel = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { [:single, :separated, :divorced, :widowed].i
+nclude?(Q::MaritalStatus.answer) },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "return $A(['single', 'separated', 'divorced'
+, 'widowed']).include(<%= Q::MaritalStatus.js_instance %>.answer());",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => 'Please complete the following question
+ only if you answered "Single", "Married and separated", "Divorced", or
+ "Widowed" above.'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'And are you currently...'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [2, 'living with someone as a couple, or'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [1, 'in a relationship with someone, but not living together,
+ or'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [0, 'neither of the above?']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::AnyChildren = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Do you have any children?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [2, 'Yes--more than one'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [1, 'Yes--one'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [0, 'No--none']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::AnyChildrenAnswerHistory = Q::AnswerHistory.declare_new { monitor
+ Q::AnyChildren },
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::ChildOfAge = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { Q::AnyChildren.answer == 1 },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "return <%= Q::AnyChildren.js_instance
+ %>.answer() == 1;",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete the following question
+ only if you answered 'Yes--one' above."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "What is your child's age?"
+\end_layout
+
+\begin_layout Plain Layout
+
+          option [0, 'Under 2 years']
+\end_layout
+
+\begin_layout Plain Layout
+
+          options discrete_numeric_bands [2, 5, 11, 16, 21, :unbounded],
+\end_layout
+
+\begin_layout Plain Layout
+
+            :top_unbounded => ' or over'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::ChildrenOfAges = Q::Checkbox.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { Q::AnyChildren.answer == 2 },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "return <%= Q::AnyChildren.js_instance
+ %>.answer() == 2;",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete the following question
+ only if you answered 'Yes--more than one' above."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "What are your children's ages?"
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "Please tick *all* that apply.", :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          option [0, 'Under 2 years']
+\end_layout
+
+\begin_layout Plain Layout
+
+          options discrete_numeric_bands [2, 5, 11, 16, 21, :unbounded],
+\end_layout
+
+\begin_layout Plain Layout
+
+            :top_unbounded => ' or over'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Qualifications = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'What qualifications do you have?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'These may be educational, professional, vocational or other
+ work-related qualifications.', :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [2, 'Qualifications at degree level or above'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [1, 'Qualifications below degree level'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [0, 'No qualifications']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::WorkStatus = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Work status'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::WorkStatus,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::WorkStatusAnswerHistory = Q::AnswerHistory.declare_new { monitor
+ Q::WorkStatus },
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::WorkStatusOther = Q::Text.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { Q::WorkStatus.answer == :other },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "return <%= Q::WorkStatus.js_instance
+ %>.answer() == 'other';",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete this question only
+ if you answered 'Something else' above."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Please describe your current situation'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text_box :size => '50x1'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 0.25
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+      skip_if { toluna_respondent_cond.call || [0, 10].include?(Q::Age.answer)
+ },
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::Job = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Work hours and activities'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::WorkHoursFortyEight = Q::Radio.declare_new do  # from NatCen/DTI
+ Workplace Employment Relations Survey 2004
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Excluding holidays, in the last 12 months how often have
+ you worked more than 48 hours in a week?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [5, 'Every week'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [4, 'Several times a month'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [3, 'Once a month'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [2, 'Less than once a month'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [1, 'Never']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      text 'Please tick all the statements that apply.'
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::JobActivity = Q::Checkbox.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'In my work, I spend *at least half my time*...'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:desk, '...
+ at a desk'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:computer, '...
+ using a computer'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:outside, '...
+ in the open air'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:active, '...
+ being physically active'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:communicating, '...
+ communicating face-to-face with others'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:travelling, '...
+ travelling']
+\end_layout
+
+\begin_layout Plain Layout
+
+          option_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+          exclusive_option [:none, 'None of the above']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 0.5
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+      skip_unless { [:emp, :self_emp].include?(Q::WorkStatus.answer) || Q::EssRout
+ingWork.answer == 1 },
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::Income = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Income'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "*The wellbeing effect of income, relative to other factors,
+ is an important part of our research*, so we would be very grateful for
+ your answers here.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      *Please be assured that your information is confidential and secure*
+ (click '<%= help_page[:text] %>', above right, to find out more).
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      Remember that in this survey a *household* means:
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      * one person living alone, or
+\end_layout
+
+\begin_layout Plain Layout
+
+      * a group of people living at the same address who share common housekeepi
+ng or a living room.", :style => :info
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::HouseholdIncome = Q::Income.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text %Q{What is your *household's* total gross annual income?
+ This is:
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          * for all household members,
+\end_layout
+
+\begin_layout Plain Layout
+
+          * from all sources (earnings, benefits, investments, etc.), and
+\end_layout
+
+\begin_layout Plain Layout
+
+          * before taxes and National Insurance.}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          completion :prompted, :message => "*You don't have to give an
+ answer here, but we would really appreciate it if you did.* The wellbeing
+ effect of income relative to other factors is one of the key issues in
+ our research."
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::IndividualIncome = Q::Income.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text %Q{And what is your own *individual* total gross annual income?
+ Again, this is:
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          * from all sources (earnings, benefits, investments, etc.), and
+\end_layout
+
+\begin_layout Plain Layout
+
+          * before taxes and National Insurance.}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          completion :prompted, :message => "*You don't have to give an
+ answer here, but we would really appreciate it if you did.* The wellbeing
+ effect of income relative to other factors is one of the key issues in
+ our research."
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      # number of incomes?
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 0.5
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::ReligionPolitics = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Religion and politics'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      # all questions verbatim from ESS: C17, 21, 22, 23
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::AnyReligion = Q::YesNo.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Do you consider yourself as belonging to any particular
+ religion or denomination?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::AnyReligionAnswerHistory = Q::AnswerHistory.declare_new { monitor
+ Q::AnyReligion },
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::WhichReligion = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { Q::AnyReligion.answer == 1 },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "return <%= Q::AnyReligion.js_instance
+ %>.answer() == 1;",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete this question only
+ if you answered 'Yes' above."
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Which one?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:catholic, 'Roman Catholic'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:protestant, 'Protestant'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:orthodox, 'Eastern Orthodox'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:other_chr, 'Other Christian denomination'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:jewish, 'Jewish'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:islamic, 'Islamic'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:eastern, 'Eastern religions'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:other_non_chr, 'Other non-Christian religions']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::HowReligious = Q::ScaleHorizontal.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Regardless of whether you belong to a particular religion,
+ how religious would you say you are?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          scale :range => 0..10,
+\end_layout
+
+\begin_layout Plain Layout
+
+                :start => "Not at all 
+\backslash
+n religious",
+\end_layout
+
+\begin_layout Plain Layout
+
+                :end => "Very 
+\backslash
+n religious"
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::ReligiousServices = Q::ReligiousFrequency.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Apart from special occasions such as weddings and funerals,
+ about how often do you attend religious services nowadays?'
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::PoliticalInterest = Q::RadioHorizontal.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'How interested would you say you are in politics?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [4, 'Not at all interested'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [3, 'Hardly interested'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [2, 'Quite interested'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [1, 'Very interested']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::PoliticsLeftRight = Q::ScaleHorizontal.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'In politics people sometimes talk of "left" and "right".
+ Where would you place yourself on this scale?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          scale :range => 0..10,
+\end_layout
+
+\begin_layout Plain Layout
+
+                :start => 'Left',
+\end_layout
+
+\begin_layout Plain Layout
+
+                :end => 'Right',
+\end_layout
+
+\begin_layout Plain Layout
+
+                :others => [[:dk, '', "Don't know"]]
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::FamilyBackground = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Your family background'
+\end_layout
+
+\begin_layout Plain Layout
+
+      text 'These questions are about you and your family when you were
+ growing up.'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      # Questions mainly adapted from National Survey of Sexual Attitudes
+ and Lifestyles 2000
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      assumed_still_home = Q::Age.answer && Q::Age.answer.to_i < 16
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Brothers = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Do you have, or did you have, any *brothers*?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Please include adopted and half brothers.', :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [2, 'Yes--more than one'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [1, 'Yes--one'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [0, 'No--none']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::BrothersAnswerHistory = Q::AnswerHistory.declare_new { monitor
+ Q::Brothers },
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Sisters = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Do you have, or did you have, any *sisters*?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Please include adopted and half sisters.', :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [2, 'Yes--more than one'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [1, 'Yes--one'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [0, 'No--none']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::SistersAnswerHistory = Q::AnswerHistory.declare_new { monitor
+ Q::Sisters },
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::BirthPosTwo = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { Q::Brothers.answer.to_i + Q::Sisters.answer.to_
+i == 1 },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "return parseInt(<%= Q::Brothers.js_instance
+ %>.answer() || 0) + parseInt(<%= Q::Sisters.js_instance %>.answer() || 0)
+ == 1;",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete this question only
+ if you have (or had) one brother or sister."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Which of you is, or was, older?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:oldest, 'Me'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:youngest, 'My brother or sister']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::BirthPosMany = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { Q::Brothers.answer.to_i + Q::Sisters.answer.to_
+i > 1 },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "return parseInt(<%= Q::Brothers.js_instance
+ %>.answer() || 0) + parseInt(<%= Q::Sisters.js_instance %>.answer() || 0)
+ > 1;",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete this question only
+ if you have (or had) two or more brothers and sisters."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Are you, or were you, the oldest, the youngest, or somewhere
+ in between?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:oldest, 'Oldest'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:youngest, 'Youngest'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:between, 'In between']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      question_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::NaturalParents = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text assumed_still_home ?
+\end_layout
+
+\begin_layout Plain Layout
+
+            'Have you lived more or less continuously with *both* of your
+ natural (birth) parents in the same home?' :
+\end_layout
+
+\begin_layout Plain Layout
+
+            'Did you live more or less continuously with *both* of your
+ natural (birth) parents in the same home until you were 16?'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "If you #{assumed_still_home ? 'have' : ''} lived with your
+ natural parents except when away at a boarding school or for other temporary
+ periods, please answer 'Yes'.", :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [1, 'Yes'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [0, 'No'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:na, 'Prefer not to answer']
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          completion :optional
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::WhyNotNaturalparents = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => lambda { Q::NaturalParents.answer == 0 },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete this question only
+ if you answered 'No' above.",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "return <%= Q::NaturalParents.js_instance
+ %>.answer() == 0;"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "Why #{assumed_still_home ? 'is' : 'was'} this?"
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:split, 'There was a divorce or separation'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:death, 'There was a death'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:adopted, 'I was adopted'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:never_together, 'My parents never lived together'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:other, 'Another reason'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:na, 'Prefer not to answer']
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          completion :optional
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::Shocks = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Negative events'
+\end_layout
+
+\begin_layout Plain Layout
+
+      question(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Shocks = Q::Checkbox.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Have you suffered any of the following *in the last 3 years*?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'Please tick *all* that apply.', :style => :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:unemployment, 'Compulsory redundancy'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:bankruptcy, 'Bankruptcy'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:repossession, 'Repossession of your home'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:bereavement, 'Death of a close friend or loved one'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:divorce, 'Separation or divorce from your spouse'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:othercrime, 'Theft or fraud'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:violentcrime, 'Violent or sexual crime']
+\end_layout
+
+\begin_layout Plain Layout
+
+          option_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+          exclusive_option [:none, 'None of the above']
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 0.5
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::Cycle = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Pregnancy and menstrual cycle'
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "*We recognise that these are very personal questions, so please
+ feel free not to answer them.* We ask them because we are interested in
+ whether they have a measurable effect on day-to-day wellbeing.", :style
+ => :info
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Pregnant = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "As far as you're aware, are you pregnant?"
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [1, 'Yes'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [0, 'No'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:refused, 'Prefer not to answer']
+\end_layout
+
+\begin_layout Plain Layout
+
+          completion :optional
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Period = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { Q::Pregnant.answer != 1 },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "return <%= Q::Pregnant.js_instance %>.answer()
+ != '1';",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete this question only
+ if you answered 'No' above."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "Where are you currently in your menstrual cycle?"
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [:on, "I've got my period now"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:recent, "My last period finished within the last 3 days"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:expected, "I expect my next period to start within the
+ next 3 days"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:mid_cycle, "I'm at some other point in my cycle"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:na, 'Not applicable'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:dk, 'Not sure'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [:refused, 'Prefer not to answer']
+\end_layout
+
+\begin_layout Plain Layout
+
+          completion :optional
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 0.5
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+      skip_unless { Q::Male.answer == 0 && Q::Age.answer && Q::Age.answer >=
+ 16 && Q::Age.answer <= 45},
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::Ethnicity = P::Wellbeing.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Ethnicity'
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "*Almost finished.* To help ensure we survey a representative
+ group of people, we'd be grateful if you'd answer this final, optional
+ question.", :style => :info
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Ethnicity = Q::Radio.declare_new do  # GB Census 2001 question
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'To which of these ethnic groups do you consider you belong?'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text '_White_'
+\end_layout
+
+\begin_layout Plain Layout
+
+          indent
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [1, 'White British'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [5, 'Any other white background']
+\end_layout
+
+\begin_layout Plain Layout
+
+          unindent
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text '_Mixed_'
+\end_layout
+
+\begin_layout Plain Layout
+
+          indent
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [6, 'White and Black Caribbean'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [7, 'White and Black African'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [8, 'White and Asian'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [9, 'Any other mixed background']
+\end_layout
+
+\begin_layout Plain Layout
+
+          unindent
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text '_Asian or Asian British_'
+\end_layout
+
+\begin_layout Plain Layout
+
+          indent
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [10, 'Indian'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [11, 'Pakistani'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [12, 'Bangladeshi'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [13, 'Any other Asian background']
+\end_layout
+
+\begin_layout Plain Layout
+
+          unindent
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text '_Black or Black British_'
+\end_layout
+
+\begin_layout Plain Layout
+
+          indent
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [14, 'Caribbean'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [15, 'African'],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [16, 'Any other Black background']
+\end_layout
+
+\begin_layout Plain Layout
+
+          unindent
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          option_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+          option [17, 'Chinese']
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          option [18, 'Any other ethnic group']
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          option_separator
+\end_layout
+
+\begin_layout Plain Layout
+
+          option [0, 'Prefer not to answer']
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          completion :optional
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::EthnicityOther = Q::Text.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          show_if :condition => -> { [5, 9, 13, 16, 18].include?(Q::Ethnicity.answ
+er) },
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :js_condition => "return $A([5, 9, 13, 16, 18]).include(<%=
+ Q::Ethnicity.js_instance %>.answer());",
+\end_layout
+
+\begin_layout Plain Layout
+
+                  :human_condition => "Please complete this question only
+ if you chose one of the 'Any other...' options above."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          text 'What is the other background or ethnic group to which you
+ consider you belong?'
+\end_layout
+
+\begin_layout Plain Layout
+
+          text_box :size => '40x1'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+          completion :optional
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+      forward_prompt 'Finish and submit answers &#187;'
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 0.25
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::TolunaCompletion = P::Redirect.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      completes_survey true
+\end_layout
+
+\begin_layout Plain Layout
+
+      destination_url (RAILS_ENV == 'production' ? 'http://as.automatesurvey.com/S
+OP/P299943697303072S2C' : 'http://www.google.com/search?q=completed')
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+      skip_unless { toluna_respondent_cond.call },
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::Thanks.declare do
+\end_layout
+
+\begin_layout Plain Layout
+
+      title 'Thank you'
+\end_layout
+
+\begin_layout Plain Layout
+
+      text contents_of_file 'thanks_text.txt'
+\end_layout
+
+\begin_layout Plain Layout
+
+      suppress_backward true
+\end_layout
+
+\begin_layout Plain Layout
+
+      completes_survey true
+\end_layout
+
+\begin_layout Plain Layout
+
+      progress_weight 0
+\end_layout
+
+\begin_layout Plain Layout
+
+      help_page nil
+\end_layout
+
+\begin_layout Plain Layout
+
+    end
+\end_layout
+
+\begin_layout Plain Layout
+
+  )
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

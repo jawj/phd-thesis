@@ -1,0 +1,1797 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[bf,hang,small]{caption}
+%\usepackage[sf,bf,raggedright]{titlesec}
+\definecolor{LinkColor}{rgb}{0,0,0.4}
+\usepackage[mmddyyyy,nodayofweek]{datetime}
+%\usepackage{pdfpages}
+%\usepackage{lineno}
+%\runninglinenumbers
+%\newrefformat{sub}{subsection \ref{#1}}
+%\newrefformat{app}{Appendix \ref{#1}}
+\newrefformat{app}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{par}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{sec}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{sub}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{fig}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{tab}{\hyperlink{#1}{\autoref{#1}}}
+\end_preamble
+\use_default_options false
+\master ../../000 master 01.lyx
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans helvet
+\font_typewriter beramono
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc true
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 85
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing other 1.1499999999999999
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 10
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=LinkColor,anchorcolor=LinkColor,citecolor=LinkColor,filecolor=LinkColor,menucolor=LinkColor,urlcolor=LinkColor"
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\branch Long appendices
+\selected 1
+\filename_suffix 0
+\color #ffffff
+\end_branch
+\branch Not in master doc
+\selected 1
+\filename_suffix 0
+\color #ffffff
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2cm
+\rightmargin 2.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle plain
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Experience sampling
+\end_layout
+
+\begin_layout Subsection
+Overview
+\end_layout
+
+\begin_layout Standard
+Overall goals: 
+\end_layout
+
+\begin_layout Standard
+large sample, hence:
+\end_layout
+
+\begin_layout Standard
+- scalability
+\end_layout
+
+\begin_layout Standard
+- lowest possible respondent burden (time, logistics, cognitive effort)
+\end_layout
+
+\begin_layout Standard
+--- everything can be done from iPhone
+\end_layout
+
+\begin_layout Standard
+--- fast, simple, attractive, ...
+ fun?
+\end_layout
+
+\begin_layout Standard
+--- ask as little as possible, use as much sensor data as possible
+\end_layout
+
+\begin_layout Standard
+- lowest possible researcher burden (time, logistics, money)
+\end_layout
+
+\begin_layout Standard
+- motivation
+\end_layout
+
+\begin_layout Standard
+--- feedback for participants
+\end_layout
+
+\begin_layout Standard
+--- information for prospective participants & journalists
+\end_layout
+
+\begin_layout Standard
+System summary:
+\end_layout
+
+\begin_layout Standard
+- two main system elements: iPhone app and data server
+\end_layout
+
+\begin_layout Standard
+- various additional elements for features and robustness
+\end_layout
+
+\begin_layout Standard
+core of system is this data flow:
+\end_layout
+
+\begin_layout Standard
+- data server transmits a beep to participant via Apple's APNS service
+\end_layout
+
+\begin_layout Standard
+- participant responds via app (app senses location meanwhile)
+\end_layout
+
+\begin_layout Standard
+- app transmits response and location data back to data server
+\end_layout
+
+\begin_layout Standard
+flowchart: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename system 03.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Mappiness infrastructure and data flow summary
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Survey design
+\end_layout
+
+\begin_layout Standard
+[Hektner et al p 43+ is good on this.]
+\end_layout
+
+\begin_layout Subsubsection
+Registration
+\end_layout
+
+\begin_layout Subsubsection
+Experience sampling
+\end_layout
+
+\begin_layout Standard
+Feelings (other ESM surveys)
+\end_layout
+
+\begin_layout Standard
+Other items
+\end_layout
+
+\begin_layout Standard
+Activities: 2x time use surveys + Killingsworth
+\end_layout
+
+\begin_layout Standard
+context effects:
+\end_layout
+
+\begin_layout Standard
+- feelings are first (and presented immediately if a beep is pending)
+\end_layout
+
+\begin_layout Standard
+- no mention in survey or any feedback of research hypotheses (i.e.
+ environment)
+\end_layout
+
+\begin_layout Subsection
+Signalling protocol
+\end_layout
+
+\begin_layout Standard
+Random, variable-interval assessments initiated by a researcher-induced
+ signal are standard in ESM and common in EMA studies.
+ Assuming perfect compliance, such 'signal-contingent sampling' provides
+ a representative and unbiased selection of participants' experiences 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shiffman:2007"
+
+\end_inset
+
+.
+ Conversely, assessments initiated at participants' discretion may be unrepresen
+tative due to self-selection, while assessments at regular, predictable
+ intervals may be unrepresentative because of regularities in activities
+ or moods, or because participants can modify their behaviour in anticipation
+ of an assessment 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "198"
+key "reis:2000a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Scheduling
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:scheduling"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A simple, random, and entirely non-predictable algorithm for scheduling
+ assessments might rely on a fixed probability of signalling each respondent
+ in each of very many very brief time periods.
+ For example, to signal each participant on average once a day, we might
+ cycle through the participant list every minute during the 720 minutes
+ between 8am and 8pm and, for each participant, signal him or her with a
+ probability of 1/720.
+ In practice, this simple algorithm is probably 
+\emph on
+too
+\emph default
+ random.
+ Using it, participants would occasionally experience very long or very
+ short gaps between signals.
+ Very long gaps might lead them to suspect a malfunction, while very short
+ gaps could cause significant annoyance (and produce identical or near-identical
+ responses that would add little information to the data set).
+\end_layout
+
+\begin_layout Standard
+Instead, most previous studies have therefore split the day into fixed blocks,
+ and signalled each participant at a moment picked at random within each
+ block, often subject to a constraint on the proximity of consecutive signals
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "41"
+key "hektner:2007"
+
+\end_inset
+
+.
+ For example, 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "209"
+key "turk:2007"
+
+\end_inset
+
+ define three blocks (8am -- noon, noon -- 4pm, and 4 -- 8pm) and ensure
+ that consecutive signals are 
+\begin_inset Quotes eld
+\end_inset
+
+scheduled to occur no closer than 2 hours apart
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Unfortunately, using fixed blocks increases the predictability of the schedule.
+ For example, in the study by 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "turk:2007"
+
+\end_inset
+
+, if I have not been signalled by 11.50am then I know that I will be signalled
+ in the next 10 minutes, and if I am then signalled at 11.55am I know I will
+ not be signalled again before 1.55pm.
+ Using fixed blocks also makes it complicated to maintain a uniform random
+ sample of moments while also constraining the proximity of consecutive
+ signals.
+ (Researchers have generally not revealed how their constraint on the proximity
+ of consecutive signals is implemented, but various naïve implementations
+ --- such as discarding schedules where the constraint is broken, and re-randomi
+sing until the constraint holds --- would lead to significant under-sampling
+ of the periods on either side of the switch-over between consecutive blocks).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename beep protocol illustration 01.pdf
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example beep schedule calculation using Mappiness protocol
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:example-beep-schedule"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+To reduce (although not eliminate) such predictability, and to maintain
+ a uniform random sample with relative ease, the algorithm developed for
+ Mappiness effectively also randomises the start and end times of blocks.
+ This algorithm operates as illustrated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:example-beep-schedule"
+
+\end_inset
+
+, which shows example calculations for a participant who is to be beeped
+ three times between 8am and 8pm, as in the 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "turk:2007"
+
+\end_inset
+
+ study.
+\end_layout
+
+\begin_layout Subsubsection
+Signalling period, hours and frequency
+\end_layout
+
+\begin_layout Standard
+Having chosen a scheduling algorithm, three key parameters of the signalling
+ protocol remain to be set.
+ These are: first, the total period during which participants will be signalled;
+ second, the frequency with which signals will be sent (the product of these
+ first two parameters being the total number of signals per participant);
+ and third, since it is generally undesirable to interrupt participants'
+ sleep, the hours of the day during which signals will and will not be sent.
+ 
+\end_layout
+
+\begin_layout Standard
+Most previous studies have employed a fixed total period and frequency across
+ all participants.
+ Periods have ranged from a few days to several months, and frequencies
+ have varied between 1 and more than 10 signals per day.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "delespaul:2003"
+
+\end_inset
+
+ offers some rules of thumb: 10 signals daily may be acceptable over a period
+ of one week, while sampling over longer periods should not exceed 6 signals/day.
+ The choice of parameters is influenced by the frequency of occurrence of
+ the phenomena of interest, the quantity of data required for anticipated
+ analyses, and the degree of burden on participants 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "40--42"
+key "hektner:2007"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Many studies have also used fixed hours of the day: for example, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "csikszentmihalyi:2001a"
+
+\end_inset
+
+ signalled all participants between 7.30am and 10.30pm.
+ This approach is far from ideal.
+ First, it requires that the signalling hours be truncated at each end to
+ accommodate the large majority of waking and sleeping times.
+ Most participants will thus not be signalled across the full length of
+ their waking days, compromising the representativeness of the sample of
+ experiences 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "238"
+key "stone:2002b"
+
+\end_inset
+
+.
+ Second, it still excludes potential participants with an unusual or variable
+ pattern of waking hours, such as those working shifts.
+\end_layout
+
+\begin_layout Standard
+As discussed above, Mappiness seeks to analyse the association of mood with
+ experiences of green and natural environments that are expected to be both
+ rare and of only moderate influence on it.
+ Therefore we wish to maximise both participation rates and the number of
+ signalled assessments per participant.
+ With this aim --- and also respecting the diversity and autonomy of participant
+s --- Mappiness places all three parameters under participants' control,
+ subject in most cases to conservative and low-burden minima/maxima and
+ defaults.
+\end_layout
+
+\begin_layout Standard
+The frequency of signals can at any time be set to 1, 2, 3, 4 or 5 per day,
+ with a default setting of 2.
+ Participants can at any time choose the hours during which they may be
+ signalled, in increments of 15 minutes, with a default range of 8am --
+ 10pm
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We considered supporting more flexible specification of signalling hours
+ --- such as by providing separate settings for weekdays and weekends, or
+ for every day of the week --- but decided that the associated benefits
+ would not justify the added complexity required of the user interface.
+ In any case, participants can achieve an arbitrarily complex pattern of
+ signalling hours by making alterations as and when required.
+\end_layout
+
+\end_inset
+
+.
+ The total period of participation is unbounded: participants are asked
+ to take part for as long or short a period as they wish, and instructed
+ that they are free to opt out of the study whenever they choose.
+ Because we hope that participants will find interest and value in taking
+ part, we do not wish to restrict their ability to continue doing so, while
+ also contributing useful data.
+ And although some researchers have found that data quality from an individual
+ diminishes after 2 -- 3 weeks of sampling 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "beal:2003"
+
+\end_inset
+
+, any such effect may be detected and dealt with as necessary.
+\end_layout
+
+\begin_layout Subsubsection
+Reachability and response
+\end_layout
+
+\begin_layout Standard
+Certain requirements inevitably restrict the sample of experiences captured
+ by a signal-contingent sampling study.
+ For a signal to be received and a response given, a participant must be:
+ 
+\end_layout
+
+\begin_layout Enumerate
+in possession of the signalling device (which must be charged and switched
+ on); 
+\end_layout
+
+\begin_layout Enumerate
+in an area with wireless data reception (e.g.
+ not on an underground rail system or in a remote rural area); 
+\end_layout
+
+\begin_layout Enumerate
+able to hear the signal (e.g.
+ not at a noisy bar or building site); 
+\end_layout
+
+\begin_layout Enumerate
+able to safely respond (e.g.
+ not driving); and 
+\end_layout
+
+\begin_layout Enumerate
+willing to do so.
+ 
+\end_layout
+
+\begin_layout Standard
+Use of the iPhone has a number of advantages over traditional pager- or
+ PDA-based ESM protocols in relation to the first point.
+ The device is portable and convenient.
+ Since it is already owned, and provides many other functions to the user,
+ it is also likely to be kept charged, switched on and within reach without
+ any additional burden on participants.
+ 
+\end_layout
+
+\begin_layout Standard
+Regarding the second point, base stations operated by all UK mobile communicatio
+ns providers now cover the vast majority of the country.
+ Remote, rural locations, which are likely to be of particular environmental
+ interest, are unfortunately also the least likely to enjoy coverage, however.
+\end_layout
+
+\begin_layout Paragraph
+Missing and delayed data
+\end_layout
+
+\begin_layout Standard
+If any of the five requirements listed above is not met, the response to
+ a signal may be missing or delayed.
+ Various choices have been made in previous studies regarding the protocol
+ to be followed in this case.
+ In some studies, participants are permitted to complete as assessment only
+ if they react to a signal 'immediately' (e.g.
+ within 30 seconds).
+ In other studies, participants are given a longer period in which to respond
+ --- during which reminder signals might or might not be sent --- or permitted
+ to actively request a postponement of the assessment.
+ If delayed responses are permitted, then the target of reporting must be
+ established as either 
+\begin_inset Quotes eld
+\end_inset
+
+a recollection of the experience at the time of the missed signal or the
+ experience at the (delayed) moment of recording
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "239"
+key "stone:2002"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename main_screen.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The Mappiness app main screen, showing response statistics
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:app-main-screen"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Mappiness allows an ESM assessment to be completed in response to a signal
+ at any time up to the receipt of the next signal.
+ If participants do not hear a signal, they can nevertheless ascertain that
+ a response is pending by the presence of a red badge on the Mappiness app's
+ icon.
+ The delay between signal and response is calculated and stored, so that
+ maximum allowable delays may be applied as required during data analysis.
+ Mappiness does encourage participants to respond quickly and consistently,
+ however, and response statistics are displayed prominently on the app's
+ main screen.
+ As illustrated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:app-main-screen"
+
+\end_inset
+
+, the following statistics are shown: total number of assessments completed;
+ response rate (the number of signalled responses divided by the number
+ of signals sent); and median (described as 'typical') response time.
+\end_layout
+
+\begin_layout Standard
+The target of a Mappiness assessment is always the moment of recording,
+ whether or not this is later than the moment of signalling.
+ This policy is easiest for participants, and does not risk introducing
+ elements of the recall bias that ESM is designed to eliminate.
+ There is little choice in the matter in any event, since the GPS location,
+ sound level and (where applicable) photograph will inevitably pertain to
+ the moment of recording.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Suspension of signalling
+\end_layout
+
+\begin_layout Standard
+Some ESM protocols enable participants to suspend signalling when signals
+ would be embarrassing or inconvenient.
+ As with other elements of the protocol, the decision to offer such a facility
+ hinges on a trade-off between convenience (and acceptability) of the protocol
+ to participants, and integrity of the sampling scheme 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "stone:2002"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As described in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:signalling"
+
+\end_inset
+
+, Mappiness signals are delivered by the Apple Push Notification Service,
+ which conforms to the user's overall alert settings for his or her device.
+ Mappiness signal alert sounds are delivered at the alert volume currently
+ selected by the user.
+ If the user has silenced the device, Mappiness signals will also be silenced.
+ If the user has opted for a vibrating alert in silenced and/or non-silenced
+ mode, Mappiness signals will also vibrate in those modes.
+ Of course, participants are also able to turn off their device if they
+ do not want to be reached.
+\end_layout
+
+\begin_layout Standard
+Mappiness thus effectively offers temporary suspension of signalling alongside
+ other device-wide settings.
+ On the one hand, this restricts our control over signalling; on the other,
+ it provides for the greatest consistency with participants' expectations,
+ and is respectful of their existing preferences.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Volunteered assessments
+\end_layout
+
+\begin_layout Standard
+Mappiness also permits ESM assessments to be volunteered at any time.
+ A volunteered assessment is defined as one completed when no assessment
+ is pending: in other words, when the most recent signal (if any) has already
+ been responded to.
+ As we inform participants, volunteered responses will not be included in
+ our analyses.
+ However, they still serve several purposes.
+ First, participants may wish to record particular experiences for their
+ own reference.
+ Second, newly-registered participants may wish to explore the mechanics
+ of the ESM response process immediately (and, in fact, a large majority
+ do).
+ Finally, participants are able to use a volunteered response to demonstrate
+ the response process to friends and acquaintances who are interested in
+ the study and may wish to take part themselves.
+ 
+\end_layout
+
+\begin_layout Subsection
+App
+\end_layout
+
+\begin_layout Subsubsection
+Interaction design
+\end_layout
+
+\begin_layout Standard
+Compliments!
+\end_layout
+
+\begin_layout Paragraph
+Registration
+\end_layout
+
+\begin_layout Standard
+Flow: 1, 2, 3 + Sign me up! -> Registration data flow
+\end_layout
+
+\begin_layout Standard
+Consent form
+\end_layout
+
+\begin_layout Standard
+Survey
+\end_layout
+
+\begin_layout Standard
+Settings (simplified form)
+\end_layout
+
+\begin_layout Standard
++ more info
+\end_layout
+
+\begin_layout Paragraph
+ESM survey
+\end_layout
+
+\begin_layout Standard
+Voluntary, or immediate popup when beep pending (no context FX)
+\end_layout
+
+\begin_layout Paragraph
+ESM sensor data
+\end_layout
+
+\begin_layout Standard
+GPS --- 100m threshold/delay
+\end_layout
+
+\begin_layout Standard
+Sound
+\end_layout
+
+\begin_layout Standard
+Photos -- when requested, resized, sent
+\end_layout
+
+\begin_layout Paragraph
+Other
+\end_layout
+
+\begin_layout Standard
+Settings (extended) 
+\end_layout
+
+\begin_layout Standard
+Info (minor edits)
+\end_layout
+
+\begin_layout Standard
+My happiness
+\end_layout
+
+\begin_layout Standard
+Data download/API (actually mainly server function)
+\end_layout
+
+\begin_layout Subsubsection
+Development
+\end_layout
+
+\begin_layout Standard
+Graphic design (Lineform)
+\end_layout
+
+\begin_layout Standard
+UI design: simplicity, speed/responsiveness, attractiveness/delight
+\begin_inset CommandInset citation
+LatexCommand citep
+key "apple-inc.:2011,shneiderman:1998"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Storyboard/mock-ups (OmniGraffle) + expert consultation (Rich!)
+\end_layout
+
+\begin_layout Standard
+Objective-C/Cocoa (Xcode/Interface Builder) -- Apple docs and 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mark:2009,mark:2010"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In tandem with data server, using Subversion version control
+\end_layout
+
+\begin_layout Standard
+Targets iOS 3+
+\end_layout
+
+\begin_layout Standard
+Sounds: normalised to maximum volume using the Audacity open-source audio
+ editing software
+\end_layout
+
+\begin_layout Subsubsection
+Implementation details
+\end_layout
+
+\begin_layout Standard
+Survey framework (plist files + custom classes)
+\end_layout
+
+\begin_layout Standard
+Data queue prioritisation (token updates, responses, images)
+\end_layout
+
+\begin_layout Subsection
+Data server
+\end_layout
+
+\begin_layout Standard
+Two separate data servers were deployed: the production and development
+ servers.
+ Each server is a VPS
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Virtual Private Server: a virtual machine that runs in software alongside
+ other virtual machines on a single physical computer.
+ It is functionally equivalent to and has the privacy of a separate physical
+ computer --- it runs its own full-fledged operating system and can be independe
+ntly rebooted --- but is generally cheaper to operate.
+\end_layout
+
+\end_inset
+
+ hosted by Linode, LLC
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+http://www.linode.com/
+\end_layout
+
+\end_inset
+
+ in their London data centre.
+ The servers run the Ubuntu Linux operating system
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+http://www.ubuntu.com
+\end_layout
+
+\end_inset
+
+ and a range of other open-source software packages.
+ Each is firewalled to prevent access to any services but the Mappiness
+ data services (over HTTP and HTTPS) and a secure shell (SSH) for system
+ administration.
+\end_layout
+
+\begin_layout Standard
+The production server communicates with the live app, and should be operational
+ and available at all times.
+ The development server is used for development and testing of the Mappiness
+ software.
+ It also serves as a 'guinea pig' system for configuration changes, and
+ for updates to the operating system and other supporting software.
+\end_layout
+
+\begin_layout Standard
+All original Mappiness software running on the data servers is coded in
+ Ruby
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+http://www.ruby-lang.org/en/
+\end_layout
+
+\end_inset
+
+, a dynamic, open source programming language.
+\end_layout
+
+\begin_layout Subsubsection
+Database
+\end_layout
+
+\begin_layout Standard
+At the heart of the data server is a PostgreSQL relational database system
+ with PostGIS spatial extensions
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+http://www.postgresql.org and http://postgis.refractions.net
+\end_layout
+
+\end_inset
+
+.
+ The Mappiness database schema (presented in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:db-schema"
+
+\end_inset
+
+) consists of five key tables.
+\end_layout
+
+\begin_layout Itemize
+The 
+\emph on
+users
+\emph default
+ table stores administrative details at participant (app) level: each row
+ maps to one past or current registered installation of the Mappiness app
+ on a participant's iPhone.
+ Details stored include the participant ID number and authentication secret
+ for that app installation, the participant's beep settings, and the 'device
+ token' identifying the installation to Apple's push notification servers.
+\end_layout
+
+\begin_layout Itemize
+The 
+\emph on
+demographic_answer_sets 
+\emph default
+table also contains one row per registered app installation.
+ It holds the participant's answers to the survey presented during the registrat
+ion process, and is linked to the relevant row of the 
+\emph on
+users
+\emph default
+ table.
+\end_layout
+
+\begin_layout Itemize
+The 
+\emph on
+esm_answer_sets
+\emph default
+ table has one row per participant response.
+ It holds the participant's answers, and links to the relevant row of the
+ 
+\emph on
+users
+\emph default
+ table and (where applicable) the 
+\emph on
+sent_beeps
+\emph default
+ table.
+ It does not hold contributed photographs, which are instead stored within
+ the file system.
+\end_layout
+
+\begin_layout Itemize
+The 
+\emph on
+pending_beeps
+\emph default
+ and 
+\emph on
+sent_beeps
+\emph default
+ tables support the beeper system.
+ The former is a transient store of signals that will be sent in the next
+ 24 hours, while the latter records details of all signals sent.
+ Both are linked to the relevant rows of the 
+\emph on
+users
+\emph default
+ table.
+\end_layout
+
+\begin_layout Subsubsection
+Signalling
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:signalling"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+The Apple Push Notifications Service (APNS)
+\end_layout
+
+\begin_layout Standard
+Apps for Apple's iOS can make use of the Apple Push Notifications Service
+ (APNS).
+ This service enables an app provider to send a notification to an app user's
+ device.
+ APNS notifications operate, and appear to device users, in a manner very
+ similar to SMS text messages, but can be sent at no cost to sender or recipient.
+ Notifications are sent via APNS servers operated by Apple.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Late in the development of the Mappiness app a new version of the iPhone
+ operating system, iOS 4, introduced Local Notifications.
+ Local Notifications are scheduled by an app itself.
+ Local Notifications would have some advantages over Push Notifications
+ --- chiefly, that they would not require an active data connection, and
+ so could be received at any location.
+ Used alone, they would also have disadvantages --- no more than 64 Local
+ Notifications may be scheduled, and if the app is not opened before these
+ expire then no more notifications can be received.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A notification can be delivered at any time the target device is available
+ --- that is, powered on and connected to the Internet --- whether or not
+ the relevant app is open.
+ If the device is available, a notification is usually delivered within
+ a few seconds; if it is not, the notification is queued for delivery at
+ the next opportunity.
+ Delivery of notifications 
+\begin_inset Quotes eld
+\end_inset
+
+is 'best effort' and is not guaranteed
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "31"
+key "apple-inc.:2010a"
+
+\end_inset
+
+, although our testing indicates that the vast majority of notifications
+ are delivered successfully.
+\end_layout
+
+\begin_layout Standard
+If an app provider attempts to send a notification to an app which no longer
+ exists on the target device, the device reports this to the APNS, which
+ updates an app-specific list of devices for which there were failed delivery
+ attempts.
+ App providers are obliged to query a feedback service regularly to retrieve
+ this list, and to refrain from sending future notifications to the listed
+ devices unless they are subsequently re-registered.
+\end_layout
+
+\begin_layout Paragraph
+Communicating with the APNS
+\end_layout
+
+\begin_layout Standard
+Mappiness uses APNS notifications to signal participants.
+ Communicating with the APNS requires use of a proprietary binary protocol
+ over a persistent, authenticated connection.
+ Managing such a connection is somewhat technically demanding, and Mappiness
+ therefore relies on intermediary software.
+\end_layout
+
+\begin_layout Standard
+Initially, the free tier of a commercial service operated by Urban Airship,
+ Inc.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+http://urbanairship.com/products/push-notifications/
+\end_layout
+
+\end_inset
+
+ was used.
+ This service connects to the APNS on behalf of app providers, and is controlled
+ via a simple API
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Application Programming Interface: a documented interface that enables one
+ computer program or system to communicate with another.
+\end_layout
+
+\end_inset
+
+ that sends and receives data using JSON
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+JavaScript Object Notation: a concise, text-based data format.
+\end_layout
+
+\end_inset
+
+ messages over HTTPS
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+HyperText Transfer Protocol Secure: the encrypted protocol used to transmit
+ secure web pages.
+\end_layout
+
+\end_inset
+
+.
+ However, the volume of notifications sent rapidly approached the usage
+ limits of the free service tier.
+\end_layout
+
+\begin_layout Standard
+After evaluating various alternatives we therefore installed an additional
+ open-source software package on the Mappiness data server: pyapns
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+https://github.com/samuraisam/pyapns
+\end_layout
+
+\end_inset
+
+.
+ Like the Urban Airship service, pyapns handles all communication with the
+ APNS and is controlled by a simple API.
+ The pyapns API communicates over XML-RPC
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+eXtensible Markup Language Remote Procedure Call: a verbose, text-based
+ protocol for sending and receiving API messages.
+\end_layout
+
+\end_inset
+
+, but also provides a Ruby client library to encapsulate this communication.
+ The Mappiness signalling software was rewritten to use the pyapns client
+ library (to which we also contributed several fixes).
+\end_layout
+
+\begin_layout Paragraph
+Signalling using APNS
+\end_layout
+
+\begin_layout Standard
+Mappiness makes use of the three available APNS features: it plays an alert
+ sound, displays a textual message, and causes the number '1' to be displayed
+ on a red badge over the app's icon to indicate that there is one ESM survey
+ pending.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+(a) 
+\begin_inset Graphics
+	filename apns_unlocked_screenshot.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+(b) 
+\begin_inset Graphics
+	filename apns_locked_screenshot.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Mappiness APNS notification display when device is (a) unlocked or (b) locked
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:APNS-notification"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+The alert sound is chosen by participants from a list within the app settings
+ screen.
+ The message reads: '
+\series bold
+mappiness
+\series default
+ --- How do you feel? Please tell us as soon as you safely can'.
+ If the device is unlocked, two associated buttons are displayed: 'Close'
+ dismisses the notification, and 'View' launches the Mappiness app directly
+ into ESM survey mode.
+ If the device is locked, a slider is available to launch the app into ESM
+ survey mode.
+ Notification display is illustrated in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:APNS-notification"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Signalling is performed by the signalling programme on the Mappiness data
+ server.
+ The programme is executed every 2 minutes, and on each execution performs
+ the following tasks:
+\end_layout
+
+\begin_layout Enumerate
+Connect to the APNS feedback service to retrieve a list of app installations
+ with failed deliveries.
+ Mark all listed installations inactive in the 
+\emph on
+users
+\emph default
+ database table, and delete any pending signals associated with them from
+ the 
+\emph on
+pending_beeps
+\emph default
+ table.
+ (This task is only performed if it has not been performed in the past hour).
+\end_layout
+
+\begin_layout Enumerate
+For each participant who has reached the end of signalling hours since the
+ last programme execution, calculate the signalling schedule for the next
+ day according to the algorithm described in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:scheduling"
+
+\end_inset
+
+.
+ Similarly, for each participant who has changed their beep settings since
+ last programme execution, recalculate the signalling schedule for the remaining
+ hours of this day (if applicable)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+If settings are changed during the (potentially newly set) hours of the
+ participant's signalling day, the number of signals to be sent during the
+ remainder of the day is calculated on a probabilistic 
+\emph on
+pro rata 
+\emph default
+basis.
+ For example, a participant who selects to receive 3 signals per day half-way
+ through a day is theoretically due 1.5 signals during the remainder of the
+ day.
+ He or she will thus certainly be sent 1 signal, and will be sent a second
+ with a probability of 50%.
+\end_layout
+
+\end_inset
+
+ or for the next day.
+ Store the resulting pending signals in the 
+\emph on
+pending_beeps
+\emph default
+ table.
+\end_layout
+
+\begin_layout Enumerate
+For each signal in the 
+\emph on
+pending_beeps
+\emph default
+ table that has fallen due since the last programme execution, delete the
+ pending signal, send an APNS notification to the associated participant,
+ and create a record of the sent signal in the 
+\emph on
+sent_beeps
+\emph default
+ table.
+\end_layout
+
+\begin_layout Paragraph
+Safeguards
+\end_layout
+
+\begin_layout Standard
+Foreseeable failure modes of the signalling system could antagonise participants.
+ For example, participants might be woken from sleep if they were were signalled
+ outside the hours they have specified, or feel harassed and irritated if
+ they were signalled many times over a short period of time.
+ In such cases, the reputation of the project --- and its ability to recruit
+ and keep participants --- could be damaged.
+\end_layout
+
+\begin_layout Standard
+The signalling system was therefore implemented defensively, to try to prevent
+ such failures.
+ For example, the system considers the hours during which a participant
+ may be beeped as finishing 10 minutes prior to the time specified by the
+ participant, to account for possible delays in notification delivery.
+ It deletes pending signals from the database 
+\emph on
+prior
+\emph default
+ to attempting their delivery, so that further deliveries will not be attempted
+ during the next execution if an error occurs during the deletion phase.
+ And it refuses to proceed (and emails the system administrator) if more
+ than a set number of signals appear to fall due at one moment.
+\end_layout
+
+\begin_layout Subsubsection
+Data API
+\end_layout
+
+\begin_layout Standard
+The Mappiness app communicates with the data server via the private data
+ API.
+ The data API is a web application that receives and sends JSON messages
+ over an encrypted HTTPS connection.
+ It is written using the Sinatra framework for Ruby and served by the Phusion
+ Passenger module for the nginx web server (all open-source).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+http://www.sinatrarb.com/, http://www.modrails.com/ and http://nginx.org/
+\end_layout
+
+\end_inset
+
+ The data API makes the following nine commands available to the app:
+\end_layout
+
+\begin_layout Description
+register Called on completion of the participant sign-up process.
+ The app sends details of the APNS device token required for sending signals
+ to the registering device, and of the participant's confirmed signalling
+ settings (both of which are stored in the 
+\emph on
+users
+\emph default
+ table).
+ It also sends the participant's answers to the registration survey (which
+ are stored in 
+\emph on
+demographic_answer_sets
+\emph default
+).
+ In response, the API returns a unique participant ID and a random 20-character
+ secret.
+ The app stores these, and uses them to authenticate itself (using HTTP
+ Basic authentication) for all future API requests.
+\end_layout
+
+\begin_layout Description
+esm_answers Called with new ESM assessment responses, which are stored in
+ the 
+\emph on
+esm_answer_sets 
+\emph default
+table.
+ The API also links the response set with the signal it was given in response
+ to (if applicable) in the 
+\emph on
+sent_beeps
+\emph default
+ table.
+\end_layout
+
+\begin_layout Description
+image Called with the JPEG image data resulting from a photo taken during
+ an ESM assessment, and a code identifying this associated ESM assessment.
+ The image is stored in the filesystem.
+ If it was marked as public, it is also made accessible from the maps page
+ of the public Mappiness website.
+\end_layout
+
+\begin_layout Description
+user_status Called on app launch or when there are no further ESM assessment
+ responses queued for sending to the API.
+ The API calculates and returns the response statistics alongside a status
+ message to be displayed on the main screen.
+\end_layout
+
+\begin_layout Description
+graphs_bluff Called when the participant taps the 'My happiness' control.
+ The API returns instructions for displaying the participant's feedback
+ charts (using the Bluff
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+http://bluff.jcoglan.com/
+\end_layout
+
+\end_inset
+
+ charting library for JavaScript) as an HTML/CSS/JavaScript document.
+\end_layout
+
+\begin_layout Description
+settings Called when the participant changes his or her signalling settings.
+ The new settings are stored in the 
+\emph on
+users
+\emph default
+ table.
+\end_layout
+
+\begin_layout Description
+toggle_download Called when the participant enables or disables data download,
+ or to query its current status.
+ When querying or enabling data download, the API returns the secret HTTPS
+ URL via which the participant's data is accessible.
+\end_layout
+
+\begin_layout Description
+update_token Called if the app detects that its APNS device token has changed.
+ The message includes the new device token, which is stored in the 
+\emph on
+users
+\emph default
+ table.
+\end_layout
+
+\begin_layout Description
+apn_ignored Called in the rare case that the app receives an APNS notification
+ that cannot be displayed because another modal activity is in progress
+ (such as completing an ESM assessment or changing signalling settings).
+ The API flags the relevant notification in the 
+\emph on
+sent_beeps
+\emph default
+ database table to indicate that it should not count towards the total signals
+ received by the participant (the signal is not rescheduled, so the participant
+ receives fewer than the scheduled number of signals on the day in question).
+\end_layout
+
+\begin_layout Subsubsection
+Security and backup
+\end_layout
+
+\begin_layout Standard
+Importance
+\end_layout
+
+\begin_layout Standard
+Backups (duplicity)
+\end_layout
+
+\begin_layout Subsubsection
+Web statistics
+\end_layout
+
+\begin_layout Standard
+cron job -- support maps, meters, participant count
+\end_layout
+
+\begin_layout Subsubsection
+Download API
+\end_layout
+
+\begin_layout Standard
+Weather + pollution hourly downloads
+\end_layout
+
+\begin_layout Standard
+Website/cron jobs
+\end_layout
+
+\begin_layout Subsubsection
+Weather
+\end_layout
+
+\begin_layout Standard
+Cron job
+\end_layout
+
+\begin_layout Subsection
+Piloting
+\end_layout
+
+\begin_layout Standard
+Piloting app (survey + other UI), and testing software
+\end_layout
+
+\begin_layout Standard
+Changes
+\end_layout
+
+\begin_layout Subsection
+Recruitment
+\end_layout
+
+\begin_layout Subsubsection
+Participant motivation
+\end_layout
+
+\begin_layout Standard
+Opportunistic recruitment
+\end_layout
+
+\begin_layout Standard
+Intrinsic/altruistic, response vars (gamelike?), charts, data download/API
+\end_layout
+
+\begin_layout Subsubsection
+Communication channels
+\end_layout
+
+\begin_layout Standard
+Two-way!
+\end_layout
+
+\begin_layout Paragraph
+App Store
+\end_layout
+
+\begin_layout Standard
+description text & feature request
+\end_layout
+
+\begin_layout Standard
+Reviews (and review prompt in app after 10 responses -- esp in relation
+ to iOS 3 issue)
+\end_layout
+
+\begin_layout Paragraph
+Website 
+\end_layout
+
+\begin_layout Standard
+content (participant & journo honeypot!)
+\end_layout
+
+\begin_layout Standard
+'get satisfaction' feedback site -- and summary?
+\end_layout
+
+\begin_layout Paragraph
+Press 
+\end_layout
+
+\begin_layout Standard
+press release
+\end_layout
+
+\begin_layout Standard
+press resources
+\end_layout
+
+\begin_layout Standard
+interviews
+\end_layout
+
+\begin_layout Paragraph
+Social media
+\end_layout
+
+\begin_layout Standard
+Blog, Twitter
+\end_layout
+
+\begin_layout Paragraph
+Conferences
+\end_layout
+
+\begin_layout Standard
+Conferences, TEDx
+\end_layout
+
+\begin_layout Paragraph
+App
+\end_layout
+
+\begin_layout Standard
+Status message
+\end_layout
+
+\begin_layout Subsubsection
+Publicity
+\end_layout
+
+\begin_layout Standard
+App Store feature
+\end_layout
+
+\begin_layout Standard
+Conventional media: newspapers/news websites, radio, TV --- listing
+\end_layout
+
+\begin_layout Standard
+Social media (Twitter, Facebook, blogs)
+\end_layout
+
+\begin_layout Subsection
+Data collection
+\end_layout
+
+\begin_layout Standard
+Period
+\end_layout
+
+\begin_layout Standard
+Technical issues: software fixes; database indexing; memory and Passenger
+ process trade-off
+\end_layout
+
+\begin_layout Standard
+Updates (e.g.
+ 'My happiness' graphs, activities)
+\end_layout
+
+\begin_layout Standard
+Sign-up graph? Responses graph? Coverage map?
+\end_layout
+
+\begin_layout Subsection
+Data quality and cleaning
+\end_layout
+
+\begin_layout Standard
+Analysis server (for power!)
+\end_layout
+
+\begin_layout Standard
+Duplicates
+\end_layout
+
+\begin_layout Standard
+Own data
+\end_layout
+
+\end_body
+\end_document

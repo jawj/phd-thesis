@@ -1,0 +1,344 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[bf,hang,small]{caption}
+%\usepackage[sf,bf,raggedright]{titlesec}
+\definecolor{LinkColor}{rgb}{0,0,0.4}
+\usepackage[mmddyyyy,nodayofweek]{datetime}
+%\usepackage{pdfpages}
+%\usepackage{lineno}
+%\runninglinenumbers
+%\newrefformat{sub}{subsection \ref{#1}}
+%\newrefformat{app}{Appendix \ref{#1}}
+\newrefformat{app}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{par}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{sec}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{sub}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{fig}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{tab}{\hyperlink{#1}{\autoref{#1}}}
+
+\renewcommand\chaptername{Chapter}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans helvet
+\font_typewriter beramono
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc true
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 85
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing other 1.1499999999999999
+\use_hyperref true
+\pdf_title "Happiness and Environmental Quality"
+\pdf_author "George MacKerron"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 3
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref page
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=LinkColor,anchorcolor=LinkColor,citecolor=LinkColor,filecolor=LinkColor,menucolor=LinkColor,urlcolor=LinkColor"
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\branch Long appendices
+\selected 0
+\filename_suffix 0
+\color #ffffff
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2.5cm
+\rightmargin 3cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle plain
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\paragraph_spacing single
+\noindent
+
+\series bold
+Happiness and Environmental Quality
+\end_layout
+
+\begin_layout Author
+\paragraph_spacing single
+\noindent
+George MacKerron
+\begin_inset Newline newline
+\end_inset
+
+Department of Geography & Environment
+\begin_inset Newline newline
+\end_inset
+
+London School of Economics & Political Science
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Supervisor: Dr Susana Mourato
+\begin_inset Newline newline
+\end_inset
+
+Review supervisor: Dr Steve Gibbons
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename LSE_logo_no_strokes.pdf
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+\paragraph_spacing single
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "010 Intro/intro 01.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "020 Lit review/lit review 01.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+Bridging material (at end of lit review?):
+\end_layout
+
+\begin_layout Standard
+- Happiness/wellbeing and environment --- in economics and more broadly
+\end_layout
+
+\begin_layout Standard
+- ESM/EMA, citizen cyberscience, ubiquitous computing, http://trackyourhappiness.
+org, http://web.mit.edu/wockets/, http://myexperience.sourceforge.net/, http://www.pr
+ojectcharm.info/ (and may refs in ESM folder in BibDesk)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "030 Methods/010 Web survey/survey methods 15.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "030 Methods/020 ESM/esm methods 01.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "030 Methods/030 GIS and stats/gis methods 01.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "040 Results/010 Web survey results/web survey results 01.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "040 Results/020 ESM results/esm results 01.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "050 Discussion/discussion 01.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "all"
+options "bibtotoc,apalike2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+\begin_inset CommandInset include
+LatexCommand include
+filename "030 Methods/010 Web survey/survey methods appendices 01.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "030 Methods/020 ESM/esm appendix 01.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
