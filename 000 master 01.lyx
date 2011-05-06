@@ -262,7 +262,7 @@ filename "030 Methods/020 ESM/esm methods 01.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "030 Methods/030 GIS and stats/gis methods 01.lyx"
+filename "030 Methods/030 GIS/gis methods 01.lyx"
 
 \end_inset
 

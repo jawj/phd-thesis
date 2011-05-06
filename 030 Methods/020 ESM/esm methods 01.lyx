@@ -311,13 +311,13 @@ name "sub:scheduling"
 
 \begin_layout Standard
 A simple, random, and entirely non-predictable algorithm for scheduling
- assessments might rely on a fixed probability of signalling each respondent
- in each of very many very brief time periods.
+ assessments could rely on a fixed probability of signalling each respondent
+ in each of many brief time periods.
  For example, to signal each participant on average once a day, we might
  cycle through the participant list every minute during the 720 minutes
  between 8am and 8pm and, for each participant, signal him or her with a
  probability of 1/720.
- In practice, this simple algorithm is probably 
+ In practice, this simple algorithm is almost certainly 
 \emph on
 too
 \emph default
@@ -424,9 +424,9 @@ name "fig:example-beep-schedule"
 
 \end_inset
 
-To reduce (although not eliminate) such predictability, and to maintain
- a uniform random sample with relative ease, the algorithm developed for
- Mappiness effectively also randomises the start and end times of blocks.
+To reduce (although not eliminate) predictability, and to maintain a uniform
+ random sample with relative ease, the algorithm developed for Mappiness
+ effectively also randomises the start and end times of blocks.
  This algorithm operates as illustrated in 
 \begin_inset CommandInset ref
 LatexCommand formatted
