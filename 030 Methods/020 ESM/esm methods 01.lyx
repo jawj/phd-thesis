@@ -194,7 +194,7 @@ flowchart:
 \begin_inset Float figure
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -230,16 +230,16 @@ Mappiness infrastructure and data flow summary
 Survey design
 \end_layout
 
-\begin_layout Standard
-[Hektner et al p 43+ is good on this.]
-\end_layout
-
 \begin_layout Subsubsection
 Registration
 \end_layout
 
 \begin_layout Subsubsection
 Experience sampling
+\end_layout
+
+\begin_layout Standard
+[Hektner et al p 43+ is good on this.]
 \end_layout
 
 \begin_layout Standard
@@ -455,8 +455,8 @@ Having chosen a scheduling algorithm, three key parameters of the signalling
  These are: first, the total period during which participants will be signalled;
  second, the frequency with which signals will be sent (the product of these
  first two parameters being the total number of signals per participant);
- and third, since it is generally undesirable to interrupt participants'
- sleep, the hours of the day during which signals will and will not be sent.
+ and third, since we do not want to interrupt participants' sleep, the hours
+ of the day during which signals will and will not be sent.
  
 \end_layout
 
@@ -497,9 +497,9 @@ key "csikszentmihalyi:2001a"
 \end_inset
 
  signalled all participants between 7.30am and 10.30pm.
- This approach is far from ideal.
+ However, this approach is far from ideal.
  First, it requires that the signalling hours be truncated at each end to
- accommodate the large majority of waking and sleeping times.
+ accommodate a large majority of waking and sleeping times.
  Most participants will thus not be signalled across the full length of
  their waking days, compromising the representativeness of the sample of
  experiences 
@@ -511,28 +511,28 @@ key "stone:2002b"
 \end_inset
 
 .
- Second, it still excludes potential participants with an unusual or variable
- pattern of waking hours, such as those working shifts.
+ Second, potential participants with an unusual or variable pattern of waking
+ hours, such as those working shifts, are still effectively excluded from
+ taking part.
 \end_layout
 
 \begin_layout Standard
 As discussed above, Mappiness seeks to analyse the association of mood with
  experiences of green and natural environments that are expected to be both
  rare and of only moderate influence on it.
- Therefore we wish to maximise both participation rates and the number of
+ Therefore we wish to maximise both participation rate and the number of
  signalled assessments per participant.
  With this aim --- and also respecting the diversity and autonomy of participant
 s --- Mappiness places all three parameters under participants' control,
- subject in most cases to conservative and low-burden minima/maxima and
- defaults.
+ subject to conservative, low-burden minima/maxima and defaults.
 \end_layout
 
 \begin_layout Standard
 The frequency of signals can at any time be set to 1, 2, 3, 4 or 5 per day,
  with a default setting of 2.
  Participants can at any time choose the hours during which they may be
- signalled, in increments of 15 minutes, with a default range of 8am --
- 10pm
+ signalled, specifying start and end times to the nearest 15 minutes, with
+ a default range of 8am -- 10pm
 \begin_inset Foot
 status collapsed
 
@@ -540,9 +540,9 @@ status collapsed
 We considered supporting more flexible specification of signalling hours
  --- such as by providing separate settings for weekdays and weekends, or
  for every day of the week --- but decided that the associated benefits
- would not justify the added complexity required of the user interface.
- In any case, participants can achieve an arbitrarily complex pattern of
- signalling hours by making alterations as and when required.
+ would not justify the added complexity required for the user interface.
+ Participants can still achieve an arbitrarily complex pattern of signalling
+ hours by making alterations to these hours as necessary.
 \end_layout
 
 \end_inset
@@ -605,7 +605,7 @@ willing to do so.
 Use of the iPhone has a number of advantages over traditional pager- or
  PDA-based ESM protocols in relation to the first point.
  The device is portable and convenient.
- Since it is already owned, and provides many other functions to the user,
+ Since it is already owned and provides many other functions to the user,
  it is also likely to be kept charged, switched on and within reach without
  any additional burden on participants.
  
@@ -627,7 +627,7 @@ If any of the five requirements listed above is not met, the response to
  a signal may be missing or delayed.
  Various choices have been made in previous studies regarding the protocol
  to be followed in this case.
- In some studies, participants are permitted to complete as assessment only
+ In some studies, participants are permitted to complete an assessment only
  if they react to a signal 'immediately' (e.g.
  within 30 seconds).
  In other studies, participants are given a longer period in which to respond
@@ -713,7 +713,8 @@ reference "fig:app-main-screen"
 
 , the following statistics are shown: total number of assessments completed;
  response rate (the number of signalled responses divided by the number
- of signals sent); and median (described as 'typical') response time.
+ of signals sent); and median (which is labelled as 'typical') response
+ time.
 \end_layout
 
 \begin_layout Standard
@@ -721,9 +722,9 @@ The target of a Mappiness assessment is always the moment of recording,
  whether or not this is later than the moment of signalling.
  This policy is easiest for participants, and does not risk introducing
  elements of the recall bias that ESM is designed to eliminate.
- There is little choice in the matter in any event, since the GPS location,
- sound level and (where applicable) photograph will inevitably pertain to
- the moment of recording.
+ This policy is also the only one that is feasible, since the GPS location
+ data, sound level and (where applicable) photograph will inevitably pertain
+ to the moment of recording.
  
 \end_layout
 
@@ -735,8 +736,8 @@ Suspension of signalling
 Some ESM protocols enable participants to suspend signalling when signals
  would be embarrassing or inconvenient.
  As with other elements of the protocol, the decision to offer such a facility
- hinges on a trade-off between convenience (and acceptability) of the protocol
- to participants, and integrity of the sampling scheme 
+ hinges on a trade-off between the convenience (and acceptability) of the
+ protocol to participants and the integrity of the sampling scheme 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "stone:2002"
@@ -756,13 +757,13 @@ reference "sub:signalling"
 
 , Mappiness signals are delivered by the Apple Push Notification Service,
  which conforms to the user's overall alert settings for his or her device.
- Mappiness signal alert sounds are delivered at the alert volume currently
- selected by the user.
+ Mappiness signal alert sounds are delivered at the highest possible volume
+ subject to the user's currently selected limit.
  If the user has silenced the device, Mappiness signals will also be silenced.
  If the user has opted for a vibrating alert in silenced and/or non-silenced
  mode, Mappiness signals will also vibrate in those modes.
- Of course, participants are also able to turn off their device if they
- do not want to be reached.
+ Of course, participants are also able to turn off their device, and in
+ that case cannot receive signals.
 \end_layout
 
 \begin_layout Standard
@@ -779,7 +780,7 @@ Volunteered assessments
 \end_layout
 
 \begin_layout Standard
-Mappiness also permits ESM assessments to be volunteered at any time.
+Mappiness permits ESM assessments to be volunteered at any time.
  A volunteered assessment is defined as one completed when no assessment
  is pending: in other words, when the most recent signal (if any) has already
  been responded to.
@@ -912,6 +913,10 @@ key "mark:2009,mark:2010"
 \end_layout
 
 \begin_layout Standard
+Survey framework (plist files + custom classes)
+\end_layout
+
+\begin_layout Standard
 In tandem with data server, using Subversion version control
 \end_layout
 
@@ -925,15 +930,11 @@ Sounds: normalised to maximum volume using the Audacity open-source audio
 \end_layout
 
 \begin_layout Subsubsection
-Implementation details
+Device replacement
 \end_layout
 
 \begin_layout Standard
-Survey framework (plist files + custom classes)
-\end_layout
-
-\begin_layout Standard
-Data queue prioritisation (token updates, responses, images)
+What happens when user switches device?
 \end_layout
 
 \begin_layout Subsection
@@ -943,7 +944,16 @@ Data server
 \begin_layout Standard
 Two separate data servers were deployed: the production and development
  servers.
- Each server is a VPS
+ The production server communicates with the live app, and should be operational
+ and available at all times.
+ The development server is used for development and testing of the Mappiness
+ software.
+ It also serves as a 'guinea pig' system for configuration changes, and
+ for updates to the operating system and other supporting software.
+\end_layout
+
+\begin_layout Standard
+Each server is a VPS
 \begin_inset Foot
 status collapsed
 
@@ -979,22 +989,7 @@ http://www.ubuntu.com
 \end_inset
 
  and a range of other open-source software packages.
- Each is firewalled to prevent access to any services but the Mappiness
- data services (over HTTP and HTTPS) and a secure shell (SSH) for system
- administration.
-\end_layout
-
-\begin_layout Standard
-The production server communicates with the live app, and should be operational
- and available at all times.
- The development server is used for development and testing of the Mappiness
- software.
- It also serves as a 'guinea pig' system for configuration changes, and
- for updates to the operating system and other supporting software.
-\end_layout
-
-\begin_layout Standard
-All original Mappiness software running on the data servers is coded in
+ All original Mappiness software running on the data servers is coded in
  Ruby
 \begin_inset Foot
 status collapsed
@@ -1032,15 +1027,11 @@ reference "sec:db-schema"
 
 \end_inset
 
-) consists of five key tables.
+) consists of five key tables:
 \end_layout
 
-\begin_layout Itemize
-The 
-\emph on
-users
-\emph default
- table stores administrative details at participant (app) level: each row
+\begin_layout Description
+users stores administrative details at participant (app) level: each row
  maps to one past or current registered installation of the Mappiness app
  on a participant's iPhone.
  Details stored include the participant ID number and authentication secret
@@ -1048,57 +1039,37 @@ users
  token' identifying the installation to Apple's push notification servers.
 \end_layout
 
-\begin_layout Itemize
-The 
+\begin_layout Description
+demographic_answer_sets
 \emph on
-demographic_answer_sets 
+ 
 \emph default
-table also contains one row per registered app installation.
+also contains one row per registered app installation.
  It holds the participant's answers to the survey presented during the registrat
-ion process, and is linked to the relevant row of the 
-\emph on
-users
-\emph default
- table.
+ion process, and is linked to the relevant row of the users table.
 \end_layout
 
-\begin_layout Itemize
-The 
-\emph on
-esm_answer_sets
-\emph default
- table has one row per participant response.
+\begin_layout Description
+esm_answer_sets has one row per participant response.
  It holds the participant's answers, and links to the relevant row of the
- 
-\emph on
-users
-\emph default
- table and (where applicable) the 
-\emph on
-sent_beeps
-\emph default
- table.
+ users table and (where applicable) the sent_beeps table.
  It does not hold contributed photographs, which are instead stored within
  the file system.
 \end_layout
 
-\begin_layout Itemize
-The 
-\emph on
+\begin_layout Description
 pending_beeps
-\emph default
- and 
-\emph on
-sent_beeps
-\emph default
- tables support the beeper system.
+\begin_inset space ~
+\end_inset
+
+and
+\begin_inset space ~
+\end_inset
+
+sent_beeps support the beeper system.
  The former is a transient store of signals that will be sent in the next
  24 hours, while the latter records details of all signals sent.
- Both are linked to the relevant rows of the 
-\emph on
-users
-\emph default
- table.
+ Both are linked to the relevant rows of the users table.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1167,8 +1138,8 @@ key "apple-inc.:2010a"
 
 \end_inset
 
-, although our testing indicates that the vast majority of notifications
- are delivered successfully.
+, although testing indicates that the vast majority of notifications are
+ delivered successfully.
 \end_layout
 
 \begin_layout Standard
@@ -1240,13 +1211,13 @@ HyperText Transfer Protocol Secure: the encrypted protocol used to transmit
 \end_inset
 
 .
- However, the volume of notifications sent rapidly approached the usage
- limits of the free service tier.
+ However, the volume of notifications to be sent rapidly approached the
+ usage limits of the free service tier.
 \end_layout
 
 \begin_layout Standard
 After evaluating various alternatives we therefore installed an additional
- open-source software package on the Mappiness data server: pyapns
+ open-source software package on the Mappiness data server: PyAPNS
 \begin_inset Foot
 status collapsed
 
@@ -1257,9 +1228,9 @@ https://github.com/samuraisam/pyapns
 \end_inset
 
 .
- Like the Urban Airship service, pyapns handles all communication with the
+ Like the Urban Airship service, PyAPNS handles all communication with the
  APNS and is controlled by a simple API.
- The pyapns API communicates over XML-RPC
+ The PyAPNS API communicates over XML-RPC
 \begin_inset Foot
 status collapsed
 
@@ -1271,7 +1242,7 @@ eXtensible Markup Language Remote Procedure Call: a verbose, text-based
 \end_inset
 
 , but also provides a Ruby client library to encapsulate this communication.
- The Mappiness signalling software was rewritten to use the pyapns client
+ The Mappiness signalling software was rewritten to use the PyAPNS client
  library (to which we also contributed several fixes).
 \end_layout
 
@@ -1366,22 +1337,18 @@ reference "fig:APNS-notification"
 Signalling is performed by the signalling programme on the Mappiness data
  server.
  The programme is executed every 2 minutes, and on each execution performs
- the following tasks:
+ the following sequence of tasks:
 \end_layout
 
 \begin_layout Enumerate
 Connect to the APNS feedback service to retrieve a list of app installations
  with failed deliveries.
- Mark all listed installations inactive in the 
+ Mark all listed installations inactive in the users database table, and
+ delete any pending signals associated with them from the
 \emph on
-users
+ 
 \emph default
- database table, and delete any pending signals associated with them from
- the 
-\emph on
-pending_beeps
-\emph default
- table.
+pending_beeps table.
  (This task is only performed if it has not been performed in the past hour).
 \end_layout
 
@@ -1420,25 +1387,18 @@ basis.
 \end_inset
 
  or for the next day.
- Store the resulting pending signals in the 
+ Store the resulting pending signals in the
 \emph on
-pending_beeps
+ 
 \emph default
- table.
+pending_beeps table.
 \end_layout
 
 \begin_layout Enumerate
-For each signal in the 
-\emph on
-pending_beeps
-\emph default
- table that has fallen due since the last programme execution, delete the
- pending signal, send an APNS notification to the associated participant,
- and create a record of the sent signal in the 
-\emph on
-sent_beeps
-\emph default
- table.
+For each signal in the pending_beeps table that has fallen due since the
+ last programme execution, delete the pending signal, send an APNS notification
+ to the associated participant, and create a record of the sent signal in
+ the sent_beeps table.
 \end_layout
 
 \begin_layout Paragraph
@@ -1460,14 +1420,11 @@ The signalling system was therefore implemented defensively, to try to prevent
  For example, the system considers the hours during which a participant
  may be beeped as finishing 10 minutes prior to the time specified by the
  participant, to account for possible delays in notification delivery.
- It deletes pending signals from the database 
-\emph on
-prior
-\emph default
- to attempting their delivery, so that further deliveries will not be attempted
- during the next execution if an error occurs during the deletion phase.
+ It deletes pending signals from the database prior to attempting their
+ delivery, so that further deliveries will not be attempted during the next
+ execution if an error occurs during the deletion phase.
  And it refuses to proceed (and emails the system administrator) if more
- than a set number of signals appear to fall due at one moment.
+ than a certain number of signals appear to fall due at one moment.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1490,24 +1447,16 @@ http://www.sinatrarb.com/, http://www.modrails.com/ and http://nginx.org/
 
 \end_inset
 
- The data API makes the following nine commands available to the app:
+ The data API makes the following nine endpoints available to the app:
 \end_layout
 
 \begin_layout Description
-register Called on completion of the participant sign-up process.
+register is called on completion of the participant sign-up process.
  The app sends details of the APNS device token required for sending signals
  to the registering device, and of the participant's confirmed signalling
- settings (both of which are stored in the 
-\emph on
-users
-\emph default
- table).
+ settings (both of which are stored in the users table).
  It also sends the participant's answers to the registration survey (which
- are stored in 
-\emph on
-demographic_answer_sets
-\emph default
-).
+ are stored in demographic_answer_sets).
  In response, the API returns a unique participant ID and a random 20-character
  secret.
  The app stores these, and uses them to authenticate itself (using HTTP
@@ -1515,22 +1464,18 @@ demographic_answer_sets
 \end_layout
 
 \begin_layout Description
-esm_answers Called with new ESM assessment responses, which are stored in
- the 
+esm_answers is called with new ESM assessment responses, which are stored
+ in the esm_answer_sets
 \emph on
-esm_answer_sets 
+ 
 \emph default
 table.
  The API also links the response set with the signal it was given in response
- to (if applicable) in the 
-\emph on
-sent_beeps
-\emph default
- table.
+ to (if applicable) in the sent_beeps table.
 \end_layout
 
 \begin_layout Description
-image Called with the JPEG image data resulting from a photo taken during
+image is called with the JPEG image data resulting from a photo taken during
  an ESM assessment, and a code identifying this associated ESM assessment.
  The image is stored in the filesystem.
  If it was marked as public, it is also made accessible from the maps page
@@ -1538,14 +1483,14 @@ image Called with the JPEG image data resulting from a photo taken during
 \end_layout
 
 \begin_layout Description
-user_status Called on app launch or when there are no further ESM assessment
+user_status is called on app launch or when there are no further ESM assessment
  responses queued for sending to the API.
  The API calculates and returns the response statistics alongside a status
  message to be displayed on the main screen.
 \end_layout
 
 \begin_layout Description
-graphs_bluff Called when the participant taps the 'My happiness' control.
+graphs_bluff is called when the participant taps the 'My happiness' control.
  The API returns instructions for displaying the participant's feedback
  charts (using the Bluff
 \begin_inset Foot
@@ -1557,45 +1502,72 @@ http://bluff.jcoglan.com/
 
 \end_inset
 
- charting library for JavaScript) as an HTML/CSS/JavaScript document.
+ charting library for JavaScript) as an HTML+CSS+JavaScript document.
 \end_layout
 
 \begin_layout Description
-settings Called when the participant changes his or her signalling settings.
- The new settings are stored in the 
-\emph on
-users
-\emph default
+settings is called when the participant changes his or her signalling settings.
+ The new settings are stored in the users table.
+\end_layout
+
+\begin_layout Description
+toggle_download is called when the participant enables or disables data
+ download.
+ When enabling data download, the API returns the new, secret HTTPS URL
+ via which the participant's data may be accessed.
+\end_layout
+
+\begin_layout Description
+update_token is called if the app detects that its APNS device token has
+ changed.
+ The message includes the new device token, which is stored in the users
  table.
 \end_layout
 
 \begin_layout Description
-toggle_download Called when the participant enables or disables data download,
- or to query its current status.
- When querying or enabling data download, the API returns the secret HTTPS
- URL via which the participant's data is accessible.
-\end_layout
-
-\begin_layout Description
-update_token Called if the app detects that its APNS device token has changed.
- The message includes the new device token, which is stored in the 
-\emph on
-users
-\emph default
- table.
-\end_layout
-
-\begin_layout Description
-apn_ignored Called in the rare case that the app receives an APNS notification
- that cannot be displayed because another modal activity is in progress
+apn_ignored is called in the rare case that the app receives an APNS notificatio
+n that cannot be displayed because another modal activity is in progress
  (such as completing an ESM assessment or changing signalling settings).
- The API flags the relevant notification in the 
-\emph on
-sent_beeps
-\emph default
- database table to indicate that it should not count towards the total signals
- received by the participant (the signal is not rescheduled, so the participant
- receives fewer than the scheduled number of signals on the day in question).
+ The API flags the relevant notification in the sent_beeps database table
+ to indicate that it should not count towards the total signals received
+ by the participant.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The signal is not rescheduled, so the participant receives fewer than the
+ scheduled number of signals on the day in question.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Asynchronous endpoint priorities
+\end_layout
+
+\begin_layout Standard
+Four of the API endpoints listed above are handled asynchronously by the
+ Mappiness app.
+ In other words, communication with these endpoints occurs in the background,
+ without blocking other app functions.
+ These endpoints are: update_token, esm_answers, image, and apn_ignored.
+\end_layout
+
+\begin_layout Standard
+The app manages a single queue of messages to the asynchronous endpoints.
+ If the queue is not empty and no asynchronous message is currently being
+ transmitted, the app will begin sending the message at the head of the
+ queue.
+ Reflecting the importance of different endpoints to the data collection
+ process, the message queue is ordered by endpoint priority.
+ The endpoints are listed in descending priority order in the preceding
+ paragraph.
+ For example, all ESM assessment response data will be transmitted before
+ any image is sent.
+ Messages for the same endpoint are processed in first-in-first-out order.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1603,11 +1575,70 @@ Security and backup
 \end_layout
 
 \begin_layout Standard
-Importance
+Security against intrusions is essential for participants' privacy and for
+ the integrity of the collected data.
+ The data servers are firewalled to prevent access to any services but the
+ Mappiness data services (over HTTP and HTTPS) and a secure shell (SSH)
+ for system administration.
+ All installed software is updated regularly to ensure that known exploits
+ are patched.
 \end_layout
 
 \begin_layout Standard
-Backups (duplicity)
+To guard against the loss of collected data in case of intrusion, hardware
+ failure or other disaster, an offsite backup is performed daily.
+ The backup is made in the early hours of the morning (UK time), when load
+ on the server is at its lowest.
+ The Mappiness backup script invokes the open-source Duplicity software
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+http://duplicity.nongnu.org/
+\end_layout
+
+\end_inset
+
+ to back up the contents of the database, and all photos and weather data,
+ to the Amazon Simple Storage Service (S3).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+http://aws.amazon.com/s3/
+\end_layout
+
+\end_inset
+
+ S3 provides durable and redundant data storage across multiple devices
+ and physical locations.
+ To comply with Data Protection Act requirements, backup data is stored
+ only on S3 servers located within the EU (Ireland).
+ 
+\end_layout
+
+\begin_layout Standard
+Backups are encrypted, and also transmitted over an encrypted connection.
+ Full backups are performed monthly, and the daily backups occurring in
+ between are incremental: only changes relative to the previous backup are
+ transmitted and stored.
+ Each backup creates a snapshot, so that the data that was held on the server
+ on any particular day can be restored.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Snapshots are crucial to the effectiveness of backup.
+ Without snapshots, corruption or deletion of data on the server is quickly
+ mirrored to the backup, rendering it useless.
+\end_layout
+
+\end_inset
+
+ To verify that data is being backed up correctly, data for analysis is
+ retrieved not directly from the production server, but from the latest
+ backup instead.
+ This strategy also reduces load on the production server.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1615,7 +1646,40 @@ Web statistics
 \end_layout
 
 \begin_layout Standard
-cron job -- support maps, meters, participant count
+The public Mappiness web site has four elements that require up-to-date
+ statistics from the production data server.
+ These are: 
+\end_layout
+
+\begin_layout Itemize
+a count at the bottom of every page of the total number of participants
+ that have signed up;
+\end_layout
+
+\begin_layout Itemize
+a map of the most recent 120 responses where the 'happy' self-rating was
+ at least 70%, and a photo was taken and allowed to be displayed;
+\end_layout
+
+\begin_layout Itemize
+'hedonimeters' displaying the average and current happiness ratings for
+ London and the whole of the UK --- these are the means of respectively
+ all responses and the 25 most recent responses; and
+\end_layout
+
+\begin_layout Itemize
+a chart showing the mean happiness response for the UK and London, hour-by-hour
+ during the past week --- excluding any hours for which there were fewer
+ than 10 responses.
+\end_layout
+
+\begin_layout Standard
+Statistics for the hour-by-hour chart are calculated at the beginning of
+ the hour, and statistics for the others are calculated every 5 minutes,
+ by programmes executed on the appropriate schedule.
+ The statistics are saved (in JSON format) in a directory accessible over
+ an HTTP connection, and are loaded as required by the public website.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -1623,11 +1687,168 @@ Download API
 \end_layout
 
 \begin_layout Standard
-Weather + pollution hourly downloads
+As an additional incentive, participants are able to access all of their
+ own contributed data.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This feature was added with the launch of version 1.1 of the app in May 2011.
+\end_layout
+
+\end_inset
+
+ The data download feature is initially disabled for each participant, it
+ can be enabled and disabled within the app.
+ When it is enabled, the participant's data is available via a secure (HTTPS)
+ link.
+ To ensure privacy, this link cannot be guessed --- it includes 8 random
+ characters --- and it changes each time the download feature is enabled.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The link is of the form https://mappiness.me/
+\emph on
+xxxx
+\emph default
+.
+\emph on
+yyyy
+\emph default
+.
+\emph on
+yyyy
+\emph default
+ --- the 
+\emph on
+xxxx
+\emph default
+ component encodes the participant's ID, while the 
+\emph on
+yyyy
+\emph default
+.
+\emph on
+yyyy 
+\emph default
+component is a random eight-character string, displayed in two groups of
+ four characters for ease of reading.
+ The 
+\emph on
+x
+\emph default
+s and 
+\emph on
+y
+\emph default
+s can be any digit (0--9) or lower-case letter (a--z) excepting the following:
+ 0, 1, a, e, i, o, u, l (vowels are excluded to ensure that rude words cannot
+ be generated coincidentally, while 0, 1, i, o and l are excluded because
+ they are easily visually confused).
+ The 8-character string can therefore take any of 
+\begin_inset Formula $28^{8}$
+\end_inset
+
+ (approximately 378 billion) values.
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
-Website/cron jobs
+Data download is made available by another web application built using the
+ Sinatra framework.
+ Several formats are supported:
+\end_layout
+
+\begin_layout Description
+HTML reproducing the charts available within the app, which can then be
+ emailed, saved or printed.
+\end_layout
+
+\begin_layout Description
+KML for exploration within mapping applications such as Google Earth.
+\end_layout
+
+\begin_layout Description
+iCalendar for viewing within calendaring applications such as iCal.
+\end_layout
+
+\begin_layout Description
+CSV for import into spreadsheet or statistics applications, for subsequent
+ graphing or statistical analysis.
+\end_layout
+
+\begin_layout Description
+JSON for consumption by third-party services.
+ For example, services could be developed to display a personal 'hedonimeter'
+ on a participant's own blog, to post details of responses to a participant's
+ Twitter or Facebook account, or to provide a participant with more detailed
+ analysis of his or her responses.
+\end_layout
+
+\begin_layout Standard
+For all formats except HTML charts, response data are provided in descending
+ order, of response date and time, and the web application accepts query
+ parameters limiting the data to be returned.
+ The supported query parameters are:
+\end_layout
+
+\begin_layout Description
+before=
+\emph on
+t
+\emph default
+ to only responses completed before time 
+\emph on
+t
+\emph default
+, expressed as the number of seconds since 1 January 1970.
+\end_layout
+
+\begin_layout Description
+after=
+\emph on
+t
+\emph default
+ to only show responses completed before time 
+\emph on
+t
+\emph default
+, expressed as above.
+\end_layout
+
+\begin_layout Description
+limit=
+\emph on
+n
+\emph default
+ to only show a maximum of 
+\emph on
+n
+\emph default
+ responses.
+\end_layout
+
+\begin_layout Description
+offset=
+\emph on
+n
+\emph default
+ to begin with the 
+\emph on
+n
+\emph default
+th response following the first that would otherwise be displayed.
+\end_layout
+
+\begin_layout Standard
+For example, an API service might request data only for the most recent
+ response, and only if that was more recent than a certain moment, using
+ a URL such as https://mappiness.me/12.bcdf.ghjk/data.json?limit=1&after=1304702136.
 \end_layout
 
 \begin_layout Subsubsection
