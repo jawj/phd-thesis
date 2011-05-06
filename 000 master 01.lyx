@@ -272,6 +272,16 @@ filename "030 Methods/030 GIS and stats/gis methods 01.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
+filename "030 Methods/040 Econometrics/econometrics 01.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
 filename "040 Results/010 Web survey results/web survey results 01.lyx"
 
 \end_inset
