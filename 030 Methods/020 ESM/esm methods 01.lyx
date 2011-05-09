@@ -969,10 +969,20 @@ ntly rebooted --- but is generally cheaper to operate.
 
  hosted by Linode, LLC
 \begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
 status collapsed
 
 \begin_layout Plain Layout
+
 http://www.linode.com/
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -983,7 +993,17 @@ http://www.linode.com/
 status collapsed
 
 \begin_layout Plain Layout
-http://www.ubuntu.com
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.ubuntu.com/
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -995,7 +1015,17 @@ http://www.ubuntu.com
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
 http://www.ruby-lang.org/en/
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1014,7 +1044,28 @@ At the heart of the data server is a PostgreSQL relational database system
 status collapsed
 
 \begin_layout Plain Layout
-http://www.postgresql.org and http://postgis.refractions.net
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.postgresql.org/
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://postgis.refractions.net/
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1168,10 +1219,20 @@ Mappiness uses APNS notifications to signal participants.
 Initially, the free tier of a commercial service operated by Urban Airship,
  Inc.
 \begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
 status collapsed
 
 \begin_layout Plain Layout
+
 http://urbanairship.com/products/push-notifications/
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1219,10 +1280,20 @@ HyperText Transfer Protocol Secure: the encrypted protocol used to transmit
 After evaluating various alternatives we therefore installed an additional
  open-source software package on the Mappiness data server: PyAPNS
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
-https://github.com/samuraisam/pyapns
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/samuraisam/pyapns/
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1442,7 +1513,39 @@ The Mappiness app communicates with the data server via the private data
 status collapsed
 
 \begin_layout Plain Layout
-http://www.sinatrarb.com/, http://www.modrails.com/ and http://nginx.org/
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.sinatrarb.com/
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.modrails.com/
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://nginx.org/
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1497,7 +1600,17 @@ graphs_bluff is called when the participant taps the 'My happiness' control.
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
 http://bluff.jcoglan.com/
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1594,7 +1707,17 @@ To guard against the loss of collected data in case of intrusion, hardware
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
 http://duplicity.nongnu.org/
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1605,7 +1728,17 @@ http://duplicity.nongnu.org/
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
 http://aws.amazon.com/s3/
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1765,16 +1898,18 @@ Data download is made available by another web application built using the
 \end_layout
 
 \begin_layout Description
-HTML reproducing the charts available within the app, which can then be
- emailed, saved or printed.
+HTML reproducing the charts available within the app (which can then be
+ emailed, saved or printed), and providing a gallery of the photos submitted
+ by the participant.
 \end_layout
 
 \begin_layout Description
-KML for exploration within mapping applications such as Google Earth.
+KMZ for exploration within mapping applications such as Google Earth.
 \end_layout
 
 \begin_layout Description
-iCalendar for viewing within calendaring applications such as iCal.
+iCalendar for viewing (and subscription) within calendaring applications
+ such as iCal.
 \end_layout
 
 \begin_layout Description
@@ -1792,71 +1927,57 @@ JSON for consumption by third-party services.
 
 \begin_layout Standard
 For all formats except HTML charts, response data are provided in descending
- order, of response date and time, and the web application accepts query
- parameters limiting the data to be returned.
- The supported query parameters are:
-\end_layout
-
-\begin_layout Description
-before=
-\emph on
-t
-\emph default
- to only responses completed before time 
-\emph on
-t
-\emph default
-, expressed as the number of seconds since 1 January 1970.
-\end_layout
-
-\begin_layout Description
-after=
-\emph on
-t
-\emph default
- to only show responses completed before time 
-\emph on
-t
-\emph default
-, expressed as above.
-\end_layout
-
-\begin_layout Description
-limit=
-\emph on
-n
-\emph default
- to only show a maximum of 
-\emph on
-n
-\emph default
- responses.
-\end_layout
-
-\begin_layout Description
-offset=
-\emph on
-n
-\emph default
- to begin with the 
-\emph on
-n
-\emph default
-th response following the first that would otherwise be displayed.
-\end_layout
-
-\begin_layout Standard
-For example, an API service might request data only for the most recent
- response, and only if that was more recent than a certain moment, using
- a URL such as https://mappiness.me/12.bcdf.ghjk/data.json?limit=1&after=1304702136.
+ order of response date/time, and the web application accepts query parameters
+ limiting the data to be returned by date/time and sequence.
 \end_layout
 
 \begin_layout Subsubsection
-Weather
+Weather & pollution
 \end_layout
 
 \begin_layout Standard
-Cron job
+Every hour, weather data is downloaded from Weather Underground
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.wunderground.com/global/UK.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, and air pollution data is downloaded from Defra
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://uk-air.defra.gov.uk/latest/currentlevels?type=Current
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ These data are stored for later processing.
 \end_layout
 
 \begin_layout Subsection
