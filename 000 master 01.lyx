@@ -82,10 +82,11 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 3cm
-\topmargin 2.5cm
-\rightmargin 3cm
-\bottommargin 2.5cm
+\leftmargin 4cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\columnsep 1cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation skip

@@ -8,7 +8,6 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage[bf,hang,small]{caption}
-%\usepackage[sf,bf,raggedright]{titlesec}
 \definecolor{LinkColor}{rgb}{0,0,0.4}
 \usepackage[mmddyyyy,nodayofweek]{datetime}
 %\usepackage{pdfpages}
@@ -88,8 +87,8 @@
 \topmargin 2cm
 \rightmargin 2.5cm
 \bottommargin 2cm
-\secnumdepth 3
-\tocdepth 3
+\secnumdepth 4
+\tocdepth 4
 \paragraph_separation skip
 \defskip medskip
 \quotes_language english
@@ -107,14 +106,6 @@
 
 \begin_layout Section
 Experience sampling
-\end_layout
-
-\begin_layout Subsection
-Overview
-\end_layout
-
-\begin_layout Subsubsection
-Maximising sample size
 \end_layout
 
 \begin_layout Standard
@@ -195,74 +186,6 @@ researcher
 burden In order to support a large number of participants and responses,
  each participant and each response must not require a large investment
  of researcher time, logistical support, or money.
-\end_layout
-
-\begin_layout Standard
-System summary:
-\end_layout
-
-\begin_layout Standard
-- two main system elements: iPhone app and data server
-\end_layout
-
-\begin_layout Standard
-- various additional elements for features and robustness
-\end_layout
-
-\begin_layout Standard
-core of system is this data flow:
-\end_layout
-
-\begin_layout Standard
-- data server transmits a beep to participant via Apple's APNS service
-\end_layout
-
-\begin_layout Standard
-- participant responds via app (app senses location meanwhile)
-\end_layout
-
-\begin_layout Standard
-- app transmits response and location data back to data server
-\end_layout
-
-\begin_layout Standard
-flowchart: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways true
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename system 03.pdf
-	lyxscale 40
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Mappiness infrastructure and data flow summary
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -838,10 +761,85 @@ Mappiness permits ESM assessments to be volunteered at any time.
 \end_layout
 
 \begin_layout Subsection
-App
+System design and implementation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename system 03.pdf
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Mappiness infrastructure and data flow summary
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:infrastructure-and-data-flow"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+The system has two core elements: the iPhone app, and the data server with
+ which installations of the app communicate.
+ The data flows as follows between these elements:
+\end_layout
+
+\begin_layout Enumerate
+the data server transmits a signal to a participant's app;
+\end_layout
+
+\begin_layout Enumerate
+the participant responds via the app, while the app determines his or her
+ location using GPS; and
+\end_layout
+
+\begin_layout Enumerate
+the app transmits responses and location data back to data server.
+\end_layout
+
+\begin_layout Standard
+A number of further elements provide additional features and greater robustness.
+ The core and additional elements, and the data flows between them, are
+ depicted schematically in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:infrastructure-and-data-flow"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
+App
+\end_layout
+
+\begin_layout Paragraph
 Interaction design
 \end_layout
 
@@ -849,7 +847,7 @@ Interaction design
 Compliments!
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subparagraph
 Registration
 \end_layout
 
@@ -873,7 +871,7 @@ Settings (simplified form)
 + more info
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subparagraph
 ESM survey
 \end_layout
 
@@ -881,7 +879,7 @@ ESM survey
 Voluntary, or immediate popup when beep pending (no context FX)
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subparagraph
 ESM sensor data
 \end_layout
 
@@ -897,7 +895,7 @@ Sound
 Photos -- when requested, resized, sent
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subparagraph
 Other
 \end_layout
 
@@ -917,7 +915,7 @@ My happiness
 Data download/API (actually mainly server function)
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Development
 \end_layout
 
@@ -968,7 +966,7 @@ Sounds: normalised to maximum volume using the Audacity open-source audio
  editing software
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Device replacement
 \end_layout
 
@@ -976,7 +974,7 @@ Device replacement
 What happens when user switches device?
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Data server
 \end_layout
 
@@ -1072,7 +1070,7 @@ http://www.ruby-lang.org/en/
 , a dynamic, open source programming language.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Database
 \end_layout
 
@@ -1162,7 +1160,7 @@ sent_beeps support the beeper system.
  Both are linked to the relevant rows of the users table.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Signalling
 \begin_inset CommandInset label
 LatexCommand label
@@ -1173,7 +1171,7 @@ name "sub:signalling"
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subparagraph
 The Apple Push Notifications Service (APNS)
 \end_layout
 
@@ -1242,7 +1240,7 @@ If an app provider attempts to send a notification to an app which no longer
  devices unless they are subsequently re-registered.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subparagraph
 Communicating with the APNS
 \end_layout
 
@@ -1356,7 +1354,7 @@ eXtensible Markup Language Remote Procedure Call: a verbose, text-based
  library (to which we also contributed several fixes).
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subparagraph
 Signalling using APNS
 \end_layout
 
@@ -1512,7 +1510,7 @@ For each signal in the pending_beeps table that has fallen due since the
  the sent_beeps table.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subparagraph
 Safeguards
 \end_layout
 
@@ -1538,7 +1536,7 @@ The signalling system was therefore implemented defensively, to try to prevent
  than a certain number of signals appear to fall due at one moment.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Data API
 \end_layout
 
@@ -1698,7 +1696,7 @@ The signal is not rescheduled, so the participant receives fewer than the
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subparagraph
 Asynchronous endpoint priorities
 \end_layout
 
@@ -1724,7 +1722,7 @@ The app manages a single queue of messages to the asynchronous endpoints.
  Messages for the same endpoint are processed in first-in-first-out order.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Security and backup
 \end_layout
 
@@ -1815,7 +1813,7 @@ Snapshots are crucial to the effectiveness of backup.
  This strategy also reduces load on the production server.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Web statistics
 \end_layout
 
@@ -1856,7 +1854,7 @@ Statistics for the hour-by-hour chart are calculated at the end of each
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Download API
 \end_layout
 
@@ -1981,7 +1979,7 @@ For all formats except HTML charts, response data are provided in descending
  sequence.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Weather & pollution
 \end_layout
 
@@ -2031,7 +2029,7 @@ http://uk-air.defra.gov.uk/latest/currentlevels?type=Current
 \end_layout
 
 \begin_layout Subsection
-Piloting
+Piloting and testing
 \end_layout
 
 \begin_layout Standard
@@ -2068,6 +2066,55 @@ Two-way!
 
 \begin_layout Paragraph
 App Store
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+(a) 
+\begin_inset Graphics
+	filename app_store.png
+	lyxscale 30
+	scale 25
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+(b) 
+\begin_inset Graphics
+	filename app_store_reviews.png
+	lyxscale 30
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+(a) Representation and (b) reviews in the App Store
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

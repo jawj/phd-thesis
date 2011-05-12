@@ -110,7 +110,7 @@ Supplementary information for ESM
 \end_layout
 
 \begin_layout Section
-Database schema
+PostgreSQL database schema
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:db-schema"
@@ -755,13 +755,1590 @@ George MacKerron g.j.mackerron@lse.ac.uk 020 7193 7369 07917 735 567
 \end_layout
 
 \begin_layout Section
-Public website
+App Store description
+\end_layout
+
+\begin_layout Standard
+mappiness maps happiness across space in the UK.
+ It's part of a research project at the London School of Economics.
+ We'd love to have you on board!
+\end_layout
+
+\begin_layout Standard
+*** NOTE: If you're not in the UK, please see http://www.mappiness.org.uk/
+ for an important message about time zones ***
+\end_layout
+
+\begin_layout Standard
+HOW DOES IT WORK?
+\end_layout
+
+\begin_layout Standard
+- You download the app, open it, and sign up
+\end_layout
+
+\begin_layout Standard
+- We beep you once (or more) a day to ask how you're feeling, and a few
+ basic things to control for: who you're with, where you are, what you're
+ doing (if you're outdoors, you can also take a photo)
+\end_layout
+
+\begin_layout Standard
+- The data gets sent back — anonymously and securely — to our data store,
+ along with your approximate location from the iPhone's GPS, and a noise-level
+ measure
+\end_layout
+
+\begin_layout Standard
+WHAT'S IN IT FOR YOU?
+\end_layout
+
+\begin_layout Standard
+- Interesting information about your own happiness, which is charted inside
+ the app and available for private download — including when, where and
+ with whom you're happiest
+\end_layout
+
+\begin_layout Standard
+- The warm glow of helping increase the sum of human knowledge
+\end_layout
+
+\begin_layout Standard
+WHAT'S IN IT FOR US?
+\end_layout
+
+\begin_layout Standard
+- We're particularly interested in how people's happiness is affected by
+ their local environment — air pollution, noise, green spaces, and so on
+ — which the data from mappiness will be absolutely great for investigating
+\end_layout
+
+\begin_layout Standard
+- We hope to have some results published in academic journals, and elsewhere
+ — whatever we produce will be linked from our website, http://www.mappiness.org.uk
+\end_layout
+
+\begin_layout Standard
+FIND OUT MORE
+\end_layout
+
+\begin_layout Standard
+For more information, visit http://www.mappiness.org.uk, or download the app,
+ open it, and choose 'Find out more'.
+ 
+\end_layout
+
+\begin_layout Section
+Public website (as at 12 May 2011)
 \end_layout
 
 \begin_layout Standard
 \begin_inset External
 	template PDFPages
 	filename website/combined.pdf
+	lyxscale 30
+	extra LaTeX "pages=-"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Text of participant consent form
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Please read this information carefully.
+ By tapping "I agree" below, you confirm that:
+\end_layout
+
+\begin_layout Itemize
+The nature and purpose of this research have been explained to your satisfaction.
+ 
+\end_layout
+
+\begin_layout Itemize
+You agree to take part in the study.
+ 
+\end_layout
+
+\begin_layout Itemize
+You understand that you can withdraw at any time.
+ 
+\end_layout
+
+\begin_layout Itemize
+You're at least 18 years old, and this is your iPhone.
+\end_layout
+
+\begin_layout Standard
+Please scroll down to see the rest of the information.
+ You can refer back it at any time in the 'Info & help' section of the app.
+\end_layout
+
+\begin_layout Paragraph
+What's this research for? 
+\end_layout
+
+\begin_layout Standard
+We want to better understand how people's feelings are affected by features
+ of their current environment---things like air pollution, noise, and green
+ spaces.
+\end_layout
+
+\begin_layout Paragraph
+What will I do? 
+\end_layout
+
+\begin_layout Standard
+You'll provide some basic demographic and health-related information, and
+ confirm some settings in order to sign up.
+\end_layout
+
+\begin_layout Standard
+After that, you'll receive a notification (beep) on this iPhone between
+ one and five times a day, at your choice.
+ This will come at a random moment during hours you agree.
+\end_layout
+
+\begin_layout Standard
+The notification will prompt you to open this app, to briefly report how
+ you're feeling and---in very broad terms---who you're with, where you are,
+ and what you're doing.
+ If you're outdoors and you're happy to, you'll take a photo of your surrounding
+s too.
+\end_layout
+
+\begin_layout Standard
+(You can also open this app and report on your feelings and situation, unprompte
+d, as often as you like).
+\end_layout
+
+\begin_layout Paragraph
+How long will it take?
+\end_layout
+
+\begin_layout Standard
+The sign-up process should take no more than 5 minutes.
+ The daily reports on your feelings and situation will take about 30 seconds
+ each.
+\end_layout
+
+\begin_layout Standard
+You can keep taking part in the study for as long (or short) a period as
+ you want.
+\end_layout
+
+\begin_layout Paragraph
+What data will I be sharing? 
+\end_layout
+
+\begin_layout Standard
+While you report your feelings and situation, the app will use your iPhone's
+ GPS (sat-nav) to discover your approximate location.
+ It will also use the microphone to measure ambient noise levels (but it
+ 
+\emph on
+won't
+\emph default
+ record any sound).
+\end_layout
+
+\begin_layout Standard
+When you finish responding, the app will send the answers, noise level measure,
+ location data and photo (if you took one) to our secure data store.
+\end_layout
+
+\begin_layout Paragraph
+What will you do with this data? 
+\end_layout
+
+\begin_layout Standard
+We'll use it solely for our academic research.
+\end_layout
+
+\begin_layout Standard
+We'll apply statistical methods to the combined responses from everyone
+ taking part.
+ We'll use the location data to estimate what the environment was like in
+ the places where people responded.
+ And we'll be looking at the effect of this on people's feelings, while
+ controlling for some other potential influences.
+\end_layout
+
+\begin_layout Standard
+If you're curious to see what we find, please visit 
+\emph on
+mappiness.org.uk
+\emph default
+ from time to time: we'll be posting results there.
+ We also hope to present our findings in academic journals and at conferences,
+ and to make sure policy-makers are aware of anything important.
+\end_layout
+
+\begin_layout Standard
+In all cases, we'll never report any individual's responses—only information
+ at the group level.
+\end_layout
+
+\begin_layout Paragraph
+And the photos?
+\end_layout
+
+\begin_layout Standard
+If you take a photo we may try to classify it, either manually or using
+ a computer program, to add extra information about your immediate surroundings
+ (for example, are there trees visible?).
+\end_layout
+
+\begin_layout Standard
+If you explicitly agree---and we'll check this with you for every photo---we
+ may also feature it on a public map at 
+\emph on
+mappiness.org.uk
+\emph default
+.
+\end_layout
+
+\begin_layout Paragraph
+Is it anonymous?
+\end_layout
+
+\begin_layout Standard
+Yes.
+ We won't know who you are.
+ We don't ask for your name or for any other identifying information, and
+ we don't need your phone number to send notifications to your iPhone.
+ In principle, given enough responses, it might be possible to identify
+ you from your location data, but we promise we won't try.
+\end_layout
+
+\begin_layout Paragraph
+Is it confidential? 
+\end_layout
+
+\begin_layout Standard
+Yes.
+ We won't disclose your data to any third party unless (1) we're required
+ by law to do so, or (2) we do so under a strict contractual agreement with
+ other academic researchers, exclusively for the purpose of academic research
+ at a recognised institution.
+\end_layout
+
+\begin_layout Paragraph
+Is it secure? 
+\end_layout
+
+\begin_layout Standard
+Yes.
+ All communication between this app and our data store is over an SSL-encrypted
+ connection, the same kind used for online banking and shopping.
+ The data store is a firewalled and fully updated Linux server, accessible
+ only over a secure connection.
+\end_layout
+
+\begin_layout Paragraph
+Is it easy to get out of? 
+\end_layout
+
+\begin_layout Standard
+Yes! Taking part is completely voluntary.
+ You can withdraw at any time and without giving a reason: just delete this
+ app from your iPhone.
+ You could also ask us to delete all your data from our data store.
+\end_layout
+
+\begin_layout Standard
+Alternatively you can take a break from the study by changing your notifications
+ per day to zero on the Settings screen within the app.
+\end_layout
+
+\begin_layout Paragraph
+How much data does it use? 
+\end_layout
+
+\begin_layout Standard
+Not much.
+ Responding to a notification generally uses as much data as sending a brief
+ email (around 1KB).
+ If you're outdoors and take a picture, it's more like viewing a simple
+ web page (a little over 10KB).
+ Getting your status when you open the app uses less than 1KB.
+ Viewing your graphed responses uses about 3KB.
+\end_layout
+
+\begin_layout Standard
+So if you respond to one beep per day, and you take a photo on 25% of these
+ occasions, you'll use about 150KB per month.
+ (If you have an inclusive data bundle, this is probably less than 0.1% of
+ it.)
+\end_layout
+
+\begin_layout Standard
+You may want to turn off data when you're abroad (roaming), though, as this
+ can be very expensive.
+\end_layout
+
+\begin_layout Paragraph
+I'm not in the UK.
+ Can I take part?
+\end_layout
+
+\begin_layout Standard
+You're welcome to, but we may not use your data in our research.
+ And look out for the time difference when setting the hours when you can
+ be beeped: all times in the app are UK times (GMT or GMT+1).
+\end_layout
+
+\begin_layout Paragraph
+I have another question… 
+\end_layout
+
+\begin_layout Standard
+If there's anything else you'd like to know, please contact George MacKerron
+ or Dr Susana Mourato:
+\end_layout
+
+\begin_layout Itemize
+Email George at 
+\emph on
+g.j.mackerron@lse.ac.uk
+\emph default
+.
+ You can do this right now: just tap the button at the top right of this
+ screen.
+ 
+\end_layout
+
+\begin_layout Itemize
+Call us on 020 7193 7369.
+ 
+\end_layout
+
+\begin_layout Itemize
+Or write to us at the Dept.
+ of Geography & Environment, London School of Economics, Houghton Street,
+ London WC2A 2AE.
+\end_layout
+
+\begin_layout Standard
+Thank you! 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+twocolumn
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Surveys
+\end_layout
+
+\begin_layout Standard
+The surveys span multiple screens, delineated below by horizontal rules.
+ Tapping an option suffixed by '>' immediately advances to the next screen.
+ The first screen has a 'Cancel' button that discontinues the questionnaire,
+ and each subsequent screen has a 'Back' button to return to the preceding
+ screen.
+\end_layout
+
+\begin_layout Subsection
+Registration survey
+\end_layout
+
+\begin_layout Subsubsection*
+Satisfaction
+\end_layout
+
+\begin_layout Standard
+How satisfied are you with your life as a whole nowadays?
+\end_layout
+
+\begin_layout Standard
+Segmented control: (Not at all) 1 / 2 / 3 / 4 / 5 / 6 / 7/ 8 / 9 / 10 (Extremely
+)
+\end_layout
+
+\begin_layout Standard
+Next >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Health
+\end_layout
+
+\begin_layout Standard
+Is your health in general… ?
+\end_layout
+
+\begin_layout Standard
+Excellent >
+\end_layout
+
+\begin_layout Standard
+Very good >
+\end_layout
+
+\begin_layout Standard
+Good >
+\end_layout
+
+\begin_layout Standard
+Fair >
+\end_layout
+
+\begin_layout Standard
+Poor >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Asthma
+\end_layout
+
+\begin_layout Standard
+Do you suffer from asthma or other respiratory disease?
+\end_layout
+
+\begin_layout Standard
+Yes >
+\end_layout
+
+\begin_layout Standard
+No >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Gender
+\end_layout
+
+\begin_layout Standard
+Are you… ?
+\end_layout
+
+\begin_layout Standard
+Male >
+\end_layout
+
+\begin_layout Standard
+Female >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Birth year
+\end_layout
+
+\begin_layout Standard
+When were you born?
+\end_layout
+
+\begin_layout Standard
+Scrolling picker: 1900 -- 2010 (initial position: 1975)
+\end_layout
+
+\begin_layout Standard
+Next >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Marriage
+\end_layout
+
+\begin_layout Standard
+Are you… ?
+\end_layout
+
+\begin_layout Standard
+Never married >
+\end_layout
+
+\begin_layout Standard
+Married and living with spouse >
+\end_layout
+
+\begin_layout Standard
+Married but separated >
+\end_layout
+
+\begin_layout Standard
+Divorced >
+\end_layout
+
+\begin_layout Standard
+Widowed >
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Please choose the first that applies, and treat Civil Partnership like marriage
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+this screen is not shown if the participant answered 'married and living
+ with spouse' above
+\end_layout
+
+\begin_layout Subsubsection*
+Relationship
+\end_layout
+
+\begin_layout Standard
+And are you currently in a relationship?
+\end_layout
+
+\begin_layout Standard
+Yes >
+\end_layout
+
+\begin_layout Standard
+No >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Work status
+\end_layout
+
+\begin_layout Standard
+Are you… ?
+\end_layout
+
+\begin_layout Standard
+Employed or self-employed >
+\end_layout
+
+\begin_layout Standard
+In full-time education >
+\end_layout
+
+\begin_layout Standard
+Retired >
+\end_layout
+
+\begin_layout Standard
+Unemployed and seeking work >
+\end_layout
+
+\begin_layout Standard
+Long-term sick or disabled >
+\end_layout
+
+\begin_layout Standard
+Looking after family or home >
+\end_layout
+
+\begin_layout Standard
+Other >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Adults
+\end_layout
+
+\begin_layout Standard
+In your household, including yourself, are there… ?
+\end_layout
+
+\begin_layout Standard
+1 adult >
+\end_layout
+
+\begin_layout Standard
+2 adults >
+\end_layout
+
+\begin_layout Standard
+3 adults >
+\end_layout
+
+\begin_layout Standard
+4 adults or more >
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Please count as adults those aged 16 or above
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Children
+\end_layout
+
+\begin_layout Standard
+In your household, are there… ?
+\end_layout
+
+\begin_layout Standard
+No children >
+\end_layout
+
+\begin_layout Standard
+1 child >
+\end_layout
+
+\begin_layout Standard
+2 children >
+\end_layout
+
+\begin_layout Standard
+3 children >
+\end_layout
+
+\begin_layout Standard
+4 children or more >
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Please count as children those aged 15 or under
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Household
+\end_layout
+
+\begin_layout Standard
+Is your gross annual household income from all sources… ?
+\end_layout
+
+\begin_layout Standard
+Under £8,000 >
+\end_layout
+
+\begin_layout Standard
+£8,000 – £11,999 >
+\end_layout
+
+\begin_layout Standard
+£12,000 – £15,999 >
+\end_layout
+
+\begin_layout Standard
+£16,000 – £19,999 >
+\end_layout
+
+\begin_layout Standard
+£20,000 – £23,999 >
+\end_layout
+
+\begin_layout Standard
+£24,000 – £31,999 >
+\end_layout
+
+\begin_layout Standard
+£32,000 – £39,999 >
+\end_layout
+
+\begin_layout Standard
+£40,000 – £55,999 >
+\end_layout
+
+\begin_layout Standard
+£56,000 – £71,999 >
+\end_layout
+
+\begin_layout Standard
+£72,000 – £95,999 >
+\end_layout
+
+\begin_layout Standard
+£96,000 or more >
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Don't know >
+\end_layout
+
+\begin_layout Standard
+Prefer not to say >
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+We'd be very grateful if you could answer this question, since it's important
+ to our research
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Income change
+\end_layout
+
+\begin_layout Standard
+Compared to 3 years ago, is your gross annual household income now… ?
+\end_layout
+
+\begin_layout Standard
+Higher than it was >
+\end_layout
+
+\begin_layout Standard
+Just the same >
+\end_layout
+
+\begin_layout Standard
+Lower than it was >
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Don't know >
+\end_layout
+
+\begin_layout Standard
+Prefer not to say >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+this screen is shown only if the participant answered 'higher than it was'
+ above
+\end_layout
+
+\begin_layout Subsubsection*
+Income rise
+\end_layout
+
+\begin_layout Standard
+And finally, compared to 3 years ago, is your gross annual household income
+ now… ?
+\end_layout
+
+\begin_layout Standard
+Higher by up to £999 >
+\end_layout
+
+\begin_layout Standard
+Higher by £1,000 – £1,999 >
+\end_layout
+
+\begin_layout Standard
+Higher by £2,000 – £3,999 >
+\end_layout
+
+\begin_layout Standard
+Higher by £4,000 – £7,999 >
+\end_layout
+
+\begin_layout Standard
+Higher by £8,000 – £15,999 >
+\end_layout
+
+\begin_layout Standard
+Higher by £16,000 or more >
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Don't know >
+\end_layout
+
+\begin_layout Standard
+Prefer not to say >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+this screen is shown only if the participant answered 'lower than it was'
+ above
+\end_layout
+
+\begin_layout Subsubsection*
+Income fall
+\end_layout
+
+\begin_layout Standard
+And finally, compared to 3 years ago, is your gross annual household income
+ now… ?
+\end_layout
+
+\begin_layout Standard
+Lower by up to £999 >
+\end_layout
+
+\begin_layout Standard
+Lower by £1,000 – £1,999 >
+\end_layout
+
+\begin_layout Standard
+Lower by £2,000 – £3,999 >
+\end_layout
+
+\begin_layout Standard
+Lower by £4,000 – £7,999 >
+\end_layout
+
+\begin_layout Standard
+Lower by £8,000 – £15,999 >
+\end_layout
+
+\begin_layout Standard
+Lower by £16,000 or more >
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Don't know >
+\end_layout
+
+\begin_layout Standard
+Prefer not to say >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+the questionnaire dismisses itself immediately after this screen is displayed
+\end_layout
+
+\begin_layout Subsubsection*
+Finished
+\end_layout
+
+\begin_layout Standard
+Thank you!
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ESM survey
+\end_layout
+
+\begin_layout Subsubsection*
+Feelings
+\end_layout
+
+\begin_layout Standard
+Do you feel… ?
+\end_layout
+
+\begin_layout Standard
+Happy 
+\begin_inset Newline newline
+\end_inset
+
+Slider: Not at all … Extremely (initial position: midpoint)
+\end_layout
+
+\begin_layout Standard
+Relaxed 
+\begin_inset Newline newline
+\end_inset
+
+Slider: Not at all … Extremely (initial position: midpoint)
+\end_layout
+
+\begin_layout Standard
+Awake 
+\begin_inset Newline newline
+\end_inset
+
+Slider: Not at all … Extremely (initial position: midpoint)
+\end_layout
+
+\begin_layout Standard
+Next >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+People
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Please tick all that apply
+\end_layout
+
+\begin_layout Standard
+Are you… ?
+\end_layout
+
+\begin_layout Standard
+Alone, or with strangers only >
+\end_layout
+
+\begin_layout Standard
+Or are you with your… ?
+\end_layout
+
+\begin_layout Standard
+[ ] Spouse, partner, girl/boyfriend
+\end_layout
+
+\begin_layout Standard
+[ ] Children
+\end_layout
+
+\begin_layout Standard
+[ ] Other family members
+\end_layout
+
+\begin_layout Standard
+[ ] Colleagues, classmates
+\end_layout
+
+\begin_layout Standard
+[ ] Clients, customers
+\end_layout
+
+\begin_layout Standard
+[ ] Friends
+\end_layout
+
+\begin_layout Standard
+[ ] Other people you know
+\end_layout
+
+\begin_layout Standard
+Next >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Place
+\end_layout
+
+\begin_layout Standard
+Are you… ?
+\end_layout
+
+\begin_layout Standard
+Indoors >
+\end_layout
+
+\begin_layout Standard
+Outdoors >
+\end_layout
+
+\begin_layout Standard
+In a vehicle >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Place (2)
+\end_layout
+
+\begin_layout Standard
+And are you… ?
+\end_layout
+
+\begin_layout Standard
+At home >
+\end_layout
+
+\begin_layout Standard
+At work >
+\end_layout
+
+\begin_layout Standard
+Elsewhere >
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+If you're working from home, please choose 'At home'
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Activities
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Please tick all that apply
+\end_layout
+
+\begin_layout Standard
+Just now, what were you doing?
+\end_layout
+
+\begin_layout Standard
+[ ] Working, studying
+\end_layout
+
+\begin_layout Standard
+[ ] In a meeting, seminar, class
+\end_layout
+
+\begin_layout Standard
+[ ] Travelling, commuting
+\end_layout
+
+\begin_layout Standard
+[ ] Cooking, preparing food
+\end_layout
+
+\begin_layout Standard
+[ ] Housework, chores, DIY
+\end_layout
+
+\begin_layout Standard
+[ ] Admin, finances, organising
+\end_layout
+
+\begin_layout Standard
+[ ] Shopping, errands
+\end_layout
+
+\begin_layout Standard
+[ ] Waiting, queueing
+\end_layout
+
+\begin_layout Standard
+[ ] Childcare, playing with children
+\end_layout
+
+\begin_layout Standard
+[ ] Pet care, playing with pets
+\end_layout
+
+\begin_layout Standard
+[ ] Care or help for adults
+\end_layout
+
+\begin_layout Standard
+[ ] Sleeping, resting, relaxing
+\end_layout
+
+\begin_layout Standard
+[ ] Sick in bed
+\end_layout
+
+\begin_layout Standard
+[ ] Meditating, religious activities
+\end_layout
+
+\begin_layout Standard
+[ ] Washing, dressing, grooming
+\end_layout
+
+\begin_layout Standard
+[ ] Intimacy, making love
+\end_layout
+
+\begin_layout Standard
+[ ] Talking, chatting, socialising
+\end_layout
+
+\begin_layout Standard
+[ ] Eating, snacking
+\end_layout
+
+\begin_layout Standard
+[ ] Drinking tea/coffee
+\end_layout
+
+\begin_layout Standard
+[ ] Drinking alcohol
+\end_layout
+
+\begin_layout Standard
+[ ] Smoking
+\end_layout
+
+\begin_layout Standard
+[ ] Texting, email, social media
+\end_layout
+
+\begin_layout Standard
+[ ] Browsing the Internet
+\end_layout
+
+\begin_layout Standard
+[ ] Watching TV, film
+\end_layout
+
+\begin_layout Standard
+[ ] Listening to music
+\end_layout
+
+\begin_layout Standard
+[ ] Listening to speech/podcast
+\end_layout
+
+\begin_layout Standard
+[ ] Reading
+\end_layout
+
+\begin_layout Standard
+[ ] Theatre, dance, concert
+\end_layout
+
+\begin_layout Standard
+[ ] Exhibition, museum, library
+\end_layout
+
+\begin_layout Standard
+[ ] Match, sporting event
+\end_layout
+
+\begin_layout Standard
+[ ] Walking, hiking
+\end_layout
+
+\begin_layout Standard
+[ ] Sports, running, exercise
+\end_layout
+
+\begin_layout Standard
+[ ] Gardening, allotment
+\end_layout
+
+\begin_layout Standard
+[ ] Birdwatching, nature watching
+\end_layout
+
+\begin_layout Standard
+[ ] Hunting, fishing
+\end_layout
+
+\begin_layout Standard
+[ ] Computer games, iPhone games
+\end_layout
+
+\begin_layout Standard
+[ ] Other games, puzzles
+\end_layout
+
+\begin_layout Standard
+[ ] Gambling, betting
+\end_layout
+
+\begin_layout Standard
+[ ] Hobbies, arts, crafts
+\end_layout
+
+\begin_layout Standard
+[ ] Singing, performing
+\end_layout
+
+\begin_layout Standard
+[ ] Something else
+\end_layout
+
+\begin_layout Standard
+Next >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+by default, this digital camera screen is shown only when outdoors
+\end_layout
+
+\begin_layout Standard
+Please take a photo straight ahead
+\end_layout
+
+\begin_layout Standard
+Or tap Cancel to skip this step
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+this screen is shown only if a photo was taken
+\end_layout
+
+\begin_layout Subsubsection*
+Map
+\end_layout
+
+\begin_layout Standard
+Add this photo to the public map?
+\end_layout
+
+\begin_layout Standard
+Yes >
+\end_layout
+
+\begin_layout Standard
+No >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+this screen is shown only when outdoors and in the rare event that gps location
+ accuracy is still worse than 100m.
+ it advances automatically when accuracy reaches 100m or 60 seconds has
+ elapsed.
+\end_layout
+
+\begin_layout Subsubsection*
+Location
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Improving location accuracy
+\end_layout
+
+\begin_layout Standard
+Skip >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+the questionnaire dismisses itself immediately after this screen is displayed
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Finished
+\end_layout
+
+\begin_layout Standard
+Thank you!
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onecolumn
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Sample participant feedback charts
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename participant_charts_example.pdf
 	lyxscale 30
 	extra LaTeX "pages=-"
 
