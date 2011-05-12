@@ -113,49 +113,88 @@ Experience sampling
 Overview
 \end_layout
 
-\begin_layout Standard
-Overall goals: 
+\begin_layout Subsubsection
+Maximising sample size
 \end_layout
 
 \begin_layout Standard
-large sample, hence:
+To test our research hypothesis will require that we observe amongst our
+ ESM assessments some experiences of the natural environment.
+ These experiences are expected to occur with relatively low frequency,
+ and may have only a moderate impact on happiness.
+ We will therefore need to collect a very large number of ESM assessments,
+ in order to collect enough that relate to the natural environment that
+ our hypothesis testing will have reasonable statistical power.
 \end_layout
 
 \begin_layout Standard
-- scalability
+A key aim informing many aspects of the study's design, implementation and
+ operation is therefore to maximise the number of participants recruited,
+ and the number of assessments completed by each.
+ This implies a number of subordinate aims, including:
 \end_layout
 
-\begin_layout Standard
-- lowest possible respondent burden (time, logistics, cognitive effort)
+\begin_layout Description
+High
+\begin_inset space ~
+\end_inset
+
+scalability It is prerequisite that the system be capable of handling a
+ large volume of participants and responses.
 \end_layout
 
-\begin_layout Standard
---- everything can be done from iPhone
+\begin_layout Description
+Low
+\begin_inset space ~
+\end_inset
+
+participant
+\begin_inset space ~
+\end_inset
+
+burden Signing up and continuing to take part in the study both need to
+ require as little as possible in terms of time, logistical difficulty and
+ cognitive effort.
+ These processes should be as near as possible 'frictionless': that is,
+ fast, simple, attractive and --- ideally --- fun.
+ They should be capable of completion using only the respondent's device
+ --- with no need to meet or speak to researchers, write emails, or even
+ access web pages.
+ We want to minimise the need to request information from participants,
+ in favour (where possible) of using sensor data such from as the device's
+ microphone or camera.
 \end_layout
 
-\begin_layout Standard
---- fast, simple, attractive, ...
- fun?
+\begin_layout Description
+High
+\begin_inset space ~
+\end_inset
+
+participant
+\begin_inset space ~
+\end_inset
+
+motivation It is important to reach and then motivate prospective participants
+ to sign up to the study, and to keep existing participants engaged in it.
+ This will require us to produce and publicise information about and data
+ from the study in an accessible and interesting format.
+ Keeping participants engaged may also be assisted by the provision of stimulati
+ng feedback about their own responses, especially if the value of this feedback
+ increases with the degree of participation.
 \end_layout
 
-\begin_layout Standard
---- ask as little as possible, use as much sensor data as possible
-\end_layout
+\begin_layout Description
+Low
+\begin_inset space ~
+\end_inset
 
-\begin_layout Standard
-- lowest possible researcher burden (time, logistics, money)
-\end_layout
+researcher
+\begin_inset space ~
+\end_inset
 
-\begin_layout Standard
-- motivation
-\end_layout
-
-\begin_layout Standard
---- feedback for participants
-\end_layout
-
-\begin_layout Standard
---- information for prospective participants & journalists
+burden In order to support a large number of participants and responses,
+ each participant and each response must not require a large investment
+ of researcher time, logistical support, or money.
 \end_layout
 
 \begin_layout Standard
@@ -194,7 +233,7 @@ flowchart:
 \begin_inset Float figure
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -1113,7 +1152,7 @@ pending_beeps
 \begin_inset space ~
 \end_inset
 
-and
+&
 \begin_inset space ~
 \end_inset
 
@@ -1219,7 +1258,7 @@ Mappiness uses APNS notifications to signal participants.
 Initially, the free tier of a commercial service operated by Urban Airship,
  Inc.
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Flex URL
@@ -1280,7 +1319,7 @@ HyperText Transfer Protocol Secure: the encrypted protocol used to transmit
 After evaluating various alternatives we therefore installed an additional
  open-source software package on the Mappiness data server: PyAPNS
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Flex URL
@@ -1412,7 +1451,8 @@ Signalling is performed by the signalling programme on the Mappiness data
 \end_layout
 
 \begin_layout Enumerate
-Connect to the APNS feedback service to retrieve a list of app installations
+(This task is only performed if it has not been performed in the past hour).
+ Connect to the APNS feedback service to retrieve a list of app installations
  with failed deliveries.
  Mark all listed installations inactive in the users database table, and
  delete any pending signals associated with them from the
@@ -1420,7 +1460,7 @@ Connect to the APNS feedback service to retrieve a list of app installations
  
 \emph default
 pending_beeps table.
- (This task is only performed if it has not been performed in the past hour).
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -1436,7 +1476,7 @@ reference "sub:scheduling"
 .
  Similarly, for each participant who has changed their beep settings since
  last programme execution, recalculate the signalling schedule for the remaining
- hours of this day (if applicable)
+ hours of this day
 \begin_inset Foot
 status collapsed
 
@@ -1457,7 +1497,7 @@ basis.
 
 \end_inset
 
- or for the next day.
+ or the next day.
  Store the resulting pending signals in the
 \emph on
  
@@ -1579,10 +1619,10 @@ table.
 
 \begin_layout Description
 image is called with the JPEG image data resulting from a photo taken during
- an ESM assessment, and a code identifying this associated ESM assessment.
+ an ESM assessment, and a code identifying the associated ESM assessment.
  The image is stored in the filesystem.
- If it was marked as public, it is also made accessible from the maps page
- of the public Mappiness website.
+ If it was marked as public, it is also made accessible via a URL within
+ the public website.
 \end_layout
 
 \begin_layout Description
@@ -1638,9 +1678,10 @@ update_token is called if the app detects that its APNS device token has
 \end_layout
 
 \begin_layout Description
-apn_ignored is called in the rare case that the app receives an APNS notificatio
-n that cannot be displayed because another modal activity is in progress
- (such as completing an ESM assessment or changing signalling settings).
+apn_ignored is called in the rare case that the app is open and receives
+ an APNS notification that cannot be displayed because another modal activity
+ is in progress (such as completing an ESM assessment, or changing signalling
+ settings).
  The API flags the relevant notification in the sent_beeps database table
  to indicate that it should not count towards the total signals received
  by the participant.
@@ -1676,8 +1717,8 @@ The app manages a single queue of messages to the asynchronous endpoints.
  queue.
  Reflecting the importance of different endpoints to the data collection
  process, the message queue is ordered by endpoint priority.
- The endpoints are listed in descending priority order in the preceding
- paragraph.
+ The endpoints are listed in the preceding paragraph in descending priority
+ order.
  For example, all ESM assessment response data will be transmitted before
  any image is sent.
  Messages for the same endpoint are processed in first-in-first-out order.
@@ -1702,7 +1743,7 @@ To guard against the loss of collected data in case of intrusion, hardware
  failure or other disaster, an offsite backup is performed daily.
  The backup is made in the early hours of the morning (UK time), when load
  on the server is at its lowest.
- The Mappiness backup script invokes the open-source Duplicity software
+ The server backup script invokes the open-source Duplicity software
 \begin_inset Foot
 status collapsed
 
@@ -1722,8 +1763,8 @@ http://duplicity.nongnu.org/
 
 \end_inset
 
- to back up the contents of the database, and all photos and weather data,
- to the Amazon Simple Storage Service (S3).
+ to back up the contents of the database, and all photos, weather and pollution
+ data, to the Amazon Simple Storage Service (S3).
 \begin_inset Foot
 status collapsed
 
@@ -1746,17 +1787,17 @@ http://aws.amazon.com/s3/
  S3 provides durable and redundant data storage across multiple devices
  and physical locations.
  To comply with Data Protection Act requirements, backup data is stored
- only on S3 servers located within the EU (Ireland).
+ only on S3 servers located within the EU.
+ Backups are encrypted, and also transmitted over an encrypted connection.
  
 \end_layout
 
 \begin_layout Standard
-Backups are encrypted, and also transmitted over an encrypted connection.
- Full backups are performed monthly, and the daily backups occurring in
- between are incremental: only changes relative to the previous backup are
- transmitted and stored.
+Full backups are performed monthly.
+ The daily backups occurring in between are incremental: only changes relative
+ to the previous backup are transmitted and stored.
  Each backup creates a snapshot, so that the data that was held on the server
- on any particular day can be restored.
+ on any particular day could be restored as needed.
 \begin_inset Foot
 status collapsed
 
@@ -1796,7 +1837,7 @@ a map of the most recent 120 responses where the 'happy' self-rating was
 
 \begin_layout Itemize
 'hedonimeters' displaying the average and current happiness ratings for
- London and the whole of the UK --- these are the means of respectively
+ London and the whole of the UK --- these are the mean values of respectively
  all responses and the 25 most recent responses; and
 \end_layout
 
@@ -1807,11 +1848,11 @@ a chart showing the mean happiness response for the UK and London, hour-by-hour
 \end_layout
 
 \begin_layout Standard
-Statistics for the hour-by-hour chart are calculated at the beginning of
- the hour, and statistics for the others are calculated every 5 minutes,
- by programmes executed on the appropriate schedule.
- The statistics are saved (in JSON format) in a directory accessible over
- an HTTP connection, and are loaded as required by the public website.
+Statistics for the hour-by-hour chart are calculated at the end of each
+ hour, and statistics for the others are calculated every 5 minutes, by
+ scripts executed on the appropriate schedule.
+ The statistics are saved (in JSON format) in a directory publicly accessible
+ over an HTTP connection, and are loaded as required by the public website.
  
 \end_layout
 
@@ -1899,8 +1940,8 @@ Data download is made available by another web application built using the
 
 \begin_layout Description
 HTML reproducing the charts available within the app (which can then be
- emailed, saved or printed), and providing a gallery of the photos submitted
- by the participant.
+ emailed, saved or printed), providing a gallery of the photos submitted
+ by the participant, and displaying all responses on an interactive map.
 \end_layout
 
 \begin_layout Description
@@ -1908,11 +1949,19 @@ KMZ for exploration within mapping applications such as Google Earth.
 \end_layout
 
 \begin_layout Description
-iCalendar for viewing (and subscription) within calendaring applications
+iCalendar for viewing (and subscribing to) within calendaring applications
  such as iCal.
 \end_layout
 
 \begin_layout Description
+XLS
+\begin_inset space ~
+\end_inset
+
+and
+\begin_inset space ~
+\end_inset
+
 CSV for import into spreadsheet or statistics applications, for subsequent
  graphing or statistical analysis.
 \end_layout
@@ -1928,7 +1977,8 @@ JSON for consumption by third-party services.
 \begin_layout Standard
 For all formats except HTML charts, response data are provided in descending
  order of response date/time, and the web application accepts query parameters
- limiting the data to be returned by date/time and sequence.
+ limiting the data to be returned by date/time and by position in the response
+ sequence.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1942,7 +1992,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -2031,6 +2081,10 @@ Reviews (and review prompt in app after 10 responses -- esp in relation
 
 \begin_layout Paragraph
 Website 
+\end_layout
+
+\begin_layout Standard
+See Appendix X
 \end_layout
 
 \begin_layout Standard

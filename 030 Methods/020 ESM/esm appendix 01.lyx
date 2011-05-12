@@ -754,5 +754,21 @@ Contact
 George MacKerron g.j.mackerron@lse.ac.uk 020 7193 7369 07917 735 567
 \end_layout
 
+\begin_layout Section
+Public website
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename website/combined.pdf
+	lyxscale 30
+	extra LaTeX "pages=-"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
