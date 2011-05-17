@@ -229,11 +229,9 @@ Life satisfaction
 \end_layout
 
 \begin_layout Standard
-The first screen presents a standard life satisfaction (LS) question.
- We ask this generalised and evaluative/cognitive wellbeing question for
- comparison with individuals' later momentary assessment responses.
- It is based on the European Social Survey question used in the two web
- surveys (see 
+The first screen presents a standard life satisfaction (LS) item.
+ It is based on the European Social Survey item used in the two web surveys
+ (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:survey-design-happiness"
@@ -244,10 +242,8 @@ reference "sub:survey-design-happiness"
  However, owing to constraints of space on the iPhone screen, the preamble
  'All things considered' is eliminated from the question text, and the response
  scale is truncated to run from 1 -- 10 instead of 0 -- 10.
- The response is marked on a segmented control, which is a standard interface
- control familiar to iPhone users.
- The question is presented first to minimise context effects.
- 
+ We ask this generalised and evaluative/cognitive wellbeing question for
+ comparison with individuals' later momentary assessment responses.
 \end_layout
 
 \begin_layout Paragraph
@@ -255,7 +251,7 @@ Health
 \end_layout
 
 \begin_layout Standard
-We then present a simple, standard self-assessed health question (the response
+We then present a simple, standard self-assessed health item (the response
  categories here are the same as used in the Canadian National Population
  Health Survey, for example).
  We ask this question because health is invariably a substantial predictor
@@ -274,7 +270,7 @@ We next ask questions on gender, age, marital and relationship status, work
  status and household composition.
  The age question is framed as year of birth --- this provides year-level
  precision, and is known to give high accuracy and low non-response rate
- 
+ compared to other options, such as age bands 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "healey:2008"
@@ -282,11 +278,15 @@ key "healey:2008"
 \end_inset
 
 .
- We ask these questions in order to characterise our sample in relation
- to the wider population; because age, marital/relationship status and work
- status have strong associations with wellbeing in the literature; and because
- household composition allows us to calculate equivalised individual income
- levels.
+ 
+\end_layout
+
+\begin_layout Standard
+We ask these demographic questions in order to characterise our sample in
+ relation to the wider population; because age, marital/relationship status
+ and work status have strong associations with wellbeing in the literature;
+ and because information on household composition allows us to calculate
+ equivalised income levels using the income data discussed next.
 \end_layout
 
 \begin_layout Paragraph
@@ -298,7 +298,7 @@ Finally, we present questions on income.
  We first ask about gross annual household income, providing 11 response
  bands, with fairly wide bands at the very bottom (since iPhone owners are
  not expected to be very poor) and across the top end (reflecting the diminishin
-g marginal utility of additional income).
+g marginal utility of income).
  We also provide 
 \begin_inset Quotes eld
 \end_inset
@@ -316,16 +316,21 @@ Prefer not to say
 \end_inset
 
  options because of the relative difficulty and sensitivity of the question.
- We ask this question because income information may enable us to use wellbeing
- responses for monetary valuation, and because previous research finds a
- significant positive effect of income on wellbeing.
+ 
 \end_layout
 
 \begin_layout Standard
-Second, we ask somewhat experimental questions about changes in income over
- the past 3 years: whether there has there been a change up or down and,
- if there has been, the magnitude of the change in one of 6 bands (defined
- in absolute money amounts).
+We ask this question in order to characterise our sample in relation to
+ the wider population; because previous research finds a significant positive
+ effect of income on wellbeing; and because income information may enable
+ us to use wellbeing responses for monetary valuation.
+\end_layout
+
+\begin_layout Standard
+Second, we ask up to two somewhat experimental questions about changes in
+ income over the past 3 years: whether there has there been a change up
+ or down and, if there has been, the magnitude of the change in one of 6
+ bands (defined in absolute money amounts).
  Again we allow 
 \begin_inset Quotes eld
 \end_inset
@@ -356,17 +361,37 @@ key "welsch:2009a"
 .
 \end_layout
 
+\begin_layout Paragraph
+Item order
+\end_layout
+
 \begin_layout Standard
-[item order]
+The same principles of item ordering were followed as in the design of the
+ web surveys (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:Item-order"
+
+\end_inset
+
+).
+ The LS item is presented first, to minimise context effects; the income
+ items, being probably the most sensitive, are presented last.
 \end_layout
 
 \begin_layout Subsubsection
 Experience sampling
 \end_layout
 
+\begin_layout Paragraph
+Typical ESM assessments
+\end_layout
+
 \begin_layout Standard
 ESM assessments are designed to capture both internal and external dimensions
  of experience.
+ Measurement of the internal dimensions varies depending on the focus of
+ a particular study.
  Typically, four key external dimensions are measured 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -383,26 +408,70 @@ the date and time of signalling and of the participant's response;
 \end_layout
 
 \begin_layout Enumerate
+companionship, eliciting descriptions such as 'parents', 'friends' and 'coworker
+s';
+\end_layout
+
+\begin_layout Enumerate
 the participant's location, eliciting descriptions such as 'in the kitchen'
- or 'at my desk at work';
+ or 'at my desk at work'; and
 \end_layout
 
 \begin_layout Enumerate
 the activity or activities in which the participant is engaged (participants
- are often required to identify 'primary' and 'secondary' activities); and
-\end_layout
-
-\begin_layout Enumerate
-companionship, eliciting descriptions such as 'parents', 'friends' and 'coworker
-s'.
+ are often required to identify 'primary' and 'secondary' activities).
 \end_layout
 
 \begin_layout Standard
-Measurement of the internal dimensions varies depending on the focus of
- a particular study.
- A typical ESM survey asks several questions regarding each of the external
- dimensions of experience, and a large number of questions concerning the
- internal dimensions --- 
+\begin_inset Float figure
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename esm-form-sample.png
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Sample ESM survey form reproduced from 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "296"
+key "hektner:2007"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sample-ESM-survey"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ESM surveys tend to ask a large number of questions concerning the internal
+ dimensions of experience --- 
 \begin_inset CommandInset citation
 LatexCommand citet
 after "49"
@@ -410,9 +479,9 @@ key "hektner:2007"
 
 \end_inset
 
- estimate that around 35 items on the internal dimensions of experience
- is normal.
- Questions on both internal and external dimensions may include open-ended
+ estimate that around 35 items is standard --- in addition to several questions
+ regarding each of the external dimensions.
+ Questions on both internal and external dimensions commonly include open-ended
  questions, such as ''Where were you?
 \begin_inset Quotes erd
 \end_inset
@@ -426,38 +495,122 @@ What was on your mind?
 \end_inset
 
 .
+ A sample ESM survey form is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:sample-ESM-survey"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Mappiness ESM assessment
 \end_layout
 
 \begin_layout Standard
-As explained above, the questions asked in the Mappiness ESM assessment
- are intended to be as few and as brief as possible.
- The first external dimension listed above is captured automatically by
- the data server (which records the signalling time) and the app (which
- reports the response time).
- The survey then includes questions regarding the latter three.
- The second dimension, location, is extended to include the participant's
- objective geographical coordinates using the iPhone's GPS facility.
- Two further dimensions are added: noise level, measured by the device's
- microphone while the participant responds, and an image of the participant's
- immediate environment, taken by the participant using the device's camera.
- The internal dimensions of experience are reduced to three.
+As previously discussed, our ESM assessment is intended to be as brief and
+ as undemanding as possible.
+ No open-ended items are used
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Update 1.1 of the app, released in May 2011, added a 'Notes' item for free
+ text entry, but this is an optional item intended primarily for participants'
+ own use.
+\end_layout
+
+\end_inset
+
+.
+ For participants, open-ended responses would be more cognitively demanding,
+ slower, and awkward to enter using the iPhone's on-screen keyboard.
+ In addition, manual coding of the answers would be infeasible if the large
+ desired sample were to be achieved.
 \end_layout
 
 \begin_layout Standard
-None of the items in our ESM assessment are open-ended.
- Answering open-ended questions is demanding of participants; it is slow
- and awkward to type textual answers using the iPhone's onscreen keyboard;
- and manual coding of answers would be infeasible if we were to attract
- as many participants and responses as hoped.
+The first external dimension of experience listed above, time, is captured
+ automatically by the data server and the app.
+ Using the iPhone's sensing capabilities the second dimension, location,
+ is extended to include the participant's objective geographical coordinates,
+ and two further dimensions are added: noise level, and an image of the
+ participant's immediate environment.
+ These sensed data are discussed further in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:esm-sensor-data"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The full text of the ESM assessment survey is reproduced in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:esm-survey"
+
+\end_inset
+
  
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sub:esm-survey"
+
+\end_inset
+
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:esm-appendix"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subparagraph
+Feelings
 \end_layout
 
 \begin_layout Standard
-Feelings (other ESM surveys)
+The internal dimensions of experience are limited to three simple items.
+ Visual analogue scales are used, implemented as slider controls, because
+ of their sensitivity to small variations (and because we feel that the
+ user experience is enhanced by their high level of interactivity).
+ Participants are asked to rate the extent to which they feel 'happy', 'relaxed'
+ and 'awake' on these scales, in each case between 'not at all' on the far
+ left and 'extremely' on the far right.
 \end_layout
 
 \begin_layout Standard
-Other items
+The 'happy' response is of primary interest in this study.
+ The other two adjectives were chosen as being reasonably orthogonal to
+ happiness and to each other, and as being plausibly affected by environmental
+ parameters.
+ In all three cases we chose familiar, everyday terms in order to increase
+ acceptance by participants.
+ We chose to emphasise positive aspects of mood in each case --- 'happy',
+ 'relaxed' and 'awake' rather than 'sad', 'stressed' and 'tired' --- to
+ help communicate the study's positive purpose and emphasis on positive
+ impacts on wellbeing, and for simplicity and consistency of the relevant
+ survey screen.
+\end_layout
+
+\begin_layout Subparagraph
+Companionship
+\end_layout
+
+\begin_layout Standard
+sdf
+\end_layout
+
+\begin_layout Subparagraph
+Activity
 \end_layout
 
 \begin_layout Standard
@@ -1092,6 +1245,90 @@ App
 \end_layout
 
 \begin_layout Paragraph
+ESM sensor data
+\begin_inset CommandInset label
+LatexCommand label
+name "par:esm-sensor-data"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sound
+\end_layout
+
+\begin_layout Standard
+Photos -- when requested, resized, sent
+\end_layout
+
+\begin_layout Subparagraph
+Time and date
+\end_layout
+
+\begin_layout Standard
+The first external dimension of experience listed above, date and time,
+ is captured automatically.
+ The moment of signalling is recorded by the data server.
+ This will not be precisely the same moment that the signal is delivered
+ to the participant's device, but in practice it will usually be close.
+ The response time is reported by the app.
+ For this we are reliant on the accuracy of the clock setting on the participant
+'s iPhone.
+ In general, this should not present a problem, since the device defaults
+ to automatic synchronisation of the clock with the network provider.
+\end_layout
+
+\begin_layout Subparagraph
+Location
+\end_layout
+
+\begin_layout Standard
+The third dimension listed, location, is extended to include the participant's
+ objective geographical coordinates.
+ The device's Assisted Global Positioning System (A-GPS) capability is activated
+ at the beginning of the ESM assessment process, and the device location
+ is queried at the end, to allow the longest possible time for an accurate
+ location fix to be achieved.
+ 
+\end_layout
+
+\begin_layout Standard
+If the participant is indoors --- with no line-of-sight to the GPS satellites
+ --- the device will calculate location by triangulation of known wireless
+ Internet (WiFi) access points and mobile telephony base-stations.
+ In this situation, accuracy will vary considerably depending on proximity
+ to these known locations, and in the worst case no location data will be
+ available.
+ 
+\end_layout
+
+\begin_layout Standard
+GPS --- 100m threshold/delay outdoors
+\end_layout
+
+\begin_layout Standard
+However, the estimated accuracy of the calculated location is reported by
+ the device in all cases, reducing the risk that inaccurate location data
+ will bias our analyses.
+ This report 
+\end_layout
+
+\begin_layout Standard
+Lack of calibration, what does +/- 100m mean (95% CI?)
+\end_layout
+
+\begin_layout Subparagraph
+Sound level and image
+\end_layout
+
+\begin_layout Standard
+, and two further dimensions are added: noise level, and a photographic
+ image of the participant's immediate environment.
+\end_layout
+
+\begin_layout Paragraph
 Interaction design
 \end_layout
 
@@ -1141,7 +1378,8 @@ UITableView: Single-tap where possible, and auto-dismiss at end (speed over
 \end_layout
 
 \begin_layout Standard
-UISlider: starting mid position, greyed-out start, tick marks
+UISlider: starting mid position, greyed-out start, tick marks, slider resolution
+ (pixel width/retina display)
 \end_layout
 
 \begin_layout Standard
@@ -1150,22 +1388,6 @@ UISegmentedControl (LS only)
 
 \begin_layout Standard
 UIPicker: likeliest start position (de facto default)
-\end_layout
-
-\begin_layout Subparagraph
-ESM sensor data
-\end_layout
-
-\begin_layout Standard
-GPS --- 100m threshold/delay
-\end_layout
-
-\begin_layout Standard
-Sound
-\end_layout
-
-\begin_layout Standard
-Photos -- when requested, resized, sent
 \end_layout
 
 \begin_layout Subparagraph

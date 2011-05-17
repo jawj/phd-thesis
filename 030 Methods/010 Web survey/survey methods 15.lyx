@@ -2757,6 +2757,13 @@ key "peytchev:2006"
 
 \begin_layout Paragraph
 Item order
+\begin_inset CommandInset label
+LatexCommand label
+name "par:Item-order"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
