@@ -254,7 +254,7 @@ Health
 We then present a simple, standard self-assessed health item (the response
  categories here are the same as used in the Canadian National Population
  Health Survey, for example).
- We ask this question because health is invariably a substantial predictor
+ We ask this question because health status is invariably an important predictor
  of wellbeing responses in the literature.
  We also ask a simple Yes/No question about asthma and other respiratory
  disease, because these may be important factors mediating the impact of
@@ -270,7 +270,7 @@ We next ask questions on gender, age, marital and relationship status, work
  status and household composition.
  The age question is framed as year of birth --- this provides year-level
  precision, and is known to give high accuracy and low non-response rate
- compared to other options, such as age bands 
+ compared to other options, such as a choice of age bands 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "healey:2008"
@@ -361,24 +361,6 @@ key "welsch:2009a"
 .
 \end_layout
 
-\begin_layout Paragraph
-Item order
-\end_layout
-
-\begin_layout Standard
-The same principles of item ordering were followed as in the design of the
- web surveys (see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "par:Item-order"
-
-\end_inset
-
-).
- The LS item is presented first, to minimise context effects; the income
- items, being probably the most sensitive, are presented last.
-\end_layout
-
 \begin_layout Subsubsection
 Experience sampling
 \end_layout
@@ -408,8 +390,8 @@ the date and time of signalling and of the participant's response;
 \end_layout
 
 \begin_layout Enumerate
-companionship, eliciting descriptions such as 'parents', 'friends' and 'coworker
-s';
+the participant's companionship, eliciting descriptions such as 'with parents',
+ 'with friends' and 'with coworkers';
 \end_layout
 
 \begin_layout Enumerate
@@ -512,7 +494,7 @@ Mappiness ESM assessment
 \begin_layout Standard
 As previously discussed, our ESM assessment is intended to be as brief and
  as undemanding as possible.
- No open-ended items are used
+ No open-ended items are employed
 \begin_inset Foot
 status collapsed
 
@@ -533,7 +515,7 @@ Update 1.1 of the app, released in May 2011, added a 'Notes' item for free
 
 \begin_layout Standard
 The first external dimension of experience listed above, time, is captured
- automatically by the data server and the app.
+ automatically.
  Using the iPhone's sensing capabilities the second dimension, location,
  is extended to include the participant's objective geographical coordinates,
  and two further dimensions are added: noise level, and an image of the
@@ -574,17 +556,20 @@ reference "chap:esm-appendix"
 \end_layout
 
 \begin_layout Subparagraph
-Feelings
+Wellbeing
 \end_layout
 
 \begin_layout Standard
-The internal dimensions of experience are limited to three simple items.
+The information we collect on the internal dimensions of experience is limited
+ to three simple items.
+ We present these on the first screen of the ESM assessment survey.
  Visual analogue scales are used, implemented as slider controls, because
- of their sensitivity to small variations (and because we feel that the
- user experience is enhanced by their high level of interactivity).
+ of their sensitivity to small variations and (somewhat subjectively) because
+ the user experience is enhanced by their high degree of interactivity.
  Participants are asked to rate the extent to which they feel 'happy', 'relaxed'
  and 'awake' on these scales, in each case between 'not at all' on the far
  left and 'extremely' on the far right.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -593,7 +578,7 @@ The 'happy' response is of primary interest in this study.
  happiness and to each other, and as being plausibly affected by environmental
  parameters.
  In all three cases we chose familiar, everyday terms in order to increase
- acceptance by participants.
+ acceptance by participants, and used unipolar items for simplicity.
  We chose to emphasise positive aspects of mood in each case --- 'happy',
  'relaxed' and 'awake' rather than 'sad', 'stressed' and 'tired' --- to
  help communicate the study's positive purpose and emphasis on positive
@@ -606,32 +591,193 @@ Companionship
 \end_layout
 
 \begin_layout Standard
-sdf
+We next ask whom the participant is currently with.
+ The participant can tap 'Alone, or with strangers only' to proceed immediately
+ to the next question, or tick all applicable categories and then tap 'Next'.
+ The categories offered are based on those used in previous ESM surveys.
 \end_layout
 
 \begin_layout Subparagraph
-Activity
+Location type
 \end_layout
 
 \begin_layout Standard
-Activities: 2x time use surveys + Killingsworth
+To provide context for the GPS-sensed location coordinates we then present
+ two simple items regarding location type.
+ We ask whether the participant is indoors, outdoors or in a vehicle, since
+ this is expected to be an important mediator of the impact of the outdoor
+ environment --- for which spatial data is available --- on wellbeing.
+ And we ask whether the participant is at home, at work, or neither: first,
+ because the home and work locations may have important non-environmental
+ effects on wellbeing; and second, because they are likely to account for
+ a large proportion of the participants' time, and their associated environments
+ may therefore represent an important baseline for other environmental experienc
+es.
+\end_layout
+
+\begin_layout Subparagraph
+Activities
 \end_layout
 
 \begin_layout Standard
-context effects:
+Next, we ask what the participant is currently doing.
+ For simplicity, we present one simple list of activities (as an alternative,
+ we initially considered using some form of nested categorisation).
+ Participants are asked to tick all activities that apply.
+ To proceed, at least one activity (or the last entry, 'Something else')
+ must be ticked.
+ For simplicity, we do not ask participants to distinguish between primary
+ and secondary activities.
+ 
 \end_layout
 
 \begin_layout Standard
-- feelings are first (and presented immediately if a beep is pending)
+The list of activities presented is informed by three sources: the UK 2000
+ Time Use Survey Activity Coding List 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "Appendix 3"
+key "office-for-national-statistics:2003"
+
+\end_inset
+
+, the American Time Use Survey 2009 Activity Lexicon 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bureau-of-labor-statistics:2009"
+
+\end_inset
+
+, and the trackyourhappiness.org ESM study 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "killingsworth:2010"
+
+\end_inset
+
+.
+ The drafting of a single list of activities that is comprehensive but of
+ a manageable length requires subjective judgment and some challenging compromis
+es.
+ For example, certain of our activities are arguably too broad --- 'Shopping,
+ errands' has to cover both the purchase of mundane necessities and shopping
+ undertaken as a leisure activity ('retail therapy').
+ Similarly, certain activities that represent arguably distinct experiences
+ are combined into a single category: 'Hunting, fishing', for instance.
 \end_layout
 
 \begin_layout Standard
-- no mention in survey or any feedback of research hypotheses (i.e.
- environment)
+The activities are presented in a broadly thematic order, proceeding from
+ work-related actvities through chores and errands to leisure activities.
+ We considered randomising the order of response options per response or
+ per participant to counter possible ordering effects.
+ However, the disadvantages of this approach were considered to outweigh
+ the benefits.
+ Both forms of randomisation would result in an arbitrary ordering of items
+ that would be more difficult to navigate.
+ In addition, per response randomisation might confuse participants, and
+ would prevent any learning of the list order, again impeding navigation
+ of the list.
+ 
 \end_layout
 
 \begin_layout Standard
-item order
+The activities list was updated once after launch, with app update 1.0.2 in
+ September 2010.
+ Five new categories were added: 'Intimacy, making love', 'Texting, emailing,
+ social media', 'Browsing the Internet', 'Drinking tea/coffee', and 'Birdwatchin
+g, nature watching'.
+ The first four categories were added based on participant feedback.
+ The last, 'Birdwatching, nature watching' was added because it was seen
+ as a potentially important omission in relation to experiences of natural
+ environments.
+\end_layout
+
+\begin_layout Standard
+Adding activity categories inevitably results in reduced comparability of
+ responses made before and after the change.
+ To maximise comparability, however, we changed the coding of the 'Something
+ else' option with this app update, to reflect that was now an option encompassi
+ng a narrower range of activities.
+\end_layout
+
+\begin_layout Subparagraph
+Photo
+\end_layout
+
+\begin_layout Standard
+The participants may next be asked to take a photo straight ahead.
+ By default, this is requested only when the participant has indicated that
+ he or she is outdoors --- both for reasons of privacy, and to save time
+ on the majority of assessment occasions when the participant is not outdoors.
+ However, as of app update 1.0.2 participants can choose instead to be prompted
+ for a photo on every occasion or not at all (and can also choose, in response
+ to several participant requests, to have all photos taken within the app
+ saved to their on-device photo album).
+\end_layout
+
+\begin_layout Standard
+The participant can decline the request to take a photo by tapping 'Cancel'.
+ After taking a photo, the participant can tap either 'Retake' or 'Use'.
+ If the participant successfully takes a photo, he or she is then asked
+ whether it may be added to the map on the public website.
+\end_layout
+
+\begin_layout Subparagraph
+Location accuracy
+\end_layout
+
+\begin_layout Standard
+If the participant has indicated that he or she is outdoors, accurate location
+ data should also be obtainable by the GPS sensor, and are particularly
+ important to our research.
+ In this case, therefore, if the accuracy of the GPS-reported location is
+ worse than 
+\begin_inset Formula $+$
+\end_inset
+
+/
+\begin_inset Formula $-$
+\end_inset
+
+ 100m then the participant will be asked to wait while the device continues
+ to try to determine its location.
+ This location accuracy screen dismisses itself automatically after 60 seconds
+ or as soon as location accuracy reaches 
+\begin_inset Formula $+$
+\end_inset
+
+/
+\begin_inset Formula $-$
+\end_inset
+
+ 100m or better.
+ The participant is also able to tap 'Skip' to proceed at any time.
+\end_layout
+
+\begin_layout Subsubsection
+Item order and context effects
+\end_layout
+
+\begin_layout Standard
+In the design of the registration and ESM assessment surveys, the same principle
+s of item ordering were followed as in the web surveys, as discussed in
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "par:Item-order"
+
+\end_inset
+
+.
+ In each case the wellbeing item is presented first, to minimise context
+ effects (for the ESM assessment, the item is presented immediately upon
+ app launch if an assessment is pending).
+ In the registration survey, the income items are presented last, being
+ probably the most sensitive.
+ Again to minimise context effects --- and the possibility of induced correlatio
+n --- no mention is made in the surveys or in any in-app feedback of the
+ research hypothesis or environmental factors.
 \end_layout
 
 \begin_layout Subsection
@@ -1316,7 +1462,7 @@ However, the estimated accuracy of the calculated location is reported by
 \end_layout
 
 \begin_layout Standard
-Lack of calibration, what does +/- 100m mean (95% CI?)
+Lack of calibration, what does +/- 100m mean (95% CI??)
 \end_layout
 
 \begin_layout Subparagraph
@@ -1388,6 +1534,10 @@ UISegmentedControl (LS only)
 
 \begin_layout Standard
 UIPicker: likeliest start position (de facto default)
+\end_layout
+
+\begin_layout Standard
+What happens on interruption (call, app quit, etc.)
 \end_layout
 
 \begin_layout Subparagraph
@@ -2733,6 +2883,136 @@ Period
 \begin_layout Standard
 Technical issues: software fixes; database indexing; memory and Passenger
  process trade-off
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+App version
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Changes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
