@@ -1463,13 +1463,38 @@ Workplace Employment Relations Survey 2004
 
 \begin_layout Subsubsection
 Happiness
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:survey-design-happiness"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Items were included to assess subjective wellbeing according to three distinct
  approaches.
  First, a standard single-item life satisfaction (LS) scale was used---item
- B24 on the 2006 European Social Survey (ESS) Round 3:
+ B24 on the 2006 European Social Survey (ESS) Round 3, listed as item 
+\emph on
+O-SLW/c/sq/n/11/cd
+\emph default
+ in 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "veenhoven:2001"
+
+\end_inset
+
+'s 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "veenhoven:2001"
+
+\end_inset
+
+ World Database of Happiness:
 \end_layout
 
 \begin_layout Quote

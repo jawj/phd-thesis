@@ -107,6 +107,13 @@
 
 \begin_layout Chapter
 Supplementary information for ESM
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:esm-appendix"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -618,6 +625,13 @@ CREATE TABLE demographic_answer_sets(
 
 \begin_layout Section
 Press release
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:press-release"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -756,6 +770,13 @@ George MacKerron g.j.mackerron@lse.ac.uk 020 7193 7369 07917 735 567
 
 \begin_layout Section
 App Store description
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:app-Store-description"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -829,7 +850,18 @@ For more information, visit http://www.mappiness.org.uk, or download the app,
 \end_layout
 
 \begin_layout Section
-Public website (as at 12 May 2011)
+Public website 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:public-website"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These screenshots show the site as it appeared on 12 May 2011.
 \end_layout
 
 \begin_layout Standard
@@ -845,7 +877,14 @@ Public website (as at 12 May 2011)
 \end_layout
 
 \begin_layout Section
-Text of participant consent form
+Participant consent form
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:consent-form"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1158,6 +1197,13 @@ The surveys span multiple screens, delineated below by horizontal rules.
 
 \begin_layout Subsection
 Registration survey
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:registration-survey"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1813,6 +1859,13 @@ height "0.5pt"
 
 \begin_layout Subsection
 ESM survey
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:esm-survey"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -2332,7 +2385,14 @@ onecolumn
 \end_layout
 
 \begin_layout Section
-Sample participant feedback charts
+Participant feedback charts sample
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:participant-feedback-charts"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2341,6 +2401,52 @@ Sample participant feedback charts
 	filename participant_charts_example.pdf
 	lyxscale 30
 	extra LaTeX "pages=-"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+User interface mock-ups
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:ui-mock-ups"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ui_ideas.pdf
+	lyxscale 15
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+User interface mock-ups (created with Interface Builder and OmniGraffle
+ Pro)
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 

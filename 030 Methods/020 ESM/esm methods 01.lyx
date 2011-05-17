@@ -113,9 +113,9 @@ To test our research hypothesis will require that we observe amongst our
  ESM assessments some experiences of the natural environment.
  These experiences are expected to occur with relatively low frequency,
  and may have only a moderate impact on happiness.
- We will therefore need to collect a very large number of ESM assessments,
- in order to collect enough that relate to the natural environment that
- our hypothesis testing will have reasonable statistical power.
+ We will therefore need to collect a large number of ESM assessments, in
+ order to obtain enough relating to the natural environment for our hypothesis
+ tests to have reasonable statistical power.
 \end_layout
 
 \begin_layout Standard
@@ -123,15 +123,6 @@ A key aim informing many aspects of the study's design, implementation and
  operation is therefore to maximise the number of participants recruited,
  and the number of assessments completed by each.
  This implies a number of subordinate aims, including:
-\end_layout
-
-\begin_layout Description
-High
-\begin_inset space ~
-\end_inset
-
-scalability It is prerequisite that the system be capable of handling a
- large volume of participants and responses.
 \end_layout
 
 \begin_layout Description
@@ -146,14 +137,12 @@ participant
 burden Signing up and continuing to take part in the study both need to
  require as little as possible in terms of time, logistical difficulty and
  cognitive effort.
- These processes should be as near as possible 'frictionless': that is,
- fast, simple, attractive and --- ideally --- fun.
+ These processes should be fast, simple, attractive and --- ideally ---
+ fun.
+ They will ideally involve no typing.
  They should be capable of completion using only the respondent's device
- --- with no need to meet or speak to researchers, write emails, or even
- access web pages.
- We want to minimise the need to request information from participants,
- in favour (where possible) of using sensor data such from as the device's
- microphone or camera.
+ --- for example, there should be no need to meet or speak to researchers.
+ We will want to minimise the amount of information requested from participants.
 \end_layout
 
 \begin_layout Description
@@ -185,7 +174,19 @@ researcher
 
 burden In order to support a large number of participants and responses,
  each participant and each response must not require a large investment
- of researcher time, logistical support, or money.
+ of researcher time, logistical support, or money (since none of these is
+ in abundant supply).
+ For example, it would be impractical to ask a large number of open-ended
+ questions requiring coding by the researcher.
+\end_layout
+
+\begin_layout Description
+High
+\begin_inset space ~
+\end_inset
+
+scalability The system obviously must be capable of handling a large volume
+ of participants and responses.
 \end_layout
 
 \begin_layout Subsection
@@ -196,12 +197,259 @@ Survey design
 Registration
 \end_layout
 
+\begin_layout Standard
+As part of the process of signing up to take part in the study, participants
+ complete a brief survey providing data about themselves.
+ The full text of this survey is reproduced screen-by-screen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:registration-survey"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sub:registration-survey"
+
+\end_inset
+
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:esm-appendix"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Life satisfaction 
+\end_layout
+
+\begin_layout Standard
+The first screen presents a standard life satisfaction (LS) question.
+ We ask this generalised and evaluative/cognitive wellbeing question for
+ comparison with individuals' later momentary assessment responses.
+ It is based on the European Social Survey question used in the two web
+ surveys (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:survey-design-happiness"
+
+\end_inset
+
+).
+ However, owing to constraints of space on the iPhone screen, the preamble
+ 'All things considered' is eliminated from the question text, and the response
+ scale is truncated to run from 1 -- 10 instead of 0 -- 10.
+ The response is marked on a segmented control, which is a standard interface
+ control familiar to iPhone users.
+ The question is presented first to minimise context effects.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Health
+\end_layout
+
+\begin_layout Standard
+We then present a simple, standard self-assessed health question (the response
+ categories here are the same as used in the Canadian National Population
+ Health Survey, for example).
+ We ask this question because health is invariably a substantial predictor
+ of wellbeing responses in the literature.
+ We also ask a simple Yes/No question about asthma and other respiratory
+ disease, because these may be important factors mediating the impact of
+ air pollution on wellbeing.
+\end_layout
+
+\begin_layout Paragraph
+Demographics
+\end_layout
+
+\begin_layout Standard
+We next ask questions on gender, age, marital and relationship status, work
+ status and household composition.
+ The age question is framed as year of birth --- this provides year-level
+ precision, and is known to give high accuracy and low non-response rate
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "healey:2008"
+
+\end_inset
+
+.
+ We ask these questions in order to characterise our sample in relation
+ to the wider population; because age, marital/relationship status and work
+ status have strong associations with wellbeing in the literature; and because
+ household composition allows us to calculate equivalised individual income
+ levels.
+\end_layout
+
+\begin_layout Paragraph
+Income
+\end_layout
+
+\begin_layout Standard
+Finally, we present questions on income.
+ We first ask about gross annual household income, providing 11 response
+ bands, with fairly wide bands at the very bottom (since iPhone owners are
+ not expected to be very poor) and across the top end (reflecting the diminishin
+g marginal utility of additional income).
+ We also provide 
+\begin_inset Quotes eld
+\end_inset
+
+Don't know
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+Prefer not to say
+\begin_inset Quotes erd
+\end_inset
+
+ options because of the relative difficulty and sensitivity of the question.
+ We ask this question because income information may enable us to use wellbeing
+ responses for monetary valuation, and because previous research finds a
+ significant positive effect of income on wellbeing.
+\end_layout
+
+\begin_layout Standard
+Second, we ask somewhat experimental questions about changes in income over
+ the past 3 years: whether there has there been a change up or down and,
+ if there has been, the magnitude of the change in one of 6 bands (defined
+ in absolute money amounts).
+ Again we allow 
+\begin_inset Quotes eld
+\end_inset
+
+Don't know
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+Prefer not to say
+\begin_inset Quotes erd
+\end_inset
+
+ responses.
+ We ask this question because lagged income has been shown in many studies
+ to be an important correlate of wellbeing, and its omission in valuation
+ studies may lead to an upward bias in SWB-derived valuation estimates 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "2741"
+key "welsch:2009a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+[item order]
+\end_layout
+
 \begin_layout Subsubsection
 Experience sampling
 \end_layout
 
 \begin_layout Standard
-[Hektner et al p 43+ is good on this.]
+ESM assessments are designed to capture both internal and external dimensions
+ of experience.
+ Typically, four key external dimensions are measured 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "43--44"
+key "hektner:2007"
+
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Enumerate
+the date and time of signalling and of the participant's response;
+\end_layout
+
+\begin_layout Enumerate
+the participant's location, eliciting descriptions such as 'in the kitchen'
+ or 'at my desk at work';
+\end_layout
+
+\begin_layout Enumerate
+the activity or activities in which the participant is engaged (participants
+ are often required to identify 'primary' and 'secondary' activities); and
+\end_layout
+
+\begin_layout Enumerate
+companionship, eliciting descriptions such as 'parents', 'friends' and 'coworker
+s'.
+\end_layout
+
+\begin_layout Standard
+Measurement of the internal dimensions varies depending on the focus of
+ a particular study.
+ A typical ESM survey asks several questions regarding each of the external
+ dimensions of experience, and a large number of questions concerning the
+ internal dimensions --- 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "49"
+key "hektner:2007"
+
+\end_inset
+
+ estimate that around 35 items on the internal dimensions of experience
+ is normal.
+ Questions on both internal and external dimensions may include open-ended
+ questions, such as ''Where were you?
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+What was on your mind?
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As explained above, the questions asked in the Mappiness ESM assessment
+ are intended to be as few and as brief as possible.
+ The first external dimension listed above is captured automatically by
+ the data server (which records the signalling time) and the app (which
+ reports the response time).
+ The survey then includes questions regarding the latter three.
+ The second dimension, location, is extended to include the participant's
+ objective geographical coordinates using the iPhone's GPS facility.
+ Two further dimensions are added: noise level, measured by the device's
+ microphone while the participant responds, and an image of the participant's
+ immediate environment, taken by the participant using the device's camera.
+ The internal dimensions of experience are reduced to three.
+\end_layout
+
+\begin_layout Standard
+None of the items in our ESM assessment are open-ended.
+ Answering open-ended questions is demanding of participants; it is slow
+ and awkward to type textual answers using the iPhone's onscreen keyboard;
+ and manual coding of answers would be infeasible if we were to attract
+ as many participants and responses as hoped.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -227,6 +475,10 @@ context effects:
 \begin_layout Standard
 - no mention in survey or any feedback of research hypotheses (i.e.
  environment)
+\end_layout
+
+\begin_layout Standard
+item order
 \end_layout
 
 \begin_layout Subsection
@@ -872,11 +1124,32 @@ Settings (simplified form)
 \end_layout
 
 \begin_layout Subparagraph
-ESM survey
+Surveys
 \end_layout
 
 \begin_layout Standard
 Voluntary, or immediate popup when beep pending (no context FX)
+\end_layout
+
+\begin_layout Standard
+Use of Cocoa UI controls: 
+\end_layout
+
+\begin_layout Standard
+UITableView: Single-tap where possible, and auto-dismiss at end (speed over
+ accuracy)
+\end_layout
+
+\begin_layout Standard
+UISlider: starting mid position, greyed-out start, tick marks
+\end_layout
+
+\begin_layout Standard
+UISegmentedControl (LS only)
+\end_layout
+
+\begin_layout Standard
+UIPicker: likeliest start position (de facto default)
 \end_layout
 
 \begin_layout Subparagraph
@@ -935,7 +1208,28 @@ key "apple-inc.:2011,shneiderman:1998"
 \end_layout
 
 \begin_layout Standard
-Storyboard/mock-ups (OmniGraffle) + expert consultation (Rich!)
+Storyboard/mock-ups (OmniGraffle) + expert consultation (Rich!) 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:ui-mock-ups"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:ui-mock-ups"
+
+\end_inset
+
+ in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:esm-appendix"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -972,6 +1266,10 @@ Device replacement
 
 \begin_layout Standard
 What happens when user switches device?
+\end_layout
+
+\begin_layout Standard
+Not perfect: can screw up if ends up installed on > 1 device.
 \end_layout
 
 \begin_layout Subsubsection
