@@ -194,7 +194,7 @@ Survey design
 \end_layout
 
 \begin_layout Subsubsection
-Registration
+Registration survey
 \end_layout
 
 \begin_layout Standard
@@ -362,7 +362,7 @@ key "welsch:2009a"
 \end_layout
 
 \begin_layout Subsubsection
-Experience sampling
+ESM assessment survey
 \end_layout
 
 \begin_layout Paragraph
@@ -1357,7 +1357,7 @@ name "fig:infrastructure-and-data-flow"
 
 The system has two core elements: the iPhone app, and the data server with
  which installations of the app communicate.
- The data flows as follows between these elements:
+ The basic data flow between these elements is as follows:
 \end_layout
 
 \begin_layout Enumerate
@@ -1374,7 +1374,8 @@ the app transmits responses and location data back to data server.
 \end_layout
 
 \begin_layout Standard
-A number of further elements provide additional features and greater robustness.
+A number of further system elements provide additional features and greater
+ robustness.
  The core and additional elements, and the data flows between them, are
  depicted schematically in 
 \begin_inset CommandInset ref
@@ -1391,7 +1392,7 @@ App
 \end_layout
 
 \begin_layout Paragraph
-ESM sensor data
+ESM assessment data
 \begin_inset CommandInset label
 LatexCommand label
 name "par:esm-sensor-data"
@@ -1399,14 +1400,6 @@ name "par:esm-sensor-data"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Sound
-\end_layout
-
-\begin_layout Standard
-Photos -- when requested, resized, sent
 \end_layout
 
 \begin_layout Subparagraph
@@ -1472,6 +1465,10 @@ Sound level and image
 \begin_layout Standard
 , and two further dimensions are added: noise level, and a photographic
  image of the participant's immediate environment.
+\end_layout
+
+\begin_layout Standard
+resized, sent
 \end_layout
 
 \begin_layout Paragraph
@@ -2707,7 +2704,45 @@ Piloting app (survey + other UI), and testing software
 \end_layout
 
 \begin_layout Standard
-Changes
+9 piloters
+\end_layout
+
+\begin_layout Standard
+Changes:
+\end_layout
+
+\begin_layout Standard
+- Cancel button (not Next!) (Adam)
+\end_layout
+
+\begin_layout Standard
+- SWB: added tick marks (Briony, Rich)
+\end_layout
+
+\begin_layout Standard
+- People: Added clients, customers (Jess)
+\end_layout
+
+\begin_layout Standard
+- Activities (e.g.
+ crafts, waiting)
+\end_layout
+
+\begin_layout Standard
+Not changed (Misato):
+\end_layout
+
+\begin_layout Standard
+- Less frequent beeping (< 1/day)
+\end_layout
+
+\begin_layout Standard
+- Ambiguities: is at work alone or with colleagues? Is a balcony in or outdoors?
+ Who are flatmates?
+\end_layout
+
+\begin_layout Standard
+- Health a big source of happiness variation
 \end_layout
 
 \begin_layout Subsection
@@ -2742,7 +2777,7 @@ App Store
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
