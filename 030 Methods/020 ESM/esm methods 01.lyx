@@ -2603,8 +2603,15 @@ s can be any digit (0--9) or lower-case letter (a--z) excepting the following:
 \end_layout
 
 \begin_layout Standard
-Data download is made available by another web application built using the
- Sinatra framework.
+Data 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:web-statistics"
+
+\end_inset
+
+download is made available by another web application built using the Sinatra
+ framework.
  Several formats are supported:
 \end_layout
 
@@ -2766,16 +2773,28 @@ Opportunistic recruitment
 Intrinsic/altruistic, response vars (gamelike?), charts, data download/API
 \end_layout
 
+\begin_layout Standard
+Virality
+\end_layout
+
 \begin_layout Subsection
 Communication channels
 \end_layout
 
 \begin_layout Standard
-Two-way!
+Communication with prospective and registered participants was carried through
+ multiple channels.
 \end_layout
 
 \begin_layout Subsubsection
 App Store
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:app-store"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2815,7 +2834,9 @@ status collapsed
 
 \begin_layout Plain Layout
 (a) Representation and (b) reviews in the App Store
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:app-store-shot"
 
 \end_inset
 
@@ -2827,13 +2848,110 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
-description text & feature request
+\end_inset
+
+All participants must download the app via the App Store.
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:app-store-shot"
+
+\end_inset
+
+(a) illustrates the app's presence in the Store, while the full text of
+ the description given is reproduced in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:app-Store-description"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:app-Store-description"
+
+\end_inset
+
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:esm-appendix"
+
+\end_inset
+
+.
+ The app is filed under the Store's 'Lifestyle' category but, given the
+ large number of apps in each category, is more likely to be reached by
+ a direct search.
 \end_layout
 
 \begin_layout Standard
-Reviews (and review prompt in app after 10 responses -- esp in relation
- to iOS 3 issue)
+Mappiness was also displayed in the editorially-driven 'Featured' area of
+ the UK App Store for two weeks shortly after launch, and we believe this
+ was the source of a large proportion of the large number of downloads during
+ this period.
+ We had contacted a developer Partnership Manager at Apple UK to make the
+ case for such placement.
+\end_layout
+
+\begin_layout Standard
+App users are able to post reviews (free text) and ratings (1 -- 5 stars)
+ of apps in the Store.
+ For Mappiness, these may influence potential participants' choice to download
+ and take part.
+ In iOS 3, the user is prompted to rate an app when it is deleted, and this
+ can cause a downward bias in app ratings.
+ To help counter this, we opted to display a message to ongoing users, requestin
+g them to give a rating: when participants have completed exactly ten ESM
+ assessment responses, the message displayed at the top of the main screen
+ of the app changes temporarily to 'Like mappiness? Please rate us in the
+ App Store'.
+ Mappiness was rated at 4 out of 5 stars throughout most of the research
+ period.
+\end_layout
+
+\begin_layout Subsubsection
+App
+\end_layout
+
+\begin_layout Standard
+The main screen of the app displays a one-line status message which is retrieved
+ from the server, alongside current response statistics, each time the app
+ is launched.
+ This message is used for brief ongoing communication with participants.
+\end_layout
+
+\begin_layout Standard
+Before any ESM assessments have been submitted this messages reads 'If not
+ in UK, see our site for timezone info', to try to prevent non-UK participants
+ from being caught out by timezone differences.
+ When exactly ten responses have been submitted, it reads 'Like mappiness?
+ Please rate us in the App Store', as noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:app-store"
+
+\end_inset
+
+.
+ At all other times, it displays a default message.
+ Most commonly, we set this to 'Thank you for taking part', but we occasionally
+ vary it with news about the study: for example, a note that we are on Twitter,
+ or about media coverage, or a link to a new post on our blog.
+\end_layout
+
+\begin_layout Standard
+Prospective and registered participants can also contact us directly within
+ the app.
+ In the 'Info & help' section there is a button at top right marked 'Email
+ us', which pops up a new email composition screen with our email addresses
+ pre-completed.
+ The email template also adds information which may be helpful for troubleshooti
+ng at the end of the message, including the device model, iOS version, and
+ participant ID in the database.
+ More than 600 emails were received by this means in the first nine months
+ of the study.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2841,19 +2959,168 @@ Website
 \end_layout
 
 \begin_layout Standard
-See Appendix X
+We created a public website at 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.mappiness.org.uk/
+\end_layout
+
+\end_inset
+
+ (with a custom shortcut URL, 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://mappin.es/
+\end_layout
+
+\end_inset
+
+) to provide information about the study -- and about current UK and London
+ happiness conditions -- to those who might be interested, including prospective
+ participants and journalists.
+ The full content of the website is reproduced in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:public-website"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:public-website"
+
+\end_inset
+
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:esm-appendix"
+
+\end_inset
+
+.
+ In brief, it consists of five pages:
+\end_layout
+
+\begin_layout Description
+Home provides a brief introduction, shows five screenshots from the app
+ (selected using numbered controls), and ends with a 'call to action' in
+ the form of two prominent links.
+ The 'get the app' link takes visitors who are browsing on their iPhone
+ directly to App Store, and instructs those on other platforms to search
+ the App Store for 'mappiness' (which is the quickest way to download the
+ app).
+ The 'tell me more' link takes visitors to the More info page.
+\end_layout
+
+\begin_layout Description
+News displays up-to-date results of a Twitter search for 'mappiness' (to
+ convey the buzz of social communication surrounding the study), showcases
+ our TEDx talk (see below), and lists TV, radio, press and blog coverage
+ with links and key quotes.
+\end_layout
+
+\begin_layout Description
+Meters shows mean happiness levels in the pleasing graphical form of 'hedonimete
+rs' and an accompanying chart.
+ Happiness levels are calculated by the data server as discussed in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:web-statistics"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+Maps shows the most recent happy responses that include photos on an interactive
+ map of the UK.
+ Again, this is backed by the data server.
+\end_layout
+
+\begin_layout Description
+More
+\begin_inset space ~
+\end_inset
+
+info provides background to the research, gives our contact details, answers
+ various practical questions, and acknowledges those who have helped with
+ the study.
 \end_layout
 
 \begin_layout Standard
-content (participant & journo honeypot!)
+Each page also includes:
+\end_layout
+
+\begin_layout Itemize
+a link to the App Store, using an Apple-supplied emblem, at top right;
+\end_layout
+
+\begin_layout Itemize
+a participant count, updated every five minutes, at the bottom;
+\end_layout
+
+\begin_layout Itemize
+four links, also at the bottom, to facilitate sharing the page to the social
+ networking and news sites Twitter, Facebook, Digg and Reddit (in the first
+ nine months of the study, pages were shared on Facebook by more than 1,500
+ visitors); and
+\end_layout
+
+\begin_layout Itemize
+a prominent red 'Feedback' tab at the left-hand side -- this pops up an
+ overlay showing the top 5 most popular ideas on our feedback forum, with
+ links directly to those (see below).
+\end_layout
+
+\begin_layout Subsubsection
+Feedback forum
 \end_layout
 
 \begin_layout Standard
-share links -> Tweet, FB, Digg
+We provided a feedback forum to enable participants and others to contribute
+ and vote on ideas for the project, available at 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://mappiness.uservoice.com/
 \end_layout
 
-\begin_layout Standard
-'get satisfaction' feedback site -- and summary?
+\end_inset
+
+.
+ During the nine months after launch, more than 50 ideas were contributed.
+ The top five were:
+\end_layout
+
+\begin_layout Enumerate
+Add an Android version of the app (94 votes)
+\end_layout
+
+\begin_layout Enumerate
+Plot on the map where users report feeling unhappy (52 votes)
+\end_layout
+
+\begin_layout Enumerate
+Make it global! (46 votes)
+\end_layout
+
+\begin_layout Enumerate
+Add the ability to export your personal data (41 votes)
+\end_layout
+
+\begin_layout Enumerate
+Add more "Activities" (22 votes)
 \end_layout
 
 \begin_layout Subsubsection
@@ -2861,15 +3128,84 @@ Press
 \end_layout
 
 \begin_layout Standard
-press release
+At launch we distributed a press release, primarily to technology journalists,
+ at major newspapers and media outlets.
+ The full text of the release is reproduced in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:press-release"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:press-release"
+
+\end_inset
+
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:esm-appendix"
+
+\end_inset
+
+.
+ We also made press resources available via an unadvertised link on the
+ website, including print quality versions of our logo, screenshots from
+ the app, and 'hedonimeter' artwork.
+ We gave a number of interviews in response to media enquiries, and received
+ significant national and international coverage.
 \end_layout
 
 \begin_layout Standard
-press resources
+All major coverage is listed on the News page on the website (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:public-website"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:public-website"
+
+\end_inset
+
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:esm-appendix"
+
+\end_inset
+
+).
+ It included:
 \end_layout
 
-\begin_layout Standard
-interviews
+\begin_layout Itemize
+TV packages on BBC One, BBC News Channel and BBC World News (
+\emph on
+Click
+\emph default
+), CNN International (
+\emph on
+Connect the World
+\emph default
+), and Reuters TV (syndicated by BBC Mundo and US regional broadcasters;
+\end_layout
+
+\begin_layout Itemize
+interviews on BBC Radio 2, 4, 5 Live, World Service and local radio stations,
+ and on NPR and regional stations in the US; and
+\end_layout
+
+\begin_layout Itemize
+stories on the front page of Le Figaro, and in the Observer, the Sunday
+ Times, the Independent, the Independent on Sunday, the Telegraph, the Daily
+ Mail, and the Wall Street Journal.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2877,7 +3213,7 @@ Social media
 \end_layout
 
 \begin_layout Standard
-Blog, Twitter
+Social media (Twitter, Facebook, blogs, hacker news)
 \end_layout
 
 \begin_layout Subsubsection
@@ -2886,30 +3222,6 @@ Conferences
 
 \begin_layout Standard
 Conferences, TEDx
-\end_layout
-
-\begin_layout Subsubsection
-App
-\end_layout
-
-\begin_layout Standard
-Status message
-\end_layout
-
-\begin_layout Subsection
-Publicity
-\end_layout
-
-\begin_layout Standard
-App Store feature
-\end_layout
-
-\begin_layout Standard
-Conventional media: newspapers/news websites, radio, TV --- listing
-\end_layout
-
-\begin_layout Standard
-Social media (Twitter, Facebook, blogs)
 \end_layout
 
 \begin_layout Section
