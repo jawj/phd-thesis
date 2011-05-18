@@ -106,18 +106,7 @@
 \begin_body
 
 \begin_layout Chapter
-Research methods
-\begin_inset CommandInset label
-LatexCommand label
-name "part:research-methods"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Surveys
+Survey methods
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:survey-methods"
@@ -127,7 +116,7 @@ name "sec:survey-methods"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Greater London
 \end_layout
 
@@ -135,7 +124,7 @@ Greater London
 Move specific survey details here
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 UK
 \end_layout
 
@@ -143,7 +132,7 @@ UK
 Move specific survey details here
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Web survey
 \end_layout
 
@@ -183,7 +172,7 @@ key "schonlau:2002"
 ns was felt to be acceptable for this research.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Survey mode characteristics
 \end_layout
 
@@ -230,7 +219,7 @@ reference "sub:survey-design"
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Sampling
 \begin_inset CommandInset label
 LatexCommand label
@@ -285,7 +274,7 @@ To make valid statistical inferences concerning this population, each member
  method: all methods are subject to some degree of selection bias.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Web user population
 \end_layout
 
@@ -993,7 +982,7 @@ key "dutton:2009"
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Web user recruitment
 \end_layout
 
@@ -1121,7 +1110,7 @@ reference "sub:data-quality"
 ).
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Quotas
 \end_layout
 
@@ -1209,7 +1198,7 @@ reference "app:quota-status"
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Design
 \begin_inset CommandInset label
 LatexCommand label
@@ -1461,7 +1450,7 @@ Workplace Employment Relations Survey 2004
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Happiness
 \begin_inset CommandInset label
 LatexCommand label
@@ -1521,7 +1510,7 @@ key "mackerron:2008"
 , permitting direct comparison.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 ESS Round 3 module
 \end_layout
 
@@ -1593,7 +1582,7 @@ Third, the single-item life satisfaction item was followed by a set of anchoring
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Anchoring vignettes
 \end_layout
 
@@ -1621,7 +1610,7 @@ key "king:2003"
 .
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Vignettes for life satisfaction
 \end_layout
 
@@ -1700,7 +1689,7 @@ key "angelini:2008"
 ion scores between residents of different European nations.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Vignette design
 \end_layout
 
@@ -2009,7 +1998,7 @@ reference "app:survey-screenshots"
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Map locations
 \end_layout
 
@@ -2175,7 +2164,7 @@ When you're ready, please zoom in again to pinpoint a more accurate location
  load/didn’t work; I prefer not to say exactly where I live.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Home and local environments
 \end_layout
 
@@ -2307,7 +2296,7 @@ hyperlink{ss.33}{pages S-33 -- S-34}
 ).
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Other items
 \end_layout
 
@@ -2527,7 +2516,7 @@ name "fig:scale-separation"
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Paradata
 \end_layout
 
@@ -2555,11 +2544,11 @@ key "heerwegh:2003,kaczmirek:2008"
  avoiding these options.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Respondent experience
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Item presentation
 \end_layout
 
@@ -2617,7 +2606,7 @@ key "christian:2007"
 , and example text shown where appropriate.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Completion policy
 \end_layout
 
@@ -2723,7 +2712,7 @@ name "fig:completion-prompt"
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Paging vs.
  scrolling
 \end_layout
@@ -2755,7 +2744,7 @@ key "peytchev:2006"
 , highlighting the next unanswered question.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Item order
 \begin_inset CommandInset label
 LatexCommand label
@@ -2788,7 +2777,7 @@ key "schwarz:1999,smith:2006"
  on wellbeing.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Guidance, confidentiality, and informed consent
 \end_layout
 
@@ -2834,7 +2823,7 @@ reference "app:survey-screenshots"
  shell.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Implementation
 \end_layout
 
@@ -2894,7 +2883,7 @@ reference "app:websperiment-source"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Piloting
 \end_layout
 
@@ -2978,7 +2967,7 @@ The survey was subsequently piloted on a larger scale using an email snowball
  relate to the final, post-piloting version of the survey.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Completion by web panel
 \end_layout
 
@@ -3061,7 +3050,7 @@ name "fig:responses-by-day"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Data quality and cleaning
 \begin_inset CommandInset label
 LatexCommand label
@@ -3099,7 +3088,7 @@ In addition to the raw survey data and paradata, a set of approximately
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 IP address and location
 \end_layout
 
@@ -3187,7 +3176,7 @@ http://developer.yahoo.com/geo/geoplanet/
  respondent on the second screening page.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Patterns and consistency
 \end_layout
 
@@ -3226,7 +3215,7 @@ and
  as higher than household income.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Speed
 \end_layout
 
