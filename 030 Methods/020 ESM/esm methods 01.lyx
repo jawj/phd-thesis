@@ -105,7 +105,7 @@
 \begin_body
 
 \begin_layout Chapter
-Experience sampling methods
+Experience sampling research methods
 \end_layout
 
 \begin_layout Standard
@@ -489,6 +489,13 @@ reference "fig:sample-ESM-survey"
 
 \begin_layout Subsubsection
 Mappiness ESM assessment
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Mappiness-ESM-assessment"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1397,119 +1404,7 @@ App
 \end_layout
 
 \begin_layout Subsubsection
-ESM assessment data
-\begin_inset CommandInset label
-LatexCommand label
-name "par:esm-sensor-data"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Paragraph
-Time and date
-\end_layout
-
-\begin_layout Standard
-The first external dimension of experience listed above, date and time,
- is captured automatically.
- The moment of signalling is recorded by the data server.
- This will not be precisely the same moment that the signal is delivered
- to the participant's device, but in practice it will usually be close.
- The response time is reported by the app.
- For this we are reliant on the accuracy of the clock setting on the participant
-'s iPhone.
- In general, this should not present a problem, since the device defaults
- to automatic synchronisation of the clock with the network provider.
-\end_layout
-
-\begin_layout Paragraph
-Location
-\end_layout
-
-\begin_layout Standard
-The third dimension listed, location, is extended to include the participant's
- objective geographical coordinates.
- The device's Assisted Global Positioning System (A-GPS) capability is activated
- at the beginning of the ESM assessment process, and the device location
- is queried at the end, to allow the longest possible time for an accurate
- location fix to be achieved.
- 
-\end_layout
-
-\begin_layout Standard
-If the participant is indoors --- with no line-of-sight to the GPS satellites
- --- the device will calculate location by triangulation of known wireless
- Internet (WiFi) access points and mobile telephony base-stations.
- In this situation, accuracy will vary considerably depending on proximity
- to these known locations, and in the worst case no location data will be
- available.
- 
-\end_layout
-
-\begin_layout Standard
-GPS --- 100m threshold/delay outdoors
-\end_layout
-
-\begin_layout Standard
-However, the estimated accuracy of the calculated location is reported by
- the device in all cases, reducing the risk that inaccurate location data
- will bias our analyses.
- This report 
-\end_layout
-
-\begin_layout Standard
-Lack of calibration, what does +/- 100m mean (95% CI??)
-\end_layout
-
-\begin_layout Paragraph
-Sound level and image
-\end_layout
-
-\begin_layout Standard
-, and two further dimensions are added: noise level, and a photographic
- image of the participant's immediate environment.
-\end_layout
-
-\begin_layout Standard
-resized, sent
-\end_layout
-
-\begin_layout Subsubsection
-Interaction design
-\end_layout
-
-\begin_layout Standard
-Compliments!
-\end_layout
-
-\begin_layout Paragraph
-Registration
-\end_layout
-
-\begin_layout Standard
-Flow: 1, 2, 3 + Sign me up! -> Registration data flow
-\end_layout
-
-\begin_layout Standard
-Consent form
-\end_layout
-
-\begin_layout Standard
-Survey
-\end_layout
-
-\begin_layout Standard
-Settings (simplified form)
-\end_layout
-
-\begin_layout Standard
-+ more info
-\end_layout
-
-\begin_layout Paragraph
-Surveys
+Surveys implementation
 \end_layout
 
 \begin_layout Standard
@@ -1540,6 +1435,291 @@ UIPicker: likeliest start position (de facto default)
 
 \begin_layout Standard
 What happens on interruption (call, app quit, etc.)
+\end_layout
+
+\begin_layout Subsubsection
+ESM assessment data
+\begin_inset CommandInset label
+LatexCommand label
+name "par:esm-sensor-data"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In addition to the data obtained by survey during an ESM assessment, other
+ data is collected using the capabilities of the participant's iPhone and
+ the data server.
+\end_layout
+
+\begin_layout Paragraph
+Time and date
+\end_layout
+
+\begin_layout Standard
+The moment of signalling is recorded by the data server.
+ This will not be precisely the same moment that the signal is delivered
+ to the participant's device, but in practice it will usually be close.
+\end_layout
+
+\begin_layout Standard
+The moment that the participant began responding is reported by the app.
+ For this we are reliant on the accuracy of the clock setting on the participant
+'s iPhone.
+ In general, this should not present a problem, since the device defaults
+ to automatic synchronisation of the clock with the network provider.
+ The app also reports the time taken to complete the response.
+\end_layout
+
+\begin_layout Paragraph
+Location
+\end_layout
+
+\begin_layout Standard
+The device's Assisted Global Positioning System (A-GPS) subsystem is activated
+ at the beginning of the ESM assessment process, and the device location
+ is queried at the end, to allow the longest possible time for an accurate
+ location fix to be achieved
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We use the iPhone's Core Location framework 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "apple-inc.:2010b"
+
+\end_inset
+
+ to query the device's location.
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+If the participant is indoors --- with no line-of-sight to GPS satellites
+ --- the device will calculate location by triangulation of known wireless
+ Internet (WiFi) access points and mobile telephony base-stations.
+ In this situation, accuracy will vary considerably depending on proximity
+ to such known locations, and in the worst case no location data will be
+ available.
+ However, the estimated accuracy of the calculated location is reported
+ by the device in all cases, reducing the risk that inaccurate location
+ data will bias our analyses.
+ 
+\end_layout
+
+\begin_layout Standard
+If the participant is outdoors, a more accurate location estimate should
+ be available using GPS.
+ Therefore, as discussed in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Mappiness-ESM-assessment"
+
+\end_inset
+
+, if the participant has indicated in the ESM survey that he or she is outdoors,
+ we check before completing the survey that the estimated location accuracy
+ is 
+\begin_inset Formula $+$
+\end_inset
+
+/
+\begin_inset Formula $-$
+\end_inset
+
+ 100m or better.
+ If it is not, we wait for up to 60 seconds for a better estimate.
+\end_layout
+
+\begin_layout Standard
+The specifications of the GPS receiver in the iPhone are not published,
+ although it is known that later models have improved hardware.
+ The meaning of the reported accuracy bounds --- such as 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $+$
+\end_inset
+
+/
+\begin_inset Formula $-$
+\end_inset
+
+ 100m
+\begin_inset Quotes erd
+\end_inset
+
+ --- is also not stated
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Is it, for example, a 95% confidence interval?
+\end_layout
+
+\end_inset
+
+.
+ The nature of the error in location estimates is therefore not known with
+ certainty.
+ However, everyday use of the device for other purposes indicates that the
+ true location is almost invariably within the reported accuracy bounds
+ of the reported estimate.
+\end_layout
+
+\begin_layout Paragraph
+Sound level
+\end_layout
+
+\begin_layout Standard
+The device's microphone is also activated at the start of the ESM assessment
+ process, and the detected noise level is queried every quarter-second for
+ five seconds, providing 20 readings
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We use the open-source SCListener library (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://github.com/stephencelis/sc_listener/
+\end_layout
+
+\end_inset
+
+), which provides an interface to the iPhone's Core Audio services.
+\end_layout
+
+\end_inset
+
+.
+ Sound level readings are returned on a logarithmic scale, between –160
+ (no sound detectable by the microphone) and 0 (loudest sound measurable
+ by the microphone) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "apple-inc.:2010c"
+
+\end_inset
+
+.
+ The specifications of the iPhone's microphone are, again, not published,
+ and may vary between device models.
+ The microphone is likely to be directional, so detected noise levels may
+ depend substantially on the orientation of the device relative to the sources
+ of noise.
+\end_layout
+
+\begin_layout Paragraph
+Photo
+\end_layout
+
+\begin_layout Standard
+The participant is prompted to take a photo during the ESM assessment as
+ discussed in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Mappiness-ESM-assessment"
+
+\end_inset
+
+.
+ The camera interface is provided by the iPhone software
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We us the iPhone's UIImagePickerController interface 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "apple-inc.:2010d"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+, to which we add an overlay displaying instructions.
+ Once a photo has been taken, we resize it down to a small size --- 320x240
+ pixels --- and obtain a compressed JPEG representation for speedy transmission
+ over the network.
+\end_layout
+
+\begin_layout Standard
+Different iPhone models have different camera hardware: some later models
+ offer higher resolutions, auto-focus, better performance in low light levels
+ and LED illumination.
+ Unfortunately, it is not possible to retrieve metadata from the photo,
+ so no indication of light level (via exposure settings) or of the use of
+ the LED is available.
+ 
+\end_layout
+
+\begin_layout Standard
+The iPhone also has a light sensor, which is used to vary the screen brightness
+ in response to background condition.
+ Unfortunately this sensor's output is also inaccessible to application
+ code.
+\end_layout
+
+\begin_layout Paragraph
+iPhone model
+\end_layout
+
+\begin_layout Standard
+The iPhone model (original, 3G, 3GS or 4) is recorded automatically, so
+ that we can account for any variation in GPS, microphone and camera characteris
+tics.
+\end_layout
+
+\begin_layout Subsubsection
+Interaction design
+\end_layout
+
+\begin_layout Standard
+Compliments on interaction design!
+\end_layout
+
+\begin_layout Paragraph
+Registration
+\end_layout
+
+\begin_layout Standard
+Flow: 1, 2, 3 + Sign me up! -> Registration data flow
+\end_layout
+
+\begin_layout Standard
+Consent form
+\end_layout
+
+\begin_layout Standard
+Survey
+\end_layout
+
+\begin_layout Standard
+Settings (simplified form)
+\end_layout
+
+\begin_layout Standard
++ more info
+\end_layout
+
+\begin_layout Paragraph
+Surveys
 \end_layout
 
 \begin_layout Paragraph
