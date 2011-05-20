@@ -3261,6 +3261,32 @@ a prominent red 'Feedback' tab at the left-hand side -- this pops up an
  links directly to those (see below).
 \end_layout
 
+\begin_layout Standard
+The website received over 70,000 visits in the first nine months of operation.
+ These visits are charted week-by-week, and broken down by source, in 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:Website-visit-statistics"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Website-visit-statistics"
+
+\end_inset
+
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:esm-appendix"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsubsection
 Feedback forum
 \end_layout
@@ -3303,13 +3329,17 @@ Add the ability to export your personal data (41 votes)
 Add more "Activities" (22 votes)
 \end_layout
 
+\begin_layout Standard
+So far, we have acted on ideas 4 and 5.
+\end_layout
+
 \begin_layout Subsubsection
-Press 
+Traditional media 
 \end_layout
 
 \begin_layout Standard
-At launch we distributed a press release, primarily to technology journalists,
- at major newspapers and media outlets.
+At launch we distributed a press release, primarily to technology journalists
+ at large media organisations.
  The full text of the release is reproduced in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -3333,14 +3363,34 @@ reference "chap:esm-appendix"
 
 .
  We also made press resources available via an unadvertised link on the
- website, including print quality versions of our logo, screenshots from
- the app, and 'hedonimeter' artwork.
+ website
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.mappiness.org.uk/press/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, including print quality versions of our logo, screenshots from the app,
+ and 'hedonimeter' artwork.
  We gave a number of interviews in response to media enquiries, and received
  significant national and international coverage.
 \end_layout
 
 \begin_layout Standard
-All major coverage is listed on the News page on the website (see 
+All major coverage is listed on the News page of the website (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:public-website"
@@ -3370,11 +3420,12 @@ TV packages on BBC One, BBC News Channel and BBC World News (
 \emph on
 Click
 \emph default
-), CNN International (
+ programme), CNN International (
 \emph on
 Connect the World
 \emph default
-), and Reuters TV (syndicated by BBC Mundo and US regional broadcasters;
+ programme), and Reuters TV (syndicated by BBC Mundo and US regional broadcaster
+s);
 \end_layout
 
 \begin_layout Itemize
@@ -3383,25 +3434,55 @@ interviews on BBC Radio 2, 4, 5 Live, World Service and local radio stations,
 \end_layout
 
 \begin_layout Itemize
-stories on the front page of Le Figaro, and in the Observer, the Sunday
- Times, the Independent, the Independent on Sunday, the Telegraph, the Daily
- Mail, and the Wall Street Journal.
+stories on the front page of Le Figaro and in the Observer, the Sunday Times,
+ the Independent, the Independent on Sunday, the Telegraph, the Daily Mail,
+ and the Wall Street Journal.
 \end_layout
 
 \begin_layout Subsubsection
-Social media
+Blog and social media
+\end_layout
+
+\begin_layout Paragraph
+Our social media
 \end_layout
 
 \begin_layout Standard
-Social media (Twitter, Facebook, blogs, hacker news)
+We set up a blog to maintain communication with participants and other intereste
+d parties, at 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://blog.mappiness.org.uk/
+\end_layout
+
+\end_inset
+
+.
+ We have used this to post a number of news items and interim analyses.
+ We also registered a Twitter account --- @mappiness_app --- and have posted
+ messages there from time to time.
+\end_layout
+
+\begin_layout Paragraph
+Other social media
+\end_layout
+
+\begin_layout Standard
+Others' blogs and Twitter streams also carried information about the research
+ study.
+ Thousands of Twitter messages about the project were sent, and we believe
+ these were a significant recruitment source.
 \end_layout
 
 \begin_layout Subsubsection
-Conferences
+Presentations
 \end_layout
 
 \begin_layout Standard
-Conferences, TEDx
+SDRN, TEDx -> video
 \end_layout
 
 \begin_layout Section
@@ -3554,6 +3635,139 @@ Updates (e.g.
 
 \begin_layout Standard
 Sign-up graph? Responses graph? Coverage map?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+(a) 
+\begin_inset Graphics
+	filename weekly_stats_global.pdf
+	lyxscale 60
+	scale 50
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+(b) 
+\begin_inset Graphics
+	filename weekly_stats_uk.pdf
+	lyxscale 60
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Recruitment statistics: weekly website visits, app downloads and participant
+ registrations, (a) globally and (b) the UK only 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename daily_response_stats.pdf
+	lyxscale 60
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Daily response and responding participant counts
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename response_count_map 01.pdf
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Response count map (all responses to mid-February 2011)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section

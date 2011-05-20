@@ -850,7 +850,7 @@ For more information, visit http://www.mappiness.org.uk, or download the app,
 \end_layout
 
 \begin_layout Section
-Public website 
+Website 
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:public-website"
@@ -868,6 +868,34 @@ The following pages show the site as it appeared on 12 May 2011.
 \begin_inset External
 	template PDFPages
 	filename website/combined.pdf
+	lyxscale 30
+	extra LaTeX "pages=-"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Website visit statistics
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Website-visit-statistics"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These statistics were produced by Google Analytics.
+ Only to top 100 traffic sources are shown.
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename site_visits_analytics.pdf
 	lyxscale 30
 	extra LaTeX "pages=-"
 
