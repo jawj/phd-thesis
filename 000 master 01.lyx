@@ -196,6 +196,37 @@ LatexCommand tableofcontents
 
 \end_layout
 
+\begin_layout Section*
+Acknowledgements
+\end_layout
+
+\begin_layout Standard
+The authors thank: Steve Gibbons, Jouni Kuha, Raphael Calel, Antoine Dechezlepr
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+^{e}
+\end_layout
+
+\end_inset
+
+tre, and Rich Aston; all beta testers of the iPhone app; and all Mappiness
+ study participants.
+ GM was supported by the UK Economic & Social Research Council (ESRC ---
+ grant number PTA-031-2006-00280).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
