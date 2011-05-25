@@ -2450,13 +2450,13 @@ name "sec:ui-mock-ups"
 \begin_inset Float figure
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ui_ideas.pdf
 	lyxscale 15
-	scale 25
+	scale 8
 
 \end_inset
 
