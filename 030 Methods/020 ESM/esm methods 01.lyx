@@ -731,6 +731,24 @@ Adding activity categories inevitably results in reduced comparability of
  encompassing a narrower range of activities.
 \end_layout
 
+\begin_layout Standard
+In app update 1.1, participants were enabled to type text notes for their
+ own use at the end of the activities list.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: why?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph
 Photo
 \end_layout
@@ -1476,7 +1494,7 @@ reference "sub:esm-aims-and-objectives"
 \end_inset
 
 ), we sought to make the interface simple, responsive, fluid and --- ideally
- --- a source of delight for app users.
+ --- enjoyable for app users.
 \end_layout
 
 \begin_layout Standard
@@ -1534,7 +1552,7 @@ We received several emails (and encountered a number of Twitter messages)
  complimenting the app's interaction design after launch.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Registration
 \end_layout
 
@@ -1542,7 +1560,7 @@ Registration
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -1680,11 +1698,19 @@ name "fig:registration-tasks"
 
 When the app is first launched, the user is asked to complete three steps
  to sign up to participate in the study.
- These steps are listed in order and, as they are completed, ticked off
- the list, as illustrated in 
+ The steps are listed in a suggested order and, as they are completed, ticked
+ off the list, as illustrated in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:app-registration-main-screen"
+
+\end_inset
+
+.
+ The content of the three steps is illustrated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:registration-tasks"
 
 \end_inset
 
@@ -1711,7 +1737,8 @@ reference "chap:esm-appendix"
 
 \end_inset
 
- --- to which the prospective participant may agree (or tap Cancel).
+.
+ The prospective participant may agree, or tap Cancel.
  Step 2 presents the registration survey described in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -1720,19 +1747,11 @@ reference "sub:Registration-survey"
 \end_inset
 
 .
- Step 3 asks the user to confirm, and potentially change, their signalling
- settings as outlined in 
+ Step 3 asks the user to confirm (or modify) signalling settings, as outlined
+ in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Signalling-settings"
-
-\end_inset
-
-.
- The content of the three steps is illustrated in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:registration-tasks"
 
 \end_inset
 
@@ -1745,7 +1764,7 @@ reference "fig:registration-tasks"
 \begin_layout Standard
 When all three steps have been completed, a button with the legend 'Sign
  me up!' is displayed.
- The uses taps this button and waits as his or her information is transmitted
+ The user taps this button and waits as his or her information is transmitted
  to the data server.
  On completion, the registration screen peels away from the bottom right
  to reveal the registered main screen (shown in 
@@ -1758,78 +1777,299 @@ reference "fig:app-main-screen"
 ).
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Surveys
 \end_layout
 
 \begin_layout Standard
-Voluntary, or immediate popup when beep pending (no context FX)
+Two types of surveys are conducted within the app: the one-off registration
+ survey, and the repeated ESM assessment survey.
+ The two share a common visual and interaction design, and are supported
+ by the same generic survey interface implementation.
 \end_layout
 
 \begin_layout Standard
-auto-dismiss at end
+For speed, and to minimise context effects, the ESM survey appears immediately
+ on app launch if an ESM assessment is pending.
+ Also for speed, both surveys dismiss themselves automatically when the
+ final question is answered.
+ In each case, the first survey screen provides a 'Cancel' button that discontin
+ues the survey, and subsequent screens each provide a 'Back' button to return
+ to the preceding screen in case a response error has been made.
 \end_layout
 
 \begin_layout Standard
-What happens on interruption (call, app quit, etc.)
+Omitted or inconsistent responses are prevented by selective disabling of
+ certain response options.
+ For example, in the Feelings item of the ESM survey, the 'Next >' button
+ is disabled until all three response scale sliders have been interacted
+ with.
+ 
 \end_layout
 
 \begin_layout Standard
-Inconsistent/missing input eliminated by disabling options --- e.g.
- LS, people
+Survey completion may be interrupted if the participant exits the app or
+ receives a telephone call on the device.
+ If the ESM assessment survey is interrupted, answers up to the current
+ point are saved, and are sent to the data server the next time the app
+ is opened (with some data missing).
+ Answers are not saved if the registration survey is interrupted.
 \end_layout
 
 \begin_layout Standard
-Survey interactions were implemented using only standard Cocoa Touch interface
- controls.
-\end_layout
-
-\begin_layout Standard
-Choose one, proceed: UITableView: large tap target, single-tap proceeds,
- speed over accuracy (but back available) e.g.
- gender
-\end_layout
-
-\begin_layout Standard
-Choose many: UITableView: tick all -- then choose one to proceed e.g.
- people, activities
-\end_layout
-
-\begin_layout Standard
-Choose very many: UIPicker: likeliest start position (de facto default)
- i.e.
- birth year only
-\end_layout
-
-\begin_layout Standard
-Visual analog scale: UISlider: labels, starting mid position, greyed-out
- start, tick marks, slider resolution (pixel width/retina display) i.e.
- feelings only
-\end_layout
-
-\begin_layout Standard
-Ordinal scale: UISegmentedControl i.e.
- LS only
+Both surveys are implemented using standard Cocoa Touch interface controls,
+ which are professionally designed and familiar to iPhone users.
+ Different questions use different control types, often in combination.
 \end_layout
 
 \begin_layout Paragraph
-Other
+'Choose one' items
 \end_layout
 
 \begin_layout Standard
-Settings (extended) 
+Most multiple choice items with a single answer, such as the gender item
+ in the registration survey, use table view cells with the chevron-shaped
+ 'disclosure' indicator.
+ When a participant taps a cell, their response is registered and the survey
+ immediately proceeds to the next screen.
+ Table view cells present a large tap target for the participant, and the
+ disclosure indicator elicits the correct expectation that tapping will
+ cause the survey to advance.
+ A table view cell with disclosure indicator is also used to present the
+ participant with a 'Next' or 'Skip' option following other interactions
+ on a survey screen.
 \end_layout
 
 \begin_layout Standard
-Info (minor edits)
+For the year of birth registration survey item, the picker control is used
+ instead.
+ The picker control shows response options on a rotating wheel, and is better
+ suited to the display of a large number of response options.
+ We set the initial position of the picker to 1975: we expect this to be
+ around the middle of the response range, and this minimises the distance
+ participants will need to scroll (there is however a risk that some participant
+s will leave the the picker in this position to proceed more quickly).
 \end_layout
 
 \begin_layout Standard
-My happiness
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+(a)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename place_screen.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+(b)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename birth_year_screen.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+'Choose one' survey item controls: (a) table view cells with disclosure
+ indicator and (b) picker
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:choose-one-controls"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+These controls are illustrated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:choose-one-controls"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+'Tick all that apply' items
 \end_layout
 
 \begin_layout Standard
-Data download/API (actually mainly server function)
+Multiple choice items accepting multiple answers, such as the activities
+ item in the ESM survey, use table view cells that, when selected, show
+ the 'checkmark' indicator and render their text in blue.
+ These items show a 'Tick all that apply' instruction to participants at
+ the top of the screen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename activities_screen.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+'Tick all that apply' survey item controls: table view cells with checkmarks
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tick-all-control"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+These table view cells are illustrated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:tick-all-control"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Scale items
+\end_layout
+
+\begin_layout Standard
+The life satisfaction item in the registration survey is answered on an
+ ordinal scale with labelled endpoints: for compactness, and for greatest
+ similarity with such scales in other survey media, this item is implemented
+ using a segmented control.
+\end_layout
+
+\begin_layout Standard
+The feelings items in the ESM assessment survey are answered on visual analog
+ scales, and these are implemented using slider controls.
+ We replaced the standard circular slider 'thumb' with a similar but larger
+ version, to provide a larger and therefore easier target for interaction.
+ As a result of feedback from piloting, we also added tick marks along the
+ top edge of the slider to help participants judge the slider position.
+ The slider thumb starts in the middle position, but the slider track appears
+ in grey until the thumb has been tapped or moved, to indicate that this
+ is not a selected position.
+ While the default positioning of the slider thumb may lead to anchoring
+ effects, this appears unavoidable.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+(a)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename ls_screen.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+(b)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename feelings_screen.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Scale survey item controls: (a) segmented control and (b) sliders
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:scale-controls"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+These controls are illustrated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:scale-controls"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2015,6 +2255,21 @@ key "apple-inc.:2010c"
  The microphone is likely to be directional, so detected noise levels may
  depend substantially on the orientation of the device relative to the sources
  of noise.
+ If the participant is listening to music (or other audio) using the device,
+ the sound level is not measured
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Measuring the sound level in this situation would interrupt the participant's
+ listening.
+ In addition, the external sound level would arguably not be relevant if
+ the participant were using headphones.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -2082,6 +2337,26 @@ tics.
 \end_layout
 
 \begin_layout Subsubsection
+Other
+\end_layout
+
+\begin_layout Standard
+Settings (extended) 
+\end_layout
+
+\begin_layout Standard
+Info (minor edits)
+\end_layout
+
+\begin_layout Standard
+My happiness
+\end_layout
+
+\begin_layout Standard
+Data download/API (actually mainly server function)
+\end_layout
+
+\begin_layout Subsubsection
 App updates
 \end_layout
 
@@ -2109,7 +2384,7 @@ name "tab:App-revisions"
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="3">
+<lyxtabular version="3" rows="6" columns="3">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top" width="0">
@@ -2121,7 +2396,7 @@ name "tab:App-revisions"
 \begin_layout Plain Layout
 
 \emph on
-Release date
+Availability date
 \end_layout
 
 \end_inset
@@ -2263,6 +2538,37 @@ Added five new activities, and settings regarding photos (when to prompt
 \begin_layout Plain Layout
 Added data download feature, text notes in responses, and optional passcode
  for access to My happiness screen (charts and data download)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.1.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fixed bug causing occasional crashes on passcode screens, wording of email
+ template, and behaviour when installed on multiple devices via restore
+ of backup in iTunes
 \end_layout
 
 \end_inset
@@ -3390,6 +3696,10 @@ Changes:
 
 \begin_layout Standard
 - Numbering registration steps
+\end_layout
+
+\begin_layout Standard
+- Music interruption (Jess B)
 \end_layout
 
 \begin_layout Standard

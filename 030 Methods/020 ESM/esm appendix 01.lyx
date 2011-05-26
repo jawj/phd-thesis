@@ -2080,6 +2080,13 @@ height "0.5pt"
 
 \end_layout
 
+\begin_layout Standard
+
+\noun on
+tapping 'add or edit notes' displays a text entry area with keyboard — the
+ participant taps 'done' when finished to return to this screen 
+\end_layout
+
 \begin_layout Subsubsection*
 Activities
 \end_layout
@@ -2256,6 +2263,21 @@ Just now, what were you doing?
 
 \begin_layout Standard
 [ ] Something else
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Add or edit notes
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
