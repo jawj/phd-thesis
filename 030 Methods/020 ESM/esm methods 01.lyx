@@ -1367,7 +1367,7 @@ Mappiness permits ESM assessments to be volunteered at any time.
 \end_layout
 
 \begin_layout Section
-System design and implementation
+App
 \end_layout
 
 \begin_layout Standard
@@ -1410,14 +1410,14 @@ name "fig:infrastructure-and-data-flow"
 
 \end_inset
 
-The system has two core elements: the iPhone app, and the data server with
- which installations of the app communicate.
+The Mappiness system has two core elements: the iPhone app, and the data
+ server with which installations of the app communicate.
  These were developed in tandem.
  
 \end_layout
 
 \begin_layout Standard
-The basic data flow between these elements is as follows:
+The basic data flow between the two elements is as follows:
 \end_layout
 
 \begin_layout Enumerate
@@ -1434,8 +1434,7 @@ the app transmits responses and location data back to data server.
 \end_layout
 
 \begin_layout Standard
-A number of further system elements provide additional features and greater
- robustness.
+A number of further elements provide additional features and greater robustness.
  The core and additional elements, and the data flows between them, are
  depicted schematically in 
 \begin_inset CommandInset ref
@@ -1445,10 +1444,6 @@ reference "fig:infrastructure-and-data-flow"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Subsection
-App
 \end_layout
 
 \begin_layout Standard
@@ -1463,7 +1458,7 @@ key "apple-inc.:2010"
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Interface and interaction design
 \end_layout
 
@@ -1560,7 +1555,7 @@ Registration
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -1812,7 +1807,7 @@ Survey completion may be interrupted if the participant exits the app or
  receives a telephone call on the device.
  If the ESM assessment survey is interrupted, answers up to the current
  point are saved, and are sent to the data server the next time the app
- is opened (with some data missing).
+ is opened.
  Answers are not saved if the registration survey is interrupted.
 \end_layout
 
@@ -1836,7 +1831,7 @@ Most multiple choice items with a single answer, such as the gender item
  disclosure indicator elicits the correct expectation that tapping will
  cause the survey to advance.
  A table view cell with disclosure indicator is also used to present the
- participant with a 'Next' or 'Skip' option following other interactions
+ participant with a 'Next >' or 'Skip >' option following other interactions
  on a survey screen.
 \end_layout
 
@@ -1847,8 +1842,9 @@ For the year of birth registration survey item, the picker control is used
  suited to the display of a large number of response options.
  We set the initial position of the picker to 1975: we expect this to be
  around the middle of the response range, and this minimises the distance
- participants will need to scroll (there is however a risk that some participant
-s will leave the the picker in this position to proceed more quickly).
+ participants will need to scroll.
+ There is however a risk that some participants will leave the the picker
+ in this position to advance most quickly.
 \end_layout
 
 \begin_layout Standard
@@ -1910,7 +1906,7 @@ name "fig:choose-one-controls"
 
 \end_inset
 
-These controls are illustrated in 
+These 'choose one' controls are illustrated in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:choose-one-controls"
@@ -2062,7 +2058,7 @@ name "fig:scale-controls"
 
 \end_inset
 
-These controls are illustrated in 
+These scale controls are illustrated in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:scale-controls"
@@ -2073,6 +2069,74 @@ reference "fig:scale-controls"
 \end_layout
 
 \begin_layout Subsubsection
+Settings
+\end_layout
+
+\begin_layout Standard
+The settings screen is displayed in two forms.
+ It is displayed during the registration process, when for simplicity it
+ offers only signalling settings (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:registration-tasks"
+
+\end_inset
+
+ (c)).
+ It is also accessible via a button on the main screen, when settings regarding
+ prompting for and saving photos during ESM assessments are offered in addition.
+ The settings screen is modelled on the settings app provided by Apple.
+\end_layout
+
+\begin_layout Subsubsection
+Find out more / Info & help
+\end_layout
+
+\begin_layout Standard
+Prior to registration, a 'Find out more >' button is provided; after registratio
+n, an 'Info & help >' button links to the same information.
+ A single paragraph summary of the Mappiness project is given, as illustrated
+ in , with links to three further sections .
+ The 'Key information' section reproduces the content of the consent form.
+ The 'FAQs' section provides additional detail in a question-and-answer
+ format, which is shown in full in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:FAQs-in-app"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:FAQs-in-app"
+
+\end_inset
+
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:esm-appendix"
+
+\end_inset
+
+.
+ The 'Acknowledgments' section contains thanks and acknowledgments.
+\end_layout
+
+\begin_layout Subsubsection
+My happiness
+\end_layout
+
+\begin_layout Standard
+My happiness
+\end_layout
+
+\begin_layout Standard
+Data download/API (actually mainly server function)
+\end_layout
+
+\begin_layout Subsection
 ESM assessment data
 \begin_inset CommandInset label
 LatexCommand label
@@ -2089,7 +2153,7 @@ In addition to the data obtained by survey during an ESM assessment, other
  the data server.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Time and date
 \end_layout
 
@@ -2108,7 +2172,7 @@ The moment that the participant began responding is reported by the app.
  The app also reports the time taken to complete the response.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Location
 \end_layout
 
@@ -2211,7 +2275,7 @@ Is it, for example, a 95% confidence interval?
  of the reported estimate.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Sound level
 \end_layout
 
@@ -2272,7 +2336,7 @@ Measuring the sound level in this situation would interrupt the participant's
 .
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Photo
 \end_layout
 
@@ -2326,7 +2390,7 @@ The iPhone also has a light sensor, which is used to vary the screen brightness
  code.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 iPhone model
 \end_layout
 
@@ -2336,27 +2400,7 @@ The iPhone model (original, 3G, 3GS or 4) is recorded automatically, so
 tics.
 \end_layout
 
-\begin_layout Subsubsection
-Other
-\end_layout
-
-\begin_layout Standard
-Settings (extended) 
-\end_layout
-
-\begin_layout Standard
-Info (minor edits)
-\end_layout
-
-\begin_layout Standard
-My happiness
-\end_layout
-
-\begin_layout Standard
-Data download/API (actually mainly server function)
-\end_layout
-
-\begin_layout Subsubsection
+\begin_layout Subsection
 App updates
 \end_layout
 
@@ -2586,7 +2630,7 @@ Fixed bug causing occasional crashes on passcode screens, wording of email
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Device replacement
 \end_layout
 
@@ -2598,7 +2642,7 @@ What happens when user switches device?
 Not perfect: can screw up if ends up installed on > 1 device.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Data server
 \end_layout
 
@@ -2670,8 +2714,8 @@ http://www.ubuntu.com/
 \end_inset
 
  and a range of other open-source software packages.
- All original Mappiness software running on the data servers is coded in
- Ruby
+ All original Mappiness software running on the data servers is written
+ in Ruby
 \begin_inset Foot
 status collapsed
 
@@ -2694,7 +2738,7 @@ http://www.ruby-lang.org/en/
 , a dynamic, open source programming language.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Database
 \end_layout
 
@@ -2784,7 +2828,7 @@ sent_beeps support the beeper system.
  Both are linked to the relevant rows of the users table.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Signalling
 \begin_inset CommandInset label
 LatexCommand label
@@ -2795,7 +2839,7 @@ name "sub:signalling"
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 The Apple Push Notifications Service (APNS)
 \end_layout
 
@@ -2864,7 +2908,7 @@ If an app provider attempts to send a notification to an app which no longer
  devices unless they are subsequently re-registered.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Communicating with the APNS
 \end_layout
 
@@ -2978,7 +3022,7 @@ eXtensible Markup Language Remote Procedure Call: a verbose, text-based
  library (to which we also contributed several fixes).
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Signalling using APNS
 \end_layout
 
@@ -3134,7 +3178,7 @@ For each signal in the pending_beeps table that has fallen due since the
  the sent_beeps table.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Safeguards
 \end_layout
 
@@ -3160,7 +3204,7 @@ The signalling system was therefore implemented defensively, to try to prevent
  than a certain number of signals appear to fall due at one moment.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Data API
 \begin_inset CommandInset label
 LatexCommand label
@@ -3327,7 +3371,7 @@ The signal is not rescheduled, so the participant receives fewer than the
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Asynchronous endpoint priorities
 \end_layout
 
@@ -3353,7 +3397,7 @@ The app manages a single queue of messages to the asynchronous endpoints.
  Messages for the same endpoint are processed in first-in-first-out order.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Security and backup
 \end_layout
 
@@ -3456,7 +3500,7 @@ Snapshots are crucial to the effectiveness of backup.
  This strategy also reduces load on the production server.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Web statistics
 \end_layout
 
@@ -3497,7 +3541,7 @@ Statistics for the hour-by-hour chart are calculated at the end of each
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Download API
 \end_layout
 
@@ -3629,7 +3673,7 @@ For all formats except HTML charts, response data are provided in descending
  sequence.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Weather & pollution
 \end_layout
 
