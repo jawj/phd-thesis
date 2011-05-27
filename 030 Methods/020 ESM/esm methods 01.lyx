@@ -118,7 +118,7 @@ status open
 \backslash
 setlength
 \backslash
-fboxrule{0.5pt}
+fboxrule{0.25pt}
 \backslash
 setlength
 \backslash
@@ -1248,7 +1248,7 @@ key "stone:2002"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -1601,7 +1601,7 @@ Registration
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -1711,7 +1711,7 @@ name "fig:app-registration-main-screen"
 \begin_inset Float figure
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -2024,7 +2024,7 @@ For the year of birth registration survey item, the picker control is used
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -2153,7 +2153,7 @@ Multiple choice items accepting multiple answers, such as the activities
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -2249,7 +2249,7 @@ The feelings items in the ESM assessment survey are answered on visual analog
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -2369,7 +2369,7 @@ Settings
 \begin_inset Float figure
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -2563,7 +2563,7 @@ Find out more / Info & help
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -2741,15 +2741,332 @@ reference "fig:info-help"
 \end_layout
 
 \begin_layout Subsubsection
-My happiness
+Charts and data download
 \end_layout
 
 \begin_layout Standard
-My happiness
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
 \end_layout
 
-\begin_layout Standard
-Data download/API (actually mainly server function)
+\end_inset
+
+
+\begin_inset Graphics
+	filename my_happiness_timechart.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename my_happiness_placegraph.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\emph on
+My happiness 
+\emph default
+charts screen in two scroll positions
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:my-happiness-charts"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename data_download_on_screen.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename data_download_off_screen.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\emph on
+My data 
+\emph default
+screen
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:data-download-on-off"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename data_download_web_index.png
+	lyxscale 50
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Private data download page linked from 
+\emph on
+My data
+\emph default
+ screen
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:data-download-page"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+The 
+\emph on
+My happiness
+\emph default
+ button on the main screen displays a set of charts and statistics about
+ the participant's own responses, which are calculated on request by the
+ data server.
+ These are illustrated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:my-happiness-charts"
+
+\end_inset
+
+ and a full example set is reproduced in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:participant-feedback-charts"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:participant-feedback-charts"
+
+\end_inset
+
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:esm-appendix"
+
+\end_inset
+
+.
+ A button at the top right of the 
+\emph on
+My happiness
+\emph default
+ screen provides access to the 
+\emph on
+My data 
+\emph default
+screen.
+ From here, the data download capability can be turned on or off, as illustrated
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:data-download-on-off"
+
+\end_inset
+
+.
+ When data download is turned on, the participant can access their data
+ in a range of formats from their web browser, as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:data-download-page"
+
+\end_inset
+
+.
+ For privacy, the 
+\emph on
+My happiness 
+\emph default
+and 
+\emph on
+My data
+\emph default
+ screens can be protected by a four-digit passcode.
+ The passcode is managed by tapping the padlock icon within the 
+\emph on
+My happiness
+\emph default
+ button on the main app screen.
 \end_layout
 
 \begin_layout Subsection
@@ -3017,7 +3334,20 @@ tics.
 \end_layout
 
 \begin_layout Subsection
-App updates
+Revisions
+\end_layout
+
+\begin_layout Standard
+Some features described above were added after launch, and some bugs were
+ fixed, by the provision of app updates through the App Store.
+ The content of these updates is described in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:App-revisions"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3046,7 +3376,7 @@ name "tab:App-revisions"
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="3">
 <features booktabs="true" tabularvalignment="middle">
-<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="60col%">
 <row>
@@ -3056,18 +3386,18 @@ name "tab:App-revisions"
 \begin_layout Plain Layout
 
 \emph on
-Availability date
+App version
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \emph on
-App version
+Availability date
 \end_layout
 
 \end_inset
@@ -3089,16 +3419,16 @@ Changes
 \begin_inset Text
 
 \begin_layout Plain Layout
-6 August 2010
+1.0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.0
+6 August 2010
 \end_layout
 
 \end_inset
@@ -3118,16 +3448,16 @@ Initial release
 \begin_inset Text
 
 \begin_layout Plain Layout
-19 August 2010
+1.0.1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.0.1
+19 August 2010
 \end_layout
 
 \end_inset
@@ -3148,16 +3478,16 @@ Fixed bug where timezones did not match in summary settings and time selection
 \begin_inset Text
 
 \begin_layout Plain Layout
-25 September 2010
+1.0.2
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.0.2
+25 September 2010
 \end_layout
 
 \end_inset
@@ -3178,6 +3508,15 @@ Added five new activities, and settings regarding photos (when to prompt
 \begin_inset Text
 
 \begin_layout Plain Layout
+1.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 23 May 2011
 \end_layout
 
@@ -3187,17 +3526,16 @@ Added five new activities, and settings regarding photos (when to prompt
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 Added data download feature, text notes in responses, and optional passcode
- for access to My happiness screen (charts and data download)
+ for access to 
+\emph on
+My happiness
+\emph default
+ and 
+\emph on
+My data
+\emph default
+ screens
 \end_layout
 
 \end_inset
@@ -3208,7 +3546,7 @@ Added data download feature, text notes in responses, and optional passcode
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.1.1
 \end_layout
 
 \end_inset
@@ -3217,7 +3555,7 @@ Added data download feature, text notes in responses, and optional passcode
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.1.1
+3 June 2011
 \end_layout
 
 \end_inset
@@ -3244,18 +3582,6 @@ Fixed bug causing occasional crashes on passcode screens, wording of email
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-Device replacement
-\end_layout
-
-\begin_layout Standard
-What happens when user switches device?
-\end_layout
-
-\begin_layout Standard
-Not perfect: can screw up if ends up installed on > 1 device.
 \end_layout
 
 \begin_layout Section
