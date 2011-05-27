@@ -905,7 +905,7 @@ These statistics were produced by Google Analytics.
 \end_layout
 
 \begin_layout Section
-Participant consent form
+Consent form in app
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:consent-form"
@@ -1196,7 +1196,7 @@ Thank you!
 \end_layout
 
 \begin_layout Section
-FAQs displayed in the app
+FAQs in app
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:FAQs-in-app"
@@ -1222,13 +1222,19 @@ Tap this button to volunteer information about your happiness (and the other
 \begin_layout Standard
 We may not use this volunteered information as part of our research, since
  it's unlikely to represent a random sample of experiences.
- However, you will see this information reflected in the data in the My
- happiness section.
+ However, you will see this information reflected in the data in the 
+\emph on
+My happiness
+\emph default
+ section.
+\end_layout
+
+\begin_layout Paragraph
+What are the stats on the main screen for? 
 \end_layout
 
 \begin_layout Standard
-What are the stats on the main screen for? These three stats describe the
- quality of your response data.
+These three stats describe the quality of your response data.
 \end_layout
 
 \begin_layout Standard
@@ -1240,25 +1246,53 @@ For our research to be valid, we need a random sample of experiences.
  straight away.
 \end_layout
 
-\begin_layout Standard
-Number of responses is the total tally of responses you've given—both when
- you were beeped, and when you volunteered the information by tapping the
- How do you feel? button.
- Response rate is the percentage of the times we beeped you that you gave
- a response.
+\begin_layout Itemize
+
+\emph on
+Number of responses
+\emph default
+ is the total tally of responses you've given—both when you were beeped,
+ and when you volunteered the information by tapping the 
+\emph on
+How do you feel?
+\emph default
+ button.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Response rate
+\emph default
+ is the percentage of the times we beeped you that you gave a response.
  We'd love it if you managed a rate of 100%, but anything over 75% is great.
  The first response following a beep counts as the response to that beep.
  (If we've sent two or more beeps without a response, it's then only possible
- to respond to the most recent one.) Typical response time is the time it
- generally takes for you to respond to a beep.
- 1 - 2 minutes would be excellent here.
- (What we show here is the median time: we line up your response times in
- order, from shortest to longest, and pick the middle one.)
+ to respond to the most recent one.) 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Typical response time
+\emph default
+ is the time it generally takes for you to respond to a beep.
+ 1 -- 2 minutes would be excellent here.
+ (What we show here is the 
+\emph on
+median
+\emph default
+ time: we line up your response times in order, from shortest to longest,
+ and pick the middle one.)
+\end_layout
+
+\begin_layout Paragraph
+My stats are wrong! Why? 
 \end_layout
 
 \begin_layout Standard
-My stats are wrong! Why? Beeps are not delivered 100% reliably, so it's
- possible that an undelivered beep could unfairly reduce your response rate.
+Beeps are not delivered 100% reliably, so it's possible that an undelivered
+ beep could unfairly reduce your response rate.
  If that happens to you, we apologise!
 \end_layout
 
@@ -1273,35 +1307,71 @@ If you think there's something else wrong with your stats, please get in
  touch.
 \end_layout
 
-\begin_layout Standard
-What if someone calls while I'm responding to a beep? The answers you've
- given up to that point will be saved, and will be sent when the app reopens.
+\begin_layout Paragraph
+What if someone calls while I'm responding to a beep? 
 \end_layout
 
 \begin_layout Standard
-What if I quit the app while it's sending data? This isn't a problem.
+The answers you've given up to that point will be saved, and will be sent
+ when the app reopens.
+\end_layout
+
+\begin_layout Paragraph
+What if I quit the app while it's sending data? 
+\end_layout
+
+\begin_layout Standard
+This isn't a problem.
  The data will be sent next time you open the app.
 \end_layout
 
-\begin_layout Standard
-What if I'm abroad (roaming)? Please note:
+\begin_layout Paragraph
+What if I'm abroad (roaming)? 
 \end_layout
 
 \begin_layout Standard
+Please note:
+\end_layout
+
+\begin_layout Itemize
 We're unlikely to use data from outside the UK in our research.
- If you've turned off data roaming (and you may want to, since it's rather
+ 
+\end_layout
+
+\begin_layout Itemize
+If you've turned off data roaming (and you may want to, since it's rather
  expensive) you'll only get beeped when connected to a WiFi network.
- You can still volunteer information by tapping the How do you feel? button.
+ 
+\end_layout
+
+\begin_layout Itemize
+You can still volunteer information by tapping the 
+\emph on
+How do you feel?
+\emph default
+ button.
  Your responses will be queued for sending the next time you open the app
  in WiFi range or back home.
- The times used by the app are always UK times, no matter where you are.
+ 
+\end_layout
+
+\begin_layout Itemize
+The times used by the app are always UK times, no matter where you are.
  So you'll probably need to change the hours when you can be beeped in the
  in-app Settings.
 \end_layout
 
+\begin_layout Paragraph
+I was beeped after my 
+\emph on
+Don't beep after
+\emph default
+ time.
+ What's going on? 
+\end_layout
+
 \begin_layout Standard
-I was beeped after my Don't beep after time.
- What's going on? We're sorry about this.
+We're sorry about this.
  Sending a beep is similar to sending a text message.
  If your phone isn't available when we beep you (e.g.
  it's off, or has no signal) the beep gets queued until your phone is available
@@ -1309,9 +1379,16 @@ I was beeped after my Don't beep after time.
 \end_layout
 
 \begin_layout Standard
-Sometimes a beep won't be delivered immediately even if your phone is available.
- To help deal with this, we stop sending beeps ten minutes before your Don't
- beep after time.
+Sometimes a beep won't be delivered immediately even if your phone 
+\emph on
+is
+\emph default
+ available.
+ To help deal with this, we stop sending beeps ten minutes before your 
+\emph on
+Don't beep after
+\emph default
+ time.
  But this isn't always enough, so if it's really important that you're not
  disturbed by a rogue after-hours beep, we recommend you set your iPhone
  to silent during these periods.

@@ -108,6 +108,28 @@
 Experience sampling research methods
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength
+\backslash
+fboxrule{0.5pt}
+\backslash
+setlength
+\backslash
+fboxsep{0pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Aims and objectives
 \begin_inset CommandInset label
@@ -1231,10 +1253,34 @@ status open
 \begin_layout Plain Layout
 \noindent
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename main_screen.png
 	lyxscale 40
 	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -1555,7 +1601,7 @@ Registration
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -1565,10 +1611,34 @@ status collapsed
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename registration_screen.png
 	lyxscale 40
 	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -1581,10 +1651,34 @@ status collapsed
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename registration_screen_ready.png
 	lyxscale 40
 	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -1617,7 +1711,7 @@ name "fig:app-registration-main-screen"
 \begin_inset Float figure
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -1627,10 +1721,34 @@ status collapsed
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename consent_screen.png
 	lyxscale 40
 	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -1643,10 +1761,34 @@ status collapsed
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename intro_survey.png
 	lyxscale 40
 	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -1659,10 +1801,34 @@ status collapsed
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename intro_settings_screen.png
 	lyxscale 40
 	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -1831,8 +1997,15 @@ Most multiple choice items with a single answer, such as the gender item
  disclosure indicator elicits the correct expectation that tapping will
  cause the survey to advance.
  A table view cell with disclosure indicator is also used to present the
- participant with a 'Next >' or 'Skip >' option following other interactions
- on a survey screen.
+ participant with a 
+\emph on
+Next >
+\emph default
+ or 
+\emph on
+Skip >
+\emph default
+ option following other interactions on a survey screen.
 \end_layout
 
 \begin_layout Standard
@@ -1851,7 +2024,7 @@ For the year of birth registration survey item, the picker control is used
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -1861,10 +2034,34 @@ status collapsed
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename place_screen.png
 	lyxscale 40
 	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -1877,10 +2074,34 @@ status collapsed
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename birth_year_screen.png
 	lyxscale 40
 	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -1932,15 +2153,39 @@ Multiple choice items accepting multiple answers, such as the activities
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename activities_screen.png
 	lyxscale 40
 	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -2004,7 +2249,7 @@ The feelings items in the ESM assessment survey are answered on visual analog
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -2014,10 +2259,34 @@ status collapsed
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename ls_screen.png
 	lyxscale 40
 	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -2030,10 +2299,34 @@ status collapsed
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename feelings_screen.png
 	lyxscale 40
 	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -2073,19 +2366,193 @@ Settings
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+(a)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename full_settings_screen.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+(b)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename dont_beep_before.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+(c)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename prompt_photo_screen.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Settings screens after registration: (a) the summary screen, (b) the 
+\emph on
+Don't beep before
+\emph default
+ second-level screen, which uses a time picker control, and (c) the 
+\emph on
+Prompt for photo
+\emph default
+ second-level screen, using table view cells with a checkmark.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:settings"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 The settings screen is displayed in two forms.
  It is displayed during the registration process, when for simplicity it
- offers only signalling settings (
+ offers only signalling settings, as seen in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:registration-tasks"
 
 \end_inset
 
- (c)).
- It is also accessible via a button on the main screen, when settings regarding
- prompting for and saving photos during ESM assessments are offered in addition.
- The settings screen is modelled on the settings app provided by Apple.
+
+\begin_inset space ~
+\end_inset
+
+(c).
+ It is also accessible via a button on the main screen, in which case settings
+ regarding prompting for and saving photos during ESM assessments are also
+ offered, as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:settings"
+
+\end_inset
+
+.
+ The design of the settings screens is modelled on the settings app provided
+ by Apple.
+ The summary screen shows all current settings, while tapping any setting
+ displays a screen on which that setting may be changed.
+ All second-level settings screens use table view cells with a checkmark
+ indicating the current selection, except the time settings, which are selected
+ using pickers.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2093,10 +2560,141 @@ Find out more / Info & help
 \end_layout
 
 \begin_layout Standard
-Prior to registration, a 'Find out more >' button is provided; after registratio
-n, an 'Info & help >' button links to the same information.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+(a)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename info_help_screen.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+(b)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename email_screen.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\emph on
+Info & help 
+\emph default
+screens: (a) the index screen and (b) the 
+\emph on
+Email us
+\emph default
+ screen accessible from it
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:info-help"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Prior to registration, a 
+\emph on
+Find out more >
+\emph default
+ button is provided; after registration, an 
+\emph on
+Info & help >
+\emph default
+ button links to the same information.
  A single paragraph summary of the Mappiness project is given, as illustrated
- in , with links to three further sections .
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:info-help"
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+(a), with links to three further sections.
  The 'Key information' section reproduces the content of the consent form.
  The 'FAQs' section provides additional detail in a question-and-answer
  format, which is shown in full in 
@@ -2122,6 +2720,24 @@ reference "chap:esm-appendix"
 
 .
  The 'Acknowledgments' section contains thanks and acknowledgments.
+ App users can send us an email --- with useful information for troubleshooting
+ included automatically --- via the 
+\emph on
+Email us
+\emph default
+ button available on every information page, which displays the screen seen
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:info-help"
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+(b).
 \end_layout
 
 \begin_layout Subsubsection
@@ -3038,12 +3654,29 @@ Mappiness makes use of the three available APNS features: it plays an alert
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
 \align center
-(a) 
+(a)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename apns_unlocked_screenshot.png
 	lyxscale 40
@@ -3051,15 +3684,54 @@ status collapsed
 
 \end_inset
 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  
 \begin_inset space ~
 \end_inset
 
-(b) 
+(b)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename apns_locked_screenshot.png
 	lyxscale 40
 	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
