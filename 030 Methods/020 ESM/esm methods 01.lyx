@@ -4721,61 +4721,79 @@ http://uk-air.defra.gov.uk/latest/currentlevels?type=Current
 \end_layout
 
 \begin_layout Section
-Piloting and testing
+Testing and pilot
 \end_layout
 
 \begin_layout Standard
-Piloting app (survey + other UI), and testing software
+We engaged nine volunteers to test the app for one week
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Testers were provided with the app prior to release in the App Store using
+ Apple's Ad Hoc distribution method.
+\end_layout
+
+\end_inset
+
+.
+ Testers were asked comment on the reliability and stability of the app's
+ implementation, the usability and aesthetics of the user interface, and
+ the clarity and style of explanatory text.
+ This testing phase also served as the pilot of registration and ESM assessment
+ two surveys, and testers were asked debriefing questions in relation to
+ their experiences of completing these surveys.
 \end_layout
 
 \begin_layout Standard
-9 piloters
+Based on testers' feedback the following changes were made:
 \end_layout
 
-\begin_layout Standard
-Changes:
+\begin_layout Itemize
+Number the registration steps from 1 -- 3, to provide an obvious flow through
+ the registration process (the steps may still be completed in any order
+ desired).
+ 
 \end_layout
 
-\begin_layout Standard
-- Numbering registration steps
+\begin_layout Itemize
+Stop showing a 
+\emph on
+Cancel
+\emph default
+ button at the top right of each screen in the surveys.
+ One tester expected a button in this position to advance the survey.
+ This change also simplifies the interface.
+ (Surveys can still be cancelled by repeatedly tapping the back button to
+ return to the first screen, then tapping 
+\emph on
+Cancel
+\emph default
+).
 \end_layout
 
-\begin_layout Standard
-- Music interruption (Jess B)
+\begin_layout Itemize
+Prevent the ESM assessment survey from stopping any music that is playing
+ on the device.
+ We do this by checking that music is not playing before measuring sound
+ levels.
 \end_layout
 
-\begin_layout Standard
-- Cancel button (not Next!) (Adam)
+\begin_layout Itemize
+Draw evenly-spaced tick marks alongside the ESM assessment feelings item
+ sliders.
+ Several testers requested this because they were concerned that their answers
+ were inconsistent.
 \end_layout
 
-\begin_layout Standard
-- SWB: added tick marks (Briony, Rich)
+\begin_layout Itemize
+Add 'Clients, customers' to the list of options in the ESM assessment companions
+hip item.
 \end_layout
 
-\begin_layout Standard
-- People: Added clients, customers (Jess)
-\end_layout
-
-\begin_layout Standard
-- Activities (e.g.
- crafts, waiting)
-\end_layout
-
-\begin_layout Standard
-Not changed (Misato):
-\end_layout
-
-\begin_layout Standard
-- Less frequent beeping (< 1/day)
-\end_layout
-
-\begin_layout Standard
-- Ambiguities: is at work alone or with colleagues? Is a balcony in or outdoors?
- Who are flatmates?
-\end_layout
-
-\begin_layout Standard
-- Health a big source of happiness variation
+\begin_layout Itemize
+Add 'Waiting, queueing' and 'Hobbies, arts, crafts' to the ESM assessment
+ activities item options.
 \end_layout
 
 \begin_layout Section
