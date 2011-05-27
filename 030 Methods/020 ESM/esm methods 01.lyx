@@ -2556,7 +2556,14 @@ reference "fig:settings"
 \end_layout
 
 \begin_layout Subsubsection
-Find out more / Info & help
+Information and help
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Find-out-more"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2741,7 +2748,7 @@ reference "fig:info-help"
 \end_layout
 
 \begin_layout Subsubsection
-Charts and data download
+Charts and data
 \end_layout
 
 \begin_layout Standard
@@ -3334,20 +3341,7 @@ tics.
 \end_layout
 
 \begin_layout Subsection
-Revisions
-\end_layout
-
-\begin_layout Standard
-Some features described above were added after launch, and some bugs were
- fixed, by the provision of app updates through the App Store.
- The content of these updates is described in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:App-revisions"
-
-\end_inset
-
-.
+Updates
 \end_layout
 
 \begin_layout Standard
@@ -3360,7 +3354,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-App revisions
+App updates
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:App-revisions"
@@ -3386,7 +3380,7 @@ name "tab:App-revisions"
 \begin_layout Plain Layout
 
 \emph on
-App version
+Version
 \end_layout
 
 \end_inset
@@ -3437,7 +3431,7 @@ Changes
 \begin_inset Text
 
 \begin_layout Plain Layout
-Initial release
+Initial release.
 \end_layout
 
 \end_inset
@@ -3466,8 +3460,8 @@ Initial release
 \begin_inset Text
 
 \begin_layout Plain Layout
-Fixed bug where timezones did not match in summary settings and time selection
- screens
+Fixed a bug where timezones did not match in summary settings and time selection
+ screens.
 \end_layout
 
 \end_inset
@@ -3497,7 +3491,7 @@ Fixed bug where timezones did not match in summary settings and time selection
 
 \begin_layout Plain Layout
 Added five new activities, and settings regarding photos (when to prompt
- and whether to save to album)
+ and whether to save to album).
 \end_layout
 
 \end_inset
@@ -3526,7 +3520,7 @@ Added five new activities, and settings regarding photos (when to prompt
 \begin_inset Text
 
 \begin_layout Plain Layout
-Added data download feature, text notes in responses, and optional passcode
+Added the data download feature, text notes in responses, and optional passcode
  for access to 
 \emph on
 My happiness
@@ -3535,7 +3529,7 @@ My happiness
 \emph on
 My data
 \emph default
- screens
+ screens.
 \end_layout
 
 \end_inset
@@ -3564,9 +3558,9 @@ My data
 \begin_inset Text
 
 \begin_layout Plain Layout
-Fixed bug causing occasional crashes on passcode screens, wording of email
+Fixed a bug causing occasional crashes on passcode screens, wording of email
  template, and behaviour when installed on multiple devices via restore
- of backup in iTunes
+ of backup in iTunes.
 \end_layout
 
 \end_inset
@@ -3581,7 +3575,18 @@ Fixed bug causing occasional crashes on passcode screens, wording of email
 
 \end_inset
 
+Some features described above were added after launch, and some bugs were
+ fixed, by the provision of app updates through the App Store.
+ The content of these updates is summarised in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:App-revisions"
 
+\end_inset
+
+.
+ Elsewhere in this chapter we refer to version 1.1.1, including all updates,
+ unless otherwise stated.
 \end_layout
 
 \begin_layout Section
@@ -3980,7 +3985,7 @@ Mappiness makes use of the three available APNS features: it plays an alert
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -4718,10 +4723,11 @@ http://uk-air.defra.gov.uk/latest/currentlevels?type=Current
 
 .
  These data are stored for later processing.
+ 
 \end_layout
 
 \begin_layout Section
-Testing and pilot
+Testing and piloting
 \end_layout
 
 \begin_layout Standard
@@ -4740,9 +4746,9 @@ Testers were provided with the app prior to release in the App Store using
  Testers were asked comment on the reliability and stability of the app's
  implementation, the usability and aesthetics of the user interface, and
  the clarity and style of explanatory text.
- This testing phase also served as the pilot of registration and ESM assessment
- two surveys, and testers were asked debriefing questions in relation to
- their experiences of completing these surveys.
+ This testing phase also served as the pilot for the registration and ESM
+ assessment surveys, and testers were asked debriefing questions in relation
+ to their experiences of completing these surveys.
 \end_layout
 
 \begin_layout Standard
@@ -4796,8 +4802,13 @@ Add 'Waiting, queueing' and 'Hobbies, arts, crafts' to the ESM assessment
  activities item options.
 \end_layout
 
+\begin_layout Standard
+Descriptions provided elsewhere in this chapter incorporate these changes.
+ 
+\end_layout
+
 \begin_layout Section
-Recruitment
+Recruitment and communication
 \end_layout
 
 \begin_layout Subsection
@@ -4805,29 +4816,63 @@ Participant motivation
 \end_layout
 
 \begin_layout Standard
-Opportunistic recruitment
+Recruitment of participants to the study was opportunistic.
+ We hoped that potential participants would be attracted by three main factors
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "cavusgil:1998"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+intrinsic motivation, based on an interest in or enjoyment of the tasks
+ associated with participation (this motivation could be intensified by
+ the study's novelty and use of new technology);
+\end_layout
+
+\begin_layout Itemize
+altruistic motivation, through assisting research aimed at producing knowledge
+ that may ultimately be of social benefit; and
+\end_layout
+
+\begin_layout Itemize
+direct personal benefit, in the form of the opportunity for participants
+ to learn more about variations in their own wellbeing, and by the somewhat
+ game-like nature of participation, in which response occasions, rates and
+ times can be tracked and (potentially) compared.
 \end_layout
 
 \begin_layout Standard
-Intrinsic/altruistic, response vars (gamelike?), charts, data download/API
+We considered whether financial incentives might be provided, but ruled
+ these out on two grounds: they would become prohibitively costly if a sample
+ of the desired large size was achieved, and they could risk crowding out
+ intrinsic and altruistic motivations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "frey:2001"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Virality
+To reach potential participants, we intended to rely on word-of-mouth and
+ on coverage in traditional and social media.
+ Word-of-mouth recruitment would be aided by the fact that the app signals
+ participants at random moments, potentially in social contexts where the
+ signal might be remarked upon and then explained.
+ As noted below, we were also greatly assisted by a period of 'featured'
+ positioning in the App Store.
 \end_layout
 
 \begin_layout Subsection
 Communication
-\end_layout
-
-\begin_layout Standard
-Communication with prospective and registered participants was carried through
- multiple channels.
- 
-\end_layout
-
-\begin_layout Paragraph
-Visual design
 \end_layout
 
 \begin_layout Standard
@@ -4869,8 +4914,10 @@ name "fig:Mappiness-logo"
 
 \end_inset
 
-We tried to achieve an appealing and consistent visual identity or brand
- across communication media, with the use of a distinctive logo, colour
+Communication with prospective and actual participants was carried through
+ multiple channels.
+ We attempted to achieve an appealing and consistent visual identity or
+ brand across communication media, with the use of a distinctive logo, colour
  palette and fonts.
  The logo is illustrated in 
 \begin_inset CommandInset ref
@@ -4882,174 +4929,6 @@ reference "fig:Mappiness-logo"
 .
  The clean design and relatively informal copywriting style were inspired
  by those of various successful apps and online services.
-\end_layout
-
-\begin_layout Subsubsection
-App Store
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:app-store"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
-(a) 
-\begin_inset Graphics
-	filename app_store.png
-	lyxscale 30
-	scale 25
-
-\end_inset
-
- 
-\begin_inset space ~
-\end_inset
-
-(b) 
-\begin_inset Graphics
-	filename app_store_reviews.png
-	lyxscale 30
-	scale 25
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-(a) Representation and (b) reviews in the App Store
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:app-store-shot"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-All participants must download the app via the App Store.
- 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:app-store-shot"
-
-\end_inset
-
-(a) illustrates the app's presence in the Store, while the full text of
- the description given is reproduced in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sec:app-Store-description"
-
-\end_inset
-
- 
-\begin_inset CommandInset ref
-LatexCommand vpageref
-reference "sec:app-Store-description"
-
-\end_inset
-
- of Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:esm-appendix"
-
-\end_inset
-
-.
- The app is filed under the Store's 'Lifestyle' category but, given the
- large number of apps in each category, is more likely to be reached by
- a direct search.
-\end_layout
-
-\begin_layout Standard
-Mappiness was also displayed in the editorially-driven 'Featured' area of
- the UK App Store for two weeks shortly after launch, and we believe this
- was the source of a large proportion of the large number of downloads during
- this period.
- We had contacted a developer Partnership Manager at Apple UK to make the
- case for such placement.
-\end_layout
-
-\begin_layout Standard
-App users are able to post reviews (free text) and ratings (1 -- 5 stars)
- of apps in the Store.
- For Mappiness, these may influence potential participants' choice to download
- and take part.
- In iOS 3, the user is prompted to rate an app when it is deleted, and this
- can cause a downward bias in app ratings.
- To help counter this, we opted to display a message to ongoing users, requestin
-g them to give a rating: when participants have completed exactly ten ESM
- assessment responses, the message displayed at the top of the main screen
- of the app changes temporarily to 'Like mappiness? Please rate us in the
- App Store'.
- Mappiness was rated at 4 out of 5 stars throughout most of the research
- period.
-\end_layout
-
-\begin_layout Subsubsection
-App
-\end_layout
-
-\begin_layout Standard
-The main screen of the app displays a one-line status message which is retrieved
- from the server, alongside current response statistics, each time the app
- is launched.
- This message is used for brief ongoing communication with participants.
-\end_layout
-
-\begin_layout Standard
-Before any ESM assessments have been submitted this messages reads 'If not
- in UK, see our site for timezone info', to try to prevent non-UK participants
- from being caught out by timezone differences.
- When exactly ten responses have been submitted, it reads 'Like mappiness?
- Please rate us in the App Store', as noted in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sub:app-store"
-
-\end_inset
-
-.
- At all other times, it displays a default message.
- Most commonly, we set this to 'Thank you for taking part', but we occasionally
- vary it with news about the study: for example, a note that we are on Twitter,
- or about media coverage, or a link to a new post on our blog.
-\end_layout
-
-\begin_layout Standard
-Prospective and registered participants can also contact us directly within
- the app.
- In the 'Info & help' section there is a button at top right marked 'Email
- us', which pops up a new email composition screen with our email addresses
- pre-completed.
- The email template also adds information which may be helpful for troubleshooti
-ng at the end of the message, including the device model, iOS version, and
- participant ID in the database.
- More than 600 emails were received by this means in the first nine months
- of the study.
 \end_layout
 
 \begin_layout Subsubsection
@@ -5175,7 +5054,7 @@ four links, also at the bottom, to facilitate sharing the page to the social
 
 \begin_layout Itemize
 a red 'Feedback' tab at the left-hand side, which links to the feedback
- forum (see below).
+ forum.
 \end_layout
 
 \begin_layout Standard
@@ -5202,52 +5081,6 @@ reference "chap:esm-appendix"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Subsubsection
-Feedback forum
-\end_layout
-
-\begin_layout Standard
-We provided a feedback forum to enable participants and others to contribute
- and vote on ideas for the project, available at 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://mappiness.uservoice.com/
-\end_layout
-
-\end_inset
-
-.
- During the nine months after launch, more than 50 ideas were contributed.
- The top five were:
-\end_layout
-
-\begin_layout Enumerate
-Add an Android version of the app (94 votes)
-\end_layout
-
-\begin_layout Enumerate
-Plot on the map where users report feeling unhappy (52 votes)
-\end_layout
-
-\begin_layout Enumerate
-Make it global! (46 votes)
-\end_layout
-
-\begin_layout Enumerate
-Add the ability to export your personal data (41 votes)
-\end_layout
-
-\begin_layout Enumerate
-Add more "Activities" (22 votes)
-\end_layout
-
-\begin_layout Standard
-So far, we have acted on ideas 4 and 5.
 \end_layout
 
 \begin_layout Subsubsection
@@ -5357,11 +5190,7 @@ stories on the front page of Le Figaro and in the Observer, the Sunday Times,
 \end_layout
 
 \begin_layout Subsubsection
-Blog and social media
-\end_layout
-
-\begin_layout Paragraph
-Our social media
+Blogs and social media
 \end_layout
 
 \begin_layout Standard
@@ -5378,13 +5207,9 @@ http://blog.mappiness.org.uk/
 \end_inset
 
 .
- We have used this to post a number of news items and interim analyses.
- We also registered a Twitter account --- @mappiness_app --- and have posted
+ We used this to post a number of news items and interim analyses.
+ We also registered a Twitter account --- @mappiness_app --- and posted
  messages there from time to time.
-\end_layout
-
-\begin_layout Paragraph
-Other social media
 \end_layout
 
 \begin_layout Standard
@@ -5406,6 +5231,227 @@ We were invited to speak at the Sustainable Development Research Network
  website as providing a useful introduction to the research.
 \end_layout
 
+\begin_layout Subsubsection
+App Store
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:app-store"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+(a) 
+\begin_inset Graphics
+	filename app_store.png
+	lyxscale 30
+	scale 25
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+(b) 
+\begin_inset Graphics
+	filename app_store_reviews.png
+	lyxscale 30
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+(a) Representation and (b) reviews in the App Store
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:app-store-shot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+All participants must download the app via the App Store.
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:app-store-shot"
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+(a) illustrates the app's presence in the Store, while the full text of
+ the description given is reproduced in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:app-Store-description"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:app-Store-description"
+
+\end_inset
+
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:esm-appendix"
+
+\end_inset
+
+.
+ The app is filed under the Store's 'Lifestyle' category but, given the
+ large number of apps in each category, is more likely to be reached by
+ a direct search.
+\end_layout
+
+\begin_layout Standard
+Mappiness was also displayed in the editorially-driven 'Featured' area of
+ the UK App Store for two weeks shortly after launch, and we believe this
+ was the source of a large proportion of the large number of downloads during
+ this period.
+ We had contacted a developer Partnership Manager at Apple UK to make the
+ case for such placement.
+\end_layout
+
+\begin_layout Paragraph
+Reviews
+\end_layout
+
+\begin_layout Standard
+App users are able to post reviews (free text) and ratings (1 -- 5 stars)
+ of apps in the Store.
+ For Mappiness, these may influence potential participants' choice to download
+ and take part.
+ In iOS 3, the user is prompted to rate an app when it is deleted, and this
+ can cause a downward bias in app ratings.
+ To help counter this, we displayed a message to ongoing users, requesting
+ them to give a rating: when participants completed exactly ten ESM assessment
+ responses, the message displayed at the top of the main screen of the app
+ changed temporarily to 'Like mappiness? Please rate us in the App Store'.
+ The app was rated at 4 out of 5 stars throughout most of the research period.
+\end_layout
+
+\begin_layout Subsubsection
+App
+\end_layout
+
+\begin_layout Standard
+As just noted, the main screen of the app displays a one-line status message
+ which is retrieved from the server, alongside current response statistics,
+ each time the app is launched.
+ This message is used for brief ongoing communication with participants.
+\end_layout
+
+\begin_layout Standard
+Before any ESM assessments have been submitted this messages reads 'If not
+ in UK, see our site for timezone info', to try to prevent non-UK participants
+ from being caught out by timezone differences.
+ When exactly ten responses have been submitted, it requests an App Store
+ review, as noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:app-store"
+
+\end_inset
+
+.
+ At all other times, it displays a default message.
+ Most commonly, we set this to 'Thank you for taking part', but we occasionally
+ varied it with news about the study: for example, a note that we were on
+ Twitter, or about media coverage, or a link to a new post on the blog.
+\end_layout
+
+\begin_layout Standard
+Prospective and registered participants can also contact us by email directly
+ within the app, as noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Find-out-more"
+
+\end_inset
+
+.
+ More than 600 emails were received by this means in the first nine months
+ of the study.
+\end_layout
+
+\begin_layout Subsubsection
+Feedback forum
+\end_layout
+
+\begin_layout Standard
+We provided a feedback forum to enable participants and others to contribute
+ and vote on ideas for the project, available at 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://mappiness.uservoice.com/
+\end_layout
+
+\end_inset
+
+.
+ During the nine months after launch, more than 50 ideas were contributed.
+ The top five were:
+\end_layout
+
+\begin_layout Enumerate
+Add an Android version of the app (94 votes)
+\end_layout
+
+\begin_layout Enumerate
+Plot on the map where users report feeling unhappy (52 votes)
+\end_layout
+
+\begin_layout Enumerate
+Make it global! (46 votes)
+\end_layout
+
+\begin_layout Enumerate
+Add the ability to export your personal data (41 votes)
+\end_layout
+
+\begin_layout Enumerate
+Add more "Activities" (22 votes)
+\end_layout
+
+\begin_layout Standard
+We have acted on ideas 4 and 5.
+\end_layout
+
 \begin_layout Section
 Data collection
 \end_layout
@@ -5417,11 +5463,6 @@ Period
 \begin_layout Standard
 Technical issues: software fixes; database indexing; memory and Passenger
  process trade-off
-\end_layout
-
-\begin_layout Standard
-Updates (e.g.
- 'My happiness' graphs, activities)
 \end_layout
 
 \begin_layout Standard
