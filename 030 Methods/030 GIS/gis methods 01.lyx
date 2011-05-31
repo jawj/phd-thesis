@@ -102,14 +102,14 @@ Spatial data and analyses
 \end_layout
 
 \begin_layout Subsection
-Spatial data
+Spatial datasets
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -740,6 +740,42 @@ wunderground.com
 
 \end_layout
 
+\begin_layout Standard
+\noindent
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Land Cover Map 2000 habitat category classifications
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Habitat categories table.pdf
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Spatial analyses
 \end_layout
@@ -749,7 +785,7 @@ Spatial database / Geographical Information Systems (GIS)
 \end_layout
 
 \begin_layout Standard
-PostGIS
+PostGIS + R
 \end_layout
 
 \begin_layout Subsubsection
@@ -787,6 +823,14 @@ Predictive
 
 \begin_layout Standard
 house price regressions
+\end_layout
+
+\begin_layout Subsubsection
+Visualisation
+\end_layout
+
+\begin_layout Standard
+custom SQL + QGIS + Google Earth
 \end_layout
 
 \end_body

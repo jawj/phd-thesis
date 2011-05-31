@@ -109,12 +109,259 @@
 The immediate environment
 \end_layout
 
+\begin_layout Standard
+A snapshot of the data collected to date was taken on 22 February 2011,
+ and all analyses reported here are based on that snapshot.
+\end_layout
+
 \begin_layout Section
 Descriptive results
 \end_layout
 
 \begin_layout Standard
-Keep UK-only: don't bother restricting to London?
+Our analysis is based on over 1,000,000 valid responses from more than 20,000
+ participants.
+ We believe these sample sizes to be the largest ever achieved by an ESM
+ study.
+\end_layout
+
+\begin_layout Subsection
+Response validity
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Graph/describe the validity criteria, and state how many responses each
+ criterion rules out, and how many in total
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+prompted vs unprompted
+\end_layout
+
+\begin_layout Standard
+prompted delay
+\end_layout
+
+\begin_layout Subsubsection
+Rate and delay
+\end_layout
+
+\begin_layout Standard
+unprompted responses
+\end_layout
+
+\begin_layout Standard
+beep vs response (52% in 1 hour)
+\end_layout
+
+\begin_layout Standard
+First, they must be prompted by a signal: we identify such responses as
+ those starting within 60 minutes of a previously unanswered signal, and
+ completed within a further 5 minutes.
+ Second, they must have a UK GPS location for which, if outdoors, the device-rep
+orted accuracy is 
+\begin_inset Formula $+$
+\end_inset
+
+/
+\begin_inset Formula $-$
+\end_inset
+
+ 250m or better.
+ Third, local weather data must be available for within 3 hours of the response
+ time.
+ Descriptive statistics are reported for these valid responses and their
+ contributing participants only.
+\end_layout
+
+\begin_layout Subsection
+Participants
+\end_layout
+
+\begin_layout Subsubsection
+Participation rate
+\end_layout
+
+\begin_layout Standard
+reach vs download -- unknown
+\end_layout
+
+\begin_layout Standard
+download vs registration
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Table(s)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+UK population comparisons
+\end_layout
+
+\begin_layout Standard
+Our reliance on participants' own mobile devices restricts the sample's
+ demographic profile, however.
+ Participants are relatively wealthy: median household income is approximately
+ GBP £48,000, almost twice the UK median
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "house-of-commons:2006"
+
+\end_inset
+
+.
+ They are also relatively young: 66% are aged under 35, and 95% under 50,
+ compared to 29% and 56% respectively in the UK adult population
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "office-for-national-statistics:2009"
+
+\end_inset
+
+.
+ 78% of participants are in employment and 13% are in full-time education.
+ These groups are over-represented relative to the UK adult population,
+ in which the proportions are respectively 57% and 4%, primarily at the
+ expense of retired people, who constitute 0.5% of participants but 22% of
+ the population
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "social-research:2009"
+
+\end_inset
+
+.
+ Participants' sex ratio is nearly balanced, at 55% male, compared to 49%
+ in the UK adult population
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "office-for-national-statistics:2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Responses
+\end_layout
+
+\begin_layout Subsubsection
+Settings
+\end_layout
+
+\begin_layout Standard
+beeps per day, hours, sounds
+\end_layout
+
+\begin_layout Subsubsection
+Period
+\end_layout
+
+\begin_layout Standard
+definition
+\end_layout
+
+\begin_layout Standard
+stats
+\end_layout
+
+\begin_layout Subsubsection
+Trend
+\end_layout
+
+\begin_layout Standard
+does rate decrease over time? does it depend on previous feelings or trajectory?
+ etc.
+\end_layout
+
+\begin_layout Subsection
+Response variables
+\end_layout
+
+\begin_layout Subsubsection
+Location
+\end_layout
+
+\begin_layout Standard
+UK/non-UK
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../030 Methods/020 ESM/response_count_map 01.pdf
+	lyxscale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Response count map (to mid-February 2011)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Map/distribution
+\end_layout
+
+\begin_layout Subsubsection
+Feelings
+\end_layout
+
+\begin_layout Subsubsection
+Companionship
+\end_layout
+
+\begin_layout Subsubsection
+Place
+\end_layout
+
+\begin_layout Subsubsection
+Activities
+\end_layout
+
+\begin_layout Subsubsection
+Photos
+\end_layout
+
+\begin_layout Subsubsection
+Noise
 \end_layout
 
 \begin_layout Section

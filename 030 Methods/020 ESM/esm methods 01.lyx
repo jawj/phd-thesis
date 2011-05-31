@@ -5083,7 +5083,11 @@ a red 'Feedback' tab at the left-hand side, which links to the feedback
 \end_layout
 
 \begin_layout Standard
-The website received over 70,000 visits in the first nine months of operation.
+The website was designed to handle extremely high loads, in case of major
+ media coverage, with all static assets served by an external Content Delivery
+ Network (CDN) and all dynamic elements served by the data server from a
+ periodically-refreshed cache.
+ The website received over 70,000 visits in the first nine months of operation.
  These visits are charted week-by-week, and broken down by source, in 
 \begin_inset CommandInset ref
 LatexCommand vpageref
@@ -5106,6 +5110,7 @@ reference "chap:esm-appendix"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -5482,48 +5487,10 @@ Data collection
 \end_layout
 
 \begin_layout Standard
-The app was launched on 6 August 2010.
- Rates of participant recruitment during the period to May 2011 are illustrated
- in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Recruitment-statistics"
-
-\end_inset
-
-, which compares weekly website visits, app downloads, and participant registrat
-ions within the app.
- As expected, these three quantities are in general highly correlated.
- Spikes in all three are can be traced to specific items of media coverage.
- The first and largest spike coincides with being featured in the UK App
- Store, and thus is unusually weakly correlated with website visits.
- 
-\end_layout
-
-\begin_layout Standard
-The data server was designed to run itself with no routine intervention,
- but was regularly monitored, especially in the first few weeks.
-\end_layout
-
-\begin_layout Standard
-Bug fixes (e.g.
- duplicate image, nil device token)
-\end_layout
-
-\begin_layout Standard
-Performance improvements (e.g.
- database indexing, server capacity, I/O bound -> memory reallocation)
-\end_layout
-
-\begin_layout Standard
-Sign-up graph? Responses graph? Coverage map?
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -5578,21 +5545,36 @@ name "fig:Recruitment-statistics"
 
 \end_inset
 
+The app was approved by Apple and became available in the App Store on 6
+ August 2010, and was officially launched ten days later.
+ Rates of participant recruitment during the period up to May 2011 are illustrat
+ed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Recruitment-statistics"
 
+\end_inset
+
+, which shows weekly website visits, app downloads, and registrations within
+ the app.
+ As expected, the three quantities are in general highly correlated, with
+ spikes that can be traced to items of media coverage.
+ The first and largest spike also coincides with being featured in the UK
+ App Store for two weeks --- it is thus largely UK-specific, and unusually
+ weakly correlated with website visits.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
 \align center
 \begin_inset Graphics
 	filename daily_response_stats.pdf
-	lyxscale 80
 	scale 50
 
 \end_inset
@@ -5604,7 +5586,14 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Response statistics: daily response and responding participant counts
+Global response statistics: daily response and responding participant counts
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:response-statistics"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5612,53 +5601,41 @@ Response statistics: daily response and responding participant counts
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-\end_layout
+Daily response counts are illustrated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:response-statistics"
 
 \end_inset
 
+.
+ Changes in these counts reflect a balance between the recruitment of new
+ participants and the loss of existing participants (as well as any trends
+ in response rate across the period of participation).
+ As expected, therefore, numbers of responses and of responding participants
+ increase during periods of major recruitment, as seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Recruitment-statistics"
 
+\end_inset
+
+, and fall during other periods.
+ Two brief but severe troughs in the response counts --- from 28 -- 30 August
+ and on 19 November --- are associated with temporary server failures, during
+ which participants were not signalled.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename response_count_map 01.pdf
-	lyxscale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Response count map (to mid-February 2011)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-A snapshot of the data collected to date was taken on 22 February 2011,
- and all spatial analyses reported in this thesis are based on that snapshot.
+The data server was designed to run itself with no routine intervention,
+ but was subject to ongoing monitoring.
+ During the first few weeks a number of minor bugs that had not been uncovered
+ during testing were fixed.
+ In addition, the data server was upgraded, and optimisations were made
+ to the code, database schema and server configuration, in order to deal
+ with the unexpectedly large number of participants.
 \end_layout
 
 \begin_layout Section
