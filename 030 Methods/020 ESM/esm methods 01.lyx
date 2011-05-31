@@ -4771,7 +4771,7 @@ Testers were provided with the app prior to release in the App Store using
  Testers were asked comment on the reliability and stability of the app's
  implementation, the usability and aesthetics of the user interface, and
  the clarity and style of explanatory text.
- This testing phase also served as the pilot for the registration and ESM
+ The testing phase also served as the pilot for the registration and ESM
  assessment surveys, and testers were asked debriefing questions in relation
  to their experiences of completing these surveys.
 \end_layout
@@ -4806,8 +4806,8 @@ Cancel
 \begin_layout Itemize
 Prevent the ESM assessment survey from stopping any music that is playing
  on the device.
- We do this by checking that music is not playing before measuring sound
- levels.
+ We do this by checking that music is not playing before attempting to measure
+ sound levels.
 \end_layout
 
 \begin_layout Itemize
@@ -4942,8 +4942,8 @@ name "fig:Mappiness-logo"
 Communication with prospective and actual participants was carried through
  multiple channels.
  We attempted to achieve an appealing and consistent visual identity or
- brand across communication media, with the use of a distinctive logo, colour
- palette and fonts.
+ brand across media, with the use of a distinctive logo, colour palette
+ and fonts.
  The logo is illustrated in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -4983,9 +4983,9 @@ http://mappin.es/
 
 \end_inset
 
-) to provide information about the study -- and about current UK and London
- happiness conditions -- to those who might be interested, including prospective
- participants and journalists.
+) to provide information about the study --- and about current UK and London
+ happiness conditions --- to those who might be interested, including prospectiv
+e participants and journalists.
  The full content of the website is reproduced in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -5030,8 +5030,8 @@ News displays up-to-date results of a Twitter search for 'mappiness' (to
 \end_layout
 
 \begin_layout Description
-Meters shows mean happiness levels in the pleasing graphical form of 'hedonimete
-rs' and an accompanying chart.
+Meters shows mean happiness levels in graphical form using 'hedonimeters'
+ and an accompanying chart.
  Happiness levels are calculated by the data server as discussed in 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5045,7 +5045,7 @@ reference "sub:web-statistics"
 \begin_layout Description
 Maps shows the most recent happy responses that include photos on an interactive
  map of the UK.
- Again, this is backed by the data server.
+ Again, this display is backed by data server calculations.
 \end_layout
 
 \begin_layout Description
