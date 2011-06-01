@@ -753,22 +753,25 @@ Adding activity categories inevitably results in reduced comparability of
  encompassing a narrower range of activities.
 \end_layout
 
-\begin_layout Standard
-In app update 1.1, participants were enabled to type text notes for their
- own use at the end of the activities list.
+\begin_layout Paragraph
+Notes
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: why?
-\end_layout
+In app update 1.1 (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:app-Updates"
 
 \end_inset
 
-
+) participants were enabled to add optional textual notes, using a button
+ provided at the end of the activities list.
+ This feature was added primarily to increase the usefulness of the downloaded
+ data to participants, and so act as an incentive to participation.
+ However, if patterns emerge in the words or phrases used, it could also
+ prove useful in assessing what items and/or options should be added to
+ the survey in the future.
 \end_layout
 
 \begin_layout Paragraph
@@ -3342,6 +3345,13 @@ tics.
 
 \begin_layout Subsection
 Updates
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:app-Updates"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3549,7 +3559,7 @@ My data
 \begin_inset Text
 
 \begin_layout Plain Layout
-3 June 2011
+1 June 2011
 \end_layout
 
 \end_inset
@@ -3683,6 +3693,22 @@ http://www.ruby-lang.org/en/
 \end_inset
 
 , a dynamic, open source programming language.
+\end_layout
+
+\begin_layout Standard
+The data server was designed to run itself with no routine intervention,
+ but was subject to ongoing monitoring.
+ During the first few weeks a number of minor bugs that had not been uncovered
+ during testing were fixed.
+ In addition, the data server was upgraded, and optimisations were made
+ to the code, database schema and server configuration, in order to deal
+ with the unexpectedly large number of participants.
+ The data server software was also subject to periodic updates to enhance
+ the charts and other information provided on the 
+\emph on
+My happiness 
+\emph default
+screen.
 \end_layout
 
 \begin_layout Subsection
@@ -4536,11 +4562,11 @@ a chart showing the mean happiness response for the UK and London, hour-by-hour
 \end_layout
 
 \begin_layout Standard
-Statistics for the hour-by-hour chart are calculated at the end of each
- hour, and statistics for the others are calculated every 5 minutes, by
- scripts executed on the appropriate schedule.
+Statistics for the hour-by-hour chart are calculated every hour, and statistics
+ for the others are calculated every 5 minutes, by scripts executed on the
+ appropriate schedule.
  The statistics are saved (in JSON format) in a directory publicly accessible
- over an HTTP connection, and are loaded as required by the public website.
+ over an HTTP connection, and are loaded as required from the public website.
  
 \end_layout
 
@@ -4582,7 +4608,19 @@ yyyy
 \emph on
 yyyy
 \emph default
- --- the 
+ --- for example, 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://mappiness.me/3kkq.pk7d.23wb
+\end_layout
+
+\end_inset
+
+.
+ The 
 \emph on
 xxxx
 \emph default
@@ -4605,9 +4643,9 @@ s and
 y
 \emph default
 s can be any digit (0--9) or lower-case letter (a--z) excepting the following:
- 0, 1, a, e, i, o, u, l (vowels are excluded to ensure that rude words cannot
- be generated coincidentally, while 0, 1, i, o and l are excluded because
- they are easily visually confused).
+ 0, 1, a, e, i, o, u, l (vowels are excluded to ensure that offensive words
+ cannot be generated, and 0, 1, i, o and l are excluded because they are
+ easily visually confused).
  The 8-character string can therefore take any of 
 \begin_inset Formula $28^{8}$
 \end_inset
@@ -4621,15 +4659,8 @@ s can be any digit (0--9) or lower-case letter (a--z) excepting the following:
 \end_layout
 
 \begin_layout Standard
-Data 
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:web-statistics"
-
-\end_inset
-
-download is made available by another web application built using the Sinatra
- framework.
+Data download is made available by another web application built using the
+ Sinatra framework.
  Several formats are supported:
 \end_layout
 
@@ -4726,29 +4757,8 @@ http://uk-air.defra.gov.uk/latest/currentlevels?type=Current
  
 \end_layout
 
-\begin_layout Subsection
-Updates
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Should this content (and the eponymous subsection in App) be moved to Data
- Collection?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
-The data server software was subject to periodic updates in order to fix
- bugs, improve performance, and enhance the charts and other information
- provided on the 
-\emph on
-My happiness 
-\emph default
-screen.
+
 \end_layout
 
 \begin_layout Section
@@ -4833,7 +4843,7 @@ Descriptions provided elsewhere in this chapter incorporate these changes.
 \end_layout
 
 \begin_layout Section
-Recruitment and communication
+Participant recruitment and communication
 \end_layout
 
 \begin_layout Subsection
@@ -4892,7 +4902,11 @@ To reach potential participants, we intended to rely on word-of-mouth and
  Word-of-mouth recruitment would be aided by the fact that the app signals
  participants at random moments, potentially in social contexts where the
  signal might be remarked upon and then explained.
- As noted below, we were also greatly assisted by a period of 'featured'
+ 
+\end_layout
+
+\begin_layout Standard
+As noted below, we were also greatly assisted by a period of 'featured'
  positioning in the App Store.
 \end_layout
 
@@ -4986,7 +5000,11 @@ http://mappin.es/
 ) to provide information about the study --- and about current UK and London
  happiness conditions --- to those who might be interested, including prospectiv
 e participants and journalists.
- The full content of the website is reproduced in 
+ 
+\end_layout
+
+\begin_layout Standard
+The full content of the website is reproduced in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:public-website"
@@ -5079,14 +5097,21 @@ four links, also at the bottom, to facilitate sharing the page to the social
 
 \begin_layout Itemize
 a red 'Feedback' tab at the left-hand side, which links to the feedback
- forum.
+ forum (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Feedback-forum"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
 The website was designed to handle extremely high loads, in case of major
  media coverage, with all static assets served by an external Content Delivery
- Network (CDN) and all dynamic elements served by the data server from a
- periodically-refreshed cache.
+ Network (CDN) and all dynamic elements served from a periodically-refreshed
+ cache.
  The website received over 70,000 visits in the first nine months of operation.
  These visits are charted week-by-week, and broken down by source, in 
 \begin_inset CommandInset ref
@@ -5438,6 +5463,13 @@ reference "sub:Find-out-more"
 
 \begin_layout Subsubsection
 Feedback forum
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Feedback-forum"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5482,8 +5514,8 @@ Add more "Activities" (22 votes)
 We have acted on ideas 4 and 5.
 \end_layout
 
-\begin_layout Section
-Data collection
+\begin_layout Subsection
+Recruitment and response trends
 \end_layout
 
 \begin_layout Standard
@@ -5613,7 +5645,7 @@ reference "fig:response-statistics"
 .
  Changes in these counts reflect a balance between the recruitment of new
  participants and the loss of existing participants (as well as any trends
- in response rate across the period of participation).
+ in response rate across individuals' participation periods).
  As expected, therefore, numbers of responses and of responding participants
  increase during periods of major recruitment, as seen in 
 \begin_inset CommandInset ref
@@ -5623,39 +5655,9 @@ reference "fig:Recruitment-statistics"
 \end_inset
 
 , and fall during other periods.
- Two brief but severe troughs in the response counts --- from 28 -- 30 August
+ Two brief troughs in the response count chart --- from 28 -- 30 August
  and on 19 November --- are associated with temporary server failures, during
  which participants were not signalled.
-\end_layout
-
-\begin_layout Standard
-The data server was designed to run itself with no routine intervention,
- but was subject to ongoing monitoring.
- During the first few weeks a number of minor bugs that had not been uncovered
- during testing were fixed.
- In addition, the data server was upgraded, and optimisations were made
- to the code, database schema and server configuration, in order to deal
- with the unexpectedly large number of participants.
-\end_layout
-
-\begin_layout Section
-Data quality and cleaning
-\end_layout
-
-\begin_layout Standard
-Analysis server (for power!) --- mix of SQL commands and Stata
-\end_layout
-
-\begin_layout Standard
-Unpacking JSON responses
-\end_layout
-
-\begin_layout Standard
-Eliminating duplicates and own data
-\end_layout
-
-\begin_layout Standard
-Exporting to CSV for Stata
 \end_layout
 
 \end_body
