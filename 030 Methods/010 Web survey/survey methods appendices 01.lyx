@@ -120,6 +120,10 @@ name "app:quota-status"
 
 \end_layout
 
+\begin_layout Subsection
+London
+\end_layout
+
 \begin_layout Standard
 \begin_inset Graphics
 	filename quota_status_p1.pdf
@@ -158,6 +162,23 @@ name "app:quota-status"
 
 \end_layout
 
+\begin_layout Subsection
+UK
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Sample invitation email
 \begin_inset CommandInset label
@@ -188,7 +209,7 @@ name "app:sample-invitation"
 \end_layout
 
 \begin_layout Section
-Survey screenshots (London)
+Survey screenshots 
 \begin_inset CommandInset label
 LatexCommand label
 name "app:survey-screenshots"
@@ -206,6 +227,10 @@ These screenshots show every survey page, including those that were only
  
 \end_layout
 
+\begin_layout Subsection
+London
+\end_layout
+
 \begin_layout Standard
 
 \lang english
@@ -218,6 +243,23 @@ These screenshots show every survey page, including those that were only
 \end_inset
 
  
+\end_layout
+
+\begin_layout Subsection
+UK
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

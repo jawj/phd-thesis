@@ -116,6 +116,23 @@ name "sec:survey-methods"
 
 \end_layout
 
+\begin_layout Standard
+Two web surveys were conducted, across Greater London and the UK.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: summary of differences
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Greater London
 \end_layout
@@ -133,13 +150,23 @@ Move specific survey details here
 \end_layout
 
 \begin_layout Section
-Web survey
+Web surveys
 \end_layout
 
 \begin_layout Standard
 Data was collected by web survey using an online panel in August and early
  September 2009.
  
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: other date/something different
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -259,6 +286,16 @@ key "chaplin:2009"
 \end_inset
 
  
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: add UK sample spec.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -992,7 +1029,7 @@ In practice, there is no comprehensive register of Internet users, and hence
  Web respondent recruitment options include mode switching (making initial
  contact by another mode---for example by phone, using Random Digit Dialling,
  or by post, using the Postcode Address File); pop-up advertising on web
- sites; use of a pre-recruited respondent panel; and other convenience methods
+ sites; use of a pre-recruited respondent panel; and convenience methods
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1124,6 +1161,10 @@ Since the pre-recruited panel is not a probability sample of the population
  be assured by this method, of course).
 \end_layout
 
+\begin_layout Paragraph
+London
+\end_layout
+
 \begin_layout Standard
 Quota calculations were based on data from the Quarterly Labour Force Survey
  (QLFS), January -- March 2009, waves 1 and 5 (which include earnings data),
@@ -1186,6 +1227,45 @@ Location was defined according to Government Office regions.
  
 \end_layout
 
+\begin_layout Paragraph
+UK
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: UK quota details -- combining some of the above?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The chosen quota parameters were: location (within one of five large areas
+ of roughly equal population) 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The five areas, each composed of one or more Government Office regions,
+ were: (1) North East, North West, and Yorkshire and the Humber; (2) East
+ Midlands, West Midlands, and East of England; (3) London; (4) South East
+ and South West; and (5) Scotland, Wales and Northern Ireland.
+ Respondents were assigned to areas by home postcode, which was therefore
+ a mandatory survey item.
+\end_layout
+
+\end_inset
+
+, gender (male, female), age (16 -- 34, 35 -- 54, 55+), and work status
+ (employee, other economic status), producing 60 interacted quota cells.
+ 
+\end_layout
+
 \begin_layout Standard
 Quota cell sizes, and other detailed response statistics, are reproduced
  in 
@@ -1199,7 +1279,7 @@ reference "app:quota-status"
 \end_layout
 
 \begin_layout Section
-Design
+Survey design
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:survey-design"
@@ -1247,18 +1327,16 @@ reference "app:survey-screenshots"
 \end_layout
 
 \begin_layout Standard
-Survey items were sourced and adapted from existing large-scale surveys
- wherever possible, including those listed in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:item-sources"
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: UK URL -- and screenshots!
+\end_layout
 
 \end_inset
 
-.
- Existing items were favoured because in general they are extensively tested,
- potentially familiar to respondents, and enable comparison of these results
- with published data.
+
 \end_layout
 
 \begin_layout Standard
@@ -1447,7 +1525,18 @@ Workplace Employment Relations Survey 2004
 
 \end_inset
 
+Survey items were sourced and adapted from existing large-scale surveys
+ wherever possible, including those listed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:item-sources"
 
+\end_inset
+
+.
+ Existing items were favoured because in general they are extensively tested,
+ potentially familiar to respondents, and enable comparison of these results
+ with published data.
 \end_layout
 
 \begin_layout Subsection
@@ -2110,7 +2199,7 @@ reference "fig:interactive-map"
 
 ).
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 This is zoom level 17 on the Bing maps service.
@@ -2475,7 +2564,7 @@ hyperlink{ss.66}{pages S-66 -- S-67}
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -2542,6 +2631,70 @@ key "heerwegh:2003,kaczmirek:2008"
  further items, a full history of the selected option state was recorded,
  using JavaScript on the client side, to check that respondents were not
  avoiding these options.
+\end_layout
+
+\begin_layout Section
+Implementation
+\end_layout
+
+\begin_layout Subsection
+Platform
+\end_layout
+
+\begin_layout Standard
+The surveys were implemented using 
+\emph on
+websperiment
+\emph default
+, a new tool developed by the researcher for this purpose, which has three
+ distinctive aspects: it is a domain-specific language; it makes liberal
+ use of inheritance and polymorphism, increasing modularity and reducing
+ the extent to which layout and logic have to duplicated throughout a survey
+ definition; and it will be released under an open-source licence, enabling
+ any researcher to extend and modify it, and then to share those changes.
+ Further details on 
+\emph on
+websperiment 
+\emph default
+are provided by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "mackerron:2009a"
+
+\end_inset
+
+, and reproduced in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "app:websperiment-framework"
+
+\end_inset
+
+.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang english
+, while the 
+\emph on
+websperiment
+\emph default
+ survey listing, as the definitive description of the survey, is given in
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "app:websperiment-source"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -2671,7 +2824,7 @@ You don't have to give an answer here, but we would really appreciate it
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -2777,7 +2930,7 @@ key "schwarz:1999,smith:2006"
  on wellbeing.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Guidance, confidentiality, and informed consent
 \end_layout
 
@@ -2821,66 +2974,6 @@ reference "app:survey-screenshots"
  encrypted (https) connection, and the hosting server was fully updated,
  firewalled, and accessible to the researcher only via an encrypted (SSH)
  shell.
-\end_layout
-
-\begin_layout Section
-Implementation
-\end_layout
-
-\begin_layout Standard
-The survey was implemented using 
-\emph on
-websperiment
-\emph default
-, a new tool developed by the researcher for this purpose, which has three
- distinctive aspects: it is a domain-specific language; it makes liberal
- use of inheritance and polymorphism, increasing modularity and reducing
- the extent to which layout and logic have to duplicated throughout a survey
- definition; and it will be released under an open-source licence, enabling
- any researcher to extend and modify it, and then to share those changes.
- Further details on 
-\emph on
-websperiment 
-\emph default
-are provided by 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "mackerron:2009a"
-
-\end_inset
-
-.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\lang english
- , which is reproduced in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "app:websperiment-framework"
-
-\end_inset
-
-, while the 
-\emph on
-websperiment
-\emph default
- survey listing, as the definitive description of the survey, is given in
- 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "app:websperiment-source"
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -2967,8 +3060,25 @@ The survey was subsequently piloted on a larger scale using an email snowball
  relate to the final, post-piloting version of the survey.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: UK info
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Completion by web panel
+\end_layout
+
+\begin_layout Subsection
+London
 \end_layout
 
 \begin_layout Standard
@@ -3050,6 +3160,23 @@ name "fig:responses-by-day"
 
 \end_layout
 
+\begin_layout Subsection
+UK
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Data quality and cleaning
 \begin_inset CommandInset label
@@ -3093,8 +3220,8 @@ IP address and location
 \end_layout
 
 \begin_layout Standard
-An IP address is a numerical label assigned to any device connected to the
- Internet (e.g.
+An IP address is a numerical label assigned to any device connected directly
+ to the Internet (e.g.
  129.31.242.240).
  A hostname is the unique name by which a network-attached device is identified
  (e.g.
@@ -3130,7 +3257,6 @@ http://www.maxmind.com/app/geolitecity
  Respondents reported as located outside the UK were automatically excluded
  (unless geolocation placed them in the United States---a relatively common
  error).
- Locations within the UK but outside London were flagged.
  IP addresses were also converted to hostnames by reverse lookup where possible,
  and the hostname top level domain (e.g.
  .uk, .cn, .edu) corroborated with the geolocation result.
@@ -3148,8 +3274,13 @@ key "norman:2009"
  fraud.
 \end_layout
 
+\begin_layout Subsubsection
+London
+\end_layout
+
 \begin_layout Standard
-Finally, the respondent's home postcode, where provided, was associated
+For the London survey, IP-derived locations outside London were flagged.
+ In addition, the respondent's home postcode, if provided, was associated
  with a local authority or borough.
 \begin_inset Foot
 status collapsed
@@ -3182,9 +3313,9 @@ Patterns and consistency
 
 \begin_layout Standard
 Where a long series of items was presented with the same response scale,
- responses were checked for regular patterns (these item series occurred
- on the nature relatedness page and four of the ESS Round 3 Well-being Module
- pages).
+ responses were checked for regular patterns.
+ For example, on the London survey, such item series occurred on the nature
+ relatedness page and four of the ESS Round 3 Well-being Module pages.
  For each item series, the absolute differences between each response and
  the response following it were calculated.
  For example, given a response sequence 1-2-5-6-3, the absolute differences
@@ -3200,19 +3331,52 @@ Where a long series of items was presented with the same response scale,
 \end_layout
 
 \begin_layout Standard
-In addition, to help identify responses selected completely at random, 13
- pairs of items identified as related were checked for consistency.
- Responses were flagged as inconsistent where, for example: the predicted
- least happy vignette (vignette 1) was rated higher than the predicted happiest
- (vignette 4); where satisfaction with 'your life as a whole' and with 'how
- your life has turned out so far', answered on the same scale, differed
- by three or more points; where respondents indicated that they had spent
- most or all of the week feeling happy 
+In addition, to help identify responses selected completely at random, pairs
+ of items identified as related were checked for logical consistency.
+ For example, on the London survey, a response could be flagged as inconsistent
+ on up to 13 grounds, including where: 
+\end_layout
+
+\begin_layout Itemize
+the predicted least happy vignette (vignette 1) was rated higher than the
+ predicted happiest (vignette 4); 
+\end_layout
+
+\begin_layout Itemize
+satisfaction with 'your life as a whole' and with 'how your life has turned
+ out so far', answered on the same scale, differed by three or more points;
+ 
+\end_layout
+
+\begin_layout Itemize
+respondents indicated that they had spent most or all of the week feeling
+ happy 
 \emph on
 and
 \emph default
- most or all of the week feeling sad; and where individual income was stated
- as higher than household income.
+ most or all of the week feeling sad
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Although possible, it is unusual to feel happy and sad at the same time
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "larsen:2001"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+; and
+\end_layout
+
+\begin_layout Itemize
+individual income was stated as higher than household income.
 \end_layout
 
 \begin_layout Subsection
@@ -3232,23 +3396,20 @@ not
  For example, a flag would be raised for a respondent who indicated that
  they smoked but, when confronted with a follow-up question regarding the
  extent of their smoking, changed their mind.
- This behaviour was capable of detection on eight items.
+ On the London survey this behaviour was capable of detection on eight items.
+\end_layout
+
+\begin_layout Subsection
+Corrections
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\lang english
-Corrected mis-entered postcodes (e.g.
- O for 0 = misinterpretation, ! for 1 = typo, etc.)
-\end_layout
-
-\end_inset
-
-
+Given the importance of location to our study, postcodes that could not
+ initially be geocoded were checked manually.
+ For example, on the London survey, 11 postcodes were corrected by removing
+ extraneous spaces or punctuation characters, or substituting characters
+ that are visually similar (and close on the keyboard): 0 and O, and 1 and
+ I and !.
 \end_layout
 
 \end_body

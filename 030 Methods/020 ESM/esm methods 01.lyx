@@ -1416,7 +1416,7 @@ Mappiness permits ESM assessments to be volunteered at any time.
 \end_layout
 
 \begin_layout Section
-App
+Implementation --- app
 \end_layout
 
 \begin_layout Standard
@@ -3600,7 +3600,7 @@ reference "tab:App-revisions"
 \end_layout
 
 \begin_layout Section
-Data server
+Implementation --- data server
 \end_layout
 
 \begin_layout Standard
@@ -5658,6 +5658,35 @@ reference "fig:Recruitment-statistics"
  Two brief troughs in the response count chart --- from 28 -- 30 August
  and on 19 November --- are associated with temporary server failures, during
  which participants were not signalled.
+\end_layout
+
+\begin_layout Section
+Data quality and cleaning
+\end_layout
+
+\begin_layout Standard
+No incentive to provide rubbish (unpaid) -- in fact, jeopardises all listed
+ motivations.
+\end_layout
+
+\begin_layout Standard
+Location reported automatically, so no IP issues.
+\end_layout
+
+\begin_layout Standard
+Also difficult to check patterns/consistency, since few questions.
+\end_layout
+
+\begin_layout Standard
+Still, a few checks: 
+\end_layout
+
+\begin_layout Standard
+eliminating duplicates and own data
+\end_layout
+
+\begin_layout Standard
+> 12 activities, etc.
 \end_layout
 
 \end_body
