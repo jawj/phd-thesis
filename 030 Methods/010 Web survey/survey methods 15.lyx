@@ -1215,6 +1215,12 @@ TODO: UK quota details -- combining some of the above?
 \end_layout
 
 \begin_layout Standard
+Quota calculations were based on data from the Annual Population Survey,
+ January – December 2009, and the accompanying sampling weights, intended
+ to reflect 2009 population figures.
+\end_layout
+
+\begin_layout Standard
 The chosen quota parameters were: location (within one of five large areas
  of roughly equal population) 
 \begin_inset Foot
@@ -1489,7 +1495,8 @@ Visited via this link, the survey displays slightly differently than it
 
 \end_inset
 
-, and screenshots are shown in 
+.
+ Screenshots are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "app:survey-screenshots"
@@ -1611,7 +1618,7 @@ status open
 
 
 \backslash
-hyperlink{ssa.55}{S-55}
+hyperlink{ssa.55}{SA-55}
 \end_layout
 
 \end_inset
@@ -2300,7 +2307,7 @@ status open
 
 
 \backslash
-hyperlink{ssa.52}{S-52}
+hyperlink{ssa.52}{SA-52}
 \end_layout
 
 \end_inset
@@ -2374,7 +2381,7 @@ status open
 
 
 \backslash
-hyperlink{ssa.57}{S-57 -- SA-58}
+hyperlink{ssa.57}{SA-57 -- SA-58}
 \end_layout
 
 \end_inset
@@ -2387,7 +2394,7 @@ status open
 
 
 \backslash
-hyperlink{ssa.60}{S-60}
+hyperlink{ssa.60}{SA-60}
 \end_layout
 
 \end_inset
@@ -2544,8 +2551,6 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
-\lang english
 'Add comment' link, and separation of non-scale options in scale items
 \begin_inset CommandInset label
 LatexCommand label
@@ -2575,19 +2580,69 @@ Happiness
 \end_layout
 
 \begin_layout Standard
-LS, like London
+As in the London survey, a standard single-item life satisfaction (LS) scale
+ was used---item B24 on the 2006 European Social Survey (ESS) Round 3.
 \end_layout
 
 \begin_layout Subsubsection
-Physical and mental health
+Physical and mental health and wellbeing
 \end_layout
 
 \begin_layout Standard
-RAND SF-36
+For general and physical health, the SF-36 Health Survey was employed (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssb.6}{pages SB-6 -- SB-14}
+\end_layout
+
+\end_inset
+
+).
+ The SF-36 is the leading general health measure 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "662"
+key "mcdowell:2006"
+
+\end_inset
+
+.
+ It comprises 36 survey items, with standardised administration and item
+ scoring to produce several validated sub-scales.
+ 
 \end_layout
 
 \begin_layout Standard
-PANAS
+For mental and emotional health more specifically the Positive And Negative
+ Affect Schedule (PANAS) was presented (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssb.15}{pages SB-15 -- SB-18}
+\end_layout
+
+\end_inset
+
+).
+ The PANAS asks respondents to rate the applicability to their state of
+ mind of twenty adjectives, and responses are summed to form negative affect
+ and positive affect indicators.
+\end_layout
+
+\begin_layout Standard
+In addition to these standard items, we asked respondents to estimate the
+ proportion of time spent in different forms of leisure-time exercise that
+ was spent in natural environments.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -2595,7 +2650,37 @@ Physical exercise
 \end_layout
 
 \begin_layout Standard
-IPAQ
+As a measure of physical activity, the International Physical Activity Questionn
+aire (IPAQ) was used (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssb.39}{pages SB-39 -- SB-52}
+\end_layout
+
+\end_inset
+
+).
+ The IPAQ includes questions regarding walking, moderate exercise and vigorous
+ exercise behaviours in work, leisure, travel and domestic contexts.
+ It provides a standardised scoring system to translate these into metabolic
+ equivalence values (METs), which provide a straightforward absolute measure
+ of physical activity.
+\end_layout
+
+\begin_layout Subsubsection
+Location
+\end_layout
+
+\begin_layout Standard
+In this survey, we asked for full home and (if applicable) work postcodes.
+ We did not present map location items as in the London survey, since air
+ pollution and noise data --- for which we believe variation over very short
+ distances may be important --- are not available UK-wide.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2673,7 +2758,7 @@ key "mackerron:2009a"
 
 \end_inset
 
-, and reproduced in 
+, and that paper is reproduced in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "app:websperiment-framework"
@@ -2681,30 +2766,32 @@ reference "app:websperiment-framework"
 \end_inset
 
 .
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\lang english
-, while the 
+ The 
 \emph on
 websperiment
 \emph default
- survey listing, as the definitive description of the survey, is given in
- 
+ code for both surveys is listed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "app:websperiment-source"
 
 \end_inset
 
-.
-\end_layout
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "app:websperiment-source"
 
 \end_inset
 
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:surveys-appendix"
 
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection

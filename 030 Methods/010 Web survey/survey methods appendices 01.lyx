@@ -95,6 +95,13 @@
 
 \begin_layout Chapter
 Supplementary information for web surveys 
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:surveys-appendix"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -336,17 +343,17 @@ This paper has been accepted for publication in Journal of Choice Modelling.
 
 \begin_layout Section
 Survey source listings
-\end_layout
-
-\begin_layout Subsection
-London
 \begin_inset CommandInset label
 LatexCommand label
-name "app:websperiment-source-london"
+name "app:websperiment-source"
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+London
 \end_layout
 
 \begin_layout Standard
