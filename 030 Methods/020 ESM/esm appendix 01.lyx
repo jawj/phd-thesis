@@ -417,6 +417,11 @@ CREATE TABLE esm_answer_sets (
 
 \begin_layout Plain Layout
 
+  pic_landscape             boolean                       , 
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -735,7 +740,7 @@ Notes for editors
  Users who are outdoors can optionally contribute a photo.
  While users answer, location is determined using satellite positioning
  (GPS) and noise levels are measured using the iPhone's microphone.
- All data is sent back - wirelessly, anonymously and securely - to a central
+ All data is sent back -- wirelessly, anonymously and securely -- to a central
  data store.
 \end_layout
 
@@ -765,7 +770,19 @@ Contact
 \end_layout
 
 \begin_layout Standard
-George MacKerron g.j.mackerron@lse.ac.uk 020 7193 7369 07917 735 567
+George MacKerron
+\begin_inset Newline newline
+\end_inset
+
+g.j.mackerron@lse.ac.uk 
+\begin_inset Newline newline
+\end_inset
+
+020 7193 7369 
+\begin_inset Newline newline
+\end_inset
+
+07917 735 567
 \end_layout
 
 \begin_layout Section
@@ -889,7 +906,7 @@ name "sec:Website-visit-statistics"
 
 \begin_layout Standard
 These statistics were produced by Google Analytics.
- Only to top 100 traffic sources are shown.
+ Only the top 100 traffic sources are shown.
 \end_layout
 
 \begin_layout Standard
