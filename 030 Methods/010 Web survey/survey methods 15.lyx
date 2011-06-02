@@ -117,40 +117,26 @@ name "sec:survey-methods"
 \end_layout
 
 \begin_layout Standard
-Two web surveys were conducted, across Greater London and the UK.
+Two web surveys were conducted: one in Greater London and the other across
+ the UK (including London).
+ The London survey had a target sample of 1,000, and was in the field in
+ August and early September 2009.
+ The UK survey had a target sample of 2,000 and was in the field in late
+ August and September 2010.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: summary of differences
-\end_layout
-
-\end_inset
-
-
+As described in , the London survey included a wide range of items on subjective
+ wellbeing and subjective connection to nature.
+ The UK survey instead included a range of items on exercise, physical and
+ mental health, and the use and enjoyment of nature.
+ Because extremely detailed EQ information is available for London, the
+ design of the London survey also emphasised the elicitation of very accurate
+ location data for respondents' homes and workplaces.
 \end_layout
 
 \begin_layout Section
 Web surveys
-\end_layout
-
-\begin_layout Standard
-Data was collected by web survey using an online panel in August and early
- September 2009.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: other date/something different
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1264,63 +1250,6 @@ reference "app:quota-status"
 
 \begin_layout Section
 Survey design
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:survey-design"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-This final survey is accessible at 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://www.wellbeingsurvey.org.uk/
-\end_layout
-
-\end_inset
-
-
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Visited via this link, the survey displays slightly differently than it
- did to panel respondents: there are no screening questions (and quotas
- are not imposed); contact details on the Help page are the researchers'
- rather than the panel company's; there is an informative acknowledgement
- page at the end; and the connection is not encrypted.
-\end_layout
-
-\end_inset
-
-, and screenshots are shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "app:survey-screenshots"
-
-\end_inset
-
-.
- In this section, page number references are to pages in that appendix.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: UK URL -- and screenshots!
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1524,6 +1453,54 @@ reference "tab:item-sources"
 \end_layout
 
 \begin_layout Subsection
+London
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:survey-design"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This final survey is accessible at 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.wellbeingsurvey.org.uk/
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Visited via this link, the survey displays slightly differently than it
+ did to panel respondents: there are no screening questions (and quotas
+ are not imposed); contact details on the Help page are the researchers'
+ rather than the panel company's; there is an informative acknowledgement
+ page at the end; and the connection is not encrypted.
+\end_layout
+
+\end_inset
+
+, and screenshots are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "app:survey-screenshots"
+
+\end_inset
+
+.
+ In this section, page number references are to pages in that appendix.
+\end_layout
+
+\begin_layout Subsubsection
 Happiness
 \begin_inset CommandInset label
 LatexCommand label
@@ -1583,7 +1560,7 @@ key "mackerron:2008"
 , permitting direct comparison.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 ESS Round 3 module
 \end_layout
 
@@ -1655,7 +1632,7 @@ Third, the single-item life satisfaction item was followed by a set of anchoring
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Anchoring vignettes
 \end_layout
 
@@ -1683,7 +1660,7 @@ key "king:2003"
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Vignettes for life satisfaction
 \end_layout
 
@@ -1762,7 +1739,7 @@ key "angelini:2008"
 ion scores between residents of different European nations.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Vignette design
 \end_layout
 
@@ -2071,7 +2048,7 @@ reference "app:survey-screenshots"
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Map locations
 \end_layout
 
@@ -2237,7 +2214,7 @@ When you're ready, please zoom in again to pinpoint a more accurate location
  load/didn’t work; I prefer not to say exactly where I live.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Home and local environments
 \end_layout
 
@@ -2369,7 +2346,7 @@ hyperlink{ssa.33}{pages SA-33 -- SA-34}
 ).
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Other items
 \end_layout
 
@@ -2590,6 +2567,50 @@ name "fig:scale-separation"
 \end_layout
 
 \begin_layout Subsection
+UK
+\end_layout
+
+\begin_layout Subsubsection
+Happiness
+\end_layout
+
+\begin_layout Standard
+LS, like London
+\end_layout
+
+\begin_layout Subsubsection
+Physical and mental health
+\end_layout
+
+\begin_layout Standard
+RAND SF-36
+\end_layout
+
+\begin_layout Standard
+PANAS
+\end_layout
+
+\begin_layout Subsubsection
+Physical exercise
+\end_layout
+
+\begin_layout Standard
+IPAQ
+\end_layout
+
+\begin_layout Subsubsection
+Home and local environments
+\end_layout
+
+\begin_layout Standard
+Nature
+\end_layout
+
+\begin_layout Subsubsection
+Other items
+\end_layout
+
+\begin_layout Subsection
 Paradata
 \end_layout
 
@@ -2604,13 +2625,18 @@ key "heerwegh:2003,kaczmirek:2008"
 
 .
  Various items of server- and client-side paradata were recorded alongside
- survey item responses, principally for use in assessing response quality.
- These included: the time of the first viewing of each survey page (using
- this, the time spent on each page and on the survey as a whole can easily
- be calculated); the IP address and hostname of the respondent's computer,
- and the name and version reported by their web browser (the HTTP 'User
- Agent' header); the referring HTML page, if any (the HTTP 'Referer' [sic]
- header); and the availability of JavaScript in the user's browser.
+ survey item responses in both surveys, principally for use in assessing
+ response quality.
+ 
+\end_layout
+
+\begin_layout Standard
+These items included: the time of the first viewing of each survey page
+ (using this, the time spent on each page and on the survey as a whole can
+ easily be calculated); the IP address and hostname of the respondent's
+ computer, and the name and version reported by their web browser (the HTTP
+ 'User Agent' header); the referring HTML page, if any (the HTTP 'Referer'
+ [sic] header); and the availability of JavaScript in the user's browser.
  For items where certain response options led to the immediate display of
  further items, a full history of the selected option state was recorded,
  using JavaScript on the client side, to check that respondents were not
