@@ -24,6 +24,7 @@
 \newrefformat{tab}{\hyperlink{#1}{\autoref{#1}}}
 
 \renewcommand\chaptername{Chapter}
+\definecolor{grey}{gray}{0.3}
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
@@ -359,7 +360,8 @@ options "bibtotoc,apalike2"
 \end_inset
 
 
-\end_layout
+\begin_inset Branch Long appendices
+status open
 
 \begin_layout Standard
 \start_of_appendix
@@ -376,6 +378,11 @@ filename "030 Methods/010 Web survey/survey methods appendices 01.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "030 Methods/020 ESM/esm appendix 01.lyx"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
