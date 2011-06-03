@@ -79,6 +79,11 @@
 \filename_suffix 0
 \color #ffffff
 \end_branch
+\branch Appendices
+\selected 0
+\filename_suffix 0
+\color #ffffff
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -220,6 +225,8 @@ tre, and Rich Aston; testers of the iPhone app; and all Mappiness study
  participants.
  This work was supported by the UK Economic & Social Research Council, grant
  number PTA-031-2006-00280.
+ Additional funding for the UK survey was provided by the United Nations
+ Environment Programme World Conservation Monitoring Centre (UNEP WCMC).
 \end_layout
 
 \begin_layout Standard
@@ -361,7 +368,11 @@ options "bibtotoc,apalike2"
 \end_inset
 
 
-\begin_inset Branch Long appendices
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Branch Appendices
 status open
 
 \begin_layout Standard

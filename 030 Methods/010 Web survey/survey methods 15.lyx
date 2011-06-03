@@ -2639,7 +2639,14 @@ key "mcdowell:2006"
 .
  It comprises 36 survey items, with standardised administration and item
  scoring to produce several validated sub-scales.
- 
+ We used the RAND version of the survey which is freely available 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hays:1993"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2647,7 +2654,8 @@ To assess mental and emotional wellbeing more specifically the Positive
  And Negative Affect Schedule (PANAS) was presented 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "crawford:2004"
+after "225"
+key "watson:1988,crawford:2004,mcdowell:2006"
 
 \end_inset
 
@@ -2668,6 +2676,17 @@ hyperlink{ssb.15}{pages SB-15 -- SB-18}
  The PANAS asks respondents to rate the applicability to their state of
  mind of twenty adjectives, and responses are summed to form negative affect
  and positive affect indicators.
+ We used the broadest available time frame, provided by the introductory
+ words 
+\begin_inset Quotes eld
+\end_inset
+
+Indicate to what extent you generally feel this way, that is, how you feel
+ on the average
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection

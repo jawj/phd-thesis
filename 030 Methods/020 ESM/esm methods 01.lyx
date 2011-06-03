@@ -758,15 +758,8 @@ Notes
 \end_layout
 
 \begin_layout Standard
-In app update 1.1 (see 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sub:app-Updates"
-
-\end_inset
-
-) participants were enabled to add optional textual notes, using a button
- provided at the end of the activities list.
+In app update 1.1 participants were enabled to add optional textual notes,
+ using a button provided at the end of the activities list.
  This feature was added primarily to increase the usefulness of the downloaded
  data to participants, and so act as an incentive to participation.
  However, if patterns emerge in the words or phrases used, it could also
