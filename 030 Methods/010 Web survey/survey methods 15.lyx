@@ -2639,14 +2639,23 @@ key "mcdowell:2006"
 .
  It comprises 36 survey items, with standardised administration and item
  scoring to produce several validated sub-scales.
- We used the RAND version of the survey which is freely available 
+ We used the freely-available RAND version of the survey 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hays:1993"
 
 \end_inset
 
-.
+, with a single change: in the original item 
+\begin_inset Quotes eld
+\end_inset
+
+How much of the time during the past 4 weeks...
+ did you feel full of pep?
+\begin_inset Quotes erd
+\end_inset
+
+, we replaced the word 'pep' with the word 'enthusiasm'.
 \end_layout
 
 \begin_layout Standard
@@ -2676,13 +2685,13 @@ hyperlink{ssb.15}{pages SB-15 -- SB-18}
  The PANAS asks respondents to rate the applicability to their state of
  mind of twenty adjectives, and responses are summed to form negative affect
  and positive affect indicators.
- We used the broadest available time frame, provided by the introductory
- words 
+ We chose the standard PANAS time frame which most closely matches the 'past
+ 4 weeks' period used throughout the SF-36, and is provided by the introductory
+ text option: 
 \begin_inset Quotes eld
 \end_inset
 
-Indicate to what extent you generally feel this way, that is, how you feel
- on the average
+Indicate to what extent you have felt this way during the past few weeks
 \begin_inset Quotes erd
 \end_inset
 
@@ -3265,7 +3274,7 @@ The introductory text was kept very brief (following feedback from the pilot
 The survey was conducted in compliance with the London School of Economics
  research ethics policy.
  Respondents were informed that by completing the survey they gave their
- consent to serving as a subject in the study (see 
+ consent to serving as a subject in the study (pages 
 \begin_inset ERT
 status open
 
@@ -3273,7 +3282,20 @@ status open
 
 
 \backslash
-hyperlink{ssa.1}{page SA-1}
+hyperlink{ssa.1}{SA-1}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssb.1}{SB-1}
 \end_layout
 
 \end_inset
@@ -3286,21 +3308,25 @@ reference "app:survey-screenshots"
 \end_inset
 
 ).
- To ensure confidentiality of responses the survey was conducted over an
- encrypted (https) connection, and the hosting server was fully updated,
- firewalled, and accessible to the researcher only via an encrypted (SSH)
- shell.
+ To ensure confidentiality of responses the London survey was conducted
+ over an encrypted (https) connection.
+ The hosting server was fully updated, firewalled, and accessible to the
+ researcher only via an encrypted (SSH) shell.
 \end_layout
 
 \begin_layout Section
 Piloting
 \end_layout
 
+\begin_layout Subsection
+London
+\end_layout
+
 \begin_layout Standard
-A detailed pre-pilot was conducted with ten individuals, who were asked
- to provide detailed comments on their experiences both overall and on each
- page of the survey (an additional question was inserted automatically at
- the end of every page to allow for this).
+A detailed pre-pilot of the London survey was conducted with ten individuals,
+ who were asked to provide detailed comments on their experiences both overall
+ and on each page of the survey (an additional question was inserted automatical
+ly at the end of every page to allow for this).
  Based on feedback from this exercise, a series of minor changes were made.
  These included: clarifications to the wording of some items, response options
  and guidance sections; tweaks to the survey's visual appearance (for example,
@@ -3376,34 +3402,41 @@ The survey was subsequently piloted on a larger scale using an email snowball
  relate to the final, post-piloting version of the survey.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: UK info
+\begin_layout Subsection
+UK
 \end_layout
+
+\begin_layout Standard
+Results from the UK survey were required to inform the UK National Ecosystem
+ Assessment 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "33"
+key "uk-nea:2011"
 
 \end_inset
 
-
+.
+ Because of time pressure on this project, it was unfortunately not possible
+ to conduct a full pilot of the UK survey.
+ However, almost all items on this survey had previously been piloted either
+ in the form of standardised scales (e.g.
+ SF-36, PANAS) or as part of the London survey, and lessons from the London
+ survey also informed the wording of instructions and guidance, and the
+ visual and technical implementation, which were kept as similar as possible.
+ 
 \end_layout
 
 \begin_layout Section
 Completion by web panel
 \end_layout
 
-\begin_layout Subsection
-London
-\end_layout
-
 \begin_layout Standard
-The web panel company, Toluna, began emailing batches of invitations to
- their panel members on 12 August.
- To guard against context effects and self-selection bias, these invitation
- emails were worded rather generically.
- Although they did mention wellbeing as a subject of the study, they did
- not mention environmental quality or any other possible influences on it.
+To guard against context effects and self-selection bias, emails to web
+ panel members were worded rather generically.
+ Although the messages did mention wellbeing as a subject of the study,
+ they did not mention environmental quality or any other possible influences
+ on it.
  A sample survey invitation is reproduced in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -3415,20 +3448,8 @@ reference "app:sample-invitation"
  
 \end_layout
 
-\begin_layout Standard
-In total, 1,008 valid responses were received.
- The number of valid responses completed each day is shown in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:responses-by-day"
-
-\end_inset
-
- (a peak was reached within three days, while most quota cells remained
- open; as more quota cells became full, progressively fewer respondents
- were accepted to complete the survey).
- Following a period of minimal additional completions, sending of invitation
- emails ceased on 1 September.
+\begin_layout Subsection
+London
 \end_layout
 
 \begin_layout Standard
@@ -3454,9 +3475,9 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
+Valid London survey responses, by day
 \lang english
-Valid responses completed, by day
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:responses-by-day"
@@ -3473,7 +3494,21 @@ name "fig:responses-by-day"
 
 \end_inset
 
+For the London survey the web panel company, Toluna, began emailing batches
+ of invitations to their panel members on 12 August 2009.
+ In total, 1,008 valid responses were received.
+ The number of valid responses completed each day is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:responses-by-day"
 
+\end_inset
+
+ (a peak was reached within three days, while most quota cells remained
+ open; as more quota cells became full, progressively fewer respondents
+ were accepted to complete the survey).
+ Following a period of minimal additional completions, sending of invitation
+ emails ceased on 1 September.
 \end_layout
 
 \begin_layout Subsection
@@ -3481,16 +3516,11 @@ UK
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO
-\end_layout
-
-\end_inset
-
-
+Toluna panel members were invited to complete the UK survey starting on
+ 23 August 2010.
+ 1,976 valid responses were received, following a similar temporal pattern
+ as in the earlier survey.
+ The last invitation emails were sent on 14 September.
 \end_layout
 
 \begin_layout Section
