@@ -1167,7 +1167,7 @@ key "office-for-national-statistics:2008"
 
 .
  The unweighted sample size for Greater London in this data set was 3,014.
- The QLFS data covers individuals in NHS accommodation and private households
+ The LFS data covers individuals in NHS accommodation and private households
  (the definition of which is widened to count students in halls of residence
  as resident in the parental household) but not those in other communal
  establishments, and thus excludes approximately 1.5% of the population across
@@ -1179,7 +1179,7 @@ key "office-for-national-statistics:2007a"
 \end_inset
 
 .
- The QLFS was nevertheless believed to be the best and most recent available
+ The LFS was nevertheless believed to be the best and most recent available
  data set covering the parameters of interest, including income and economic
  activity.
 \end_layout
@@ -1225,10 +1225,14 @@ UK
 Quota calculations were based on data from the Annual Population Survey,
  January – December 2009, and the accompanying sampling weights, intended
  to reflect 2009 population figures.
+ The unweighted sample size of the data set was 333,430.
  The Annual Population Survey data is based on the LFS data and on additional
  data from a sample boost in urban areas.
- The unweighted sample size of the data set was 333,430.
- The chosen quota parameters were: location --- within one of five large
+ 
+\end_layout
+
+\begin_layout Standard
+The chosen quota parameters were: location --- within one of five large
  areas of roughly equal population
 \begin_inset Foot
 status collapsed
@@ -1238,8 +1242,7 @@ The five areas, each composed of one or more Government Office regions,
  were: (1) North East, North West, and Yorkshire and the Humber; (2) East
  Midlands, West Midlands, and East of England; (3) London; (4) South East
  and South West; and (5) Scotland, Wales and Northern Ireland.
- Respondents were assigned to areas by home postcode, which was therefore
- a mandatory survey item.
+ Respondents were assigned to areas by home postcode.
 \end_layout
 
 \end_inset
@@ -1247,7 +1250,7 @@ The five areas, each composed of one or more Government Office regions,
  --- gender (male, female), age (16 -- 34, 35 -- 54, 55+), and work status
  (employee, other economic status), producing 60 interacted quota cells.
  As before, respondents who were unsure of or unwilling to disclose any
- of the quota information were routed out of the survey.
+ of the quota information had to be routed out of the survey.
 \end_layout
 
 \begin_layout Section
@@ -2411,8 +2414,8 @@ hyperlink{ssa.60}{SA-60}
 \end_layout
 
 \begin_layout Standard
-A number of more unusual items were also used, on the hypothesis that these
- might be associated with LS ratings.
+A number of other items were presented, on the hypothesis that these might
+ be associated with LS ratings.
  These included items on physical exercise, health, diet and sleep (
 \begin_inset ERT
 status open
@@ -2598,8 +2601,7 @@ reference "app:survey-screenshots"
 \end_inset
 
 .
- In this section, page number references are to screenshot pages in that
- appendix.
+ As before, page number references are to screenshot pages in that appendix.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2641,8 +2643,15 @@ key "mcdowell:2006"
 \end_layout
 
 \begin_layout Standard
-For mental and emotional health more specifically the Positive And Negative
- Affect Schedule (PANAS) was presented (
+To assess mental and emotional wellbeing more specifically the Positive
+ And Negative Affect Schedule (PANAS) was presented 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "crawford:2004"
+
+\end_inset
+
+ (
 \begin_inset ERT
 status open
 
@@ -2661,20 +2670,20 @@ hyperlink{ssb.15}{pages SB-15 -- SB-18}
  and positive affect indicators.
 \end_layout
 
-\begin_layout Standard
-In addition to these standard items, we asked respondents to estimate the
- proportion of time spent in different forms of leisure-time exercise that
- was spent in natural environments.
- 
-\end_layout
-
 \begin_layout Subsubsection
 Physical exercise
 \end_layout
 
 \begin_layout Standard
-As a measure of physical activity, the International Physical Activity Questionn
-aire (IPAQ) was used (
+As a measure of physical activity, the long-form self-administered International
+ Physical Activity Questionnaire (IPAQ) was presented 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "craig:2003"
+
+\end_inset
+
+ (
 \begin_inset ERT
 status open
 
@@ -2692,7 +2701,23 @@ hyperlink{ssb.39}{pages SB-39 -- SB-52}
  exercise behaviours in work, leisure, travel and domestic contexts.
  It provides a standardised scoring system to translate these into metabolic
  equivalence values (METs), which provide a straightforward absolute measure
- of physical activity.
+ of physical activity 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "the-ipaq-group-:2005"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In addition to the standard IPAQ items, we asked respondents to estimate
+ the proportion of time spent in different forms of leisure-time exercise
+ that was spent in natural environments.
+ Although the addition of items to a standard questionnaire might compromise
+ of the comparability of our response data with that collected elsewhere,
+ the additional items were important for this research.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2700,10 +2725,39 @@ Location
 \end_layout
 
 \begin_layout Standard
-In this survey, we asked for full home and (if applicable) work postcodes.
- We did not present map location items as in the London survey, since air
- pollution and noise data --- for which we believe variation over very short
- distances may be important --- are not available UK-wide.
+In this survey, we asked for full home and (if applicable) work postcodes
+ (pages 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssb.4}{SB-4}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssb.54}{SB-54}
+\end_layout
+
+\end_inset
+
+).
+ Extremely precise location information was not believed to be as important
+ as in the London survey, since for air pollution and noise --- in which
+ there is considerable variation over very short distances --- data are
+ not available UK-wide.
+ Thus, for brevity, we did not present map location items.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2711,11 +2765,134 @@ Home and local environments
 \end_layout
 
 \begin_layout Standard
+As on the London survey, several items on housing type and quality were
+ included (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssb.21}{pages SB-21 -- SB-24}
+\end_layout
+
+\end_inset
+
+), as well as a number of items regarding the respondent's local environment
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssb.25}{pages SB-25 -- SB-27}
+\end_layout
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Subsubsection
 Nature
+\end_layout
+
+\begin_layout Standard
+We asked a variety of additional questions regarding direct and indirect
+ use and enjoyment of nature.
+ These included views from the home and workplace, membership of and legacies
+ to wildlife and conservation organisations, visits to National Parks and
+ National Trust and RSPB land, nature watching and photography, time spent
+ in the garden, countryside and other green spaces, and experience of nature
+ via exhibitions, magazines and television (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssb.27}{pages SB-27 -- SB-38}
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Subsubsection
 Other items
+\end_layout
+
+\begin_layout Standard
+As on the London survey, standard demographic items were included (pages
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssb.4}{SB-4}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssb.58}{SB-58 -- SB-59}
+\end_layout
+
+\end_inset
+
+).
+ However, due to an error, the items regarding marital status, children
+ and qualifications (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssb.58}{page SB-58}
+\end_layout
+
+\end_inset
+
+) were unfortunately not shown to most respondents.
+\end_layout
+
+\begin_layout Standard
+Most of the other items employed in the London survey were also used, with
+ the exception (for brevity) of those regarding work activities and hours,
+ religious denomination, birth order, and pregnancy and menstruation.
+ In addition, the item regarding external shocks or negative events was
+ changed to refer to the past one year rather than the past three (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssb.63}{page SB-63}
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Subsection
