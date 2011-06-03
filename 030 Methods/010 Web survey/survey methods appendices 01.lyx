@@ -122,6 +122,80 @@ name "app:quota-status"
 
 \end_layout
 
+\begin_layout Standard
+The tables below display statistics provided by the 
+\emph on
+websperiment
+\emph default
+ survey quota system, and may be interpreted as follows:
+\end_layout
+
+\begin_layout Description
+required The number of respondents we have calculated should be classified
+ in this quota cell in order to be representative of the population as a
+ whole.
+\end_layout
+
+\begin_layout Description
+completed The number of valid completed surveys from respondents falling
+ within this quota cell.
+\end_layout
+
+\begin_layout Description
+remaining The number of required respondents minus the number of completed
+ surveys.
+\end_layout
+
+\begin_layout Description
+recently
+\begin_inset space ~
+\end_inset
+
+started The number of incomplete surveys that may still be in progress from
+ respondents in this quota cell.
+\end_layout
+
+\begin_layout Description
+dropped
+\begin_inset space ~
+\end_inset
+
+out The number of respondents in this quota cell who began the survey but
+ did not complete it.
+\end_layout
+
+\begin_layout Description
+turned
+\begin_inset space ~
+\end_inset
+
+away The number of respondents in this quota cell who visited the survey
+ after the quota cell had been filled.
+\end_layout
+
+\begin_layout Description
+manually
+\begin_inset space ~
+\end_inset
+
+excluded The number of respondents in this quota cell whose survey responses
+ were excluded from the study for reasons discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:data-quality"
+
+\end_inset
+
+, and thus were not counted towards the number of valid completed surveys.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 London
 \end_layout

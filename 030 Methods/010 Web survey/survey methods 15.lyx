@@ -126,8 +126,15 @@ Two web surveys were conducted: one in Greater London and the other across
 \end_layout
 
 \begin_layout Standard
-As described in , the London survey included a wide range of items on subjective
- wellbeing and subjective connection to nature.
+As described in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:survey-design"
+
+\end_inset
+
+, the London survey included a wide range of items on subjective wellbeing
+ and subjective connection to nature.
  The UK survey instead included a range of items on exercise, physical and
  mental health, and the use and enjoyment of nature.
  Because extremely detailed EQ information is available for London, the
@@ -1131,13 +1138,25 @@ Since the pre-recruited panel is not a probability sample of the population
  be assured by this method, of course).
 \end_layout
 
+\begin_layout Standard
+Quota cell sizes, and other detailed response statistics, are reproduced
+ for both surveys in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "app:quota-status"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Paragraph
 London
 \end_layout
 
 \begin_layout Standard
-Quota calculations were based on data from the Quarterly Labour Force Survey
- (QLFS), January -- March 2009, waves 1 and 5 (which include earnings data),
+Quota calculations were based on data from the quarterly Labour Force Survey
+ (LFS), January -- March 2009, waves 1 and 5 (which include earnings data),
  using the accompanying sampling weights, which are intended to reflect
  2007 population figures 
 \begin_inset CommandInset citation
@@ -1150,8 +1169,9 @@ key "office-for-national-statistics:2008"
  The unweighted sample size for Greater London in this data set was 3,014.
  The QLFS data covers individuals in NHS accommodation and private households
  (the definition of which is widened to count students in halls of residence
- as resident in the parental household), and thus excludes approximately
- 1.5% of the population across Great Britain 
+ as resident in the parental household) but not those in other communal
+ establishments, and thus excludes approximately 1.5% of the population across
+ Great Britain 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "office-for-national-statistics:2007a"
@@ -1202,27 +1222,14 @@ UK
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: UK quota details -- combining some of the above?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Quota calculations were based on data from the Annual Population Survey,
  January – December 2009, and the accompanying sampling weights, intended
  to reflect 2009 population figures.
-\end_layout
-
-\begin_layout Standard
-The chosen quota parameters were: location (within one of five large areas
- of roughly equal population) 
+ The Annual Population Survey data is based on the LFS data and on additional
+ data from a sample boost in urban areas.
+ The unweighted sample size of the data set was 333,430.
+ The chosen quota parameters were: location --- within one of five large
+ areas of roughly equal population
 \begin_inset Foot
 status collapsed
 
@@ -1237,25 +1244,21 @@ The five areas, each composed of one or more Government Office regions,
 
 \end_inset
 
-, gender (male, female), age (16 -- 34, 35 -- 54, 55+), and work status
+ --- gender (male, female), age (16 -- 34, 35 -- 54, 55+), and work status
  (employee, other economic status), producing 60 interacted quota cells.
- 
-\end_layout
-
-\begin_layout Standard
-Quota cell sizes, and other detailed response statistics, are reproduced
- in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "app:quota-status"
-
-\end_inset
-
-.
+ As before, respondents who were unsure of or unwilling to disclose any
+ of the quota information were routed out of the survey.
 \end_layout
 
 \begin_layout Section
 Survey design
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:survey-design"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1460,17 +1463,10 @@ reference "tab:item-sources"
 
 \begin_layout Subsection
 London
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:survey-design"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-This final survey is accessible at 
+The London survey is accessible at 
 \begin_inset Flex URL
 status open
 
@@ -1495,16 +1491,22 @@ Visited via this link, the survey displays slightly differently than it
 
 \end_inset
 
-.
- Screenshots are shown in 
+, and screenshots are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "app:survey-screenshots"
 
 \end_inset
 
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:surveys-appendix"
+
+\end_inset
+
 .
- In this section, page number references are to pages in that appendix.
+ In this section, page references are those survey page screenshots.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2575,17 +2577,38 @@ name "fig:scale-separation"
 UK
 \end_layout
 
+\begin_layout Standard
+The UK survey can be accessed at 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://uk.wellbeingsurvey.org.uk/
+\end_layout
+
+\end_inset
+
+.
+ Screenshots are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "app:survey-screenshots"
+
+\end_inset
+
+.
+ In this section, page number references are to screenshot pages in that
+ appendix.
+\end_layout
+
 \begin_layout Subsubsection
-Happiness
+Happiness and physical and mental health
 \end_layout
 
 \begin_layout Standard
-As in the London survey, a standard single-item life satisfaction (LS) scale
- was used---item B24 on the 2006 European Social Survey (ESS) Round 3.
-\end_layout
-
-\begin_layout Subsubsection
-Physical and mental health and wellbeing
+The same standard single-item life satisfaction (LS) scale was used as in
+ the London survey.
 \end_layout
 
 \begin_layout Standard
