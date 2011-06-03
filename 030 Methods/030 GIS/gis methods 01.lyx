@@ -792,6 +792,10 @@ Custom-built Ubuntu server optimised for speed
 PostGIS + R
 \end_layout
 
+\begin_layout Standard
+gdal_polygonize
+\end_layout
+
 \begin_layout Subsubsection
 Contains/covers
 \end_layout
