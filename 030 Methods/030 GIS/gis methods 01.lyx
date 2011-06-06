@@ -109,13 +109,13 @@ Spatial datasets
 \begin_inset Float table
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Spatial data sets 
+Spatial data sets
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:spatial-data-sets"
@@ -139,8 +139,8 @@ name "tab:spatial-data-sets"
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top" width="20text%">
 <column alignment="left" valignment="top" width="30text%">
-<column alignment="left" valignment="top" width="20text%">
-<column alignment="left" valignment="top" width="20text%">
+<column alignment="left" valignment="top" width="15text%">
+<column alignment="left" valignment="top" width="25text%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -166,7 +166,7 @@ Description
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -178,7 +178,7 @@ Format and resolution
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -199,6 +199,18 @@ Source
 
 \size footnotesize
 London Atmospheric Emissions Inventory (LAEI) 2006 Modelling Maps
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\size footnotesize
+2008 now available at data.gov.uk
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -223,7 +235,7 @@ g/m
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -238,7 +250,7 @@ Raster: 20
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -275,7 +287,7 @@ Modelled daytime (Lden) noise exposure from road traffic, in 5dB bands from
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -290,13 +302,14 @@ Raster: 10
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \size footnotesize
-Department for Environment, Food and Rural Affairs (Defra)
+Department for Environment, Food and Rural Affairs (Defra) via request under
+ Environmental Information Regulations 2004
 \end_layout
 
 \end_inset
@@ -326,7 +339,7 @@ Modelled average summer day noise exposure in 3dB bands from 57dB, based
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -337,14 +350,14 @@ Vector: contours
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \size footnotesize
 Environmental Research and Consultancy Department (ERCD), Civil Aviation
- Authority (CAA), via Department for Transport (DfT)
+ Authority (CAA), via Department for Transport (DfT) website
 \end_layout
 
 \end_inset
@@ -373,7 +386,7 @@ Highest-likelihood remote-sensed broad habitat classification
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -388,13 +401,14 @@ Raster: 25
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \size footnotesize
-Centre for Ecology & Hydrology, Natural Environment Research Council
+Centre for Ecology & Hydrology, Natural Environment Research Council, via
+ LSE Library
 \end_layout
 
 \end_inset
@@ -424,7 +438,7 @@ Crowd-sourced mapping data, including parks, heaths, commons, village greens
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -435,7 +449,7 @@ Vector: polygons
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -474,7 +488,7 @@ Number of reported Violence Against the Person offences
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -485,13 +499,14 @@ Geocoded: LSOA (see text)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \size footnotesize
-Metropolitan Police Service
+Metropolitan Police Service, via request under Freedom of Information Act
+ 2000
 \end_layout
 
 \end_inset
@@ -521,7 +536,7 @@ Price paid in all residential property sales, with date, postcode and other
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -532,13 +547,60 @@ Geocoded: full postcode
 
 \end_inset
 </cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Land Registry, via Spatial Economics Research Centre, LSE
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \size footnotesize
-Land Registry
+Nationwide House Price Index 1995 -- 2004
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Data regarding all Nationwide Building Society mortgages over the period,
+ including value of property and many property characteristics
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Geocoded: full postcode
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Nationwide Building Society, via Spatial Economics Research Centre, LSE
 \end_layout
 
 \end_inset
@@ -567,7 +629,7 @@ Postcode centroids and classifications within higher-level geographies
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -578,59 +640,13 @@ Vector: points
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \size footnotesize
-Office for National Statistics Geography
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size footnotesize
-Nationwide House Price data
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size footnotesize
-?
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size footnotesize
-Vector: points
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size footnotesize
-Nationwide Building Society
+Office for National Statistics Geography, via UKBORDERS
 \end_layout
 
 \end_inset
@@ -659,7 +675,7 @@ Vector data giving maximum spatial extent of each postcode
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -670,13 +686,13 @@ Vector: polygons
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \size footnotesize
-Ordnance Survey
+Ordnance Survey, via EDINA Digimap
 \end_layout
 
 \end_inset
@@ -705,7 +721,7 @@ UK personal weather station data
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -716,7 +732,7 @@ Vector panel: points through time
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
