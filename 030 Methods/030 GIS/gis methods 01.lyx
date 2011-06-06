@@ -101,10 +101,6 @@ Analytical methods
 Spatial data and analyses
 \end_layout
 
-\begin_layout Subsection
-Spatial datasets
-\end_layout
-
 \begin_layout Standard
 \begin_inset Float table
 wide false
@@ -308,8 +304,8 @@ Raster: 10
 \begin_layout Plain Layout
 
 \size footnotesize
-Department for Environment, Food and Rural Affairs (Defra) via request under
- Environmental Information Regulations 2004
+Department for Environment, Food and Rural Affairs (Defra), via request
+ under Environmental Information Regulations 2004
 \end_layout
 
 \end_inset
@@ -370,7 +366,16 @@ Environmental Research and Consultancy Department (ERCD), Civil Aviation
 \begin_layout Plain Layout
 
 \size footnotesize
-Land Cover Map 2000
+Land Cover Map 2000 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fuller:2002"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -738,7 +743,14 @@ Vector panel: points through time
 \begin_layout Plain Layout
 
 \size footnotesize
-wunderground.com
+wunderground.com, via hourly download to data server (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Weather-pollution-download"
+
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -753,11 +765,162 @@ wunderground.com
 
 \end_inset
 
+The spatial data sets used in this research are listed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:spatial-data-sets"
+
+\end_inset
+
+.
+ All spatial data processing and analysis was done with the PostgreSQL relationa
+l database system and its PostGIS spatial extensions, as also used for the
+ ESM data collection (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:data-server-Database"
+
+\end_inset
+
+).
+ For some analyses, the PL/R PostgreSQL bindings
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.joeconway.com/plr/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ to the R programming language 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "r-development-core-team:2007"
+
+\end_inset
+
+ were used.
+ Analyses were thus implemented as spatial SQL, PL/pgSQL
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://developer.postgresql.org/pgdocs/postgres/plpgsql.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ and PL/R queries.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO Advantages over ESRI? Free, open-source, powerful, same as ESM data
+ collection, repeatable, flexible, scriptable.
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \begin_layout Standard
-\noindent
+A custom database server was built and optimised to run these systems.
+\end_layout
+
+\begin_layout Subsection
+Data import and processing
+\end_layout
+
+\begin_layout Subsubsection
+Data types
+\end_layout
+
+\begin_layout Standard
+Spatial data may be supplied in three forms.
+ Raster formats represent data using a grid, where each grid cell or pixel
+ has an associated value or values.
+ Vector formats represent data as points, lines or polygons defined by geographi
+cal coordinates, each with an associated value or values.
+ Geocoded data provide values associated with geographically-specific codes,
+ such as postcodes or road or ward identifiers, and may therefore be treated
+ as vector data by using an appropriate lookup table.
+\end_layout
+
+\begin_layout Standard
+Raster data, which are not (yet) supported by PostGIS, were transformed
+ into vector data
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We used the gdal_polygonize utility --- 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.gdal.org/gdal_polygonize.html
+\end_layout
+
+\end_inset
+
+ --- which creates a polygon for each connected region of raster cells sharing
+ a common value
+\end_layout
+
+\end_inset
+
+.
+ Vector data were loaded into the database using the appropriate tool
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The PostGIS shp2pgsql tool was used, which converts ESRI Shapefiles into
+ SQL statements.
+\end_layout
+
+\end_inset
+
+.
+ Geocoded data was interpreted using either the National Statistics Postcode
+ Directory (NSPD) or Code-Point with polygons data sets.
+\end_layout
+
+\begin_layout Subsubsection
+Notes on specific data sources
+\end_layout
+
+\begin_layout Paragraph
+Land Cover Map 2000
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -767,7 +930,14 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Land Cover Map 2000 habitat category classifications
+Broad habitat classification of Land Cover Map 2000 subclasses
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:broad-habitat-lcm-classes"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -789,27 +959,80 @@ Land Cover Map 2000 habitat category classifications
 
 \end_inset
 
+In the case of the Land Cover Map 2000 (LCM), the 26 LCM level 2 subclasses
+ were grouped into the same broad habitat categories as used in the UK National
+ Ecosystem Assessment 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "uk-nea:2011"
+
+\end_inset
+
+.
+ There was one exception: the NEA 'Urban' habitat (which accounts for almost
+ 75% of ESM responses) was kept split into its two constituent LCM classificatio
+ns, 'Continuous urban' and 'Suburban/rural developed'.
+ The broad habitat classification is given in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:broad-habitat-lcm-classes"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO What about woodlands? Final NEA synthesis has 8 categories owing to
+ a monolithic 'woodlands' category.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Sunrise and sunset times
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is an algorithm rather than a data set...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Weather Underground
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+HTML processing
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \begin_layout Subsection
-Spatial analyses
-\end_layout
-
-\begin_layout Standard
-Spatial database / Geographical Information Systems (GIS)
-\end_layout
-
-\begin_layout Standard
-Custom-built Ubuntu server optimised for speed
-\end_layout
-
-\begin_layout Standard
-PostGIS + R
-\end_layout
-
-\begin_layout Standard
-gdal_polygonize
+Analyses
 \end_layout
 
 \begin_layout Subsubsection

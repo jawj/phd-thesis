@@ -3706,13 +3706,20 @@ screen.
 
 \begin_layout Subsection
 Database
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:data-server-Database"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 At the heart of the data server is a PostgreSQL relational database system
  with PostGIS spatial extensions
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Flex URL
@@ -4702,6 +4709,13 @@ For all formats except HTML charts, response data are provided in descending
 
 \begin_layout Subsection
 Weather & pollution
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Weather-pollution-download"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
