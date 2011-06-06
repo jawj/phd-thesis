@@ -105,7 +105,7 @@ Spatial data and analyses
 \begin_inset Float table
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -835,21 +835,7 @@ http://developer.postgresql.org/pgdocs/postgres/plpgsql.html
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO Advantages over ESRI? Free, open-source, powerful, same as ESM data
- collection, repeatable, flexible, scriptable.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-A custom database server was built and optimised to run these systems.
+A custom database server was built and optimised to run the analyses.
 \end_layout
 
 \begin_layout Subsection
@@ -868,7 +854,7 @@ Spatial data may be supplied in three forms.
 cal coordinates, each with an associated value or values.
  Geocoded data provide values associated with geographically-specific codes,
  such as postcodes or road or ward identifiers, and may therefore be treated
- as vector data by using an appropriate lookup table.
+ as vector data by the use of appropriate lookup tables.
 \end_layout
 
 \begin_layout Standard
@@ -998,37 +984,251 @@ TODO What about woodlands? Final NEA synthesis has 8 categories owing to
 \end_layout
 
 \begin_layout Paragraph
-Sunrise and sunset times
+Daylight
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-This is an algorithm rather than a data set...
-\end_layout
+Sunrise and sunset times, which define the period of daylight, vary by date
+ and geographical location.
+ These times were calculated for every ESM response using the R StreamMetabolism
+ package 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sefick:2009"
 
 \end_inset
 
+ accessed via PL/R.
+ The associated PL/R and SQL code is reproduced in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:daylight-plr"
 
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:daylight-plr"
+
+\end_inset
+
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:analysis-appendix"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Paragraph
-Weather Underground
+Weather 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
-HTML processing
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Weather condition keywords
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Weather-condition-keywords"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Keywords
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+rain
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thunderstorm, Squalls, Rain, Showers, Drizzle
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+fog
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fog, Mist
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+cloud
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cloudy, Overcast
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+clear
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Clear, Scattered clouds
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+snow
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Snow
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Weather data from personal weather stations across the UK, as downloaded
+ hourly from Weather Underground, were processed with a custom Ruby script
+ using the Hpricot HTML parser
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://rubydoc.info/gems/hpricot/0.8.4/frames
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Temperature, windspeed, humidity and atmospheric pressure values were extracted
+ directly.
+ General conditions were identified from text descriptions according to
+ the keywords listed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Weather-condition-keywords"
+
+\end_inset
+
+.
+ Sunny conditions were identified as the interaction of clear conditions
+ and daylight.
 \end_layout
 
 \begin_layout Subsection

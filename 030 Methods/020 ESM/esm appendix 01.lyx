@@ -129,18 +129,18 @@ name "sec:db-schema"
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "basicstyle={\footnotesize\ttfamily},numbers=left,numberstyle={\tiny}"
+lstparams "basicstyle={\scriptsize\ttfamily},breaklines=true,language=SQL,numbers=left,numberstyle={\tiny},showstringspaces=false"
 inline false
 status open
 
 \begin_layout Plain Layout
 
-CREATE TABLE users(
+create table users(
 \end_layout
 
 \begin_layout Plain Layout
 
-  id                       bigserial                     PRIMARY KEY, 
+  id                       bigserial                     primary key, 
 \end_layout
 
 \begin_layout Plain Layout
@@ -170,7 +170,7 @@ CREATE TABLE users(
 
 \begin_layout Plain Layout
 
-  active                   boolean                       NOT NULL DEFAULT
+  active                   boolean                       not null default
  true,
 \end_layout
 
@@ -181,7 +181,7 @@ CREATE TABLE users(
 
 \begin_layout Plain Layout
 
-  created_at               timestamp without time zone   NOT NULL DEFAULT
+  created_at               timestamp without time zone   not null default
  localtimestamp,
 \end_layout
 
@@ -202,26 +202,26 @@ CREATE TABLE users(
 
 \begin_layout Plain Layout
 
-  beeps_per_day            smallint                      NOT NULL DEFAULT
+  beeps_per_day            smallint                      not null default
  2, 
 \end_layout
 
 \begin_layout Plain Layout
 
-  beeps_not_before         time without time zone        NOT NULL DEFAULT
+  beeps_not_before         time without time zone        not null default
  '08:00', 
 \end_layout
 
 \begin_layout Plain Layout
 
-  beeps_not_after          time without time zone        NOT NULL DEFAULT
+  beeps_not_after          time without time zone        not null default
  '22:00', 
 \end_layout
 
 \begin_layout Plain Layout
 
-  beeps_sound              character varying(32)         NOT NULL DEFAULT
- 'Ding',
+  beeps_sound              character varying(32)         not null default
+ 'ding',
 \end_layout
 
 \begin_layout Plain Layout
@@ -231,7 +231,7 @@ CREATE TABLE users(
 
 \begin_layout Plain Layout
 
-  beeps_recalculate_after  timestamp without time zone   NOT NULL DEFAULT
+  beeps_recalculate_after  timestamp without time zone   not null default
  '2001-01-01',
 \end_layout
 
@@ -246,12 +246,12 @@ CREATE TABLE users(
 
 \begin_layout Plain Layout
 
-) WITH (OIDS = FALSE);
+) with (oids = false);
 \end_layout
 
 \begin_layout Plain Layout
 
-CREATE INDEX recalculate_after_idx ON users (beeps_recalculate_after);
+create index recalculate_after_idx on users (beeps_recalculate_after);
 \end_layout
 
 \begin_layout Plain Layout
@@ -260,38 +260,38 @@ CREATE INDEX recalculate_after_idx ON users (beeps_recalculate_after);
 
 \begin_layout Plain Layout
 
-CREATE TABLE pending_beeps(
+create table pending_beeps(
 \end_layout
 
 \begin_layout Plain Layout
 
-  id                        bigserial                     PRIMARY KEY,
+  id                        bigserial                     primary key,
 \end_layout
 
 \begin_layout Plain Layout
 
-  user_id                   bigint                        NOT NULL REFERENCES
+  user_id                   bigint                        not null references
  users,
 \end_layout
 
 \begin_layout Plain Layout
 
-  send_after                timestamp without time zone   NOT NULL
+  send_after                timestamp without time zone   not null
 \end_layout
 
 \begin_layout Plain Layout
 
-) WITH (OIDS = FALSE);
+) with (oids = false);
 \end_layout
 
 \begin_layout Plain Layout
 
-CREATE INDEX beep_schedule_idx ON pending_beeps (send_after);
+create index beep_schedule_idx on pending_beeps (send_after);
 \end_layout
 
 \begin_layout Plain Layout
 
-CREATE INDEX beep_user_idx ON pending_beeps (user_id);
+create index beep_user_idx on pending_beeps (user_id);
 \end_layout
 
 \begin_layout Plain Layout
@@ -300,54 +300,54 @@ CREATE INDEX beep_user_idx ON pending_beeps (user_id);
 
 \begin_layout Plain Layout
 
-CREATE TABLE sent_beeps(
+create table sent_beeps(
 \end_layout
 
 \begin_layout Plain Layout
 
-  id                        bigserial                     PRIMARY KEY,
+  id                        bigserial                     primary key,
 \end_layout
 
 \begin_layout Plain Layout
 
-  user_id                   bigint                        NOT NULL REFERENCES
+  user_id                   bigint                        not null references
  users,
 \end_layout
 
 \begin_layout Plain Layout
 
-  send_after                timestamp without time zone   NOT NULL,
+  send_after                timestamp without time zone   not null,
 \end_layout
 
 \begin_layout Plain Layout
 
-  sent_at                   timestamp without time zone   NOT NULL,
+  sent_at                   timestamp without time zone   not null,
 \end_layout
 
 \begin_layout Plain Layout
 
-  sound                     character varying(32)         NOT NULL,
+  sound                     character varying(32)         not null,
 \end_layout
 
 \begin_layout Plain Layout
 
-  ignored                   boolean                       NOT NULL DEFAULT
+  ignored                   boolean                       not null default
  false
 \end_layout
 
 \begin_layout Plain Layout
 
-) WITH (OIDS = FALSE);
+) with (oids = false);
 \end_layout
 
 \begin_layout Plain Layout
 
-CREATE INDEX beep_sent_at_idx ON sent_beeps (sent_at);
+create index beep_sent_at_idx on sent_beeps (sent_at);
 \end_layout
 
 \begin_layout Plain Layout
 
-CREATE INDEX beep_sent_user_idx ON sent_beeps (user_id);
+create index beep_sent_user_idx on sent_beeps (user_id);
 \end_layout
 
 \begin_layout Plain Layout
@@ -356,17 +356,17 @@ CREATE INDEX beep_sent_user_idx ON sent_beeps (user_id);
 
 \begin_layout Plain Layout
 
-CREATE TABLE esm_answer_sets (
+create table esm_answer_sets (
 \end_layout
 
 \begin_layout Plain Layout
 
-  id                        bigserial                     PRIMARY KEY,
+  id                        bigserial                     primary key,
 \end_layout
 
 \begin_layout Plain Layout
 
-  user_id                   bigint                        NOT NULL REFERENCES
+  user_id                   bigint                        not null references
  users,
 \end_layout
 
@@ -412,7 +412,7 @@ CREATE TABLE esm_answer_sets (
 
 \begin_layout Plain Layout
 
-  pic_received              boolean                       DEFAULT 'f',
+  pic_received              boolean                       default 'f',
 \end_layout
 
 \begin_layout Plain Layout
@@ -510,38 +510,38 @@ CREATE TABLE esm_answer_sets (
 
 \begin_layout Plain Layout
 
-  sent_beep_id              bigint                        REFERENCES sent_beeps
+  sent_beep_id              bigint                        references sent_beeps
 \end_layout
 
 \begin_layout Plain Layout
 
-) WITH (OIDS = FALSE);
+) with (oids = false);
 \end_layout
 
 \begin_layout Plain Layout
 
-SELECT AddGeometryColumn('esm_answer_sets', 'location', 4326, 'POINT', 3);
- -- 4326 = WGS84
+select addgeometrycolumn('esm_answer_sets', 'location', 4326, 'point', 3);
+ -- 4326 = wgs84
 \end_layout
 
 \begin_layout Plain Layout
 
-CREATE INDEX esm_user_idx ON esm_answer_sets (user_id);
+create index esm_user_idx on esm_answer_sets (user_id);
 \end_layout
 
 \begin_layout Plain Layout
 
-CREATE INDEX esm_start_idx ON esm_answer_sets (_start);
+create index esm_start_idx on esm_answer_sets (_start);
 \end_layout
 
 \begin_layout Plain Layout
 
-CREATE INDEX esm_img_id_idx ON esm_answer_sets (_img_id);
+create index esm_img_id_idx on esm_answer_sets (_img_id);
 \end_layout
 
 \begin_layout Plain Layout
 
-CREATE INDEX esm_beep_id_idx ON esm_answer_sets (sent_beep_id);
+create index esm_beep_id_idx on esm_answer_sets (sent_beep_id);
 \end_layout
 
 \begin_layout Plain Layout
@@ -550,17 +550,17 @@ CREATE INDEX esm_beep_id_idx ON esm_answer_sets (sent_beep_id);
 
 \begin_layout Plain Layout
 
-CREATE TABLE esm_duplicates (
+create table esm_duplicates (
 \end_layout
 
 \begin_layout Plain Layout
 
-  id                        bigserial                     PRIMARY KEY,
+  id                        bigserial                     primary key,
 \end_layout
 
 \begin_layout Plain Layout
 
-  user_id                   bigint                        NOT NULL REFERENCES
+  user_id                   bigint                        not null references
  users,
 \end_layout
 
@@ -576,17 +576,17 @@ CREATE TABLE esm_duplicates (
 
 \begin_layout Plain Layout
 
-) WITH (OIDS = FALSE);
+) with (oids = false);
 \end_layout
 
 \begin_layout Plain Layout
 
-CREATE INDEX esmdup_user_idx   ON esm_duplicates (user_id);
+create index esmdup_user_idx   on esm_duplicates (user_id);
 \end_layout
 
 \begin_layout Plain Layout
 
-CREATE INDEX esmdup_img_id_idx ON esm_duplicates (_img_id);
+create index esmdup_img_id_idx on esm_duplicates (_img_id);
 \end_layout
 
 \begin_layout Plain Layout
@@ -595,17 +595,17 @@ CREATE INDEX esmdup_img_id_idx ON esm_duplicates (_img_id);
 
 \begin_layout Plain Layout
 
-CREATE TABLE demographic_answer_sets(
+create table demographic_answer_sets(
 \end_layout
 
 \begin_layout Plain Layout
 
-  id                        bigserial                     PRIMARY KEY,
+  id                        bigserial                     primary key,
 \end_layout
 
 \begin_layout Plain Layout
 
-  user_id                   bigint                        NOT NULL REFERENCES
+  user_id                   bigint                        not null references
  users,
 \end_layout
 
@@ -616,11 +616,7 @@ CREATE TABLE demographic_answer_sets(
 
 \begin_layout Plain Layout
 
-) WITH (OIDS=FALSE);
-\end_layout
-
-\begin_layout Plain Layout
-
+) with (oids=false);
 \end_layout
 
 \end_inset
