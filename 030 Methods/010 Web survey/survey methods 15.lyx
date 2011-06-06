@@ -237,11 +237,11 @@ name "sub:sampling"
 \begin_layout Standard
 The population of interest in this research is defined as all residents
  of Greater London (comprising the 32 London boroughs and City of London)
- aged 16 and above.
+ --- or of the UK --- aged 16 and above.
  Wellbeing amongst children and young adolescents is out of scope here for
  both theoretical and practical reasons.
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Many of the most important external correlates of adults' life satisfaction
@@ -263,16 +263,6 @@ key "chaplin:2009"
 \end_inset
 
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: add UK sample spec.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1226,7 +1216,7 @@ Quota calculations were based on data from the Annual Population Survey,
  January – December 2009, and the accompanying sampling weights, intended
  to reflect 2009 population figures.
  The unweighted sample size of the data set was 333,430.
- The Annual Population Survey data is based on the LFS data and on additional
+ The Annual Population Survey data is based on LFS data and on additional
  data from a sample boost in urban areas.
  
 \end_layout
@@ -2544,7 +2534,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename scale_separation_01.png
-	lyxscale 33
+	lyxscale 50
 	width 16cm
 
 \end_inset
@@ -2593,7 +2583,7 @@ http://uk.wellbeingsurvey.org.uk/
 \end_inset
 
 .
- Screenshots are shown in 
+ Screenshots are again shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "app:survey-screenshots"
@@ -2639,23 +2629,28 @@ key "mcdowell:2006"
 .
  It comprises 36 survey items, with standardised administration and item
  scoring to produce several validated sub-scales.
- We used the freely-available RAND version of the survey 
+ The freely-available RAND version of the survey was used 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hays:1993"
 
 \end_inset
 
-, with a single change: in the original item 
+.
+ Though we are aware of the benefits of standardised and validated scales,
+ giving results directly comparable to previous research, we did make one
+ small change.
+ In the original item 
 \begin_inset Quotes eld
 \end_inset
 
-How much of the time during the past 4 weeks...
- did you feel full of pep?
+How much of the time during the past 4 weeks did you feel full of pep?
 \begin_inset Quotes erd
 \end_inset
 
 , we replaced the word 'pep' with the word 'enthusiasm'.
+ We did so because 'pep' is a colloquial, archaic, American term not in
+ common use in the UK.
 \end_layout
 
 \begin_layout Standard
@@ -2685,9 +2680,9 @@ hyperlink{ssb.15}{pages SB-15 -- SB-18}
  The PANAS asks respondents to rate the applicability to their state of
  mind of twenty adjectives, and responses are summed to form negative affect
  and positive affect indicators.
- We chose the standard PANAS time frame which most closely matches the 'past
- 4 weeks' period used throughout the SF-36, and is provided by the introductory
- text option: 
+ We opted for the standard PANAS time frame which most closely matches the
+ 'past 4 weeks' period used throughout the SF-36, provided by the introductory
+ text: 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2726,7 +2721,7 @@ hyperlink{ssb.39}{pages SB-39 -- SB-52}
 
 ).
  The IPAQ includes questions regarding walking, moderate exercise and vigorous
- exercise behaviours in work, leisure, travel and domestic contexts.
+ exercise in work, leisure, travel and domestic contexts.
  It provides a standardised scoring system to translate these into metabolic
  equivalence values (METs), which provide a straightforward absolute measure
  of physical activity 
@@ -2753,7 +2748,7 @@ Location
 \end_layout
 
 \begin_layout Standard
-In this survey, we asked for full home and (if applicable) work postcodes
+In this survey, full home and (if applicable) work postcodes were requested
  (pages 
 \begin_inset ERT
 status open
@@ -2832,10 +2827,10 @@ Nature
 \begin_layout Standard
 We asked a variety of additional questions regarding direct and indirect
  use and enjoyment of nature.
- These included views from the home and workplace, membership of and legacies
- to wildlife and conservation organisations, visits to National Parks and
- National Trust and RSPB land, nature watching and photography, time spent
- in the garden, countryside and other green spaces, and experience of nature
+ These included: views from the home and workplace; membership of and legacies
+ to wildlife and conservation organisations; visits to National Parks and
+ National Trust and RSPB land; nature watching and photography; time spent
+ in the garden, countryside and other green spaces; and experience of nature
  via exhibitions, magazines and television (
 \begin_inset ERT
 status open
@@ -2885,8 +2880,8 @@ hyperlink{ssb.58}{SB-58 -- SB-59}
 \end_inset
 
 ).
- However, due to an error, the items regarding marital status, children
- and qualifications (
+ However, due to an error in survey implementation, the items regarding
+ marital status, children and qualifications (
 \begin_inset ERT
 status open
 
@@ -2903,9 +2898,9 @@ hyperlink{ssb.58}{page SB-58}
 \end_layout
 
 \begin_layout Standard
-Most of the other items employed in the London survey were also used, with
- the exception (for brevity) of those regarding work activities and hours,
- religious denomination, birth order, and pregnancy and menstruation.
+Most of the other items from the London survey were also used, with the
+ exception (for brevity) of those regarding work activities and hours, religious
+ denomination, birth order, and pregnancy and menstruation.
  In addition, the item regarding external shocks or negative events was
  changed to refer to the past one year rather than the past three (
 \begin_inset ERT
@@ -2921,6 +2916,9 @@ hyperlink{ssb.63}{page SB-63}
 \end_inset
 
 ).
+ This change was made because an unexpectedly large proportion of respondents
+ on the London survey reported one or more shocks occurring during the three-yea
+r time frame.
 \end_layout
 
 \begin_layout Subsection
@@ -2949,7 +2947,18 @@ These items included: the time of the first viewing of each survey page
  easily be calculated); the IP address and hostname of the respondent's
  computer, and the name and version reported by their web browser (the HTTP
  'User Agent' header); the referring HTML page, if any (the HTTP 'Referer'
- [sic] header); and the availability of JavaScript in the user's browser.
+ header
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The referrer header is mis-spelled in the HTTP specification and, therefore,
+ universally.
+\end_layout
+
+\end_inset
+
+); and the availability of JavaScript in the user's browser.
  For items where certain response options led to the immediate display of
  further items, a full history of the selected option state was recorded,
  using JavaScript on the client side, to check that respondents were not
@@ -3089,6 +3098,45 @@ Completion policy
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename completion_prompt_01.png
+	lyxscale 50
+	width 16cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Prompting for completion
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:completion-prompt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 Apart from the items required for checking eligibility and assigning respondents
  to quota cells, all survey items were optional but prompted, in line with
  recommended practice 
@@ -3145,51 +3193,6 @@ You don't have to give an answer here, but we would really appreciate it
  the page again.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename completion_prompt_01.png
-	lyxscale 33
-	width 16cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\lang english
-Prompting for completion
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:completion-prompt"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection
 Paging vs.
  scrolling
@@ -3219,7 +3222,10 @@ key "peytchev:2006"
  This did not interfere with requirements for routing, since the survey
  software was able to show and hide items dynamically within a single page.
  To help respondents navigate through long pages, a moving pointer was developed
-, highlighting the next unanswered question.
+, highlighting the next unanswered item.
+ On the UK survey, respondents could enable an optional 'auto-scroll' feature
+ which automatically scrolled the next unanswered item into the centre of
+ the browser viewport.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3263,7 +3269,7 @@ Guidance, confidentiality, and informed consent
 The introductory text was kept very brief (following feedback from the pilot
  phases) but included a link to more detailed information; this link was
  also present on all later pages.
- Information boxes---having a shaded background and a lower case 'i' symbol
+ Information boxes---having a shaded background and a lower-case 'i' symbol
  at top left---were then used throughout the survey to provide additional
  guidance and feedback to respondents, as seen in all the Figures in this
  section.
@@ -3273,8 +3279,8 @@ The introductory text was kept very brief (following feedback from the pilot
 \begin_layout Standard
 The survey was conducted in compliance with the London School of Economics
  research ethics policy.
- Respondents were informed that by completing the survey they gave their
- consent to serving as a subject in the study (pages 
+ Respondents were informed that by completing the surveys they gave their
+ consent to serving as a subject in the research study (pages 
 \begin_inset ERT
 status open
 
@@ -3308,7 +3314,7 @@ reference "app:survey-screenshots"
 \end_inset
 
 ).
- To ensure confidentiality of responses the London survey was conducted
+ To ensure confidentiality of responses, the London survey was conducted
  over an encrypted (https) connection.
  The hosting server was fully updated, firewalled, and accessible to the
  researcher only via an encrypted (SSH) shell.
