@@ -102,10 +102,22 @@ Spatial data and analyses
 \end_layout
 
 \begin_layout Standard
+Responses from the London survey have one or two associated point locations:
+ the indicated map locations of the respondent's home and, if applicable,
+ workplace.
+ Responses from the UK survey include one or two full postcodes: those of
+ the respondent's home and, if applicable, workplace.
+ ESM study responses have one associated point location: the GPS-derived
+ response location.
+ In each case, the locations were used to augment the response data with
+ environmental and other spatial data.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -823,9 +835,9 @@ reference "tab:spatial-data-sets"
 \end_inset
 
 .
- All spatial data processing and analysis was done with the PostgreSQL relationa
-l database system and its PostGIS spatial extensions, as also used for the
- ESM data collection (
+ All spatial data processing and analysis were done with the PostgreSQL
+ relational database system and its PostGIS spatial extensions, as also
+ used for the ESM data collection (
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:data-server-Database"
@@ -833,7 +845,27 @@ reference "sub:data-server-Database"
 \end_inset
 
 ).
- For some analyses, the PL/R PostgreSQL bindings
+ Some analyses made use of PostgreSQL's procedural language, PL/pgSQL
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://developer.postgresql.org/pgdocs/postgres/plpgsql.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, or its PL/R bindings
 \begin_inset Foot
 status collapsed
 
@@ -860,29 +892,7 @@ key "r-development-core-team:2007"
 
 \end_inset
 
- were used.
- Survey and ESM responses were therefore joined with spatial data using
- spatial SQL, PL/pgSQL
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://developer.postgresql.org/pgdocs/postgres/plpgsql.html
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- and PL/R queries.
+.
 \end_layout
 
 \begin_layout Standard
@@ -1706,6 +1716,21 @@ Analyses
 
 \begin_layout Subsubsection
 Contains/covers
+\end_layout
+
+\begin_layout Standard
+Several types of spatial data were added to the response data using a simple
+ spatial join
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Using the PostGIS st_contains function.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
