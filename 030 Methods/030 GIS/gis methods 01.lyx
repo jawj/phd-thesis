@@ -105,12 +105,131 @@ Spatial data and analyses
 Responses from the London survey have one or two associated point locations:
  the indicated map locations of the respondent's home and, if applicable,
  workplace.
- Responses from the UK survey include one or two full postcodes: those of
- the respondent's home and, if applicable, workplace.
+ Responses from the UK survey include one or two full postcodes: again,
+ those of the respondent's home and, sometimes, workplace.
  ESM study responses have one associated point location: the GPS-derived
  response location.
- In each case, the locations were used to augment the response data with
- environmental and other spatial data.
+ This location information was used to augment the response data with informatio
+n from environmental and other spatial data sets.
+\end_layout
+
+\begin_layout Standard
+Spatial data processing was done within a PostgreSQL relational database
+ system with PostGIS spatial extensions --- as also used for the ESM data
+ collection (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:data-server-Database"
+
+\end_inset
+
+) --- using SQL commands.
+ For some tasks we also made use of PL/pgSQL
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://developer.postgresql.org/pgdocs/postgres/plpgsql.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, the PostgreSQL procedural language, or the PL/R
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.joeconway.com/plr/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ bindings to the R programming language 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "r-development-core-team:2007"
+
+\end_inset
+
+.
+ In order to handle the large volume of data collected, a dedicated server
+ was built and optimised for the database system.
+\end_layout
+
+\begin_layout Subsection
+Data sources
+\end_layout
+
+\begin_layout Standard
+Spatial data may be supplied in three forms.
+ Raster formats represent data using a grid, where each grid cell or pixel
+ has an associated value or values.
+ Vector formats represent data as points, lines or polygons defined by geographi
+cal coordinates, which may each have an associated value or values.
+ Geocoded data provide values associated with geographically-specific codes,
+ such as postcodes or ward identifiers, and may therefore be treated as
+ vector data by the use of appropriate lookup tables.
+\end_layout
+
+\begin_layout Standard
+Raster data, which are not currently supported by PostGIS, were transformed
+ into vector data
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We used the gdal_polygonize utility --- 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.gdal.org/gdal_polygonize.html
+\end_layout
+
+\end_inset
+
+ --- which creates a polygon for each connected region of raster cells sharing
+ a common value
+\end_layout
+
+\end_inset
+
+.
+ Vector data were loaded into the database using the appropriate tool
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For most data the PostGIS shp2pgsql tool was used, which converts ESRI Shapefile
+s into SQL statements.
+\end_layout
+
+\end_inset
+
+.
+ Geocoded data was interpreted using either the National Statistics Postcode
+ Directory (NSPD) or Code-Point with polygons data set.
 \end_layout
 
 \begin_layout Standard
@@ -835,135 +954,10 @@ reference "tab:spatial-data-sets"
 \end_inset
 
 .
- All spatial data processing and analysis were done with the PostgreSQL
- relational database system and its PostGIS spatial extensions, as also
- used for the ESM data collection (
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sub:data-server-Database"
-
-\end_inset
-
-).
- Some analyses made use of PostgreSQL's procedural language, PL/pgSQL
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://developer.postgresql.org/pgdocs/postgres/plpgsql.html
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-, or its PL/R bindings
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://www.joeconway.com/plr/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- to the R programming language 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "r-development-core-team:2007"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-A dedicated database server was built and optimised to run these analyses.
-\end_layout
-
-\begin_layout Subsection
-Importing and processing data
+ 
 \end_layout
 
 \begin_layout Subsubsection
-Data types
-\end_layout
-
-\begin_layout Standard
-Spatial data may be supplied in three forms.
- Raster formats represent data using a grid, where each grid cell or pixel
- has an associated value or values.
- Vector formats represent data as points, lines or polygons defined by geographi
-cal coordinates, each with an associated value or values.
- Geocoded data provide values associated with geographically-specific codes,
- such as postcodes or road or ward identifiers, and may therefore be treated
- as vector data by the use of appropriate lookup tables.
-\end_layout
-
-\begin_layout Standard
-Raster data, which are not currently supported by PostGIS, were transformed
- into vector data
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-We used the gdal_polygonize utility --- 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://www.gdal.org/gdal_polygonize.html
-\end_layout
-
-\end_inset
-
- --- which creates a polygon for each connected region of raster cells sharing
- a common value
-\end_layout
-
-\end_inset
-
-.
- Vector data were loaded into the database using the appropriate tool
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-For most data the PostGIS shp2pgsql tool was used, which converts ESRI Shapefile
-s into SQL statements.
-\end_layout
-
-\end_inset
-
-.
- Geocoded data was interpreted using either the National Statistics Postcode
- Directory (NSPD) or Code-Point with polygons data set.
-\end_layout
-
-\begin_layout Subsubsection
-Notes on specific data sources
-\end_layout
-
-\begin_layout Paragraph
 Land Cover Map 2000
 \begin_inset Note Note
 status collapsed
@@ -1153,7 +1147,7 @@ The exceptions are our 'continuous urban' and 'suburban/rural developed'
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Countryside designations
 \end_layout
 
@@ -1397,7 +1391,7 @@ reference "fig:Statutory-landscape-designations"
 .
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Daylight
 \end_layout
 
@@ -1437,7 +1431,7 @@ reference "chap:analysis-appendix"
 .
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Weather 
 \end_layout
 
@@ -1645,7 +1639,7 @@ reference "tab:Weather-condition-keywords"
  and daylight.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 OpenStreetMap
 \end_layout
 
