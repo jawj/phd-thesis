@@ -10,6 +10,7 @@
 \usepackage[bf,hang,small]{caption}
 %\usepackage[sf,bf,raggedright]{titlesec}
 \definecolor{LinkColor}{rgb}{0,0,0.4}
+\usepackage{fixltx2e}
 \end_preamble
 \use_default_options false
 \master ../../000 master 01.lyx
@@ -98,7 +99,7 @@ Analytical methods
 \end_layout
 
 \begin_layout Section
-Spatial data and analyses
+Spatial methods
 \end_layout
 
 \begin_layout Standard
@@ -192,51 +193,10 @@ cal coordinates, which may each have an associated value or values.
 \end_layout
 
 \begin_layout Standard
-Raster data, which are not currently supported by PostGIS, were transformed
- into vector data
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-We used the gdal_polygonize utility --- 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://www.gdal.org/gdal_polygonize.html
-\end_layout
-
-\end_inset
-
- --- which creates a polygon for each connected region of raster cells sharing
- a common value
-\end_layout
-
-\end_inset
-
-.
- Vector data were loaded into the database using the appropriate tool
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-For most data the PostGIS shp2pgsql tool was used, which converts ESRI Shapefile
-s into SQL statements.
-\end_layout
-
-\end_inset
-
-.
- Geocoded data was interpreted using either the National Statistics Postcode
- Directory (NSPD) or Code-Point with polygons data set.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -946,7 +906,7 @@ Ordnance Survey, via EDINA Digimap
 
 \end_inset
 
-The spatial data sets used in this research are listed in 
+The spatial data sets used in this research are summarised in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:spatial-data-sets"
@@ -954,11 +914,272 @@ reference "tab:spatial-data-sets"
 \end_inset
 
 .
- 
+ Raster data, which are not currently supported by PostGIS, were transformed
+ into vector data
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We used the gdal_polygonize utility --- 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.gdal.org/gdal_polygonize.html
+\end_layout
+
+\end_inset
+
+ --- which creates a polygon for each connected region of raster cells sharing
+ a common value
+\end_layout
+
+\end_inset
+
+.
+ Vector data were loaded into the database using the appropriate tool
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For most data the PostGIS shp2pgsql tool was used, which converts ESRI Shapefile
+s into SQL statements.
+\end_layout
+
+\end_inset
+
+.
+ Geocoded data was interpreted using either the National Statistics Postcode
+ Directory (NSPD) or Code-Point with polygons data set.
 \end_layout
 
 \begin_layout Subsubsection
-Land Cover Map 2000
+Air pollution
+\end_layout
+
+\begin_layout Standard
+Air pollutant data for Greater London is provided by the modelling maps
+ from the London Atmospheric Emissions Inventory 2006.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Use 2008 maps?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Awaiting maps methodology reference -- emailed Emily Westmoreland, KCL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Noise
+\end_layout
+
+\begin_layout Standard
+We use Defra's Road Traffic Noise Maps for the London Agglomeration as defined
+ in the Environmental Noise (England) Regulations 2006.
+ These maps have been made using computer modelling techniques, based on
+ data on traffic flow, road type, and vehicle type, and accounting for features
+ affecting the spread of noise, including buildings, ground elevation, and
+ acoustic absorbency/reflectivity.
+ The maps provide annual average noise level indicators for 2006 at a receptor
+ height of 4m above ground.
+\end_layout
+
+\begin_layout Standard
+The noise level indicators are derived from A-Weighted Decibel values ---
+ abbreviated dB(A) --- which are units of sound pressure level adjusted
+ to allow for the varying sensitivity of the human ear at different frequencies.
+ Because noise levels vary through time, the indicators are themselves weighted
+ averages of these db(A) values, and are calculated as follows:
+\end_layout
+
+\begin_layout Description
+L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+day
+\end_layout
+
+\end_inset
+
+ is the A-weighted average sound level between 7am and 7pm.
+\end_layout
+
+\begin_layout Description
+L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+evening
+\end_layout
+
+\end_inset
+
+ is the A-weighted average sound level between 7pm and 11pm.
+\end_layout
+
+\begin_layout Description
+L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+night
+\end_layout
+
+\end_inset
+
+ is the A-weighted average sound level between 11pm and 7pm.
+\end_layout
+
+\begin_layout Description
+L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+den
+\end_layout
+
+\end_inset
+
+ is a logarithmic composite of the L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+day
+\end_layout
+
+\end_inset
+
+, L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+evening
+\end_layout
+
+\end_inset
+
+, and L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+night
+\end_layout
+
+\end_inset
+
+ levels but with 5 dB(A) being added to the L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+evening
+\end_layout
+
+\end_inset
+
+ value and 10 dB(A) being added to the L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+night
+\end_layout
+
+\end_inset
+
+ value.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Datasets/ldenlondon.png
+	lyxscale 20
+	width 20cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Road traffic noise data (2006 L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+den
+\end_layout
+
+\end_inset
+
+indicator) against outline of Greater London
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Road-traffic-noise"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+The map data used in this research provides L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+den
+\end_layout
+
+\end_inset
+
+ estimates for 10m cells, in 5 dB(A) bands starting at 55 dB(A).
+ This data is illustrated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Road-traffic-noise"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Land cover
 \begin_inset Note Note
 status collapsed
 
@@ -1042,7 +1263,7 @@ key "fuller:2002"
 
 \size default
 .
- We used the LCM 25m raster data set, which identifies the highest-likelihood
+ We used the 25m raster LCM data set, which identifies the highest-likelihood
  'level 2 subclass' habitat for each 25m cell.
  These data are illustrated (for the Greater London area only) in 
 \begin_inset CommandInset ref
@@ -1093,8 +1314,8 @@ name "tab:broad-habitat-lcm-classes"
 
 \end_inset
 
-The 26 LCM level 2 subclasses were grouped into the same broad habitat categorie
-s as used in the UK National Ecosystem Assessment 
+We grouped the 26 level 2 subclasses into the same broad habitat categories
+ as used in the UK National Ecosystem Assessment 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "uk-nea:2011"
@@ -1103,9 +1324,9 @@ key "uk-nea:2011"
 
 .
  There was one exception: the NEA 'urban' habitat (which accounts for almost
- 75% of ESM responses) was kept split into its two constituent LCM subclasses,
- 'continuous urban' and 'suburban/rural developed'.
- The habitat classification is given in 
+ 75% of our ESM responses) was kept split into its two constituent LCM subclasse
+s, 'continuous urban' and 'suburban/rural developed'.
+ The habitat categories used are given in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:broad-habitat-lcm-classes"
@@ -1116,11 +1337,10 @@ reference "tab:broad-habitat-lcm-classes"
 \end_layout
 
 \begin_layout Standard
-Field survey data from the Countryside Survey 2000, covering a stratified
- random sample of 569 1km squares, have been used to evaluate the quality
- of LCM data for Great Britain; the comparison suggests that the LCM may
- classify its 16 Target classes, which are aggregates of the subclasses,
- with around 85% success 
+Field survey data from the Countryside Survey 2000 have been used to evaluate
+ the quality of LCM data in Great Britain; the comparison suggests that
+ the LCM may classify its 16 'target' classes, which are aggregates of the
+ subclasses, with around 85% success 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fuller:2002a"
@@ -1128,16 +1348,16 @@ key "fuller:2002a"
 \end_inset
 
 .
- In most cases our habitat categories aggregate whole Target classes, and
+ In most cases our habitat categories aggregate whole target classes, and
  thus should also be classified with at least 85% success.
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
 The exceptions are our 'continuous urban' and 'suburban/rural developed'
- categories (which together comprise a the single Target class 'urban and
+ categories (which together comprise the single target class 'urban and
  suburban'), and our 'mountains, moors and heathlands', 'semi-natural grasslands
-', and 'enclosed farmland', which split subclasses of the Target classes
+', and 'enclosed farmland', which split some subclasses of the target classes
  'neutral / calcareous semi-natural / rough grasslands' and 'acid grass
  and bracken' between them.
 \end_layout
@@ -1152,14 +1372,14 @@ Countryside designations
 \end_layout
 
 \begin_layout Standard
-We use data on three types of statutory landscape designation.
- As described by Natural England
+We used data on three types of statutory landscape designation, described
+ as follows by Natural England
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1222,9 +1442,9 @@ Beauty
 \end_inset
 
 areas of high scenic quality that have statutory protection in order to
- conserve and enhance the natural beauty of their landscapes...
- different from National Parks because of their more limited opportunities
- for extensive outdoor recreation
+ conserve and enhance the natural beauty of their landscapes [...] different
+ from National Parks because of their more limited opportunities for extensive
+ outdoor recreation
 \begin_inset Quotes erd
 \end_inset
 
@@ -1261,8 +1481,8 @@ Reserves
 \end_inset
 
 initially established to protect sensitive features and to provide ‘outdoor
- laboratories’ for research...
- [and] now offer great opportunities to the public as well as schools and
+ laboratories’ for research [...
+ and] now offer great opportunities to the public as well as schools and
  specialist audiences to experience England’s natural heritage
 \begin_inset Quotes erd
 \end_inset
@@ -1379,9 +1599,7 @@ name "fig:Statutory-landscape-designations"
 
 \end_inset
 
-Designations may overlap, so that some areas of land are assigned multiple
- designations.
- The designation areas are illustrated in 
+The designation areas are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Statutory-landscape-designations"
@@ -1389,6 +1607,7 @@ reference "fig:Statutory-landscape-designations"
 \end_inset
 
 .
+ Some areas of land are assigned multiple designations.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1436,6 +1655,51 @@ Weather
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Datasets/wundergroundstations.pdf
+	lyxscale 50
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Weather station locations, and the regions for which they are the nearest
+ stations
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Weather-station-locations"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset Float table
 wide false
 sideways false
@@ -1601,15 +1865,17 @@ Snow
 
 \end_inset
 
-Weather data from personal weather stations across the UK, as downloaded
- hourly from Weather Underground, were processed with a custom Ruby script
- using the Hpricot HTML parser
+Weather data from 280 personal weather stations across the UK were downloaded
+ hourly from the Weather Underground website throughout the study period,
+ and processed using a custom Ruby script
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
+This script parsed and extracted the data of interest from the thousands
+ of downloaded HTML pages using the Hpricot parsing library (
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1618,8 +1884,16 @@ http://rubydoc.info/gems/hpricot/0.8.4/frames
 
 \end_inset
 
-
+).
 \end_layout
+
+\end_inset
+
+.
+ The weather station locations are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Weather-station-locations"
 
 \end_inset
 
@@ -1639,8 +1913,26 @@ reference "tab:Weather-condition-keywords"
  and daylight.
 \end_layout
 
+\begin_layout Standard
+These data were selected for their availability and for their high spatial
+ and temporal resolution.
+ The accuracy of the data, which are collected using different equipment
+ in different locations, is not specified.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Future work might benefit from the use of better validated data.
+ --- MIDAS data?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
-OpenStreetMap
+Public green spaces in London
 \end_layout
 
 \begin_layout Standard
@@ -1705,7 +1997,7 @@ lage_green, and landuse/recreation_ground.
 \end_layout
 
 \begin_layout Subsection
-Analyses
+Joins and analyses
 \end_layout
 
 \begin_layout Subsubsection

@@ -123,7 +123,7 @@ status open
 
 \begin_layout Plain Layout
 
--- first, in R: install.packages('StreamMetabolism', dependencies = TRUE)
+-- in R: install.packages('StreamMetabolism', dependencies = TRUE)
 \end_layout
 
 \begin_layout Plain Layout
@@ -220,7 +220,7 @@ returns boolean as $$
 
 \begin_layout Plain Layout
 
-      st_y(st_transform($1, 4326)), -- 4326 = WGS84, as required
+      st_y(st_transform($1, 4326)), -- 4326 -> WGS84 projection, as required
 \end_layout
 
 \begin_layout Plain Layout
