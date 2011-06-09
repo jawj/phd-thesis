@@ -175,6 +175,48 @@ key "r-development-core-team:2007"
 .
  In order to handle the large volume of data collected, a dedicated server
  was built and optimised for the database system.
+ Data were visualised, and diagrams were produced, using the open-source
+ QGIS application
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://qgis.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ and Google Earth
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.google.com/earth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -188,8 +230,9 @@ Spatial data may be supplied in three forms.
  Vector formats represent data as points, lines or polygons defined by geographi
 cal coordinates, which may each have an associated value or values.
  Geocoded data provide values associated with geographically-specific codes,
- such as postcodes or ward identifiers, and may therefore be treated as
- vector data by the use of appropriate lookup tables.
+ such as postcodes or ward identifiers.
+ They may be joined with other geocoded data, or converted to vector data,
+ by the use of appropriate lookup tables.
 \end_layout
 
 \begin_layout Standard
@@ -298,7 +341,7 @@ Source
 \size scriptsize
 London Atmospheric Emissions Inventory (LAEI) 2006 Modelling Maps
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -940,7 +983,7 @@ http://www.gdal.org/gdal_polygonize.html
 .
  Vector data were loaded into the database using the appropriate tools
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 ESRI Shapefile data were imported with the PostGIS shp2pgsql utility.
@@ -1750,8 +1793,11 @@ Daylight
 \begin_layout Standard
 Sunrise and sunset times, which define the period of daylight, vary by date
  and location.
- These times were calculated for every ESM response using the StreamMetabolism
- package for R 
+ These times were calculated for every ESM response using the R 
+\emph on
+StreamMetabolism
+\emph default
+ package 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sefick:2009"
@@ -2067,6 +2113,27 @@ Use of the UK Met Office's MIDAS Land Surface Stations hourly report data
 Crime
 \end_layout
 
+\begin_layout Standard
+We use data from the Metropolitan Police for the financial year 2008 --
+ 09 regarding total notifiable offences, residential burglary and violence
+ against the person.
+ These data are geocoded to Lower Super Output Area (LSOA) level.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+LSOAs were created by aggregating 2001 Census Output Areas (typically 4
+ -- 6).
+ They are designed to have a minimum population of 1,000 and a mean population
+ of 1,500.
+\end_layout
+
+\end_inset
+
+ We combine these data with Office for National Statistics (ONS) mid-2008
+ LSOA population estimates to derive crime rates expressed per person.
+\end_layout
+
 \begin_layout Subsubsection
 Public green spaces in London
 \end_layout
@@ -2116,38 +2183,118 @@ Joins and analyses
 \end_layout
 
 \begin_layout Subsubsection
-Contains/covers
+Geocode lookup
 \end_layout
 
 \begin_layout Standard
-Several types of spatial data were added to the response data using a simple
- spatial join
+In the case of crime data, survey response postcodes were matched with crime
+ rates via a lookup table.
+ Each postcode was associated with an LSOA code using the NSPD, and the
+ LSOA code was then associated with the crime rate data.
+\end_layout
+
+\begin_layout Subsubsection
+Within/contains
+\end_layout
+
+\begin_layout Standard
+In many cases response data were associated with spatial data via simple
+ 
+\emph on
+within
+\emph default
+ or 
+\emph on
+contains
+\emph default
+ join queries.
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-Using the PostGIS st_contains function.
+Corresponding to the PostGIS functions st_contains and st_within.
 \end_layout
+
+\end_inset
+
+ For example: a dummy variable indicating National Park designation was
+ set if the response location fell within any of the polygons defining the
+ extents of that designation; and a categorical variable indicating the
+ LCM subclass was set to the subclass code associated with the polygon containin
+g the response location.
+ In the case of noise contour data, the value set corresponded to the highest
+ value associated with any of the containing polygons.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Also for some analyses: air pollution data, road traffic and airport noise
+ data, OSM green spaces, landscape designations.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Closest in space and time
+\end_layout
+
+\begin_layout Standard
+Weather data was associated with ESM response data by selecting the nearest
+ weather station to the response location, and then selecting the weather
+ data reported by that station at the moment nearest to (either before or
+ after) the response time.
+\end_layout
+
+\begin_layout Standard
+To rapidly locate the nearest station for millions of response locations,
+ we pre-calculated for each station the region for which it was the nearest
+ station using the R 
+\emph on
+deldir
+\emph default
+ package 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "turner:2010"
+
+\end_inset
+
+ accessed via PL/R.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Such regions are known as Voronoi, Thiessen or Dirichlet polygons or cells
+ 
+\begin_inset CommandInset citation
+LatexCommand Citep
+after "124"
+key "smith:2007"
 
 \end_inset
 
 .
 \end_layout
 
-\begin_layout Standard
-LAEI, Defra noise, LCM, OSM ...)
-\end_layout
+\end_inset
 
-\begin_layout Standard
-noise contours (highest value!)
-\end_layout
+ These regions are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Weather-station-locations"
 
-\begin_layout Subsubsection
-Nearest + nearest in time 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-weather
+.
+ We were then able to locate the nearest station to a response using a simple
+ 
+\emph on
+contains
+\emph default
+ query as above.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2171,12 +2318,15 @@ Predictive
 house price regressions
 \end_layout
 
-\begin_layout Subsection
-Visualisation
-\end_layout
-
 \begin_layout Standard
-custom SQL + QGIS + Google Earth
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "/Users/gjm06/Documents/PhD thesis/all"
+options "apalike2"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
