@@ -125,7 +125,7 @@ reference "sub:data-server-Database"
 \end_inset
 
 ) --- using SQL commands.
- For some tasks we also made use of PL/pgSQL
+ For some tasks we also made use of the PostgreSQL procedural language PL/pgSQL
 \begin_inset Foot
 status collapsed
 
@@ -145,7 +145,7 @@ http://developer.postgresql.org/pgdocs/postgres/plpgsql.html
 
 \end_inset
 
-, the PostgreSQL procedural language, or the PL/R
+ and the PL/R
 \begin_inset Foot
 status collapsed
 
@@ -196,7 +196,7 @@ cal coordinates, which may each have an associated value or values.
 \begin_inset Float table
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -920,7 +920,7 @@ reference "tab:spatial-data-sets"
 status collapsed
 
 \begin_layout Plain Layout
-We used the gdal_polygonize utility --- 
+The transformation was performed by the gdal_polygonize utility (
 \begin_inset Flex URL
 status collapsed
 
@@ -931,20 +931,43 @@ http://www.gdal.org/gdal_polygonize.html
 
 \end_inset
 
- --- which creates a polygon for each connected region of raster cells sharing
- a common value
+), which creates a polygon for each connected region of raster cells sharing
+ a common value.
 \end_layout
 
 \end_inset
 
 .
- Vector data were loaded into the database using the appropriate tool
+ Vector data were loaded into the database using the appropriate tools
 \begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ESRI Shapefile data were imported with the PostGIS shp2pgsql utility.
+ AutoCAD DXF files were imported using DXF2PostGIS (
+\begin_inset Flex URL
 status collapsed
 
 \begin_layout Plain Layout
-For most data the PostGIS shp2pgsql tool was used, which converts ESRI Shapefile
-s into SQL statements.
+
+http://www.glasic.it/dxf2postgis.html
+\end_layout
+
+\end_inset
+
+).
+ Osmosis (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://wiki.openstreetmap.org/wiki/Osmosis
+\end_layout
+
+\end_inset
+
+) was used to load OpenStreetMap data.
 \end_layout
 
 \end_inset
@@ -990,26 +1013,26 @@ Awaiting maps methodology reference -- emailed Emily Westmoreland, KCL
 \end_layout
 
 \begin_layout Subsubsection
-Noise
+Road traffic noise
 \end_layout
 
 \begin_layout Standard
-We use Defra's Road Traffic Noise Maps for the London Agglomeration as defined
- in the Environmental Noise (England) Regulations 2006.
- These maps have been made using computer modelling techniques, based on
- data on traffic flow, road type, and vehicle type, and accounting for features
- affecting the spread of noise, including buildings, ground elevation, and
- acoustic absorbency/reflectivity.
- The maps provide annual average noise level indicators for 2006 at a receptor
+We use Defra's Road Traffic Noise Map data.
+ These data have been modelled based on data on traffic flow, road type
+ and vehicle type, and accounting for features affecting the spread of noise,
+ including buildings, ground elevation, and acoustic absorbency/reflectivity.
+ The data provide annual average noise level indicators for 2006 at a receptor
  height of 4m above ground.
+ They are not informed by actual noise measures, and will not necessarily
+ provide an accurate description of noise levels at specific locations.
 \end_layout
 
 \begin_layout Standard
-The noise level indicators are derived from A-Weighted Decibel values ---
- abbreviated dB(A) --- which are units of sound pressure level adjusted
+The noise level indicators are based on estimated A-weighted decibel values
+ --- abbreviated dB(A) --- which are units of sound pressure level adjusted
  to allow for the varying sensitivity of the human ear at different frequencies.
- Because noise levels vary through time, the indicators are themselves weighted
- averages of these db(A) values, and are calculated as follows:
+ Noise levels, and the acceptability of any given noise level, both vary
+ through time, so the indicators are calculated as follows:
 \end_layout
 
 \begin_layout Description
@@ -1048,7 +1071,7 @@ night
 
 \end_inset
 
- is the A-weighted average sound level between 11pm and 7pm.
+ is the A-weighted average sound level between 11pm and 7am.
 \end_layout
 
 \begin_layout Description
@@ -1158,7 +1181,7 @@ name "fig:Road-traffic-noise"
 
 \end_inset
 
-The map data used in this research provides L
+In this research we use the L
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -1167,8 +1190,11 @@ den
 
 \end_inset
 
- estimates for 10m cells, in 5 dB(A) bands starting at 55 dB(A).
- This data is illustrated in 
+ estimates, which are reported for 10m cells in 5 dB(A) bands between 55
+ and 75 dB(A).
+ The data cover the London Agglomeration, which is defined according to
+ population densities and does not correspond to any administrative region.
+ They are illustrated in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Road-traffic-noise"
@@ -1176,6 +1202,117 @@ reference "fig:Road-traffic-noise"
 \end_inset
 
 .
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Aircraft noise
+\end_layout
+
+\begin_layout Standard
+We use data on aircraft noise around Heathrow Airport estimated on behalf
+ of the Department for Transport.
+ The data are generated by a computer model, validated with noise measurements,
+ which calculates the emissions and propagation of noise from air traffic.
+ They express aircraft noise as L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+eq
+\end_layout
+
+\end_inset
+
+ values, which correspond to the hypothetical steady sound that would contain
+ the same sound energy as the actual, variable sound, measured over a defined
+ period using the A-weighted scale 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jones:2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Datasets/heathrownoise.pdf
+	lyxscale 50
+	width 14cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Heathrow Airport 2008 standard modal split (76% West, 24% East) average
+ summer day (7am -- 11pm BST) L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+eq
+\end_layout
+
+\end_inset
+
+ noise contours against outline of Greater London
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Heathrow-noise"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+We used the data calculated from 2008 flight volumes using the long-term
+ average split in the direction of runway use.
+ They are provided as contours of constant L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+eq
+\end_layout
+
+\end_inset
+
+ value, in 3 dB(A) steps from 57 dB(A) --- the Government's guideline value
+ for significant community annoyance.
+ They are depicted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Heathrow-noise"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Data from London City Airport are not available in an appropriate format
+ for spatial processing.
+ However, visual inspection of noise maps shows that noise levels above
+ 57 dB(A) barely extend beyond the airport's perimeter.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1252,16 +1389,12 @@ name "fig:Land-Cover-Map"
 The Land Cover Map 2000 (LCM) provides a census of habitats across the UK
  by classifying satellite image data according to known spatial, spectral
  and contextual characteristics of land cover 
-\size scriptsize
-
 \begin_inset CommandInset citation
 LatexCommand citep
 key "fuller:2002"
 
 \end_inset
 
-
-\size default
 .
  We used the 25m raster LCM data set, which identifies the highest-likelihood
  'level 2 subclass' habitat for each 25m cell.
@@ -1867,7 +2000,7 @@ Snow
 
 Weather data from 280 personal weather stations across the UK were downloaded
  hourly from the Weather Underground website throughout the study period,
- and processed using a custom Ruby script
+ and processed using a custom Ruby script.
 \begin_inset Foot
 status collapsed
 
@@ -1889,7 +2022,6 @@ http://rubydoc.info/gems/hpricot/0.8.4/frames
 
 \end_inset
 
-.
  The weather station locations are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -1918,17 +2050,21 @@ These data were selected for their availability and for their high spatial
  and temporal resolution.
  The accuracy of the data, which are collected using different equipment
  in different locations, is not specified.
-\begin_inset Note Note
+\begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-Future work might benefit from the use of better validated data.
- --- MIDAS data?
+Use of the UK Met Office's MIDAS Land Surface Stations hourly report data
+ would be preferable in future research.
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Crime
 \end_layout
 
 \begin_layout Subsubsection
@@ -1970,28 +2106,7 @@ on regarding land cover and use.
 \end_layout
 
 \begin_layout Standard
-OpenStreetMap data was imported using the Osmosis tool
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://wiki.openstreetmap.org/wiki/Osmosis
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-.
- We identify public green spaces as areas tagged with the following key/value
+We identify public green spaces as areas tagged with the following key/value
  pairs: leisure/park, leisure/common, natural/heath, landuse/meadow, landuse/vil
 lage_green, and landuse/recreation_ground.
 \end_layout
@@ -2020,7 +2135,11 @@ Using the PostGIS st_contains function.
 \end_layout
 
 \begin_layout Standard
-LAEI, Defra noise, noise contours, LCM, OSM ...)
+LAEI, Defra noise, LCM, OSM ...)
+\end_layout
+
+\begin_layout Standard
+noise contours (highest value!)
 \end_layout
 
 \begin_layout Subsubsection
