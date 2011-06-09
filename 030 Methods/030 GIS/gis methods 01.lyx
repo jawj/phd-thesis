@@ -1837,7 +1837,7 @@ Weather
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -2179,16 +2179,15 @@ lage_green, and landuse/recreation_ground.
 \end_layout
 
 \begin_layout Subsection
-Joins and analyses
+Spatial join types
 \end_layout
 
 \begin_layout Subsubsection
-Geocode lookup
+Geocode matching
 \end_layout
 
 \begin_layout Standard
-In the case of crime data, survey response postcodes were matched with crime
- rates via a lookup table.
+Survey response postcodes were matched with crime rates via a lookup table.
  Each postcode was associated with an LSOA code using the NSPD, and the
  LSOA code was then associated with the crime rate data.
 \end_layout
@@ -2222,7 +2221,7 @@ Corresponding to the PostGIS functions st_contains and st_within.
  extents of that designation; and a categorical variable indicating the
  LCM subclass was set to the subclass code associated with the polygon containin
 g the response location.
- In the case of noise contour data, the value set corresponded to the highest
+ In the case of noise contour data, the value set corresponds to the highest
  value associated with any of the containing polygons.
 \begin_inset Note Note
 status collapsed
@@ -2238,31 +2237,21 @@ Also for some analyses: air pollution data, road traffic and airport noise
 \end_layout
 
 \begin_layout Subsubsection
-Closest in space and time
+Weather: closest in space and time
 \end_layout
 
 \begin_layout Standard
 Weather data was associated with ESM response data by selecting the nearest
  weather station to the response location, and then selecting the weather
- data reported by that station at the moment nearest to (either before or
+ data reported by that station at the moment closest to (either before or
  after) the response time.
+ 
 \end_layout
 
 \begin_layout Standard
 To rapidly locate the nearest station for millions of response locations,
  we pre-calculated for each station the region for which it was the nearest
- station using the R 
-\emph on
-deldir
-\emph default
- package 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "turner:2010"
-
-\end_inset
-
- accessed via PL/R.
+ station
 \begin_inset Foot
 status collapsed
 
@@ -2281,6 +2270,18 @@ key "smith:2007"
 
 \end_inset
 
+ using the R 
+\emph on
+deldir
+\emph default
+ package 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "turner:2010"
+
+\end_inset
+
+ accessed via PL/R.
  These regions are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -2297,8 +2298,61 @@ contains
  query as above.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+maximum distance and time lapse?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+mention/question implicit assumption about weather correlation with nearby
+ and recent weather?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
-Kernel weighted averages/proportions
+Kernel-weighted proportions and averages
+\end_layout
+
+\begin_layout Standard
+Measures of the local availability of different land cover types and public
+ green spaces, and of local air pollution levels, were calculated for survey
+ response locations as kernel-weighted proportions or averages.
+\end_layout
+
+\begin_layout Standard
+WHY?! Simple theoretical justification...
+\end_layout
+
+\begin_layout Standard
+special case -- uniform = average within a radius
+\end_layout
+
+\begin_layout Standard
+triangular (= IDW -- no, not exactly )
+\end_layout
+
+\begin_layout Standard
+Gaussian, Epanechnikov, etc.
+\end_layout
+
+\begin_layout Standard
+Survey response data was in some cases augmented with
 \end_layout
 
 \begin_layout Standard
@@ -2319,10 +2373,12 @@ house price regressions
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "/Users/gjm06/Documents/PhD thesis/all"
-options "apalike2"
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+mention MAUP? and point out we're not affected (except for crime LSOAs)
+\end_layout
 
 \end_inset
 
