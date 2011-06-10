@@ -239,7 +239,7 @@ cal coordinates, which may each have an associated value or values.
 \begin_inset Float table
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -262,8 +262,9 @@ name "tab:spatial-data-sets"
 status open
 
 \begin_layout Plain Layout
-GiGL data? E.g.
- AoDs?
+GiGL data? (e.g.
+ AoDs?) Meridian 2? National Trust? ...
+ ?
 \end_layout
 
 \end_inset
@@ -340,18 +341,6 @@ Source
 
 \size scriptsize
 London Atmospheric Emissions Inventory (LAEI) 2006 Modelling Maps
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\size footnotesize
-2008 now available at data.gov.uk
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -2306,8 +2295,8 @@ Kernel-weighted proportions
 
 \begin_layout Standard
 Measures of the local availability of different land cover types and public
- green spaces, and of local air pollution levels, were calculated for survey
- response locations as kernel-weighted proportions or averages.
+ green spaces were calculated for survey response locations as kernel-weighted
+ proportions.
 \begin_inset Note Note
 status collapsed
 
@@ -2324,11 +2313,10 @@ WHY?! Simple theoretical justification...
 A kernel-weighted proportion measures the area of land around a point that
  meets specific criteria (for example, is public green space) as a fraction
  of the area of all the land around that point.
- These numerator and denominator areas are both weighted, using the selected
- kernel function, according to proximity to the central point (they can
- therefore usefully be imagined as three-dimensional volumes, for which
- the height dimension at any point represents the weighting applied at that
- point).
+ These numerator and denominator areas are both weighted, using a kernel
+ function, according to proximity to the central point (they can therefore
+ usefully be imagined as three-dimensional volumes, for which the height
+ dimension at any point represents the weighting applied at that point).
  The kernel function is chosen so that higher weightings are applied to
  nearer locations.
 \end_layout

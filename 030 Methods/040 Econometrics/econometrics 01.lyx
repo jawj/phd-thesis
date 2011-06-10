@@ -109,12 +109,162 @@
 Happiness models and valuation
 \end_layout
 
+\begin_layout Subsection
+Happiness models
+\end_layout
+
+\begin_layout Subsubsection
+Cross-sectional survey data
+\end_layout
+
 \begin_layout Standard
-Stata
+In our survey data we model the wellbeing of individual (and location) 
+\begin_inset Formula $i$
+\end_inset
+
+ as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+SWB_{i}=\beta_{0}+\beta_{1}\ln w_{i}+\boldsymbol{\beta}_{2}'\mathbf{x}_{i}+\beta_{3}\ln r_{i}+\boldsymbol{\beta}_{4}'\mathbf{a}+\varepsilon_{i}\label{eq:swb-xsection-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+SWB_{i}=\alpha+\beta_{w}\ln w_{i}+\boldsymbol{\beta}_{\mathrm{x}}'\mathbf{x}_{i}+\beta_{\mathrm{ln}r}\ln r_{i}+\boldsymbol{\beta}_{\mathrm{a}}'\mathbf{a}+\varepsilon_{i}\label{eq:swb-xsection}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is a constant, 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ is the wage, 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ is a vector of other individual characteristics, 
+\begin_inset Formula $r$
+\end_inset
+
+ is the rent or land value, 
+\begin_inset Formula $\mathbf{a}$
+\end_inset
+
+ is a vector of other local amenities and environmental conditions, and
+ 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ is an error term.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We do not use an additional subscript for location in equation 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:swb-xsection"
+
+\end_inset
+
+, as is sometime seen in the literature, since most of our spatial variables
+ are specific to each individual respondent (to within 25m or less).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Panel data from ESM assessments
+\end_layout
+
+\begin_layout Standard
+In the ESM assessment data we model the wellbeing of individual 
+\begin_inset Formula $i$
+\end_inset
+
+ at location 
+\begin_inset Formula $l$
+\end_inset
+
+ and time 
+\begin_inset Formula $t$
+\end_inset
+
+ as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+SWB_{ilt}=\beta_{0i}+\boldsymbol{\beta}_{\mathrm{5}}'\mathbf{c}_{ilt}+\boldsymbol{\beta}_{\mathrm{6}}'\mathbf{a}_{ilt}+\varepsilon_{ilt}\label{eq:swb-panel-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+SWB_{ilt}=\alpha_{i}+\boldsymbol{\beta}_{\mathrm{c}}'\mathbf{c}_{ilt}+\boldsymbol{\beta}_{\mathrm{a}}'\mathbf{a}_{ilt}+\varepsilon_{ilt}\label{eq:swb-panel}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $u$
+\end_inset
+
+ is an individual-specific constant or fixed effect, 
+\begin_inset Formula $\mathbf{c}$
+\end_inset
+
+ is a vector of contextual factors (such as companionship and activity),
+ 
+\begin_inset Formula $\mathbf{a}$
+\end_inset
+
+ is a vector of local amenities and environmental conditions (which in some
+ cases vary by time), and 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ is an error term.
+ Locations and times are treated as unique.
 \end_layout
 
 \begin_layout Subsection
-Happiness models
+Estimation
+\end_layout
+
+\begin_layout Standard
+Stata (+ R)
 \end_layout
 
 \begin_layout Subsubsection
