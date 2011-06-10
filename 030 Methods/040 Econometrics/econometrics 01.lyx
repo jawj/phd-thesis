@@ -109,16 +109,24 @@
 Happiness models and valuation
 \end_layout
 
-\begin_layout Subsection
-Happiness models
+\begin_layout Standard
+Stata (+ R)
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Cross-sectional survey data
 \end_layout
 
+\begin_layout Subsubsection
+Model
+\end_layout
+
 \begin_layout Standard
-In our survey data we model the wellbeing of individual (and location) 
+In our survey data we model the reported happiness 
+\begin_inset Formula $r$
+\end_inset
+
+ of individual 
 \begin_inset Formula $i$
 \end_inset
 
@@ -126,10 +134,19 @@ In our survey data we model the wellbeing of individual (and location)
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-SWB_{i}=\beta_{0}+\beta_{1}\ln w_{i}+\boldsymbol{\beta}_{2}'\mathbf{x}_{i}+\beta_{3}\ln r_{i}+\boldsymbol{\beta}_{4}'\mathbf{a}+\varepsilon_{i}\label{eq:swb-xsection-1}
+r_{i}=\beta_{0}+\beta_{1}\ln w_{i}+\boldsymbol{\beta}_{2}'\mathbf{x}_{i}+\beta_{3}\ln v_{i}+\boldsymbol{\beta}_{4}'\mathbf{y}+\varepsilon_{i}\label{eq:swb-xsection-1}
 \end{equation}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -139,7 +156,7 @@ SWB_{i}=\beta_{0}+\beta_{1}\ln w_{i}+\boldsymbol{\beta}_{2}'\mathbf{x}_{i}+\beta
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-SWB_{i}=\alpha+\beta_{w}\ln w_{i}+\boldsymbol{\beta}_{\mathrm{x}}'\mathbf{x}_{i}+\beta_{\mathrm{ln}r}\ln r_{i}+\boldsymbol{\beta}_{\mathrm{a}}'\mathbf{a}+\varepsilon_{i}\label{eq:swb-xsection}
+r_{i}=\alpha+\beta_{\mathrm{ln}w}\ln w_{i}+\boldsymbol{\beta}_{\mathrm{x}}'\mathbf{x}_{i}+\beta_{\mathrm{ln}v}\ln v_{i}+\boldsymbol{\beta}_{\mathrm{y}}'\mathbf{y}+\varepsilon_{i}\label{eq:swb-xsection}
 \end{equation}
 
 \end_inset
@@ -153,7 +170,7 @@ where
 \end_inset
 
  is a constant, 
-\begin_inset Formula $w_{i}$
+\begin_inset Formula $w$
 \end_inset
 
  is the wage, 
@@ -161,11 +178,11 @@ where
 \end_inset
 
  is a vector of other individual characteristics, 
-\begin_inset Formula $r$
+\begin_inset Formula $v$
 \end_inset
 
  is the rent or land value, 
-\begin_inset Formula $\mathbf{a}$
+\begin_inset Formula $\mathbf{y}$
 \end_inset
 
  is a vector of other local amenities and environmental conditions, and
@@ -195,11 +212,55 @@ reference "eq:swb-xsection"
 \end_layout
 
 \begin_layout Subsubsection
-Panel data from ESM assessments
+Estimation
+\end_layout
+
+\begin_layout Paragraph
+Ordered models
+\end_layout
+
+\begin_layout Paragraph
+OLS
+\end_layout
+
+\begin_layout Paragraph
+Probit-adapted OLS (?)
+\end_layout
+
+\begin_layout Paragraph
+'Experienced EQ' (?)
 \end_layout
 
 \begin_layout Standard
-In the ESM assessment data we model the wellbeing of individual 
+vP&B-style
+\end_layout
+
+\begin_layout Standard
+maybe
+\end_layout
+
+\begin_layout Standard
+does this go in with results bit?
+\end_layout
+
+\begin_layout Subsubsection
+Valuation
+\end_layout
+
+\begin_layout Subsection
+Panel data from ESM assessments
+\end_layout
+
+\begin_layout Subsubsection
+Model
+\end_layout
+
+\begin_layout Standard
+In the ESM assessment data we model the reported happiness 
+\begin_inset Formula $r$
+\end_inset
+
+ of individual 
 \begin_inset Formula $i$
 \end_inset
 
@@ -215,10 +276,19 @@ In the ESM assessment data we model the wellbeing of individual
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-SWB_{ilt}=\beta_{0i}+\boldsymbol{\beta}_{\mathrm{5}}'\mathbf{c}_{ilt}+\boldsymbol{\beta}_{\mathrm{6}}'\mathbf{a}_{ilt}+\varepsilon_{ilt}\label{eq:swb-panel-1}
+r{}_{ilt}=\beta_{0i}+\boldsymbol{\beta}_{\mathrm{5}}'\mathbf{p}_{ilt}+\boldsymbol{\beta}_{\mathrm{6}}'\mathbf{q}_{ilt}+\varepsilon_{ilt}\label{eq:swb-panel-1}
 \end{equation}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -228,7 +298,7 @@ SWB_{ilt}=\beta_{0i}+\boldsymbol{\beta}_{\mathrm{5}}'\mathbf{c}_{ilt}+\boldsymbo
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-SWB_{ilt}=\alpha_{i}+\boldsymbol{\beta}_{\mathrm{c}}'\mathbf{c}_{ilt}+\boldsymbol{\beta}_{\mathrm{a}}'\mathbf{a}_{ilt}+\varepsilon_{ilt}\label{eq:swb-panel}
+r_{ilt}=\alpha_{i}+\boldsymbol{\beta}_{\mathrm{p}}'\mathbf{p}_{ilt}+\boldsymbol{\beta}_{\mathrm{q}}'\mathbf{q}_{ilt}+\varepsilon_{ilt}\label{eq:swb-panel}
 \end{equation}
 
 \end_inset
@@ -238,81 +308,125 @@ SWB_{ilt}=\alpha_{i}+\boldsymbol{\beta}_{\mathrm{c}}'\mathbf{c}_{ilt}+\boldsymbo
 
 \begin_layout Standard
 where 
-\begin_inset Formula $u$
+\begin_inset Formula $\alpha$
 \end_inset
 
  is an individual-specific constant or fixed effect, 
-\begin_inset Formula $\mathbf{c}$
+\begin_inset Formula $\mathbf{p}$
 \end_inset
 
- is a vector of contextual factors (such as companionship and activity),
- 
-\begin_inset Formula $\mathbf{a}$
+ is a vector of contextual factors such as companionship and activity, 
+\begin_inset Formula $\mathbf{q}$
 \end_inset
 
- is a vector of local amenities and environmental conditions (which in some
- cases vary by time), and 
+ is a vector of local amenities and environmental conditions (which may
+ vary through time), and 
 \begin_inset Formula $\varepsilon$
 \end_inset
 
  is an error term.
- Locations and times are treated as unique.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Estimation
 \end_layout
 
-\begin_layout Standard
-Stata (+ R)
-\end_layout
-
-\begin_layout Subsubsection
-Ordered models and OLS
-\end_layout
-
-\begin_layout Standard
-survey data
-\end_layout
-
-\begin_layout Subsubsection
-Probit-adapted OLS
-\end_layout
-
-\begin_layout Standard
-maybe
-\end_layout
-
-\begin_layout Subsubsection
-'Experienced EQ'
-\end_layout
-
-\begin_layout Standard
-vP&B-style
-\end_layout
-
-\begin_layout Standard
-maybe
-\end_layout
-
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Fixed effects
 \end_layout
 
 \begin_layout Standard
-mappiness
+Unbalanced panel (highly variable t), wide (thousands of groups)
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+Fixed effects, within estimator 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "461 -- 483"
+key "wooldridge:2003"
+
+\end_inset
+
+ or 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "287 -- 293"
+key "greene:2003"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In EMA context, 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "9 -- 10"
+key "schwartz:1998"
+
+\end_inset
+
+ call this a 
+\begin_inset Quotes eld
+\end_inset
+
+pooled within-person regression analysis
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Precisely equivalent to least squares dummy variable model 
+\end_layout
+
+\begin_layout Standard
+Nice properties (no assumption that unobserved individual effects are uncorrelat
+ed with all the explanatory variables --- looks likely to be wrong e.g.
+ what if people with different personality types are attracted to different
+ environments)
+\end_layout
+
+\begin_layout Standard
+Use heteroskedasticity-robust/clustered SEs; consistent even in presence
+ of serial autocorrelation (which seems likely) 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "463"
+key "statacorp:2009"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Why not random effects (uncorrelated unobservables assumption; not interested
+ in the individual-level variables; don't need extra efficiency with massive
+ data)
+\end_layout
+
+\begin_layout Standard
+Why not fancy-pants stuff e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "schwartz:2010"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
 Logit
 \end_layout
 
 \begin_layout Standard
-for spikes!
-\end_layout
-
-\begin_layout Subsection
-Valuation
+for spikes! -- but different model!
 \end_layout
 
 \end_body
