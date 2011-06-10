@@ -1837,7 +1837,7 @@ Weather
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -2301,13 +2301,23 @@ contains
 \end_layout
 
 \begin_layout Subsubsection
-Kernel-weighted proportions and averages
+Kernel-weighted proportions
 \end_layout
 
 \begin_layout Standard
 Measures of the local availability of different land cover types and public
  green spaces, and of local air pollution levels, were calculated for survey
  response locations as kernel-weighted proportions or averages.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+WHY?! Simple theoretical justification...
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2360,27 +2370,80 @@ ed to zero, otherwise all data must be used in calculating all proportions
 \end_layout
 
 \begin_layout Standard
-We calculated approximate kernel-weighted proportions, using PostGIS functions,
- by summing series of appropriately-weighted simple proportions over different
- radii from the central point.
- The 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename kernel_wt_proportion.png
+	lyxscale 40
+	width 14cm
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-WHY?! Simple theoretical justification...
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Illustrated example of the approximation of the Gaussian kernel-weighted
+ proportion of water near a point location.
+ Kernel weights are represented as the height dimension.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:kernel-weighting-example"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-Survey response data was in some cases augmented with
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-LAEI, LCM, OSM, ...
- etc
-\end_layout
+\end_inset
 
-\begin_layout Standard
-Implementation in PostGIS
+We calculated approximate kernel-weighted proportions by summing series
+ of appropriately-weighted simple proportions over different radii from
+ the central point.
+ This approach is visualised in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:kernel-weighting-example"
+
+\end_inset
+
+.
+ The PostGIS functions implementing these calculations are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:kernel-funcs"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:kernel-funcs"
+
+\end_inset
+
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:analysis-appendix"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
