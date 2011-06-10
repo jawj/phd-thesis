@@ -2241,10 +2241,12 @@ Weather: closest in space and time
 \end_layout
 
 \begin_layout Standard
-Weather data was associated with ESM response data by selecting the nearest
- weather station to the response location, and then selecting the weather
- data reported by that station at the moment closest to (either before or
- after) the response time.
+We assume that current weather conditions at one location are correlated
+ with weather conditions a short time earlier or later at nearby locations.
+ ESM response data was therefore associated with weather data by selecting
+ the nearest weather station to the response location, and then selecting
+ the data reported by that station at the moment closest to (either before
+ or after) the response time.
  
 \end_layout
 
@@ -2298,33 +2300,6 @@ contains
  query as above.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-maximum distance and time lapse?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-mention/question implicit assumption about weather correlation with nearby
- and recent weather?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection
 Kernel-weighted proportions and averages
 \end_layout
@@ -2336,19 +2311,63 @@ Measures of the local availability of different land cover types and public
 \end_layout
 
 \begin_layout Standard
+A kernel-weighted proportion measures the area of land around a point that
+ meets specific criteria (for example, is public green space) as a fraction
+ of the area of all the land around that point.
+ These numerator and denominator areas are both weighted, using the selected
+ kernel function, according to proximity to the central point (they can
+ therefore usefully be imagined as three-dimensional volumes, for which
+ the height dimension at any point represents the weighting applied at that
+ point).
+ The kernel function is chosen so that higher weightings are applied to
+ nearer locations.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Similarly, a kernel-weighted average measures the average value of some
+ quantity of interest associated with the land around a point, where this
+ average is again weighted, using a kernel function, by proximity to the
+ central point.
+\end_layout
+
+\end_inset
+
+Common kernels include the uniform --- in which case the quantities become
+ simple proportions or average values within a given radius --- triangular,
+ Gaussian (normal), and Epanechnikov.
+ For a given kernel, one must also select the appropriate bandwidth distance,
+ which determines the rate at which the applied weightings decline with
+ distance.
+ For example, for the Gaussian kernel, one defines the desired standard
+ deviation.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For the Gaussian kernel one may also choose a truncation distance (for example,
+ at two or three standard deviations) beyond which weightings will be approximat
+ed to zero, otherwise all data must be used in calculating all proportions
+ or averages, which is computationally expensive.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We calculated approximate kernel-weighted proportions, using PostGIS functions,
+ by summing series of appropriately-weighted simple proportions over different
+ radii from the central point.
+ The 
+\end_layout
+
+\begin_layout Standard
 WHY?! Simple theoretical justification...
-\end_layout
-
-\begin_layout Standard
-special case -- uniform = average within a radius
-\end_layout
-
-\begin_layout Standard
-triangular (= IDW -- no, not exactly )
-\end_layout
-
-\begin_layout Standard
-Gaussian, Epanechnikov, etc.
 \end_layout
 
 \begin_layout Standard
