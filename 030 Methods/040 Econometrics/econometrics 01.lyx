@@ -336,19 +336,54 @@ Fixed effects
 \end_layout
 
 \begin_layout Standard
-Unbalanced panel (highly variable t), wide (thousands of groups)
+The ESM study data represent a very large, unbalanced panel, with large
+ N (the number of individuals) and highly variable T (the number of assessments
+ per individual).
 \end_layout
 
 \begin_layout Standard
-Fixed effects, within estimator 
-\begin_inset CommandInset citation
-LatexCommand citet
-after "461 -- 483"
-key "wooldridge:2003"
+We use this data to estimate the model in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:swb-panel"
 
 \end_inset
 
- or 
+ using the fixed effects or within estimator,
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In the EMA literature this approach may be described as 
+\begin_inset Quotes eld
+\end_inset
+
+pooled within-person regression
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "9 -- 10"
+key "schwartz:1998"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ of which 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "481 -- 489"
+key "wooldridge:2009"
+
+\end_inset
+
+ and 
 \begin_inset CommandInset citation
 LatexCommand citet
 after "287 -- 293"
@@ -356,43 +391,45 @@ key "greene:2003"
 
 \end_inset
 
-
+ provide standard treatments, and which in its basic form is exactly equivalent
+ to OLS regression in which a dummy variable is included for each individual
+ (the 'least-squares dummy variable regression').
+ 
 \end_layout
 
 \begin_layout Standard
-In EMA context, 
+Using this estimator we cannot include in our model any time-invariant individua
+l-level influences on reported happiness, such as personality characteristics
+ or gender, since all such influences are swept up by the individual-level
+ fixed effects.
+ However, the estimator allows for arbitrary correlation between any individual
+ effects (including unobserved effects) and the observed explanatory variables.
+ This is an important property, since such correlations seem likely to exist
+ in our data.
+ For example, personality characteristics may very plausibly be associated
+ with the companionship, activity and environment that a person can and
+ does choose at any moment in time.
+\end_layout
+
+\begin_layout Standard
+Basic, pooled OLS fixed effects estimation requires that the errors 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ are homoskedastic and not serially correlated 
 \begin_inset CommandInset citation
-LatexCommand citet
-after "9 -- 10"
-key "schwartz:1998"
+LatexCommand citep
+after "483"
+key "wooldridge:2009"
 
 \end_inset
 
- call this a 
-\begin_inset Quotes eld
-\end_inset
-
-pooled within-person regression analysis
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Precisely equivalent to least squares dummy variable model 
-\end_layout
-
-\begin_layout Standard
-Nice properties (no assumption that unobserved individual effects are uncorrelat
-ed with all the explanatory variables --- looks likely to be wrong e.g.
- what if people with different personality types are attracted to different
- environments)
-\end_layout
-
-\begin_layout Standard
-Use heteroskedasticity-robust/clustered SEs; consistent even in presence
- of serial autocorrelation (which seems likely) 
+.
+ The serial correlation restriction is likely to be problematic for our
+ data, since it seems highly plausible that unobserved influences on a person's
+ happiness may persist from one response to the next.
+ Therefore standard errors are calculated using the cluster-robust/Huber/White/s
+andwich estimator 
 \begin_inset CommandInset citation
 LatexCommand citep
 after "463"
@@ -400,25 +437,50 @@ key "statacorp:2009"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Why not random effects (uncorrelated unobservables assumption; not interested
- in the individual-level variables; don't need extra efficiency with massive
- data)
-\end_layout
-
-\begin_layout Standard
-Why not fancy-pants stuff e.g.
- 
+, which is robust in the face of heteroskedasticity and serial correlation
+ of the errors 
 \begin_inset CommandInset citation
-LatexCommand citet
-key "schwartz:2010"
+LatexCommand citep
+after "164"
+key "stock:2008"
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Paragraph
+Estimators not used
+\end_layout
+
+\begin_layout Standard
+The random effects estimator is also a common model in panel data analysis.
+ The random effects estimator is more efficient, since it does not discard
+ data on the variation between individuals.
+ It also enables the analysis of time-invariant individual-level effects.
+ However, we do not use the random effects estimator because (a) individual-leve
+l variables are not of primary interest in this study; (b) our data set
+ is large enough that efficiency considerations are not key; and (c) the
+ assumption that unobserved individual effects are uncorrelated with any
+ of the explanatory variables, which is required for the random effects
+ estimator to be unbiased, does not seem reasonable (for reasons outlined
+ above).
+\end_layout
+
+\begin_layout Standard
+Multi-level mixed-effects models estimated using maximum likelihood techniques
+ have also been favoured for EMA data analysis by some researchers 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "schwartz:1998,schwartz:2010"
+
+\end_inset
+
+.
+ We do not use these models because they are complex, their use with such
+ a large data set would be highly computationally expensive (especially
+ since much tuning and many runs may be necessary to achieve convergence),
+ and our main hypotheses can be addressed without them.
 \end_layout
 
 \begin_layout Paragraph
