@@ -2739,8 +2739,8 @@ In addition to the standard IPAQ items, we asked respondents to estimate
  the proportion of time spent in different forms of leisure-time exercise
  that was spent in natural environments.
  Although the addition of items to a standard questionnaire might compromise
- of the comparability of our response data with that collected elsewhere,
- the additional items were important for this research.
+ the comparability of our response data with that collected elsewhere, the
+ additional items were important for this research.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3200,8 +3200,8 @@ Paging vs.
 
 \begin_layout Standard
 The large number of items was judged to count against a one-item-per-page
- design, based on of the number of extra mouse clicks that would be required:
- items were instead assembled into thematic pages, some of which required
+ design, based on of the number of extra mouse clicks that would be required.
+ Items were instead assembled into thematic pages, some of which required
  scrolling.
 \begin_inset Foot
 status collapsed
@@ -3277,7 +3277,7 @@ The introductory text was kept very brief (following feedback from the pilot
 \end_layout
 
 \begin_layout Standard
-The survey was conducted in compliance with the London School of Economics
+The surveys were conducted in compliance with the London School of Economics
  research ethics policy.
  Respondents were informed that by completing the surveys they gave their
  consent to serving as a subject in the research study (pages 
@@ -3314,10 +3314,11 @@ reference "app:survey-screenshots"
 \end_inset
 
 ).
- To ensure confidentiality of responses, the London survey was conducted
- over an encrypted (https) connection.
- The hosting server was fully updated, firewalled, and accessible to the
- researcher only via an encrypted (SSH) shell.
+ To ensure confidentiality of responses on the London survey --- in which
+ participants identified their home location very precisely --- this survey
+ was conducted over an encrypted (https) connection.
+ In both cases the hosting server was fully updated, firewalled, and accessible
+ to the researcher only via an encrypted (SSH) shell.
 \end_layout
 
 \begin_layout Section
