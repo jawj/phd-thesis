@@ -47,8 +47,8 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize 11
-\spacing other 1.1499999999999999
+\paperfontsize 10
+\spacing onehalf
 \use_hyperref true
 \pdf_title "Happiness and Environmental Quality"
 \pdf_author "George MacKerron"
@@ -111,11 +111,56 @@
 \begin_body
 
 \begin_layout Title
-\paragraph_spacing single
 \noindent
+\begin_inset Graphics
+	filename LSE_logo_no_strokes.pdf
+	scale 66
+
+\end_inset
+
 
 \series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
 Happiness and Environmental Quality
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Author
@@ -125,23 +170,11 @@ George MacKerron
 \begin_inset Newline newline
 \end_inset
 
-Department of Geography & Environment
-\begin_inset Newline newline
-\end_inset
-
-London School of Economics & Political Science
-\begin_inset Newline newline
-\end_inset
-
 
 \begin_inset Newline newline
 \end_inset
 
-Supervisor: Dr Susana Mourato
-\begin_inset Newline newline
-\end_inset
 
-Review supervisor: Dr Steve Gibbons
 \begin_inset Newline newline
 \end_inset
 
@@ -150,31 +183,27 @@ Review supervisor: Dr Steve Gibbons
 \end_inset
 
 
-\begin_inset Graphics
-	filename LSE_logo_no_strokes.pdf
-	scale 60
+\begin_inset Newline newline
+\end_inset
 
+
+\begin_inset Newline newline
 \end_inset
 
 
 \end_layout
 
 \begin_layout Date
-\paragraph_spacing single
 \noindent
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-today
-\end_layout
-
+A thesis submitted to the Department of Geography & Environment 
+\begin_inset Newline newline
 \end_inset
 
+of the London School of Economics 
+\begin_inset Newline newline
+\end_inset
 
+for the degree of Doctor of Philosophy, London, August 2011
 \end_layout
 
 \begin_layout Standard
@@ -184,18 +213,43 @@ today
 
 \end_layout
 
-\begin_layout Standard
-\paragraph_spacing single
-\noindent
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
+\begin_layout Section*
+Declaration
+\end_layout
 
+\begin_layout Standard
+I certify that the thesis I have presented for examination for the PhD degree
+ of the London School of Economics and Political Science is solely my own
+ work other than where I have clearly indicated that it is the work of others
+ (in which case the extent of any work carried out jointly by me and any
+ other person is clearly identified in it).
+\end_layout
+
+\begin_layout Standard
+The copyright of this thesis rests with the author.
+ Quotation from it is permitted, provided that full acknowledgement is made.
+ This thesis may not be reproduced without the prior written consent of
+ the author.
+\end_layout
+
+\begin_layout Standard
+I warrant that this authorization does not, to the best of my belief, infringe
+ the rights of any third party.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
 \end_layout
 
+\begin_layout Section*
+Abstract
+\end_layout
+
 \begin_layout Standard
+Abstract here...
 \begin_inset Newpage newpage
 \end_inset
 
@@ -223,10 +277,49 @@ status open
 
 tre, and Rich Aston; testers of the iPhone app; and all Mappiness study
  participants.
- This work was supported by the UK Economic & Social Research Council, grant
+ 
+\end_layout
+
+\begin_layout Standard
+This work was supported by the UK Economic & Social Research Council, grant
  number PTA-031-2006-00280.
  Additional funding for the UK survey was provided by the United Nations
  Environment Programme World Conservation Monitoring Centre (UNEP WCMC).
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
