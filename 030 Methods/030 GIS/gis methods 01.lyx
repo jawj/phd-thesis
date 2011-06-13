@@ -1019,6 +1019,21 @@ Air pollutant data for Greater London is provided by the modelling maps
 \end_layout
 
 \begin_layout Standard
+produced by the Environmental Research Group, Kings College London, using
+ the LAEI 2008
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kelly:2011"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
