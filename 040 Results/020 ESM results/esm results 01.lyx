@@ -174,6 +174,13 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+Response data inclusion criteria with cumulative effect on sample size
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Response-inclusion-criteria"
+
+\end_inset
+
 
 \end_layout
 
@@ -504,24 +511,10 @@ and complete weather data is available for within 3 hours of response time
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Graph/describe the validity criteria, and state how many responses each
- criterion rules out, and how many in total
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -539,6 +532,13 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+Response lag (non-responses omitted)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Response-lag"
+
+\end_inset
+
 
 \end_layout
 
@@ -757,6 +757,86 @@ Map/distribution
 Feelings
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+(a)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename happy_dist.pdf
+	width 10cm
+	BoundingBox 2.7000000000000002cm 15.6cm 16.699999999999999cm 27cm
+	clip
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(b)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename relaxed_dist.pdf
+	width 10cm
+	BoundingBox 2.7000000000000002cm 15.6cm 16.699999999999999cm 26cm
+	clip
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(c)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename awake_dist.pdf
+	width 10cm
+	BoundingBox 2.7000000000000002cm 15.6cm 16.699999999999999cm 26cm
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Distributions of feelings responses
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Companionship
 \end_layout
@@ -775,6 +855,18 @@ Photos
 
 \begin_layout Subsubsection
 Noise
+\end_layout
+
+\begin_layout Subsection
+Spatial variables
+\end_layout
+
+\begin_layout Subsubsection
+Land cover
+\end_layout
+
+\begin_layout Subsubsection
+Weather
 \end_layout
 
 \begin_layout Section
