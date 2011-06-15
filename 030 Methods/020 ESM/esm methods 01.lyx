@@ -848,6 +848,13 @@ n --- no mention is made in the surveys or in any in-app feedback of the
 
 \begin_layout Section
 Signalling protocol
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Signalling-protocol"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1085,7 +1092,7 @@ key "csikszentmihalyi:2001a"
  signalled all participants between 7.30am and 10.30pm.
  However, this approach is far from ideal.
  First, it requires that the signalling hours be truncated at each end to
- accommodate a large majority of waking and sleeping times.
+ accommodate the majority of waking and sleeping times.
  Most participants will thus not be signalled across the full length of
  their waking days, compromising the representativeness of the sample of
  experiences 
@@ -1153,6 +1160,13 @@ key "beal:2003"
 
 \begin_layout Subsection
 Reachability and response
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Reachability-and-response"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3193,17 +3207,7 @@ The specifications of the GPS receiver in the iPhone are not published,
 \begin_inset Quotes erd
 \end_inset
 
- --- is also not stated
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Is it, for example, a 95% confidence interval?
-\end_layout
-
-\end_inset
-
-.
+ --- is also not stated (is it, for example, a 95% confidence interval?).
  The nature of the error in location estimates is therefore not known with
  certainty.
  However, everyday use of the device for other purposes indicates that the
@@ -3263,8 +3267,8 @@ status collapsed
 \begin_layout Plain Layout
 Measuring the sound level in this situation would interrupt the participant's
  listening.
- In addition, the external sound level would arguably not be relevant if
- the participant were using headphones.
+ In addition, the external sound level is arguably not relevant if the participa
+nt is using headphones.
 \end_layout
 
 \end_inset
@@ -3304,7 +3308,11 @@ key "apple-inc.:2010d"
 \end_inset
 
 , to which we add an overlay displaying instructions.
- Once a photo has been taken, we resize it down to a small size --- 320x240
+ Once a photo has been taken, we resize it to much smaller dimensions ---
+ 
+\begin_inset Formula $320\times240$
+\end_inset
+
  pixels --- and obtain a compressed JPEG representation for speedy transmission
  over the network.
 \end_layout
@@ -3316,11 +3324,7 @@ Different iPhone models have different camera hardware: some later models
  Unfortunately, it is not possible to retrieve metadata from the photo,
  so no indication of light level (via exposure settings) or of the use of
  the LED is available.
- 
-\end_layout
-
-\begin_layout Standard
-The iPhone also has a light sensor, which is used to vary the screen brightness
+ The iPhone also has a light sensor, which is used to vary the screen brightness
  in response to background condition.
  Unfortunately this sensor's output is also inaccessible to application
  code.
