@@ -46,3 +46,16 @@ disp %12.2fc 100 * r(N) / $n
 
 gen valid = num_activities > 0 & !missing(place, place2) & num_activities < 13 & !missing(sent_beep_id) & response_lag < 60 * 60 & response_duration < 60 * 5 & !missing(lcm_dn) & ((! outdoors) | loc_h_acc <= 250) & abs(obs_time_diff_s) < 60 * 60 * 3 & !missing(windspeed)
 
+
+gen     realistic_lag_mins = response_lag / 60
+replace realistic_lag_mins = . if realistic_lag_mins < -15
+replace realistic_lag_mins = 0 if realistic_lag_mins < 0
+
+set scheme s1mono
+
+cdfplot realistic_lag_mins if realistic_lag_mins < 720 & mod(id, 200) == 0, ///
+  xtitle("Time since signal (minutes)") ytitle("Cumulative probability of response") ///
+  xlabel(0(60)720) xline(60, lwidth(thin)) yline(1, lpattern(dotted) lwidth(thin)) 
+graph export "S:\response_lag.ps", as(ps) replace
+
+
