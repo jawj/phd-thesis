@@ -239,7 +239,7 @@ cal coordinates, which may each have an associated value or values.
 \begin_inset Float table
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -1016,10 +1016,18 @@ Air pollution
 \begin_layout Standard
 Air pollution values within Greater London are calculated using the modelling
  maps produced by the Environmental Research Group, Kings College London.
- These maps feed data on mobile, point and area pollutant sources from the
- London Atmospheric Emissions Inventory (LAEI) 2006 into a dispersion model
- incorporating weather conditions and street canyon locations, providing
- annual average concentration estimates for nitrogen dioxide (NO
+ These maps are the product of a dispersion model using data on mobile,
+ point and area pollutant sources from the London Atmospheric Emissions
+ Inventory (LAEI) 2006, weather conditions and street canyon locations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kelly:2011"
+
+\end_inset
+
+.
+ They provide annual average estimates in 20m cells of the concentrations
+ of nitrogen dioxide (NO
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -1028,12 +1036,14 @@ Air pollution values within Greater London are calculated using the modelling
 
 \end_inset
 
-) and particulates less than 10 microns in diameter (PM10) in 20m cells
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "kelly:2011"
+) and particulates less than 10 microns in diameter (PM10), and of the number
+ of days of the year on which PM10 concentrations exceeded the EU limit
+ of 50
+\begin_inset Formula $\mu$
+\end_inset
 
+g/m
+\begin_inset Formula $^{3}$
 \end_inset
 
 .
