@@ -1,0 +1,98 @@
+
+set more off
+set notifyuser on
+clear
+clear matrix
+set mem 3000m
+use "s:\all_data_2011_06_15_augmented.dta"
+
+
+set scheme s1mono
+
+
+* feelings
+
+preserve
+keep if valid
+
+hist feel_hpy_100 if valid, width(2) xtitle("Happy: self-rating")
+graph export "S:\happy_dist.ps", as(ps) replace
+
+gen feel_rlx_100 = feel_rlx * 100
+hist feel_rlx_100 if valid, width(2) xtitle("Relaxed: self-rating")
+graph export "S:\relaxed_dist.ps", as(ps) replace
+
+gen feel_awk_100 = feel_awk * 100
+hist feel_awk_100 if valid, width(2) xtitle("Awake: self-rating")
+graph export "S:\awake_dist.ps", as(ps) replace
+
+restore
+
+sum feel_hpy_100 if valid
+sum feel_rlx_100 if valid
+sum feel_awk_100 if valid
+
+
+* beep settings
+
+\a
+\f '\t'
+select 
+  count(1) as c, 
+  round(count(1) / 21947.0 * 100, 2) as p,
+  beeps_not_before || ' -- ' || (beeps_not_after + interval '10 minutes') as t
+from users u, xtreg_user_ids x 
+where u.id = x.user_id 
+group by t order by c desc;
+
+select 
+  count(beeps_per_day) as c,
+  round(count(1) / 21947.0 * 100, 2) as p,
+  beeps_per_day b
+from users u, xtreg_user_ids x 
+where u.id = x.user_id 
+group by b order by c desc; 
+
+select 
+  count(beeps_sound) as c,
+  round(count(1) / 21947.0 * 100, 2) as p,
+  beeps_sound b
+from users u, xtreg_user_ids x 
+where u.id = x.user_id 
+group by b order by c desc;
+
+
+* response vars
+
+set notifyuser off
+#delimit ;
+fsum 
+  lctout_* b_lctout_conturb 
+  do_*
+  with_*
+  at_home at_work elsewhere
+  indoors vehicle outdoors
+  rseq_0 rseq_10 rseq_50
+  wkdayhour_* wkendhour_*
+  is_daylight_out
+  sunny_out rain_out snow_out fog_out b_temp_*_out temp_*_out b_wind_*_out wind_*_out 
+  
+if valid
+,
+  pctvar(*)
+  stats(mean sum)
+  format(%10.2f)
+  decsum
+  uselabel
+;
+#delimit cr
+
+then, replace: 
+^ *([^|]+) \| +[0-9]+ +([0-9.]+) +([0-9]+)\..*
+$1\t$3\t$2
+
+* alone
+count if valid & ! with_partner & ! with_child & ! with_relative & ! with_peers & ! with_client & ! with_friend & ! with_other
+
+
+
