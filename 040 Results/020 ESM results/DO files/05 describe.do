@@ -95,4 +95,34 @@ $1\t$3\t$2
 count if valid & ! with_partner & ! with_child & ! with_relative & ! with_peers & ! with_client & ! with_friend & ! with_other
 
 
+* photos
+
+tab pic_received if valid
+tab pic_received if valid & indoors
+tab pic_received if valid & outdoors
+tab pic_received if valid & vehicle
+
+
+* device
+
+tab device
+tab device if valid
+encode device, generate(device_code)
+
+
+* noise
+
+count if valid & missing(vol_pk_90)
+count if valid & missing(vol_pk_90) & (do_music | do_speech)
+
+set scheme s1mono
+hist vol_pk_90 if valid & vol_pk_90 > -70, width(2) xtitle("90th percentile peak volume (dB)") ylabel(#5)
+
+count if valid & vol_pk_90 <= -70 
+
+
+
+
+
+
 

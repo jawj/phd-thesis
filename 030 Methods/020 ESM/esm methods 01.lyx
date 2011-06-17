@@ -2373,6 +2373,13 @@ reference "fig:scale-controls"
 
 \begin_layout Subsubsection
 Settings
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:app-settings"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

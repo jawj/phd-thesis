@@ -26,9 +26,13 @@ replace vehicle = . if missing(place)
 
 encode place, gen(in_out_vehicle)
 
-gen vol_av50_in = vol_ave_50 * indoors
+gen vol_av50_in  = vol_ave_50 * indoors
 gen vol_av50_out = vol_ave_50 * outdoors
 gen vol_av50_veh = vol_ave_50 * vehicle 
+
+gen vol_pk90_in  = vol_pk_90 * indoors
+gen vol_pk90_out = vol_pk_90 * outdoors
+gen vol_pk90_veh = vol_pk_90 * vehicle
 
 gen at_home     =  place2 == "home"
 replace at_home = . if missing(place2)
