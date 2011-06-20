@@ -4392,7 +4392,7 @@ Distributions of feelings responses
 \end_layout
 
 \begin_layout Subsubsection
-Companionship and activities
+Companionship
 \end_layout
 
 \begin_layout Standard
@@ -4968,6 +4968,10 @@ reference "tab:Frequencies-of-companionship"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsubsection
+Activities
 \end_layout
 
 \begin_layout Standard
@@ -6502,6 +6506,10 @@ reference "tab:Frequencies-of-activities"
  
 \end_layout
 
+\begin_layout Paragraph
+Comparison to UK Time Use Survey 2000
+\end_layout
+
 \begin_layout Standard
 Because of the sampling limitations in this study --- regarding both participant
  characteristics and the limits on when participants can and will respond
@@ -6513,55 +6521,77 @@ reference "sub:Reachability-and-response"
 \end_inset
 
  --- it is interesting to compare our reported activities with those recorded
- for random population samples in diary-based studies.
- Precisely comparable data does not exist, but we have used UK Time Use
- Survey 2000 (UKTUS) data to estimate, where possible, the time spent in
- different activities.
- The following three considerations apply to this comparison:
+ for a random population sample in diary-based study.
+ We have used UK Time Use Survey 2000 (UKTUS) data 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "office-for-national-statistics:2005"
+
+\end_inset
+
+ to estimate some approximate figures for comparison.
+ The following three general points apply.
 \end_layout
 
 \begin_layout Standard
 First, the UKTUS data we use list the average number of minutes in each
  24-hour (1440-minute) period that participants spend in different activities.
  Because Mappiness only signals participants during waking hours, we subtract
- the time UKTUS respondents report they spend sleeping (507 minutes) from
- the day length, and calculate the percentage of daily waking time (933
- minutes) spent by UKTUS respondents in each activity.
+ the time UKTUS respondents report they spend sleeping from the day length,
+ and calculate the percentage of daily waking time (933 minutes) spent by
+ UKTUS respondents in each activity.
 \end_layout
 
 \begin_layout Standard
 Second, the UKTUS data categorise activities according to a detailed, three-leve
-l classification.
+l classification, reproduced in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:uktus-activities-classification"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:uktus-activities-classification"
+
+\end_inset
+
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:esm-results-appendix"
+
+\end_inset
+
+.
  We do our best to aggregate these categories to recreate the Mappiness
- activity types, but this is not possible for all activities.
+ activity types, but this is not possible for all activities, and in some
+ cases results in a clearly inexact match.
 \end_layout
 
 \begin_layout Standard
-Finally, the UKTUS data concern only what respondents consider as the 'main'
- activity undertaken at any moment, whereas Mappiness asks about all activities
- without prioritisation.
+Finally, the UKTUS data concern only what is considered as the 'main' activity
+ undertaken at any moment, whereas Mappiness asks about all activities without
+ prioritisation.
  All other things being equal, we would therefore expect the proportions
  of time spent in each activity in the Mappiness data to be greater than
  in their UKTUS comparator, especially for potentially subsidiary or background
- activities such as listening to music.
- 
+ activities.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Activity comparisons with UK Time Use Survey 2000 'main activities'.
+Activity comparisons with UK Time Use Survey 2000 'main' activities.
  Differences greater than a factor of two are highlighted in 
 \series bold
 boldface
@@ -6631,7 +6661,14 @@ UKTUS % of waking minutes
 \begin_layout Plain Layout
 
 \emph on
-UKTUS codes
+UKTUS codes (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:uktus-activities-classification"
+
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -7533,7 +7570,7 @@ Walking, hiking
 \begin_inset Text
 
 \begin_layout Plain Layout
-611
+611**
 \end_layout
 
 \end_inset
@@ -7649,7 +7686,7 @@ Hobbies, arts, crafts
 \begin_inset Text
 
 \begin_layout Plain Layout
-720, 721, 729**
+720, 721, 729***
 \end_layout
 
 \end_inset
@@ -7943,7 +7980,7 @@ Theatre, dance, concert
 \begin_inset Text
 
 \begin_layout Plain Layout
-522***
+522****
 \end_layout
 
 \end_inset
@@ -8005,7 +8042,7 @@ Meditating, religious activities
 \begin_inset Text
 
 \begin_layout Plain Layout
-432****
+432*****
 \end_layout
 
 \end_inset
@@ -8215,6 +8252,8 @@ Hunting, fishing
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 0.03
 \end_layout
 
@@ -8225,17 +8264,7 @@ Hunting, fishing
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\series bold
  0.11 
 \end_layout
 
@@ -8279,11 +8308,11 @@ This 'social life' super-category is probably narrower than the Mappiness
 \begin_inset Newline newline
 \end_inset
 
- **
+**
 \begin_inset space ~
 \end_inset
 
-Hobbies only.
+Excludes 'trips with a special purpose', such as commuting.
 \begin_inset space ~
 \end_inset
 
@@ -8295,6 +8324,14 @@ Hobbies only.
 \begin_inset space ~
 \end_inset
 
+Hobbies only.
+\begin_inset Newline newline
+\end_inset
+
+****
+\begin_inset space ~
+\end_inset
+
 Dance not included.
 \begin_inset space ~
 \end_inset
@@ -8303,7 +8340,7 @@ Dance not included.
 \begin_inset space ~
 \end_inset
 
- ****
+ *****
 \begin_inset space ~
 \end_inset
 
@@ -8312,7 +8349,196 @@ Religious activities only.
 
 \end_inset
 
+The available comparisons are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:activity-comparisons"
 
+\end_inset
+
+.
+ In general, the figures appear encouragingly similar.
+ Figures differing by more than a factor of two are highlighted in the table,
+ and discussed below.
+ In general, such differences appear to have plausible (though not provable)
+ explanations in terms of the activity definitions and/or disparities in
+ demographic profile: there is no need to invoke experience sampling issues,
+ although these might also contribute.
+\end_layout
+
+\begin_layout Description
+Talking,
+\begin_inset space ~
+\end_inset
+
+chatting,
+\begin_inset space ~
+\end_inset
+
+socialising This activity is substantially more prevalent in the Mappiness
+ data set (15% vs 6%).
+ This may be the result of our inclusion of the very general activity 'talking',
+ which has no direct equivalent in the UKTUS classification, and of the
+ fact that socialising might frequently be considered secondary to a more
+ specific activity, and thus not captured by the UKTUS 'main' activity.
+\end_layout
+
+\begin_layout Description
+Computer
+\begin_inset space ~
+\end_inset
+
+games,
+\begin_inset space ~
+\end_inset
+
+iPhone
+\begin_inset space ~
+\end_inset
+
+games This activity appears over ten times more prevalent amongst our participan
+ts than in the UKTUS sample.
+ This may reflect: the increasing reach of technology over the ten years
+ separating the studies; gaming occurring as a secondary activity, such
+ as while travelling; and, of course, the fact that every single one of
+ our participants has access to a gaming device.
+\end_layout
+
+\begin_layout Description
+Sick
+\begin_inset space ~
+\end_inset
+
+in
+\begin_inset space ~
+\end_inset
+
+bed Again, this activity appears over ten times more common amongst Mappiness
+ users.
+ Given the young and wealthy demographic profile of Mappiness participants,
+ this initially appears surprising.
+ However, the UKTUS state clearly that this category is only 
+\begin_inset Quotes eld
+\end_inset
+
+for sick, elderly or disabled in bed, 
+\emph on
+when no other activity is specified
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "143, emphasis ours"
+key "office-for-national-statistics:2003"
+
+\end_inset
+
+.
+ Therefore respondents who were also reading, eating, or watching TV, for
+ example, would be included in our classification but not the UKTUS one.
+ It also seems possible that individuals suffering from long-term illness
+ would be differentially attracted to participating in a voluntary wellbeing
+ study such as Mappiness.
+\end_layout
+
+\begin_layout Description
+Walking,
+\begin_inset space ~
+\end_inset
+
+hiking This activity is more common in our data (1.2% vs 0.4%).
+ However, the Mappiness category covers all walking activity, while the
+ UKTUS data excludes 'trips with a special purpose (e.g.
+ on foot to work)' 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "171"
+key "office-for-national-statistics:2003"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+Hobbies,
+\begin_inset space ~
+\end_inset
+
+arts,
+\begin_inset space ~
+\end_inset
+
+crafts Again, this is much more common in the Mappiness data (0.9% vs.
+ 0.1%).
+ The UKTUS category does not include arts and crafts, however.
+ The discrepancy may also be of demographic origin.
+\end_layout
+
+\begin_layout Description
+Match,
+\begin_inset space ~
+\end_inset
+
+sporting
+\begin_inset space ~
+\end_inset
+
+event The disparity here (0.5% in Mappiness vs 0.1% in UKTUS) could result
+ from Mappiness participants including televised sport in their responses.
+ Watching sport on TV is not counted by UKTUS 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "169"
+key "office-for-national-statistics:2003"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Description
+Theatre,
+\begin_inset space ~
+\end_inset
+
+dance,
+\begin_inset space ~
+\end_inset
+
+concert Again, this activity is more prevalent amongst Mappiness users (0.3%
+ vs 0.1%).
+ This might relate to demographic factors.
+\end_layout
+
+\begin_layout Description
+Gardening,
+\begin_inset space ~
+\end_inset
+
+allotment Unusually, this activity is substantially more common in the UKTUS
+ data (1% vs 0.2%).
+ This may well be linked to the lack of older and retired people in our
+ sample.
+ There might also be experience sampling explanations, however: gardeners
+ may not be possession of their iPhone; might not hear the signal above
+ the noise of garden equipment such as lawnmowers; or may be unable to respond
+ with dirty hands or while wearing gloves.
+ 
+\end_layout
+
+\begin_layout Description
+Hunting,
+\begin_inset space ~
+\end_inset
+
+fishing This activity is also more prevalent in the UKTUS data (1% vs 0.03%).
+ Again, this may have age-related and/or experience sampling causes.
 \end_layout
 
 \begin_layout Subsubsection

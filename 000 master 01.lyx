@@ -499,6 +499,16 @@ filename "030 Methods/030 GIS/gis appendix 01.lyx"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "040 Results/020 ESM results/esm results appendix 01.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
