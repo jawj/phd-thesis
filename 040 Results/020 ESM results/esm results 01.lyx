@@ -650,7 +650,32 @@ Settings
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Top 25 signalling periods, considering only the most recent setting for
+ each participant (these account for 77% of participants).
+ Default is indicated in 
+\series bold
+boldface
+\series default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:signalling-period-settings"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \noindent
@@ -2591,31 +2616,6 @@ Signalling period
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Top 25 signalling periods, considering only the most recent setting for
- each participant (these account for 77% of participants).
- Default is indicated in 
-\series bold
-boldface
-\series default
-.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:signalling-period-settings"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -2623,6 +2623,30 @@ name "tab:signalling-period-settings"
 wide false
 sideways false
 status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Signals per day, considering only the most recent setting for each participant.
+ Default is indicated in 
+\series bold
+boldface
+\series default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:signalling-frequency-settings"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \noindent
@@ -3035,30 +3059,6 @@ Signals per day
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Signals per day, considering only the most recent setting for each participant.
- Default is indicated in 
-\series bold
-boldface
-\series default
-.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:signalling-frequency-settings"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -3066,6 +3066,30 @@ name "tab:signalling-frequency-settings"
 wide false
 sideways false
 status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Signalling sound, considering only the most recent setting for each participant.
+ Default is indicated in 
+\series bold
+boldface
+\series default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:signalling-sound-settings"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \noindent
@@ -3667,30 +3691,6 @@ Referee
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Signalling sound, considering only the most recent setting for each participant.
- Default is indicated in 
-\series bold
-boldface
-\series default
-.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:signalling-sound-settings"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
