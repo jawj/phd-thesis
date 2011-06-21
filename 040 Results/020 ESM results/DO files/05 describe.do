@@ -121,8 +121,22 @@ hist vol_pk_90 if valid & vol_pk_90 > -70, width(2) xtitle("90th percentile peak
 count if valid & vol_pk_90 <= -70 
 
 
+* demographics
 
+preserve
+keep if valid
+duplicates drop user_id, force
 
+gen incchange = .
+replace incchange = 0 if missing(incchangeany)
+replace incchange = incchangeup if !missing(incchangeup)
+replace incchange = - incchangedown if !missing(incchangedown)
+replace incchange = . if !missing(incchangedown) & !missing(incchangeup)
 
+tab1 health asthma male mrg rel work adults kids hhinc incchange, missing
 
+set scheme s1mono
+hist ls, discrete frequency xtitle("Life satisfaction") ylabel(#10)
+hist born, discrete frequency xtitle("Year of birth") ylabel(#10) xlabel(#12)
 
+restore

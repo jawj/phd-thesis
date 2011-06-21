@@ -1,4 +1,10 @@
 
+label define healthlabels 1 "Poor" 2 "Fair" 3 "Good" 4 "Very good" 5 "Excellent"
+label values health healthlabels
+
+label define incomelabels 4 "Under £8,000" 10 "£8,000 -- £11,999" 14 "£12,000 -- £15,999" 18 "£16,000 -- £19,999" 22 "£20,000 -- £23,999" 28 "£24,000 -- £31,999" 36 "£32,000 -- £39,999" 48 "£40,000 -- £55,999" 64 "£56,000 -- £71,999" 84 "£72,000 -- £95,999" 108 "£96,000 or more"
+label values hhinc incomelabels
+
 label variable lctout_marine    "Marine and coastal margins" 
 label variable lctout_watery    "Freshwater, wetlands and flood plains" 
 label variable lctout_mountain  "Mountains, moors and heathland" 
