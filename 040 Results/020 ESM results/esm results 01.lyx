@@ -610,7 +610,7 @@ unprompted responses
 \end_layout
 
 \begin_layout Standard
-beep vs response (52% in 1 hour)
+beep vs response (52.46% in 1 hour)
 \end_layout
 
 \begin_layout Subsection
@@ -2619,9 +2619,6 @@ name "tab:signalling-period-settings"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -3065,9 +3062,6 @@ name "tab:signalling-frequency-settings"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -3705,6 +3699,51 @@ name "tab:signalling-sound-settings"
 
 \end_inset
 
+The most recent signalling settings chosen by participants contributing
+ at least one valid response are shown in Tables 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:signalling-period-settings"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:signalling-frequency-settings"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:signalling-sound-settings"
+
+\end_inset
+
+.
+ In all cases, the default setting is by a large margin the most popular.
+ This may be a demonstration of the phenomenon of 'sticky defaults' 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "thaler:2003"
+
+\end_inset
+
+, but we cannot rule out that the defaults just happen also to be the options
+ the largest number of participants would have chosen for themselves.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Note on hours: not always the full waking day?
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -3863,18 +3902,8 @@ name "tab:Health-status"
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-#
+\emph on
+# of participants
 \end_layout
 
 \end_inset
@@ -3884,18 +3913,8 @@ name "tab:Health-status"
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-%
+\emph on
+% of participants
 \end_layout
 
 \end_inset
@@ -4494,18 +4513,8 @@ name "tab:income"
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-#
+\emph on
+# of participants
 \end_layout
 
 \end_inset
@@ -4515,18 +4524,8 @@ name "tab:income"
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-%
+\emph on
+% of participants
 \end_layout
 
 \end_inset
@@ -6316,18 +6315,8 @@ name "tab:demographic-characteristics"
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-#
+\emph on
+# of participants
 \end_layout
 
 \end_inset
@@ -6337,18 +6326,8 @@ name "tab:demographic-characteristics"
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-%
+\emph on
+% of participants
 \end_layout
 
 \end_inset
