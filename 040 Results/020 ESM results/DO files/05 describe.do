@@ -136,7 +136,7 @@ replace incchange = . if !missing(incchangedown) & !missing(incchangeup)
 tab1 health asthma male mrg rel work adults kids hhinc incchange, missing
 
 set scheme s1mono
-hist ls, discrete frequency xtitle("Life satisfaction") ylabel(#10)
-hist born, discrete frequency xtitle("Year of birth") ylabel(#10) xlabel(#12)
+hist ls, discrete frequency xtitle("Life satisfaction") ylabel(#10) xlabel(1(1)10)
+hist born if born > 1900, discrete frequency xtitle("Year of birth") ylabel(#10) xlabel(1920(10)2000)
 
 restore

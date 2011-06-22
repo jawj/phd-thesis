@@ -650,7 +650,7 @@ Settings
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -3730,7 +3730,7 @@ key "thaler:2003"
 
 \end_inset
 
-, but we cannot rule out that the defaults just happen also to be the options
+, but we cannot rule out that the defaults happen also to be the options
  the largest number of participants would have chosen for themselves.
 \end_layout
 
@@ -3850,7 +3850,17 @@ name "fig:esm-ls"
 
 \end_inset
 
+Responses to the 1 -- 10 overall life satisfaction item follow the archetypal
+ SWB distribution, skewed towards higher responses, with a modal answer
+ of 7.
+ The distribution of responses is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:esm-ls"
 
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -4306,18 +4316,18 @@ Poor
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \emph on
-Asthma
+Asthma/respiratory disease
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" leftline="true" usebox="none">
+<cell multicolumn="2" alignment="right" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4326,7 +4336,7 @@ Asthma
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+<cell multicolumn="2" alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4451,7 +4461,16 @@ Yes
 
 \end_inset
 
+Most participants rate their health as very good (42%) or good (33%), and
+ 13% suffer from a respiratory disease.
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Health-status"
 
+\end_inset
+
+ has the complete figures.
 \end_layout
 
 \begin_layout Subsubsection
@@ -6188,9 +6207,9 @@ Not stated
 \end_inset
 
 Participants are relatively wealthy: median household income is approximately
- GBP £48,000, which is almost twice the UK median
+ GBP £48,000, which is almost twice the UK median 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citep
 key "house-of-commons:2006"
 
 \end_inset
@@ -6230,7 +6249,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Distribution of year of birth.
+Distribution of year of birth (excluding a single response at 1900).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:birth-years"
@@ -6248,22 +6267,24 @@ name "fig:birth-years"
 \end_inset
 
 They are also relatively young: 66% are aged under 35, and 95% under 50,
- compared to 29% and 56% respectively in the UK adult population
+ compared to 29% and 56% respectively in the UK adult population 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citep
 key "office-for-national-statistics:2009"
 
 \end_inset
 
 .
- The complete age profile is illustrated in 
+ The complete year-of-birth profile is illustrated in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:birth-years"
 
 \end_inset
 
-.
+ (excluding one participant who claims to have been born in 1900, and including
+ approximately 600 who appear, in contradiction of their consent form agreement,
+ to be aged under 18).
 \end_layout
 
 \begin_layout Standard
@@ -7399,7 +7420,11 @@ Other
 \begin_layout Plain Layout
 
 \emph on
-Number of adults in the household
+Number of adults (age 
+\begin_inset Formula $\geq$
+\end_inset
+
+ 16) in the household
 \end_layout
 
 \end_inset
@@ -7719,7 +7744,7 @@ Number of adults in the household
 \begin_layout Plain Layout
 
 \emph on
-Number of children in the household
+Number of children (age < 16) in the household
 \end_layout
 
 \end_inset
@@ -8081,18 +8106,18 @@ Number of children in the household
  These groups are over-represented relative to the UK adult population,
  in which the proportions are respectively 57% and 4%, primarily at the
  expense of retired people, who constitute 0.5% of participants but 22% of
- the population
+ the population 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citep
 key "social-research:2009"
 
 \end_inset
 
 .
  Participants' sex ratio is nearly balanced, at 56% male, compared to 49%
- in the UK adult population
+ in the UK adult population 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citep
 key "office-for-national-statistics:2009"
 
 \end_inset
@@ -10382,7 +10407,7 @@ UKTUS % of waking minutes
 \emph on
 UKTUS codes (see 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "sec:uktus-activities-classification"
 
 \end_inset
@@ -12840,10 +12865,10 @@ reference "tab:Frequencies-of-companionship"
 
 \begin_layout Standard
 UKTUS respondents are not asked whom they are with when at work or studying,
- and do they always provide an answer to the question at other times.
+ and do not always provide an answer to the question at other times.
  The UKTUS data are therefore consistent with respondents being alone or
- with people they don't know between 21% and 47% of the waking day (calculations
- based on 
+ with people they don't know during between 21% and 47% of the waking day
+ (calculations based on 
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "office-for-national-statistics:2005a"
