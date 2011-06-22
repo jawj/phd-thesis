@@ -118,50 +118,48 @@ A snapshot of the data collected to date was taken on 22 February 2011,
 Descriptive results
 \end_layout
 
-\begin_layout Standard
-Our analysis is based on over 1,000,000 valid responses from more than 20,000
- participants.
- We believe these sample sizes to be the largest ever achieved by an ESM
- study.
-\end_layout
-
 \begin_layout Subsection
 Response validity
 \end_layout
 
 \begin_layout Standard
-As discussed in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sec:Signalling-protocol"
+We describe as 'valid' the subset of response data which we both can include
+ and judge should be included in our analyses.
+ In subsequent sections the reported figures apply to these valid responses
+ only.
+\end_layout
+
+\begin_layout Standard
+We exclude duplicate response submissions
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Duplicate submissions occur where data transmission is interrupted after
+ the data is received by the server, but before the server's acknowledgement
+ of receipt is received by the app, so that the app re-sends at the next
+ opportunity.
+\end_layout
 
 \end_inset
 
-, 
+ and responses from the researcher.
+ We exclude incomplete responses, and those without GPS location data
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+More sophisticated options for the treatment of missing data, such as multiple
+ imputation, are beyond the scope of this study.
 \end_layout
 
-\begin_layout Standard
-beeped
-\end_layout
+\end_inset
 
-\begin_layout Standard
-delay length
-\end_layout
-
-\begin_layout Standard
-not crazy
-\end_layout
-
-\begin_layout Standard
-GPS reading and in UK
-\end_layout
-
-\begin_layout Standard
-GPS accuracy <= 250m
-\end_layout
-
-\begin_layout Standard
-weather within 3 hrs
+.
+ We exclude responses from outside the UK, which are identified by the non-avail
+ability of LCM data.
+ As a simple quality criterion, we exclude responses where more than twelve
+ activities have been ticked.
 \end_layout
 
 \begin_layout Standard
@@ -524,7 +522,36 @@ valid responses
 
 \end_inset
 
+The cumulative effect on sample size of these criteria, and of those discussed
+ next, is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Response-inclusion-criteria"
 
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Response delay and location accuracy
+\end_layout
+
+\begin_layout Standard
+To ensure a fully random sample of experiences, we would ideally like participan
+ts to respond instantaneously to all signals.
+ Since this is not realistic, researchers have made varying judgments regarding
+ the maximum acceptable response delay, as discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Missing-and-delayed-data"
+
+\end_inset
+
+.
+ The exclusion of a response and the inclusion of a delayed response both
+ compromise the randomness of the sample, so the judgment made represents
+ a trade-off between those two evils.
 \end_layout
 
 \begin_layout Standard
@@ -539,6 +566,8 @@ status collapsed
 \begin_inset Graphics
 	filename response_lag.pdf
 	width 14cm
+	BoundingBox 2.7000000000000002cm 15.6cm 16.699999999999999cm 27cm
+	clip
 
 \end_inset
 
@@ -564,7 +593,84 @@ name "fig:Response-lag"
 
 \end_layout
 
+\end_inset
+
+The delay between signal and response in our data, for all signals which
+ ultimately received a response, is illustrated as a cumulative probability
+ plot in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Response-lag"
+
+\end_inset
+
+.
+ In this study we have chosen to exclude responses where the delay is greater
+ than one hour (this point is marked on the plot by a vertical line).
+ One hour is a relatively long allowable delay in relation to what is usual
+ in the EMA literature: 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "239"
+key "stone:2002"
+
+\end_inset
+
+, for example, 
+\begin_inset Quotes eld
+\end_inset
+
+would be uncomfortable with delays of 30 min or more
+\begin_inset Quotes erd
+\end_inset
+
+.
+ As seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Response-inclusion-criteria"
+
+\end_inset
+
+, however, it still has a substantial impact on sample size.
+\end_layout
+
+\begin_layout Standard
+accuracy: GPS accuracy is good enough, and weather close enough in time
+ (<= 250m and 3 hours)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
 \begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename loc_acc_cdf.pdf
+	width 14cm
+	BoundingBox 2.7000000000000002cm 15.6cm 16.699999999999999cm 27cm
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Location accuracy, outdoor responses only
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:loc-accuracy"
+
+\end_inset
+
 
 \end_layout
 
@@ -573,48 +679,18 @@ name "fig:Response-lag"
 
 \end_layout
 
-\begin_layout Standard
-First, they must be prompted by a signal: we identify such responses as
- those starting within 60 minutes of a previously unanswered signal, and
- completed within a further 5 minutes.
- Second, they must have a UK GPS location for which, if outdoors, the device-rep
-orted accuracy is 
-\begin_inset Formula $+$
 \end_inset
 
-/
-\begin_inset Formula $-$
-\end_inset
 
- 250m or better.
- Third, local weather data must be available for within 3 hours of the response
- time.
- Descriptive statistics are reported for these valid responses and their
- contributing participants only.
-\end_layout
-
-\begin_layout Standard
-prompted vs unprompted
-\end_layout
-
-\begin_layout Standard
-prompted delay
-\end_layout
-
-\begin_layout Subsubsection
-Rate and delay
-\end_layout
-
-\begin_layout Standard
-unprompted responses
-\end_layout
-
-\begin_layout Standard
-beep vs response (52.46% in 1 hour)
 \end_layout
 
 \begin_layout Subsection
-Participants
+Participant-level data
+\end_layout
+
+\begin_layout Standard
+Data at participant level is reported here only for participants contributing
+ at least one valid response.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3699,8 +3775,8 @@ Referee
 
 \end_inset
 
-The most recent signalling settings chosen by participants contributing
- at least one valid response are shown in Tables 
+The most recent signalling settings chosen by participants are shown in
+ Tables 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:signalling-period-settings"
@@ -3748,7 +3824,7 @@ key "thaler:2003"
 \begin_layout Standard
 Some participants have set signalling periods which seem unlikely to span
  the full waking day (e.g.
- a little over 1% choose to be signalled 8am -- 8pm).
+ approximately 1% choose to be signalled 8am -- 8pm).
  Arguably, we could have more effectively communicated the importance of
  sampling from across the day; however, as previously stated, our priority
  was to keep the burden on participants as low as possible.
@@ -3760,7 +3836,7 @@ Duration of participation
 
 \begin_layout Standard
 \begin_inset Float figure
-wide true
+wide false
 sideways false
 status collapsed
 
@@ -3768,8 +3844,10 @@ status collapsed
 \noindent
 \align center
 \begin_inset Graphics
-	filename ../../../../Dropbox/Academic/mappiness/Writing/Nature paper/responses_per_participant.pdf
+	filename responses_per_participant.pdf
 	width 14cm
+	BoundingBox 2.7000000000000002cm 15.6cm 16.699999999999999cm 27cm
+	clip
 
 \end_inset
 
@@ -8141,7 +8219,7 @@ reference "tab:demographic-characteristics"
 \end_layout
 
 \begin_layout Subsection
-Responses
+Response-level data
 \end_layout
 
 \begin_layout Subsubsection
@@ -8161,7 +8239,7 @@ stats
 \end_layout
 
 \begin_layout Subsubsection
-Trend
+Response trend
 \end_layout
 
 \begin_layout Standard
@@ -8169,8 +8247,8 @@ does rate decrease over time? does it depend on previous feelings or trajectory?
  etc.
 \end_layout
 
-\begin_layout Subsection
-Response variables
+\begin_layout Standard
+do feelings change overt time? -- or is this analysis??
 \end_layout
 
 \begin_layout Subsubsection
@@ -14572,8 +14650,9 @@ reference "tab:device-response-counts"
  Owing to the validity requirement that a location be reported, a much larger
  proportion of the responses from GPS-equipped devices are valid.
  This difference is even greater outdoors: in this case non-GPS, non-cellular
- devices will rarely have any means of estimating location, and the iPhone
- 3G, 3GS and 4 account for all but 326 valid responses.
+ devices will rarely be capable of receiving a signal, or have any means
+ of estimating location, and the iPhone 3G, 3GS and 4 account for all but
+ 326 valid responses.
 \end_layout
 
 \begin_layout Subsubsection
@@ -14868,7 +14947,7 @@ The quietest activity is 'Sleeping, resting, relaxing'; the loudest is 'Theatre,
  Noise level measures are not used any further in these analyses, however.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Spatial variables
 \end_layout
 
@@ -14878,6 +14957,19 @@ We consider land cover and weather conditions only as interactions with
  Although it is possible that these variables are also associated with happiness
  when participants are indoors or in a vehicle, the same direct link from
  environmental exposure to mood cannot be posited in these cases.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Also: poorer location accuracy indoors
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -17203,6 +17295,13 @@ e and happiness, we have created dummy variables corresponding to different
 
 \begin_layout Section
 Analytical results
+\end_layout
+
+\begin_layout Standard
+Our analysis is based on over 1,000,000 valid responses from more than 20,000
+ participants.
+ We believe these sample sizes to be the largest ever achieved by an ESM
+ study.
 \end_layout
 
 \begin_layout Standard

@@ -18,6 +18,10 @@ cdfplot realistic_lag_mins if realistic_lag_mins < 720 & mod(id, 200) == 0, ///
   xlabel(0(60)720) xline(60, lwidth(thin)) yline(1, lpattern(dotted) lwidth(thin)) 
 graph export "S:\response_lag.ps", as(ps) replace
 
+cdfplot loc_h_acc if outdoors & loc_h_acc < 600 & mod(id, 20) == 0, ///
+  xtitle("Location +/- value (m)") ytitle("Cumulative proportion of responses") ///
+  xlabel(0(100)600) xline(250, lwidth(thin)) yline(1, lpattern(dotted) lwidth(thin))
+graph export "S:\loc_acc.ps", as(ps) replace
 
 count
 disp %12.0fc r(N)

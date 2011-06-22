@@ -1099,7 +1099,7 @@ key "csikszentmihalyi:2001a"
 \begin_inset CommandInset citation
 LatexCommand citep
 after "238"
-key "stone:2002b"
+key "stone:2002"
 
 \end_inset
 
@@ -1220,6 +1220,13 @@ ns providers now cover the vast majority of the country.
 
 \begin_layout Subsubsection
 Missing and delayed data
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Missing-and-delayed-data"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
