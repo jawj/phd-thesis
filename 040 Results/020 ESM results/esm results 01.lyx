@@ -3716,14 +3716,19 @@ reference "tab:signalling-frequency-settings"
 
  and 
 \begin_inset CommandInset ref
-LatexCommand formatted
+LatexCommand ref
 reference "tab:signalling-sound-settings"
 
 \end_inset
 
 .
- In all cases, the default setting is by a large margin the most popular.
- This may be a demonstration of the phenomenon of 'sticky defaults' 
+ In each case --- for period, frequency, and sound --- the default setting
+ is by a large margin the most popular
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This may be a demonstration of the phenomenon of 'sticky defaults' 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "thaler:2003"
@@ -3734,17 +3739,19 @@ key "thaler:2003"
  the largest number of participants would have chosen for themselves.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Note on hours: not always the full waking day?
-\end_layout
-
 \end_inset
 
+.
+ 
+\end_layout
 
+\begin_layout Standard
+Some participants have set signalling periods which seem unlikely to span
+ the full waking day (e.g.
+ a little over 1% choose to be signalled 8am -- 8pm).
+ Arguably, we could have more effectively communicated the importance of
+ sampling from across the day; however, as previously stated, our priority
+ was to keep the burden on participants as low as possible.
 \end_layout
 
 \begin_layout Subsubsection
@@ -8193,8 +8200,11 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Response count map (to mid-February 2011)
-\end_layout
+Map of response counts per 10km cell, shaded logarithmically, against the
+ UK coastline
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Response-count-map"
 
 \end_inset
 
@@ -8204,6 +8214,22 @@ Response count map (to mid-February 2011)
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+Responses were sent from across the UK, but are concentrated around population
+ centres, as seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Response-count-map"
+
+\end_inset
+
+.
+ We do not expect response densities, which reflect people's locations during
+ the day, to match residential densities exactly, but this broad similarity
+ seems intuitive.
 \end_layout
 
 \begin_layout Standard
@@ -8458,7 +8484,21 @@ In a vehicle
 
 \end_inset
 
+Just over half of all responses are completed at home, with the remainder
+ split approximately equally between work and elsewhere; 85% of responses
+ are completed indoors, and the rest are split approximately equally between
+ outdoor and in-vehicle locations.
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Frequencies-of-places"
 
+\end_inset
+
+ has the precise figures.
+ There is also a clear seasonal effect on time spent outdoors: in August
+ a little over 10% of responses were out of doors, while for December the
+ figure just under 5%.
 \end_layout
 
 \begin_layout Subsubsection
@@ -8632,9 +8672,6 @@ Awake
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -8698,6 +8735,13 @@ status collapsed
 
 \begin_layout Plain Layout
 Distributions of feelings responses
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Distributions-of-feelings"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -8705,13 +8749,42 @@ Distributions of feelings responses
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-\end_layout
+Means and standard deviations of the happy, relaxed and awake item responses
+ are presented in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Summary-feelings"
 
 \end_inset
 
+, and their distributions are charted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Distributions-of-feelings"
 
+\end_inset
+
+.
+ The three distributions are very similar, and all show the typical peak
+ at approximately 70% of the way to the scale's top.
+\end_layout
+
+\begin_layout Standard
+Each distribution also shows two artefacts of the response process: spikes
+ at the absolute extremes of the distribution, where the response slider
+ is moved to its limit, and small troughs on either side of the midpoint,
+ where the response slider is most commonly either left in its initial position
+ or moved a minimum distance to the left or right.
+ We check the robustness of our results to excluding the spikes at the extremes.
+\end_layout
+
+\begin_layout Standard
+The three feelings items show substantial correlation: the coefficients
+ are 0.71 for happy -- relaxed, 0.41 for happy -- awake, and 0.31 for relaxed
+ -- awake.
+ In the rest of this chapter, we consider only the happy item response.
 \end_layout
 
 \begin_layout Subsubsection
@@ -14799,8 +14872,12 @@ The quietest activity is 'Sleeping, resting, relaxing'; the loudest is 'Theatre,
 Spatial variables
 \end_layout
 
-\begin_layout Subsubsection
-Land cover
+\begin_layout Standard
+We consider land cover and weather conditions only as interactions with
+ being outdoors.
+ Although it is possible that these variables are also associated with happiness
+ when participants are indoors or in a vehicle, the same direct link from
+ environmental exposure to mood cannot be posited in these cases.
 \end_layout
 
 \begin_layout Standard
@@ -14813,7 +14890,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Frequencies of habitat types
+Frequencies of habitat types when participants are outdoors
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Frequencies-of-habitats"
@@ -15667,11 +15744,22 @@ Mountains, moors and heathland
 
 \end_inset
 
+A little over half of outdoor responses come from the continuous urban habitat
+ type, and just over a quarter from the suburban/rural developed type.
+ The seven non-urban types thus account for just under a quarter of responses
+ between them.
+ The least frequently observed habitat type (mountains, moors and heathland)
+ accounts for less then 0.5% of outdoor responses, and less than 0.05% of
+ all responses --- confirming the value of having collected a very large
+ data set.
+ A full summary is given in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Frequencies-of-habitats"
 
-\end_layout
+\end_inset
 
-\begin_layout Subsubsection
-Weather
+.
 \end_layout
 
 \begin_layout Standard
@@ -15684,10 +15772,10 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Frequencies of weather conditions
+Frequencies of daylight and weather conditions when participants are outdoors
 \begin_inset CommandInset label
 LatexCommand label
-name "tab:Frequencies-of-habitats-1"
+name "tab:Frequencies-of-weather"
 
 \end_inset
 
@@ -15858,7 +15946,11 @@ Daylight
 \uwave off
 \noun off
 \color none
-Sunny
+Sunny (clear 
+\begin_inset Formula $\times$
+\end_inset
+
+ daylight)
 \end_layout
 
 \end_inset
@@ -17090,7 +17182,23 @@ Windspeed
 
 \end_inset
 
+Frequencies of different weather conditions and daylight for outdoor responses
+ are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Frequencies-of-weather"
 
+\end_inset
+
+.
+ In the absence of an 
+\emph on
+a priori
+\emph default
+ hypothesis regarding the functional form of any relationship between temperatur
+e and happiness, we have created dummy variables corresponding to different
+ temperature ranges.
+ We treat wind speed the same way.
 \end_layout
 
 \begin_layout Section

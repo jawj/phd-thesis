@@ -91,6 +91,13 @@ then, replace:
 ^ *([^|]+) \| +[0-9]+ +([0-9.]+) +([0-9]+)\..*
 $1\t$3\t$2
 
+
+* in/out by season
+
+foreach v in 10-08 10-09 10-10 10-11 10-12 11-01 11-02 {
+  tab place if valid & regexm(_start, "^20`v'")
+}
+
 * alone
 count if valid & ! with_partner & ! with_child & ! with_relative & ! with_peers & ! with_client & ! with_friend & ! with_other
 
