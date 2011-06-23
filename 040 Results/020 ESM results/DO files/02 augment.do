@@ -3,6 +3,7 @@ set more off
 set notifyuser on
 clear
 clear matrix
+clear mata
 set mem 3000m
 use "s:\all_data_2011_03_10.dta"
 
@@ -70,15 +71,12 @@ gen lct_watery   = inlist(lcm_dn, 131, 111)
 gen lct_mountain = inlist(lcm_dn, 121, 101, 102, 151, 91)
 gen lct_grassy   = inlist(lcm_dn, 61, 71, 81)
 gen lct_farmland = inlist(lcm_dn, 41, 42, 43, 51, 52)
-gen lct_conifers = inlist(lcm_dn, 21)
-gen lct_woody    = inlist(lcm_dn, 11)
+ // gen lct_conifers = inlist(lcm_dn, 21)
+ // gen lct_woody    = inlist(lcm_dn, 11)
+gen lct_allwood  = inlist(lcm_dn, 11, 21)
 gen lct_bare     = inlist(lcm_dn, 161)
-gen lct_suburb  = lcm_dn == 171
-gen lct_conturb = lcm_dn == 172
-
-gen lct_allwoods = lct_woody | lct_conifers
-rename lct_woody ex_lct_woody
-rename lct_conifers ex_lct_conifers
+gen lct_suburb   = lcm_dn == 171
+gen lct_conturb  = lcm_dn == 172
 
 foreach v in rural aonb natpark nnr {
   gen `v'_enc = .
@@ -92,7 +90,7 @@ foreach v in rural_enc aonb_enc natpark_enc nnr_enc {
   gen `v'_out = `v' * outdoors
 }
 
-foreach suffix in marine watery mountain grassy farmland conifers woody bare suburb conturb {  
+foreach suffix in marine watery mountain grassy farmland allwood bare suburb conturb {
   replace lct_`suffix' = . if missing(lcm_dn)
   gen lctin_`suffix'  = lct_`suffix' * indoors
   gen lctveh_`suffix' = lct_`suffix' * vehicle
@@ -166,4 +164,4 @@ foreach v in  lct_conturb lctout_conturb wkdayhour_6 {
   rename `v' b_`v'
 }
 
-save "s:\all_data_2011_06_15_augmented.dta", replace   // all activity counts kepts
+save "s:\all_data_2011_06_15_augmented.dta", replace   // all activity counts kept

@@ -110,7 +110,7 @@ The immediate environment
 \end_layout
 
 \begin_layout Standard
-A snapshot of the data collected to date was taken on 22 February 2011,
+A snapshot of the data collected to date was taken on 14 February 2011,
  and all analyses reported here are based on that snapshot.
 \end_layout
 
@@ -389,7 +389,7 @@ and the delay between signalling and response was less than 1 hour
 \begin_inset Text
 
 \begin_layout Plain Layout
-and the response took no more than 5 minutes to enter
+and the response was completed within 5 minutes
 \end_layout
 
 \end_inset
@@ -534,7 +534,7 @@ reference "tab:Response-inclusion-criteria"
 \end_layout
 
 \begin_layout Subsubsection
-Response delay and location accuracy
+Response delay, location accuracy, and weather data availability
 \end_layout
 
 \begin_layout Standard
@@ -549,8 +549,8 @@ reference "sub:Missing-and-delayed-data"
 \end_inset
 
 .
- The exclusion of a response and the inclusion of a delayed response both
- compromise the randomness of the sample, so the judgment made represents
+ The exclusion of a response and the inclusion of a delayed response may
+ both compromise the randomness of the sample, so the judgment made represents
  a trade-off between those two evils.
 \end_layout
 
@@ -578,7 +578,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Response time, all responses
+Response time --- all responses
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Response-lag"
@@ -605,8 +605,8 @@ reference "fig:Response-lag"
 \end_inset
 
 .
- In this study we have chosen to exclude responses where the delay is greater
- than one hour (this point is marked on the plot by a vertical line).
+ We have chosen to exclude responses where the delay is greater than one
+ hour (this point is marked on the plot by a vertical line).
  One hour is a relatively long allowable delay in relation to what is usual
  in the EMA literature: 
 \begin_inset CommandInset citation
@@ -636,8 +636,12 @@ reference "tab:Response-inclusion-criteria"
 \end_layout
 
 \begin_layout Standard
-accuracy: GPS accuracy is good enough, and weather close enough in time
- (<= 250m and 3 hours)
+Again in an ideal world, we would like to know the geographical coordinates
+ of each outdoor response with absolute precision, and we would like to
+ know the weather conditions at that location at the precise moment of respondin
+g.
+ Again, of course, we must in practice make a trade-off between accuracy
+ and exclusion rate.
 \end_layout
 
 \begin_layout Standard
@@ -664,7 +668,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Location accuracy, outdoor responses only
+Location accuracy --- all outdoor responses
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:loc-accuracy"
@@ -681,7 +685,139 @@ name "fig:loc-accuracy"
 
 \end_inset
 
+Outdoor GPS accuracy in our data is represented in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:loc-accuracy"
 
+\end_inset
+
+.
+ We have chosen to exclude outdoor responses with a reported accuracy worse
+ than +/
+\begin_inset Formula $-$
+\end_inset
+
+ 250m (again marked on the plot).
+ As seen in the plot and in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Response-inclusion-criteria"
+
+\end_inset
+
+, this has a fairly modest effect on sample size.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename weather_distance.pdf
+	width 14cm
+	BoundingBox 2.7000000000000002cm 15.6cm 16.699999999999999cm 27cm
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Distance to nearest weather station --- all outdoor responses in UK
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:weather-distance"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename weather_delay.pdf
+	width 14cm
+	BoundingBox 2.7000000000000002cm 15.6cm 16.699999999999999cm 27cm
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Time difference of closest weather observation --- all outdoor responses
+ in UK
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:weather-delay"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Distance to the nearest weather station and time difference of the closest
+ weather observation at that station are shown in Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:weather-distance"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:weather-delay"
+
+\end_inset
+
+.
+ We accept the nearest weather station location in all cases --- the distance
+ is always less than 60km --- and exclude responses only in the very rare
+ case that no data was reported by that station within 3 hours (before or
+ after) the response.
+\end_layout
+
+\begin_layout Standard
+We test the robustness of our findings to different choices on response
+ delay and location accuracy by re-running our main analysis with a maximum
+ delay of 20 minutes and reported accuracy of 100m or better.
 \end_layout
 
 \begin_layout Subsection
@@ -689,7 +825,7 @@ Participant-level data
 \end_layout
 
 \begin_layout Standard
-Data at participant level is reported here only for participants contributing
+Data at participant level is reported only for participants contributing
  at least one valid response.
 \end_layout
 
@@ -698,24 +834,22 @@ Participation rate
 \end_layout
 
 \begin_layout Standard
-reach vs download -- unknown
+The opportunistic recruitment strategy used in this research does not enable
+ us to calculate the overall participation rate --- i.e.
+ the number of individuals who took part as a proportion of those that had
+ the opportunity to do so (which we might define rather broadly as all iPhone
+ owners who encountered the app in the App Store, heard about the study
+ on the radio or via Twitter, and so on).
 \end_layout
 
 \begin_layout Standard
-download vs registration
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Table(s)
-\end_layout
-
-\end_inset
-
-
+Up to the end of 13 February 2011, the app had been downloaded 43,295 times
+ (according to figures supplied by Apple), and 35,057 registrations had
+ been received: approximately 81% of individuals who downloaded the app
+ completed the registration process.
+ Up to the same moment, one or signalled responses had been received from
+ 29,099 registered apps: approximately 83% of registered users went on to
+ participate in the study.
 \end_layout
 
 \begin_layout Subsubsection
@@ -8227,28 +8361,59 @@ Response rate
 \end_layout
 
 \begin_layout Standard
-definition
+Amongst participants who contributed at least one valid response (as defined
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Response-inclusion-criteria"
+
+\end_inset
+
+), a valid response was received to 52% of signals
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In calculating this fraction, we count in the denominator only beeps sent
+ to participants we believe were still active at the time of sending.
+ We consider a participant to have become inactive immediately after their
+ last received response if one or more of these conditions were met when
+ the data snapshot was taken: beeps per day is set to zero; the participant's
+ device has been reported inactive by Apple; or no responses have been received
+ from the participant for at least 14 days.
 \end_layout
 
-\begin_layout Standard
-52.5%
-\end_layout
+\end_inset
 
-\begin_layout Standard
-stats
-\end_layout
+.
+ In relation to reports in the EMA literature, this response rate seems
+ low, but not unprecedentedly so.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "240"
+key "stone:2002"
 
-\begin_layout Subsubsection
-Response trend
-\end_layout
+\end_inset
 
-\begin_layout Standard
-does rate decrease over time? does it depend on previous feelings or trajectory?
- etc.
-\end_layout
+ propose a lower bound of 80%, although they admit the figure is 
+\begin_inset Quotes eld
+\end_inset
 
-\begin_layout Standard
-do feelings change overt time? -- or is this analysis??
+arbitrary
+\begin_inset Quotes erd
+\end_inset
+
+, and suggest that rates below this raise questions over the representativeness
+ of sampling.
+ But, for example, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "turk:2007"
+
+\end_inset
+
+ report a response rate of less than 50% in their study of fibromyalgia.
 \end_layout
 
 \begin_layout Subsubsection
@@ -14957,19 +15122,8 @@ We consider land cover and weather conditions only as interactions with
  Although it is possible that these variables are also associated with happiness
  when participants are indoors or in a vehicle, the same direct link from
  environmental exposure to mood cannot be posited in these cases.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Also: poorer location accuracy indoors
-\end_layout
-
-\end_inset
-
-
+ In addition, when participants are indoors their location cannot be accurately
+ determined by GPS, making spatial data less reliable.
 \end_layout
 
 \begin_layout Standard

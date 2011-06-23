@@ -23,6 +23,18 @@ cdfplot loc_h_acc if outdoors & loc_h_acc < 600 & mod(id, 20) == 0, ///
   xlabel(0(100)600) xline(250, lwidth(thin)) yline(1, lpattern(dotted) lwidth(thin))
 graph export "S:\loc_acc.ps", as(ps) replace
 
+gen obs_distance_km = obs_distance_m / 1000
+cdfplot obs_distance_km if outdoors & !missing(lcm_dn) & mod(id, 20) == 0, ///
+  xtitle("Distance to nearest weather station (km)") ytitle("Cumulative proportion of responses") ///
+  yline(1, lpattern(dotted) lwidth(thin))
+graph export "S:\weather_distance.ps", as(ps) replace
+
+gen abs_time_diff_m = abs(obs_time_diff_s / 60)
+cdfplot abs_time_diff_m if outdoors & !missing(lcm_dn) & abs_time_diff_m < 180 & mod(id, 20) == 0, ///
+  xtitle("Time difference of closest weather observation (minutes)") ytitle("Cumulative proportion of responses") ///
+  xlabel(0(30)240) yline(1, lpattern(dotted) lwidth(thin))
+graph export "S:\weather_delay.ps", as(ps) replace
+
 count
 disp %12.0fc r(N)
 global n = r(N)

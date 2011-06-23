@@ -148,3 +148,11 @@ hist ls, discrete frequency xtitle("Life satisfaction") ylabel(#10) xlabel(1(1)1
 hist born if born > 1900, discrete frequency xtitle("Year of birth") ylabel(#10) xlabel(1920(10)2000)
 
 restore
+
+
+* participation rate
+
+select count(1) from users where created_at < '14-02-2011';
+select count(distinct user_id) from esm_answer_sets e, users u where e.user_id = u.id and e.sent_beep_id is not null and u.created_at < '14-02-2011';
+
+
