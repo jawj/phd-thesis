@@ -80,6 +80,11 @@
 \filename_suffix 0
 \color #ffffff
 \end_branch
+\branch Massive results table
+\selected 1
+\filename_suffix 0
+\color #ffffff
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -17518,7 +17523,8 @@ TODO Note that we
 could
 \emph default
  have an a priori hypothesis? E.g.
- based on Maddison (though his is for climate generally, not just outdoors).
+ based on Maddison (though his is for climate generally, not just outdoors
+ now).
  But that none is needed.
 \end_layout
 
@@ -17532,15 +17538,15 @@ Analytical results
 \end_layout
 
 \begin_layout Standard
-Our analysis is based on over 1,000,000 valid responses from more than 20,000
- participants.
+This analysis is based on over 1,000,000 valid responses from more than
+ 20,000 participants.
  We believe these sample sizes to be the largest ever achieved by an ESM
  study.
 \end_layout
 
 \begin_layout Standard
-Nature paper results
-\end_layout
+\begin_inset Branch Massive results table
+status open
 
 \begin_layout Standard
 \begin_inset Newpage newpage
@@ -17571,7 +17577,9 @@ status open
 
 
 \backslash
-caption[]{Land cover model results}
+caption[]{Land cover model
+\backslash
+label{tab:lcm-model}}
 \backslash
 
 \backslash
@@ -25571,7 +25579,7 @@ Response #52+ (base category)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Constant
+Constant (mean fixed effect)
 \end_layout
 
 \end_inset
@@ -25941,7 +25949,11 @@ continues ...
 \size footnotesize
 Dependent variable: happiness self-report, scaled 0 -- 100.
  Standard errors are clustered at participant level.
- Significant coefficients (p < 0.05) are marked in 
+ Significant coefficients (
+\begin_inset Formula $p<0.05$
+\end_inset
+
+) are marked in 
 \series bold
 boldface
 \series default
@@ -25985,6 +25997,248 @@ boldface
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Not actually broken
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:lcm-model"
+
+\end_inset
+
+ presents the model.
+ All control variables show relationships with the happiness score that
+ are intuitive and (where applicable) in line with previous research.
+ For example, participants are happier at home than at work, and greater
+ happiness is also associated with higher temperatures and lower windspeeds,
+ with sunshine, and with the absence of rain and fog.
+ Physical activities, and activities expected to be common in natural environmen
+ts (such as running, gardening or birdwatching), also show substantial positive
+ associations with happiness.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Mention companionship, top and bottom activities, and trend over time and
+ at different times of day/week
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Participants are happier outdoors than indoors or in a vehicle.
+ When outdoors, every habitat type except inland bare ground is associated
+ with significantly higher happiness levels than the continuous urban type.
+ 
+\end_layout
+
+\begin_layout Standard
+Coastal areas are by some distance the happiest, with responses approximately
+ 6 points higher than urban environments on the 0 -- 100 scale --- a difference
+ of similar magnitude, for instance, to being with one's friends on a warm
+ (8 – 15
+\begin_inset Formula $^{\circ}$
+\end_inset
+
+C) and sunny day rather than alone in overcast, sub-freezing conditions.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Better comparator (activity/companionship-based?)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Not any more: Coniferous forests, the next happiest habitat, beat cities
+ by almost 4 points --- an increment of about the size associated, for example,
+ with watching TV rather than working.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+All other green or natural environment types are between 1.8 and 2.7 points
+ happier than cities, while suburban and developed rural environments are
+ a little under 1 point happier.
+\end_layout
+
+\begin_layout Subsection
+Robustness checks
+\end_layout
+
+\begin_layout Standard
+We perform a number of robustness checks on our results.
+ First, as an alternative approach to identifying high-quality natural environme
+nts, we re-ran the model replacing the LCM habitat variables with three
+ (in some cases overlapping) indicators of UK landscape designations.
+ The designated areas were: Areas of Outstanding Natural Beauty (AONB ---
+ including the Scottish equivalent, National Scenic Areas), with 2,462 outdoor
+ responses; National Parks (NP), with 1,402 outdoor responses; and National
+ Nature Reserves (NNR), with 117 outdoor responses.
+ All three designations were positively and significantly related to happiness
+ ratings (AONB coeff.
+ 
+\begin_inset Formula $2.39$
+\end_inset
+
+, std.
+ err.
+ 
+\begin_inset Formula $0.55$
+\end_inset
+
+, 
+\begin_inset Formula $p<0.0001$
+\end_inset
+
+; NP coeff.
+ 
+\begin_inset Formula $4.59$
+\end_inset
+
+, std.
+ err.
+ 
+\begin_inset Formula $0.58$
+\end_inset
+
+, 
+\begin_inset Formula $p<0.0001$
+\end_inset
+
+; NNR coeff.
+ 
+\begin_inset Formula $5.00$
+\end_inset
+
+, std.
+ err.
+ 
+\begin_inset Formula $1.62$
+\end_inset
+
+, 
+\begin_inset Formula $p=0.0020$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Second, we re-ran the original model excluding responses with happiness
+ ratings at either extreme of the scale (10,582 at zero and 80,994 at 100),
+ eliminating the spikes seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Distributions-of-feelings"
+
+\end_inset
+
+.
+ In this specification all natural land cover coefficients are somewhat
+ reduced in magnitude, but only the coefficient on the freshwater environment
+ drops below significance.
+ We also investigated the spikes alone, using logit models (with the same
+ explanatory variables) to predict extreme happy and unhappy answers.
+ All land cover types except freshwater and mountains are positively predictive
+ of extreme happy answers, while none significantly predicts extreme unhappy
+ ones.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Stricter inclusion criteria
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Third, meaningful hypothesis testing requires that the significance level
+ be a decreasing function of sample size
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "leamer:1978"
+
+\end_inset
+
+, and our sample size is very large.
+ In addition, in interpreting our coefficients of interest, we are making
+ multiple comparisons.
+ We can account for the first issue by using the natural log of the sample
+ size as a higher-than-usual critical 
+\begin_inset Formula $F$
+\end_inset
+
+ value
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "deaton:1997"
+
+\end_inset
+
+ when testing whether each coefficient is different from zero.
+ We can account for the second using the Bonferroni correction, dividing
+ the significance threshold (
+\begin_inset Formula $p<0.05$
+\end_inset
+
+) by the number of tests
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "abdi:2007"
+
+\end_inset
+
+.
+ Coefficients on all green or natural land cover types except two --- again,
+ freshwater and mountainous environments --- retain significance even using
+ the substantially more stringent thresholds calculated using these procedures.
 \end_layout
 
 \begin_layout Subsection
