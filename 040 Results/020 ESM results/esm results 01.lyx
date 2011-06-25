@@ -80,7 +80,7 @@
 \filename_suffix 0
 \color #ffffff
 \end_branch
-\branch Massive results table
+\branch Massive_results_table
 \selected 1
 \filename_suffix 0
 \color #ffffff
@@ -17548,13 +17548,13 @@ Analysis
 \end_layout
 
 \begin_layout Standard
-We believe these sample supporting this analysis --- over 1,000,000 valid
+We believe the sample supporting this analysis --- over 1,000,000 assessment
  responses, from more than 20,000 participants --- to be the largest ever
  achieved by an ESM study.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch Massive results table
+\begin_inset Branch Massive_results_table
 status collapsed
 
 \begin_layout Standard
@@ -26021,7 +26021,7 @@ boldface
 
 \end_inset
 
-
+Our fixed effects model of reported happiness is presented in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:lcm-model"
@@ -26033,13 +26033,12 @@ reference "tab:lcm-model"
 status open
 
 \begin_layout Plain Layout
-Not broken
+(NOT broken)
 \end_layout
 
 \end_inset
 
- presents our fixed effects model of reported happiness.
- 
+.
 \end_layout
 
 \begin_layout Subsection
@@ -26047,18 +26046,18 @@ Control variables
 \end_layout
 
 \begin_layout Standard
-All coefficients on the control variables demonstrate relationships with
- happiness score that are intuitive and (where applicable) in line with
- previous SWB research.
+All coefficients on control variables demonstrate relationships with reported
+ happiness that are intuitive and (where applicable) in line with previous
+ SWB research.
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
 All effects are, of course, controlled for all others, which means results
  are somewhat different than when considering each factor in isolation.
- For example, the simple mean happiness on weekdays keeps rising to an evening
- peak, whereas here --- controlling for activity, companionship, and other
- factors --- the happiest period is mid-afternoon.
+ For example, simple mean happiness on weekdays keeps rising to an evening
+ peak, whereas in the model --- after controlling for activity, companionship,
+ and other factors --- the happiest period is mid-afternoon.
 \end_layout
 
 \end_inset
@@ -26067,15 +26066,15 @@ All effects are, of course, controlled for all others, which means results
 \end_layout
 
 \begin_layout Standard
-Participants are happiest, by a very large margin, when engaged in intimacy
- or lovemaking.
+Participants' happiest activity, by a large margin, is intimacy or lovemaking.
  Physical exercise and cultural and social activities also score highly,
  as do various activities that may be common in natural environments, including
  gardening, fishing and birdwatching.
- Participants are least happy, by an even larger margin, when sick in bed.
- Queuing, care-giving, travelling, and working or studying (unfortunately,
- given that it is reported in 25% of responses) are also associated with
- significantly reduced happiness.
+ Participants are least happy when sick in bed (with a negative coefficient
+ more than four times the size of the next biggest).
+ Queuing, care-giving, and travelling are also associated with significantly
+ reduced happiness, as is the commonest activity in the data set, working
+ or studying.
 \end_layout
 
 \begin_layout Standard
@@ -26086,10 +26085,44 @@ The company of a partner or friend is strongly associated with greater happiness
 \end_layout
 
 \begin_layout Standard
-Participants are significantly less happy than at other times during weekday
- early mornings (3am -- 9am) and the very early hours on weekends (3am --
- 6am).
+All else being equal, participants are significantly less happy during weekday
+ early mornings (3am -- 9am) and the very early hours of weekend days (3am
+ -- 6am) than at other times.
+ And they are happier at any time of day during the weekend than at the
+ corresponding time in the week
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+According to 
+\begin_inset Formula $F$
+\end_inset
+
+ tests this weekday/weekend difference is significant (
+\begin_inset Formula $p>0.05$
+\end_inset
+
+) for all periods except 3am -- 6am
+\end_layout
+
+\end_inset
+
+.
  
+\end_layout
+
+\begin_layout Standard
+Finally, reported happiness increases substantially during the average individua
+l's participation.
+ There may be several explanations for this.
+ For example, it could be that taking part in the study leads to increased
+ awareness of states of mind and of the factors that affect them, enabling
+ participants to act to improve their mood.
+ It could also be that participants initially respond to signals assiduously,
+ irrespective of mood, but in later stages are less inclined to respond
+ except when feeling good.
+ (We have received email correspondence from participants supporting both
+ these explanations).
 \end_layout
 
 \begin_layout Standard
@@ -26097,7 +26130,7 @@ Participants are significantly less happy than at other times during weekday
 status open
 
 \begin_layout Plain Layout
-trend over time and at different times of day/week
+TODO Really ought to check if response rates do fall off...
 \end_layout
 
 \end_inset
