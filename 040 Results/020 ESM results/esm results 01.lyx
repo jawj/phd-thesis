@@ -120,10 +120,6 @@ A snapshot of the data collected to date was taken on 14 February 2011,
 \end_layout
 
 \begin_layout Section
-Descriptive results
-\end_layout
-
-\begin_layout Subsection
 Response validity
 \end_layout
 
@@ -538,8 +534,8 @@ reference "tab:Response-inclusion-criteria"
 .
 \end_layout
 
-\begin_layout Subsubsection
-Response delay, location accuracy, and weather data availability
+\begin_layout Subsection
+Response delay
 \end_layout
 
 \begin_layout Standard
@@ -611,10 +607,14 @@ reference "fig:Response-lag"
 \end_inset
 
 .
- We have chosen to exclude responses where the delay is greater than one
- hour (this point is marked on the plot by a vertical line).
- One hour is a relatively long allowable delay in relation to what is usual
- in the EMA literature.
+ We choose to exclude responses where the delay is greater than 60 minutes
+ (this point is marked on the plot by a vertical line).
+ 
+\end_layout
+
+\begin_layout Standard
+This is a relatively long allowable delay in relation to what is usual in
+ the EMA literature.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -639,7 +639,11 @@ reference "tab:Response-inclusion-criteria"
 
 \end_inset
 
-, however, it still has a substantial impact on sample size.
+, however, it still results in a very substantial reduction in sample size.
+\end_layout
+
+\begin_layout Subsection
+Location accuracy and weather data
 \end_layout
 
 \begin_layout Standard
@@ -700,8 +704,8 @@ reference "fig:loc-accuracy"
 \end_inset
 
 .
- We have chosen to exclude outdoor responses with a reported accuracy worse
- than +/
+ We choose to exclude outdoor responses with a reported accuracy worse than
+ +/
 \begin_inset Formula $-$
 \end_inset
 
@@ -799,8 +803,8 @@ name "fig:weather-delay"
 
 \end_inset
 
-Distance to the nearest weather station and time difference of the closest
- weather observation at that station are shown in Figures 
+Distance to the nearest weather station, and the time difference of the
+ closest weather observation at that station, are shown in Figures 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:weather-distance"
@@ -821,10 +825,18 @@ reference "fig:weather-delay"
  3 hours (before or after) the response.
 \end_layout
 
+\begin_layout Subsection
+Robustness
+\end_layout
+
 \begin_layout Standard
 We test the robustness of our findings to more stringent choices on response
  delay and location accuracy by re-running our main analysis with a maximum
  delay of 20 minutes and reported accuracy of 100m or better.
+\end_layout
+
+\begin_layout Section
+Descriptives
 \end_layout
 
 \begin_layout Subsection
@@ -852,32 +864,30 @@ The opportunistic recruitment strategy used in this research does not enable
  app, registering to take part, and responding to signals.
 \end_layout
 
+\begin_layout Paragraph
+Worldwide
+\end_layout
+
 \begin_layout Standard
 Globally, up to the end of 13 February 2011, the app had been downloaded
  43,295 times (according to figures supplied by Apple), and 35,057 registrations
  had been received: approximately 81% of individuals who downloaded the
  app completed the registration process.
- Up to the same moment, one or more signalled responses
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Not in all cases valid responses.
+ Up to the same moment, one or more signalled responses (though not in all
+ cases valid responses) had been received from 29,099 registered apps: hence
+ approximately 83% of registering users --- or 67% of downloading users
+ --- went on to respond to at least one signal.
 \end_layout
 
-\end_inset
-
- had been received from 29,099 registered apps: hence approximately 83%
- of registering users (67% of downloading users) went on to respond to at
- least one signal.
+\begin_layout Paragraph
+UK
 \end_layout
 
 \begin_layout Standard
-There were 30,053 downloads from the UK App Store alone up to the end of
- 13 February.
- Registrations are not geo-located, but we can tell that 73% of UK users
- (21,947 / 30,053) proceeded from app download through registration to the
- contribution of one or more valid responses.
+There were 30,053 downloads from the UK App Store up to the end of 13 February.
+ Registrations are not geo-located, but we can tell that 73% of those who
+ downloaded the app in the UK (21,947 participants) completed registration
+ and went on to contribute one or more valid responses.
 \end_layout
 
 \begin_layout Subsubsection
@@ -8438,25 +8448,17 @@ In calculating this fraction, we count in the denominator only beeps sent
  to participants we believe were still active at the time of sending.
  We consider a participant to have become inactive immediately after their
  last received response if one or more of these conditions were met when
- the data snapshot was taken: beeps per day is set to zero; the participant's
- device has been reported inactive by Apple; or no responses have been received
+ the data snapshot was taken: beeps per day was set to zero; the participant's
+ device had been reported inactive by Apple; or no responses had been received
  from the participant for at least 14 days.
 \end_layout
 
 \end_inset
 
 .
- In relation to reports in the EMA literature, this response rate seems
- low, but not unprecedentedly so.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-after "240"
-key "stone:2002"
-
-\end_inset
-
- propose a lower bound of 80%, although they admit this figure is 
+ This response rate is low in relation to reports in the EMA literature,
+ but not unprecedentedly so.
+ Although they admit the figure is 
 \begin_inset Quotes eld
 \end_inset
 
@@ -8464,16 +8466,25 @@ arbitrary
 \begin_inset Quotes erd
 \end_inset
 
-, suggesting that lower rates raise questions over the representativeness
- of sampling.
- But, for example, 
+, 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "240"
+key "stone:2002"
+
+\end_inset
+
+ propose a lower bound of 80%, suggesting that rates below this raise questions
+ over the representativeness of sampling.
+ But 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "turk:2007"
 
 \end_inset
 
- report a response rate of less than 50% in their study of fibromyalgia.
+, for example, report a response rate of less than 50% in an EMA study of
+ fibromyalgia.
 \end_layout
 
 \begin_layout Subsubsection
@@ -8532,7 +8543,7 @@ reference "fig:Response-count-map"
 .
  We would not expect response densities, which reflect people's locations
  during the day, to match residential densities exactly, but this broad
- similarity seems intuitive.
+ comparability seems intuitive.
 \end_layout
 
 \begin_layout Standard
@@ -8800,8 +8811,8 @@ reference "tab:Frequencies-of-places"
 
  has the precise figures.
  There is a clear seasonal effect on time spent outdoors: in August a little
- over 10% of responses are out of doors, while for December the figure is
- just under 5%.
+ over 10% of responses were out of doors, while for December the figure
+ was just under 5%.
 \end_layout
 
 \begin_layout Subsubsection
@@ -10636,8 +10647,8 @@ reference "sub:Reachability-and-response"
 \end_inset
 
  --- we compare our reported activities with those recorded for a random
- population sample in diary-based study.
- We have used UK Time Use Survey 2000 (UKTUS) data 
+ population sample in a diary-based study.
+ We use UK Time Use Survey 2000 (UKTUS) data 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "office-for-national-statistics:2005"
@@ -10645,12 +10656,11 @@ key "office-for-national-statistics:2005"
 \end_inset
 
  to estimate approximate figures for comparison.
- The following three general points apply.
 \end_layout
 
 \begin_layout Standard
-First, the UKTUS data we use list the average number of minutes in each
- 24-hour (1440-minute) period that participants spend in different activities.
+These UKTUS data list the average number of minutes in each 24-hour (1440-minute
+) period that participants spend in different activities.
  Because Mappiness only signals participants during waking hours, we subtract
  the time UKTUS respondents report they spend sleeping from the day length,
  and calculate the percentage of daily waking time (933 minutes) spent by
@@ -10658,8 +10668,8 @@ First, the UKTUS data we use list the average number of minutes in each
 \end_layout
 
 \begin_layout Standard
-Second, the UKTUS data categorise activities according to a detailed, three-leve
-l classification, reproduced in 
+UKTUS responses categorise activities according to a detailed, three-level
+ classification, reproduced in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:uktus-activities-classification"
@@ -10687,7 +10697,7 @@ reference "chap:esm-results-appendix"
 \end_layout
 
 \begin_layout Standard
-Finally, the UKTUS data concern only what is considered as the 'main' activity
+In addition, the UKTUS data concern only what is considered the 'main' activity
  undertaken at any moment, whereas Mappiness asks about all activities without
  prioritisation.
  All other things being equal, we would therefore expect the proportions
@@ -13246,8 +13256,8 @@ reference "tab:Frequencies-of-companionship"
 \begin_layout Standard
 UKTUS respondents are not asked whom they are with when at work or studying,
  and do not always provide an answer to the question at other times.
- The UKTUS data are therefore consistent with respondents being alone or
- with people they don't know during between 21% and 47% of the waking day
+ The data are therefore consistent with UKTUS respondents being alone or
+ with people they do not know during between 21% and 47% of the waking day
  (calculations based on 
 \begin_inset CommandInset citation
 LatexCommand citealp
@@ -17534,19 +17544,18 @@ could
 \end_layout
 
 \begin_layout Section
-Analytical results
+Analysis
 \end_layout
 
 \begin_layout Standard
-This analysis is based on over 1,000,000 valid responses from more than
- 20,000 participants.
- We believe these sample sizes to be the largest ever achieved by an ESM
- study.
+We believe these sample supporting this analysis --- over 1,000,000 valid
+ responses, from more than 20,000 participants --- to be the largest ever
+ achieved by an ESM study.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Branch Massive results table
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset Newpage newpage
@@ -22791,7 +22800,7 @@ Housework, chores, DIY
 \uwave off
 \noun off
 \color none
-Something else (version < 1.0.2)
+Something else (app version < 1.0.2)
 \end_layout
 
 \end_inset
@@ -23095,7 +23104,11 @@ Travelling, commuting
 \uwave off
 \noun off
 \color none
-Something else (version >= 1.0.2)
+Something else (app version 
+\begin_inset Formula $\geq$
+\end_inset
+
+ 1.0.2)
 \end_layout
 
 \end_inset
@@ -26009,31 +26022,60 @@ boldface
 \end_inset
 
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Not actually broken
-\end_layout
-
-\end_inset
-
-
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:lcm-model"
 
 \end_inset
 
- presents the model.
- All control variables show relationships with the happiness score that
- are intuitive and (where applicable) in line with previous research.
- For example, participants are happier at home than at work, and greater
- happiness is also associated with higher temperatures and lower windspeeds,
- with sunshine, and with the absence of rain and fog.
- Physical activities, and activities expected to be common in natural environmen
-ts (such as running, gardening or birdwatching), also show substantial positive
- associations with happiness.
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Not broken
+\end_layout
+
+\end_inset
+
+ presents our fixed effects model of reported happiness.
+ 
+\end_layout
+
+\begin_layout Subsection
+Controls
+\end_layout
+
+\begin_layout Standard
+All control variables show relationships with the happiness score that are
+ intuitive and (where applicable) in line with previous SWB research.
+ 
+\end_layout
+
+\begin_layout Standard
+Participants are happiest, by a very large margin, when engaged in intimacy
+ or lovemaking.
+ Physical exercise and cultural and social activities also score highly,
+ as do various activities that may be common in natural environments, including
+ gardening, fishing and birdwatching.
+ Participants are least happy, by an even larger margin, when sick in bed.
+ Queuing, care-giving, travelling, and working or studying (unfortunately,
+ given that it is reported in 25% of responses) are also associated with
+ significantly reduced happiness.
+\end_layout
+
+\begin_layout Standard
+The company of a partner or friend is strongly associated with greater happiness.
+ Responses in the presence of other family members are slightly happier,
+ while those with colleagues and other acquaintances are slightly less happy,
+ than those when the participant is alone.
+\end_layout
+
+\begin_layout Standard
+Participants are happier at home than at work, and happier still elsewhere.
+ As regards weather, greater happiness is associated with higher temperatures
+ and lower wind speeds, with sunshine, and with the absence of rain and
+ fog.
  
 \end_layout
 
@@ -26042,8 +26084,7 @@ ts (such as running, gardening or birdwatching), also show substantial positive
 status open
 
 \begin_layout Plain Layout
-Mention companionship, top and bottom activities, and trend over time and
- at different times of day/week
+trend over time and at different times of day/week
 \end_layout
 
 \end_inset
