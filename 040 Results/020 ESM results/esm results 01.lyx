@@ -16085,6 +16085,19 @@ reference "tab:Frequencies-of-habitats"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO Table of designation figures
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -26144,61 +26157,31 @@ Location and environment
 
 \begin_layout Standard
 Participants are happier at home than at work, and happier still elsewhere.
- As regards weather, greater happiness is associated with higher temperatures
+ Participants are happier outdoors than indoors or in a vehicle.
+ 
+\end_layout
+
+\begin_layout Standard
+When outdoors, greater happiness is associated with higher temperatures
  and lower wind speeds, with sunshine, and with the absence of rain and
  fog.
  
 \end_layout
 
 \begin_layout Standard
-Participants are happier outdoors than indoors or in a vehicle.
- When outdoors, every habitat type except inland bare ground is associated
- with significantly higher happiness levels than the continuous urban type.
- 
+Also when outdoors, every habitat type except inland bare ground is associated
+ with significantly higher happiness levels than continuous urban.
+ Coastal locations are by some distance the happiest, with responses approximate
+ly 6 points higher than continuous urban environments on the 0 -- 100 scale.
+ Alternatively expressed, this is a difference of 0.28 standard deviations,
+ or one of similar magnitude to, for instance, the difference between attending
+ an exhibition and doing housework.
 \end_layout
 
 \begin_layout Standard
-Coastal areas are by some distance the happiest, with responses approximately
- 6 points higher than urban environments on the 0 -- 100 scale --- a difference
- of similar magnitude, for instance, to being with one's friends on a warm
- (8 – 15
-\begin_inset Formula $^{\circ}$
-\end_inset
-
-C) and sunny day rather than alone in overcast, sub-freezing conditions.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Better comparator (activity/companionship-based?)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Not any more: Coniferous forests, the next happiest habitat, beat cities
- by almost 4 points --- an increment of about the size associated, for example,
- with watching TV rather than working.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-All other green or natural environment types are between 1.8 and 2.7 points
- happier than cities, while suburban and developed rural environments are
- a little under 1 point happier.
+All other green or natural environment types are between 2.7 and 1.8 points
+ happier than continuous urban environments, while suburban and developed
+ rural environments are a little under 1 point happier.
 \end_layout
 
 \begin_layout Subsection
@@ -26208,7 +26191,7 @@ Robustness checks
 \begin_layout Standard
 We perform a number of robustness checks on our results.
  First, as an alternative approach to identifying high-quality natural environme
-nts, we re-ran the model replacing the LCM habitat variables with three
+nts, we re-ran the model replacing the LCM habitat variables with the three
  (in some cases overlapping) indicators of UK landscape designations.
  The designated areas were: Areas of Outstanding Natural Beauty (AONB ---
  including the Scottish equivalent, National Scenic Areas), with 2,462 outdoor
@@ -26338,6 +26321,31 @@ key "abdi:2007"
  Coefficients on all green or natural land cover types except two --- again,
  freshwater and mountainous environments --- retain significance even using
  the substantially more stringent thresholds calculated using these procedures.
+\end_layout
+
+\begin_layout Subsection
+Limitations/extensions
+\end_layout
+
+\begin_layout Standard
+assumed independence (no interactions)
+\end_layout
+
+\begin_layout Standard
+no contrasts (e.g.
+ from home environment)
+\end_layout
+
+\begin_layout Standard
+no dynamic effects
+\end_layout
+
+\begin_layout Standard
+no spatial models
+\end_layout
+
+\begin_layout Standard
+no states: ill, on holiday, drunk, hungover
 \end_layout
 
 \begin_layout Subsection
