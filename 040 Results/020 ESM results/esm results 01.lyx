@@ -8477,7 +8477,7 @@ key "turk:2007"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -15255,13 +15255,17 @@ Spatial variables
 \end_layout
 
 \begin_layout Standard
-We consider land cover and weather conditions only as interactions with
- being outdoors.
+We consider land cover, countryside designation status and weather conditions
+ only as interactions with being outdoors.
  Although it is possible that these variables are also associated with happiness
  when participants are indoors or in a vehicle, the same direct link from
  environmental exposure to mood cannot be posited in these cases.
  In addition, when participants are not outdoors their location is less
  accurately determined by GPS, making spatial data less reliable.
+\end_layout
+
+\begin_layout Paragraph
+Land cover
 \end_layout
 
 \begin_layout Standard
@@ -16128,8 +16132,16 @@ Mountains, moors and heathland
 
 \end_inset
 
-A little over half of outdoor responses come from the continuous urban habitat
- type, and just over a quarter from the suburban/rural developed type.
+According to LCM data (see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Land-cover-map"
+
+\end_inset
+
+), a little over half of outdoor responses come from the continuous urban
+ habitat type, and just over a quarter from the suburban/rural developed
+ type.
  The seven non-urban types thus account for just under a quarter of outdoor
  responses between them.
  The least frequently observed habitat type outdoors (mountains, moors and
@@ -16146,17 +16158,234 @@ reference "tab:Frequencies-of-habitats"
 .
 \end_layout
 
+\begin_layout Paragraph
+Designation status
+\end_layout
+
 \begin_layout Standard
-\begin_inset Note Note
-status open
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
-TODO Table of designation figures
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Frequencies of countryside designations when participants are outdoors
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Frequencies-of-designations"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="bottom" width="0">
+<column alignment="right" valignment="bottom" width="15text%">
+<column alignment="right" valignment="bottom" width="15text%">
+<column alignment="right" valignment="bottom" width="15text%">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Designations when outdoors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+# of valid responses
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+% of valid outdoor responses
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+% of valid responses
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+National Parks
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,402
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.02
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.00
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Areas of Outstanding Natural Beauty
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,462
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.00
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+National Nature Reserves
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+117
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.00
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.00
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+The numbers of responses from outdoor locations subject to the three designation
+s discussed in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Countryside-designations"
+
+\end_inset
+
+ are given in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Frequencies-of-designations"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Weather conditions
 \end_layout
 
 \begin_layout Standard
@@ -17626,6 +17855,35 @@ Analysis
 We believe the sample supporting this analysis --- over 1,000,000 assessment
  responses, from more than 20,000 participants --- to be the largest ever
  achieved by an ESM study.
+\end_layout
+
+\begin_layout Standard
+The estimates parameters of our fixed effects model of reported happiness
+ (discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Fixed-effects-model"
+
+\end_inset
+
+) are presented in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:lcm-model"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(NOT, in fact, broken)
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -26096,24 +26354,7 @@ boldface
 
 \end_inset
 
-Our fixed effects model of reported happiness is presented in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "tab:lcm-model"
 
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(NOT broken)
-\end_layout
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Subsection
@@ -26121,7 +26362,7 @@ Control variables
 \end_layout
 
 \begin_layout Standard
-All coefficients on control variables demonstrate relationships with reported
+Coefficients on control variables demonstrate relationships with reported
  happiness that are intuitive and (where applicable) in line with previous
  SWB research.
 \begin_inset Foot
@@ -26146,7 +26387,7 @@ Participants' happiest activity, by a large margin, is intimacy or lovemaking.
  as do various activities that may be common in natural environments, including
  gardening, fishing and birdwatching.
  Participants are least happy when sick in bed (with a negative coefficient
- more than four times the size of the next biggest).
+ more than four times the size of the next greatest).
  Queuing, care-giving, and travelling are also associated with significantly
  reduced happiness, as is the commonest activity in the data set, working
  or studying.
@@ -26164,16 +26405,15 @@ All else being equal, participants are significantly less happy during weekday
  early mornings (3am -- 9am) and the very early hours of weekend days (3am
  -- 6am) than at other times.
  And they are happier at any time of day during the weekend than at the
- corresponding time in the week
+ corresponding time during the week
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-According to 
 \begin_inset Formula $F$
 \end_inset
 
- tests this weekday/weekend difference is significant (
+ tests show this weekday/weekend difference to be significant (
 \begin_inset Formula $p>0.05$
 \end_inset
 
@@ -26187,17 +26427,17 @@ According to
 \end_layout
 
 \begin_layout Standard
-Finally, reported happiness increases substantially during the average individua
-l's participation.
+Finally, reported happiness on average increases substantially during the
+ course of an individual's participation.
  There may be several explanations for this.
  For example, it could be that taking part in the study leads to increased
  awareness of states of mind and of the factors that affect them, enabling
  participants to act to improve their mood.
  It could also be that participants initially respond to signals assiduously,
- irrespective of mood, but in later stages are less inclined to respond
- except when feeling good.
- (We have received email correspondence from participants supporting both
- these explanations).
+ irrespective of mood, but in later stages are more inclined to respond
+ when feeling good.
+ (We have received correspondence from participants providing anecdotal
+ support for both of these explanations).
 \end_layout
 
 \begin_layout Standard
@@ -26206,6 +26446,7 @@ status open
 
 \begin_layout Plain Layout
 TODO Really ought to check if response rates do fall off...
+ but particularly fiddly
 \end_layout
 
 \end_inset
@@ -26220,18 +26461,14 @@ Location and environment
 \begin_layout Standard
 Participants are happier at home than at work, and happier still elsewhere.
  Participants are happier outdoors than indoors or in a vehicle.
- 
-\end_layout
-
-\begin_layout Standard
-When outdoors, greater happiness is associated with higher temperatures
+ When outdoors, greater happiness is associated with higher temperatures
  and lower wind speeds, with sunshine, and with the absence of rain and
  fog.
  
 \end_layout
 
 \begin_layout Standard
-Also when outdoors, every habitat type except inland bare ground is associated
+When outdoors, every habitat type except inland bare ground is associated
  with significantly higher happiness levels than continuous urban.
  Coastal locations are by some distance the happiest, with responses approximate
 ly 6 points higher than continuous urban environments on the 0 -- 100 scale.
@@ -26251,7 +26488,7 @@ Robustness checks
 \end_layout
 
 \begin_layout Standard
-We perform a number of robustness checks on our results.
+We have performed a number of robustness checks on our results.
  First, as an alternative approach to identifying high-quality natural environme
 nts, we re-ran the model replacing the LCM habitat variables with the three
  (in some cases overlapping) indicators of UK landscape designations.
