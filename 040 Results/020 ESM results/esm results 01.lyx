@@ -8417,29 +8417,15 @@ Response rate
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO This is the participant average! What about the raw, participant-agnostic
- rate?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Amongst participants who contributed at least one valid response (as defined
- in 
+Overall, amongst participants who contributed at least one valid response
+ (as defined in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:Response-inclusion-criteria"
 
 \end_inset
 
-), the mean valid response rate to signals was 52%
+), the valid response rate to signals was 48.45%
 \begin_inset Foot
 status collapsed
 
@@ -8479,12 +8465,88 @@ key "stone:2002"
  But 
 \begin_inset CommandInset citation
 LatexCommand citet
+after "213"
 key "turk:2007"
 
 \end_inset
 
-, for example, report a response rate of less than 50% in an EMA study of
- fibromyalgia.
+, for example, report a response rate of 49.7% in an EMA study of fibromyalgia.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+(a)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename response_rate_all.pdf
+	width 13cm
+	BoundingBox 0cm 0.5cm 19.18cm 12cm
+	clip
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(b)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename response_rate_min10signals.pdf
+	width 13cm
+	BoundingBox 0cm 0.5cm 19.18cm 13cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Distribution of the valid response rate by participant for (a) all participants
+ contributing at least one valid response and (b) those who were signalled
+ at least ten times
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:response_rate_distributions"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+The distribution of the valid response rate across participants is shown
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:num-response-distribution"
+
+\end_inset
+
+.
+ There is a broad and fairly symmetrical spread of rates.
 \end_layout
 
 \begin_layout Subsubsection

@@ -156,3 +156,18 @@ select count(1) from users where created_at < '14-02-2011';
 select count(distinct user_id) from esm_answer_sets e, users u where e.user_id = u.id and e.sent_beep_id is not null and u.created_at < '14-02-2011';
 
 
+* response rate
+
+\t
+\a
+\f ',' 
+select user_id, xtreg_responses, num_active_beeps, active_beep_response_rate from xtreg_response_rates \g response_rates.csv
+
+-- in R...
+
+data = read.csv('/Users/gjm06/Desktop/response_rates.csv', header=FALSE)
+
+hist(data[,4][data[,4] <= 1][data[,3] >= 10], breaks = 15, xlab = "Proportion of signals resulting in a valid response (participants signalled 10× or more)", main = NA, col = 'gray')
+
+hist(data[,4][data[,4] <= 1][data[,3] >= 0], breaks = 15, xlab = "Proportion of signals resulting in a valid response (all participants with > 0 valid responses)", main = NA, col = 'gray')
+
