@@ -1,5 +1,6 @@
 
 * this file is revised to account for public holidays on 30/8, 27/12, 28/12 and 3/1
+* this is NOT the file used in the reported results (though results are practically indistinguishable)
 
 set more off
 set notifyuser on

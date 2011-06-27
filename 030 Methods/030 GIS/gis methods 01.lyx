@@ -1456,7 +1456,7 @@ reference "fig:Land-Cover-Map"
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -3026,7 +3026,7 @@ key "uk-nea:2011"
  There was one exception: the NEA 'urban' habitat (which accounts for almost
  75% of our ESM responses) was kept split into its two constituent LCM subclasse
 s, 'continuous urban' and 'suburban/rural developed'.
- The habitat categories used are given in 
+ The nine habitat categories used are given in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:broad-habitat-lcm-classes"

@@ -17858,7 +17858,7 @@ We believe the sample supporting this analysis --- over 1,000,000 assessment
 \end_layout
 
 \begin_layout Standard
-The estimates parameters of our fixed effects model of reported happiness
+The estimated parameters of our fixed effects model of reported happiness
  (discussed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -18615,6 +18615,68 @@ Land cover type when participant is outdoors
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Continuous urban (base category)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -19227,68 +19289,6 @@ Inland bare ground
 \noun off
 \color none
 0.435
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Continuous urban (base category)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
----
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -26442,7 +26442,7 @@ Finally, reported happiness on average increases substantially during the
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 TODO Really ought to check if response rates do fall off...
@@ -26491,11 +26491,15 @@ Robustness checks
 We have performed a number of robustness checks on our results.
  First, as an alternative approach to identifying high-quality natural environme
 nts, we re-ran the model replacing the LCM habitat variables with the three
- (in some cases overlapping) indicators of UK landscape designations.
- The designated areas were: Areas of Outstanding Natural Beauty (AONB ---
- including the Scottish equivalent, National Scenic Areas), with 2,462 outdoor
- responses; National Parks (NP), with 1,402 outdoor responses; and National
- Nature Reserves (NNR), with 117 outdoor responses.
+ (in some cases overlapping) indicators of UK landscape designations discussed
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Countryside-designations"
+
+\end_inset
+
+.
  All three designations were positively and significantly related to happiness
  ratings (AONB coeff.
  
@@ -26509,7 +26513,7 @@ nts, we re-ran the model replacing the LCM habitat variables with the three
 \end_inset
 
 , 
-\begin_inset Formula $p<0.0001$
+\begin_inset Formula $p<0.001$
 \end_inset
 
 ; NP coeff.
@@ -26524,7 +26528,7 @@ nts, we re-ran the model replacing the LCM habitat variables with the three
 \end_inset
 
 , 
-\begin_inset Formula $p<0.0001$
+\begin_inset Formula $p<0.001$
 \end_inset
 
 ; NNR coeff.
@@ -26539,7 +26543,7 @@ nts, we re-ran the model replacing the LCM habitat variables with the three
 \end_inset
 
 , 
-\begin_inset Formula $p=0.0020$
+\begin_inset Formula $p=0.002$
 \end_inset
 
 ).
@@ -26567,23 +26571,21 @@ reference "fig:Distributions-of-feelings"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Stricter inclusion criteria
-\end_layout
-
-\end_inset
-
-
+Third, we tested the effect of imposing more stringent response inclusion
+ criteria, requiring responses to be made within 20 minutes of a signal
+ instead of 60 and reported accuracy to be 100m or better instead of 250m
+ or better.
+ This reduces the sample size to 652,736 responses and 20,648 participants.
+ The sign and significance of all LCM habitat variable coefficients is unchanged
+ in this regression relative to the one reported, and no coefficient varies
+ by more than 0.5 between the two regressions.
 \end_layout
 
 \begin_layout Standard
-Third, meaningful hypothesis testing requires that the significance level
- be a decreasing function of sample size
+Fourth, meaningful hypothesis testing requires that the significance level
+ be a decreasing function of sample size 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citep
 key "leamer:1978"
 
 \end_inset
@@ -26596,22 +26598,22 @@ key "leamer:1978"
 \begin_inset Formula $F$
 \end_inset
 
- value
+ value when testing whether each coefficient is different from zero 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citep
 key "deaton:1997"
 
 \end_inset
 
- when testing whether each coefficient is different from zero.
+.
  We can account for the second using the Bonferroni correction, dividing
  the significance threshold (
 \begin_inset Formula $p<0.05$
 \end_inset
 
-) by the number of tests
+) by the number of tests 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citep
 key "abdi:2007"
 
 \end_inset
@@ -26623,49 +26625,40 @@ key "abdi:2007"
 \end_layout
 
 \begin_layout Subsection
-Limitations/extensions
+Interpretation
 \end_layout
 
 \begin_layout Standard
-assumed independence (no interactions)
+The relationships we estimate between happiness and environment are highly
+ statistically significant, and their magnitudes are substantial.
+ We know that the relationships are not confounded at the participant level
+ --- that is, by associations between types of locations and types of people
+ --- because our model is estimated exclusively from the within-individual
+ variation.
+ And we have controlled for a reasonably comprehensive set of potential
+ confounders at the response level.
 \end_layout
 
 \begin_layout Standard
-no contrasts (e.g.
- from home environment)
+Causal pathways may run in both directions, such that people choose an environme
+nt partly according to their mood, and people's moods are partly determined
+ by their environment.
+ It seems highly plausible that the latter pathway makes an important contributi
+on to the relationship, and future research using this data will address
+ this in greater detail.
 \end_layout
 
 \begin_layout Standard
-no dynamic effects
-\end_layout
-
-\begin_layout Standard
-no spatial models
-\end_layout
-
-\begin_layout Standard
-no states: ill, on holiday, drunk, hungover
-\end_layout
-
-\begin_layout Subsection
-Valuation(?)
-\end_layout
-
-\begin_layout Standard
-Using activities e.g.
- cinema ticket cost/2 hours
-\end_layout
-
-\begin_layout Standard
-cinema: £5/hr
-\end_layout
-
-\begin_layout Standard
-theatre:
-\end_layout
-
-\begin_layout Standard
-drinking:
+In future research we also hope to: relax the assumption of independent
+ effects we have made in relation to most of our explanatory variables,
+ and investigate the huge variety of possible interactions; estimate more
+ complex econometric models accounting for spatial and/or serial correlation;
+ use heuristics, and/or add new ESM assessment questions, to identify states
+ --- such as being unwell, on holiday, drunk, or hung over; incorporate
+ contrasts, such as between the current environment and home environment;
+ and explore the use of this data for monetary valuation of the environment.
+ In our view there is enormous potential for this data, and for geo-located
+ experience sampling in general, to provide further insights in this area.
 \end_layout
 
 \end_body
