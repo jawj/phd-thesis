@@ -886,8 +886,8 @@ UK
 \begin_layout Standard
 There were 30,053 downloads from the UK App Store up to the end of 13 February.
  Registrations are not geo-located, but we can tell that 73% of those who
- downloaded the app in the UK (21,947 participants) completed registration
- and went on to contribute one or more valid responses.
+ downloaded the app from the UK App Store (21,947 participants) completed
+ registration and went on to contribute one or more valid responses.
 \end_layout
 
 \begin_layout Subsubsection
@@ -4049,7 +4049,7 @@ status collapsed
 
 \begin_layout Plain Layout
 Distribution of the number of responses per participant (89 participants
- provided between 400 and 737 responses --- these are not shown)
+ not shown here provided between 400 and 737 responses)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:num-response-distribution"
@@ -4082,12 +4082,6 @@ reference "fig:num-response-distribution"
 
 \begin_layout Subsubsection
 Demographics
-\end_layout
-
-\begin_layout Standard
-Our reliance on participants having iPhones clearly restricts the sample's
- demographic profile.
- 
 \end_layout
 
 \begin_layout Standard
@@ -5813,7 +5807,9 @@ Not stated
 
 \end_inset
 
-Participants are relatively wealthy: median household income is approximately
+Our reliance on participants with iPhones clearly restricts the sample's
+ demographic profile.
+ Participants are relatively wealthy: median household income is approximately
  GBP £48,000, which is almost twice the UK median 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5873,8 +5869,8 @@ name "fig:birth-years"
 
 \end_inset
 
-They are also relatively young: 66% are aged under 35, and 95% under 50,
- compared to 29% and 56% respectively in the UK adult population 
+Participants are also relatively young: 66% are aged under 35, and 95% under
+ 50, compared to 29% and 56% respectively in the UK adult population 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "office-for-national-statistics:2009"
@@ -8519,8 +8515,8 @@ status collapsed
 
 \begin_layout Plain Layout
 Distribution of the valid response rate by participant for (a) all participants
- contributing at least one valid response and (b) those who were signalled
- at least ten times
+ contributing at least one valid response and (b) those who were, in addition,
+ signalled at least ten times
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:response_rate_distributions"
@@ -10698,6 +10694,10 @@ reference "tab:Frequencies-of-activities"
  gives details of all activities.
 \end_layout
 
+\begin_layout Paragraph
+UKTUS comparator
+\end_layout
+
 \begin_layout Standard
 To help understand the sampling limitations in this study --- regarding
  both participant characteristics and the limits on when participants can
@@ -12549,7 +12549,8 @@ reference "tab:activity-comparisons"
  and discussed below.
  In general, such differences appear to have plausible (though not provable)
  explanations in terms of the activity definitions and/or disparities in
- demographic profile, although experience sampling issues might also contribute.
+ demographic profiles.
+ Experience sampling issues might also contribute, however.
 \end_layout
 
 \begin_layout Description
@@ -12566,7 +12567,7 @@ socialising This activity is substantially more prevalent in the Mappiness
  This may be the result of our inclusion of the very general activity 'talking',
  which has no direct equivalent in the UKTUS classification, and/or the
  fact that socialising might often be considered secondary to a more specific
- activity, and thus not captured as the UKTUS 'main' activity.
+ activity, and thus not be captured as the UKTUS 'main' activity.
 \end_layout
 
 \begin_layout Description
@@ -13313,6 +13314,10 @@ reference "tab:Frequencies-of-companionship"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Paragraph
+UKTUS comparator
 \end_layout
 
 \begin_layout Standard
@@ -15259,9 +15264,10 @@ We consider land cover, countryside designation status and weather conditions
  only as interactions with being outdoors.
  Although it is possible that these variables are also associated with happiness
  when participants are indoors or in a vehicle, the same direct link from
- environmental exposure to mood cannot be posited in these cases.
+ environmental exposure to mood cannot be posited with any confidence in
+ these cases.
  In addition, when participants are not outdoors their location is less
- accurately determined by GPS, making spatial data less reliable.
+ accurately determined by GPS, making these spatial data less reliable.
 \end_layout
 
 \begin_layout Paragraph
@@ -17829,7 +17835,7 @@ a priori
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 TODO Note that we 
@@ -26566,8 +26572,22 @@ reference "fig:Distributions-of-feelings"
  We also investigated the spikes alone, using logit models (with the same
  explanatory variables) to predict extreme happy and unhappy answers.
  All land cover types except freshwater and mountains are positively predictive
- of extreme happy answers, while none significantly predicts extreme unhappy
- ones.
+ of extreme happy answers
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+And these two land cover types are also positively predictive of extreme
+ happy answers at the less stringent threshold of 
+\begin_inset Formula $p<0.1$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+, while none significantly predicts extreme unhappy ones.
 \end_layout
 
 \begin_layout Standard
@@ -26577,12 +26597,12 @@ Third, we tested the effect of imposing more stringent response inclusion
  or better.
  This reduces the sample size to 652,736 responses and 20,648 participants.
  The sign and significance of all LCM habitat variable coefficients is unchanged
- in this regression relative to the one reported, and no coefficient varies
- by more than 0.5 between the two regressions.
+ in this regression relative to the one reported above, and no coefficient
+ varies by more than 0.5 between the two regressions.
 \end_layout
 
 \begin_layout Standard
-Fourth, meaningful hypothesis testing requires that the significance level
+Finally, meaningful hypothesis testing requires that the significance level
  be a decreasing function of sample size 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -26653,7 +26673,11 @@ In future research we also hope to: relax the assumption of independent
  effects we have made in relation to most of our explanatory variables,
  and investigate the huge variety of possible interactions; estimate more
  complex econometric models accounting for spatial and/or serial correlation;
- use heuristics, and/or add new ESM assessment questions, to identify states
+ use heuristics, and/or add new ESM assessment questions, to identify not
+ only activities but also 
+\emph on
+states
+\emph default
  --- such as being unwell, on holiday, drunk, or hung over; incorporate
  contrasts, such as between the current environment and home environment;
  and explore the use of this data for monetary valuation of the environment.
