@@ -4873,6 +4873,13 @@ Participant recruitment and communication
 
 \begin_layout Subsection
 Participant motivation
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Participant-motivation"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4914,6 +4921,7 @@ We considered whether financial incentives might be provided, but ruled
  intrinsic and altruistic motivations 
 \begin_inset CommandInset citation
 LatexCommand citep
+before "e.g."
 key "frey:2001"
 
 \end_inset
@@ -4991,6 +4999,8 @@ reference "fig:Mappiness-logo"
 \end_inset
 
 .
+ It includes the London School of Economics logo within it, to help emphasise
+ that the study is part of a non-commercial, academic research programme.
  The clean design and relatively informal copywriting style were inspired
  by those of various successful apps and online services.
 \end_layout
@@ -5199,7 +5209,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -5254,8 +5264,8 @@ Click
 \emph on
 Connect the World
 \emph default
- programme), and Reuters TV (syndicated by BBC Mundo and US regional broadcaster
-s);
+ programme), and Reuters TV (syndicated by BBC Mundo, US regional broadcasters,
+ and others);
 \end_layout
 
 \begin_layout Itemize
@@ -5690,28 +5700,48 @@ Data quality and cleaning
 \end_layout
 
 \begin_layout Standard
-No incentive to provide rubbish (unpaid) -- in fact, jeopardises all listed
- motivations.
+In comparison to the checks run on the web survey data, which were discussed
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:data-quality"
+
+\end_inset
+
+, relatively little quality checking was applied to the ESM data.
+ There are three main reasons for this.
 \end_layout
 
 \begin_layout Standard
-Location reported automatically, so no IP issues.
+First, ESM study participants are not paid, and have no obvious incentives
+ to supply poor quality or inaccurate responses.
+ In fact, doing so would invalidate two of the three incentives for participatio
+n discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Participant-motivation"
+
+\end_inset
+
+.
+ Second, location information is sensed automatically, and cannot therefore
+ be falsified.
+ We therefore do not need to verify location using IP addresses, for example.
+ Third, there is rather less scope than in the web survey data for quality
+ checking --- there are relatively few response combinations which are impossibl
+e, even if some may seem improbable.
 \end_layout
 
 \begin_layout Standard
-Also difficult to check patterns/consistency, since few questions.
-\end_layout
+The checks which we do run are discussed in relation to broader issues of
+ response validity in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:esm-Response-validity"
 
-\begin_layout Standard
-Still, a few checks: 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-eliminating duplicates and own data
-\end_layout
-
-\begin_layout Standard
-> 12 activities, etc.
+.
 \end_layout
 
 \end_body
