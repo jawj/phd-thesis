@@ -3761,8 +3761,8 @@ Given the importance of location to our study, postcodes that could not
  initially be geocoded were checked manually.
  For example, on the London survey, 11 postcodes were corrected by removing
  extraneous spaces or punctuation characters, or substituting characters
- that are visually similar (and close on the keyboard): 0 and O, and 1 and
- I and !.
+ that are visually similar and/or close on the keyboard: 0 and O, and 1
+ and I and !.
 \end_layout
 
 \end_body
