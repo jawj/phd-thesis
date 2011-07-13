@@ -1,0 +1,311 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="1.7.0-Wroclaw">
+    <title></title>
+    <mapcanvas>
+        <units>meters</units>
+        <extent>
+            <xmin>497550.653896</xmin>
+            <ymin>152519.104360</ymin>
+            <xmax>567722.100970</xmax>
+            <ymax>202162.609247</ymax>
+        </extent>
+        <projections>0</projections>
+        <destinationsrs>
+            <spatialrefsys>
+                <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</proj4>
+                <srsid>2437</srsid>
+                <srid>27700</srid>
+                <authid>EPSG:27700</authid>
+                <description>OSGB 1936 / British National Grid</description>
+                <projectionacronym>tmerc</projectionacronym>
+                <ellipsoidacronym>airy</ellipsoidacronym>
+                <geographicflag>false</geographicflag>
+            </spatialrefsys>
+        </destinationsrs>
+    </mapcanvas>
+    <legend>
+        <legendlayer open="true" checked="Qt::Checked" name="points" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="points20110713144026922" visible="1"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer open="true" checked="Qt::Checked" name="greaterlondon" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="greaterlondon20110713144302007" visible="1"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer open="true" checked="Qt::Checked" name="district_borough_unitary_region" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="district_borough_unitary_region20110713144705281" visible="1"/>
+            </filegroup>
+        </legendlayer>
+    </legend>
+    <Composer title="Composer 1" visible="1">
+        <ComposerMap keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
+            <Extent ymin="152519.1043598947" xmin="497550.6538958626" ymax="201852.2294124227" xmax="567722.1009699731"/>
+            <LayerSet/>
+            <Grid gridStyle="0" crossLength="3" penColorRed="0" penColorBlue="0" intervalX="0" offsetX="0" intervalY="0" offsetY="0" show="0" penWidth="0" penColorGreen="0">
+                <Annotation direction="0" precision="3" position="1" frameDistance="1" show="0" font="Lucida Grande,13,-1,5,50,0,0,0,0,0"/>
+            </Grid>
+            <ComposerItem width="296.3431085043989" x="-0.09090909090909349" y="0.5219941348973478" rotation="0" height="208.3401759530792" frame="false" outlineWidth="0.3" zValue="1" lastValidViewScaleFactor="2.288590604026846" positionLock="false">
+                <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+            </ComposerItem>
+        </ComposerMap>
+        <Composition printResolution="300" paperWidth="297" snapGridOffsetX="0" snapGridResolution="0" snapGridOffsetY="0" snapping="0" paperHeight="210" printAsRaster="0"/>
+    </Composer>
+    <projectlayers layercount="3">
+        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+            <id>district_borough_unitary_region20110713144705281</id>
+            <datasource>/Users/gjm06/GIS/Data/Borders, boundaries, codes/Boundary-Line May 2010/data/district_borough_unitary_region.shp</datasource>
+            <layername>district_borough_unitary_region</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.999601272 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.1502,0.247,0.8421,-20.4894 +units=m +no_defs</proj4>
+                    <srsid>100005</srsid>
+                    <srid>0</srid>
+                    <authid>USER:100005</authid>
+                    <description> * Generated CRS (+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.999601272 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.1502,0.247,0.8421,-20.4894 +units=m +no_defs)</description>
+                    <projectionacronym>tmerc</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="UTF-8">ogr</provider>
+            <vectorjoins/>
+            <singlesymbol>
+                <symbol>
+                    <lowervalue></lowervalue>
+                    <uppervalue></uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="255" blue="255" green="255"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.5</outlinewidth>
+                    <fillcolor red="230" blue="230" green="230"/>
+                    <fillpattern>SolidPattern</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+            </singlesymbol>
+            <customproperties/>
+            <displayfield>NAME</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="Lucida Grande"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="AREA"/>
+                <edittype type="0" name="AREA_CODE"/>
+                <edittype type="0" name="CODE"/>
+                <edittype type="0" name="DESCRIPT0"/>
+                <edittype type="0" name="DESCRIPT1"/>
+                <edittype type="0" name="DESCRIPTIO"/>
+                <edittype type="0" name="FILE_NAME"/>
+                <edittype type="0" name="HECTARES"/>
+                <edittype type="0" name="NAME"/>
+                <edittype type="0" name="NUMBER"/>
+                <edittype type="0" name="NUMBER0"/>
+                <edittype type="0" name="POLYGON_ID"/>
+                <edittype type="0" name="TYPE_COD0"/>
+                <edittype type="0" name="TYPE_CODE"/>
+                <edittype type="0" name="UNIT_ID"/>
+            </edittypes>
+            <editform></editform>
+            <editforminit></editforminit>
+            <annotationform></annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" minLabelScale="0" maxLabelScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0" scaleBasedLabelVisibilityFlag="0">
+            <id>greaterlondon20110713144302007</id>
+            <datasource>dbname='geo' host=localhost port=5432 user='postgres' password='33electr0lux' key='ctid' table="greaterlondon" (st_simplifypreservetopology) sql=</datasource>
+            <layername>greaterlondon</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</proj4>
+                    <srsid>2437</srsid>
+                    <srid>27700</srid>
+                    <authid>EPSG:27700</authid>
+                    <description>OSGB 1936 / British National Grid</description>
+                    <projectionacronym>tmerc</projectionacronym>
+                    <ellipsoidacronym>airy</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="UTF-8">postgres</provider>
+            <vectorjoins/>
+            <singlesymbol>
+                <symbol>
+                    <lowervalue></lowervalue>
+                    <uppervalue></uppervalue>
+                    <label></label>
+                    <pointsymbol>hard:circle</pointsymbol>
+                    <pointsize>2</pointsize>
+                    <pointsizeunits>pixels</pointsizeunits>
+                    <rotationclassificationfieldname></rotationclassificationfieldname>
+                    <scaleclassificationfieldname></scaleclassificationfieldname>
+                    <symbolfieldname></symbolfieldname>
+                    <outlinecolor red="0" blue="0" green="0"/>
+                    <outlinestyle>SolidLine</outlinestyle>
+                    <outlinewidth>0.5</outlinewidth>
+                    <fillcolor red="101" blue="254" green="228"/>
+                    <fillpattern>NoBrush</fillpattern>
+                    <texturepath null="1"></texturepath>
+                </symbol>
+            </singlesymbol>
+            <customproperties/>
+            <displayfield>id</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="Lucida Grande"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="id"/>
+            </edittypes>
+            <editform></editform>
+            <editforminit></editforminit>
+            <annotationform></annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Point" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>points20110713144026922</id>
+            <datasource>file:///Users/gjm06/Downloads/points.csv?delimiter=%5B,%5D&amp;delimiterType=regexp&amp;xField=nspd_point_e&amp;yField=nspd_point_n</datasource>
+            <layername>points</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</proj4>
+                    <srsid>2437</srsid>
+                    <srid>27700</srid>
+                    <authid>EPSG:27700</authid>
+                    <description>OSGB 1936 / British National Grid</description>
+                    <projectionacronym>tmerc</projectionacronym>
+                    <ellipsoidacronym>airy</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="UTF-8">delimitedtext</provider>
+            <vectorjoins/>
+            <renderer-v2 symbollevels="0" type="singleSymbol">
+                <symbols>
+                    <symbol outputUnit="MM" alpha="1" type="marker" name="0">
+                        <layer pass="0" class="SvgMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="name" v="/gpsicons/city_medium.svg"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="size" v="6"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <rotation field=""/>
+                <sizescale field=""/>
+            </renderer-v2>
+            <customproperties/>
+            <displayfield>id</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="Lucida Grande"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="id"/>
+                <edittype type="0" name="nspd_point_e"/>
+                <edittype type="0" name="nspd_point_n"/>
+            </edittypes>
+            <editform></editform>
+            <editforminit></editforminit>
+            <annotationform></annotationform>
+            <attributeactions/>
+        </maplayer>
+    </projectlayers>
+    <properties>
+        <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+        <WMSContactPerson type="QString"></WMSContactPerson>
+        <Identify>
+            <disabledLayers type="QStringList"/>
+        </Identify>
+        <WMSContactPhone type="QString"></WMSContactPhone>
+        <SpatialRefSys>
+            <ProjectCRSProj4String type="QString">+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</ProjectCRSProj4String>
+            <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
+            <ProjectCRSID type="int">2437</ProjectCRSID>
+        </SpatialRefSys>
+        <Gui>
+            <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+            <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+            <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+            <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+            <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+            <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+            <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+        </Gui>
+        <Paths>
+            <Absolute type="bool">true</Absolute>
+        </Paths>
+        <WMSContactMail type="QString"></WMSContactMail>
+        <PositionPrecision>
+            <DecimalPlaces type="int">2</DecimalPlaces>
+            <Automatic type="bool">true</Automatic>
+        </PositionPrecision>
+        <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+        <WMSContactOrganization type="QString"></WMSContactOrganization>
+        <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+        <WMSServiceTitle type="QString"></WMSServiceTitle>
+    </properties>
+</qgis>
