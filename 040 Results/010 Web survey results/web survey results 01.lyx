@@ -109,7 +109,7 @@ UK
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -178,7 +178,7 @@ name "tab:web-uk-demographics"
 \begin_layout Plain Layout
 
 \emph on
-% in London population
+% in UK population
 \emph default
 †
 \end_layout
@@ -240,7 +240,7 @@ Female
 \begin_inset Text
 
 \begin_layout Plain Layout
-459
+959
 \end_layout
 
 \end_inset
@@ -249,7 +249,7 @@ Female
 \begin_inset Text
 
 \begin_layout Plain Layout
-54.4
+51.0
 \end_layout
 
 \end_inset
@@ -258,7 +258,7 @@ Female
 \begin_inset Text
 
 \begin_layout Plain Layout
-50.5
+
 \end_layout
 
 \end_inset
@@ -278,7 +278,7 @@ Male
 \begin_inset Text
 
 \begin_layout Plain Layout
-385
+920
 \end_layout
 
 \end_inset
@@ -287,7 +287,7 @@ Male
 \begin_inset Text
 
 \begin_layout Plain Layout
-45.6
+49.0
 \end_layout
 
 \end_inset
@@ -296,7 +296,7 @@ Male
 \begin_inset Text
 
 \begin_layout Plain Layout
-49.5
+
 \end_layout
 
 \end_inset
@@ -394,7 +394,7 @@ Age
 \begin_inset Text
 
 \begin_layout Plain Layout
-135
+199
 \end_layout
 
 \end_inset
@@ -403,7 +403,7 @@ Age
 \begin_inset Text
 
 \begin_layout Plain Layout
-16.0
+10.6
 \end_layout
 
 \end_inset
@@ -412,7 +412,7 @@ Age
 \begin_inset Text
 
 \begin_layout Plain Layout
-12.3
+
 \end_layout
 
 \end_inset
@@ -432,7 +432,7 @@ Age
 \begin_inset Text
 
 \begin_layout Plain Layout
-339
+660
 \end_layout
 
 \end_inset
@@ -441,7 +441,7 @@ Age
 \begin_inset Text
 
 \begin_layout Plain Layout
-40.2
+35.1
 \end_layout
 
 \end_inset
@@ -450,7 +450,7 @@ Age
 \begin_inset Text
 
 \begin_layout Plain Layout
-36.6
+
 \end_layout
 
 \end_inset
@@ -470,7 +470,7 @@ Age
 \begin_inset Text
 
 \begin_layout Plain Layout
-287
+747
 \end_layout
 
 \end_inset
@@ -479,7 +479,7 @@ Age
 \begin_inset Text
 
 \begin_layout Plain Layout
-34.0
+39.8
 \end_layout
 
 \end_inset
@@ -488,7 +488,7 @@ Age
 \begin_inset Text
 
 \begin_layout Plain Layout
-20.0
+
 \end_layout
 
 \end_inset
@@ -508,7 +508,7 @@ Age
 \begin_inset Text
 
 \begin_layout Plain Layout
-83
+270
 \end_layout
 
 \end_inset
@@ -517,7 +517,7 @@ Age
 \begin_inset Text
 
 \begin_layout Plain Layout
-9.8
+14.5
 \end_layout
 
 \end_inset
@@ -526,7 +526,7 @@ Age
 \begin_inset Text
 
 \begin_layout Plain Layout
-11.8
+
 \end_layout
 
 \end_inset
@@ -624,7 +624,7 @@ Never married
 \begin_inset Text
 
 \begin_layout Plain Layout
-394
+
 \end_layout
 
 \end_inset
@@ -633,7 +633,7 @@ Never married
 \begin_inset Text
 
 \begin_layout Plain Layout
-46.7
+
 \end_layout
 
 \end_inset
@@ -642,7 +642,7 @@ Never married
 \begin_inset Text
 
 \begin_layout Plain Layout
-41.2
+
 \end_layout
 
 \end_inset
@@ -662,7 +662,7 @@ Married and living with spouse
 \begin_inset Text
 
 \begin_layout Plain Layout
-309
+
 \end_layout
 
 \end_inset
@@ -671,7 +671,7 @@ Married and living with spouse
 \begin_inset Text
 
 \begin_layout Plain Layout
-36.6
+
 \end_layout
 
 \end_inset
@@ -680,7 +680,7 @@ Married and living with spouse
 \begin_inset Text
 
 \begin_layout Plain Layout
-41.7
+
 \end_layout
 
 \end_inset
@@ -700,7 +700,7 @@ Divorced
 \begin_inset Text
 
 \begin_layout Plain Layout
-89
+
 \end_layout
 
 \end_inset
@@ -709,7 +709,7 @@ Divorced
 \begin_inset Text
 
 \begin_layout Plain Layout
-10.6
+
 \end_layout
 
 \end_inset
@@ -718,7 +718,7 @@ Divorced
 \begin_inset Text
 
 \begin_layout Plain Layout
-7.4
+
 \end_layout
 
 \end_inset
@@ -738,7 +738,7 @@ Separated
 \begin_inset Text
 
 \begin_layout Plain Layout
-23
+
 \end_layout
 
 \end_inset
@@ -747,7 +747,7 @@ Separated
 \begin_inset Text
 
 \begin_layout Plain Layout
-2.7
+
 \end_layout
 
 \end_inset
@@ -756,7 +756,7 @@ Separated
 \begin_inset Text
 
 \begin_layout Plain Layout
-2.9
+
 \end_layout
 
 \end_inset
@@ -776,7 +776,7 @@ Widowed
 \begin_inset Text
 
 \begin_layout Plain Layout
-28
+
 \end_layout
 
 \end_inset
@@ -785,7 +785,7 @@ Widowed
 \begin_inset Text
 
 \begin_layout Plain Layout
-3.3
+
 \end_layout
 
 \end_inset
@@ -794,7 +794,7 @@ Widowed
 \begin_inset Text
 
 \begin_layout Plain Layout
-6.8
+
 \end_layout
 
 \end_inset
@@ -814,7 +814,7 @@ Widowed
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+
 \end_layout
 
 \end_inset
@@ -823,7 +823,7 @@ Widowed
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.1
+
 \end_layout
 
 \end_inset
@@ -930,7 +930,7 @@ Currently in a relationship (including 'married and living with spouse')
 \begin_inset Text
 
 \begin_layout Plain Layout
-527
+
 \end_layout
 
 \end_inset
@@ -939,7 +939,7 @@ Currently in a relationship (including 'married and living with spouse')
 \begin_inset Text
 
 \begin_layout Plain Layout
-62.4
+
 \end_layout
 
 \end_inset
@@ -1050,7 +1050,7 @@ Number of adults (age
 \begin_inset Text
 
 \begin_layout Plain Layout
-202
+
 \end_layout
 
 \end_inset
@@ -1059,7 +1059,7 @@ Number of adults (age
 \begin_inset Text
 
 \begin_layout Plain Layout
-23.9
+
 \end_layout
 
 \end_inset
@@ -1088,7 +1088,7 @@ Number of adults (age
 \begin_inset Text
 
 \begin_layout Plain Layout
-393
+
 \end_layout
 
 \end_inset
@@ -1097,7 +1097,7 @@ Number of adults (age
 \begin_inset Text
 
 \begin_layout Plain Layout
-46.6
+
 \end_layout
 
 \end_inset
@@ -1126,7 +1126,7 @@ Number of adults (age
 \begin_inset Text
 
 \begin_layout Plain Layout
-146
+
 \end_layout
 
 \end_inset
@@ -1135,7 +1135,7 @@ Number of adults (age
 \begin_inset Text
 
 \begin_layout Plain Layout
-17.3
+
 \end_layout
 
 \end_inset
@@ -1164,7 +1164,7 @@ Number of adults (age
 \begin_inset Text
 
 \begin_layout Plain Layout
-103
+
 \end_layout
 
 \end_inset
@@ -1173,7 +1173,7 @@ Number of adults (age
 \begin_inset Text
 
 \begin_layout Plain Layout
-12.2
+
 \end_layout
 
 \end_inset
@@ -1280,7 +1280,7 @@ Number of children (age < 16) in the household
 \begin_inset Text
 
 \begin_layout Plain Layout
-633
+
 \end_layout
 
 \end_inset
@@ -1289,7 +1289,7 @@ Number of children (age < 16) in the household
 \begin_inset Text
 
 \begin_layout Plain Layout
-75.0
+
 \end_layout
 
 \end_inset
@@ -1318,7 +1318,7 @@ Number of children (age < 16) in the household
 \begin_inset Text
 
 \begin_layout Plain Layout
-113
+
 \end_layout
 
 \end_inset
@@ -1327,7 +1327,7 @@ Number of children (age < 16) in the household
 \begin_inset Text
 
 \begin_layout Plain Layout
-13.4
+
 \end_layout
 
 \end_inset
@@ -1356,7 +1356,7 @@ Number of children (age < 16) in the household
 \begin_inset Text
 
 \begin_layout Plain Layout
-71
+
 \end_layout
 
 \end_inset
@@ -1365,7 +1365,7 @@ Number of children (age < 16) in the household
 \begin_inset Text
 
 \begin_layout Plain Layout
-8.4
+
 \end_layout
 
 \end_inset
@@ -1394,7 +1394,7 @@ Number of children (age < 16) in the household
 \begin_inset Text
 
 \begin_layout Plain Layout
-23
+
 \end_layout
 
 \end_inset
@@ -1403,7 +1403,7 @@ Number of children (age < 16) in the household
 \begin_inset Text
 
 \begin_layout Plain Layout
-2.7
+
 \end_layout
 
 \end_inset
@@ -1432,7 +1432,7 @@ Number of children (age < 16) in the household
 \begin_inset Text
 
 \begin_layout Plain Layout
-4
+
 \end_layout
 
 \end_inset
@@ -1441,7 +1441,7 @@ Number of children (age < 16) in the household
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.5
+
 \end_layout
 
 \end_inset
