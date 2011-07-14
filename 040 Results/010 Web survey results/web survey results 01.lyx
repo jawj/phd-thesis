@@ -101,14 +101,6 @@ The environment near the home
 Descriptive statistics
 \end_layout
 
-\begin_layout Subsection
-UK
-\end_layout
-
-\begin_layout Standard
-(Quota sample, so some element of representativeness guaranteed)
-\end_layout
-
 \begin_layout Standard
 \begin_inset Float table
 wide false
@@ -1356,13 +1348,10 @@ key "office-for-national-statistics:2003a"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -2333,188 +2322,6 @@ key "national-statistics:2007"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename uk_household_income_hist.pdf
-	width 14cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Distribution of gross annual household income, UK web survey (bars span
- survey response brackets, and 3 respondents with a household income of
- £200,000 or more are not shown) 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:hh-inc-uk"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Median hh inc bracket: £23,000 -- £25,999
-\end_layout
-
-\begin_layout Standard
-Hh inc midpoint mean: £29,331
-\end_layout
-
-\begin_layout Standard
-The median gross household income in 2004/05 was £24,700 per year.
- The mean household gross income...
- was £31,884 per year 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "house-of-commons:2006"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename uk_ls_hist.pdf
-	width 14cm
-	BoundingBox 0bp 0bp 396bp 288bp
-	clip
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Distribution of life satisfaction ratings, UK web survey
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:ls-dist-uk"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Spatial data
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename uk_response_locations.pdf
-	width 16cm
-	BoundingBox 0bp 0bp 595bp 842bp
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Response locations, UK web survey (there are 1,585 responses from England,
- 173 from Scotland, 94 from Wales and 26 from Northern Ireland)
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:response-locs-uk"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO Add spatial descriptives and correlations when variables to be used
- in regressions finalised
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-London
-\end_layout
-
-\begin_layout Standard
-(Quota sample, so some element of representativeness guaranteed)
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -3953,9 +3760,6 @@ key "office-for-national-statistics:2007"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -4882,10 +4686,108 @@ key "national-statistics:2007"
 
 \end_inset
 
+As discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Quota-methods"
 
+\end_inset
+
+ both web surveys used quota sampling, so basic demographic characteristics
+ in the samples should be close to representative of the respective populations.
+ As seen in Tables 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:web-uk-demographics"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:web-london-demographics"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:web-uk-emp-edu"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:web-london-emp-edu"
+
+\end_inset
+
+, which provide summaries of demographic information for the UK and London
+ surveys, this is indeed generally observed.
+ 
 \end_layout
 
 \begin_layout Standard
+However, in each case the oldest age group (65+) is slightly under-represented
+ and the 45 -- 64 group somewhat over-represented.
+ Similarly, those with degree-level qualifications are somewhat over-represented
+ and those with no qualifications under-represented.
+ These discrepancies may reflect the differential penetration of Internet
+ access seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:net-use"
+
+\end_inset
+
+.
+ In addition, those in paid employment are somewhat under-represented in
+ both surveys.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename uk_household_income_hist.pdf
+	width 14cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Distribution of gross annual household income, UK web survey (bars span
+ survey response brackets, and 3 respondents with a household income of
+ £200,000 or more are not shown) 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hh-inc-uk"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -4926,25 +4828,26 @@ name "fig:hh-inc-london"
 
 \end_inset
 
+Household income distributions in the two surveys are shown in Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hh-inc-uk"
 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-Average gross household income for London during 2003--2006 was £766 per
- week 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "national-statistics:2007"
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hh-inc-london"
 
 \end_inset
 
 .
- Our mean of household income bracket midpoints: £36,002 = £690 pw.
 \end_layout
 
 \begin_layout Standard
-Median gross household income response bracket: £26,000 -- £28,999.
- Slightly above the UK median in 2004/05 of £24,700 
+For the UK as a whole in 2004/05, median gross annual household income was
+ £24,700, and the mean was £31,884 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "house-of-commons:2006"
@@ -4952,19 +4855,75 @@ key "house-of-commons:2006"
 \end_inset
 
 .
+ The figures are very similar in the UK survey data, in which the median
+ household income bracket is £23,000 -- £25,999, and the mean of the bracket
+ midpoints is £29,331.
 \end_layout
 
 \begin_layout Standard
-In April 2006, median gross weekly earnings of 
+In London in 2006, median gross weekly earnings of
 \emph on
-full-time employees
+ 
 \emph default
- living in London were £540.80 .
- Our equivalent: median individual income bracket for employees (full- and
- part-time) only: £26,000 -- £28,999 = £498 -- £556.
+full-time employees were £541 
+\size footnotesize
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "national-statistics:2007"
+
+\end_inset
+
+
+\size default
+.
+ The median individual income bracket for employees (both full- and part-time)
+ in the London survey data is consistent with this, being equivalent to
+ £498 -- £556 per week.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename uk_ls_hist.pdf
+	width 14cm
+	BoundingBox 0bp 0bp 396bp 288bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Distribution of life satisfaction ratings, UK web survey
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ls-dist-uk"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -5006,6 +4965,97 @@ name "fig:ls-dist-london"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Spatial data
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename uk_response_locations.pdf
+	width 16cm
+	BoundingBox 0bp 0bp 595bp 842bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Response locations, UK web survey (there are 1,585 responses from England,
+ 173 from Scotland, 94 from Wales and 26 from Northern Ireland)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:response-locs-uk"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO Add spatial descriptives and correlations when variables to be used
+ in regressions finalised
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+London
+\end_layout
+
+\begin_layout Standard
+Average gross household income for London during 2003--2006 was £766 per
+ week 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "national-statistics:2007"
+
+\end_inset
+
+.
+ Our mean of household income bracket midpoints: £36,002 = £690 pw.
+\end_layout
+
+\begin_layout Standard
+Median gross household income response bracket: £26,000 -- £28,999.
+ Slightly above the UK median in 2004/05 of £24,700 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "house-of-commons:2006"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
