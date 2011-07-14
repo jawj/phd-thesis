@@ -32,7 +32,7 @@ hist life_sat__q, discrete frequency xtitle("Life satisfaction")
 
 
 preserve
-keep id nspd_point_e nspd_point_n
+keep id nspd_point_e nspd_point_n  // wrong! should be map point, not postcode point!
 outsheet using "~/Downloads/points.csv", comma  // for mapping in QGIS
 restore
 
