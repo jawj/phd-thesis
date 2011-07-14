@@ -12,10 +12,19 @@ tab male__q
 tab ageband
 tab marital_status__q, missing 
 tab in_couple_or_rel__q, missing
+
 tab work_status__q
-tab work_status__q if of_working_age 
+tab work_status__q if of_working_age
+
+tab qualifications__q
+tab qualifications__q if of_working_age 
+
+tab household_under_sixteen__q, missing
+tab household_sixteen_plus__q, missing
 
 tab hh_inc_mp, missing  // too many categories!
+centile hh_inc_mp
+sum hh_inc_mp
 
  // <R>
  
