@@ -4693,8 +4693,9 @@ reference "sub:Quota-methods"
 
 \end_inset
 
- both web surveys used quota sampling, so basic demographic characteristics
- in the samples should be close to representative of the respective populations.
+, both web surveys used quota sampling.
+ Basic demographic characteristics in the samples should therefore be close
+ to representative of the respective populations.
  As seen in Tables 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4705,27 +4706,26 @@ reference "tab:web-uk-demographics"
 , 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "tab:web-london-demographics"
+reference "tab:web-uk-emp-edu"
 
 \end_inset
 
 , 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "tab:web-uk-emp-edu"
+reference "tab:web-london-demographics"
 
 \end_inset
 
  and 
 \begin_inset CommandInset ref
-LatexCommand formatted
+LatexCommand ref
 reference "tab:web-london-emp-edu"
 
 \end_inset
 
 , which provide summaries of demographic information for the UK and London
  surveys, this is indeed generally observed.
- 
 \end_layout
 
 \begin_layout Standard
@@ -4733,8 +4733,8 @@ However, in each case the oldest age group (65+) is slightly under-represented
  and the 45 -- 64 group somewhat over-represented.
  Similarly, those with degree-level qualifications are somewhat over-represented
  and those with no qualifications under-represented.
- These discrepancies may reflect the differential penetration of Internet
- access seen in 
+ These discrepancies may well reflect the differential penetration of Internet
+ access demonstrated in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:net-use"
@@ -4744,6 +4744,10 @@ reference "tab:net-use"
 .
  In addition, those in paid employment are somewhat under-represented in
  both surveys.
+\end_layout
+
+\begin_layout Subsection
+Income
 \end_layout
 
 \begin_layout Standard
@@ -4769,8 +4773,8 @@ status collapsed
 
 \begin_layout Plain Layout
 Distribution of gross annual household income, UK web survey (bars span
- survey response brackets, and 3 respondents with a household income of
- £200,000 or more are not shown) 
+ survey response brackets, and three respondents with a household income
+ of £200,000 or more are not shown) 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:hh-inc-uk"
@@ -4810,8 +4814,8 @@ status collapsed
 
 \begin_layout Plain Layout
 Distribution of gross annual household income, London web survey (bars span
- survey response brackets, and 3 respondents with a household income of
- £200,000 -- £399,999 are not shown) 
+ survey response brackets, and three respondents with a household income
+ of £200,000 -- £399,999 are not shown) 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:hh-inc-london"
@@ -4843,6 +4847,8 @@ reference "fig:hh-inc-london"
 \end_inset
 
 .
+ Incomes in our survey data appear similar to, or very slightly below, those
+ in large-scale surveys using probability sampling.
 \end_layout
 
 \begin_layout Standard
@@ -4855,17 +4861,17 @@ key "house-of-commons:2006"
 \end_inset
 
 .
- The figures are very similar in the UK survey data, in which the median
- household income bracket is £23,000 -- £25,999, and the mean of the bracket
- midpoints is £29,331.
+ These parameters are closely matched in our UK survey data, in which the
+ median household income bracket is £23,000 -- £25,999, and the mean of
+ the bracket midpoints is £29,331.
 \end_layout
 
 \begin_layout Standard
-In London in 2006, median gross weekly earnings of
+In London in 2006, median gross weekly pay for
 \emph on
  
 \emph default
-full-time employees were £541 
+full-time employees was £541 
 \size footnotesize
 
 \begin_inset CommandInset citation
@@ -4877,9 +4883,35 @@ key "national-statistics:2007"
 
 \size default
 .
- The median individual income bracket for employees (both full- and part-time)
- in the London survey data is consistent with this, being equivalent to
- £498 -- £556 per week.
+ The median individual income bracket for employees in the London survey
+ data is consistent with this, being equivalent to £498 -- £556 per week
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The comparison is not a perfectly like-for-like, since our data includes
+ all sources of income (not only earnings) for both full- and part-time
+ employees.
+\end_layout
+
+\end_inset
+
+.
+ Average gross household income for London during 2003 -- 2006 was £766
+ per week 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "national-statistics:2007"
+
+\end_inset
+
+.
+ Our mean of annual gross household income bracket midpoints is slightly
+ lower, at £36,002, equivalent to £690 per week.
+\end_layout
+
+\begin_layout Subsection
+SWB
 \end_layout
 
 \begin_layout Standard
@@ -4891,51 +4923,32 @@ status collapsed
 \begin_layout Plain Layout
 \noindent
 \align center
+(a)
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Graphics
 	filename uk_ls_hist.pdf
-	width 14cm
-	BoundingBox 0bp 0bp 396bp 288bp
+	width 12cm
+	BoundingBox 0bp 10bp 396bp 288bp
 	clip
 
 \end_inset
 
 
-\end_layout
+\begin_inset VSpace defskip
+\end_inset
 
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Distribution of life satisfaction ratings, UK web survey
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:ls-dist-uk"
-
+(b)
+\begin_inset space ~
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
 \begin_inset Graphics
 	filename london_ls_hist.pdf
-	width 14cm
-	BoundingBox 0bp 0bp 396bp 288bp
+	width 12cm
+	BoundingBox 0bp 10bp 396bp 288bp
 	clip
 
 \end_inset
@@ -4947,10 +4960,11 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Distribution of life satisfaction ratings, London web survey
+Distribution of life satisfaction ratings in web surveys of (a) UK and (b)
+ London
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:ls-dist-london"
+name "fig:web-survey-ls-dists"
 
 \end_inset
 
@@ -4964,11 +4978,39 @@ name "fig:ls-dist-london"
 
 \end_inset
 
+Life satisfaction responses in both samples follow the familiar right-shifted
+ distribution, as illustrated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:web-survey-ls-dists"
 
+\end_inset
+
+.
+ For the UK, on the 0 -- 10 scale, the median is 7, the mode is 7 and the
+ mean is 6.40.
+ For London, the median is 7, the mode is 8 and the mean is 6.20.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO Descriptives for other SWB indicators/aggregates?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Spatial data
 \end_layout
 
 \begin_layout Subsubsection
-Spatial data
+UK
 \end_layout
 
 \begin_layout Standard
@@ -5013,6 +5055,13 @@ name "fig:response-locs-uk"
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:response-locs-uk"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5031,35 +5080,6 @@ TODO Add spatial descriptives and correlations when variables to be used
 
 \begin_layout Subsection
 London
-\end_layout
-
-\begin_layout Standard
-Average gross household income for London during 2003--2006 was £766 per
- week 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "national-statistics:2007"
-
-\end_inset
-
-.
- Our mean of household income bracket midpoints: £36,002 = £690 pw.
-\end_layout
-
-\begin_layout Standard
-Median gross household income response bracket: £26,000 -- £28,999.
- Slightly above the UK median in 2004/05 of £24,700 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "house-of-commons:2006"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsubsection
-Spatial data
 \end_layout
 
 \begin_layout Standard
@@ -5100,6 +5120,13 @@ name "fig:response-locs-london"
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:response-locs-london"
 
 \end_inset
 
