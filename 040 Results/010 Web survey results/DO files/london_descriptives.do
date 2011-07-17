@@ -38,7 +38,8 @@ hist(d$ind_inc_mp, breaks=c(0,4000,6000,8000,10000,12000,15000,18000,20000,23000
   // </R>
 
 hist life_sat__q, discrete frequency xtitle("Life satisfaction")
-
+sum life_sat__q
+centile life_sat__q
 
 preserve
 keep id nspd_point_e nspd_point_n  // wrong! should be map point, not postcode point!

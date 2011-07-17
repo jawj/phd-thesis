@@ -4994,7 +4994,7 @@ reference "fig:web-survey-ls-dists"
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 TODO Descriptives for other SWB indicators/aggregates?
@@ -5066,7 +5066,7 @@ reference "fig:response-locs-uk"
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 TODO Add spatial descriptives and correlations when variables to be used
@@ -5135,7 +5135,7 @@ reference "fig:response-locs-london"
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 TODO Add spatial descriptives and correlations when variables to be used
@@ -5156,7 +5156,24 @@ Life satisfaction and the environment near the home
 \end_layout
 
 \begin_layout Standard
-LS distribution?
+UK: more variation.
+ London: more precision, more/different data.
+\end_layout
+
+\begin_layout Subsubsection
+UK
+\end_layout
+
+\begin_layout Standard
+UKNEA results
+\end_layout
+
+\begin_layout Subsubsection
+London
+\end_layout
+
+\begin_layout Standard
+WCERE results
 \end_layout
 
 \begin_layout Standard
