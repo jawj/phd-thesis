@@ -350,27 +350,13 @@ filename "020 Lit review/lit review 01.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
+\begin_inset CommandInset include
+LatexCommand include
+filename "025 SWB and EQ/swb and eq 01.lyx"
+
 \end_inset
 
-Bridging material (at end of lit review?):
-\end_layout
 
-\begin_layout Standard
-- Happiness/wellbeing and environment --- in economics and more broadly
-\end_layout
-
-\begin_layout Standard
-- ESM/EMA, citizen cyberscience, ubiquitous computing, http://trackyourhappiness.
-org, http://web.mit.edu/wockets/, http://myexperience.sourceforge.net/, http://www.pr
-ojectcharm.info/ (and many refs in ESM folder in BibDesk)
-\end_layout
-
-\begin_layout Standard
-- Note economists' usual reluctance to discuss alternative wellbeing indicators
- (usually plumping for a happiness or LS scale and sticking with it).
- Presumably because they want to suggest that SWB is essentially utility
- -- but if SWB is a load of different things, then they can't all be.
 \end_layout
 
 \begin_layout Standard

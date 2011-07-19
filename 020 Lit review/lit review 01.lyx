@@ -101,7 +101,7 @@
 \begin_body
 
 \begin_layout Chapter
-Literature review
+Literature review: happiness economics
 \begin_inset CommandInset label
 LatexCommand label
 name "part:lit-review"
@@ -1206,6 +1206,20 @@ reference "sub:happiness-to-economists"
 
 , certain terms are used interchangeably in this paper too---since essentially
  all the literature does so, it now appears impractical to do otherwise.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Economists want to skate over different terms, because admitting they're
+ different casts doubt on any SWB = utility identity.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -2849,6 +2863,20 @@ key "fowler:2008,christakis:2009"
 
 .
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Re.
+ spatial econometrics, add Rehdanz's biodiversity paper!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

@@ -1,0 +1,1397 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[bf,hang,small]{caption}
+%\usepackage[sf,bf,raggedright]{titlesec}
+\definecolor{LinkColor}{rgb}{0,0,0.4}
+\usepackage[mmddyyyy,nodayofweek]{datetime}
+%\usepackage{pdfpages}
+%\usepackage{lineno}
+%\runninglinenumbers
+%\newrefformat{sub}{subsection \ref{#1}}
+%\newrefformat{app}{Appendix \ref{#1}}
+\newrefformat{app}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{par}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{sec}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{sub}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{fig}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{tab}{\hyperlink{#1}{\autoref{#1}}}
+\end_preamble
+\use_default_options false
+\master ../000 master 01.lyx
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans helvet
+\font_typewriter beramono
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc true
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 85
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing other 1.1499999999999999
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 10
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=LinkColor,anchorcolor=LinkColor,citecolor=LinkColor,filecolor=LinkColor,menucolor=LinkColor,urlcolor=LinkColor"
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\branch Long appendices
+\selected 1
+\filename_suffix 0
+\color #ffffff
+\end_branch
+\branch Not in master doc
+\selected 1
+\filename_suffix 0
+\color #ffffff
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2cm
+\rightmargin 2.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle plain
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Literature review: happiness and environmental quality
+\end_layout
+
+\begin_layout Section
+Why might happiness and EQ be linked?
+\end_layout
+
+\begin_layout Standard
+We define environmental quality (EQ) broadly as the presence of environmental
+ goods --- such as natural landscapes, scenic views, preferred climates,
+ or biodiversity --- and the absence of environmental 'bads', such as air
+ pollution or noise.
+ There are several reasons for hypothesising that EQ will be positively
+ related to happiness.
+\end_layout
+
+\begin_layout Subsection
+Psychology & evolution
+\end_layout
+
+\begin_layout Standard
+Explanations regarding environmental goods --- for example, what is it that
+ makes a scenic view scenic? --- are in many cases (proximately) psychological
+ and (ultimately) evolutionary.
+ Such explanations, of which 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "hartig:2010"
+
+\end_inset
+
+ provide a survey, try to show how evolutionary selective pressures have
+ shaped the human mind so that is attracted to particular habitats or habitat
+ characteristics.
+ The validity of an evolutionary explanation is, unfortunately, rarely testable,
+ but its predictions can offer clear directions for empirical research.
+ 
+\end_layout
+
+\begin_layout Standard
+Several authors have posited an innate human emotional affiliation to nature
+ and other living organisms in general, for which 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "kellert:1993"
+
+\end_inset
+
+ popularised the term 
+\emph on
+biophilia
+\emph default
+, arising as an adaptation to our reliance on the natural environment throughout
+ all but the past 10,000 or so years of our evolutionary history.
+ Affinities with more specific habitats, including savannahs and forests,
+ have been theorised similarly, on the basis that these habitats would have
+ provided our hominin ancestors with the greatest reproductive success.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+Selection (or accident of other selection)
+\end_layout
+
+\begin_layout Standard
+Nature, 
+\end_layout
+
+\begin_layout Standard
+specific habitats (e.g.
+ savannah), 
+\end_layout
+
+\begin_layout Standard
+spatial patterns: fractal dimension 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "aks:1996"
+
+\end_inset
+
+, energy frequency 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "juricevic:2010"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First, there appear to be direct pathways by which such experiences affect
+ the nervous system, bringing about stress reduction and restoration of
+ attention (the existence of such pathways --- 
+\emph on
+biophilia
+\emph default
+ --- has plausible evolutionary explanations) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kellert:1993"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In terms of goods, access to the natural environment and open spaces may
+ enhance LS in at least two ways.
+ Firstly, it may do so through biophilia, an 
+\begin_inset Quotes eld
+\end_inset
+
+innately emotional affiliation of human beings to other living organisms
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kellert:1993"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+resulting in reduced stress, improved mood, and quicker recovery from disease
+ in the presence of nature 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "commission:2007"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "han:2007,falk:2010,hartig:2010,berman:2008"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "white:2010"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "ryan:2010"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Physical & mental health
+\end_layout
+
+\begin_layout Standard
+Second, natural environments may be lower in environmental 'bads' that have
+ significant negative impacts on mental wellbeing --- in some cases via
+ effects on physical health --- such as air pollutants and noise.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gouveia:2005"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Health effects of air pollution
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Health-effects"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="1">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="95text%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Effects attributed to short-term exposure
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+Daily mortality
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Respiratory and cardiovascular hospital admissions 
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Respiratory and cardiovascular emergency department visits
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Respiratory and cardiovascular primary care visits
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Use of respiratory and cardiovascular medications
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Days of restricted activity
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Work absenteeism
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+School absenteeism
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Acute symptoms (wheezing, coughing, phlegm production, respiratory infections)
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Physiological changes (e.g.
+\begin_inset space ~
+\end_inset
+
+lung function)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Effects attributed to long-term exposure
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+Mortality due to cardiovascular and respiratory disease
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Chronic respiratory disease incidence and prevalence (e.g.
+\begin_inset space ~
+\end_inset
+
+asthma)
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Chronic changes in physiologic functions
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Lung cancer
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Chronic cardiovascular disease
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+Intrauterine growth restriction 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\size scriptsize
+Source: World Health Organisation (2000) in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "gouveia:2005"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Evidence of the adverse health effects of noise and air pollution is well
+ documented.
+ Chronic traffic noise exposure in urban environments can cause severe sleep
+ disturbance, hearing impairment, tinnitus (3% of all cases), and raised
+ stress levels leading to high blood pressure, coronary heart disease, strokes,
+ and possibly immune system and birth defects 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "passchier-vermeer:2000"
+
+\end_inset
+
+.
+ Air pollution also has a wide variety of adverse health effects, which
+ are summarised in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Health-effects"
+
+\end_inset
+
+.
+ Groups particularly susceptible to the health effects of air pollution
+ include those with respiratory or cardiac diseases or asthma, infants,
+ children and the elderly, and those with low socio-economic status (SES),
+ low levels of education, poor nutrition and poor general health 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "utell:2005"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+There is also evidence that individuals' perceptions of air pollution are
+ positively related to objective pollution measures, as well as to broader
+ evaluations of their local environment 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "day:2007"
+
+\end_inset
+
+.
+ Individuals are generally aware of the sources of pollution (principally,
+ main roads), of its fluctuation according to weather conditions, and of
+ the negative health effects with which it is associated, especially for
+ children 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bickerstaff:2001"
+
+\end_inset
+
+.
+ This makes individuals' perceptions of pollution another plausible route
+ by which air pollution may influence LS.
+\end_layout
+
+\begin_layout Paragraph
+Knowledge of health effects
+\end_layout
+
+\begin_layout Standard
+\noindent
+Improved health also represents the main pathway for the hypothesised associatio
+n of reduced levels of environmental bads, such as air pollution and noise,
+ with increased LS.
+ As noted by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "welsch:2006"
+
+\end_inset
+
+, this pathway does not require that individuals are conscious of the cause-effe
+ct relationship between their own LS and the environmental problem.
+ However, an awareness of local air pollution and its negative effects on
+ human and ecosystem health may act to reduce individuals' LS levels directly
+ and independently.
+ Evidence for both of these effects is examined in brief below.
+\end_layout
+
+\begin_layout Subsection
+Associated benefits
+\end_layout
+
+\begin_layout Standard
+Third, natural environments may encourage behaviours that are physically
+ and mentally beneficial, including physical exercise, recreation and social
+ interaction 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barton:2010a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+.
+ And secondly, it may do so by providing spaces both for social interaction
+ and for outdoor recreation and exercise, which also help reduce anxiety
+ and depression levels and improve self-esteem and health (ibid.; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "morris:2003"
+
+\end_inset
+
+).
+ Since health is invariably found to be a major determinant of LS levels,
+ it seems safe to assume that improving health also realises significant
+ LS gains.
+\end_layout
+
+\begin_layout Section
+Evidence for a link
+\end_layout
+
+\begin_layout Standard
+'green space' (vegetation, grass, forest), 'blue space' (water),
+\end_layout
+
+\begin_layout Standard
+Researchers have pursued both observational and experimental evidence on
+ this link.
+ Observational studies have related averaged wellbeing measures to aggregate
+ environmental characteristics between geographical regions 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "mitchell:2007,vemuri:2006,welsch:2006,engelbrecht:2009"
+
+\end_inset
+
+.
+ They have also compared individuals' SWB reports or medical records with
+ the proximity of their homes to natural environments, or with alternative
+ indicators of local environmental quality 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "vries:2003,kaplan:2001,brereton:2007,rehdanz:2007,maas:2009"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Experimental and quasi-experimental studies have investigated physiological
+ and psychological effects of exposure to images of different environment
+ types 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "berto:2005,white:2010"
+
+\end_inset
+
+ or to short-term interventions bringing subjects into contact with nature
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "ryan:2010,hartig:2003,barton:2010"
+
+\end_inset
+
+.
+ They have also related health outcomes or frequency of healthcare-seeking
+ behaviour to views of nature in controlled institutional settings 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ulrich:1984,moore:1981"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Most such studies report beneficial impacts of natural environments on health
+ or wellbeing, but they have some common weaknesses.
+ Observational studies measure domestic proximity to natural environments
+ but not actual experiences of such environments (which may not occur near
+ home, and may occur elsewhere); cannot provide data on the moment-by-moment
+ hedonic or affective element of wellbeing; and are reliant on retrospective
+ assessments that are subject to substantial recall bias 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "robinson:2002"
+
+\end_inset
+
+.
+ Experimental studies are stronger in these respects but, by their nature,
+ tell us a limited amount about peoples' real experiences of natural environment
+s in their everyday lives.
+\end_layout
+
+\begin_layout Standard
+Longitudinal study designs in which participants provide ongoing reports
+ of their everyday experience --- Ecological Momentary Assessment (EMA)
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shiffman:2008"
+
+\end_inset
+
+, the Experience Sampling Method (ESM) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hektner:2007"
+
+\end_inset
+
+, and the Day Reconstruction Method (DRM) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kahneman:2004a"
+
+\end_inset
+
+ --- provide some of the best evidence regarding influences on wellbeing
+ in general.
+ However, these methods have conventionally been cumbersome, expensive,
+ and limited to very small samples 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "killingsworth:2010"
+
+\end_inset
+
+.
+ For this reason, and because they have not provided objective location
+ data, these ongoing assessment methods have not previously been applicable
+ to the study of wellbeing in different environments.
+\end_layout
+
+\begin_layout Standard
+Despite the theoretical connections, empirical LS research has to date paid
+ 
+\begin_inset Quotes eld
+\end_inset
+
+little attention to the importance of local environmental factors in people's
+ health and quality of life
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "2"
+key "sdrn:2005"
+
+\end_inset
+
+.
+ Only a handful of studies have attempted to verify and quantify the link
+ between EQ and LS, and these are summarised below.
+\end_layout
+
+\begin_layout Paragraph
+Life satisfaction and environmental quality 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand Citet
+key "praag:2005"
+
+\end_inset
+
+, investigating aircraft noise around Amsterdam Schiphol airport, find that
+ perceived noise nuisance is negatively related to LS, but objective noise
+ measures are not significant.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "rehdanz:2005"
+
+\end_inset
+
+, looking at climate parameters across 67 countries, find that higher mean
+ LS is associated with higher mean temperature during cold months and lower
+ mean temperature during hot months, while 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "brereton:2006"
+
+\end_inset
+
+ find higher LS in Ireland to be related to lower wind speeds but higher
+ rainfall.
+ Welsch (
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "welsch:2002"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "welsch:2003"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "welsch:2006"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "welsch:2007"
+
+\end_inset
+
+), examining average LS in relation to average air pollution values across
+ countries, finds significant negative associations in each case.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "brereton:2005"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferreira:2006"
+
+\end_inset
+
+, working with individual-level data on air pollution and other EQ parameters
+ in Ireland, also find negative associations between air pollution and LS.
+ And 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "rehdanz:2007"
+
+\end_inset
+
+ find that perceived levels of air pollution are also negatively related
+ to LS scores in Germany.
+\end_layout
+
+\begin_layout Standard
+All of these studies, then, find a significant positive relationship between
+ EQ and LS, although this could of course be due to publication bias 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "easterbrook:1991"
+
+\end_inset
+
+.
+ The studies also all use income data, entered as a regressor alongside
+ the EQ variables, to calculate a financial trade-off between EQ and income.
+ This represents a novel method for environmental valuation, combining some
+ of the strengths of both revealed and stated preference valuation techniques
+ (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "frey:2004"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "ferreira:2006"
+
+\end_inset
+
+).
+ The wider methodological robustness of most of these studies is open to
+ question, however.
+\end_layout
+
+\begin_layout Subsection
+Methodological limitations
+\end_layout
+
+\begin_layout Standard
+Welsch's studies, treating LS as cardinal, compare mean LS and mean air
+ pollutant values at the whole-country level.
+ The 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "welsch:2002"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "welsch:2007"
+
+\end_inset
+
+ papers conduct a simple cross-sectional analysis of 54 countries.
+ This has the advantage that the unobserved heterogeneity across individuals,
+ especially with respect to personality traits, may be expected to even
+ out 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "welsch:2006"
+
+\end_inset
+
+.
+ The disadvantages, however, are that LS and pollution levels are assessed
+ only on the most grossly aggregated scale, with no indication of variability
+ or of genuine pollution exposures, and that unobserved heterogeneity between
+ 
+\emph on
+countries
+\emph default
+ must then be controlled for.
+ Welsch attempts to control for heterogeneity between 54 countries using
+ only per capita income, 'rationality' (the number of scientists and engineers
+ per thousand people) and---in the 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "welsch:2002"
+
+\end_inset
+
+ but not the 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "welsch:2007"
+
+\end_inset
+
+ paper---'freedom' (as assessed on a 1--7 scale by an American NGO).
+ 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "rehdanz:2005"
+
+\end_inset
+
+'s climate paper 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "rehdanz:2005"
+
+\end_inset
+
+ works on a similar basis, but with a somewhat fuller set of control variables.
+ Welsch's 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "welsch:2003"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "welsch:2006"
+
+\end_inset
+
+ papers take panel data for ten European countries, using country and period
+ dummy variables to better address unobserved inter-national heterogeneity,
+ but the level of data aggregation remains problematic for both LS and EQ.
+\end_layout
+
+\begin_layout Standard
+The remaining papers use individual-level LS data, controlling for an appropriat
+ely wide range of demographic, socio-economic and attitudinal variables
+ in addition to indicators of EQ
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Of course, unobserved heterogeneity will always be an issue to some degree
+ in LS studies, because LS is presumably affected to some degree by almost
+ everything a person is, has, knows, does, and experiences.
+\end_layout
+
+\end_inset
+
+.
+ With the exception of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "praag:2005"
+
+\end_inset
+
+, who obtain noise data at postcode level (covering 12 households on average),
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "rehdanz:2007"
+
+\end_inset
+
+, who have only perception data, the major limitation of these studies remains
+ the level of spatial aggregation of EQ measures.
+ The Brereton et al.
+\begin_inset space ~
+\end_inset
+
+papers (
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "brereton:2005"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "brereton:2006"
+
+\end_inset
+
+) use data (including, in the 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "brereton:2005"
+
+\end_inset
+
+ paper, air pollution data) disaggregated at regional or local authority
+ level.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferreira:2006"
+
+\end_inset
+
+, meanwhile, disaggregate location-specific measures by respondents' electoral
+ districts (area: 18 to 6,189 hectares) except in the case of air pollution,
+ which is calculated by proximity to one or more of only 10 monitoring stations
+ for the whole of Ireland.
+\end_layout
+
+\begin_layout Paragraph
+Implications for this study
+\end_layout
+
+\begin_layout Standard
+In the light of these limitations of the existing research, an assessment
+ of the relationship between LS and EQ at a much finer level of spatial
+ disaggregation would appear to be a novel and valuable contribution to
+ the literature.
+ As described in depth in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:methods"
+
+\end_inset
+
+, this study uses simple proxy indicators of noise and access to nature,
+ and more sophisticated models of air pollution concentration, all calculated
+ at individual postcode level.
+\end_layout
+
+\begin_layout Section
+Aims of this study
+\end_layout
+
+\begin_layout Subsection
+ESM
+\end_layout
+
+\begin_layout Standard
+Bridging material (at end of lit review?):
+\end_layout
+
+\begin_layout Standard
+- ESM/EMA, citizen cyberscience, ubiquitous computing, http://trackyourhappiness.
+org, http://web.mit.edu/wockets/, http://myexperience.sourceforge.net/, http://www.pr
+ojectcharm.info/ (and many refs in ESM folder in BibDesk)
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "killingsworth:2010"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- Note economists' usual reluctance to discuss alternative wellbeing indicators
+ (usually plumping for a happiness or LS scale and sticking with it).
+ Presumably because they want to suggest that SWB is essentially utility
+ -- but if SWB is a load of different things, then they can't all be.
+\end_layout
+
+\begin_layout Subsection
+London
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Ls-eq-london"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+London is a particularly interesting location for a study of relationships
+ between LS and EQ, because it has distinctive characteristics in respect
+ of both, and of air pollution in particular.
+\end_layout
+
+\begin_layout Paragraph
+Life satisfaction
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:london-life-satisfaction"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/gjm06/Documents/MSc/Thesis/Write-up/2. Literature review/ess2londonmean.pdf
+	lyxscale 33
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Mean LS scores by UK region from the European Social Survey 2 (on a scale
+ of 0--10, with 144 respondents in London and 1890 total)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:london-ess-LS-scores"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+LS data does not currently appear to be collected by any London agency---it
+ is not one of the London Sustainable Development Commission's many indicators,
+ nor part of the GLA's Annual London Survey.
+ As seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:london-ess-LS-scores"
+
+\end_inset
+
+, European Social Survey (ESS) 2 data for a small sample of Londoners suggests
+ that LS scores in London could be substantially lower than elsewhere in
+ the UK 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ess:2007"
+
+\end_inset
+
+, although a poll for a BBC TV series reported London LS scores around the
+ national average 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nop:2006"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+London also differs from the UK average in many demographic and socio-economic
+ parameters that could affect LS.
+ Out of all UK regions, it has: the highest inward and outward migration;
+ the youngest and most ethnically diverse population; the greatest number
+ of households of unrelated adults, lone parents, multiple families and
+ single people; the greatest proportion of children below the poverty threshold
+ (40%); and the highest levels of concern over violent crime 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "national-statistics:2007"
+
+\end_inset
+
+.
+ It also has a disproportionate number of households in both the top and
+ bottom quintiles of UK income after housing costs (28% and 26% respectively)
+ and, thanks to UK tax incentives, counts an increasing number of the world's
+ so-called 
+\begin_inset Quotes eld
+\end_inset
+
+super-rich
+\begin_inset Quotes erd
+\end_inset
+
+ among its residents 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "davis:2007"
+
+\end_inset
+
+.
+ These disparities in wealth may be socially divisive, and would certainly
+ be expected to worsen the negative effects of rivalry on LS.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Environmental quality
+\end_layout
+
+\begin_layout Standard
+In respect of access to nature, London is one of the largest cities in the
+ developed world in terms of built-up area, with most residents thus some
+ distance from any wild natural environment.
+ However, London also has more parks and green spaces than any other city
+ of comparable size worldwide 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "national-statistics:2007"
+
+\end_inset
+
+.
+ With regard to noise, 42% of London residents see this as a significant
+ environmental problem in London
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In this and following statistics from the Greater London Authority's (GLA)
+ Annual London Survey, a 'significant' problem is interpreted as one rated
+ 1 or 2 on a scale from 1 ('a major problem') to 5 ('no problem at all').
+ This follows the GLA's own interpretation in the Mayor's Air Quality Strategy
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "authority:2005"
+
+\end_inset
+
+, for example.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mori:2007"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Air pollution, however, is probably the biggest single environmental issue
+ in London.
+ Although the notorious 'pea-souper' smogs of the 1950s are long gone, London's
+ air quality is still the worst in the UK and among the worst in Europe,
+ consistently failing annual objectives for nitrogen dioxide and particulates
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+An additional source of pollution distinctive to London is particulates
+ on the Underground system, and the well-publicised calculation that every
+ 20 minutes spent travelling on the Northern line is equivalent to smoking
+ one cigarette 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "croxford:2003"
+
+\end_inset
+
+.
+ However, the calculation is based simply on particulate mass, not health
+ effects, and these particulates are not believed to be significantly harmful
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "seaton:2005"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "authority:2005"
+
+\end_inset
+
+.
+ An estimated 1,600 people in London die prematurely each year as a result
+ of health problems caused by breathing polluted air 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "commission:2005"
+
+\end_inset
+
+.
+ Most Londoners---56% and 72% respectively---believe air quality and pollution
+ from exhaust fumes to be significant environmental problems 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mori:2007"
+
+\end_inset
+
+.
+ Moreover, 66% believe that air quality issues are affecting their 'quality
+ of life' 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "authority:2002"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The Mayor is addressing air pollution both under his statutory obligations
+ and as part of his climate change strategy 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "legge:2007"
+
+\end_inset
+
+.
+ The Central London Congestion Charging Scheme (CC), when introduced in
+ February 2003, reduced nitrogen oxides and particulates by an average of
+ 16% along major roads, but its limited zone and hours of operation have
+ made consequent medium-term emissions reductions difficult to detect 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "authority:2005"
+
+\end_inset
+
+.
+ The London Low Emission Zone (LEZ), to be implemented progressively between
+ 2008 and 2012, and CC incentives for lower emission cars, planned for 2008
+ and 2009, may improve the situation somewhat 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "legge:2007"
+
+\end_inset
+
+.
+ However, for the time being, air pollution remains a serious problem.
+\end_layout
+
+\end_body
+\end_document
