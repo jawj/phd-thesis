@@ -115,34 +115,33 @@ Why might happiness and EQ be linked?
 
 \begin_layout Standard
 We define environmental quality (EQ) broadly as the presence of environmental
- goods --- such as natural landscapes, scenic views, preferred climates,
- or biodiversity --- and the absence of environmental 'bads', such as air
- pollution or noise.
+ goods --- such as natural landscapes, scenic views, or biodiversity ---
+ and the absence of environmental 'bads', such as air pollution or noise.
  There are several reasons for hypothesising that EQ will be positively
  related to happiness.
 \end_layout
 
 \begin_layout Subsection
-Psychology & evolution
+Habitats, psychology & evolution
 \end_layout
 
 \begin_layout Standard
-Explanations regarding environmental goods --- for example, what is it that
- makes a scenic view scenic? --- are in many cases (proximately) psychological
- and (ultimately) evolutionary.
- Such explanations, of which 
+Hypotheses regarding the landscapes or habitats considered to be environmental
+ goods --- for example, what is it that makes a scenic view scenic? ---
+ are generally of a (proximately) psychological and (ultimately) evolutionary
+ kind.
+ Such hypotheses, of which 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "hartig:2010"
 
 \end_inset
 
- provide a survey, try to show how evolutionary selective pressures have
- shaped the human mind so that is attracted to particular habitats or habitat
- characteristics.
- The validity of an evolutionary explanation is, unfortunately, rarely testable,
- but its predictions can offer clear directions for empirical research.
- 
+ provide a survey, try to explain how selective pressures have shaped the
+ human mind so that is attracted to particular habitats or habitat characteristi
+cs.
+ Although evolutionary hypotheses are rarely testable, they can provide
+ helpful starting points for empirical research.
 \end_layout
 
 \begin_layout Standard
@@ -159,58 +158,41 @@ key "kellert:1993"
 biophilia
 \emph default
 , arising as an adaptation to our reliance on the natural environment throughout
- all but the past 10,000 or so years of our evolutionary history.
- Affinities with more specific habitats, including savannahs and forests,
- have been theorised similarly, on the basis that these habitats would have
- provided our hominin ancestors with the greatest reproductive success.
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
-Selection (or accident of other selection)
-\end_layout
-
-\begin_layout Standard
-Nature, 
-\end_layout
-
-\begin_layout Standard
-specific habitats (e.g.
- savannah), 
-\end_layout
-
-\begin_layout Standard
-spatial patterns: fractal dimension 
+ all but the past 10,000 years of our history.
+ Affinities with more specific habitats, including savanna and forest, have
+ been postulated similarly, on the basis that these habitats would have
+ provided our hominin ancestors with the greatest reproductive success 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "aks:1996"
+key "orians:1980,falk:2010,han:2007"
 
 \end_inset
 
-, energy frequency 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "juricevic:2010"
-
-\end_inset
-
-
+.
+ 
 \end_layout
 
 \begin_layout Standard
-First, there appear to be direct pathways by which such experiences affect
- the nervous system, bringing about stress reduction and restoration of
- attention (the existence of such pathways --- 
-\emph on
-biophilia
-\emph default
- --- has plausible evolutionary explanations) 
+Preferences concerning certain characteristics of habitats, and the reasons
+ underlying these, have also been conjectured: for example, the abundance
+ of locations from which one may see but not be seen, enabling one to attain
+ goals while evading hazards (Prospect-Refuge theory), or the ease with
+ which spatial information can be acquired and processed, permitting rapid
+ understanding of the environment 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "kellert:1993"
+key "appleton:1975,hartig:2010"
+
+\end_inset
+
+.
+ Yet more abstractly, preferences have been suggested over shapes or patterns
+ characteristic of natural scenes, such as fractal dimension, energy levels
+ at certain spatial frequencies, or ratios of colour contrast to luminance
+ contrast 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "aks:1996,juricevic:2010"
 
 \end_inset
 
@@ -218,81 +200,44 @@ key "kellert:1993"
 \end_layout
 
 \begin_layout Standard
-In terms of goods, access to the natural environment and open spaces may
- enhance LS in at least two ways.
- Firstly, it may do so through biophilia, an 
-\begin_inset Quotes eld
-\end_inset
-
-innately emotional affiliation of human beings to other living organisms
-\begin_inset Quotes erd
-\end_inset
-
- 
+Of course, positive effects of natural environments can be recast as an
+ absence of the negative effects of non-natural, urban environments.
+ Urban environments may have negative impacts because of the high levels
+ of arousal, stress, or directed attention they engender or require 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "kellert:1993"
+key "ulrich:1991"
 
 \end_inset
 
+.
+ According to Kaplan's Attention Restoration Theory 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "kaplan:1995"
 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-resulting in reduced stress, improved mood, and quicker recovery from disease
- in the presence of nature 
+ and Ulrich's broader 'psycho-evolutionary theory' 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "commission:2007"
+key "ulrich:1991"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citealp
-key "han:2007,falk:2010,hartig:2010,berman:2008"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citealp
-key "white:2010"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand citealp
-key "ryan:2010"
-
-\end_inset
-
-
+ the lack of these factors in natural environments --- as well as the presence
+ of certain other characteristics --- therefore permits stress recovery
+ and attention restoration.
 \end_layout
 
 \begin_layout Subsection
-Physical & mental health
+Environmental bads, physical & mental health
 \end_layout
 
 \begin_layout Standard
-Second, natural environments may be lower in environmental 'bads' that have
- significant negative impacts on mental wellbeing --- in some cases via
- effects on physical health --- such as air pollutants and noise.
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "gouveia:2005"
-
-\end_inset
-
-
+Environmental bads, many of which are more prevalent in urban environments,
+ may affect happiness via significant and direct negative impacts on physical
+ and/or mental health.
 \end_layout
 
 \begin_layout Standard
@@ -305,12 +250,10 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
-\lang english
 Health effects of air pollution
 \begin_inset CommandInset label
 LatexCommand label
-name "tab:Health-effects"
+name "tab:air-poll-Health-effects"
 
 \end_inset
 
@@ -323,19 +266,14 @@ name "tab:Health-effects"
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
+\noindent
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="1">
 <features booktabs="true" tabularvalignment="middle">
-<column alignment="left" valignment="top" width="95text%">
+<column alignment="left" valignment="top" width="70text%">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -348,52 +286,88 @@ Effects attributed to short-term exposure
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \noindent
 Daily mortality
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \noindent
 Respiratory and cardiovascular hospital admissions 
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \noindent
 Respiratory and cardiovascular emergency department visits
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \noindent
 Respiratory and cardiovascular primary care visits
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \noindent
 Use of respiratory and cardiovascular medications
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \noindent
 Days of restricted activity
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \noindent
 Work absenteeism
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \noindent
 School absenteeism
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \noindent
 Acute symptoms (wheezing, coughing, phlegm production, respiratory infections)
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -409,7 +383,7 @@ lung function)
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -422,12 +396,16 @@ Effects attributed to long-term exposure
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \noindent
 Mortality due to cardiovascular and respiratory disease
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -437,21 +415,37 @@ Chronic respiratory disease incidence and prevalence (e.g.
 \end_inset
 
 asthma)
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \noindent
 Chronic changes in physiologic functions
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \noindent
 Lung cancer
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \noindent
 Chronic cardiovascular disease
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -470,11 +464,17 @@ Intrauterine growth restriction
 \end_layout
 
 \begin_layout Plain Layout
+\noindent
+\align center
 \begin_inset VSpace smallskip
 \end_inset
 
 
-\size scriptsize
+\begin_inset Newline newline
+\end_inset
+
+
+\size footnotesize
 Source: World Health Organisation (2000) in 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -487,12 +487,11 @@ key "gouveia:2005"
 
 \end_inset
 
-Evidence of the adverse health effects of noise and air pollution is well
- documented.
+Adverse health effects of noise and air pollution are well documented.
  Chronic traffic noise exposure in urban environments can cause severe sleep
- disturbance, hearing impairment, tinnitus (3% of all cases), and raised
- stress levels leading to high blood pressure, coronary heart disease, strokes,
- and possibly immune system and birth defects 
+ disturbance, hearing impairment, tinnitus, and raised stress levels, leading
+ to high blood pressure, coronary heart disease, strokes, and possibly immune
+ system and birth defects 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "passchier-vermeer:2000"
@@ -500,19 +499,20 @@ key "passchier-vermeer:2000"
 \end_inset
 
 .
- Air pollution also has a wide variety of adverse health effects, which
- are summarised in Table 
+ The wide variety of adverse health effects of air pollution are summarised
+ in 
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:Health-effects"
+LatexCommand formatted
+reference "tab:air-poll-Health-effects"
 
 \end_inset
 
 .
- Groups particularly susceptible to the health effects of air pollution
- include those with respiratory or cardiac diseases or asthma, infants,
- children and the elderly, and those with low socio-economic status (SES),
- low levels of education, poor nutrition and poor general health 
+ Certain groups are particularly susceptible to the health effects of air
+ pollution, including those with respiratory or cardiac diseases or asthma,
+ infants, children and the elderly, and those with low socio-economic status
+ (SES), low levels of education, poor nutrition and poor general health
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "utell:2005"
@@ -523,9 +523,21 @@ key "utell:2005"
 \end_layout
 
 \begin_layout Standard
-There is also evidence that individuals' perceptions of air pollution are
- positively related to objective pollution measures, as well as to broader
- evaluations of their local environment 
+As noted by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "welsch:2006"
+
+\end_inset
+
+, this pathway does not require that individuals are conscious of the causal
+ relationship between the environmental problem and their own happiness.
+ However, awareness of a local environmental problem, and of its negative
+ effects on human and ecosystem health, could also act to reduce happiness
+ levels directly and independently.
+ There is evidence that individuals' perceptions of air pollution are positively
+ related to objective pollution measures, as well as to broader evaluations
+ of their local environment 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "day:2007"
@@ -544,32 +556,8 @@ key "bickerstaff:2001"
 \end_inset
 
 .
- This makes individuals' perceptions of pollution another plausible route
- by which air pollution may influence LS.
-\end_layout
-
-\begin_layout Paragraph
-Knowledge of health effects
-\end_layout
-
-\begin_layout Standard
-\noindent
-Improved health also represents the main pathway for the hypothesised associatio
-n of reduced levels of environmental bads, such as air pollution and noise,
- with increased LS.
- As noted by 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "welsch:2006"
-
-\end_inset
-
-, this pathway does not require that individuals are conscious of the cause-effe
-ct relationship between their own LS and the environmental problem.
- However, an awareness of local air pollution and its negative effects on
- human and ecosystem health may act to reduce individuals' LS levels directly
- and independently.
- Evidence for both of these effects is examined in brief below.
+ This makes individuals' perceptions of air pollution an additional route
+ by which the pollution may influence their happiness.
 \end_layout
 
 \begin_layout Subsection
@@ -612,6 +600,30 @@ Evidence for a link
 
 \begin_layout Standard
 'green space' (vegetation, grass, forest), 'blue space' (water),
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "white:2010"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "ryan:2010"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "berman:2008"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1129,17 +1141,6 @@ name "sub:london-life-satisfaction"
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Users/gjm06/Documents/MSc/Thesis/Write-up/2. Literature review/ess2londonmean.pdf
-	lyxscale 33
-	width 10cm
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
