@@ -115,10 +115,11 @@ Why might happiness and EQ be linked?
 
 \begin_layout Standard
 We define environmental quality (EQ) broadly as the presence of environmental
- goods --- such as natural landscapes, scenic views, or biodiversity ---
- and the absence of environmental 'bads', such as air pollution or noise.
- There are several reasons for hypothesising that EQ will be positively
- related to happiness.
+ goods --- such as natural landscapes, scenic views, preferred climates,
+ or biodiversity --- and the absence of environmental 'bads', such as air
+ pollution or noise.
+ Looking beyond economics, there are at least three broad reasons for hypothesis
+ing that EQ might be positively related to SWB.
 \end_layout
 
 \begin_layout Subsection
@@ -157,11 +158,12 @@ key "kellert:1993"
 \emph on
 biophilia
 \emph default
-, arising as an adaptation to our reliance on the natural environment throughout
- all but the past 10,000 years of our history.
+.
+ This affiliation is proposed as an adaptation to our reliance on the natural
+ environment throughout all but the past 10,000 years of our history.
  Affinities with more specific habitats, including savanna and forest, have
- been postulated similarly, on the basis that these habitats would have
- provided our hominin ancestors with the greatest reproductive success 
+ similarly been postulated on the basis that these habitats would have provided
+ our hominin ancestors with the greatest reproductive success 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "orians:1980,falk:2010,han:2007"
@@ -173,23 +175,24 @@ key "orians:1980,falk:2010,han:2007"
 \end_layout
 
 \begin_layout Standard
-Preferences concerning certain characteristics of habitats, and the reasons
- underlying these, have also been conjectured: for example, the abundance
- of locations from which one may see but not be seen, enabling one to attain
- goals while evading hazards (Prospect-Refuge theory), or the ease with
- which spatial information can be acquired and processed, permitting rapid
- understanding of the environment 
+Preferences for certain characteristics of natural habitats have also been
+ conjectured: for example, the availability of locations from which one
+ may see but not be seen, enabling one to attain goals while evading hazards
+ ('Prospect-Refuge' theory), or the ease with which spatial information
+ can be acquired and processed, facilitating understanding and exploration
+ of the environment (the 'mystery/complexity/legibility/coherence' model)
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "appleton:1975,hartig:2010"
+key "appleton:1975,kaplan:1989,stamps:2004,hartig:2010"
 
 \end_inset
 
 .
  Yet more abstractly, preferences have been suggested over shapes or patterns
- characteristic of natural scenes, such as fractal dimension, energy levels
- at certain spatial frequencies, or ratios of colour contrast to luminance
- contrast 
+ characteristic of natural scenes, such as specific fractal dimensions,
+ energy levels at certain spatial frequencies, or ratios of colour contrast
+ to luminance contrast 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "aks:1996,juricevic:2010"
@@ -200,10 +203,10 @@ key "aks:1996,juricevic:2010"
 \end_layout
 
 \begin_layout Standard
-Of course, positive effects of natural environments can be recast as an
- absence of the negative effects of non-natural, urban environments.
- Urban environments may have negative impacts because of the high levels
- of arousal, stress, or directed attention they engender or require 
+Of course, the positive effects of natural environments could be recast
+ as an absence of the negative effects of non-natural, urban environments.
+ Urban environments may have negative impacts owing to the high levels of
+ arousal, stress, or directed attention they engender or require 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ulrich:1991"
@@ -211,7 +214,7 @@ key "ulrich:1991"
 \end_inset
 
 .
- According to Kaplan's Attention Restoration Theory 
+ According to Kaplan's 'Attention Restoration Theory' 
 \begin_inset CommandInset citation
 LatexCommand citeyearpar
 key "kaplan:1995"
@@ -235,9 +238,9 @@ Environmental bads, physical & mental health
 \end_layout
 
 \begin_layout Standard
-Environmental bads, many of which are more prevalent in urban environments,
- may affect happiness via significant and direct negative impacts on physical
- and/or mental health.
+Urban environments may also have a detrimental effect because of higher
+ levels of certain environmental bads, which in turn could affect happiness
+ via significant and direct impacts on physical and/or mental health.
 \end_layout
 
 \begin_layout Standard
@@ -499,8 +502,7 @@ key "passchier-vermeer:2000"
 \end_inset
 
 .
- The wide variety of adverse health effects of air pollution are summarised
- in 
+ The various adverse health effects of air pollution are summarised in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:air-poll-Health-effects"
@@ -508,11 +510,10 @@ reference "tab:air-poll-Health-effects"
 \end_inset
 
 .
- Certain groups are particularly susceptible to the health effects of air
- pollution, including those with respiratory or cardiac diseases or asthma,
- infants, children and the elderly, and those with low socio-economic status
- (SES), low levels of education, poor nutrition and poor general health
- 
+ Certain groups are particularly susceptible to air pollution, including
+ those with respiratory or cardiac diseases or asthma, infants, children
+ and the elderly, and those with low socio-economic status (SES), low levels
+ of education, poor nutrition and poor general health 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "utell:2005"
@@ -530,14 +531,13 @@ key "welsch:2006"
 
 \end_inset
 
-, this pathway does not require that individuals are conscious of the causal
- relationship between the environmental problem and their own happiness.
+, this link does not require that individuals are conscious of the causal
+ relationship between an environmental problem and their own happiness.
  However, awareness of a local environmental problem, and of its negative
  effects on human and ecosystem health, could also act to reduce happiness
  levels directly and independently.
  There is evidence that individuals' perceptions of air pollution are positively
- related to objective pollution measures, as well as to broader evaluations
- of their local environment 
+ correlated with objective pollution measures 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "day:2007"
@@ -561,55 +561,51 @@ key "bickerstaff:2001"
 \end_layout
 
 \begin_layout Subsection
-Associated benefits
+Associated benefits of natural environments
 \end_layout
 
 \begin_layout Standard
-Third, natural environments may encourage behaviours that are physically
- and mentally beneficial, including physical exercise, recreation and social
- interaction 
+Finally, natural environments might increase happiness by facilitating and
+ encouraging --- for practical, cultural and/or psychological reasons ---
+ behaviours that are physically and mentally beneficial, including physical
+ exercise, recreation and social interaction 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "barton:2010a"
+before "e.g."
+key "barton:2010a,morris:2003"
 
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-.
- And secondly, it may do so by providing spaces both for social interaction
- and for outdoor recreation and exercise, which also help reduce anxiety
- and depression levels and improve self-esteem and health (ibid.; 
-\begin_inset CommandInset citation
-LatexCommand citealp
-key "morris:2003"
-
-\end_inset
-
-).
- Since health is invariably found to be a major determinant of LS levels,
- it seems safe to assume that improving health also realises significant
- LS gains.
 \end_layout
 
 \begin_layout Section
-Evidence for a link
+Evidence
 \end_layout
 
 \begin_layout Standard
-'green space' (vegetation, grass, forest), 'blue space' (water),
+Researchers in urban planning, epidemiology and psychology have pursued
+ observational and experimental evidence on links between physical or mental
+ wellbeing and EQ.
+ Economists have sought observational evidence of links between happiness
+ and EQ, generally using these to derive monetary valuations of EQ parameters.
+\end_layout
+
+\begin_layout Subsection
+Studies outside economics
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset citation
-LatexCommand citealp
-key "white:2010"
+LatexCommand citet
+key "tzoulas:2007"
 
 \end_inset
 
+ provide a brief survey of studies looking at wellbeing and EQ.
+\end_layout
 
+\begin_layout Standard
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "ryan:2010"
@@ -624,17 +620,78 @@ key "berman:2008"
 \end_inset
 
 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "grahn:2003"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bjork:2008a"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kuo:2001,kuo:2001a"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hartig:2003"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nielsen:2007"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "takano:2002"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "martens:2011"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "craig:2002"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hug:2009"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Researchers have pursued both observational and experimental evidence on
- this link.
- Observational studies have related averaged wellbeing measures to aggregate
+Observational studies have related averaged wellbeing measures to aggregate
  environmental characteristics between geographical regions 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
-key "mitchell:2007,vemuri:2006,welsch:2006,engelbrecht:2009"
+key "mitchell:2007"
 
 \end_inset
 
@@ -745,32 +802,69 @@ key "killingsworth:2010"
  to the study of wellbeing in different environments.
 \end_layout
 
+\begin_layout Subsection
+Economic/valuation studies
+\end_layout
+
 \begin_layout Standard
-Despite the theoretical connections, empirical LS research has to date paid
- 
-\begin_inset Quotes eld
+As noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Environmental-and-ecological"
+
 \end_inset
 
-little attention to the importance of local environmental factors in people's
- health and quality of life
-\begin_inset Quotes erd
-\end_inset
-
- 
+, environmental and ecological economists have used SWB data to quantify
+ the impacts of EQ characteristics 
 \begin_inset CommandInset citation
 LatexCommand citep
-after "2"
-key "sdrn:2005"
+key "ferreira:2010"
 
 \end_inset
 
-.
- Only a handful of studies have attempted to verify and quantify the link
- between EQ and LS, and these are summarised below.
+ --- either directly, in terms of their effects on SWB, or in monetary terms
+ Evidence regarding the impact of EQ on SWB is less strong than for many
+ other factors affecting SWB, however.
+\end_layout
+
+\begin_layout Standard
+Theory?
 \end_layout
 
 \begin_layout Paragraph
-Life satisfaction and environmental quality 
+Evidence
+\end_layout
+
+\begin_layout Standard
+Also: 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "stanca:2010"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "rehdanz:2007a"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "engelbrecht:2009"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "vemuri:2006"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -781,8 +875,8 @@ key "praag:2005"
 \end_inset
 
 , investigating aircraft noise around Amsterdam Schiphol airport, find that
- perceived noise nuisance is negatively related to LS, but objective noise
- measures are not significant.
+ experienced noise nuisance is negatively related to SWB, although direct
+ noise measures are not significant.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -791,7 +885,7 @@ key "rehdanz:2005"
 \end_inset
 
 , looking at climate parameters across 67 countries, find that higher mean
- LS is associated with higher mean temperature during cold months and lower
+ SWB is associated with higher mean temperature during cold months and lower
  mean temperature during hot months, while 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -799,9 +893,31 @@ key "brereton:2006"
 
 \end_inset
 
- find higher LS in Ireland to be related to lower wind speeds but higher
+ find higher SWB in Ireland to be related to lower wind speeds but higher
  rainfall.
- Welsch (
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "rehdanz:2007"
+
+\end_inset
+
+ find that perceived levels of air pollution are negatively related to SWB
+ scores in Germany.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "weinhold:2008"
+
+\end_inset
+
+ finds perceived noise pollution a strongly negative predictor of SWB across
+ Europe.
+ 
+\end_layout
+
+\begin_layout Standard
+Welsch (
 \begin_inset CommandInset citation
 LatexCommand citeyear
 key "welsch:2002"
@@ -829,8 +945,9 @@ key "welsch:2007"
 
 \end_inset
 
-), examining average LS in relation to average air pollution values across
- countries, finds significant negative associations in each case.
+), examining average SWB in relation to average (objective) air pollution
+ values across countries, finds significant negative associations in each
+ case.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -838,57 +955,184 @@ key "brereton:2005"
 
 \end_inset
 
- and 
+, 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "ferreira:2006"
 
 \end_inset
 
-, working with individual-level data on air pollution and other EQ parameters
- in Ireland, also find negative associations between air pollution and LS.
- And 
+ and 
 \begin_inset CommandInset citation
 LatexCommand citet
-key "rehdanz:2007"
+key "ferreira:2010"
 
 \end_inset
 
- find that perceived levels of air pollution are also negatively related
- to LS scores in Germany.
+ working with individual-level data on air pollution and other EQ parameters
+ in Ireland, also find negative associations between air pollution and SWB,
+ as do 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "mackerron:2008"
+
+\end_inset
+
+, using high-resolution air pollution data for London, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "levinson:2009"
+
+\end_inset
+
+, who makes use of temporal variations in air pollution levels in US counties,
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "luechinger:2009"
+
+\end_inset
+
+, who uses the installation of scrubbers at a power plant in Germany as
+ a natural experiment.
+\end_layout
+
+\begin_layout Paragraph
+Weaknesses and omissions
 \end_layout
 
 \begin_layout Standard
-All of these studies, then, find a significant positive relationship between
- EQ and LS, although this could of course be due to publication bias 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "easterbrook:1991"
+Studies have usually focussed on a particular form of green space (such
+ as grassland or forest) or 'blue space' (coastal or freshwater environments),
+ or a specific environmental bad.
+ 
+\end_layout
 
-\end_inset
+\begin_layout Standard
+Economists' usual reluctance to discuss alternative wellbeing indicators
+ (usually plumping for a happiness or LS scale and sticking with it).
+ Presumably because they want to suggest that SWB is essentially utility
+ -- but if SWB is a load of different things, then they can't all be.
+\end_layout
 
-.
- The studies also all use income data, entered as a regressor alongside
- the EQ variables, to calculate a financial trade-off between EQ and income.
- This represents a novel method for environmental valuation, combining some
- of the strengths of both revealed and stated preference valuation techniques
- (
+\begin_layout Standard
+Several studies treat SWB responses as cardinal, and compare mean SWB and
+ mean air pollutant values at the whole-country level (
 \begin_inset CommandInset citation
 LatexCommand citealp
-key "frey:2004"
+key "welsch:2002"
 
 \end_inset
 
 ; 
 \begin_inset CommandInset citation
 LatexCommand citealp
-key "ferreira:2006"
+key "welsch:2003"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "welsch:2006"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "welsch:2007"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "rehdanz:2005"
 
 \end_inset
 
 ).
- The wider methodological robustness of most of these studies is open to
- question, however.
+ Although this has the advantage that unobserved heterogeneity across individual
+s is evened out, it means that SWB and pollution levels are assessed only
+ on an extremely aggregated scale---with no indication of variability or
+ of genuine pollution exposures---and that unobserved heterogeneity across
+ countries has to be controlled for (Welsch's 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "welsch:2003"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "welsch:2006"
+
+\end_inset
+
+ papers use panel data with country and period dummy variables to better
+ address unobserved inter-national heterogeneity, but the level of data
+ aggregation remains problematic for both SWB and EQ).
+\end_layout
+
+\begin_layout Standard
+The remaining papers use individual-level SWB data, controlling for various
+ demographic, socio-economic and attitudinal variables in addition to indicators
+ of EQ.
+ A major limitation of many of these studies remains the level of spatial
+ aggregation of EQ measures, however.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Although 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "mackerron:2008"
+
+\end_inset
+
+ use very high resolution air pollution data, this study is weakened by
+ the probable existence of omitted spatial covariates and by its reliance
+ for SWB measures on a small convenience sample.
+\end_layout
+
+\end_inset
+
+ In addition, none of the studies use multiple-item SWB scales.
+ Few studies examine the effects of multiple EQ characteristics (even where
+ failure to control for other characteristics than the one under examination
+ could lead to endogeneity, biasing the calculated regression coefficients).
+ There are no known studies in economics addressing the effects of urban
+ green space on SWB, despite the intuition---bolstered by findings in the
+ health literature 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "mitchell:2008,maas:2009"
+
+\end_inset
+
+---that green space has a positive wellbeing effect.
+ And, perhaps surprisingly given the spatial nature of the data, not one
+ of the studies uses spatial econometric methods---such as those commonly
+ employed in hedonic pricing studies---which could help address the problem
+ of omitted spatial covariates.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Rehdanz and Stanca!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+High values!
 \end_layout
 
 \begin_layout Subsection
@@ -1099,13 +1343,6 @@ key "killingsworth:2010"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-- Note economists' usual reluctance to discuss alternative wellbeing indicators
- (usually plumping for a happiness or LS scale and sticking with it).
- Presumably because they want to suggest that SWB is essentially utility
- -- but if SWB is a load of different things, then they can't all be.
 \end_layout
 
 \begin_layout Subsection

@@ -1439,21 +1439,12 @@ key "collins:2003,goodwin:2008a"
 
 \end_inset
 
-, and large-scale ESM studies using participants' own mobile devices have
- recently been set up at Harvard 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "killingsworth:2010"
-
-\end_inset
-
- and, by the author, at the London School of Economics (these studies are
- described at http://trackyourhappiness.org and http://mappiness.org.uk).
+.
 \end_layout
 
 \begin_layout Standard
-DRM studies aim to collect similar information to ESM, but to do so more
- efficiently and less intrusively.
+DRM studies aim to collect similar information to ESM, but to do so less
+ intrusively.
  These studies simply ask participants to break the previous day into episodes
  and to report the context of, and their feelings during, each episode.
  DRM data may be subject to greater recall bias than ESM data---which is
@@ -2976,6 +2967,66 @@ key "frijters:2004"
  consistent with the broad consensus in the literature.
 \end_layout
 
+\begin_layout Subsection
+Valuation
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:happiness-valuation"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Once estimated, SWB models can be used for monetary valuation, by calculating
+ the change in income which would produce an SWB impact of equivalent size.
+ For example, 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "1373"
+key "blanchflower:2004"
+
+\end_inset
+
+ use models estimated on US General Social Survey data to calculate dollar
+ values for life events like unemployment and divorce, finding that 
+\begin_inset Quotes eld
+\end_inset
+
+a lasting marriage (compared to widowhood as a ‘natural’ experiment)...
+ is estimated to be worth $100,000 a year
+\begin_inset Quotes erd
+\end_inset
+
+.
+ This method of monetary valuation is a useful addition to revealed- and
+ stated-preference methods, since it does not require assumptions about
+ market equilibria, is not subject to strategic behaviour, and does not
+ require individuals to be conscious of the levels or effects of the parameters
+ being valued 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "welsch:2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Explanation with equations??
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Is happiness valid economics?
 \begin_inset CommandInset label
@@ -3872,7 +3923,7 @@ To imagine such a way out requires an emphasis on non-income factors that
  relation of happiness to these factors.
  And ecological and environmental economists are understandably particularly
  interested in happiness in relation to environmental quality parameters
- (such as noise, air pollution and access to green spaces---e.g.
+ and their valuation (e.g.
  
 \begin_inset CommandInset citation
 LatexCommand citealp
@@ -3883,14 +3934,14 @@ key "praag:2005"
 ; 
 \begin_inset CommandInset citation
 LatexCommand citealp
-key "welsch:2006"
+key "welsch:2007"
 
 \end_inset
 
 ; 
 \begin_inset CommandInset citation
 LatexCommand citealp
-key "welsch:2007"
+key "rehdanz:2007"
 
 \end_inset
 
@@ -3908,10 +3959,10 @@ key "mackerron:2008"
 
 \end_inset
 
-, 
+; 
 \begin_inset CommandInset citation
 LatexCommand citealp
-key "luechinger:2009,levinson:2009"
+key "luechinger:2009"
 
 \end_inset
 
@@ -4208,6 +4259,8 @@ Income and wealth
 \begin_layout Standard
 The impact of income measures on SWB has, as stated above, been a major
  focus of the SWB literature.
+ This may be due in part to the centrality of the income/SWB relationship
+ when using SWB data for monetary valuation.
  Researchers have investigated absolute income, income relative to others',
  and income relative to past income.
  
@@ -4218,6 +4271,7 @@ key "clark:2008a"
 \end_inset
 
  provide a detailed survey.
+ 
 \end_layout
 
 \begin_layout Subsubsection
