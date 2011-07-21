@@ -80,6 +80,11 @@
 \filename_suffix 0
 \color #ffffff
 \end_branch
+\branch bibliography when alone
+\selected 1
+\filename_suffix 0
+\color #ffffff
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -602,107 +607,25 @@ key "tzoulas:2007"
 
 \end_inset
 
- provide a brief survey of studies looking at wellbeing and EQ.
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citealp
-key "ryan:2010"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand citealp
-key "berman:2008"
-
-\end_inset
-
-
+ provide a brief survey of studies looking at wellbeing and EQ outside of
+ economics.
+ Observational studies have compared individuals' health and wellbeing reports
+ or medical records with the proximity of their homes to natural environments,
+ or with alternative indicators of local environmental quality 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "grahn:2003"
+before "e.g."
+key "kaplan:2001,takano:2002,vries:2003,grahn:2003,nielsen:2007,bjork:2008a,maas:2009"
 
 \end_inset
 
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "bjork:2008a"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "kuo:2001,kuo:2001a"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "hartig:2003"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "nielsen:2007"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "takano:2002"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "martens:2011"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "craig:2002"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "hug:2009"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Observational studies have related averaged wellbeing measures to aggregate
+.
+ On occasion they have also related averaged wellbeing measures to aggregate
  environmental characteristics between geographical regions 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
 key "mitchell:2007"
-
-\end_inset
-
-.
- They have also compared individuals' SWB reports or medical records with
- the proximity of their homes to natural environments, or with alternative
- indicators of local environmental quality 
-\begin_inset CommandInset citation
-LatexCommand citep
-before "e.g."
-key "vries:2003,kaplan:2001,brereton:2007,rehdanz:2007,maas:2009"
 
 \end_inset
 
@@ -717,7 +640,7 @@ Experimental and quasi-experimental studies have investigated physiological
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
-key "berto:2005,white:2010"
+key "berto:2005,white:2010,ryan:2010"
 
 \end_inset
 
@@ -726,24 +649,50 @@ key "berto:2005,white:2010"
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
-key "ryan:2010,hartig:2003,barton:2010"
+key "hartig:2003,berman:2008,pretty:2007,barton:2010,ryan:2010,martens:2011"
 
 \end_inset
 
 .
- They have also related health outcomes or frequency of healthcare-seeking
- behaviour to views of nature in controlled institutional settings 
+ They have also related health and wellbeing indicators to views of nature
+ in settings where individuals' accommodation is randomly assigned: public
+ housing 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "ulrich:1984,moore:1981"
+key "kuo:2001a"
 
 \end_inset
 
-.
+, prisons 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "moore:1981"
+
+\end_inset
+
+, and hospitals (
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "ulrich:1984"
+
+\end_inset
+
+'s 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "ulrich:1984"
+
+\end_inset
+
+ 
+\emph on
+Science
+\emph default
+ paper, 'View through a window may influence recovery from surgery').
 \end_layout
 
 \begin_layout Standard
-Most such studies report beneficial impacts of natural environments on health
+Most studies report beneficial impacts of natural environments on health
  or wellbeing, but they have some common weaknesses.
  Observational studies measure domestic proximity to natural environments
  but not actual experiences of such environments (which may not occur near
@@ -757,49 +706,16 @@ key "robinson:2002"
 \end_inset
 
 .
- Experimental studies are stronger in these respects but, by their nature,
- tell us a limited amount about peoples' real experiences of natural environment
-s in their everyday lives.
-\end_layout
-
-\begin_layout Standard
-Longitudinal study designs in which participants provide ongoing reports
- of their everyday experience --- Ecological Momentary Assessment (EMA)
- 
+ Experimental studies are stronger in these respects but --- with the possible
+ exception of 
 \begin_inset CommandInset citation
-LatexCommand citep
-key "shiffman:2008"
+LatexCommand citet
+key "kuo:2001a"
 
 \end_inset
 
-, the Experience Sampling Method (ESM) 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "hektner:2007"
-
-\end_inset
-
-, and the Day Reconstruction Method (DRM) 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "kahneman:2004a"
-
-\end_inset
-
- --- provide some of the best evidence regarding influences on wellbeing
- in general.
- However, these methods have conventionally been cumbersome, expensive,
- and limited to very small samples 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "killingsworth:2010"
-
-\end_inset
-
-.
- For this reason, and because they have not provided objective location
- data, these ongoing assessment methods have not previously been applicable
- to the study of wellbeing in different environments.
+ --- by their nature tell us a limited amount about peoples' real experiences
+ of natural environments in their everyday lives.
 \end_layout
 
 \begin_layout Subsection
@@ -822,13 +738,9 @@ key "ferreira:2010"
 
 \end_inset
 
- --- either directly, in terms of their effects on SWB, or in monetary terms
- Evidence regarding the impact of EQ on SWB is less strong than for many
- other factors affecting SWB, however.
-\end_layout
-
-\begin_layout Standard
-Theory?
+ --- either directly, in terms of their effects on SWB, or in monetary terms.
+ Evidence regarding the impact of EQ on SWB is less strong than that for
+ many other factors affecting SWB, however.
 \end_layout
 
 \begin_layout Paragraph
@@ -880,6 +792,21 @@ key "praag:2005"
  
 \begin_inset CommandInset citation
 LatexCommand citet
+key "weinhold:2008"
+
+\end_inset
+
+ finds 
+\emph on
+perceived
+\emph default
+ noise pollution levels a strongly negative predictor of SWB across Europe.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
 key "rehdanz:2005"
 
 \end_inset
@@ -895,24 +822,6 @@ key "brereton:2006"
 
  find higher SWB in Ireland to be related to lower wind speeds but higher
  rainfall.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "rehdanz:2007"
-
-\end_inset
-
- find that perceived levels of air pollution are negatively related to SWB
- scores in Germany.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "weinhold:2008"
-
-\end_inset
-
- finds perceived noise pollution a strongly negative predictor of SWB across
- Europe.
  
 \end_layout
 
@@ -948,6 +857,18 @@ key "welsch:2007"
 ), examining average SWB in relation to average (objective) air pollution
  values across countries, finds significant negative associations in each
  case.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "rehdanz:2007"
+
+\end_inset
+
+ find that 
+\emph on
+perceived
+\emph default
+ levels of air pollution are negatively related to SWB scores in Germany.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1133,6 +1054,46 @@ Rehdanz and Stanca!
 
 \begin_layout Standard
 High values!
+\end_layout
+
+\begin_layout Standard
+Longitudinal study designs in which participants provide ongoing reports
+ of their everyday experience --- Ecological Momentary Assessment (EMA)
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shiffman:2008"
+
+\end_inset
+
+, the Experience Sampling Method (ESM) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hektner:2007"
+
+\end_inset
+
+, and the Day Reconstruction Method (DRM) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kahneman:2004a"
+
+\end_inset
+
+ --- provide some of the best evidence regarding influences on wellbeing
+ in general.
+ However, these methods have conventionally been cumbersome, expensive,
+ and limited to very small samples 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "killingsworth:2010"
+
+\end_inset
+
+.
+ For this reason, and because they have not provided objective location
+ data, these ongoing assessment methods have not previously been applicable
+ to the study of wellbeing in different environments.
 \end_layout
 
 \begin_layout Subsection
@@ -1625,6 +1586,26 @@ key "legge:2007"
 
 .
  However, for the time being, air pollution remains a serious problem.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch bibliography when alone
+status open
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "/Users/gjm06/Documents/PhD thesis/all"
+options "apalike2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
