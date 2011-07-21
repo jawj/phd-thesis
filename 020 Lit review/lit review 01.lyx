@@ -1197,6 +1197,32 @@ eably and without clarification.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+New bit
+\end_layout
+
+\end_inset
+
+It seems possible, too, that economists have not wished to dwell on the
+ variety of related but distinct wellbeing ideas because to do so would
+ cast doubt on the potential for any one of them to represent the thing
+ that individuals would like to maximise, and hence also on the validity
+ of using any one of them as a numéraire when estimating trade-off rates
+ between different variables --- as is done when using SWB models for monetary
+ valuation (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:happiness-valuation"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
 As noted in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -1206,20 +1232,6 @@ reference "sub:happiness-to-economists"
 
 , certain terms are used interchangeably in this paper too---since essentially
  all the literature does so, it now appears impractical to do otherwise.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Economists want to skate over different terms, because admitting they're
- different casts doubt on any SWB = utility identity.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection
@@ -2146,6 +2158,13 @@ Of course these factors, and the statistical methods that follow from them,
 
 \begin_layout Subsubsection
 SWB variable treatment and econometric models
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:SWB-variable-treatment"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

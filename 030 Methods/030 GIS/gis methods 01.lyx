@@ -103,6 +103,27 @@ Spatial methods
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Mention hedonics use of GIS (or in Literature Review?) --- see 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p. 4"
+key "brereton:2007"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Responses from the London survey have one or two associated point locations:
  the indicated map locations of the respondent's home and, if applicable,
  workplace.
