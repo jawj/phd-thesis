@@ -649,7 +649,7 @@ key "berto:2005,white:2010,ryan:2010"
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
-key "hartig:2003,berman:2008,pretty:2007,barton:2010,ryan:2010,martens:2011"
+key "hartig:2003,pretty:2007,berman:2008,barton:2010,ryan:2010,martens:2011"
 
 \end_inset
 
@@ -684,11 +684,11 @@ key "ulrich:1984"
 
 \end_inset
 
- 
+ paper in 
 \emph on
 Science
 \emph default
- paper, 'View through a window may influence recovery from surgery').
+, 'View through a window may influence recovery from surgery').
 \end_layout
 
 \begin_layout Standard
@@ -709,12 +709,12 @@ key "robinson:2002"
  Experimental studies are stronger in these respects but --- with the possible
  exception of 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citeauthor
 key "kuo:2001a"
 
 \end_inset
 
- --- by their nature tell us a limited amount about peoples' real experiences
+'s --- by their nature tell us a limited amount about peoples' real experiences
  of natural environments in their everyday lives.
 \end_layout
 
@@ -744,85 +744,7 @@ key "ferreira:2010"
 \end_layout
 
 \begin_layout Paragraph
-Evidence
-\end_layout
-
-\begin_layout Standard
-Also: 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "stanca:2010"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "rehdanz:2007a"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "engelbrecht:2009"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "vemuri:2006"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand Citet
-key "praag:2005"
-
-\end_inset
-
-, investigating aircraft noise around Amsterdam Schiphol airport, find that
- experienced noise nuisance is negatively related to SWB, although direct
- noise measures are not significant.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "weinhold:2008"
-
-\end_inset
-
- finds 
-\emph on
-perceived
-\emph default
- noise pollution levels a strongly negative predictor of SWB across Europe.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citet
-key "rehdanz:2005"
-
-\end_inset
-
-, looking at climate parameters across 67 countries, find that higher mean
- SWB is associated with higher mean temperature during cold months and lower
- mean temperature during hot months, while 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "brereton:2006"
-
-\end_inset
-
- find higher SWB in Ireland to be related to lower wind speeds but higher
- rainfall.
- 
+Air pollution
 \end_layout
 
 \begin_layout Standard
@@ -919,7 +841,109 @@ key "luechinger:2009"
 \end_layout
 
 \begin_layout Paragraph
-Weaknesses and omissions
+Noise
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand Citet
+key "praag:2005"
+
+\end_inset
+
+, investigating aircraft noise around Amsterdam Schiphol airport, find that
+ individuals' experienced noise nuisance is negatively related to SWB, although
+ direct noise measures are not significant.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "weinhold:2008"
+
+\end_inset
+
+ finds 
+\emph on
+perceived
+\emph default
+ noise pollution levels a strongly negative predictor of SWB in individual-level
+ data across Europe.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Climate
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "rehdanz:2005"
+
+\end_inset
+
+, looking at climate parameters at country level, across 67 countries, find
+ that higher mean SWB is associated with higher mean temperature during
+ cold months and lower mean temperature during hot months.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "brereton:2006"
+
+\end_inset
+
+ find higher individual SWB in Ireland to be related to lower wind speeds
+ but higher rainfall.
+\end_layout
+
+\begin_layout Paragraph
+Biodiversity
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "rehdanz:2007a"
+
+\end_inset
+
+ runs spatial regression models with country-level data on simple counts
+ of bird and mammal species, and the proportions of species that are threatened,
+ and suggests that greater numbers of species, and lower proportions of
+ bird species threatened, are associated with higher SWB.
+\end_layout
+
+\begin_layout Paragraph
+Natural capital
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "vemuri:2006"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "engelbrecht:2009"
+
+\end_inset
+
+ report positive relationships between indicators of wellbeing and 'natural
+ capital' at country level (
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "engelbrecht:2009"
+
+\end_inset
+
+'s figures do not appear to be appropriate EQ measures, however, since resources
+ such as metal ores, oil and coal feature heavily).
+\end_layout
+
+\begin_layout Subsubsection
+Limitations
 \end_layout
 
 \begin_layout Standard
@@ -1044,7 +1068,7 @@ key "mitchell:2008,maas:2009"
 status open
 
 \begin_layout Plain Layout
-Rehdanz and Stanca!
+Rehdanz now does!
 \end_layout
 
 \end_inset
