@@ -590,6 +590,13 @@ key "barton:2010a,morris:2003"
 
 \begin_layout Section
 Evidence
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:eq-swb-evidence"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -755,6 +762,15 @@ key "ferreira:2010"
  --- either directly, in terms of their effects on SWB, or in monetary terms.
  Evidence regarding the impact of EQ on SWB is less strong than that for
  many other factors affecting SWB, however.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p. 398"
+key "welsch:2009"
+
+\end_inset
+
+ offer a synopsis of selected valuation studies.
 \end_layout
 
 \begin_layout Standard
@@ -812,8 +828,18 @@ key "welsch:2007"
 \end_inset
 
 ), examining average SWB in relation to average (objective) air pollution
- values across countries, finds significant negative associations in each
+ values at country level, finds significant negative associations in each
  case.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "menz:2010"
+
+\end_inset
+
+, using data across 25 countries, find that higher PM10 concentrations are
+ associated with reduced SWB and that the magnitude of this effect is (like
+ the health impairments associated with air pollution) U-shaped in age.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -966,6 +992,23 @@ key "ferreira:2010"
 
  detect no significant effect of being situated within 5km of a 'severely
  polluted' river.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citet
+key "israel:2003"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
@@ -1122,7 +1165,7 @@ Several studies compare mean SWB and mean EQ values at the whole-country
  level (all Welsch's air pollution papers cited above; 
 \begin_inset CommandInset citation
 LatexCommand citealp
-key "rehdanz:2005,rehdanz:2007a,vemuri:2006,engelbrecht:2009"
+key "rehdanz:2005,rehdanz:2007a,vemuri:2006,engelbrecht:2009,menz:2010"
 
 \end_inset
 
@@ -1409,31 +1452,14 @@ Experience-level studies?
 \end_layout
 
 \begin_layout Standard
-None of these EQ studies --- nor any, we believe, in any other discipline
- --- have ESM or EMA data on the moment-by-moment hedonic or affective element
- of wellbeing.
- All are reliant on retrospective assessments that are generally rather
- vague in time and may be subject to substantial recall bias (as discussed
- in 
+As noted in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:domains-and-timescales"
 
 \end_inset
 
-).
-\end_layout
-
-\begin_layout Subsubsection
-Valuation
-\end_layout
-
-\begin_layout Standard
-High values!
-\end_layout
-
-\begin_layout Standard
-Longitudinal study designs in which participants provide ongoing reports
+, longitudinal study designs in which participants provide ongoing reports
  of their everyday experience --- Ecological Momentary Assessment (EMA)
  
 \begin_inset CommandInset citation
@@ -1458,18 +1484,98 @@ key "kahneman:2004a"
 
  --- provide some of the best evidence regarding influences on wellbeing
  in general.
- However, these methods have conventionally been cumbersome, expensive,
- and limited to very small samples 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "killingsworth:2010"
+ 
+\end_layout
+
+\begin_layout Standard
+None of the EQ studies cited in this section (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:eq-swb-evidence"
 
 \end_inset
 
-.
- For this reason, and because they have not provided objective location
- data, these ongoing assessment methods have not previously been applicable
- to the study of wellbeing in different environments.
+) --- nor any, we believe, in any other discipline --- draw on data on the
+ moment-by-moment hedonic or affective element of wellbeing collected in
+ this way.
+ All are reliant instead on retrospective assessments that are generally
+ rather vague in time, and may be subject to substantial recall bias.
+\end_layout
+
+\begin_layout Subsubsection
+Valuation
+\end_layout
+
+\begin_layout Standard
+High values! Problems! 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "levinson:2009"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "welsch:2009a"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Underestimation of income effect
+\end_layout
+
+\begin_layout Standard
+- Simultaneous causation: happiness <-> income (need IV)
+\begin_inset CommandInset citation
+LatexCommand citet
+key "levinson:2009"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- Lagged income
+\begin_inset CommandInset citation
+LatexCommand citet
+key "welsch:2009a"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- Relative income 
+\end_layout
+
+\begin_layout Standard
+Assortment -- i.e.
+ pollution-averse people move to areas of low pollution + vice-versa
+\begin_inset CommandInset citation
+LatexCommand citet
+key "levinson:2009"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Habituation (not really a problem, except where there are physical health
+ effects?)
+\begin_inset CommandInset citation
+LatexCommand citet
+key "levinson:2009"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
