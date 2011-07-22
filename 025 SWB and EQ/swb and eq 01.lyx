@@ -385,6 +385,10 @@ Physiological changes (e.g.
 \end_inset
 
 lung function)
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -608,15 +612,7 @@ name "sub:Studies-outside-economics"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citet
-key "tzoulas:2007"
-
-\end_inset
-
- provide a brief survey of studies looking at wellbeing and EQ outside of
- economics.
- Observational studies have compared individuals' health and wellbeing reports
+Observational studies have compared individuals' health and wellbeing reports
  or medical records with the proximity of their homes to natural environments,
  or with alternative indicators of local environmental quality 
 \begin_inset CommandInset citation
@@ -684,7 +680,7 @@ key "ulrich:1984"
 
 \end_inset
 
-'s 
+'s much-cited 
 \begin_inset CommandInset citation
 LatexCommand citeyear
 key "ulrich:1984"
@@ -699,13 +695,24 @@ Science
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "tzoulas:2007"
+
+\end_inset
+
+ provide a brief survey of studies looking at wellbeing and green space.
+ 
+\end_layout
+
+\begin_layout Standard
 Most studies report beneficial impacts of natural environments on health
  or wellbeing, but they have some common weaknesses.
  Observational studies measure domestic proximity to natural environments
- but not actual experiences of such environments (which may not occur near
- home, and may occur elsewhere); cannot provide data on the moment-by-moment
- hedonic or affective element of wellbeing; and are reliant on retrospective
- assessments that are subject to substantial recall bias 
+ but rarely look at actual experiences of such environments (which may not
+ occur near home, and may occur elsewhere); cannot provide data on the moment-by
+-moment hedonic or affective element of wellbeing; and are reliant on retrospect
+ive assessments that are subject to substantial recall bias 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "robinson:2002"
@@ -726,7 +733,7 @@ key "kuo:2001a"
 \end_layout
 
 \begin_layout Subsection
-Economic/valuation studies
+Economic studies
 \end_layout
 
 \begin_layout Standard
@@ -750,8 +757,29 @@ key "ferreira:2010"
  many other factors affecting SWB, however.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Say something about other economic measures of EQ/spatial preference ---
+ QoLIs and hedonic studies --- like at the start of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "moro:2008"
+
+\end_inset
+
+? And/or about relation of hedonic vs SWB values?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph
-Air pollution
+Air quality
 \end_layout
 
 \begin_layout Standard
@@ -801,25 +829,11 @@ perceived
  
 \begin_inset CommandInset citation
 LatexCommand citet
-key "brereton:2005"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "ferreira:2006"
-
-\end_inset
-
- and 
-\begin_inset CommandInset citation
-LatexCommand citet
 key "ferreira:2010"
 
 \end_inset
 
- working with individual-level data on air pollution and other EQ parameters
+, working with individual-level data on air pollution and other EQ parameters
  in Ireland, also find negative associations between air pollution and SWB,
  as do 
 \begin_inset CommandInset citation
@@ -878,6 +892,83 @@ perceived
 \end_layout
 
 \begin_layout Paragraph
+Waste sites
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "brereton:2007"
+
+\end_inset
+
+ find that very close residential proximity to landfill sites (being within
+ the same electoral district) has a negative SWB association, and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "moro:2008"
+
+\end_inset
+
+ reach the same conclusion regarding the per capita number of landfill sites
+ by local authority area.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferreira:2010"
+
+\end_inset
+
+ do not find a significant effect of landfill sites within 5km, and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "brereton:2007"
+
+\end_inset
+
+ detect no impact of proximity to hazardous waste facilities.
+\end_layout
+
+\begin_layout Paragraph
+Coastline and water quality
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "brereton:2007"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "moro:2008"
+
+\end_inset
+
+ find that close proximity to coastline (within 2km or in the same local
+ authority area respectively) has a positive association with SWB.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferreira:2010"
+
+\end_inset
+
+ find no significant effect of coastline within 5km.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferreira:2010"
+
+\end_inset
+
+ detect no significant effect of being situated within 5km of a 'severely
+ polluted' river.
+\end_layout
+
+\begin_layout Paragraph
 Climate
 \end_layout
 
@@ -894,12 +985,64 @@ key "rehdanz:2005"
  
 \begin_inset CommandInset citation
 LatexCommand citet
-key "brereton:2006"
+after "p. 15"
+key "maddison:2010"
 
 \end_inset
 
- find higher individual SWB in Ireland to be related to lower wind speeds
- but higher rainfall.
+ cites an unpublished study by the same authors, using data from 87 countries
+ and concluding that 
+\begin_inset Quotes eld
+\end_inset
+
+deviations from 65°F (18.3°C) significantly reduce life satisfaction
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "moro:2008"
+
+\end_inset
+
+ find higher individual SWB in Ireland to be related positively to annual
+ hours of sunshine and millimetres of rainfall, and negatively to wind speeds.
+ Using the same data 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferreira:2010"
+
+\end_inset
+
+ find a positive association in Ireland between SWB and average temperatures
+ in both January and June
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citet
+key "moro:2008"
+
+\end_inset
+
+ do not find a significant temperature effect, but 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferreira:2010"
+
+\end_inset
+
+ include fewer other climate parameters in their model, so the difference
+ in findings might be a result of omitted variables bias or of excessive
+ multicolinearity in explanatory variables.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -937,20 +1080,41 @@ key "engelbrecht:2009"
 
 \end_inset
 
- report positive relationships between indicators of wellbeing and 'natural
- capital' at country level (
+ report positive relationships between indicators of wellbeing and generalised
+ 'natural capital' at country level.
+ 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "vemuri:2006"
+
+\end_inset
+
+'s measures natural capital as the 'ecosystem services product' based on
+ land cover types 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sutton:2002"
+
+\end_inset
+
+, and can arguably be considered EQ-related.
+ 
 \begin_inset CommandInset citation
 LatexCommand citeauthor
 key "engelbrecht:2009"
 
 \end_inset
 
-'s figures do not appear to be appropriate EQ measures, however, since resources
- such as metal ores, oil and coal feature heavily).
+'s natural capital figures do not appear to be appropriate EQ measures,
+ however: resources such as metal ores, oil and coal feature heavily.
 \end_layout
 
 \begin_layout Subsubsection
 Limitations
+\end_layout
+
+\begin_layout Paragraph
+Country-level studies
 \end_layout
 
 \begin_layout Standard
@@ -966,8 +1130,9 @@ key "rehdanz:2005,rehdanz:2007a,vemuri:2006,engelbrecht:2009"
  Although this has the advantage that unobserved heterogeneity across individual
 s is evened out, it means that SWB and EQ levels are assessed only on an
  extremely aggregated scale --- with no indication of variability or of
- actual EQ exposures --- and that unobserved heterogeneity across countries
- then has to be controlled for
+ actual EQ exposures --- and that unobserved heterogeneity across countries,
+ including linguistic and cultural heterogeneity, then has to be controlled
+ for
 \begin_inset Foot
 status collapsed
 
@@ -1024,37 +1189,45 @@ key "welsch:2006"
 \end_inset
 
 .
- It also requires a cardinal interpretation of SWB responses, although in
- practice this tends not to be problematic (as discussed in 
+ It also requires a cardinal interpretation of SWB responses (though in
+ practice, as discussed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:SWB-variable-treatment"
 
 \end_inset
 
-).
+, this tends not to be problematic).
+\end_layout
+
+\begin_layout Paragraph
+Individual-level studies
 \end_layout
 
 \begin_layout Standard
 The remaining papers use individual-level SWB data, controlling for various
  demographic, socio-economic and attitudinal variables in addition to indicators
- of EQ.
- A major limitation of many of these studies remains the level of spatial
+ of EQ near respondents' homes.
+ 
+\end_layout
+
+\begin_layout Standard
+A major limitation of most of these studies remains the level of spatial
  aggregation of EQ measures, however, which are rarely at better than electoral
- ward level.
+ ward level
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
 \begin_inset CommandInset citation
 LatexCommand citet
-key "ferreira:2006"
+key "ferreira:2010"
 
 \end_inset
 
 , for example, disaggregate location-specific measures by respondents' electoral
  districts (area: 18 to 6,189 hectares) except in the case of air pollution,
- which is calculated by proximity to one or more of only 10 monitoring stations
+ which is calculated by proximity to one or more of only 12 monitoring stations
  for the whole of Ireland.
  And although 
 \begin_inset CommandInset citation
@@ -1070,66 +1243,189 @@ key "mackerron:2008"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-In common with those in other disciplines, studies in economics have commonly
- focused on only a single EQ parameter (e.g.
- noise), despite probable correlations with other EQ and broader spatial
- characteristics (e.g.
- air pollution, land cover type, transport amenities).
- This omission of a broader range of spatial variables seems likely to have
- led to endogeneity, biasing the calculated regression coefficients.
- In addition, none of the studies use potentially more robust multiple-item
- SWB scales, or (apart from 
+.
+ Even where EQ near the home is estimated more accurately, this may not
+ correspond closely to an individual's actual exposure to or experience
+ of EQ.
+ For example, exposure in or near the home to certain kinds of air pollution
+ may account for only a small fraction of the total variation in exposure
+ 
 \begin_inset CommandInset citation
-LatexCommand citealp
-key "engelbrecht:2009"
+LatexCommand citep
+key "huang:2000"
 
 \end_inset
 
-) investigate results using alternative SWB items.
- 
+.
 \end_layout
 
 \begin_layout Standard
-None of the studies addresses potential SWB effects of green space, such
- as grassland or forest, despite the evidence that green space has a positive
- wellbeing effect, as outlined in 
+In common with studies in other disciplines, those in economics have commonly
+ focused on only a single EQ parameter (e.g.
+ noise), despite probable correlations of that parameter with other EQ and
+ broader spatial characteristics (e.g.
+ air pollution, land cover type, transport amenities)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The studies using Irish data by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "brereton:2007"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "moro:2008"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferreira:2010"
+
+\end_inset
+
+ are exceptions here.
+ 
+\end_layout
+
+\end_inset
+
+.
+ This omission of a broader range of spatial variables seems likely to lead
+ to endogeneity.
+\end_layout
+
+\begin_layout Standard
+None of the studies addresses the potential SWB effects of green space,
+ such as grassland or forest, despite the evidence, outlined in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Studies-outside-economics"
 
 \end_inset
 
-.
- And only one has considered 'blue space' (
+ above, that green space has a positive wellbeing effect.
+ Few have considered 'blue space' --- coastal or freshwater environments
+ --- while those that have (
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "brereton:2007"
 
 \end_inset
 
-, who include dummies for proximity to nearest coastline and nearest beach,
- but no freshwater features).
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "moro:2008"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "ferreira:2010"
+
+\end_inset
+
+) include only coastal features.
 \end_layout
 
 \begin_layout Standard
-And, perhaps surprisingly given the spatial nature of the data, only one
- study uses spatial econometric methods---such as those commonly employed
- in hedonic pricing studies---which could help address the problem of omitted
- spatial covariates.
-\begin_inset Note Note
-status open
+Apart from 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "engelbrecht:2009"
+
+\end_inset
+
+, none of the studies investigate the sensitivity of their results to the
+ use of alternative SWB items, and none make use of potentially more robust
+ multiple-item SWB scales.
+\end_layout
+
+\begin_layout Standard
+Perhaps surprisingly given the spatial nature of the data, only one study
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rehdanz:2007a"
+
+\end_inset
+
+ turns to spatial econometric models, which have recently been used in hedonic
+ pricing studies 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "kim:2008,anselin:2008"
+
+\end_inset
+
+.
+ Such models could help address problems of omitted spatial covariates (in
+ the case of spatial error models) and inefficiencies in non-spatial estimators
+ (spatial lag models)
+\begin_inset Foot
+status collapsed
 
 \begin_layout Plain Layout
-Rehdanz now does!
+The usefulness of such spatial models has been questioned by some researchers,
+ however 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gibbons:2010"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Standard
+Finally, only one study 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luechinger:2009"
+
+\end_inset
+
+ offers a convincing strategy for the identification of causal effects.
+ The remaining papers report only on associations, restricting their usefulness
+ to policy.
+\end_layout
+
+\begin_layout Paragraph
+Experience-level studies?
+\end_layout
+
+\begin_layout Standard
+None of these EQ studies --- nor any, we believe, in any other discipline
+ --- have ESM or EMA data on the moment-by-moment hedonic or affective element
+ of wellbeing.
+ All are reliant on retrospective assessments that are generally rather
+ vague in time and may be subject to substantial recall bias (as discussed
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:domains-and-timescales"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsubsection
+Valuation
 \end_layout
 
 \begin_layout Standard
