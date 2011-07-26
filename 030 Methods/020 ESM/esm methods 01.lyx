@@ -79,6 +79,11 @@
 \filename_suffix 0
 \color #ffffff
 \end_branch
+\branch bib-for-esm-methods
+\selected 0
+\filename_suffix 0
+\color #ffffff
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -5742,6 +5747,26 @@ reference "sec:esm-Response-validity"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch bib-for-esm-methods
+status open
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "/Users/gjm06/Documents/PhD thesis/all"
+options "apalike2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

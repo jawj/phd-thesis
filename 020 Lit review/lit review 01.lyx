@@ -3027,7 +3027,252 @@ a lasting marriage (compared to widowhood as a ‘natural’ experiment)...
 \end_inset
 
 .
- This method of monetary valuation is a useful addition to revealed- and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Note that we're treating SWB as a drop-in replacement for utility here.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Method
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferreira:2010"
+
+\end_inset
+
+ provide a summary of the SWB valuation method, on which this account is
+ based.
+ The usual SWB regression specification in the literature is a simple additive
+ model in which income alone is logged.
+ For example, for reported SWB 
+\begin_inset Formula $r$
+\end_inset
+
+, income 
+\begin_inset Formula $y$
+\end_inset
+
+, and a good 
+\begin_inset Formula $g$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r=\alpha+\beta\ln(y)+\gamma g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From this, the implicit price of the good 
+\begin_inset Formula $g$
+\end_inset
+
+ --- which is the marginal rate of substitution between the good and income
+ 
+\begin_inset Formula $y$
+\end_inset
+
+ --- is obtained at the mean wage 
+\begin_inset Formula $\bar{y}$
+\end_inset
+
+ as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\delta r/\delta q}{\delta r/\delta y}=\gamma\frac{\bar{y}}{\beta}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The welfare effect of a discrete change in the amenity can also be measured,
+ in terms of the compensating surplus or equivalent surplus.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Compensating surplus
+\end_layout
+
+\begin_layout Standard
+The compensating surplus 
+\begin_inset Formula $c$
+\end_inset
+
+ is the sum of money that would keep an individual at his or her original
+ level of utility after a change in the provision of the good.
+ It is calculated following a standard SWB regression estimation as follows.
+\end_layout
+
+\begin_layout Standard
+Before the change, reported SWB 
+\begin_inset Formula $r_{0}$
+\end_inset
+
+ is modelled as a function of income 
+\begin_inset Formula $y$
+\end_inset
+
+ and the good 
+\begin_inset Formula $g_{0}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+r_{0}=\alpha+\beta\ln(y)+\gamma g_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Following a change in the provision of the good to 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, reported SWB 
+\begin_inset Formula $r_{1}$
+\end_inset
+
+ becomes: 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula 
+\[
+r_{1}=\alpha+\beta\ln(y)+\gamma g_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The compensating surplus 
+\begin_inset Formula $c$
+\end_inset
+
+ is thus defined so as to satisfy:
+\begin_inset Formula 
+\[
+r_{0}=\alpha+\beta\ln(y-c)+\gamma g_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substituting 
+\begin_inset Formula $r_{0}$
+\end_inset
+
+ from above produces:
+\begin_inset Formula 
+\[
+\beta\ln(y)+\gamma g_{0}=\beta\ln(y-c)+\gamma g_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which rearranges to give, at mean income 
+\begin_inset Formula $\bar{y}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+c=\bar{y}-\exp\left(\ln(\bar{y})+\frac{\gamma}{\beta}(g_{0}-g_{1})\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Equivalent surplus 
+\end_layout
+
+\begin_layout Standard
+The equivalent surplus 
+\begin_inset Formula $e$
+\end_inset
+
+ is the amount of money that, if a particular change in the provision of
+ the good were 
+\emph on
+not
+\emph default
+ to occur, would bring an individual the utility level they would have attained
+ if that change had in fact taken place.
+ It is calculated by a similar chain of reasoning as:
+\begin_inset Formula 
+\[
+e=-\bar{y}+\exp\left(\ln(\bar{y})+\frac{\gamma}{\beta}(g_{1}-g_{0})\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Strengths and weaknesses
+\end_layout
+
+\begin_layout Standard
+This method of monetary valuation is a useful addition to revealed- and
  stated-preference methods, since it does not require assumptions about
  market equilibria, is not subject to strategic behaviour, and does not
  require individuals to be conscious of the levels or effects of the parameters
@@ -3042,11 +3287,25 @@ key "welsch:2009"
 \end_layout
 
 \begin_layout Standard
+also utility misprediction
+\end_layout
+
+\begin_layout Standard
+expand to consider differences from revealed and stated preference
+\end_layout
+
+\begin_layout Standard
+e.g.
+ costless moving, proximity to family, knowledge about all of country/world,
+ utility misprediction
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Explanation with equations??
+Note limitations??
 \end_layout
 
 \end_inset

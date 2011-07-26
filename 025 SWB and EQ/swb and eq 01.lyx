@@ -219,14 +219,15 @@ key "ulrich:1991"
 \end_inset
 
 .
- According to Kaplan's 'Attention Restoration Theory' 
+ According to Kaplan's 
 \begin_inset CommandInset citation
 LatexCommand citeyearpar
 key "kaplan:1995"
 
 \end_inset
 
- and Ulrich's broader 'psycho-evolutionary theory' 
+ 'Attention Restoration Theory' and Ulrich's broader 'psycho-evolutionary
+ theory' 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ulrich:1991"
@@ -234,8 +235,8 @@ key "ulrich:1991"
 \end_inset
 
  the lack of these factors in natural environments --- as well as the presence
- of certain other characteristics --- therefore permits stress recovery
- and attention restoration.
+ of certain other characteristics --- permits stress recovery and the restoratio
+n of attentional capacity.
 \end_layout
 
 \begin_layout Subsection
@@ -962,6 +963,15 @@ Coastline and water quality
 \begin_layout Standard
 \begin_inset CommandInset citation
 LatexCommand citet
+key "israel:2003"
+
+\end_inset
+
+ report that individuals' life satisfaction is negatively associated with
+ country-level per capita emissions of organic water pollutants.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
 key "brereton:2007"
 
 \end_inset
@@ -992,23 +1002,6 @@ key "ferreira:2010"
 
  detect no significant effect of being situated within 5km of a 'severely
  polluted' river.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset citation
-LatexCommand citet
-key "israel:2003"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Paragraph
@@ -1079,13 +1072,23 @@ key "ferreira:2010"
 \end_inset
 
  include fewer other climate parameters in their model, so the difference
- in findings might be a result of omitted variables bias or of excessive
- multicolinearity in explanatory variables.
+ in findings might be a result of omitted variables or of multicolinearity
+ in the explanatory variables.
 \end_layout
 
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "frijters:1998"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
@@ -1132,8 +1135,8 @@ key "vemuri:2006"
 
 \end_inset
 
-'s measures natural capital as the 'ecosystem services product' based on
- land cover types 
+ measure natural capital as the 'ecosystem services product' based on land
+ cover types 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "sutton:2002"
@@ -1165,11 +1168,29 @@ Several studies compare mean SWB and mean EQ values at the whole-country
  level (all Welsch's air pollution papers cited above; 
 \begin_inset CommandInset citation
 LatexCommand citealp
-key "rehdanz:2005,rehdanz:2007a,vemuri:2006,engelbrecht:2009,menz:2010"
+key "israel:2003,rehdanz:2005,rehdanz:2007a,vemuri:2006,engelbrecht:2009,menz:2010"
 
 \end_inset
 
-).
+)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "israel:2003"
+
+\end_inset
+
+ use SWB data at individual level but pollution data at whole-country level
+ (and include only per capita GDP to control for any other differences between
+ countries that might be correlated with pollution emissions).
+\end_layout
+
+\end_inset
+
+.
  Although this has the advantage that unobserved heterogeneity across individual
 s is evened out, it means that SWB and EQ levels are assessed only on an
  extremely aggregated scale --- with no indication of variability or of
@@ -1345,6 +1366,19 @@ key "ferreira:2010"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Also: house prices and wages?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 None of the studies addresses the potential SWB effects of green space,
  such as grassland or forest, despite the evidence, outlined in 
 \begin_inset CommandInset ref
@@ -1376,7 +1410,7 @@ key "ferreira:2010"
 
 \end_inset
 
-) include only coastal features.
+) include only distance to the coast.
 \end_layout
 
 \begin_layout Standard
@@ -1401,7 +1435,7 @@ key "rehdanz:2007a"
 
 \end_inset
 
- turns to spatial econometric models, which have recently been used in hedonic
+ turns to spatial econometric models, as have recently been used in hedonic
  pricing studies 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1413,12 +1447,12 @@ key "kim:2008,anselin:2008"
 .
  Such models could help address problems of omitted spatial covariates (in
  the case of spatial error models) and inefficiencies in non-spatial estimators
- (spatial lag models)
+ (for spatial lag models)
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-The usefulness of such spatial models has been questioned by some researchers,
+The usefulness of these spatial models has been questioned by some researchers,
  however 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1443,8 +1477,8 @@ key "luechinger:2009"
 \end_inset
 
  offers a convincing strategy for the identification of causal effects.
- The remaining papers report only on associations, restricting their usefulness
- to policy.
+ The remaining papers report only on associations, limiting their usefulness
+ in policy.
 \end_layout
 
 \begin_layout Paragraph
@@ -1488,22 +1522,37 @@ key "kahneman:2004a"
 \end_layout
 
 \begin_layout Standard
-None of the EQ studies cited in this section (
+None of the studies cited in this section (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:eq-swb-evidence"
 
 \end_inset
 
-) --- nor any, we believe, in any other discipline --- draw on data on the
- moment-by-moment hedonic or affective element of wellbeing collected in
- this way.
+) --- nor any study of EQ and wellbeing in any discipline, as far as we
+ are aware --- draw on data on the moment-by-moment hedonic or affective
+ element of wellbeing collected in this way.
  All are reliant instead on retrospective assessments that are generally
  rather vague in time, and may be subject to substantial recall bias.
 \end_layout
 
 \begin_layout Subsubsection
 Valuation
+\end_layout
+
+\begin_layout Standard
+Issues with what is controlled: wages and house prices?!
+\end_layout
+
+\begin_layout Standard
+Link to 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:happiness-valuation"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1525,7 +1574,12 @@ key "welsch:2009a"
 \end_layout
 
 \begin_layout Standard
-Underestimation of income effect
+Underestimation of income effect?
+\end_layout
+
+\begin_layout Standard
+- Error in measuring income (wide brackets, missing data, wrong variable,
+ misleading/wrong answers)
 \end_layout
 
 \begin_layout Standard
@@ -1567,7 +1621,7 @@ key "levinson:2009"
 \end_layout
 
 \begin_layout Standard
-Habituation (not really a problem, except where there are physical health
+Habituation (not really a problem -- except where there are physical health
  effects?)
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1907,8 +1961,8 @@ key "legge:2007"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch bibliography when alone
-status open
+\begin_inset Branch bibliography
+status collapsed
 
 \begin_layout Standard
 \begin_inset CommandInset bibtex
