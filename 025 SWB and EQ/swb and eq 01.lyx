@@ -1011,11 +1011,23 @@ Climate
 \begin_layout Standard
 \begin_inset CommandInset citation
 LatexCommand citet
+key "frijters:1998"
+
+\end_inset
+
+ find that individual-level SWB in Russia is positively associated with
+ hours of sunshine, days of rain, and interactions of average temperature
+ with precipitation and temperature with windspeed in January, and negatively
+ related to quantity of rainfall, January windspeed, and interactions of
+ average humidity with temperature and rural location with precipitation.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
 key "rehdanz:2005"
 
 \end_inset
 
-, looking at climate parameters at country level, across 67 countries, find
+, looking at climate parameters at country level across 67 countries, find
  that higher mean SWB is associated with higher mean temperature during
  cold months and lower mean temperature during hot months.
  
@@ -1079,16 +1091,6 @@ key "ferreira:2010"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citet
-key "frijters:1998"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Paragraph
@@ -1277,8 +1279,8 @@ The remaining papers use individual-level SWB data, controlling for various
 
 \begin_layout Standard
 A major limitation of most of these studies remains the level of spatial
- aggregation of EQ measures, however, which are rarely at better than electoral
- ward level
+ aggregation of EQ measures, however, which are rarely at better (and frequently
+ at worse) than electoral ward level
 \begin_inset Foot
 status collapsed
 
@@ -1289,20 +1291,21 @@ key "ferreira:2010"
 
 \end_inset
 
-, for example, disaggregate location-specific measures by respondents' electoral
- districts (area: 18 to 6,189 hectares) except in the case of air pollution,
- which is calculated by proximity to one or more of only 12 monitoring stations
- for the whole of Ireland.
- And although 
+ use relatively disaggregated measures, mainly calculated per electoral
+ district (area: 18 to 6,189 hectares).
+ However, their indicators of air pollution, which may vary over very short
+ distances, are calculated by proximity to one or more of only 12 monitoring
+ stations for the whole of Ireland.
+ 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "mackerron:2008"
 
 \end_inset
 
- use very high resolution air pollution data, this study is weakened by
- the probable existence of omitted spatial covariates and by its reliance
- for SWB measures on a small convenience sample.
+ use exceptionally high resolution air pollution data (20m cells), but this
+ study is weakened by the probable existence of omitted spatial covariates
+ and by its reliance for SWB measures on a small convenience sample.
 \end_layout
 
 \end_inset
@@ -1361,25 +1364,34 @@ key "ferreira:2010"
 \end_inset
 
 .
- This omission of a broader range of spatial variables seems likely to lead
- to endogeneity.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
+ This omission of a broader range of spatial variables in general seems
+ likely to lead to endogeneity.
+ Furthermore, since EQ differentials may be compensated by wages and house
+ prices, differing approaches regarding the inclusion of income and house
+ price data mean that different studies measure different things: either
+ residual or total SWB effects
+\begin_inset Foot
+status collapsed
 
 \begin_layout Plain Layout
-Also: house prices and wages?
+Or in many cases, where incomes but not house prices are included, perhaps
+ neither of these.
 \end_layout
 
 \end_inset
 
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ferreira:2010"
 
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-None of the studies addresses the potential SWB effects of green space,
+None of the studies addresses the potential influence on SWB of green space,
  such as grassland or forest, despite the evidence, outlined in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -1541,10 +1553,6 @@ Valuation
 \end_layout
 
 \begin_layout Standard
-Issues with what is controlled: wages and house prices?!
-\end_layout
-
-\begin_layout Standard
 Link to 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -1553,59 +1561,6 @@ reference "sub:happiness-valuation"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-High values! Problems! 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "levinson:2009"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand citet
-key "welsch:2009a"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Underestimation of income effect?
-\end_layout
-
-\begin_layout Standard
-- Error in measuring income (wide brackets, missing data, wrong variable,
- misleading/wrong answers)
-\end_layout
-
-\begin_layout Standard
-- Simultaneous causation: happiness <-> income (need IV)
-\begin_inset CommandInset citation
-LatexCommand citet
-key "levinson:2009"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-- Lagged income
-\begin_inset CommandInset citation
-LatexCommand citet
-key "welsch:2009a"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-- Relative income 
 \end_layout
 
 \begin_layout Standard

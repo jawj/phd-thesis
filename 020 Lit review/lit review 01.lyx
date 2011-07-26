@@ -74,6 +74,11 @@
 \filename_suffix 0
 \color #ffffff
 \end_branch
+\branch bib-when-alone
+\selected 1
+\filename_suffix 0
+\color #ffffff
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -525,13 +530,14 @@ cognitive
 \end_layout
 
 \begin_layout Subsection
+Preference satisfaction and subjective wellbeing
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:ps-and-swb"
 
 \end_inset
 
-Preference satisfaction and subjective wellbeing
+
 \end_layout
 
 \begin_layout Standard
@@ -1209,11 +1215,9 @@ New bit
 
 It seems possible, too, that economists have not wished to dwell on the
  variety of related but distinct wellbeing ideas because to do so would
- cast doubt on the potential for any one of them to represent the thing
- that individuals would like to maximise, and hence also on the validity
- of using any one of them as a numéraire when estimating trade-off rates
- between different variables --- as is done when using SWB models for monetary
- valuation (
+ cast doubt on the potential for any one of them to represent a proxy for
+ decision utility --- the thing that individuals seek to maximise --- and
+ hence on the validity of their use for monetary valuation (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:happiness-valuation"
@@ -1415,6 +1419,10 @@ key "robinson:2002"
  live exclusively in the immediate present.
 \end_layout
 
+\begin_layout Paragraph
+Experience sampling or reconstruction
+\end_layout
+
 \begin_layout Standard
 As implied by the above, SWB measures have been devised to approximate the
  average or integral of individuals' momentary utilities too 
@@ -1428,7 +1436,11 @@ key "kahneman:1999a"
 .
  With a flavour of Edgeworth's 'hedonimeter', these come from either Experience
  Sampling Method (ESM) or Day Reconstruction Method (DRM) studies.
- In ESM studies, participants are signalled a number of times over a given
+ 
+\end_layout
+
+\begin_layout Standard
+In ESM studies, participants are signalled a number of times over a given
  period --- say, eight times a day, for seven days --- and are asked about
  aspects of their mental state, where they are, what they are doing, and
  who they are with 
@@ -1439,23 +1451,31 @@ key "hektner:2007"
 \end_inset
 
 .
- Especially in the medical literature, the term Ecological Momentary Assessment
- (EMA) describes a broad family of similar methodologies 
+ In the medical literature, the term Ecological Momentary Assessment (EMA)
+ describes a broad family of similar methodologies 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "shiffman:2008,smyth:2003"
+key "smyth:2003,shiffman:2008"
 
 \end_inset
 
 .
  The logistics of supplying and requiring participants to carry handheld
  computers or pre-printed response forms have until recently limited the
- scale of ESM studies, but technological developments seem set to obviate
+ scale of ESM studies, but technological developments are beginning to obviate
  this issue 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
 key "collins:2003,goodwin:2008a"
+
+\end_inset
+
+, and one ESM study has already made use of respondents' own smartphones
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "killingsworth:2010"
 
 \end_inset
 
@@ -3006,8 +3026,9 @@ name "sub:happiness-valuation"
 \end_layout
 
 \begin_layout Standard
-Once estimated, SWB models can be used for monetary valuation, by calculating
- the change in income which would produce an SWB impact of equivalent size.
+If SWB can be regarded as a proxy for PS-style latent utility, and if the
+ estimated effects are causal, then SWB model estimates can be used for
+ monetary valuation.
  For example, 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -3029,19 +3050,6 @@ a lasting marriage (compared to widowhood as a ‘natural’ experiment)...
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Note that we're treating SWB as a drop-in replacement for utility here.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection
 Method
 \end_layout
@@ -3053,8 +3061,8 @@ key "ferreira:2010"
 
 \end_inset
 
- provide a summary of the SWB valuation method, on which this account is
- based.
+ provide an extended discussion of the SWB valuation method, on which the
+ following account is based.
  The usual SWB regression specification in the literature is a simple additive
  model in which income alone is logged.
  For example, for reported SWB 
@@ -3213,7 +3221,7 @@ Substituting
 \begin_inset Formula $r_{0}$
 \end_inset
 
- from above produces:
+ produces:
 \begin_inset Formula 
 \[
 \beta\ln(y)+\gamma g_{0}=\beta\ln(y-c)+\gamma g_{1}
@@ -3256,7 +3264,7 @@ not
 \emph default
  to occur, would bring an individual the utility level they would have attained
  if that change had in fact taken place.
- It is calculated by a similar chain of reasoning as:
+ It is calculated by a similar process as:
 \begin_inset Formula 
 \[
 e=-\bar{y}+\exp\left(\ln(\bar{y})+\frac{\gamma}{\beta}(g_{1}-g_{0})\right)
@@ -3268,18 +3276,39 @@ e=-\bar{y}+\exp\left(\ln(\bar{y})+\frac{\gamma}{\beta}(g_{1}-g_{0})\right)
 \end_layout
 
 \begin_layout Subsubsection
+Use for spatial amenities
+\end_layout
+
+\begin_layout Standard
+Precisely what these quantities represent may depend on the specification
+ of the SWB regression.
+ Valuation using SWB has been applied primarily to spatial amenities.
+ In that context, in order to obtain total values, the SWB regression must
+ include other factors that compensate for variation in the amenities.
+ These will include house prices and wages.
+ If house prices and wages are not included, then only residual values that
+ are not capitalised in private markets will be recovered.
+ And if markets are in equilibrium, these should equal zero 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luechinger:2009,ferreira:2010"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
 Strengths and weaknesses
 \end_layout
 
 \begin_layout Standard
-This method of monetary valuation is a useful addition to revealed- and
- stated-preference methods, since it does not require assumptions about
- market equilibria, is not subject to strategic behaviour, and does not
- require individuals to be conscious of the levels or effects of the parameters
- being valued 
+The strengths and weaknesses of the SWB valuation method may usefully be
+ compared to those of alternative methods of non-market valuation 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "welsch:2009"
+before "e.g."
+key "frey:2008a,welsch:2009"
 
 \end_inset
 
@@ -3287,17 +3316,86 @@ key "welsch:2009"
 \end_layout
 
 \begin_layout Standard
-also utility misprediction
+Hedonic pricing --- a revealed preference method --- relies on the assumption
+ that labour and housing markets are in full equilibrium, implying that
+ these markets are unrestricted; that there is a wide variety of houses
+ and jobs; that individuals know the relevant characteristics of all locations;
+ that prices adjust rapidly; and that transacting and moving are costless.
+ Stated preference techniques rely on respondents' ability to express preference
+s over hypothetical and potentially unfamiliar goods, accounting for the
+ scope of the good to be valued, their budget constraint, and the availability
+ of substitute goods.
+ Stated preference responses may be subject to strategic behaviour, to the
+ 
+\begin_inset Quotes eld
+\end_inset
+
+warm glow
+\begin_inset Quotes erd
+\end_inset
+
+ effect of supporting a good cause, or to protests (against the valuation
+ exercise, the proposed payment mechanism, and so on).
+ Both revealed and stated preference methods require that individuals can
+ accurately predict the utility impacts of (real or hypothetical) choices
+ --- an ability which is open to considerable doubt 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kahneman:2005,gilbert:2006"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-expand to consider differences from revealed and stated preference
+Valuation with SWB data does not suffer from these specific weaknesses.
+ On the other hand, it requires some strong assumptions of its own.
+ Crucially, as noted above, we must accept a particular SWB indicator as
+ a proxy for utility (see discussions in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:ps-and-swb"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Concepts-and-terminology"
+
+\end_inset
+
+).
+ And we must assume --- or preferably, but very rarely, demonstrate ---
+ that the relationships between explanatory variables and SWB in our regression
+ models are causal.
 \end_layout
 
 \begin_layout Standard
-e.g.
- costless moving, proximity to family, knowledge about all of country/world,
- utility misprediction
+Unlike stated preference methods, the SWB method cannot value parameters
+ outside their currently observed range
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+However, like stated preference methods, it may be able to capture non-use
+ or existence values (e.g.
+ of distant catastrophes, or biodiversity), although evidence on this is
+ limited 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ferreira:2010"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3305,12 +3403,90 @@ e.g.
 status open
 
 \begin_layout Plain Layout
-Note limitations??
+Assortment? e.g.
+ Luechinger, 2009, p.493
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph
+Implausible values?
+\end_layout
+
+\begin_layout Standard
+To date, most studies using the SWB valuation method have reported values
+ that 
+\begin_inset Quotes eld
+\end_inset
+
+seem too large
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ferreira:2010"
+
+\end_inset
+
+.
+ Most researchers have supposed that these implausible values result from
+ the underestimation of the effect of income on wellbeing, for which several
+ reasons have been proposed.
+ These include: first, measurement error, caused by wide response brackets
+ or by missing, misleading or mistaken responses on income-related survey
+ questions; second, the omission of one's own lagged income, of the incomes
+ of others
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+Since, due to adaptation, lagged income affects life satisfaction negatively
+ [...] and current income is positively correlated with lagged income, omission
+ of lagged income may imply a downward bias in the estimate of the marginal
+ utility of (current) income
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "welsch:2009a"
+
+\end_inset
+
+.
+ Assuming that one's income is positively correlated too with the other
+ incomes against which one compares it, a similar argument may be made in
+ regard of the omission of such comparator incomes.
+\end_layout
+
+\end_inset
+
+, and of the costs of income generation, such as working hours and stress
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luechinger:2009"
+
+\end_inset
+
+; and third, simultaneous causation, such that being happier increases earnings
+ as well as the reverse 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "levinson:2009"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -5815,13 +5991,13 @@ The author thanks Gordon MacKerron, Raphael Calel, and two anonymous reviewers
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Branch bib-when-alone
 status open
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "~/Dropbox/Academic/all"
+bibfiles "/Users/gjm06/Documents/PhD thesis/all"
 options "bibtotoc,apalike2"
 
 \end_inset
