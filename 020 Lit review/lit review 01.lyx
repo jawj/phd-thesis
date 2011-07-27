@@ -3488,10 +3488,10 @@ reference "sub:measuring-happiness"
  We must be persuaded that the SWB regression model takes the correct functional
  form, and that the relationships between the explanatory variables and
  SWB are causal --- points which are rarely discussed in the literature.
- And we must be cautious about the effects of sorting by tastes: for example,
- when valuing air pollution, it may be that less pollution-sensitive individuals
- live in more polluted locations (and vice versa), leading us to underestimate
- average effects 
+ And we must be wary of sorting by tastes: for example, when valuing air
+ pollution, it may be that less pollution-sensitive individuals live in
+ more polluted locations (and vice versa), leading to underestimation of
+ the causal SWB effect 
 \begin_inset CommandInset citation
 LatexCommand citep
 after "p. 493"
