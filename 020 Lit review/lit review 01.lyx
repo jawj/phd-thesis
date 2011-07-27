@@ -708,7 +708,7 @@ as if
  they are maximising utility, and their behaviour can be modelled and analysed
  as such.
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 In respect of the axioms of consumer preference: 
@@ -991,7 +991,10 @@ There is no easy mapping between the PS concept of utility and SWB measures
  SWB is whatever individuals understand by the question they are asked,
  used (generally retrospectively) as a guide to recollecting, filtering,
  aggregating and reporting their experience.
- Intuitively, some understanding of happiness probably is what most people
+\end_layout
+
+\begin_layout Standard
+Intuitively, some understanding of happiness probably is what most people
  are trying to maximise, and SWB measures are sometimes described as measures
  of 'experienced' utility, in contrast to the expected or 'decision' utility
  yielded by the PS approach 
@@ -1003,8 +1006,8 @@ key "kahneman:1997,kahneman:2005"
 
 .
  But while this does capture a useful distinction between the two quantities,
- it would be wrong to take them, as this terminology might imply, as simply
- prospective and retrospective versions of an equivalent metric.
+ it would be misleading to portray them, as this terminology might imply,
+ as simply prospective and retrospective versions of an equivalent metric.
 \begin_inset Foot
 status collapsed
 
@@ -1045,7 +1048,7 @@ key "clark:2008a"
 
 \end_inset
 
- discuss this relationship in greater depth.
+ discuss the relationship in greater depth.
 \end_layout
 
 \begin_layout Section
@@ -1239,16 +1242,6 @@ reference "sub:happiness-valuation"
 
 ).
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Use of LS dominant? says Fujiwara paper
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1577,24 +1570,6 @@ key "annas:2004"
 
 ).
  Multi-item scales, using a variety of terms, may help to reduce it.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-*** mention social desirability bias too (discussed wrt SWB by 
-\begin_inset CommandInset citation
-LatexCommand citet
-after "371"
-key "tella:2005"
-
-\end_inset
-
-) ***
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Paragraph
@@ -1887,6 +1862,21 @@ key "ferrer-i-carbonell:2004"
  survey methods might well attract respondents who are unrepresentatively
  lonely and/or trusting, both of which characteristics tend to correlate
  highly with SWB ratings.
+\end_layout
+
+\begin_layout Standard
+Finally, if it is a social norm to be happy (unhappy), SWB responses ---
+ at least in survey modes that are not self-completed --- might be biased
+ upwards (downwards).
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p. 371"
+key "tella:2005"
+
+\end_inset
+
+ find little evidence that this occurs, however.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2896,11 +2886,11 @@ key "luechinger:2009,mackerron:2008,brereton:2007"
 
 \end_inset
 
-, only one so far seems to have attempted the econometric modelling of any
+, only two so far seem to have attempted the econometric modelling of any
  spatial effects 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "stanca:2010"
+key "rehdanz:2007a,stanca:2010"
 
 \end_inset
 
@@ -2924,21 +2914,6 @@ key "fowler:2008,christakis:2009"
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Re.
- spatial econometrics, add Rehdanz's biodiversity paper!
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -3050,22 +3025,8 @@ name "sub:happiness-valuation"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Introduce as alternative to conventional, PS-based methods
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-If SWB can be regarded as a proxy for PS-style latent utility, and if the
- estimated effects are causal, then SWB model estimates can be used for
- monetary valuation.
+If SWB can be regarded as a proxy for PS-style utility, and if estimated
+ effects are causal, then SWB model estimates can be used for monetary valuation.
  For example, 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -3085,6 +3046,30 @@ a lasting marriage (compared to widowhood as a ‘natural’ experiment)...
 \end_inset
 
 .
+ 
+\end_layout
+
+\begin_layout Standard
+As noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Concepts-and-terminology"
+
+\end_inset
+
+, a variety of concepts and indicators of SWB exist.
+ In the context of valuation studies 'life satisfaction' measures have been
+ the most frequently used.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p. 15"
+key "fujiwara:2011"
+
+\end_inset
+
+ argue that these have implicitly been assumed to most closely resemble
+ the conventional PS notion of utility.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3161,7 +3146,7 @@ From this, the implicit price of the good
 \end_layout
 
 \begin_layout Standard
-The welfare effect of a discrete change in the amenity can also be measured,
+The welfare effect of a discrete change in the amenity can also be measured
  in terms of the compensating surplus or equivalent surplus.
  
 \end_layout
@@ -3301,7 +3286,26 @@ not
 \emph default
  to occur, would bring an individual the utility level they would have attained
  if that change had in fact taken place.
- It is calculated by a similar process as:
+ It is calculated similarly, by setting:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r_{1}=\alpha+\beta\ln(y+e)+\gamma g_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To give, at mean income 
+\begin_inset Formula $\bar{y}$
+\end_inset
+
+:
 \begin_inset Formula 
 \[
 e=-\bar{y}+\exp\left(\ln(\bar{y})+\frac{\gamma}{\beta}(g_{1}-g_{0})\right)
@@ -3312,29 +3316,38 @@ e=-\bar{y}+\exp\left(\ln(\bar{y})+\frac{\gamma}{\beta}(g_{1}-g_{0})\right)
 
 \end_layout
 
-\begin_layout Subsubsection
-Use for spatial amenities
-\end_layout
-
 \begin_layout Standard
-Precisely what these quantities represent may depend on the specification
- of the SWB regression.
- Valuation using SWB has been applied primarily to spatial amenities.
- In that context, in order to obtain total values, the SWB regression must
- include other factors that compensate for variation in the amenities.
- These will include house prices and wages.
- If house prices and wages are not included, then only residual values that
- are not capitalised in private markets will be recovered
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-If markets are in equilibrium, these residual values should equal zero.
-\end_layout
+The compensating surplus represents maximum willingness to pay (WTP) for
+ an improvement in the good, or minimum willingness to accept (WTA) for
+ a deterioration.
+ Conversely, the equivalent surplus represents maximum WTP to avoid a deteriorat
+ion in the good, or minimum WTA to forego an improvement 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "brookshire:1980"
 
 \end_inset
 
- 
+.
+\end_layout
+
+\begin_layout Paragraph
+Regression specification
+\end_layout
+
+\begin_layout Standard
+Whether these quantities represent the full value of the good is dependent
+ on the specification of the SWB regression.
+ For the full value to be derived, the SWB regression must include any other
+ factors that compensate for variation in the good.
+ Valuation using SWB has been applied primarily to spatial amenities such
+ as environmental quality characteristics.
+ In that context, in order to obtain total values, the regression specification
+ must include house prices and wages.
+ If house prices and wages are not included, then only residual values that
+ are not capitalised in the housing and labour markets will be recovered,
+ and if the markets are in equilibrium, these residual values are expected
+ to be zero 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "luechinger:2009,ferreira:2010"
@@ -3351,65 +3364,75 @@ Strengths and weaknesses
 \begin_layout Standard
 \begin_inset CommandInset citation
 LatexCommand citet
+before "e.g."
+key "frey:2008a"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "welsch:2009"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
 key "fujiwara:2011"
 
 \end_inset
 
- provide a thorough summary of the strengths and weaknesses of the SWB valuation
- method as compared with stated and revealed preference techniques.
- Also summary of study values (pp.
- 63 -- 64).
- 
+ provide summaries of the strengths and weaknesses of the SWB valuation
+ method as compared with the standard alternatives --- stated and revealed
+ preference techniques.
+\end_layout
+
+\begin_layout Standard
+Both revealed and stated preference methods ultimately rely on the PS foundation
+s outlined in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:ps-and-swb"
+
+\end_inset
+
+, which require that individuals are able to accurately predict the utility
+ implications of (actual or hypothetical) choices.
+ Research in behavioural economics (and psychology) lays these foundations
+ open to considerable doubt 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "kahneman:2005,gilbert:2006"
+
+\end_inset
+
+, leading 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p.39"
+key "fujiwara:2011"
+
+\end_inset
+
+ to argue that the main appeal of the SWB valuation is 
 \begin_inset Quotes eld
 \end_inset
 
-Arguably the main appeal of the life satisfaction method relates to the
- fact that it does not rely on people having well-defined pre-existing rational
+that it does not rely on people having well-defined pre-existing rational
  preferences
 \begin_inset Quotes erd
 \end_inset
 
- (p.
- 39).
- Regard as complementary: strengths and weakness are quite different.
-\end_layout
-
-\begin_layout Standard
-The strengths and weaknesses of the SWB valuation method may usefully be
- compared to those of alternative methods of non-market valuation 
-\begin_inset CommandInset citation
-LatexCommand citep
-before "e.g."
-key "frey:2008a,welsch:2009"
-
-\end_inset
-
 .
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
- The counterfactual!
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-Hedonic pricing --- a revealed preference method --- relies on the assumption
- that labour and housing markets are in full equilibrium, implying that
- these markets are unrestricted; that there is a wide variety of houses
- and jobs; that individuals know the relevant characteristics of all locations;
- that prices adjust rapidly; and that transacting and moving are costless.
- Stated preference techniques rely on respondents' ability to express preference
-s over hypothetical and potentially unfamiliar goods, accounting for the
- scope of the good to be valued, their budget constraint, and the availability
- of substitute goods.
- Stated preference responses may be subject to strategic behaviour, to the
- 
+Revealed and stated preference methods are subject to further limitations.
+ Stated preference responses may be subject to framing effects, anchoring,
+ scope insensitivity, neglect of substitutes or the budget constraint, strategic
+ behaviour, the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3417,60 +3440,23 @@ warm glow
 \begin_inset Quotes erd
 \end_inset
 
- effect of supporting a good cause, or to protests (against the valuation
+ effect of supporting a good cause, and protests (against the valuation
  exercise, the proposed payment mechanism, and so on).
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-+ framing, anchoring, scope insensitivity; also costly!
-\end_layout
-
-\end_inset
-
- Both revealed and stated preference methods require that individuals can
- accurately predict the utility impacts of (real or hypothetical) choices
- --- an ability which research in behavioural economics (and psychology)
- lays open to considerable doubt 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "kahneman:2005,gilbert:2006"
-
-\end_inset
-
-.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-= a criticism of the preference satisfaction account and rationality axioms
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-specific problems? presentism, adaptation, focussing illusion, ...
-\end_layout
-
-\end_inset
-
-
+ Stated preference studies may also be very costly to run.
+ Hedonic pricing --- a common revealed preference method --- relies on the
+ assumption that labour and housing markets are in full equilibrium, and
+ hence that these markets are unrestricted; that there is a wide variety
+ of houses and jobs; that individuals know the relevant characteristics
+ of all locations; that prices adjust immediately; and that transacting
+ and moving are costless.
+ These assumptions seem unlikely to be fully met.
 \end_layout
 
 \begin_layout Standard
 Valuation with SWB data does not suffer from these specific weaknesses.
- On the other hand, it requires some strong assumptions of its own.
+ On the other hand, the method requires strong assumptions of its own.
  Crucially, as noted above, we must accept a particular SWB indicator as
- a proxy for utility (see discussions in 
+ a proxy for PS-style underlying utility (see discussions in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:ps-and-swb"
@@ -3486,120 +3472,65 @@ reference "sub:Concepts-and-terminology"
 
 ).
  
-\begin_inset Note Note
-status open
+\end_layout
 
-\begin_layout Plain Layout
-including context, recall bias, social desirability, etc.
- (issues discussed in 
+\begin_layout Standard
+Practically, we must be assured of the quality of the SWB indicator and
+ of the survey data of which it is a part, bearing in mind the issues discussed
+ in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:measuring-happiness"
 
 \end_inset
 
-)
-\end_layout
+.
+ We must be persuaded that the SWB regression model takes the correct functional
+ form, and that the relationships between the explanatory variables and
+ SWB are causal --- points which are rarely discussed in the literature.
+ And we must be cautious about the effects of sorting by tastes: for example,
+ when valuing air pollution, it may be that less pollution-sensitive individuals
+ live in more polluted locations (and vice versa), leading us to underestimate
+ average effects 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 493"
+key "luechinger:2009"
 
 \end_inset
 
- And we must assume --- or preferably, but very rarely, demonstrate ---
- that the relationships between explanatory variables and SWB in our regression
- models are causal 
+.
+\end_layout
+
+\begin_layout Standard
+Unlike stated preference methods, SWB data cannot be used to value parameters
+ outside of their past and current range.
+ Although SWB valuation may be able to capture certain non-use values, such
+ as for regional biodiversity 
 \begin_inset CommandInset citation
 LatexCommand citep
+key "rehdanz:2007a,ferreira:2010"
+
+\end_inset
+
+, it will not necessarily do so, since the simple existence of a good may
+ not vary between surveyed individuals 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 30"
 key "fujiwara:2011"
 
 \end_inset
 
 .
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Income and variable of interest -- Fujiwara, p29
-\end_layout
-
-\end_inset
-
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Functional form (OLS, linear/log)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Unlike stated preference methods, the SWB method cannot value parameters
- outside their currently observed range e.g.
- may arise in future
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-However, like stated preference methods, it may be able to capture non-use
- or existence values (e.g.
- of distant catastrophes, or biodiversity), although evidence on this is
- limited 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "ferreira:2010"
-
-\end_inset
-
-.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Really? Fujiwara points out there's no individual-level variation in things
- existing.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Assortment? e.g.
- Luechinger, 2009, p.493
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Paragraph
-Implausible values?
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-or 'Practical issues'?
+Income
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+We must also be 
 \end_layout
 
 \begin_layout Standard
@@ -3623,7 +3554,10 @@ key "ferreira:2010"
  Most researchers have supposed that these implausible values result from
  the underestimation of the effect of income on wellbeing, for which several
  reasons have been proposed.
- These include: first, measurement error, caused by wide response brackets
+\end_layout
+
+\begin_layout Standard
+These include: first, measurement error, caused by wide response brackets
  or by missing, misleading or mistaken responses on income-related survey
  questions; second, the omission of one's own lagged income, of the incomes
  of others
@@ -3710,6 +3644,10 @@ key "dolan:2011"
 
 \begin_layout Standard
 Fujiwara's ten recommendations! 
+\end_layout
+
+\begin_layout Standard
+Regard as complementary: strengths and weakness are quite different.
 \end_layout
 
 \begin_layout Section
