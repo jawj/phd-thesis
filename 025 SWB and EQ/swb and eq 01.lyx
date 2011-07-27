@@ -1371,11 +1371,23 @@ key "ferreira:2010"
  price data mean that different studies measure different things: either
  residual or total SWB effects
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Or in many cases, where incomes but not house prices are included, perhaps
- neither of these.
+ neither of these 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+i.e.
+ partial values e.g.
+ also not including commuting time
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
