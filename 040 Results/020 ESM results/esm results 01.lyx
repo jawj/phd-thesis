@@ -111,7 +111,14 @@
 \begin_body
 
 \begin_layout Chapter
-Results: happiness and the immediate environment
+Results: immediate happiness and the immediate environment
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:esm-results"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

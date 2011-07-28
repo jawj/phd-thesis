@@ -649,6 +649,17 @@ We next ask whom the participant is currently with.
  The participant can tap 'Alone, or with strangers only' to proceed immediately
  to the next question, or tick all applicable categories and then tap 'Next'.
  The categories offered are based on those used in previous ESM surveys.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For brevity, we do not distinguish between being alone and being only with
+ people unknown to the participant.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
@@ -848,7 +859,7 @@ reference "par:Item-order"
  probably the most sensitive.
  Again to minimise context effects --- and the possibility of induced correlatio
 n --- no mention is made in the surveys or in any in-app feedback of the
- research hypothesis or environmental factors.
+ research hypothesis or of environmental factors.
 \end_layout
 
 \begin_layout Section
@@ -1574,17 +1585,7 @@ We used Apple's Interface Builder and The Omni Group's OmniGraffle Pro for
 \end_inset
 
 .
- We consulted a professional app developer at a London agency on these
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Rich Aston at theOTHERmedia.
-\end_layout
-
-\end_inset
-
-.
+ We consulted a professional app developer at a London agency on these.
  An example storyboard is illustrated in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -1607,11 +1608,7 @@ reference "chap:esm-appendix"
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-We received several emails (and encountered a number of Twitter messages)
+ We received several emails (and encountered a number of Twitter messages)
  complimenting the app's interaction design after launch.
 \end_layout
 
@@ -3338,13 +3335,13 @@ key "apple-inc.:2010d"
 
 \begin_layout Standard
 Different iPhone models have different camera hardware: some later models
- offer higher resolutions, auto-focus, better performance in low light levels
+ offer higher resolutions, auto-focus, better performance in low light levels,
  and LED illumination.
  Unfortunately, it is not possible to retrieve metadata from the photo,
  so no indication of light level (via exposure settings) or of the use of
  the LED is available.
  The iPhone also has a light sensor, which is used to vary the screen brightness
- in response to background condition.
+ in response to background conditions.
  Unfortunately this sensor's output is also inaccessible to application
  code.
 \end_layout
@@ -4236,9 +4233,9 @@ Safeguards
 
 \begin_layout Standard
 Foreseeable failure modes of the signalling system could antagonise participants.
- For example, participants might be woken from sleep if they were were signalled
+ For example, participants might be woken from sleep if they were signalled
  outside the hours they have specified, or feel harassed and irritated if
- they were signalled many times over a short period of time.
+ they were signalled many times over a short period.
  In such cases, the reputation of the project --- and its ability to recruit
  and keep participants --- could be damaged.
 \end_layout
@@ -4250,8 +4247,8 @@ The signalling system was therefore implemented defensively, to try to prevent
  may be beeped as finishing 10 minutes prior to the time specified by the
  participant, to account for possible delays in notification delivery.
  It deletes pending signals from the database prior to attempting their
- delivery, so that further deliveries will not be attempted during the next
- execution if an error occurs during the deletion phase.
+ delivery, so that multiple deliveries will not be attempted if an error
+ occurs during the delivery or deletion phase.
  And it refuses to proceed (and emails the system administrator) if more
  than a certain number of signals appear to fall due at one moment.
 \end_layout
@@ -4459,7 +4456,7 @@ Security against intrusions is essential for participants' privacy and for
  The data servers are firewalled to prevent access to any services but the
  Mappiness data services (over HTTP and HTTPS) and a secure shell (SSH)
  for system administration.
- SSH access is restricted to the researchers' IP addresses
+ SSH access is restricted to the researcher's IP addresses
 \begin_inset Foot
 status collapsed
 
@@ -4534,7 +4531,7 @@ Full backups are performed monthly.
  The daily backups occurring in between are incremental: only changes relative
  to the previous backup are transmitted and stored.
  Each backup creates a snapshot, so that the data that was held on the server
- on any particular day could be restored as needed.
+ on any particular day may be restored as needed.
 \begin_inset Foot
 status collapsed
 
@@ -4609,8 +4606,8 @@ This feature was added with the launch of version 1.1 of the app in May 2011.
 
 \end_inset
 
- The data download feature is initially disabled for each participant, it
- can be enabled and disabled within the app.
+ The data download feature is initially disabled for each participant, and
+ it can be enabled and disabled within the app.
  When it is enabled, the participant's data is available via a secure (HTTPS)
  link.
  To ensure privacy, this link cannot be guessed --- it includes 8 random
@@ -4665,7 +4662,7 @@ s and
 \emph on
 y
 \emph default
-s can be any digit (0--9) or lower-case letter (a--z) excepting the following:
+s can be any digit (0--9) or lower-case letter (a--z) except the following:
  0, 1, a, e, i, o, u, l (vowels are excluded to ensure that offensive words
  cannot be generated, and 0, 1, i, o and l are excluded because they are
  easily visually confused).
@@ -5730,7 +5727,7 @@ reference "sub:Participant-motivation"
 
 .
  Second, location information is sensed automatically, and cannot therefore
- be falsified.
+ be easily falsified.
  We therefore do not need to verify location using IP addresses, for example.
  Third, there is rather less scope than in the web survey data for quality
  checking --- there are relatively few response combinations which are impossibl

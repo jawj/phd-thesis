@@ -94,7 +94,14 @@
 \begin_body
 
 \begin_layout Chapter
-Results: happiness and the environment near the home
+Results: recalled happiness and the usual environment
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:survey-results"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section

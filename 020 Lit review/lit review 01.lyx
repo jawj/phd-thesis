@@ -3504,7 +3504,7 @@ reference "sub:measuring-happiness"
 .
  We must be persuaded that the SWB regression model takes the correct functional
  form, and that the relationships between the explanatory variables and
- SWB are causal --- points which are rarely dealt with in the literature.
+ SWB are causal --- points which are rarely highlighted in the literature.
  And we must be wary of assortment by tastes: for example, when valuing
  air pollution, it may be that less pollution-sensitive individuals live
  in more polluted locations (and vice versa), leading to underestimation
@@ -3685,9 +3685,8 @@ key "clark:2008a"
 \end_inset
 
 .
- And finally, indirect impacts of income on SWB may be absorbed by other
- explanatory variables, such as health.
- 
+ Finally, indirect impacts of income on SWB may be absorbed by other explanatory
+ variables, such as health --- 
 \begin_inset CommandInset citation
 LatexCommand citet
 after "p. 8"
@@ -3703,7 +3702,7 @@ remarkably silent on this matter
 \begin_inset Quotes erd
 \end_inset
 
-, and suggest a means for countering it.
+, and suggest a method for countering it.
 \end_layout
 
 \begin_layout Section
