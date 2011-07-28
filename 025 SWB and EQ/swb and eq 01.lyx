@@ -85,6 +85,11 @@
 \filename_suffix 0
 \color #ffffff
 \end_branch
+\branch bib-when-not-master
+\selected 1
+\filename_suffix 0
+\color #ffffff
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -240,12 +245,12 @@ n of attentional capacity.
 \end_layout
 
 \begin_layout Subsection
-Environmental bads, physical & mental health
+Environmental 'bads', physical & mental health
 \end_layout
 
 \begin_layout Standard
 Urban environments may also have a detrimental effect because of higher
- levels of certain environmental bads, which in turn could affect happiness
+ levels of certain environmental 'bads', which in turn could affect happiness
  via significant and direct impacts on physical and/or mental health.
 \end_layout
 
@@ -666,7 +671,7 @@ key "hartig:2003,pretty:2007,berman:2008,barton:2010,ryan:2010,martens:2011"
 
 .
  They have also related health and wellbeing indicators to views of nature
- in settings where individuals' accommodation is randomly assigned: public
+ in settings where individuals' accommodation is assigned exogenously: public
  housing 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -700,17 +705,6 @@ key "ulrich:1984"
 Science
 \emph default
 , 'View through a window may influence recovery from surgery').
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citet
-key "tzoulas:2007"
-
-\end_inset
-
- provide a brief survey of studies looking at wellbeing and green space.
- 
 \end_layout
 
 \begin_layout Standard
@@ -752,6 +746,22 @@ name "sub:eq-swb-economic-studies"
 \end_layout
 
 \begin_layout Standard
+In economics, relationships between location and quality of life have long
+ been a subject of interest in the hedonic pricing literature, in which
+ environmental and urban amenities have been used to account for regional
+ wage and rent differentials and construct ‘objective’ quality of life indices
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "moro:2008"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
 As noted in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -759,17 +769,9 @@ reference "sub:Environmental-and-ecological"
 
 \end_inset
 
-, environmental and ecological economists have used SWB data to quantify
- the impacts of EQ characteristics 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "ferreira:2010"
-
-\end_inset
-
- --- either directly, in terms of their effects on SWB, or in monetary terms.
- Evidence regarding the impact of EQ on SWB is less strong than that for
- many other factors affecting SWB, however.
+, environmental economists have more recently begun to use SWB data to quantify
+ the impacts of EQ characteristics --- either directly, in terms of their
+ effects on SWB, or in monetary terms.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -778,28 +780,7 @@ key "welsch:2009"
 
 \end_inset
 
- offer a synopsis of selected valuation studies.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Say something about other economic measures of EQ/spatial preference ---
- QoLIs and hedonic studies --- like at the start of 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "moro:2008"
-
-\end_inset
-
-? And/or about relation of hedonic vs SWB values?
-\end_layout
-
-\end_inset
-
-
+ offer a synopsis of selected studies valuing EQ through SWB.
 \end_layout
 
 \begin_layout Paragraph
@@ -846,8 +827,9 @@ key "menz:2010"
 \end_inset
 
 , using data across 25 countries, find that higher PM10 concentrations are
- associated with reduced SWB and that the magnitude of this effect is (like
- the health impairments associated with air pollution) U-shaped in age.
+ associated with reduced SWB and that the magnitude of this effect is ---
+ like the health impairments associated with air pollution --- U-shaped
+ in age.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -893,122 +875,6 @@ key "luechinger:2009"
 
 , who uses the installation of scrubbers at a power plant in Germany as
  a natural experiment.
-\end_layout
-
-\begin_layout Paragraph
-Noise
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand Citet
-key "praag:2005"
-
-\end_inset
-
-, investigating aircraft noise around Amsterdam Schiphol airport, find that
- individuals' experienced noise nuisance is negatively related to SWB, although
- direct noise measures are not significant.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "weinhold:2008"
-
-\end_inset
-
- finds 
-\emph on
-perceived
-\emph default
- noise pollution levels a strongly negative predictor of SWB in individual-level
- data across Europe.
- 
-\end_layout
-
-\begin_layout Paragraph
-Waste sites
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citet
-key "brereton:2007"
-
-\end_inset
-
- find that very close residential proximity to landfill sites (being within
- the same electoral district) has a negative SWB association, and 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "moro:2008"
-
-\end_inset
-
- reach the same conclusion regarding the per capita number of landfill sites
- by local authority area.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "ferreira:2010"
-
-\end_inset
-
- do not find a significant effect of landfill sites within 5km, and 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "brereton:2007"
-
-\end_inset
-
- detect no impact of proximity to hazardous waste facilities.
-\end_layout
-
-\begin_layout Paragraph
-Coastline and water quality
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citet
-key "israel:2003"
-
-\end_inset
-
- report that individuals' life satisfaction is negatively associated with
- country-level per capita emissions of organic water pollutants.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "brereton:2007"
-
-\end_inset
-
- and 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "moro:2008"
-
-\end_inset
-
- find that close proximity to coastline (within 2km or in the same local
- authority area respectively) has a positive association with SWB.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "ferreira:2010"
-
-\end_inset
-
- find no significant effect of coastline within 5km.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "ferreira:2010"
-
-\end_inset
-
- detect no significant effect of being situated within 5km of a 'severely
- polluted' river.
 \end_layout
 
 \begin_layout Paragraph
@@ -1101,6 +967,128 @@ key "ferreira:2010"
 \end_layout
 
 \begin_layout Paragraph
+Noise
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand Citet
+key "praag:2005"
+
+\end_inset
+
+, investigating aircraft noise around Amsterdam Schiphol airport, find that
+ individuals' experienced noise nuisance is negatively related to SWB, although
+ direct noise measures are not significant.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "weinhold:2008"
+
+\end_inset
+
+ finds 
+\emph on
+perceived
+\emph default
+ noise pollution levels a strongly negative predictor of SWB in individual-level
+ data across Europe.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Waste sites
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "brereton:2007"
+
+\end_inset
+
+ find that very close residential proximity to landfill sites (being within
+ the same electoral district) has a negative SWB association, and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "moro:2008"
+
+\end_inset
+
+ reach the same conclusion regarding the per capita number of landfill sites
+ by local authority area.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferreira:2010"
+
+\end_inset
+
+ do not find a significant effect of landfill sites within 5km, and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "brereton:2007"
+
+\end_inset
+
+ detect no impact of proximity to hazardous waste facilities, however.
+\end_layout
+
+\begin_layout Paragraph
+Water quality
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "israel:2003"
+
+\end_inset
+
+ report that individuals' life satisfaction is negatively associated with
+ country-level per capita emissions of organic water pollutants.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferreira:2010"
+
+\end_inset
+
+ detect no significant effect of being situated within 5km of a 'severely
+ polluted' river.
+\end_layout
+
+\begin_layout Paragraph
+Coastline
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "brereton:2007"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "moro:2008"
+
+\end_inset
+
+ find that close proximity to coastline (within 2km or in the same local
+ authority area respectively) has a positive association with SWB, but 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferreira:2010"
+
+\end_inset
+
+ find no significant effect of coastline within 5km.
+ 
+\end_layout
+
+\begin_layout Paragraph
 Biodiversity
 \end_layout
 
@@ -1152,7 +1140,7 @@ key "sutton:2002"
 
 \end_inset
 
-, and can arguably be considered EQ-related.
+, which can arguably be considered EQ-related.
  
 \begin_inset CommandInset citation
 LatexCommand citeauthor
@@ -1161,7 +1149,8 @@ key "engelbrecht:2009"
 \end_inset
 
 's natural capital figures do not appear to be appropriate EQ measures,
- however: resources such as metal ores, oil and coal feature heavily.
+ however, since reserves of resources such as metal ores, oil and coal feature
+ heavily.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1286,7 +1275,7 @@ The remaining papers use individual-level SWB data, controlling for various
 
 \begin_layout Standard
 A major limitation of most of these studies remains the level of spatial
- aggregation of EQ measures, however, which are rarely at better (and frequently
+ aggregation of EQ measures, which are rarely at better (and frequently
  at worse) than electoral ward level
 \begin_inset Foot
 status collapsed
@@ -1372,53 +1361,24 @@ key "ferreira:2010"
 
 .
  This omission of a broader range of spatial variables in general seems
- likely to lead to endogeneity.
+ liable to lead to endogeneity.
  Furthermore, since EQ differentials may be compensated by wages and house
  prices, differing approaches regarding the inclusion of income and house
- price data mean that different studies measure different things: either
- residual or total SWB effects
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Or in many cases, where incomes but not house prices are included, perhaps
- neither of these 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-i.e.
- partial values e.g.
- also not including commuting time
-\end_layout
+ price data mean that different studies turn out to be measuring different
+ things (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:happiness-valuation"
 
 \end_inset
 
-.
-\end_layout
-
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "ferreira:2010"
-
-\end_inset
-
-.
+).
 \end_layout
 
 \begin_layout Standard
 None of the studies addresses the potential influence on SWB of green space,
- such as grassland or forest, despite the evidence, outlined in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sub:Studies-outside-economics"
-
-\end_inset
-
- above, that green space has a positive wellbeing effect.
+ such as grassland or forest, despite the evidence from other disciplines
+ that green space has a positive wellbeing effect.
  Few have considered 'blue space' --- coastal or freshwater environments
  --- while those that have (
 \begin_inset CommandInset citation
@@ -1508,8 +1468,8 @@ key "luechinger:2009"
 \end_inset
 
  offers a convincing strategy for the identification of causal effects.
- The remaining papers report only on associations, limiting their usefulness
- in policy.
+ The remaining papers report only on associations, substantially limiting
+ their usefulness in policy.
 \end_layout
 
 \begin_layout Paragraph
@@ -1935,8 +1895,8 @@ key "legge:2007"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch bibliography
-status collapsed
+\begin_inset Branch bib-when-not-master
+status open
 
 \begin_layout Standard
 \begin_inset CommandInset bibtex

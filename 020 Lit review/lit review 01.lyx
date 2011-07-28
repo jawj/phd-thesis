@@ -5006,11 +5006,11 @@ They assume
 \begin_inset Formula $u$
 \end_inset
 
- is utility and 
+ is utility (proxied by SWB) and 
 \begin_inset Formula $y$
 \end_inset
 
- income, and estimate 
+ is income, and estimate 
 \begin_inset Formula $\rho=1.26$
 \end_inset
 
@@ -5019,8 +5019,9 @@ They assume
 
 \end_inset
 
- Studies making use of exogenous income variation have helped to establish
- that the apparent impact of income on SWB is at least partly causal 
+ Studies making use of exogenous income variation, such as lottery wins,
+ have helped to establish that the apparent impact of income on SWB is at
+ least partly causal 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
@@ -5029,6 +5030,52 @@ key "gardner:2007a"
 \end_inset
 
 .
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A recent study of lottery wins also suggests that the SWB impacts of income
+ are partly contingent on feelings of 'deserving' the money, so that it
+ is not true that 'a dollar is just a dollar' 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "winkelmann:2011"
+
+\end_inset
+
+.
+ This is consistent with work in psychology and philosophy --- for example,
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p. 50, italics in original"
+key "annas:2004"
+
+\end_inset
+
+ reports that a group of business ethics students 
+\begin_inset Quotes eld
+\end_inset
+
+thought of a happy life as one in which they 
+\emph on
+earned
+\emph default
+ the money, 
+\emph on
+made
+\emph default
+ something of their lives so that these things [material wealth] were an
+ appropriate reward for their effort, ambition, and achievement.
+ Just having the stuff was not all they wanted
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
  
 \end_layout
 
