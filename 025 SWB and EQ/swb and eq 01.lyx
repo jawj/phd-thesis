@@ -742,6 +742,13 @@ key "kuo:2001a"
 
 \begin_layout Subsection
 Economic studies
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:eq-swb-economic-studies"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

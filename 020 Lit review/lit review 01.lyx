@@ -3395,16 +3395,15 @@ reference "sub:ps-and-swb"
 
 , which require that individuals are able to accurately predict the utility
  implications of (actual or hypothetical) choices.
- Research in behavioural economics (and psychology) lays these foundations
- open to considerable doubt 
-\begin_inset CommandInset citation
-LatexCommand citep
-before "e.g."
-key "kahneman:2005,gilbert:2006"
+ Research in behavioural economics lays these foundations open to considerable
+ doubt (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Behavioural-economics"
 
 \end_inset
 
-, leading 
+), leading 
 \begin_inset CommandInset citation
 LatexCommand citet
 after "p.39"
@@ -3419,6 +3418,14 @@ key "fujiwara:2011"
 that it does not rely on people having well-defined pre-existing rational
  preferences
 \begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "see also"
+key "kahneman:2005"
+
 \end_inset
 
 .
@@ -4252,6 +4259,13 @@ key "clark:2008"
 
 \begin_layout Subsection
 Behavioural economics
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Behavioural-economics"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4413,10 +4427,14 @@ name "sub:Environmental-and-ecological"
 \end_layout
 
 \begin_layout Standard
-One interesting application of SWB data has been to non-market valuation.
- Estimated relationships between levels of an arbitrary good and SWB, and
- between SWB and income, can together be used to derive the good's marginal
- value.
+As discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:happiness-valuation"
+
+\end_inset
+
+, one interesting application of SWB data has been to non-market valuation.
  A particular strength of SWB-based valuation is its applicability to questions
  where little individual choice is involved, such as mental health or community
  life 
@@ -4429,17 +4447,11 @@ key "layard:2010"
 .
  Valuation using SWB has so far attracted the attention of environmental
  economists in particular.
- The use of SWB for environmental valuation is thoroughly reviewed by 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "welsch:2009"
-
-\end_inset
-
- and 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "ferreira:2010"
+ The use of SWB for environmental valuation is considered in greater depth
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:eq-swb-economic-studies"
 
 \end_inset
 
