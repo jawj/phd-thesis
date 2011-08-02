@@ -1,17 +1,16 @@
 create database phd template postgis_template;
-  
 psql -d phd -U postgres -f /usr/local/pgsql/share/contrib/postgis-1.5/postgis_upgrade_15_minor.sql
 
-
--- LAEI (London)
+-- LAEI 2008 (London) (
 
 cd "/Users/George/GIS/Data/Air quality/LAEI_2008/Concentration maps"
 shp2pgsql -D -I -s 27700 "laei-2008-no2a-20mgrid-shp/LAEI08_NO2a.shp"   laei08_no2a  | psql -d phd -U postgres
 shp2pgsql -D -I -s 27700 "laei-2008-pm10a-20mgrid-shp/LAEI08_PM10a.shp" laei08_pm10a | psql -d phd -U postgres
 shp2pgsql -D -I -s 27700 "laei-2008-pm10e-20mgrid-shp/LAEI08_PM10e.shp" laei08_pm10e | psql -d phd -U postgres
 
+)
 
--- LCM 2000
+-- LCM 2000 (
 
 cd "/Users/George/GIS/Data/Land use/Land Cover Map 2000"
 shp2pgsql -D -I -s 27700 "gdal_polygonize_output.shp"    lcm2000gb | psql -d phd -U postgres
@@ -24,12 +23,14 @@ create view lcm2000uk as (
   select gid + 5000000, dn, st_transform(the_geom, 27700) from lcm2000ni
 );
 
-create view lcm2000uk_1k as (  -- to check visually
-  select gid, dn, the_geom from lcm2000uk where gid % 1000 = 0
+create view lcm2000uk_1k as (  
+  select gid, dn, the_geom from lcm2000uk where gid % 1000 = 0  -- to check visually
 );
 */
 
--- NSPD
+)
+
+-- NSPD (
 
 create table nspd2010aug (
  postcode_7 char(7),
@@ -75,13 +76,13 @@ create table nspd2010aug (
  oa_indicator char(1),
  cas_ward char(6),
  national_park char(2),
- lsoa char(9),
- scottish_dzone char(9),
- msoa char(9),
+ lsoa char(9), -- 44
+ scottish_dzone char(9), -- 45
+ msoa char(9), -- 46
  urban_rural_ew char(1),
  urban_rural_scot char(1),
  urban_rural_ni char(1),
- scottish_izone char(9),
+ scottish_izone char(9), -- 50
  soa_ni char(8),
  oa_class char(3),
  old_pct char(5)
@@ -96,8 +97,9 @@ update nspd2010aug set the_geom = st_setsrid(st_makepoint(
   cast(grid_northing as integer)
 ), 27700) where grid_ref_quality != '9';
 
+)
 
--- UK outline
+-- UK outline (
 
 cd "/Users/George/GIS/Data/Borders, boundaries, codes/Countries"
 shp2pgsql -D -I -s 27700 "England/england_ol_2001.shp"         england  | psql -d phd -U postgres
@@ -115,8 +117,9 @@ create table uk250m as (
 );
 alter table uk250m add column id serial primary key;
 
+)
 
--- Airport noise (Heathrow)
+-- Airport noise (Heathrow) (
 
 cd "/Users/George/GIS/Data/Noise/Airport noise/Heathrow 2009"
 psql -d phd -U postgres < Standard/lhr09_leq_standard.sql
@@ -128,18 +131,102 @@ drop table lhr09_leq_standard_txt;
 alter table lhr09_leq_standard_plg add column db integer;
 update lhr09_leq_standard_plg set db = cast(substring(layer from 'x[0-9]x([0-9]+)') as integer);
 
+)
 
--- OSM (London, 10 mins)
+-- OSM (London) (
 
 psql -d phd -U postgres < ~/bin/osmosis/script/pgsimple_schema_0.6.sql
 cd "/Users/George/GIS/Data/Transport and mapping/OpenStreetMap/Cloudmade22June2011"
 bzip2 -d -c england.osm.bz2 | ~/bin/osmosis/bin/osmosis -verbose \
   --read-xml /dev/stdin \
   --bounding-box top=51.793328497122545 right=0.4888916015625 bottom=51.176760221369186 left=-0.655059814453125 \
-  --write-pgsimp host=localhost database=phd user=postgres
+  --write-pgsimp host=localhost database=phd user=postgres # 10 mins
 
+create sequence green_seq;
+create table osm_green_spaces as (
+  select
+  nextval('green_seq') as id,
+  way_id as osm_way_id,
+  st_makepolygon(st_makeline(points)) as wgs84_polygon,
+  st_transform(st_makepolygon(st_makeline(points)), 27700) as osgb36_polygon,
+  max(k) as k, max(v) as v, max(name) as name,
+  st_area(transform(st_makepolygon(st_makeline(points)), 27700)) as area,
+  st_perimeter(st_transform(st_makepolygon(st_makeline(points)), 27700)) as perimeter
+  from (
+    select nodes.geom as points,
+      wt1.way_id as way_id, wt1.k as k, wt1.v as v, wt2.v as name
+    from way_tags as wt1
+    inner join ways
+      on wt1.way_id = ways.id
+    inner join way_nodes
+      on ways.id = way_nodes.way_id
+    inner join nodes
+      on way_nodes.node_id = nodes.id
+    left outer join way_tags as wt2
+      on wt1.way_id = wt2.way_id and wt2.k = 'name'
+    where (
+         (wt1.k = 'leisure' and wt1.v = 'park')
+      or (wt1.k = 'leisure' and wt1.v = 'common')
+      or (wt1.k = 'natural' and wt1.v = 'wood')
+      or (wt1.k = 'natural' and wt1.v = 'heath')
+      or (wt1.k = 'natural' and wt1.v = 'fell')
+      or (wt1.k = 'natural' and wt1.v = 'marsh')
+      or (wt1.k = 'natural' and wt1.v = 'wetland')
+      or (wt1.k = 'landuse' and wt1.v = 'forest')
+      or (wt1.k = 'landuse' and wt1.v = 'meadow')
+      or (wt1.k = 'landuse' and wt1.v = 'allotments')
+      or (wt1.k = 'landuse' and wt1.v = 'village_green')
+      or (wt1.k = 'landuse' and wt1.v = 'recreation_ground')
+    )
+    order by sequence_id
+  ) as ways
+group by way_id
+having st_numpoints(st_makeline(points)) > 3
+and st_isclosed(st_makeline(points))
+);
+create index idx_osgb36_polygon on osm_green_spaces using gist(osgb36_polygon);
+create index idx_wgs84_polygon on osm_green_spaces using gist(wgs84_polygon);
 
--- Defra noise (London)
+create sequence park_seq;
+create table osm_parks as (
+  select
+  nextval('park_seq') as id,
+  way_id as osm_way_id,
+  st_makepolygon(st_makeline(points)) as wgs84_polygon,
+  st_transform(st_makepolygon(st_makeline(points)), 27700) as osgb36_polygon,
+  max(k) as k, max(v) as v, max(name) as name,
+  st_area(transform(st_makepolygon(st_makeline(points)), 27700)) as area,
+  st_perimeter(st_transform(st_makepolygon(st_makeline(points)), 27700)) as perimeter
+  from (
+    select nodes.geom as points,
+      wt1.way_id as way_id, wt1.k as k, wt1.v as v, wt2.v as name
+    from way_tags as wt1
+    inner join ways
+      on wt1.way_id = ways.id
+    inner join way_nodes
+      on ways.id = way_nodes.way_id
+    inner join nodes
+      on way_nodes.node_id = nodes.id
+    left outer join way_tags as wt2
+      on wt1.way_id = wt2.way_id and wt2.k = 'name'
+    where (
+         (wt1.k = 'leisure' and wt1.v = 'park')
+      or (wt1.k = 'leisure' and wt1.v = 'common')
+      or (wt1.k = 'landuse' and wt1.v = 'village_green')
+      or (wt1.k = 'landuse' and wt1.v = 'recreation_ground')
+    )
+    order by sequence_id
+  ) as ways
+group by way_id
+having st_numpoints(st_makeline(points)) > 3
+and st_isclosed(st_makeline(points))
+);
+create index parks_idx_osgb36_polygon on osm_parks using gist(osgb36_polygon);
+create index parks_idx_wgs84_polygon on osm_parks using gist(wgs84_polygon);
+
+)
+
+-- Defra noise (London) (
 
 cd "/Users/George/GIS/Data/Noise/Defra noise data"
 shp2pgsql -D -I -s 27700 "London_Rail/london_rail_lden.gdal_polygonize.shp" noise_rail_lden \
@@ -147,8 +234,9 @@ shp2pgsql -D -I -s 27700 "London_Rail/london_rail_lden.gdal_polygonize.shp" nois
 shp2pgsql -D -I -s 27700 "London_Road/london_roads_lden.gdal_polygonize.shp" noise_road_lden \
   | psql -d phd -U postgres
 
+)
 
--- Crime (London)
+-- Crime (London) (
 
 create table crime_tno (lsoa char(9), tno integer);
 create table crime_vap (lsoa char(9), vap integer);
@@ -170,8 +258,9 @@ analyze crime_vap;
 analyze crime_rb;
 analyze lsoa_pop;
 
+)
 
--- Meridian 2 (GB)
+-- Meridian 2 (GB) (
 
 cd "/Users/George/GIS/Data/Transport and mapping/Meridian 2 Shape 2/data"
 shp2pgsql -D -I -s 27700 "rail_ln_polyline.shp"   m2_railway  | psql -d phd -U postgres
@@ -181,8 +270,9 @@ shp2pgsql -D -I -s 27700 "coast_ln_polyline.shp"  m2_coast    | psql -d phd -U p
 shp2pgsql -D -I -s 27700 "river_polyline.shp"     m2_river    | psql -d phd -U postgres
 shp2pgsql -D -I -s 27700 "station_point.shp"      m2_stations | psql -d phd -U postgres
 
+)
 
--- Designations (UK)
+-- Designations -- AONBs, NNRs, NPs (UK) (
 
 # National Parks
 
@@ -255,21 +345,84 @@ drop table nnrsni;
 drop table nnrswal;
 drop table nnrssco;
 
+)
 
--- GiGL data
+-- GiGL data: open spaces and AoDs (
 
 cd "/Users/George/GIS/Data/GiGL"
 export PATH="/Library/Frameworks/GDAL.framework/Programs/:$PATH"
 ogr2ogr -f "PostgreSQL" -a_srs "EPSG:27700" PG:"user=postgres dbname=phd" AOD.TAB -nln aods
 ogr2ogr -f "PostgreSQL" -a_srs "EPSG:27700" PG:"user=postgres dbname=phd" GiGL_Openspace_ALGG.TAB -nln giglopenspace
 
+)
 
--- House prices
+-- LSOAs and dzones (
 
-set mem 1g
-set more off
-cd "/Users/George/GIS/Data/Social/House prices/NATIONWIDE"
-append using dmz9504a dmz9505a dmz9506a dmz9507a dmz9508a dmz9509a dmz9510a dmz9511a dmz9512a dmz9601a dmz9602a dmz9603a dmz9604a dmz9605a dmz9606a dmz9607a dmz9608a dmz9609a dmz9610a dmz9611a dmz9612a dmz9701a dmz9702a dmz9703a dmz9704a dmz9705a dmz9706a dmz9707a dmz9708a dmz9709a dmz9710a dmz9711a dmz9712a dmz9801a dmz9802a dmz9803a dmz9804a dmz9805a dmz9806a dmz9807a dmz9808a dmz9809a dmz9810a dmz9811a dmz9812a dmz9901a dmz9902a dmz9903a dmz9904a dmz9905a dmz9906a dmz9907a dmz9908a dmz9909a dmz9910a dmz9911a dmz9912a dmz0001a dmz0002a dmz0003a dmz0004a dmz0005a dmz0006a dmz0007a dmz0008a dmz0009a dmz0010a dmz0011a dmz0012a dmz0101a dmz0102a dmz0103a dmz0104a dmz0105a dmz0106a dmz0107a dmz0108a dmz0109a dmz0110a dmz0111a dmz0112a dmz0201a dmz0202a dmz0203a dmz0204a dmz0205a dmz0206a dmz0207a dmz0208a dmz0209a dmz0210a dmz0211a dmz0212a dmz0301a dmz0302a dmz0303a dmz0304a dmz0305a dmz0306a dmz0307a dmz0308a dmz0309a dmz0310a dmz0311a dmz0312a dmz0401a dmz0402a dmz0403a dmz0404a dmz0405a dmz0406a, generate(month)
-save "gm_all.dta"
+create table lsoas (
+  code char(9),
+  name text,
+  geoeast integer,
+  geonorth integer,
+  popeast integer,
+  popnorth integer
+);
+copy lsoas from '/Users/George/GIS/Data/Borders, boundaries, codes/LSOAs/LSOA_centroids_Apr05.csv' csv header;
+select addgeometrycolumn('lsoas', 'geo_geom', 27700, 'POINT', 2);
+update lsoas set geo_geom = st_setsrid(st_makepoint(geoeast, geonorth), 27700);
+alter table lsoas add column gid serial primary key;
+create unique index lsoas_code_index on lsoas (code);
 
 
+shp2pgsql -D -s 27700   "/Users/George/GIS/Data/Borders, boundaries, codes/SNS_Geography_24_2_2011/Datazones_Centroids_V2.shp" dzones | psql -d phd -U postgres
+create unique index dzones_zonecode_index on dzones (zonecode);
+
+)
+
+-- LSOA/dzone house prices (
+
+create table lsoa_house_price_fes (
+  code char(9) primary key,
+  price_fe real
+);
+copy lsoa_house_price_fes from '/Users/George/GIS/Data/Social/House prices/NATIONWIDE/lsoa_price_fes.csv' csv header;
+
+create table lsoa_dzone_prices as (
+  select l.code, name, geo_geom, price_fe from lsoas l left join lsoa_house_price_fes p on l.code = p.code
+);
+insert into lsoa_dzone_prices (
+  select zonecode, null, the_geom, price_fe from dzones d left join lsoa_house_price_fes p on d.zonecode = p.code
+);
+alter table lsoa_dzone_prices add column gid serial primary key;
+create unique index lsoa_dzone_code_index on lsoa_dzone_prices (code);
+create index lsoa_dzone_geo_geom_idx on lsoa_dzone_prices using gist(geo_geom);
+analyze lsoa_dzone_prices;
+
+)
+
+-- Tube stations (
+
+create table tube_stops (
+  id integer primary key,
+  lat real,
+  lon real,
+  name text,
+  dummy text,
+  zone real, -- can be x.5
+  lines integer,
+  rail integer
+);
+copy tube_stops from '/Users/George/GIS/Data/Transport and mapping/Tube network/stations.csv' csv header;
+alter table tube_stops drop column dummy;
+alter table tube_stops add column low_zone integer;
+update tube_stops set low_zone = floor(zone);
+select addgeometrycolumn('tube_stops', 'the_geom', 27700, 'POINT', 2);
+update tube_stops set the_geom = st_transform(st_setsrid(st_makepoint(lon, lat), 4326), 27700);
+
+/* -- for official TfL data -- but missing many zone details!
+require 'hpricot'
+require 'csv'
+h = Hpricot(File.open("/Users/George/GIS/Data/Transport and mapping/Tube network/TfL/stream.xml").read)
+(h/'station').map { |s| [(s/'name')[0].inner_html.gsub('&amp;', '&'), (s/'zones'/'zone').inner_html.to_i, *(s/'coordinates')[0].inner_html.strip.split(',')[0..1].map(&:to_f)] }
+*/
+
+)
