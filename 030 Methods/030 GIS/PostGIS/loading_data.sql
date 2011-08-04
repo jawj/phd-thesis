@@ -435,7 +435,7 @@ home_postcode text, home_street text, home_location text, home_status text,
 other_postcode text, other_street text, other_location text, other_status text
 );
 
-copy london_survey_strings from '/Users/George/Dropbox/Academic/PhD/London LS and EQ/Geo data/unpacking_variables_02_geodata.csv' csv header;
+copy london_survey_strings from '/Users/George/Dropbox/Academic/PhD/London LS and EQ/Data analysis/unpacking_variables_02_geodata.csv' csv header;
 
 create table london_survey as (
   select rid,
@@ -462,15 +462,29 @@ create table london_survey as (
   (home_status = 'confirmed' or home_status = 'approximate') as home_is_valid,
   (home_status = 'approximate') as home_is_approx,
   
-  case when replace(upper(other_postcode), ' ', '') ~ '^[A-Z][A-Z]?[0-9][0-9]?[A-Z]?[0-9][A-Z][A-Z]$' then   replace(upper(other_postcode), ' ', '')   else NULL end   as other_postcode,
-  case when other_location <> '' then   cast(split_part(other_location, ',', 1) as double precision)   else NULL end   as other_lat,
-  case when other_location <> '' then   cast(split_part(other_location, ',', 2) as double precision)   else NULL end   as other_lon,
-  case when other_location <> '' then   cast(split_part(other_location, ',', 3) as integer)   else NULL end    as other_zoom,
-  case when other_location <> '' then   st_transform(st_setsrid(st_makepoint(cast(split_part(other_location, ',', 2) as double precision), cast(split_part(other_location, ',', 1) as double precision)), 4326), 27700)   else NULL end    as other_osgb36,
+  case 
+    when replace(upper(other_postcode), ' ', '') ~ '^[A-Z][A-Z]?[0-9][0-9]?[A-Z]?[0-9][A-Z][A-Z]$' 
+    then replace(upper(other_postcode), ' ', '')  
+    else NULL 
+  end as other_postcode,
+  case 
+    when other_location <> '' 
+    then cast(split_part(other_location, ',', 1) as double precision)
+    else NULL
+  end as other_lat,
+  case when other_location <> '' then 
+    cast(split_part(other_location, ',', 2) as double precision)
+    else NULL 
+  end as other_lon,
+  case 
+    when other_location <> '' then
+    cast(split_part(other_location, ',', 3) as integer)
+    else NULL
+  end as other_zoom,
   (other_status = 'confirmed' or other_status = 'approximate') as other_is_valid,
   (other_status = 'approximate') as other_is_approx 
   
-  from lseq_geo_strings_2
+  from london_survey_strings
 );
 
 )
