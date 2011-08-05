@@ -88,14 +88,307 @@ create table nspd2010aug (
  old_pct char(5)
 );
 copy nspd2010aug from '/Users/George/GIS/Data/Borders, boundaries, codes/NSPDF_AUG_2010_UK_1M_FP.csv' csv;
-alter table nspd2010aug add column postcode_no_sp char(8);
+alter table nspd2010aug add column postcode_no_sp text;
 update nspd2010aug set postcode_no_sp = replace(postcode_7, ' ', '');
 alter table nspd2010aug add primary key (postcode_no_sp);
 select addgeometrycolumn('nspd2010aug', 'the_geom', 27700, 'POINT', 2);
-update nspd2010aug set the_geom = st_setsrid(st_makepoint(
-  cast(grid_easting as integer),
-  cast(grid_northing as integer)
-), 27700) where grid_ref_quality != '9';
+update nspd2010aug set the_geom = st_transform(
+  st_setsrid(
+    st_makepoint(
+      cast(grid_easting as integer),
+      cast(grid_northing as integer)
+    ), 
+    case when country = '152' then 29903 else 27700 end
+  ),
+  27700
+) where grid_ref_quality != '9';
+
+)
+
+-- Code Point Polygons (
+
+create table cpp_vertical_streets (postcode text, vstreet text);
+create table cpp_discards (postcode text, reason text);
+
+-- IRB -- load all data
+
+# create main polygons table 
+path = '/Users/George/GIS/Data/Borders, boundaries, codes/CodePoint polygons'
+`shp2pgsql -p -D -s 27700 "#{path}/ab.shp" cpp_polygons | psql -d phd -U postgres`
+
+# copy in all polygons, vstreets and discards (5 - 10 mins)
+Dir["#{path}/*.shp"].each do |f|
+  puts f
+  `shp2pgsql -a -D -s 27700 "#{f}" cpp_polygons | psql -d phd -U postgres`
+  `echo "copy cpp_vertical_streets from '#{f.sub(/\.shp$/, '_vstreet_lookup.txt')}' csv;" | psql -d phd -U postgres`
+  `echo "copy cpp_discards from '#{f.sub(/\.shp$/, '_discard.txt')}' csv;" | psql -d phd -U postgres`
+end
+
+
+-- SQL
+
+-- standard polygons
+create type cpp_type as enum ('standard', 'discard', 'vstreet_only', 'standard_and_vstreet');
+alter table cpp_polygons add column type cpp_type default 'standard'; 
+create unique index pc_index on cpp_polygons (postcode);
+analyze cpp_polygons;
+
+-- vstreets
+create sequence cpp_vstreet_seq start with 2000000;
+create table cpp_vstreet_polys as (
+  select 
+    nextval('cpp_vstreet_seq') as gid, 
+    v.postcode as postcode, 
+    cast(null as text) as upp, 
+    max(p.pc_area) as pc_area,
+    st_union(p.the_geom) as the_geom, 
+    cast('vstreet_only' as cpp_type) as type
+  from cpp_vertical_streets v 
+  left join cpp_polygons p 
+  on v.vstreet = p.postcode
+  group by v.postcode
+);
+
+-- vstreets + standard
+create sequence cpp_vstreet_and_std_seq start with 3000000;
+create table cpp_vstreet_and_std_polys as (
+select 
+  nextval('cpp_vstreet_and_std_seq') as gid, 
+  p.postcode as postcode,
+  cast(null as text) as upp, 
+  p.pc_area as pc_area,
+  st_multi(st_union(p.the_geom, v.the_geom)) as the_geom, 
+  cast('standard_and_vstreet' as cpp_type) as type
+from cpp_polygons p
+inner join cpp_vstreet_polys v
+on p.postcode = v.postcode
+);
+
+-- discards
+create sequence cpp_discard_seq start with 4000000;
+create table cpp_discard_polys as (
+select 
+  nextval('cpp_discard_seq') as gid, 
+  postcode,
+  cast(null as text) as upp, 
+  substring(postcode from '^[A-Z][A-Z]?') as pc_area, 
+  cast(null as geometry) as the_geom, 
+  cast('discard' as cpp_type) as type
+from cpp_discards
+);
+
+-- tidying and merging
+
+delete from cpp_discard_polys where postcode in (select postcode from cpp_polygons); -- no rows
+delete from cpp_discard_polys where postcode in (select postcode from cpp_vstreet_polys); -- 1106 rows -- oops!
+delete from cpp_polygons where postcode in (select postcode from cpp_vstreet_and_std_polys);
+delete from cpp_vstreet_polys where postcode in (select postcode from cpp_vstreet_and_std_polys);
+  
+insert into cpp_polygons select * from cpp_discard_polys;
+insert into cpp_polygons select * from cpp_vstreet_polys;
+insert into cpp_polygons select * from cpp_vstreet_and_std_polys;
+
+alter table cpp_polygons add column postcode_no_sp text;
+update cpp_polygons set postcode_no_sp = replace(postcode, ' ', ''); -- 12 mins
+create unique index pcns_index on cpp_polygons (postcode_no_sp);
+
+vacuum analyze cpp_polygons;
+ 
+)
+
+-- Experian (
+  
+create table experian2009 (
+lsoa text,
+mosaic_grp_1 integer,
+mosaic_grp_2 integer,
+mosaic_grp_3 integer,
+mosaic_grp_4 integer,
+mosaic_grp_5 integer,
+mosaic_grp_6 integer,
+mosaic_grp_7 integer,
+mosaic_grp_8 integer,
+mosaic_grp_9 integer,
+mosaic_grp_10 integer,
+mosaic_grp_11 integer,
+mosaic_grp_unknown integer,
+mosaic_type_1 integer,
+mosaic_type_2 integer,
+mosaic_type_3 integer,
+mosaic_type_4 integer,
+mosaic_type_5 integer,
+mosaic_type_6 integer,
+mosaic_type_7 integer,
+mosaic_type_8 integer,
+mosaic_type_9 integer,
+mosaic_type_10 integer,
+mosaic_type_11 integer,
+mosaic_type_12 integer,
+mosaic_type_13 integer,
+mosaic_type_14 integer,
+mosaic_type_15 integer,
+mosaic_type_16 integer,
+mosaic_type_17 integer,
+mosaic_type_18 integer,
+mosaic_type_19 integer,
+mosaic_type_20 integer,
+mosaic_type_21 integer,
+mosaic_type_22 integer,
+mosaic_type_23 integer,
+mosaic_type_24 integer,
+mosaic_type_25 integer,
+mosaic_type_26 integer,
+mosaic_type_27 integer,
+mosaic_type_28 integer,
+mosaic_type_29 integer,
+mosaic_type_30 integer,
+mosaic_type_31 integer,
+mosaic_type_32 integer,
+mosaic_type_33 integer,
+mosaic_type_34 integer,
+mosaic_type_35 integer,
+mosaic_type_36 integer,
+mosaic_type_37 integer,
+mosaic_type_38 integer,
+mosaic_type_39 integer,
+mosaic_type_40 integer,
+mosaic_type_41 integer,
+mosaic_type_42 integer,
+mosaic_type_43 integer,
+mosaic_type_44 integer,
+mosaic_type_45 integer,
+mosaic_type_46 integer,
+mosaic_type_47 integer,
+mosaic_type_48 integer,
+mosaic_type_49 integer,
+mosaic_type_50 integer,
+mosaic_type_51 integer,
+mosaic_type_52 integer,
+mosaic_type_53 integer,
+mosaic_type_54 integer,
+mosaic_type_55 integer,
+mosaic_type_56 integer,
+mosaic_type_57 integer,
+mosaic_type_58 integer,
+mosaic_type_59 integer,
+mosaic_type_60 integer,
+mosaic_type_61 integer,
+mosaic_type_unknown integer,
+hh_no integer,
+median_hh_income double precision,
+females_0004_in_2009 integer,
+females_0004_in_2014 integer,
+females_0004_in_2019 integer,
+females_0509_in_2009 integer,
+females_0509_in_2014 integer,
+females_0509_in_2019 integer,
+females_1014_in_2009 integer,
+females_1014_in_2014 integer,
+females_1014_in_2019 integer,
+females_1519_in_2009 integer,
+females_1519_in_2014 integer,
+females_1519_in_2019 integer,
+females_2024_in_2009 integer,
+females_2024_in_2014 integer,
+females_2024_in_2019 integer,
+females_2529_in_2009 integer,
+females_2529_in_2014 integer,
+females_2529_in_2019 integer,
+females_3034_in_2009 integer,
+females_3034_in_2014 integer,
+females_3034_in_2019 integer,
+females_3539_in_2009 integer,
+females_3539_in_2014 integer,
+females_3539_in_2019 integer,
+females_4044_in_2009 integer,
+females_4044_in_2014 integer,
+females_4044_in_2019 integer,
+females_4549_in_2009 integer,
+females_4549_in_2014 integer,
+females_4549_in_2019 integer,
+females_5054_in_2009 integer,
+females_5054_in_2014 integer,
+females_5054_in_2019 integer,
+females_5559_in_2009 integer,
+females_5559_in_2014 integer,
+females_5559_in_2019 integer,
+females_6064_in_2009 integer,
+females_6064_in_2014 integer,
+females_6064_in_2019 integer,
+females_6569_in_2009 integer,
+females_6569_in_2014 integer,
+females_6569_in_2019 integer,
+females_7074_in_2009 integer,
+females_7074_in_2014 integer,
+females_7074_in_2019 integer,
+females_7579_in_2009 integer,
+females_7579_in_2014 integer,
+females_7579_in_2019 integer,
+females_8084_in_2009 integer,
+females_8084_in_2014 integer,
+females_8084_in_2019 integer,
+females_85_in_2009 integer,
+females_85_in_2014 integer,
+females_85_in_2019 integer,
+males_0004_in_2009 integer,
+males_0004_in_2014 integer,
+males_0004_in_2019 integer,
+males_0509_in_2009 integer,
+males_0509_in_2014 integer,
+males_0509_in_2019 integer,
+males_1014_in_2009 integer,
+males_1014_in_2014 integer,
+males_1014_in_2019 integer,
+males_1519_in_2009 integer,
+males_1519_in_2014 integer,
+males_1519_in_2019 integer,
+males_2024_in_2009 integer,
+males_2024_in_2014 integer,
+males_2024_in_2019 integer,
+males_2529_in_2009 integer,
+males_2529_in_2014 integer,
+males_2529_in_2019 integer,
+males_3034_in_2009 integer,
+males_3034_in_2014 integer,
+males_3034_in_2019 integer,
+males_3539_in_2009 integer,
+males_3539_in_2014 integer,
+males_3539_in_2019 integer,
+males_4044_in_2009 integer,
+males_4044_in_2014 integer,
+males_4044_in_2019 integer,
+males_4549_in_2009 integer,
+males_4549_in_2014 integer,
+males_4549_in_2019 integer,
+males_5054_in_2009 integer,
+males_5054_in_2014 integer,
+males_5054_in_2019 integer,
+males_5559_in_2009 integer,
+males_5559_in_2014 integer,
+males_5559_in_2019 integer,
+males_6064_in_2009 integer,
+males_6064_in_2014 integer,
+males_6064_in_2019 integer,
+males_6569_in_2009 integer,
+males_6569_in_2014 integer,
+males_6569_in_2019 integer,
+males_7074_in_2009 integer,
+males_7074_in_2014 integer,
+males_7074_in_2019 integer,
+males_7579_in_2009 integer,
+males_7579_in_2014 integer,
+males_7579_in_2019 integer,
+males_8084_in_2009 integer,
+males_8084_in_2014 integer,
+males_8084_in_2019 integer,
+males_85_in_2009 integer,
+males_85_in_2014 integer,
+males_85_in_2019 integer
+);
+
+copy experian2009 from '/Users/George/GIS/Data/Social/Experian Super Output Area data/2009/Experian_2009_LSOA_DZ.csv' csv header;
+create unique index exp09_lsoa_index on experian2009 (lsoa);
+analyze experian2009;
 
 )
 
@@ -356,7 +649,7 @@ ogr2ogr -f "PostgreSQL" -a_srs "EPSG:27700" PG:"user=postgres dbname=phd" GiGL_O
 
 )
 
--- LSOAs and dzones (
+-- LSOAs and dzone centroids (
 
 create table lsoas (
   code char(9),
@@ -373,7 +666,7 @@ alter table lsoas add column gid serial primary key;
 create unique index lsoas_code_index on lsoas (code);
 
 
-shp2pgsql -D -s 27700   "/Users/George/GIS/Data/Borders, boundaries, codes/SNS_Geography_24_2_2011/Datazones_Centroids_V2.shp" dzones | psql -d phd -U postgres
+shp2pgsql -D -s 27700 "/Users/George/GIS/Data/Borders, boundaries, codes/SNS_Geography_24_2_2011/Datazones_Centroids_V2.shp" dzones | psql -d phd -U postgres
 create unique index dzones_zonecode_index on dzones (zonecode);
 
 )
@@ -396,6 +689,17 @@ alter table lsoa_dzone_prices add column gid serial primary key;
 create unique index lsoa_dzone_code_index on lsoa_dzone_prices (code);
 create index lsoa_dzone_geo_geom_idx on lsoa_dzone_prices using gist(geo_geom);
 analyze lsoa_dzone_prices;
+
+)
+
+-- LSOA/dzone polygons (
+
+cd "/Users/George/GIS/Data/Borders, boundaries, codes/LSOAs"
+export PATH="/Library/Frameworks/GDAL.framework/Programs/:$PATH"
+ogr2ogr -f "PostgreSQL" -a_srs "EPSG:27700" PG:"user=postgres dbname=phd" LSOA_FEB_2004_EW_BFE.mif -nln lsoa_polys
+
+cd "/Users/George/GIS/Data/Borders, boundaries, codes/SNS_Geography_24_2_2011"
+shp2pgsql -D -I -s 27700 datazones_2001.shp dzone_polys | psql -d phd -U postgres
 
 )
 
@@ -438,7 +742,7 @@ other_postcode text, other_street text, other_location text, other_status text
 copy london_survey_strings from '/Users/George/Dropbox/Academic/PhD/London LS and EQ/Data analysis/unpacking_variables_02_geodata.csv' csv header;
 
 create table london_survey as (
-  select rid,
+  select rid as id,
   case 
     when replace(upper(home_postcode), ' ', '') ~ '^[A-Z][A-Z]?[0-9][0-9]?[A-Z]?[0-9][A-Z][A-Z]$'
     then replace(upper(home_postcode), ' ', '')
@@ -487,8 +791,35 @@ create table london_survey as (
   from london_survey_strings
 );
 
+create unique index london_survey_id_idx on london_survey(id);
+
 )
 
 -- UKNEA survey data (
-  
+
+create table uk_survey_postcodes (
+  id integer primary key,
+  home_postcode text,
+  other_postcode text
+);
+
+copy uk_survey_postcodes from '/Users/George/Dropbox/Academic/UKNEA/survey_data/adding_geo_data/20100902_postcodes.csv' csv header;
+
+create table uk_survey as (
+  select 
+  id,
+  case 
+    when replace(upper(home_postcode), ' ', '') ~ '^[A-Z][A-Z]?[0-9][0-9]?[A-Z]?[0-9][A-Z][A-Z]$'
+    then replace(upper(home_postcode), ' ', '')
+    else NULL 
+  end as home_postcode,
+  case 
+    when replace(upper(other_postcode), ' ', '') ~ '^[A-Z][A-Z]?[0-9][0-9]?[A-Z]?[0-9][A-Z][A-Z]$'
+    then replace(upper(other_postcode), ' ', '')
+    else NULL 
+  end as other_postcode
+  from uk_survey_postcodes
+);
+create unique index uk_survey_id_idx on uk_survey(id);
+
 )
