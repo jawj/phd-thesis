@@ -322,18 +322,18 @@ create unique index londonmeridian_id_idx on london_meridian (id);
 create table uk_meridian as (
   select 
     id,
-    nnDistance(home_postcode_osgb,   500, 2, 8, 'm2_mways',   'the_geom') as home_mway_dist,
-    nnDistance(home_postcode_osgb,   500, 2, 8, 'm2_aroads',  'the_geom') as home_aroad_dist,
-    nnDistance(home_postcode_osgb,   500, 2, 8, 'm2_railway', 'the_geom') as home_railway_dist,
-    nnDistance(home_postcode_osgb,   500, 2, 8, 'm2_stations','the_geom') as home_station_dist,
-    nnDistance(home_postcode_osgb,   500, 2, 8, 'm2_coast',   'the_geom') as home_coast_dist,
-    nnDistance(home_postcode_osgb,   500, 2, 8, 'm2_river',   'the_geom') as home_river_dist,
-    nnDistance(other_postcode_osgb,  500, 2, 8, 'm2_mways',   'the_geom') as other_mway_dist,
-    nnDistance(other_postcode_osgb,  500, 2, 8, 'm2_aroads',  'the_geom') as other_aroad_dist,
-    nnDistance(other_postcode_osgb,  500, 2, 8, 'm2_railway', 'the_geom') as other_railway_dist,
-    nnDistance(other_postcode_osgb,  500, 2, 8, 'm2_stations','the_geom') as other_station_dist,
-    nnDistance(other_postcode_osgb,  500, 2, 8, 'm2_coast',   'the_geom') as other_coast_dist,
-    nnDistance(other_postcode_osgb,  500, 2, 8, 'm2_river',   'the_geom') as other_river_dist
+    nnDistance(home_postcode_osgb,   500, 2, 10, 'm2_mways',   'the_geom') as home_mway_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 10, 'm2_aroads',  'the_geom') as home_aroad_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 10, 'm2_railway', 'the_geom') as home_railway_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 10, 'm2_stations','the_geom') as home_station_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 10, 'm2_coast',   'the_geom') as home_coast_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 10, 'm2_river',   'the_geom') as home_river_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 10, 'm2_mways',   'the_geom') as other_mway_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 10, 'm2_aroads',  'the_geom') as other_aroad_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 10, 'm2_railway', 'the_geom') as other_railway_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 10, 'm2_stations','the_geom') as other_station_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 10, 'm2_coast',   'the_geom') as other_coast_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 10, 'm2_river',   'the_geom') as other_river_dist
   from uk_survey
 );
 create unique index ukmeridian_id_idx on uk_meridian (id);
