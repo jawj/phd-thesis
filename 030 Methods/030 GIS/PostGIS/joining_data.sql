@@ -55,6 +55,24 @@ update uk_survey l set other_postcode_poly = the_geom
 
 )
 
+-- Adding map/point/poly derivatives table (London only) (
+
+create table london_location_derivatives as (
+  select 
+    id,
+    st_distance(home_map_osgb, home_postcode_osgb) as home_map_centroid_distance,
+    st_distance(home_map_osgb, home_postcode_poly) as home_map_poly_distance,
+    st_distance(other_map_osgb, other_postcode_osgb) as other_map_centroid_distance,
+    st_distance(other_map_osgb, other_postcode_poly) as other_map_poly_distance
+  from london_survey
+);
+create unique index lld_id_idx on london_location_derivatives (id);
+
+-- select * from london_location_derivatives where home_map_poly_distance = 0 order by home_map_centroid_distance desc;
+-- centroid is up to 200m off even where map location is inside poly
+
+)
+
 -- Adding LSOA/dzone codes (
 
 alter table london_survey add column home_lsoa_or_dzone text;
@@ -134,7 +152,7 @@ create unique index ukexp_id_idx on uk_experian2010 (id);
 
 )
 
--- Adding LSOA/dzone polys (
+-- Adding LSOA/dzone polys + areas (
   
 select addgeometrycolumn('london_survey', 'home_lsoa_dzone_poly', 27700, 'GEOMETRY', 2);
 update london_survey l set home_lsoa_dzone_poly = wkb_geometry
@@ -160,9 +178,21 @@ update uk_survey l set other_lsoa_dzone_poly = wkb_geometry
 update uk_survey l set other_lsoa_dzone_poly = the_geom
   from dzone_polys p where l.other_lsoa_or_dzone = p.zonecode;
 
+alter table london_survey add column home_lsoa_area real;
+update london_survey set home_lsoa_area = st_area(home_lsoa_dzone_poly);
+
+alter table london_survey add column other_lsoa_area real;
+update london_survey set other_lsoa_area = st_area(other_lsoa_dzone_poly);
+
+alter table uk_survey add column home_lsoa_area real;
+update uk_survey set home_lsoa_area = st_area(home_lsoa_dzone_poly);
+
+alter table uk_survey add column other_lsoa_area real;
+update uk_survey set other_lsoa_area = st_area(other_lsoa_dzone_poly);
+
 )
 
--- Adding crime table (
+-- Adding crime table (London only) (
 
 create table london_crime as (
   select 
@@ -184,4 +214,130 @@ create table london_crime as (
 create unique index londoncrime_id_idx on london_crime (id);
 
 )
+
+-- Adding Heathrow noise data (London only) (
+
+alter table london_survey add column home_lhr09_leq integer;
+update london_survey l set home_lhr09_leq = coalesce((
+  select max(db) / 3 - 18 from lhr09_leq_standard_plg where st_contains(the_geom, l.home_map_osgb)
+), 0);
+
+alter table london_survey add column other_lhr09_leq integer;
+update london_survey l set other_lhr09_leq = coalesce((
+  select max(db) / 3 - 18 from lhr09_leq_standard_plg where st_contains(the_geom, l.other_map_osgb)
+), 0);
+
+)
+
+-- Adding Defra noise data (London only) (
+
+alter table london_survey add column home_noise_rail_lden integer;
+update london_survey set home_noise_rail_lden = n.dn from noise_rail_lden n where st_contains(n.the_geom, home_map_osgb);
+
+alter table london_survey add column other_noise_rail_lden integer;
+update london_survey set other_noise_rail_lden = n.dn from noise_rail_lden n where st_contains(n.the_geom, other_map_osgb);
+
+alter table london_survey add column home_noise_road_lden integer;
+update london_survey set home_noise_road_lden = n.dn from noise_road_lden n where st_contains(n.the_geom, home_map_osgb);
+
+alter table london_survey add column other_noise_road_lden integer;
+update london_survey set other_noise_road_lden = n.dn from noise_road_lden n where st_contains(n.the_geom, other_map_osgb);
+
+)
+
+-- Adding LAEI table (London only) (
+
+create table london_laei2008 as (
+  select 
+    s.id,
+    
+    h2.laei08_08    as home_map_no2a,
+    hpa.laei08_08   as home_map_pm10a,
+    hpe.laei08_08   as home_map_pm10e,
+    
+    o2.laei08_08    as other_map_no2a,
+    opa.laei08_08   as other_map_pm10a,
+    ope.laei08_08   as other_map_pm10e,
+    
+    hpc2.laei08_08  as home_pcc_no2a,  -- measures at postcode centroids
+    hpcpa.laei08_08 as home_pcc_pm10a,
+    hpcpe.laei08_08 as home_pcc_pm10e
+    
+  from london_survey s
+  
+  left join laei08_no2a  h2    on st_contains(h2.the_geom,  s.home_map_osgb)
+  left join laei08_pm10a hpa   on st_contains(hpa.the_geom, s.home_map_osgb)
+  left join laei08_pm10e hpe   on st_contains(hpe.the_geom, s.home_map_osgb)
+  
+  left join laei08_no2a  o2    on st_contains(o2.the_geom,  s.other_map_osgb)
+  left join laei08_pm10a opa   on st_contains(opa.the_geom, s.other_map_osgb)
+  left join laei08_pm10e ope   on st_contains(ope.the_geom, s.other_map_osgb)
+  
+  left join laei08_no2a  hpc2  on st_contains(hpc2.the_geom,  s.home_postcode_osgb)
+  left join laei08_pm10a hpcpa on st_contains(hpcpa.the_geom, s.home_postcode_osgb)
+  left join laei08_pm10e hpcpe on st_contains(hpcpe.the_geom, s.home_postcode_osgb)
+);
+create unique index londonlaei_id_idx on london_laei2008 (id);
+
+) 
+
+-- Adding GiGL AoD (London only) (
+
+alter table london_survey add column home_aod boolean default false;
+update london_survey s set home_aod = true from aods a where st_contains(a.wkb_geometry, s.home_map_osgb);
+
+alter table london_survey add column other_aod boolean default false;
+update london_survey s set other_aod = true from aods a where st_contains(a.wkb_geometry, s.other_map_osgb);
+  
+)
+
+-- Adding Meridian nearests (London) (
+
+create view zone1tubes as (select * from tube_stops where lowzone = 1);
+create table london_meridian as (
+  select 
+    id,
+    nnDistance(home_map_osgb,   500, 2, 8, 'zone1tubes', 'the_geom') as home_z1tube_dist,
+    nnDistance(home_map_osgb,   500, 2, 8, 'tube_stops', 'the_geom') as home_tube_dist,
+    nnDistance(home_map_osgb,   500, 2, 8, 'm2_mways',   'the_geom') as home_mway_dist,
+    nnDistance(home_map_osgb,   500, 2, 8, 'm2_railway', 'the_geom') as home_railway_dist,
+    nnDistance(home_map_osgb,   500, 2, 8, 'm2_stations','the_geom') as home_station_dist,
+    nnDistance(home_map_osgb,   500, 2, 8, 'm2_coast',   'the_geom') as home_coast_dist,
+    nnDistance(home_map_osgb,   500, 2, 8, 'm2_river',   'the_geom') as home_river_dist,
+    nnDistance(other_map_osgb,  500, 2, 8, 'zone1tubes', 'the_geom') as other_z1tube_dist,
+    nnDistance(other_map_osgb,  500, 2, 8, 'tube_stops', 'the_geom') as other_tube_dist,
+    nnDistance(other_map_osgb,  500, 2, 8, 'm2_mways',   'the_geom') as other_mway_dist,
+    nnDistance(other_map_osgb,  500, 2, 8, 'm2_railway', 'the_geom') as other_railway_dist,
+    nnDistance(other_map_osgb,  500, 2, 8, 'm2_stations','the_geom') as other_station_dist,
+    nnDistance(other_map_osgb,  500, 2, 8, 'm2_coast',   'the_geom') as other_coast_dist,
+    nnDistance(other_map_osgb,  500, 2, 8, 'm2_river',   'the_geom') as other_river_dist
+  from london_survey
+);
+create unique index londonmeridian_id_idx on london_meridian (id);
+
+)
+
+-- Adding Meridian nearests (UK) (
+
+create table uk_meridian as (
+  select 
+    id,
+    nnDistance(home_postcode_osgb,   500, 2, 8, 'm2_mways',   'the_geom') as home_mway_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 8, 'm2_aroads',  'the_geom') as home_aroad_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 8, 'm2_railway', 'the_geom') as home_railway_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 8, 'm2_stations','the_geom') as home_station_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 8, 'm2_coast',   'the_geom') as home_coast_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 8, 'm2_river',   'the_geom') as home_river_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 8, 'm2_mways',   'the_geom') as other_mway_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 8, 'm2_aroads',  'the_geom') as other_aroad_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 8, 'm2_railway', 'the_geom') as other_railway_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 8, 'm2_stations','the_geom') as other_station_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 8, 'm2_coast',   'the_geom') as other_coast_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 8, 'm2_river',   'the_geom') as other_river_dist
+  from uk_survey
+);
+create unique index ukmeridian_id_idx on uk_meridian (id);
+
+)
+
 
