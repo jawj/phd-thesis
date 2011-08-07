@@ -291,7 +291,7 @@ update london_survey s set other_aod = true from aods a where st_contains(a.wkb_
   
 )
 
--- Adding Meridian nearests (London) (
+-- Adding Tube & Meridian nearests table (London) (
 
 create view zone1tubes as (select * from tube_stops where lowzone = 1);
 create table london_meridian as (
@@ -317,27 +317,80 @@ create unique index londonmeridian_id_idx on london_meridian (id);
 
 )
 
--- Adding Meridian nearests (UK) (
+-- Adding Meridian and designation nearests table (UK) (
 
-create table uk_meridian as (
+create table uk_nearests as (
   select 
     id,
-    nnDistance(home_postcode_osgb,   500, 2, 10, 'm2_mways',   'the_geom') as home_mway_dist,
-    nnDistance(home_postcode_osgb,   500, 2, 10, 'm2_aroads',  'the_geom') as home_aroad_dist,
-    nnDistance(home_postcode_osgb,   500, 2, 10, 'm2_railway', 'the_geom') as home_railway_dist,
-    nnDistance(home_postcode_osgb,   500, 2, 10, 'm2_stations','the_geom') as home_station_dist,
-    nnDistance(home_postcode_osgb,   500, 2, 10, 'm2_coast',   'the_geom') as home_coast_dist,
-    nnDistance(home_postcode_osgb,   500, 2, 10, 'm2_river',   'the_geom') as home_river_dist,
-    nnDistance(other_postcode_osgb,  500, 2, 10, 'm2_mways',   'the_geom') as other_mway_dist,
-    nnDistance(other_postcode_osgb,  500, 2, 10, 'm2_aroads',  'the_geom') as other_aroad_dist,
-    nnDistance(other_postcode_osgb,  500, 2, 10, 'm2_railway', 'the_geom') as other_railway_dist,
-    nnDistance(other_postcode_osgb,  500, 2, 10, 'm2_stations','the_geom') as other_station_dist,
-    nnDistance(other_postcode_osgb,  500, 2, 10, 'm2_coast',   'the_geom') as other_coast_dist,
-    nnDistance(other_postcode_osgb,  500, 2, 10, 'm2_river',   'the_geom') as other_river_dist
+    nnDistance(home_postcode_osgb,   500, 2, 12, 'm2_mways',   'the_geom') as home_mway_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 12, 'm2_aroads',  'the_geom') as home_aroad_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 12, 'm2_railway', 'the_geom') as home_railway_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 12, 'm2_stations','the_geom') as home_station_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 12, 'm2_coast',   'the_geom') as home_coast_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 12, 'm2_river',   'the_geom') as home_river_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 12, 'natparks',   'the_geom') as home_natpark_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 12, 'aonbs',      'the_geom') as home_aonb_dist,
+    nnDistance(home_postcode_osgb,   500, 2, 12, 'nnrs',       'the_geom') as home_nnr_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 12, 'm2_mways',   'the_geom') as other_mway_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 12, 'm2_aroads',  'the_geom') as other_aroad_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 12, 'm2_railway', 'the_geom') as other_railway_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 12, 'm2_stations','the_geom') as other_station_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 12, 'm2_coast',   'the_geom') as other_coast_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 12, 'm2_river',   'the_geom') as other_river_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 12, 'natparks',   'the_geom') as other_natpark_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 12, 'aonbs',      'the_geom') as other_aonb_dist,
+    nnDistance(other_postcode_osgb,  500, 2, 12, 'nnrs',       'the_geom') as other_nnr_dist
   from uk_survey
 );
-create unique index ukmeridian_id_idx on uk_meridian (id);
+create unique index uknearests_id_idx on uk_nearests (id);
 
 )
 
+-- Adding LSOA house prices (
 
+alter table london_survey add column home_lsoa_house_price_fe real;
+update london_survey s set home_lsoa_house_price_fe = price_fe from lsoa_house_price_fes p where s.home_lsoa_or_dzone = p.code;
+
+alter table london_survey add column other_lsoa_house_price_fe real;
+update london_survey s set other_lsoa_house_price_fe = price_fe from lsoa_house_price_fes p where s.other_lsoa_or_dzone = p.code;
+
+alter table uk_survey add column home_lsoa_house_price_fe real;
+update uk_survey s set home_lsoa_house_price_fe = price_fe from lsoa_house_price_fes p where s.home_lsoa_or_dzone = p.code;
+
+alter table uk_survey add column other_lsoa_house_price_fe real;
+update uk_survey s set other_lsoa_house_price_fe = price_fe from lsoa_house_price_fes p where s.other_lsoa_or_dzone = p.code;
+
+)
+
+-- Adding nearby LCM category proportions (
+
+-- 200m, 1km, 3km radius  (uniform/unweighted)
+-- 200m, 1km      std dev (normal kernel)
+
+-- $1 = area geometry
+-- $2 = kernel centre point geometry
+-- $3 = kernel std dev
+-- $4 = truncation bandwidth (for normal kernel only -- for others, repeat $3)
+-- $5 = number of slices for approximation
+-- $6 = buffer precision (points per 1/4 circle)
+
+select 
+  s1.id,
+  kernel_weighted_local_proportion(
+    ( select st_union(the_geom) 
+      from lcm2000uk l 
+      join london_survey s2 
+      on st_dwithin(l.the_geom, s2.home_map_osgb, 200 * 3) 
+      where s1.id = s2.id 
+      and dn in (131, 111) ),
+    s1.home_map_osgb,
+    200, 
+    200 * 3,
+    9,
+    8
+  ) * 100 as home_lcm
+from london_survey s1;
+
+)
+
+  

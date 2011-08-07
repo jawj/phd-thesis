@@ -16,17 +16,20 @@ cd "/Users/George/GIS/Data/Land use/Land Cover Map 2000"
 shp2pgsql -D -I -s 27700 "gdal_polygonize_output.shp"    lcm2000gb | psql -d phd -U postgres
 shp2pgsql -D -I -s 29903 "gdal_polygonize_output_ni.shp" lcm2000ni | psql -d phd -U postgres
 
-/* no -- makes qgis hang for minutes on end! -- bug 3453
-create view lcm2000uk as (
-  select gid, dn, the_geom from lcm2000gb
-  union
-  select gid + 5000000, dn, st_transform(the_geom, 27700) from lcm2000ni
+alter table lcm2000gb add column ni boolean default false;
+insert into lcm2000gb(
+  select
+    gid + 5000000, 
+    dn,
+    st_transform(the_geom, 27700),
+    true
+  from lcm2000ni
 );
+alter table lcm2000gb rename to lcm2000uk;
 
-create view lcm2000uk_1k as (  
-  select gid, dn, the_geom from lcm2000uk where gid % 1000 = 0  -- to check visually
+create table lcm2000uk_sample as (
+  select * from lcm2000uk where gid % 1000 = 0
 );
-*/
 
 )
 

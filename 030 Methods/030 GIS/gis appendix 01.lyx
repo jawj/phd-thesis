@@ -521,6 +521,71 @@ $$ language sql immutable;
 
 \begin_layout Plain Layout
 
+-- current kernel function (uncomment the kernel you want to use and redefine:
+ the normal is shown here)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+create or replace function __current_kernel_pdf(double precision, double
+ precision default 1.0, double precision default 0.0) returns double precision
+ as $$
+\end_layout
+
+\begin_layout Plain Layout
+
+  -- $1 = x, $2 = std dev/bandwidth, $3 = mean/centre
+\end_layout
+
+\begin_layout Plain Layout
+
+  select
+\end_layout
+
+\begin_layout Plain Layout
+
+  normal_pdf
+\end_layout
+
+\begin_layout Plain Layout
+
+  -- epanechnikov_pdf
+\end_layout
+
+\begin_layout Plain Layout
+
+  -- triangular_pdf
+\end_layout
+
+\begin_layout Plain Layout
+
+  -- uniform_pdf
+\end_layout
+
+\begin_layout Plain Layout
+
+  ($1, $2, $3);
+\end_layout
+
+\begin_layout Plain Layout
+
+$$ language sql immutable;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
 -- support functions
 \end_layout
 
@@ -753,71 +818,6 @@ create or replace function __intersected_slice_volume(geometry, geometry,
 \begin_layout Plain Layout
 
   * __slice_height($3, $4, $5);
-\end_layout
-
-\begin_layout Plain Layout
-
-$$ language sql immutable;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
--- current kernel function (uncomment the kernel you want to use and redefine:
- the normal is shown here)
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-create or replace function __current_kernel_pdf(double precision, double
- precision default 1.0, double precision default 0.0) returns double precision
- as $$
-\end_layout
-
-\begin_layout Plain Layout
-
-  -- $1 = x, $2 = std dev/bandwidth, $3 = mean/centre
-\end_layout
-
-\begin_layout Plain Layout
-
-  select
-\end_layout
-
-\begin_layout Plain Layout
-
-  normal_pdf
-\end_layout
-
-\begin_layout Plain Layout
-
-  -- epanechnikov_pdf
-\end_layout
-
-\begin_layout Plain Layout
-
-  -- triangular_pdf
-\end_layout
-
-\begin_layout Plain Layout
-
-  -- uniform_pdf
-\end_layout
-
-\begin_layout Plain Layout
-
-  ($1, $2, $3);
 \end_layout
 
 \begin_layout Plain Layout
