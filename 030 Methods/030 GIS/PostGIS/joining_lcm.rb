@@ -1,12 +1,12 @@
 
 # run one as applicable
 place, loc_type = 'london', 'map'
-#place, loc_type = 'uk', 'postcode'
+# place, loc_type = 'uk', 'postcode'
 
 # run one as applicable
 # remember: create appropriate __current_kernel_pdf function!
-dist, slices, truncation_multiple, std_devs = 'normal',  6, 3, [200, 1000]  
-#dist, slices, truncation_multiple, std_devs = 'uniform', 1, 1, [200, 1000, 3000]
+# dist, unit, slices, truncation_multiple, std_devs = 'normal', 'sd', 6, 3, [200, 1000]  
+dist, unit, slices, truncation_multiple, std_devs = 'uniform', 'r', 1, 1, [200, 1000, 3000]
 
 # -------------------------
 
@@ -29,7 +29,7 @@ IO.popen('pbcopy', 'r+') do |clipboard| clipboard.puts("
 create table #{table_name} as (select id from #{place}_survey);
 " +
 loc_prefixes.map do |loc_prefix| types.map do |type_name, type_dns| std_devs.map do |sd| 
-  col_name = "#{loc_prefix}_#{type_name}_sd#{sd}"
+  col_name = "#{loc_prefix}_#{type_name}_#{unit}#{sd}"
 "
 alter table #{table_name} add column #{col_name} real; 
 update #{table_name} s1 set #{col_name} = kernel_weighted_local_proportion(

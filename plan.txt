@@ -1,53 +1,32 @@
-We      Write Mappiness analysis
-Th      - 2
-Fr      - 3
-Mo 27/6 Web surveys descriptives
+
+Mo  8/8 LS and env near home -- stats + valuation
 Tu      - 2
-We      * EAERE
-Th      * EAERE
-Fr      * EAERE
-Mo  4/7 * Holiday
-Tu      * Holiday
-We      * Holiday
-Th      - 3
-Fr      - 4
-Mo 11/7 LS and env near home -- stats
-Tu      LS and env near home -- write-up
-We      - 2
-Th      - 3
-Fr      ESS happiness aggregates -- stats
-Mo 18/7 ESS happiness aggregates -- write-up
+We      LS and env near home -- results tables/write-up
+Th      - 2
+Fr      ESS happiness aggregates -- stats + valuation
+Mo 15/8 ESS happiness aggregates -- results tables/write-up
 Tu      - 2
 We      PANAS -- stats
-Th      PANAS -- write-up
+Th      PANAS -- results tables/write-up
 Fr      - 2
-Mo 25/7 Experienced EQ -- stats
-Tu      Experienced EQ -- write-up
+Mo 22/8 The environment near the workplace -- stats + valuation
+Tu      The environment near the workplace -- results tables/write-up
 We      - 2
-Th      The environment near the workplace -- GIS & stats
-Fr      - 2 
-Mo  1/8 The environment near the workplace -- write-up     *** UCL start
-Tu      - 2
-We      Valuation -- stats
-Th      Valuation -- writing
+Th      Survey spatial/EQ descriptives
 Fr      - 2
-Mo  8/8 Discussion -- writing
+Mo 29/8 Discussion -- writing (5 days)
 Tu      - 2
 We      - 3
 Th      - 4
 Fr      - 5
-Mo 15/8 Lit review/follow-on
+Mo  5/9 Introduction -- writing (2 days)
 Tu      - 2
-We      - 3
-Th      - 4
-Fr      - 5
-Mo 22/8 Other glue writing + finishing
-Tu      - 2
-We      - 3
-Th      - 4
-Fr      - 5
-Mo 29/8 Proofing + layout
-Tu      - 2
-
-= 24 working days before 1 Aug
-  40 working days takes us to 22 August
+We      Misc writing + finishing (4 days)
+Th      - 2
+Fr      - 3
+Mo 12/9 - 4
+Tu      Proofing (2 days)
+We      - 2
+Th      [A+C wedding]
+Fr      [A+C wedding]
+Mo 19/9 *** UCL ***

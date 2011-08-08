@@ -27,6 +27,12 @@ insert into lcm2000gb(
 );
 alter table lcm2000gb rename to lcm2000uk;
 
+vacuum analyze lcm2000uk;
+
+alter table lcm2000uk alter column the_geom set not null;
+cluster lcm2000gb_the_geom_gist on lcm2000uk;
+analyze lcm2000uk;
+
 create table lcm2000uk_sample as (
   select * from lcm2000uk where gid % 1000 = 0
 );

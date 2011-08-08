@@ -1,0 +1,56 @@
+
+chmod 600 .ssh/ec2_gm_key.pem
+ssh ubuntu@[host] -i .ssh/ec2_gm_key.pem
+
+
+byobu  # <F9>, add disk and ec2_cost to status notifications
+
+
+sudo su
+
+aptitude install postgresql postgresql-8.4-postgis
+
+sysctl -w kernel.shmmax=10737418240 # 10GB -- use max 8GB for pg, though
+sysctl -w kernel.shmall=2621440     # 10GB / get_conf PAGE_SIZE (4096)
+
+echo '
+# GM optimisations
+shared_buffers = 8GB
+work_mem = 2GB
+maintenance_work_mem = 256MB
+max_stack_depth = 4MB
+effective_cache_size = 64GB
+wal_buffers = 16MB
+checkpoint_segments = 64
+synchronous_commit = off
+' >> /etc/postgresql/8.4/main/postgresql.conf
+
+service postgresql restart
+
+exit
+
+
+sudo -u postgres createdb phd
+sudo -u postgres createlang plpgsql phd
+sudo -u postgres psql -d phd -f /usr/share/postgresql/8.4/contrib/postgis-1.5/postgis.sql
+sudo -u postgres psql -d phd -f /usr/share/postgresql/8.4/contrib/postgis-1.5/spatial_ref_sys.sql
+
+# on Mac:
+# pg_dump -U postgres -t london_survey -t uk_survey -t lcm2000uk phd | gzip > phd_ec2.sql.gz
+
+wget http://mackerron.com/temp/kernel_weighting_functions.sql
+sudo -u postgres psql -d phd -f kernel_weighting_functions.sql
+
+wget http://mackerron.com/temp/phd_ec2.sql.gz            # can get here in 7 mins uptime
+gunzip -c phd_ec2.sql.gz | sudo -u postgres psql -d phd  # slow (7 mins on monster)
+
+sudo -u postgres psql -d phd
+
+# ...
+
+alter table lcm2000uk alter column the_geom set not null;
+cluster lcm2000gb_the_geom_gist on lcm2000uk;
+analyze lcm2000uk;
+
+# ...
+
