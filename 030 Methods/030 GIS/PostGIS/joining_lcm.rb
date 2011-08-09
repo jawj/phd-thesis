@@ -1,11 +1,12 @@
 
 # run one as applicable
-place, loc_type = 'london', 'map'
-# place, loc_type = 'uk', 'postcode'
+# place, loc_type = 'london', 'map'
+place, loc_type = 'uk', 'postcode'
 
 # run one as applicable
-# remember: create appropriate __current_kernel_pdf function!
-# dist, unit, slices, truncation_multiple, std_devs = 'normal', 'sd', 6, 3, [200, 1000]  
+# *** REMEMBER! ***: create appropriate __current_kernel_pdf function!
+# dist, unit, slices, truncation_multiple, std_devs = 'normal', 'sd', 8, 3, [200, 1000]  
+# *** REMEMBER! ***: create appropriate __current_kernel_pdf function!
 dist, unit, slices, truncation_multiple, std_devs = 'uniform', 'r', 1, 1, [200, 1000, 3000]
 
 # -------------------------
@@ -19,7 +20,7 @@ types = {
   woodland:   '21, 11',
   suburban:   '171',
   inlandbare: '161',
-  urban:      '172'
+#  urban:      '172'
 }
 loc_prefixes    = %w(home other)
 
@@ -34,7 +35,7 @@ loc_prefixes.map do |loc_prefix| types.map do |type_name, type_dns| std_devs.map
 alter table #{table_name} add column #{col_name} real; 
 update #{table_name} s1 set #{col_name} = kernel_weighted_local_proportion(
   ( select st_union(l.the_geom) 
-    from lcm2000uk l 
+    from lcm2000uk10km l 
     join #{place}_survey s2 
     on st_dwithin(l.the_geom, s2.#{loc_prefix}_#{loc_type}_osgb, #{sd} * #{truncation_multiple}) 
     where s1.id = s2.id
@@ -48,6 +49,8 @@ update #{table_name} s1 set #{col_name} = kernel_weighted_local_proportion(
 "
 end; end; end.flatten.join)
 end
+
+# create unique index london_lcm_normal_id_idx on london_lcm_normal (id);
 
 # $1 = area geometry
 # $2 = kernel centre point geometry

@@ -1,4 +1,7 @@
 
+-- London (
+
+drop view if exists london_export;
 create view london_export as (
   select 
     s.id,
@@ -87,13 +90,93 @@ create view london_export as (
     n.other_inlandbare_sd200,
     n.other_inlandbare_sd1000,
     
-    -- lcm uniform
+    u.home_coast_r200,
+    u.home_coast_r1000,
+    u.home_coast_r3000,
+    u.home_water_r200,
+    u.home_water_r1000,
+    u.home_water_r3000,
+    u.home_mountain_r200,
+    u.home_mountain_r1000,
+    u.home_mountain_r3000,
+    u.home_grassland_r200,
+    u.home_grassland_r1000,
+    u.home_grassland_r3000,
+    u.home_farmland_r200,
+    u.home_farmland_r1000,
+    u.home_farmland_r3000,
+    u.home_woodland_r200,
+    u.home_woodland_r1000,
+    u.home_woodland_r3000,
+    u.home_suburban_r200,
+    u.home_suburban_r1000,
+    u.home_suburban_r3000,
+    u.home_inlandbare_r200,
+    u.home_inlandbare_r1000,
+    u.home_inlandbare_r3000,
+    u.other_coast_r200,
+    u.other_coast_r1000,
+    u.other_coast_r3000,
+    u.other_water_r200,
+    u.other_water_r1000,
+    u.other_water_r3000,
+    u.other_mountain_r200,
+    u.other_mountain_r1000,
+    u.other_mountain_r3000,
+    u.other_grassland_r200,
+    u.other_grassland_r1000,
+    u.other_grassland_r3000,
+    u.other_farmland_r200,
+    u.other_farmland_r1000,
+    u.other_farmland_r3000,
+    u.other_woodland_r200,
+    u.other_woodland_r1000,
+    u.other_woodland_r3000,
+    u.other_suburban_r200,
+    u.other_suburban_r1000,
+    u.other_suburban_r3000,
+    u.other_inlandbare_r200,
+    u.other_inlandbare_r1000,
+    u.other_inlandbare_r3000,
+    
+    g.home_osm_green_sd200,
+    g.home_osm_green_sd1000,
+    g.home_osm_park_sd200,
+    g.home_osm_park_sd1000,
+    g.home_gigl_green_sd200,
+    g.home_gigl_green_sd1000,
+    g.other_osm_green_sd200,
+    g.other_osm_green_sd1000,
+    g.other_osm_park_sd200,
+    g.other_osm_park_sd1000,
+    g.other_gigl_green_sd200,
+    g.other_gigl_green_sd1000,
+    
+    h.home_osm_green_r200,
+    h.home_osm_green_r1000,
+    h.home_osm_green_r3000,
+    h.home_osm_park_r200,
+    h.home_osm_park_r1000,
+    h.home_osm_park_r3000,
+    h.home_gigl_green_r200,
+    h.home_gigl_green_r1000,
+    h.home_gigl_green_r3000,
+    h.other_osm_green_r200,
+    h.other_osm_green_r1000,
+    h.other_osm_green_r3000,
+    h.other_osm_park_r200,
+    h.other_osm_park_r1000,
+    h.other_osm_park_r3000,
+    h.other_gigl_green_r200,
+    h.other_gigl_green_r1000,
+    h.other_gigl_green_r3000,
     
     d.home_map_centroid_distance,
     d.home_map_poly_distance,
     d.other_map_centroid_distance,
     d.other_map_poly_distance,
     
+    m.home_z1_dist,
     m.home_z1tube_dist,
     m.home_tube_dist,
     m.home_mway_dist,
@@ -101,20 +184,169 @@ create view london_export as (
     m.home_station_dist,
     m.home_coast_dist,
     m.home_river_dist,
+    m.other_z1_dist,
     m.other_z1tube_dist,
     m.other_tube_dist,
     m.other_mway_dist,
     m.other_railway_dist,
     m.other_station_dist,
     m.other_coast_dist,
-    m.other_river_dist,
+    m.other_river_dist
     
   from london_survey s
   left join london_crime                c on s.id = c.id
-  left join london_experian             e on s.id = e.id
+  left join london_experian2010         e on s.id = e.id
   left join london_laei2008             l on s.id = l.id
   left join london_lcm_normal           n on s.id = n.id
+  left join london_lcm_uniform          u on s.id = u.id
+  left join london_green_normal         g on s.id = g.id
+  left join london_green_uniform        h on s.id = h.id
   left join london_location_derivatives d on s.id = d.id
   left join london_meridian             m on s.id = m.id
-  
 );
+
+)
+
+-- UK (
+
+drop view if exists uk_export;
+create view uk_export as (
+  select 
+    s.id,
+    
+    s.home_postcode,
+    s.other_postcode,
+    s.home_postcode_osgb,
+    s.other_postcode_osgb,
+    s.other_postcode_poly,
+    s.home_postcode_poly,
+    s.home_lsoa_or_dzone,
+    s.home_ttwa,
+    s.other_ttwa,
+    s.other_lsoa_or_dzone,
+    s.home_lsoa_dzone_poly,
+    s.other_lsoa_dzone_poly,
+    s.home_lsoa_area,
+    s.other_lsoa_area,
+    s.home_lsoa_house_price_fe,
+    s.other_lsoa_house_price_fe,
+    
+    e.home_lsoa_hh_count,
+    e.home_lsoa_medhhinc,
+    e.home_lsoa_pop,
+    e.other_lsoa_hh_count,
+    e.other_lsoa_medhhinc,
+    e.other_lsoa_pop,
+    
+    n.home_coast_sd200,
+    n.home_coast_sd1000,
+    n.home_water_sd200,
+    n.home_water_sd1000,
+    n.home_mountain_sd200,
+    n.home_mountain_sd1000,
+    n.home_grassland_sd200,
+    n.home_grassland_sd1000,
+    n.home_farmland_sd200,
+    n.home_farmland_sd1000,
+    n.home_woodland_sd200,
+    n.home_woodland_sd1000,
+    n.home_suburban_sd200,
+    n.home_suburban_sd1000,
+    n.home_inlandbare_sd200,
+    n.home_inlandbare_sd1000,
+    n.other_coast_sd200,
+    n.other_coast_sd1000,
+    n.other_water_sd200,
+    n.other_water_sd1000,
+    n.other_mountain_sd200,
+    n.other_mountain_sd1000,
+    n.other_grassland_sd200,
+    n.other_grassland_sd1000,
+    n.other_farmland_sd200,
+    n.other_farmland_sd1000,
+    n.other_woodland_sd200,
+    n.other_woodland_sd1000,
+    n.other_suburban_sd200,
+    n.other_suburban_sd1000,
+    n.other_inlandbare_sd200,
+    n.other_inlandbare_sd1000,
+    
+    u.home_coast_r200,
+    u.home_coast_r1000,
+    u.home_coast_r3000,
+    u.home_water_r200,
+    u.home_water_r1000,
+    u.home_water_r3000,
+    u.home_mountain_r200,
+    u.home_mountain_r1000,
+    u.home_mountain_r3000,
+    u.home_grassland_r200,
+    u.home_grassland_r1000,
+    u.home_grassland_r3000,
+    u.home_farmland_r200,
+    u.home_farmland_r1000,
+    u.home_farmland_r3000,
+    u.home_woodland_r200,
+    u.home_woodland_r1000,
+    u.home_woodland_r3000,
+    u.home_suburban_r200,
+    u.home_suburban_r1000,
+    u.home_suburban_r3000,
+    u.home_inlandbare_r200,
+    u.home_inlandbare_r1000,
+    u.home_inlandbare_r3000,
+    u.other_coast_r200,
+    u.other_coast_r1000,
+    u.other_coast_r3000,
+    u.other_water_r200,
+    u.other_water_r1000,
+    u.other_water_r3000,
+    u.other_mountain_r200,
+    u.other_mountain_r1000,
+    u.other_mountain_r3000,
+    u.other_grassland_r200,
+    u.other_grassland_r1000,
+    u.other_grassland_r3000,
+    u.other_farmland_r200,
+    u.other_farmland_r1000,
+    u.other_farmland_r3000,
+    u.other_woodland_r200,
+    u.other_woodland_r1000,
+    u.other_woodland_r3000,
+    u.other_suburban_r200,
+    u.other_suburban_r1000,
+    u.other_suburban_r3000,
+    u.other_inlandbare_r200,
+    u.other_inlandbare_r1000,
+    u.other_inlandbare_r3000,
+
+    m.home_mway_dist,
+    m.home_aroad_dist,
+    m.home_railway_dist,
+    m.home_station_dist,
+    m.home_coast_dist,
+    m.home_river_dist,
+    m.home_natpark_dist,
+    m.home_aonb_dist,
+    m.home_nnr_dist,
+    m.other_mway_dist,
+    m.other_aroad_dist,
+    m.other_railway_dist,
+    m.other_station_dist,
+    m.other_coast_dist,
+    m.other_river_dist,
+    m.other_natpark_dist,
+    m.other_aonb_dist,
+    m.other_nnr_dist
+    
+  from uk_survey s
+  left join uk_experian2010         e on s.id = e.id
+  left join uk_lcm_normal           n on s.id = n.id
+  left join uk_lcm_uniform          u on s.id = u.id
+  left join uk_nearests             m on s.id = m.id
+);
+
+)
+
+copy london_export to '' csv header;
+copy uk_export     to '' csv header;

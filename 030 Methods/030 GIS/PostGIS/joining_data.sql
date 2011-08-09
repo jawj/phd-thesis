@@ -294,9 +294,15 @@ update london_survey s set other_aod = true from aods a where st_contains(a.wkb_
 -- Adding Tube & Meridian nearests table (London) (
 
 create view zone1tubes as (select * from tube_stops where lowzone = 1);
+
+create table zone1 as (
+  select 1 as id, st_convexhull(st_collect(the_geom)) as the_geom from zone1tubes
+);
+  
 create table london_meridian as (
   select 
     id,
+    st_distance(home_map_osgb, (select the_geom from zone1))         as home_z1_dist,
     nnDistance(home_map_osgb,   500, 2, 8, 'zone1tubes', 'the_geom') as home_z1tube_dist,
     nnDistance(home_map_osgb,   500, 2, 8, 'tube_stops', 'the_geom') as home_tube_dist,
     nnDistance(home_map_osgb,   500, 2, 8, 'm2_mways',   'the_geom') as home_mway_dist,
@@ -304,6 +310,7 @@ create table london_meridian as (
     nnDistance(home_map_osgb,   500, 2, 8, 'm2_stations','the_geom') as home_station_dist,
     nnDistance(home_map_osgb,   500, 2, 8, 'm2_coast',   'the_geom') as home_coast_dist,
     nnDistance(home_map_osgb,   500, 2, 8, 'm2_river',   'the_geom') as home_river_dist,
+    st_distance(other_map_osgb, (select the_geom from zone1))        as other_z1_dist,
     nnDistance(other_map_osgb,  500, 2, 8, 'zone1tubes', 'the_geom') as other_z1tube_dist,
     nnDistance(other_map_osgb,  500, 2, 8, 'tube_stops', 'the_geom') as other_tube_dist,
     nnDistance(other_map_osgb,  500, 2, 8, 'm2_mways',   'the_geom') as other_mway_dist,
@@ -374,23 +381,13 @@ update uk_survey s set other_lsoa_house_price_fe = price_fe from lsoa_house_pric
 -- $5 = number of slices for approximation
 -- $6 = buffer precision (points per 1/4 circle)
 
-select 
-  s1.id,
-  kernel_weighted_local_proportion(
-    ( select st_union(the_geom) 
-      from lcm2000uk l 
-      join london_survey s2 
-      on st_dwithin(l.the_geom, s2.home_map_osgb, 200 * 3) 
-      where s1.id = s2.id 
-      and dn in (131, 111) ),
-    s1.home_map_osgb,
-    200, 
-    200 * 3,
-    9,
-    8
-  ) * 100 as home_lcm
-from london_survey s1;
+-- see separate file: joining_lcm.rb
 
 )
 
-  
+-- Adding OSM and GiGL green space (London) (
+
+-- see separate file: joining_london_green.rb
+
+)
+   
