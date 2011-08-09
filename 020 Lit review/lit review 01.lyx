@@ -3124,7 +3124,7 @@ From this, the implicit price of the good
 
 \begin_layout Standard
 The welfare effect of a discrete change in the amenity can also be measured
- in terms of the compensating surplus or equivalent surplus.
+ in terms of the compensating or equivalent surplus.
  
 \end_layout
 
@@ -3322,17 +3322,9 @@ Whether these quantities represent the full value of the good is dependent
  In that context, in order to obtain total values, the regression specification
  must include house prices and wages.
  If house prices and wages are not included, then only residual values that
- are not capitalised in the housing and labour markets will be recovered
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-If the markets are in equilibrium, these residual values are expected to
- be zero.
-\end_layout
-
-\end_inset
-
+ are not capitalised in the housing and labour markets will be recovered.
+ And if the markets are in equilibrium, these residual values are expected
+ to be zero.
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3364,7 +3356,7 @@ key "welsch:2009"
 
 , 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "ferreira:2010"
 
 \end_inset
@@ -3377,16 +3369,16 @@ key "fujiwara:2011"
 \end_inset
 
  all provide summaries of the strengths and weaknesses of the SWB valuation
- method as compared with the standard alternatives --- revealed and stated
- preference techniques.
+ method as compared with the conventional alternatives --- revealed and
+ stated preference techniques.
  In general, SWB valuation is presented as a complement rather than an alternati
 ve to conventional valuation techniques, on the basis that it has quite
  different strengths and weaknesses.
 \end_layout
 
 \begin_layout Standard
-Both revealed and stated preference methods ultimately rely on the PS foundation
-s outlined in 
+Revealed and stated preference methods ultimately rely on the PS foundations
+ outlined in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:ps-and-swb"
@@ -3411,7 +3403,7 @@ key "fujiwara:2011"
 
 \end_inset
 
- to argue that the main appeal of the SWB valuation is 
+ to argue that the main appeal of SWB valuation is 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3471,14 +3463,13 @@ reference "sub:Concepts-and-terminology"
  been the most frequently used, and 
 \begin_inset CommandInset citation
 LatexCommand citet
-after "p. 15"
 key "fujiwara:2011"
 
 \end_inset
 
  argue that these have implicitly been assumed to most closely resemble
  the conventional PS notion of utility.
- 
+ But 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "powdthavee:2011"
@@ -3508,7 +3499,7 @@ reference "sub:measuring-happiness"
  And we must be wary of assortment by tastes: for example, when valuing
  air pollution, it may be that less pollution-sensitive individuals live
  in more polluted locations (and vice versa), leading to underestimation
- of the SWB impact 
+ of SWB impacts and the associated monetary values 
 \begin_inset CommandInset citation
 LatexCommand citep
 after "p. 493"
@@ -3531,10 +3522,9 @@ key "rehdanz:2007a,ferreira:2010"
 \end_inset
 
 , it will not necessarily do so, since the simple existence of a good may
- not vary between surveyed individuals 
+ not vary between individuals surveyed 
 \begin_inset CommandInset citation
 LatexCommand citep
-after "p. 30"
 key "fujiwara:2011"
 
 \end_inset
@@ -3566,8 +3556,8 @@ key "ferreira:2010"
 \end_inset
 
 , and researchers have generally supposed the cause of this to be an underestima
-tion of this income effect.
- This underestimation, in turn, may have a range of causes.
+tion of the income effect.
+ This underestimation, in turn, may have a wide range of causes.
  
 \end_layout
 
@@ -3608,8 +3598,8 @@ gly equivalised income measure.
 \end_layout
 
 \begin_layout Standard
-Second, the omission of one's own lagged income or of the incomes of others
- may give rise to the same effect.
+Second, the omission of respondents' own lagged incomes or of the incomes
+ of others may give rise to the same effect.
  As 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -3652,17 +3642,18 @@ reference "sub:Past-and-relative-income"
 \end_layout
 
 \begin_layout Standard
-Third, the effect of income may be underestimated by the failure to account
+Third, the effect of income may be underestimated due to a failure to account
  for costs of income generation, such as working hours, commuting, and stress.
- To address this issue, income may be instrumented, for example with income
- of other household members and industry/occupation 
+ To address this issue, income may be instrumented, for example with the
+ income of other household members and industry/occupation data 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "luechinger:2009"
 
 \end_inset
 
- (then again, as 
+.
+ However, as 
 \begin_inset CommandInset citation
 LatexCommand citeauthor
 key "luechinger:2009"
@@ -3670,7 +3661,7 @@ key "luechinger:2009"
 \end_inset
 
  notes, a predicted income measure of this sort is also a good candidate
- for a comparator income estimate).
+ for a comparator income estimate.
 \end_layout
 
 \begin_layout Standard

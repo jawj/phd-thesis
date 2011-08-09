@@ -735,7 +735,40 @@ key "kuo:2001a"
 \end_layout
 
 \begin_layout Subsection
-Economic studies
+Studies in conventional economics
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Brief outline of relevant hedonic pricing study findings? As in Steve's
+ hedonic UKNEA paper (p.4)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Conventional valuation methods have been widely used to investigate relationship
+s between and PS utility and EQ, including effects of road noise, air quality,
+ water quality, forests, wetlands, view of nature, urban trees, and open
+ spaces.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "gibbons:2011a"
+
+\end_inset
+
+ provide a summary.
+\end_layout
+
+\begin_layout Subsection
+Studies in happiness economics
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:eq-swb-economic-studies"
@@ -759,20 +792,6 @@ key "moro:2008"
 
 .
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Brief outline of relevant hedonic pricing study findings? As in Steve's
- hedonic UKNEA paper (p.4)
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1630,6 +1649,16 @@ key "mackerron:2008"
 
  use the same high resolution air pollution maps, but have only postcode
  location data from a small convenience sample.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+As has been done in hedonic pricing studies but not SWB ones(?).
 \end_layout
 
 \end_inset
