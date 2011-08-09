@@ -19,7 +19,7 @@ types = {
   woodland:   '21, 11',
   suburban:   '171',
   inlandbare: '161',
-# urban:      '172'
+  urban:      '172'
 }
 loc_prefixes    = %w(home other)
 

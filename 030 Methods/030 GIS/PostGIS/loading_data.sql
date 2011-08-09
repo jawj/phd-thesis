@@ -10,7 +10,7 @@ shp2pgsql -D -I -s 27700 "laei-2008-pm10e-20mgrid-shp/LAEI08_PM10e.shp" laei08_p
 
 )
 
--- LCM 2000 (
+-- LCM 2000 -- superseded -- see joining_lcm.rb (
 
 cd "/Users/George/GIS/Data/Land use/Land Cover Map 2000"
 shp2pgsql -D -I -s 27700 "gdal_polygonize_output.shp"    lcm2000gb | psql -d phd -U postgres
