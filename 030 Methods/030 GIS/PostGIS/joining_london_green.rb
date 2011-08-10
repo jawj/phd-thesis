@@ -12,7 +12,7 @@ dist, unit, slices, truncation_multiple, std_devs = 'uniform', 'r', 1, 1, [200, 
 src_tables = {
   'osm_green'  => ['osm_green_spaces', 'osgb36_polygon'],
   'osm_park'   => ['osm_parks',        'osgb36_polygon'],
-  'gigl_green' => ['giglopenspace',  'wkb_geometry']
+  'gigl_green' => ['giglopenspace',    'wkb_geometry']
 }
 loc_prefixes = %w(home other)
 

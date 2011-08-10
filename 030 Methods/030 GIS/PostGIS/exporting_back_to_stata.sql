@@ -218,14 +218,10 @@ create view uk_export as (
     s.other_postcode,
     s.home_postcode_osgb,
     s.other_postcode_osgb,
-    s.other_postcode_poly,
-    s.home_postcode_poly,
     s.home_lsoa_or_dzone,
+    s.other_lsoa_or_dzone,
     s.home_ttwa,
     s.other_ttwa,
-    s.other_lsoa_or_dzone,
-    s.home_lsoa_dzone_poly,
-    s.other_lsoa_dzone_poly,
     s.home_lsoa_area,
     s.other_lsoa_area,
     s.home_lsoa_house_price_fe,
@@ -348,5 +344,6 @@ create view uk_export as (
 
 )
 
-copy london_export to '' csv header;
-copy uk_export     to '' csv header;
+select * from london_export; -- save from pgAdmin
+select * from uk_export;
+
