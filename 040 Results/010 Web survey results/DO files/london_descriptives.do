@@ -1,4 +1,3 @@
-include "$lseqdir/Data analysis/07-perceptions_instruments_01.do"
 
 gen ageband = "."
 replace ageband = "16 - 24" if inlist(screening_age__q, "16", "20")
@@ -47,8 +46,39 @@ outsheet using "~/Downloads/points.csv", comma  // for mapping in QGIS
 restore
 
 
-corr pm10ex_06_06 pm10av_06_06 no2av_06_06 parks_osm_norm_3sd_1km green_lcm_norm_3sd_1km noise_road_lden noise_rail_lden hrow_noise_08_std crime_vap_per_kp soho_km 
+#delimit ;
+corr // pca br
 
+home_map_pm10a 
+home_map_no2a 
 
+home_coast_sd1000
+home_water_sd1000
+home_mountain_sd1000
+home_grassland_sd1000
+home_farmland_sd1000
+home_woodland_sd1000
+home_suburban_sd1000
+home_inlandbare_sd1000
 
+home_osm_green_sd1000 
+home_osm_park_sd1000 
+home_gigl_green_sd1000 
+home_aod_01
 
+home_lhr09_leq
+
+home_noise_road_lden 
+home_noise_rail_lden 
+
+ln_home_z1_dist 
+ln_home_tube_or_station_dist 
+ln_home_railway_dist 
+
+home_tno_per_kp
+home_rb_per_khh 
+home_vap_per_kp 
+
+home_lsoa_house_price_fe
+;
+delimit CR

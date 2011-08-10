@@ -767,6 +767,16 @@ key "gibbons:2011a"
  provide a summary.
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "smith:2010"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Studies in happiness economics
 \begin_inset CommandInset label
@@ -1669,7 +1679,8 @@ status open
 
 \begin_layout Plain Layout
 Also better/more advanced GIS measures -- i.e.
- (kernel-weighted) % within radii
+ (kernel-weighted) % within radii -- i.e.
+ *combining* distance and proportion measures!
 \end_layout
 
 \end_inset
