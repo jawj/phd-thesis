@@ -1,4 +1,3 @@
-include "$ukneadir/survey_data/adding_geo_data/05-code_geo.do"
 
 gen ageband = "."
 replace ageband = "16 - 24" if inlist(age__q, "16", "20")
@@ -36,3 +35,31 @@ hist(d$hh_inc_mp[d$hh_inc_mp < 200000], breaks=c(0,4000,6000,8000,10000,12000,15
 hist life_sat__q, discrete frequency xtitle("Life satisfaction")
 sum life_sat__q
 centile life_sat__q
+
+
+#delimit ;
+corr // pca br
+
+home_coast_sd1000
+home_water_sd1000
+home_mountain_sd1000
+home_grassland_sd1000
+home_farmland_sd1000
+home_woodland_sd1000
+home_suburban_sd1000
+home_inlandbare_sd1000
+
+ln_home_natpark_dist
+ln_home_aonb_dist
+ln_home_nnr_dist
+
+ln_home_railway_dist
+ln_home_station_dist
+ln_home_coast_dist
+ln_home_river_dist
+
+home_lsoa_house_price_fe
+;
+delimit CR
+
+

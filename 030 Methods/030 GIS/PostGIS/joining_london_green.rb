@@ -1,11 +1,15 @@
 
+# ***
+# NOTE: home_gigl_green_sd1000 has to be re-run without the st_buffer!
+# ***
+
 place, loc_type = 'london', 'map'
 
 # run one as applicable
 # *** REMEMBER! ***: create appropriate __current_kernel_pdf function!
-# dist, unit, slices, truncation_multiple, std_devs = 'normal', 'sd', 8, 3, [200, 1000]  
+dist, unit, slices, truncation_multiple, std_devs = 'normal', 'sd', 8, 3, [200, 1000]  
 # *** REMEMBER! ***: create appropriate __current_kernel_pdf function!
-dist, unit, slices, truncation_multiple, std_devs = 'uniform', 'r', 1, 1, [200, 1000, 3000]
+# dist, unit, slices, truncation_multiple, std_devs = 'uniform', 'r', 1, 1, [200, 1000, 3000]
 
 # -------------------------
 

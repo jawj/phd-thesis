@@ -46,10 +46,10 @@ $$ language sql immutable;
 create or replace function __current_kernel_pdf(double precision, double precision default 1.0, double precision default 0.0) returns double precision as $$
   -- $1 = x, $2 = std dev/bandwidth, $3 = mean/centre
   select
-  -- normal_pdf
+  normal_pdf
   -- epanechnikov_pdf
   -- triangular_pdf
-  uniform_pdf
+  -- uniform_pdf
   ($1, $2, $3);
 $$ language sql immutable;
 

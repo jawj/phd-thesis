@@ -434,5 +434,5 @@ gen home_road_noise_x_nodblglaz = home_noise_road_lden * nodblglazing
 
 * }
 
-save "$phddatadir/data_for_analsis.dta", replace
+save "$phddatadir/london_data_for_analsis.dta", replace
 
