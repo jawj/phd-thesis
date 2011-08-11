@@ -190,6 +190,15 @@ update uk_survey set home_lsoa_area = st_area(home_lsoa_dzone_poly);
 alter table uk_survey add column other_lsoa_area real;
 update uk_survey set other_lsoa_area = st_area(other_lsoa_dzone_poly);
 
+-- indices needed for LCM per LSOA
+
+create index london_home_lsoa_poly_idx on london_survey using gist(home_lsoa_dzone_poly);
+create index london_other_lsoa_poly_idx on london_survey using gist(other_lsoa_dzone_poly);
+create index uk_home_lsoa_poly_idx on uk_survey using gist(home_lsoa_dzone_poly);
+create index uk_other_lsoa_poly_idx on uk_survey using gist(other_lsoa_dzone_poly);
+analyze london_survey;
+analyze uk_survey;
+
 )
 
 -- Adding crime table (London only) (

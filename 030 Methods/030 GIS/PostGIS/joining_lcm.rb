@@ -7,7 +7,7 @@ place, loc_type = 'uk', 'postcode'
 # *** REMEMBER! ***: create appropriate __current_kernel_pdf function!
 # dist, unit, slices, truncation_multiple, std_devs = 'normal', 'sd', 8, 3, [200, 1000]  
 # *** REMEMBER! ***: create appropriate __current_kernel_pdf function!
-dist, unit, slices, truncation_multiple, std_devs = 'uniform', 'r', 1, 1, [200, 1000, 3000]
+dist, unit, slices, truncation_multiple, std_devs = 'uniform', 'r', 1, 1, [200, 1000, 3000, 10000]
 
 # -------------------------
 

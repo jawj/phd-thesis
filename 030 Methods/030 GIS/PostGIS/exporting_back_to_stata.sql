@@ -139,6 +139,23 @@ create view london_export as (
     u.other_inlandbare_r1000,
     u.other_inlandbare_r3000,
     
+    p.home_coast_lsoaprop,
+    p.home_water_lsoaprop,
+    p.home_mountain_lsoaprop,
+    p.home_grassland_lsoaprop,
+    p.home_farmland_lsoaprop,
+    p.home_woodland_lsoaprop,
+    p.home_suburban_lsoaprop,
+    p.home_inlandbare_lsoaprop,
+    p.other_coast_lsoaprop,
+    p.other_water_lsoaprop,
+    p.other_mountain_lsoaprop,
+    p.other_grassland_lsoaprop,
+    p.other_farmland_lsoaprop,
+    p.other_woodland_lsoaprop,
+    p.other_suburban_lsoaprop,
+    p.other_inlandbare_lsoaprop,
+    
     g.home_osm_green_sd200,
     g.home_osm_green_sd1000,
     g.home_osm_park_sd200,
@@ -199,6 +216,7 @@ create view london_export as (
   left join london_laei2008             l on s.id = l.id
   left join london_lcm_normal           n on s.id = n.id
   left join london_lcm_uniform          u on s.id = u.id
+  left join london_lcm_by_lsoa          p on s.id = p.id
   left join london_green_normal         g on s.id = g.id
   left join london_green_uniform        h on s.id = h.id
   left join london_location_derivatives d on s.id = d.id
@@ -313,6 +331,23 @@ create view uk_export as (
     u.other_inlandbare_r200,
     u.other_inlandbare_r1000,
     u.other_inlandbare_r3000,
+    
+    p.home_coast_lsoaprop,
+    p.home_water_lsoaprop,
+    p.home_mountain_lsoaprop,
+    p.home_grassland_lsoaprop,
+    p.home_farmland_lsoaprop,
+    p.home_woodland_lsoaprop,
+    p.home_suburban_lsoaprop,
+    p.home_inlandbare_lsoaprop,
+    p.other_coast_lsoaprop,
+    p.other_water_lsoaprop,
+    p.other_mountain_lsoaprop,
+    p.other_grassland_lsoaprop,
+    p.other_farmland_lsoaprop,
+    p.other_woodland_lsoaprop,
+    p.other_suburban_lsoaprop,
+    p.other_inlandbare_lsoaprop,
 
     m.home_mway_dist,
     m.home_aroad_dist,
@@ -337,6 +372,7 @@ create view uk_export as (
   left join uk_experian2010         e on s.id = e.id
   left join uk_lcm_normal           n on s.id = n.id
   left join uk_lcm_uniform          u on s.id = u.id
+  left join uk_lcm_by_lsoa          p on s.id = p.id
   left join uk_nearests             m on s.id = m.id
 );
 

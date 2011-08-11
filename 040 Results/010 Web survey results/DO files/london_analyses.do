@@ -1,6 +1,6 @@
 
 #delimit ;
-local lcmsuffix r3000;
+local lcmsuffix lsoaprop;
 regress 
   life_sat__q 
 
@@ -40,12 +40,12 @@ regress
   hh_ind_inc_ln
 
   male__q
-	age_mp 	age_mp_sq
-	degree
-	unemployed 
-	really_single divsep
-	religious
-	// poor_health
+  age_mp  age_mp_sq
+  degree
+  unemployed 
+  really_single divsep
+  religious
+  // poor_health
 
 , cluster(home_lsoa_or_dzone);
 #delimit CR

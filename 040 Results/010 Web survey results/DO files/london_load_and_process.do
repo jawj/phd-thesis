@@ -423,6 +423,9 @@ foreach loc in home other {
   gen `loc'_v_low_road_noise = (`loc'_noise_road_lden < 3)
   gen `loc'_low_road_noise   = (`loc'_noise_road_lden == 3)
   
+  foreach lcm in coast water mountain grassland farmland woodland suburban inlandbare {
+    replace `loc'_`lcm'_lsoaprop = 0 if missing(`loc'_`lcm'_lsoaprop)
+  }
 }
 
 * weather

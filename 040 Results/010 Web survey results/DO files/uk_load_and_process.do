@@ -261,6 +261,8 @@ gen crowded_house_alt = household_sixteen_plus__q + (household_under_sixteen__q 
 
 gen house_crowding = hh_size_unweighted / household_rooms__q
 
+gen lives_alone = hh_size_unweighted == 1
+
 gen own_garden = garden__q == "own"
 replace own_garden = . if missing(garden__q)
 
@@ -411,9 +413,14 @@ replace nat_parks_visits = 0 if nat_parks__q == "home"
 foreach loc in home other {
   foreach thing in mway aroad railway station coast river natpark aonb nnr {
     capture drop ln_`loc'_`thing'_dist
-    gen  ln_`loc'_`thing'_dist = `loc'_`thing'_dist
+    gen ln_`loc'_`thing'_dist = `loc'_`thing'_dist
+  }
+  foreach lcm in coast water mountain grassland farmland woodland suburban inlandbare {
+    replace `loc'_`lcm'_lsoaprop = 0 if missing(`loc'_`lcm'_lsoaprop)
   }
 }
+
+
 
 * }
 
