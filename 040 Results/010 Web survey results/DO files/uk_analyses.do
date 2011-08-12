@@ -1,7 +1,7 @@
 
 
 #delimit ;
-local lcmsuffix lsoa;
+local lcmsuffix lsoaprop;
 regress 
   life_sat__q 
 
@@ -22,22 +22,24 @@ regress
   ln_home_station_dist
   ln_home_coast_dist
   
+  home_lsoa_pop
   home_lsoa_house_price_fe
   
+  ipaq_total_mmw
+  self_rated_health 
+  
   home_own_outright  // correlates 0.44 with age_mp and 0.48 with age_mp_sq
+  social_tenant 
   num_house_problems
   house_crowding
   
   hh_ind_inc_ln
   
   male__q
-  age_mp  age_mp_sq
-  // degree
-  unemployed 
-  // really_single divsep
+  age_mp age_mp_sq
+  unemployed
   lives_alone
   religious
-  // poor_health
 
 , cluster(home_lsoa_or_dzone);
 #delimit CR

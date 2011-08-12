@@ -45,7 +45,7 @@ regress
   unemployed 
   really_single divsep
   religious
-  // poor_health
+  poor_health
 
 , cluster(home_lsoa_or_dzone);
 #delimit CR

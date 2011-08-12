@@ -24,6 +24,8 @@ merge 1:1 id using "$phddatadir/pg_data_uk.dta", generate(_pgmerge)
 
 * SF-36 {
 
+gen self_rated_health = 6 - rand01_general_health__q 
+
 * recoding
 
 prefixize rand 01 02 20 22 34 36
