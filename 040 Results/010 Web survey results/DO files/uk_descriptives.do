@@ -38,7 +38,7 @@ centile life_sat__q
 
 
 #delimit ;
-corr // pca br
+sum // corr pca br
 
 home_coast_sd1000
 home_water_sd1000
@@ -58,7 +58,10 @@ ln_home_station_dist
 ln_home_coast_dist
 ln_home_river_dist
 
+home_lsoa_popdens 
 home_lsoa_house_price_fe
+home_popdens_ppkm2
+home_house_price_med9 
 ;
 delimit CR
 

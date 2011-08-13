@@ -1,6 +1,6 @@
 
 #delimit ;
-local lcmsuffix lsoaprop;
+local lcmsuffix r10000;
 regress 
   life_sat__q 
 
@@ -25,17 +25,19 @@ regress
   home_noise_road_lden 
   home_noise_rail_lden 
 
-  ln_home_z1_dist 
-  // ln_home_tube_or_station_dist 
+  ln_home_z1_dist
+  ln_home_tube_or_station_dist 
   
   home_rb_per_khh 
   home_vap_per_kp 
-
-  home_lsoa_house_price_fe
+  
+  home_lsoa_popdens
+  home_house_price_med9 
   
   home_own_outright  // correlates 0.44 with age_mp and 0.48 with age_mp_sq
+  social_tenant 
   num_house_problems
-  house_crowding
+  // house_crowding
 
   hh_ind_inc_ln
 

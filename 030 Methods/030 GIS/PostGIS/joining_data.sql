@@ -440,3 +440,18 @@ update london_survey u set home_house_price_med9 = (
 
 )
 
+-- Adding population density (
+
+alter table uk_survey add column home_popdens_ppkm2 real;
+update uk_survey set home_popdens_ppkm2 = (select dn / 100 from ukpop1km where st_contains(the_geom, home_postcode_osgb));
+
+alter table uk_survey add column other_popdens_ppkm2 real;
+update uk_survey set other_popdens_ppkm2 = (select dn / 100 from ukpop1km where st_contains(the_geom, other_postcode_osgb));
+
+alter table london_survey add column home_popdens_ppkm2 real;
+update london_survey set home_popdens_ppkm2 = (select dn / 100 from ukpop1km where st_contains(the_geom, home_map_osgb));
+
+alter table london_survey add column other_popdens_ppkm2 real;
+update london_survey set other_popdens_ppkm2 = (select dn / 100 from ukpop1km where st_contains(the_geom, other_map_osgb));
+
+)

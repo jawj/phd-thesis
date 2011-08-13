@@ -33,6 +33,8 @@ create view london_export as (
     s.home_lsoa_house_price_fe,
     s.other_lsoa_house_price_fe,
     s.home_house_price_med9,
+    s.home_popdens_ppkm2,
+    s.other_popdens_ppkm2,
     
     c.home_tno,
     c.home_vap,
@@ -260,6 +262,8 @@ create view uk_export as (
     s.home_lsoa_house_price_fe,
     s.other_lsoa_house_price_fe,
     s.home_house_price_med9,
+    s.home_popdens_ppkm2,
+    s.other_popdens_ppkm2,
     
     e.home_lsoa_hh_count,
     e.home_lsoa_medhhinc,

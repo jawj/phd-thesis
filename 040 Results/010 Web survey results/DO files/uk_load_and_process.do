@@ -413,6 +413,7 @@ recode nat_parks_visits (0 = 0) (1 = 1.5) (3 = 4) (5 = 8.5) (7 = 14)
 replace nat_parks_visits = 0 if nat_parks__q == "home"
 
 foreach loc in home other {
+  gen `loc'_lsoa_popdens = home_lsoa_pop / home_lsoa_area * 1000000
   foreach thing in mway aroad railway station coast river natpark aonb nnr {
     capture drop ln_`loc'_`thing'_dist
     gen ln_`loc'_`thing'_dist = `loc'_`thing'_dist

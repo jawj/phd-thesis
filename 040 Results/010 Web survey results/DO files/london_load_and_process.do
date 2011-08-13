@@ -404,6 +404,7 @@ replace sleeps_lt_6h = . if missing(sleep_got__q)
 * Spatial variable derivatives {
 
 foreach loc in home other {
+  gen `loc'_lsoa_popdens = home_lsoa_pop / home_lsoa_area * 1000000
   
   gen `loc'_aod_01 = .
   replace `loc'_aod_01 = 1 if `loc'_aod == "t"
@@ -426,6 +427,10 @@ foreach loc in home other {
   foreach lcm in coast water mountain grassland farmland woodland suburban inlandbare {
     replace `loc'_`lcm'_lsoaprop = 0 if missing(`loc'_`lcm'_lsoaprop)
   }
+}
+
+foreach lcm in coast water mountain grassland farmland woodland suburban inlandbare {
+  gen ln_home_`lcm'_sd1000 = ln(home_`lcm'_sd1000 + 1)
 }
 
 * weather

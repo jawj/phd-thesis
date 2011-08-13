@@ -949,3 +949,16 @@ update house_price_residuals r set the_geom = n.the_geom from nspd2010aug n wher
 
 )
 
+-- Population density (
+
+cd "/Users/George/GIS/Data/uk_pop/uk_pop_100m"
+/Library/Frameworks/GDAL.framework/Versions/Current/Programs/gdal_polygonize.py -f "ESRI Shapefile" "w001001.adf" "gdpout_ukpop100m.shp"
+shp2pgsql -D -I -s 27700 "gdpout_ukpop100m.shp" ukpop100m | psql -d phd -U postgres
+
+cd "/Users/George/GIS/Data/uk_pop/popagsum2"
+/Library/Frameworks/GDAL.framework/Versions/Current/Programs/gdal_polygonize.py -f "ESRI Shapefile" "w001001.adf" "gdpout_ukpop1km.shp"
+shp2pgsql -D -I -s 27700 "gdpout_ukpop1km.shp" ukpop1km | psql -d phd -U postgres
+
+)
+
+

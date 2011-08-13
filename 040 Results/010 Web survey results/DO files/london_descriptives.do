@@ -47,7 +47,7 @@ restore
 
 
 #delimit ;
-corr // pca br
+sum // corr pca br
 
 home_map_pm10a 
 home_map_no2a 
@@ -79,6 +79,9 @@ home_tno_per_kp
 home_rb_per_khh 
 home_vap_per_kp 
 
+home_lsoa_popdens
 home_lsoa_house_price_fe
+home_house_price_med9
+home_popdens_ppkm2
 ;
 delimit CR

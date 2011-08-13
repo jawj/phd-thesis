@@ -1,9 +1,13 @@
 
 
 #delimit ;
-local lcmsuffix lsoaprop;
+local lcmsuffix sd1000;
 regress 
-  life_sat__q 
+  // life_sat__q 
+  sf36_emo_wb 
+  // panas_positive 
+  // panas_negative
+
 
   home_coast_`lcmsuffix'
   home_water_`lcmsuffix'
@@ -22,8 +26,8 @@ regress
   ln_home_station_dist
   ln_home_coast_dist
   
-  home_lsoa_pop
-  home_lsoa_house_price_fe
+  home_lsoa_popdens // ln_home_lsoa_popdens
+  home_house_price_med9
   
   ipaq_total_mmw
   self_rated_health 
