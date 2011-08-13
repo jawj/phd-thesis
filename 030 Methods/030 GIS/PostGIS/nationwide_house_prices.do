@@ -9,7 +9,7 @@ set more off
 * Load house prices
 
 clear
-cd "/Users/gjm06/GIS/Data/Social/House prices/NATIONWIDE"
+cd "/Users/George/GIS/Data/Social/House prices/NATIONWIDE"
 append using dmz9504a dmz9505a dmz9506a dmz9507a dmz9508a dmz9509a dmz9510a dmz9511a dmz9512a dmz9601a dmz9602a dmz9603a dmz9604a dmz9605a dmz9606a dmz9607a dmz9608a dmz9609a dmz9610a dmz9611a dmz9612a dmz9701a dmz9702a dmz9703a dmz9704a dmz9705a dmz9706a dmz9707a dmz9708a dmz9709a dmz9710a dmz9711a dmz9712a dmz9801a dmz9802a dmz9803a dmz9804a dmz9805a dmz9806a dmz9807a dmz9808a dmz9809a dmz9810a dmz9811a dmz9812a dmz9901a dmz9902a dmz9903a dmz9904a dmz9905a dmz9906a dmz9907a dmz9908a dmz9909a dmz9910a dmz9911a dmz9912a dmz0001a dmz0002a dmz0003a dmz0004a dmz0005a dmz0006a dmz0007a dmz0008a dmz0009a dmz0010a dmz0011a dmz0012a dmz0101a dmz0102a dmz0103a dmz0104a dmz0105a dmz0106a dmz0107a dmz0108a dmz0109a dmz0110a dmz0111a dmz0112a dmz0201a dmz0202a dmz0203a dmz0204a dmz0205a dmz0206a dmz0207a dmz0208a dmz0209a dmz0210a dmz0211a dmz0212a dmz0301a dmz0302a dmz0303a dmz0304a dmz0305a dmz0306a dmz0307a dmz0308a dmz0309a dmz0310a dmz0311a dmz0312a dmz0401a dmz0402a dmz0403a dmz0404a dmz0405a dmz0406a, generate(month)
 save "gm_all.dta"
 
@@ -116,7 +116,7 @@ hist house_price_residual if house_price_residual > -2 && house_price_residual <
 preserve
 keep postcode house_price_residual
 drop if missing(postcode, house_price_residual)
-outsheet using "/Users/gjm06/GIS/Data/Social/House prices/NATIONWIDE/house_price_residuals.csv", comma replace
+outsheet using "/Users/George/GIS/Data/Social/House prices/NATIONWIDE/house_price_residuals.csv", comma replace
 restore
 
 * }

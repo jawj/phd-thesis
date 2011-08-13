@@ -97,6 +97,9 @@ create table nspd2010aug (
  old_pct char(5)
 );
 copy nspd2010aug from '/Users/George/GIS/Data/Borders, boundaries, codes/NSPDF_AUG_2010_UK_1M_FP.csv' csv;
+create index nspd_pc8_idx on nspd2010aug (postcode_8);
+analyze nspd2010aug;
+
 alter table nspd2010aug add column postcode_no_sp text;
 update nspd2010aug set postcode_no_sp = replace(postcode_7, ' ', '');
 alter table nspd2010aug add primary key (postcode_no_sp);
@@ -772,7 +775,7 @@ create unique index dzones_zonecode_index on dzones (zonecode);
 
 )
 
--- LSOA/dzone house prices (
+-- LSOA/dzone house price FEs (
 
 create table lsoa_house_price_fes (
   code char(9) primary key,
@@ -928,3 +931,21 @@ create table uk_survey as (
 create unique index uk_survey_id_idx on uk_survey(id);
 
 )
+
+-- House price residuals (all sales with postcode) (
+
+create table house_price_residuals (
+  postcode text,
+  residual real
+);
+
+copy house_price_residuals from '/Users/George/GIS/Data/Social/House prices/NATIONWIDE/house_price_residuals.csv' csv header;
+
+create index hpresid_pc_idx on house_price_residuals (postcode);
+analyze hpresid_pc_idx;
+
+select addgeometrycolumn('house_price_residuals', 'the_geom', 27700, 'POINT', 2);
+update house_price_residuals r set the_geom = n.the_geom from nspd2010aug n where r.postcode = n.postcode_8;
+
+)
+

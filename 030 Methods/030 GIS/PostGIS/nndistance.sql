@@ -16,7 +16,7 @@ begin
   while i <= maxPower loop
     sql := ' select st_distance($1, ' ||  quote_ident(nearThingsGeometryField) || ')'
         || ' from ' || quote_ident(nearThings)
-        || ' where st_expand($1, $2 * ($3 ^ $4)) && ' || quote_ident(nearThingsGeometryField)
+        || ' where st_dwithin($1, ' || quote_ident(nearThingsGeometryField) || ', $2 * ($3 ^ $4))' 
         || ' order by st_distance($1, ' ||  quote_ident(nearThingsGeometryField) || ')'
         || ' limit 1';
     execute sql into result using 

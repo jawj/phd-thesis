@@ -307,7 +307,8 @@ create view zone1tubes as (select * from tube_stops where lowzone = 1);
 create table zone1 as (
   select 1 as id, st_convexhull(st_collect(the_geom)) as the_geom from zone1tubes
 );
-  
+
+drop table if exists london_meridian;
 create table london_meridian as (
   select 
     id,
@@ -330,11 +331,13 @@ create table london_meridian as (
   from london_survey
 );
 create unique index londonmeridian_id_idx on london_meridian (id);
+analyze london_meridian;
 
 )
 
 -- Adding Meridian and designation nearests table (UK) (
 
+drop table if exists uk_nearests;
 create table uk_nearests as (
   select 
     id,
@@ -359,6 +362,7 @@ create table uk_nearests as (
   from uk_survey
 );
 create unique index uknearests_id_idx on uk_nearests (id);
+analyze uk_nearests;
 
 )
 
@@ -399,4 +403,40 @@ update uk_survey s set other_lsoa_house_price_fe = price_fe from lsoa_house_pric
 -- see separate file: joining_london_green.rb
 
 )
-   
+
+-- Adding mean house price residuals (
+
+alter table uk_survey add column home_house_price_med9 real;
+update uk_survey u set home_house_price_med9 = (
+  select residual from (
+    select * from nnReals(
+        u.home_postcode_osgb    -- nearTo                   geometry
+      , 750                     -- initialDistance          real
+      , 2                       -- distanceMultiplier       real 
+      , 500                     -- maxPower                 integer
+      , 'house_price_residuals' -- nearThings               text
+      , 'the_geom'              -- nearThingsGeometryField  text
+      , 'residual'              -- nearThingsRealField      text
+      , 9                       -- numWanted                integer
+    ) as residual
+  ) as residual order by residual limit 1 offset 4
+);
+
+alter table london_survey add column home_house_price_med9 real;
+update london_survey u set home_house_price_med9 = (
+  select residual from (
+    select * from nnReals(
+        u.home_map_osgb         -- nearTo                   geometry
+      , 750                     -- initialDistance          real
+      , 2                       -- distanceMultiplier       real 
+      , 500                     -- maxPower                 integer
+      , 'house_price_residuals' -- nearThings               text
+      , 'the_geom'              -- nearThingsGeometryField  text
+      , 'residual'              -- nearThingsRealField      text
+      , 9                       -- numWanted                integer
+    ) as residual
+  ) as residual order by residual limit 1 offset 4
+);
+
+)
+
