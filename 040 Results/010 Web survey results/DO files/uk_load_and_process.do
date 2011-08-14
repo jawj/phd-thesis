@@ -25,6 +25,8 @@ merge 1:1 id using "$phddatadir/pg_data_uk.dta", generate(_pgmerge)
 * SF-36 {
 
 gen self_rated_health = 6 - rand01_general_health__q 
+gen poor_health = self_rated_health < 3
+gen good_health = self_rated_health > 3
 
 * recoding
 
@@ -133,6 +135,8 @@ gen ipaq_all_walk_mmw = ipaq_work_walk_mmw + ipaq_trans_walk_mmw  + ipaq_leisure
 gen ipaq_all_mod_mmw  = ipaq_work_mod_mmw  + ipaq_yard_mod_mmw    + ipaq_inside_mod_mmw   + ipaq_leisure_mod_mmw 
 gen ipaq_all_vig_mmw  = ipaq_work_vig_mmw  + ipaq_leisure_vig_mmw 
 gen ipaq_total_mmw    = ipaq_all_walk_mmw  + ipaq_all_mod_mmw     + ipaq_all_vig_mmw 
+
+gen ipaq_total_mhw = ipaq_total_mmw / 60
 
 * green exercise
 

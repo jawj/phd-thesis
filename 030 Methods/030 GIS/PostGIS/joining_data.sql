@@ -73,7 +73,7 @@ create unique index lld_id_idx on london_location_derivatives (id);
 
 )
 
--- Adding LSOA/dzone codes (
+-- Adding LSOA/dzone codes and other NSPD data (
 
 alter table london_survey add column home_lsoa_or_dzone text;
 update london_survey l set home_lsoa_or_dzone = n.lsoa from nspd2010aug n where l.home_postcode = n.postcode_no_sp;
@@ -100,6 +100,14 @@ update uk_survey l set other_lsoa_or_dzone = case n.country
   else            null
 end 
 from nspd2010aug n where l.other_postcode = n.postcode_no_sp;
+
+alter table uk_survey add column home_country integer;
+update uk_survey l set home_country = cast(n.country as integer)
+  from nspd2010aug n where l.other_postcode = n.postcode_no_sp;
+
+alter table uk_survey add column other_country integer;
+update uk_survey l set other_country = cast(n.country as integer)
+  from nspd2010aug n where l.other_postcode = n.postcode_no_sp;
 
 )
 

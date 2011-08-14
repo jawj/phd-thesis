@@ -247,8 +247,8 @@ gen inner_london = regexm(quota_class, "inner_london")
 
 gen poor_health = self_reported_health__q < 3
 replace poor_health = . if missing(self_reported_health__q)
-gen v_poor_health = self_reported_health__q < 2
-replace v_poor_health = . if missing(self_reported_health__q)
+gen good_health = self_reported_health__q > 3
+replace good_health = . if missing(self_reported_health__q)
 
 
 *** demographics
@@ -421,8 +421,13 @@ foreach loc in home other {
   gen `loc'_vap_per_kp = (`loc'_vap * 1000) / `loc'_lsoa_pop
   gen `loc'_tno_per_kp = (`loc'_tno * 1000) / `loc'_lsoa_pop
   
-  gen `loc'_v_low_road_noise = (`loc'_noise_road_lden < 3)
-  gen `loc'_low_road_noise   = (`loc'_noise_road_lden == 3)
+  gen `loc'_road_quiet  = `loc'_noise_road_lden == 2
+  gen `loc'_rail_quiet  = `loc'_noise_rail_lden == 2
+  gen `loc'_lhr09_quiet = `loc'_lhr09_leq == 0
+  
+  gen `loc'_road_quietish  = `loc'_noise_road_lden <= 3
+  gen `loc'_rail_quietish  = `loc'_noise_rail_lden <=3
+  gen `loc'_lhr09_quietish = `loc'_lhr09_leq <= 1
   
   foreach lcm in coast water mountain grassland farmland woodland suburban inlandbare {
     replace `loc'_`lcm'_lsoaprop = 0 if missing(`loc'_`lcm'_lsoaprop)

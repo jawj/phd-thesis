@@ -38,7 +38,10 @@ centile life_sat__q
 
 
 #delimit ;
-sum // corr pca br
+* sum 
+corr 
+* pca 
+* br
 
 home_coast_sd1000
 home_water_sd1000

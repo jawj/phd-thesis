@@ -66,10 +66,9 @@ home_osm_park_sd1000
 home_gigl_green_sd1000 
 home_aod_01
 
-home_lhr09_leq
-
-home_noise_road_lden 
-home_noise_rail_lden 
+home_lhr09_quietish
+home_road_quietish 
+home_rail_quietish 
 
 ln_home_z1_dist 
 ln_home_tube_or_station_dist 

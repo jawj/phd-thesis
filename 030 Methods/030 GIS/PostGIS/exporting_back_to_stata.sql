@@ -264,6 +264,8 @@ create view uk_export as (
     s.home_house_price_med9,
     s.home_popdens_ppkm2,
     s.other_popdens_ppkm2,
+    s.home_country,
+    s.other_country,
     
     e.home_lsoa_hh_count,
     e.home_lsoa_medhhinc,
