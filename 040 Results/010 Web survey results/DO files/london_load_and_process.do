@@ -399,11 +399,22 @@ replace slept_lt_6h_last_night = . if missing(sleep_last_night__q)
 gen sleeps_lt_6h = sleep_got__q < 6
 replace sleeps_lt_6h = . if missing(sleep_got__q)
 
+* commute
+
+recode commute_time__q (5 = 7.5) (20 = 22.5) (40 = 37.5) (60 = 52.5) (80 = 75), gen(commutetimemp)
+
 * }
 
 * Spatial variable derivatives {
 
 foreach loc in home other {
+  foreach lcmsuffix in sd200 sd1000 r200 r1000 r3000 r10000 {
+    capture drop `loc'_greens_`lcmsuffix'
+    gen `loc'_greens_`lcmsuffix' = `loc'_mountain_`lcmsuffix' + `loc'_grassland_`lcmsuffix' + `loc'_farmland_`lcmsuffix' + `loc'_woodland_`lcmsuffix' 
+  }
+
+  gen `loc'_popdens_kpkm2 = `loc'_popdens_ppkm2 / 1000
+  
   gen `loc'_lsoa_popdens = home_lsoa_pop / home_lsoa_area * 1000000
   
   gen `loc'_aod_01 = .
@@ -436,10 +447,6 @@ foreach loc in home other {
 
 foreach lcm in coast water mountain grassland farmland woodland suburban inlandbare {
   gen ln_home_`lcm'_sd1000 = ln(home_`lcm'_sd1000 + 1)
-}
-
-foreach lcmsuffix in r200 r1000 r3000 r10000 {
-  gen home_greens_`lcmsuffix' = home_mountain_`lcmsuffix' + home_grassland_`lcmsuffix' + home_farmland_`lcmsuffix' + home_woodland_`lcmsuffix' 
 }
 
 * weather

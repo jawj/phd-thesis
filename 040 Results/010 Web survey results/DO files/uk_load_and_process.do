@@ -384,6 +384,8 @@ replace slept_lt_6h_last_night = . if missing(sleep_last_night__q)
 gen sleeps_lt_6h = sleep_got__q < 6
 replace sleeps_lt_6h = . if missing(sleep_got__q)
 
+recode commute_time__q (5 = 7.5) (20 = 22.5) (40 = 37.5) (60 = 52.5) (80 = 75), gen(commutetimemp)
+
 * }
 
 * Coding spatial stuff {
@@ -423,6 +425,12 @@ foreach loc in home other {
   foreach lcm in coast water mountain grassland farmland woodland suburban inlandbare {
     replace `loc'_`lcm'_lsoaprop = 0 if missing(`loc'_`lcm'_lsoaprop)
   }
+  gen `loc'_popdens_kpkm2 = `loc'_popdens_ppkm2 / 1000
+}
+
+foreach loc in "" other_ {
+  gen `loc'green_views = `loc'green_views__q_trees | `loc'green_views__q_grass
+  gen `loc'blue_views  = `loc'green_views__q_water | `loc'green_views__q_pond
 }
 
 foreach lcmsuffix in r1000 r3000 r10000 {
@@ -430,5 +438,12 @@ foreach lcmsuffix in r1000 r3000 r10000 {
 }
 
 * }
+
+* SF-6D {
+
+merge 1:1 id using "$ukneadir/survey_data/sf-6d/bayes_posterior_means.dta", generate(_sf6dmerge)
+
+* }
+
 
 save "$phddatadir/uk_data_for_analsis.dta", replace

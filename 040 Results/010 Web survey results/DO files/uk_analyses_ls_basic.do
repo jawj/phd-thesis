@@ -34,7 +34,7 @@ regress
   ln_home_station_dist
   ln_home_coast_dist
   
-  home_popdens_ppkm2 // home_lsoa_popdens
+  home_popdens_kpkm2 // home_lsoa_popdens
   home_house_price_med9 // home_lsoa_house_price_fe 
   
   // i.home_country  // wipes out all lcm!
