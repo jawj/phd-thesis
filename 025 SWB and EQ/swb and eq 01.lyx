@@ -949,21 +949,12 @@ key "rehdanz:2005"
  
 \begin_inset CommandInset citation
 LatexCommand citet
-after "p. 15"
-key "maddison:2010"
+key "maddison:2010a"
 
 \end_inset
 
- cites an unpublished study by the same authors, using data from 87 countries
- and concluding that 
-\begin_inset Quotes eld
-\end_inset
-
-deviations from 65°F (18.3°C) significantly reduce life satisfaction
-\begin_inset Quotes erd
-\end_inset
-
-.
+, using data from 87 countries, conclude that deviations from an ideal temperatu
+re of 18.3°C significantly reduce life satisfaction.
  
 \begin_inset CommandInset citation
 LatexCommand citet
