@@ -3,7 +3,8 @@ set more off
 
 #delimit ;
 foreach lcmsuffix in r1000 r3000 r10000 {;
-foreach lcm in coast water mountain grassland farmland woodland suburban inlandbare {;
+ // foreach lcm in coast water mountain grassland farmland woodland suburban inlandbare {;
+foreach lcm in coast water greens suburban inlandbare {;
   capture drop hc_`lcm';
   gen hc_`lcm' = home_`lcm'_`lcmsuffix';
 };
@@ -12,7 +13,9 @@ regress
   // sf36_emo_wb 
   // panas_positive 
   // panas_negative
-
+  
+  hc_*
+/**
   hc_coast
   hc_water
   hc_mountain
@@ -21,7 +24,8 @@ regress
   hc_woodland
   hc_suburban
   hc_inlandbare
-  
+**/
+
   ln_home_natpark_dist
   ln_home_aonb_dist
   ln_home_nnr_dist
@@ -51,7 +55,7 @@ regress
   lives_alone
   religious
 ;
-outreg2 using "/Users/George/Downloads/regs_uk_01.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
+outreg2 using "/Users/George/Downloads/regs_uk_01_lcmagg.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
 };
 #delimit CR
 

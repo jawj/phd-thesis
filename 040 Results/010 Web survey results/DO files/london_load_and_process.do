@@ -438,6 +438,10 @@ foreach lcm in coast water mountain grassland farmland woodland suburban inlandb
   gen ln_home_`lcm'_sd1000 = ln(home_`lcm'_sd1000 + 1)
 }
 
+foreach lcmsuffix in r200 r1000 r3000 r10000 {
+  gen home_greens_`lcmsuffix' = home_mountain_`lcmsuffix' + home_grassland_`lcmsuffix' + home_farmland_`lcmsuffix' + home_woodland_`lcmsuffix' 
+}
+
 * weather
 gen sunny = weather_code == 1
 replace sunny = . if missing(weather_code) | weather_code == 99

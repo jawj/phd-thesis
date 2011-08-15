@@ -136,8 +136,6 @@ gen ipaq_all_mod_mmw  = ipaq_work_mod_mmw  + ipaq_yard_mod_mmw    + ipaq_inside_
 gen ipaq_all_vig_mmw  = ipaq_work_vig_mmw  + ipaq_leisure_vig_mmw 
 gen ipaq_total_mmw    = ipaq_all_walk_mmw  + ipaq_all_mod_mmw     + ipaq_all_vig_mmw 
 
-gen ipaq_total_mhw = ipaq_total_mmw / 60
-
 * green exercise
 
 recode ipaq_leisure_walk_green__q   (4 = 0.9) (3 = 0.65) (2 = 0.4) (1 = 0.15) (0 = 0) (. = 0), gen(walk_green_prop)
@@ -427,7 +425,9 @@ foreach loc in home other {
   }
 }
 
-
+foreach lcmsuffix in r1000 r3000 r10000 {
+  gen home_greens_`lcmsuffix' = home_mountain_`lcmsuffix' + home_grassland_`lcmsuffix' + home_farmland_`lcmsuffix' + home_woodland_`lcmsuffix' 
+}
 
 * }
 
