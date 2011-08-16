@@ -213,8 +213,8 @@ key "aks:1996,juricevic:2010"
 \end_layout
 
 \begin_layout Standard
-Of course, the positive effects of natural environments could be recast
- as an absence of the negative effects of non-natural, urban environments.
+Of course, positive effects of natural environments could be recast as an
+ absence of the negative effects of non-natural, urban environments.
  Urban environments may have negative impacts owing to the high levels of
  arousal, stress, or directed attention they engender or require 
 \begin_inset CommandInset citation
@@ -508,7 +508,7 @@ key "gouveia:2005"
 Adverse health effects of noise and air pollution are well documented.
  Chronic traffic noise exposure in urban environments can cause severe sleep
  disturbance, hearing impairment, tinnitus, and raised stress levels, leading
- to high blood pressure, coronary heart disease, strokes, and possibly immune
+ to high blood pressure, coronary heart disease, stroke, and possibly immune
  system and birth defects 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -742,7 +742,7 @@ Studies in conventional economics
 In economics, relationships between location and quality of life have long
  been a subject of interest in the hedonic pricing literature, in which
  environmental and urban amenities have been used to account for regional
- wage and rent differentials and construct ‘objective’ quality of life indices
+ wage and rent differentials and construct 'objective' quality of life indices
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -751,8 +751,8 @@ key "moro:2008"
 \end_inset
 
 .
- Hedonic valuation has been used to investigate the impacts of a variety
- of EQ parameters, including road noise, air quality, water quality, forests,
+ Hedonic valuation has been used to investigate the impacts of various EQ
+ parameters, including road noise, air quality, water quality, forests,
  wetlands, view of nature, urban trees and open spaces.
  
 \end_layout
@@ -823,7 +823,7 @@ key "welsch:2009"
 
 \end_inset
 
- offer a synopsis of selected studies valuing EQ through SWB.
+ give a synopsis of selected studies valuing EQ through SWB.
 \end_layout
 
 \begin_layout Paragraph
@@ -1629,8 +1629,16 @@ In this strand of research we design, implement, and collect and analyse
  data from two new cross-sectional surveys.
  The first survey was completed by a quota sample of approximately 1,000
  Londoners, and the second by approximately 2,000 people across the UK.
- This strand contributes to the literature, building on the previous research
- surveyed above, in a number of ways.
+\end_layout
+
+\begin_layout Standard
+The two main limitations of this strand --- the areas in which we do not
+ improve upon existing literature in ways that we we would ideally like
+ --- are that we do not seek to determine the causality of the associations
+ we investigate, and we do not employ spatial econometric models that might
+ help deal with omitted spatial covariates of our explanatory variables.
+ However, this strand make a significant contribution to the literature,
+ building on the previous research surveyed above, in a number of ways.
 \end_layout
 
 \begin_layout Description
@@ -1672,7 +1680,7 @@ key "mackerron:2008"
 \end_inset
 
 .
- It also eliminates the MAUP.
+ It also means that we are not subject the modifiable areal unit problem.
 \end_layout
 
 \begin_layout Description
@@ -1684,14 +1692,16 @@ GIS
 \begin_inset space ~
 \end_inset
 
-methods For parameters that are not point estimates -- such as accessibility
- of particular land cover types -- we do not rely on distance measurements,
- but make use of the same advances in GIS that have been exploited in hedonic
- pricing studies.
+methods For parameters that are not point estimates -- such as the accessibility
+ of particular land cover types -- we make use of the same advances in GIS
+ that have been exploited in hedonic pricing studies.
  We measure the local quantity of amenities by calculating the proportion
  of land they represent within a certain radius of respondents' locations.
- We also calculate measures accounting for both quantity and proximity,
- in the form of kernel-weighted proportion estimates.
+ We also calculate more advanced measures accounting for both quantity 
+\emph on
+and
+\emph default
+ proximity, in the form of kernel-weighted proportion estimates.
 \end_layout
 
 \begin_layout Description
@@ -1725,7 +1735,7 @@ and
 
 space We consider a number of EQ characteristics which have not previously
  been included in happiness economics research, including accessibility
- of green space and 'blue' space.
+ of green and 'blue' space.
  
 \begin_inset Note Note
 status open
@@ -1815,15 +1825,6 @@ Do we? Which?
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Probably the two clearest limitations of this strand --- that is, areas
- in which we do not improve upon existing literature in ways that we we
- would ideally like --- are that we do not seek to determine the causality
- of the associations we investigate, and we do not employ spatial econometric
- models that might help deal with omitted spatial covariates of our explanatory
- variables.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1927,25 +1928,47 @@ Immediate happiness and immediate environment
 \end_layout
 
 \begin_layout Standard
-In this strand of research we design, implement, and collect and analyse
- panel data from a novel ESM study.
- The study uses participants' own smartphones both to facilitate a very
- large sample size, and to collect GPS location data, photographs and noise
- level measurements alongside the traditional ESM self-report data.
+In this second strand of research we design, implement, and collect and
+ analyse panel data from an ESM study using participants' own smartphones.
 \end_layout
 
 \begin_layout Standard
-As far as we are aware this research methodology is completely novel both
- within happiness economics and in the context of research into the effects
- of EQ on wellbeing across disciplines
+We develop a native software application (app) named 
+\emph on
+Mappiness
+\emph default
+ for the Apple iPhone.
+ The app is distributed via the App Store, a central software repository
+ accessible to all device users.
+ Participants are recruited opportunistically, assisted by coverage in tradition
+al and social media.
+ Prospective participants download the app at no charge, indicate their
+ informed consent to take part, and provide some basic demographic information.
+ They are then signalled at random moments and asked to report on their
+ mood on a continuous sliding scale.
+ They are also asked whom they are with, where they are, and what they are
+ doing.
+ While they answer, their precise location is determined by GPS.
+ All data are then transmitted wirelessly to our server.
+ Participants receive simple feedback, charting their happiness in different
+ contexts, and can take part for as long or short a period as they wish.
+ 
+\end_layout
+
+\begin_layout Standard
+The main limitation of this strand is that we are not able to reach a representa
+tive sample of the UK population.
+ However, as far as we are aware, this research methodology is completely
+ novel both within happiness economics and in the broader context of research
+ across disciplines into the wellbeing effects of EQ
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
 Since commencing this research we have become aware of other studies using
  smartphones to collect data from large samples --- a method sometimes referred
- to as (or as a part of) crowdsourcing, ubiquitous computing (ubicomp),
- citizen science or citizen cyberscience.
+ to as (or as a part of) crowdsourcing, ubiquitous computing (UbiComp),
+ or citizen (cyber-)science.
  For example, studies are described at 
 \begin_inset Flex URL
 status collapsed
@@ -2024,14 +2047,8 @@ key "killingsworth:2010"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-(Briefly, why it's great.)
-\end_layout
-
-\begin_layout Standard
-(Limitations: non-representative sample, no valuation).
+ As such, it provides a powerful and entirely new line of evidence on the
+ relationship between wellbeing and EQ.
 \end_layout
 
 \begin_layout Standard
@@ -2088,314 +2105,6 @@ reference "chap:esm-results"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-In the light of these limitations of the existing research, an assessment
- of the relationship between LS and EQ at a much finer level of spatial
- disaggregation would appear to be a novel and valuable contribution to
- the literature.
- This study uses simple proxy indicators of noise and access to nature,
- and more sophisticated models of air pollution concentration, all calculated
- at individual postcode level.
-\end_layout
-
-\begin_layout Subsection
-London
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Ls-eq-london"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-London is a particularly interesting location for a study of relationships
- between LS and EQ, because it has distinctive characteristics in respect
- of both, and of air pollution in particular.
-\end_layout
-
-\begin_layout Paragraph
-Life satisfaction
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:london-life-satisfaction"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\lang english
-Mean LS scores by UK region from the European Social Survey 2 (on a scale
- of 0--10, with 144 respondents in London and 1890 total)
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:london-ess-LS-scores"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-LS data does not currently appear to be collected by any London agency---it
- is not one of the London Sustainable Development Commission's many indicators,
- nor part of the GLA's Annual London Survey.
- As seen in Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:london-ess-LS-scores"
-
-\end_inset
-
-, European Social Survey (ESS) 2 data for a small sample of Londoners suggests
- that LS scores in London could be substantially lower than elsewhere in
- the UK 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "ess:2007"
-
-\end_inset
-
-, although a poll for a BBC TV series reported London LS scores around the
- national average 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "nop:2006"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Plain Layout
-London also differs from the UK average in many demographic and socio-economic
- parameters that could affect LS.
- Out of all UK regions, it has: the highest inward and outward migration;
- the youngest and most ethnically diverse population; the greatest number
- of households of unrelated adults, lone parents, multiple families and
- single people; the greatest proportion of children below the poverty threshold
- (40%); and the highest levels of concern over violent crime 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "national-statistics:2007"
-
-\end_inset
-
-.
- It also has a disproportionate number of households in both the top and
- bottom quintiles of UK income after housing costs (28% and 26% respectively)
- and, thanks to UK tax incentives, counts an increasing number of the world's
- so-called 
-\begin_inset Quotes eld
-\end_inset
-
-super-rich
-\begin_inset Quotes erd
-\end_inset
-
- among its residents 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "davis:2007"
-
-\end_inset
-
-.
- These disparities in wealth may be socially divisive, and would certainly
- be expected to worsen the negative effects of rivalry on LS.
- 
-\end_layout
-
-\begin_layout Paragraph
-Environmental quality
-\end_layout
-
-\begin_layout Plain Layout
-In respect of access to nature, London is one of the largest cities in the
- developed world in terms of built-up area, with most residents thus some
- distance from any wild natural environment.
- However, London also has more parks and green spaces than any other city
- of comparable size worldwide 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "national-statistics:2007"
-
-\end_inset
-
-.
- With regard to noise, 42% of London residents see this as a significant
- environmental problem in London
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-In this and following statistics from the Greater London Authority's (GLA)
- Annual London Survey, a 'significant' problem is interpreted as one rated
- 1 or 2 on a scale from 1 ('a major problem') to 5 ('no problem at all').
- This follows the GLA's own interpretation in the Mayor's Air Quality Strategy
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "authority:2005"
-
-\end_inset
-
-, for example.
-\end_layout
-
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "mori:2007"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Plain Layout
-Air pollution, however, is probably the biggest single environmental issue
- in London.
- Although the notorious 'pea-souper' smogs of the 1950s are long gone, London's
- air quality is still the worst in the UK and among the worst in Europe,
- consistently failing annual objectives for nitrogen dioxide and particulates
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-An additional source of pollution distinctive to London is particulates
- on the Underground system, and the well-publicised calculation that every
- 20 minutes spent travelling on the Northern line is equivalent to smoking
- one cigarette 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "croxford:2003"
-
-\end_inset
-
-.
- However, the calculation is based simply on particulate mass, not health
- effects, and these particulates are not believed to be significantly harmful
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "seaton:2005"
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "authority:2005"
-
-\end_inset
-
-.
- An estimated 1,600 people in London die prematurely each year as a result
- of health problems caused by breathing polluted air 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "commission:2005"
-
-\end_inset
-
-.
- Most Londoners---56% and 72% respectively---believe air quality and pollution
- from exhaust fumes to be significant environmental problems 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "mori:2007"
-
-\end_inset
-
-.
- Moreover, 66% believe that air quality issues are affecting their 'quality
- of life' 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "authority:2002"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Plain Layout
-The Mayor is addressing air pollution both under his statutory obligations
- and as part of his climate change strategy 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "legge:2007"
-
-\end_inset
-
-.
- The Central London Congestion Charging Scheme (CC), when introduced in
- February 2003, reduced nitrogen oxides and particulates by an average of
- 16% along major roads, but its limited zone and hours of operation have
- made consequent medium-term emissions reductions difficult to detect 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "authority:2005"
-
-\end_inset
-
-.
- The London Low Emission Zone (LEZ), to be implemented progressively between
- 2008 and 2012, and CC incentives for lower emission cars, planned for 2008
- and 2009, may improve the situation somewhat 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "legge:2007"
-
-\end_inset
-
-.
- However, for the time being, air pollution remains a serious problem.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
