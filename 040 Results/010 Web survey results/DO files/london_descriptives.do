@@ -45,30 +45,30 @@ keep id nspd_point_e nspd_point_n  // wrong! should be map point, not postcode p
 outsheet using "~/Downloads/points.csv", comma  // for mapping in QGIS
 restore
 
-
+set more off
 #delimit ;
-sum // corr pca br
+local rhsvars
 
 home_map_pm10a 
 home_map_no2a 
 
-home_coast_sd1000
-home_water_sd1000
-home_mountain_sd1000
-home_grassland_sd1000
-home_farmland_sd1000
-home_woodland_sd1000
-home_suburban_sd1000
-home_inlandbare_sd1000
+home_coast_r3000
+home_water_r3000
+home_mountain_r3000
+home_grassland_r3000
+home_farmland_r3000
+home_woodland_r3000
+home_suburban_r3000
+home_inlandbare_r3000
 
-home_osm_green_sd1000 
-home_osm_park_sd1000 
-home_gigl_green_sd1000 
+home_osm_green_r3000 
+home_osm_park_r3000 
+home_gigl_green_r3000 
 home_aod_01
 
-home_lhr09_quietish
-home_road_quietish 
-home_rail_quietish 
+home_lhr09_quiet
+home_road_quiet 
+home_rail_quiet 
 
 ln_home_z1_dist 
 ln_home_tube_or_station_dist 
@@ -79,8 +79,18 @@ home_rb_per_khh
 home_vap_per_kp 
 
 home_lsoa_popdens
+home_popdens_ppkm2
+
 home_lsoa_house_price_fe
 home_house_price_med9
-home_popdens_ppkm2
 ;
+
+ // sum `rhsvars';
+ // corr `rhsvars';
+
+estpost correlate `rhsvars', matrix listwise;
+est store c1;
+esttab * using "/Users/gjm06/Downloads/corrs.html", label unstack not nostar noobs html replace;
+
 delimit CR
+

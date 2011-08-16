@@ -458,5 +458,42 @@ gen home_road_noise_x_nodblglaz = home_noise_road_lden * nodblglazing
 
 * }
 
+* Labels {
+
+label variable home_map_pm10a "Annual average PM10 level (ug/m3)"
+label variable home_map_no2a "Annual average NO2 level (ug/m3)"
+
+foreach lcmsuffix in sd200 sd1000 r200 r1000 r3000 r10000 {
+  label variable home_coast_`lcmsuffix' "Marine and coastal margins"
+  label variable home_water_`lcmsuffix' "Freshwater, wetlands and floodplains"
+  label variable home_mountain_`lcmsuffix' "Mountains, moors and heathlands"
+  label variable home_grassland_`lcmsuffix' "Semi-natural grasslands"
+  label variable home_farmland_`lcmsuffix' "Enclosed farmland"
+  label variable home_woodland_`lcmsuffix' "Woodland"
+  label variable home_suburban_`lcmsuffix' "Suburban/rural developed"
+  label variable home_inlandbare_`lcmsuffix' "Inland bare ground"
+}
+foreach lcmsuffix in sd200 sd1000 r200 r1000 r3000 {
+  label variable home_osm_green_`lcmsuffix' "OSM green spaces"
+  label variable home_osm_park_`lcmsuffix' "OSM parks"
+  label variable home_gigl_green_`lcmsuffix' "GiGL open spaces"
+}
+label variable home_aod_01 "GLA area of deficiency"
+label variable home_lhr09_quiet "LHR noise, Leq < 57 dB(A)"
+label variable home_road_quiet "Road noise, Lden < 55 dB(A)"
+label variable home_rail_quiet "Rail noise, Lden < 55 dB(A)"
+label variable ln_home_z1_dist "Distance from Zone 1, ln(m)"
+label variable ln_home_tube_or_station_dist "Distance to Tube/station, ln(m)"
+label variable ln_home_railway_dist "Distance to railway line, ln(m)"
+label variable home_tno_per_kp "Total notifiable offences (LSOA, per 1,000 pop.)"
+label variable home_rb_per_khh "Residential burglaries (LSOA, per 1,000 households)"
+label variable home_vap_per_kp "Violence against the person (LSOA, per 1,000 pop.)"
+label variable home_lsoa_popdens "Pop. density (LSOA, people/m2)"
+label variable home_popdens_ppkm2 "Pop. density (km2, people/km2)"
+label variable home_lsoa_house_price_fe "House price (std. LSOA mean)"
+label variable home_house_price_med9 "House price (std. local median)"
+
+* }
+
 save "$phddatadir/london_data_for_analsis.dta", replace
 

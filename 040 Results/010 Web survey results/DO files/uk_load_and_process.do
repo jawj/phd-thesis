@@ -445,5 +445,11 @@ merge 1:1 id using "$ukneadir/survey_data/sf-6d/bayes_posterior_means.dta", gene
 
 * }
 
+* Labels {
+
+
+
+* }
+
 
 save "$phddatadir/uk_data_for_analsis.dta", replace
