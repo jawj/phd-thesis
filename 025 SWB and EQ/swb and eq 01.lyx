@@ -1638,15 +1638,15 @@ High
 \begin_inset space ~
 \end_inset
 
-spatial
-\begin_inset space ~
-\end_inset
-
 resolution
 \begin_inset space ~
 \end_inset
 
-GIS Most existing studies have access to EQ data and respondent location
+spatial
+\begin_inset space ~
+\end_inset
+
+data Most existing studies have access to EQ data and respondent location
  only at ward level (or worse).
  By contrast, most of the EQ data we use is of 25m resolution or better.
  We have full UK postcodes for all respondents, and in the London survey
@@ -1654,7 +1654,7 @@ GIS Most existing studies have access to EQ data and respondent location
 e map.
  This additional precision in location is particularly important in relation
  to air pollution and noise estimates, since these parameters may vary over
- very short distances.
+ very short distances
 \begin_inset Foot
 status collapsed
 
@@ -1671,47 +1671,31 @@ key "mackerron:2008"
 
 \end_inset
 
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Bringing advances from hedonic pricing studies to SWB ones(?).
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Also better/more advanced GIS measures -- i.e.
- (kernel-weighted) % within radii -- i.e.
- *combining* distance and proportion measures!
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-also -- no MAUP!
-\end_layout
-
-\end_inset
-
-
+.
+ It also eliminates the MAUP.
 \end_layout
 
 \begin_layout Description
-Range
+Advanced
 \begin_inset space ~
 \end_inset
 
-of
+GIS
+\begin_inset space ~
+\end_inset
+
+methods For parameters that are not point estimates -- such as accessibility
+ of particular land cover types -- we do not rely on distance measurements,
+ but make use of the same advances in GIS that have been exploited in hedonic
+ pricing studies.
+ We measure the local quantity of amenities by calculating the proportion
+ of land they represent within a certain radius of respondents' locations.
+ We also calculate measures accounting for both quantity and proximity,
+ in the form of kernel-weighted proportion estimates.
+\end_layout
+
+\begin_layout Description
+Multiple
 \begin_inset space ~
 \end_inset
 
@@ -1742,8 +1726,18 @@ and
 space We consider a number of EQ characteristics which have not previously
  been included in happiness economics research, including accessibility
  of green space and 'blue' space.
- Unlike previous studies in happiness economics, we also investigate indicators
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Unlike previous studies in happiness economics, we also investigate indicators
  of the use of these environments, including 'green exercise'.
+\end_layout
+
+\end_inset
+
+
 \begin_inset Note Note
 status open
 
@@ -1811,6 +1805,16 @@ key "fujiwara:2011"
 \end_inset
 
 .
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Do we? Which?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
