@@ -1827,37 +1827,99 @@ Probably the two clearest limitations of this strand --- that is, areas
 \end_layout
 
 \begin_layout Subsubsection
-Why London? UK
+Study areas
 \end_layout
 
 \begin_layout Standard
-(data availability; interesting EQ characteristics -- air pollution and
- parks; convenience)
+The two surveys are conducted at different scales, bringing different advantages
+ and limitations and permitting different EQ parameters to be investigated
+ effectively.
+\end_layout
+
+\begin_layout Paragraph
+London
 \end_layout
 
 \begin_layout Standard
-The data collection methods are described in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sec:survey-methods"
-
-\end_inset
-
-, the methods of analysis are outlined in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "chap:analysis-methods"
-
-\end_inset
-
-, and the results are presented in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "chap:survey-results"
+For London, a range of high-resolution spatial data sets exist that are
+ not available UK-wide, such as modelled air pollutant concentrations and
+ noise levels from roads and railways.
+ London also has distinctive EQ characteristics.
+ It is one of the largest cities in the developed world in terms of built-up
+ area, with most residents thus some distance from any wild natural environment.
+ However, it also has more parks and green spaces than any other city of
+ comparable size worldwide 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "national-statistics:2007"
 
 \end_inset
 
 .
+ 42% of residents see noise as a significant environmental problem in London,
+ and most --- 56% and 72% respectively --- believe the same of air quality
+ and pollution from exhaust fumes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mori:2007"
+
+\end_inset
+
+.
+ London's air quality is in fact the worst in the UK and among the worst
+ in Europe, consistently failing annual objectives for nitrogen dioxide
+ and particulates
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+An additional source of pollution distinctive to London is particulates
+ on the Underground system, and the well-publicised calculation that every
+ 20 minutes spent travelling on the Northern line is equivalent to smoking
+ one cigarette 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "croxford:2003"
+
+\end_inset
+
+.
+ However, the calculation is based simply on particulate mass, not health
+ effects, and these particulates are not believed to be significantly harmful
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "seaton:2005"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "authority:2005"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+UK
+\end_layout
+
+\begin_layout Standard
+In comparison to London alone, the UK as a whole is of course much more
+ heterogeneous in terms of EQ characteristics.
+ UK locations provide greater variation in land cover types, and permit
+ meaningful distinctions in relation to distance parameters which in London
+ cannot be separated from other geographical characteristics (for example,
+ the distance to the coast for a point in London is essentially just a measure
+ of its westerliness).
 \end_layout
 
 \begin_layout Subsection
@@ -1973,14 +2035,45 @@ key "killingsworth:2010"
 \end_layout
 
 \begin_layout Standard
-The data collection methods are described in 
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the first research strand, investigating recalled happiness, data collection
+ methods are described in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:survey-methods"
+
+\end_inset
+
+, the methods of analysis are outlined in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:analysis-methods"
+
+\end_inset
+
+, and the results are presented in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:survey-results"
+
+\end_inset
+
+.
+ For the second strand, investigating momentary happiness, data collection
+ methods are described in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:esm-research-methods"
 
 \end_inset
 
-, the methods of analysis are outlined in 
+, the methods of analysis are again outlined in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:analysis-methods"
