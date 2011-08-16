@@ -739,56 +739,6 @@ Studies in conventional economics
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Brief outline of relevant hedonic pricing study findings? As in Steve's
- hedonic UKNEA paper (p.4)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Conventional valuation methods have been widely used to investigate relationship
-s between and PS utility and EQ, including effects of road noise, air quality,
- water quality, forests, wetlands, view of nature, urban trees, and open
- spaces.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "gibbons:2011a"
-
-\end_inset
-
- provide a summary.
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citet
-key "smith:2010"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Studies in happiness economics
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:eq-swb-economic-studies"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 In economics, relationships between location and quality of life have long
  been a subject of interest in the hedonic pricing literature, in which
  environmental and urban amenities have been used to account for regional
@@ -801,7 +751,57 @@ key "moro:2008"
 \end_inset
 
 .
+ Hedonic valuation has been used to investigate the impacts of a variety
+ of EQ parameters, including road noise, air quality, water quality, forests,
+ wetlands, view of nature, urban trees and open spaces.
  
+\end_layout
+
+\begin_layout Standard
+For example, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "smith:2010"
+
+\end_inset
+
+ finds that each hectare of parkland within 1km increases London house prices
+ by 0.08%, while a large park within 600 metres adds 2 -- 3% to a house's
+ value, and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "gibbons:2011a"
+
+\end_inset
+
+ find that local green space, water, woodland and farmland attract a considerabl
+e house price premium in England, while increasing distance to natural amenities
+ such as rivers and National Parks is associated with a fall in house prices.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "gibbons:2011a"
+
+\end_inset
+
+ also provide a more complete survey of studies of this type.
+\end_layout
+
+\begin_layout Standard
+Hedonic pricing studies have most commonly used only distances as indicators
+ of EQ characteristics, although the two studies cited exploit improved
+ GIS capabilities to also consider the local quantities of certain amenities.
+\end_layout
+
+\begin_layout Subsection
+Studies in happiness economics
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:eq-swb-economic-studies"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1310,7 +1310,10 @@ The remaining papers use individual-level SWB data, controlling for various
 \begin_layout Standard
 A major limitation of most of these studies remains the level of spatial
  aggregation of EQ measures, which are rarely at better (and frequently
- at worse) than electoral ward level
+ at worse) than electoral ward level.
+ The use of such spatially aggregated statistics leads to reduced accuracy,
+ to an extent which may be problematic in the case of characteristics varying
+ over short distances, such as noise or air pollution
 \begin_inset Foot
 status collapsed
 
@@ -1341,8 +1344,22 @@ key "mackerron:2008"
 \end_inset
 
 .
- Even where EQ near the home is estimated more accurately, this may not
- correspond closely to an individual's actual exposure to or experience
+ It also raises the Modifiable Areal Unit Problem (MAUP): it could be that
+ substantially different results would have been obtained if measurements
+ had been aggregated across different spatial units 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "openshaw:1984"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Even where EQ near the home is estimated accurately, that quantity may itself
+ not correspond closely to an individual's actual exposure to or experience
  of EQ.
  For example, exposure in or near the home to certain kinds of air pollution
  may account for only a small fraction of the total variation in exposure
@@ -1440,7 +1457,7 @@ key "ferreira:2010"
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Also don't look at green exercise?
@@ -1584,8 +1601,8 @@ The first strand builds directly on previous EQ research in happiness economics,
  linking recalled happiness assessments to respondents' usual environments,
  and improving on this in a number of areas.
  The second strand updates the ESM protocol to facilitate very large sample
- sizes, and to incorporate GPS (sat-nav) location data that can be used
- within a GIS to estimate objective indicators of EQ.
+ sizes, and to incorporate satellite positioning (GPS) location data that
+ can be used within a GIS to estimate objective indicators of EQ.
  The first strand is largely evolutionary, while the second is a little
  more revolutionary.
  
@@ -1612,8 +1629,8 @@ In this strand of research we design, implement, and collect and analyse
  data from two new cross-sectional surveys.
  The first survey was completed by a quota sample of approximately 1,000
  Londoners, and the second by approximately 2,000 people across the UK.
- This strand contributes to the literature, by building on the previous
- research surveyed above, in a number of ways.
+ This strand contributes to the literature, building on the previous research
+ surveyed above, in a number of ways.
 \end_layout
 
 \begin_layout Description
@@ -1659,7 +1676,7 @@ key "mackerron:2008"
 status open
 
 \begin_layout Plain Layout
-As has been done in hedonic pricing studies but not SWB ones(?).
+Bringing advances from hedonic pricing studies to SWB ones(?).
 \end_layout
 
 \end_inset
@@ -1681,7 +1698,7 @@ Also better/more advanced GIS measures -- i.e.
 status open
 
 \begin_layout Plain Layout
-also -- no MAUP! and mention MAUP above
+also -- no MAUP!
 \end_layout
 
 \end_inset
@@ -1806,7 +1823,7 @@ Probably the two clearest limitations of this strand --- that is, areas
 \end_layout
 
 \begin_layout Subsubsection
-Why London?
+Why London? UK
 \end_layout
 
 \begin_layout Standard
