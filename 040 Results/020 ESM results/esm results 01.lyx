@@ -15292,7 +15292,7 @@ Land cover
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -17849,7 +17849,7 @@ a priori
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 TODO Note that we 
@@ -17908,7 +17908,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch Massive_results_table
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset Newpage newpage
@@ -18251,7 +18251,7 @@ In a vehicle
 \uwave off
 \noun off
 \color none
-0.14
+(0.14)
 \end_layout
 
 \end_inset
@@ -18327,7 +18327,7 @@ Outdoors
 \uwave off
 \noun off
 \color none
-0.45
+(0.45)
 \end_layout
 
 \end_inset
@@ -18453,7 +18453,7 @@ At work
 \uwave off
 \noun off
 \color none
-0.12
+(0.12)
 \end_layout
 
 \end_inset
@@ -18529,7 +18529,7 @@ Elsewhere
 \uwave off
 \noun off
 \color none
-0.09
+(0.09)
 \end_layout
 
 \end_inset
@@ -18745,7 +18745,7 @@ Marine and coastal margins
 \uwave off
 \noun off
 \color none
-0.68
+(0.68)
 \end_layout
 
 \end_inset
@@ -18821,7 +18821,7 @@ Mountains, moors and heathland
 \uwave off
 \noun off
 \color none
-0.87
+(0.87)
 \end_layout
 
 \end_inset
@@ -18897,7 +18897,7 @@ Woodland
 \uwave off
 \noun off
 \color none
-0.34
+(0.34)
 \end_layout
 
 \end_inset
@@ -18973,7 +18973,7 @@ Semi-natural grasslands
 \uwave off
 \noun off
 \color none
-0.35
+(0.35)
 \end_layout
 
 \end_inset
@@ -19049,7 +19049,7 @@ Enclosed farmland
 \uwave off
 \noun off
 \color none
-0.24
+(0.24)
 \end_layout
 
 \end_inset
@@ -19125,7 +19125,7 @@ Freshwater, wetlands and flood plains
 \uwave off
 \noun off
 \color none
-0.63
+(0.63)
 \end_layout
 
 \end_inset
@@ -19201,7 +19201,7 @@ Suburban/rural developed
 \uwave off
 \noun off
 \color none
-0.16
+(0.16)
 \end_layout
 
 \end_inset
@@ -19287,7 +19287,7 @@ Inland bare ground
 \uwave off
 \noun off
 \color none
-0.47
+(0.47)
 \end_layout
 
 \end_inset
@@ -19451,7 +19451,7 @@ Daylight
 \uwave off
 \noun off
 \color none
-0.17
+(0.17)
 \end_layout
 
 \end_inset
@@ -19537,7 +19537,7 @@ Snow
 \uwave off
 \noun off
 \color none
-0.72
+(0.72)
 \end_layout
 
 \end_inset
@@ -19613,7 +19613,7 @@ Sun
 \uwave off
 \noun off
 \color none
-0.18
+(0.18)
 \end_layout
 
 \end_inset
@@ -19689,7 +19689,7 @@ Fog
 \uwave off
 \noun off
 \color none
-0.54
+(0.54)
 \end_layout
 
 \end_inset
@@ -19765,7 +19765,7 @@ Rain
 \uwave off
 \noun off
 \color none
-0.22
+(0.22)
 \end_layout
 
 \end_inset
@@ -19901,7 +19901,7 @@ Rain
 \uwave off
 \noun off
 \color none
-0.41
+(0.41)
 \end_layout
 
 \end_inset
@@ -19987,7 +19987,7 @@ Rain
 \uwave off
 \noun off
 \color none
-0.42
+(0.42)
 \end_layout
 
 \end_inset
@@ -20063,7 +20063,7 @@ Rain
 \uwave off
 \noun off
 \color none
-0.42
+(0.42)
 \end_layout
 
 \end_inset
@@ -20139,7 +20139,7 @@ Rain
 \uwave off
 \noun off
 \color none
-1.21
+(1.21)
 \end_layout
 
 \end_inset
@@ -20275,7 +20275,7 @@ Rain
 \uwave off
 \noun off
 \color none
-0.19
+(0.19)
 \end_layout
 
 \end_inset
@@ -20351,7 +20351,7 @@ Rain
 \uwave off
 \noun off
 \color none
-0.20
+(0.20)
 \end_layout
 
 \end_inset
@@ -20427,7 +20427,7 @@ Rain
 \uwave off
 \noun off
 \color none
-0.25
+(0.25)
 \end_layout
 
 \end_inset
@@ -20581,7 +20581,7 @@ Intimacy, making love
 \uwave off
 \noun off
 \color none
-0.32
+(0.32)
 \end_layout
 
 \end_inset
@@ -20657,7 +20657,7 @@ Sports, running, exercise
 \uwave off
 \noun off
 \color none
-0.19
+(0.19)
 \end_layout
 
 \end_inset
@@ -20733,7 +20733,7 @@ Theatre, dance, concert
 \uwave off
 \noun off
 \color none
-0.31
+(0.31)
 \end_layout
 
 \end_inset
@@ -20809,7 +20809,7 @@ Singing, performing
 \uwave off
 \noun off
 \color none
-0.33
+(0.33)
 \end_layout
 
 \end_inset
@@ -20885,7 +20885,7 @@ Exhibition, museum, library
 \uwave off
 \noun off
 \color none
-0.36
+(0.36)
 \end_layout
 
 \end_inset
@@ -20961,7 +20961,7 @@ Hobbies, arts, crafts
 \uwave off
 \noun off
 \color none
-0.21
+(0.21)
 \end_layout
 
 \end_inset
@@ -21037,7 +21037,7 @@ Talking, chatting, socialising
 \uwave off
 \noun off
 \color none
-0.08
+(0.08)
 \end_layout
 
 \end_inset
@@ -21113,7 +21113,7 @@ Birdwatching, nature watching
 \uwave off
 \noun off
 \color none
-0.62
+(0.62)
 \end_layout
 
 \end_inset
@@ -21189,7 +21189,7 @@ Drinking alcohol
 \uwave off
 \noun off
 \color none
-0.11
+(0.11)
 \end_layout
 
 \end_inset
@@ -21265,7 +21265,7 @@ Meditating, religious activities
 \uwave off
 \noun off
 \color none
-0.47
+(0.47)
 \end_layout
 
 \end_inset
@@ -21341,7 +21341,7 @@ Listening to music
 \uwave off
 \noun off
 \color none
-0.10
+(0.10)
 \end_layout
 
 \end_inset
@@ -21417,7 +21417,7 @@ Gardening, allotment
 \uwave off
 \noun off
 \color none
-0.44
+(0.44)
 \end_layout
 
 \end_inset
@@ -21493,7 +21493,7 @@ Hunting, fishing
 \uwave off
 \noun off
 \color none
-1.36
+(1.36)
 \end_layout
 
 \end_inset
@@ -21569,7 +21569,7 @@ Pet care, playing with pets
 \uwave off
 \noun off
 \color none
-0.21
+(0.21)
 \end_layout
 
 \end_inset
@@ -21645,7 +21645,7 @@ Childcare, playing with children
 \uwave off
 \noun off
 \color none
-0.17
+(0.17)
 \end_layout
 
 \end_inset
@@ -21721,7 +21721,7 @@ Computer games, iPhone games
 \uwave off
 \noun off
 \color none
-0.12
+(0.12)
 \end_layout
 
 \end_inset
@@ -21797,7 +21797,7 @@ Walking, hiking
 \uwave off
 \noun off
 \color none
-0.18
+(0.18)
 \end_layout
 
 \end_inset
@@ -21873,7 +21873,7 @@ Other games, puzzles
 \uwave off
 \noun off
 \color none
-0.26
+(0.26)
 \end_layout
 
 \end_inset
@@ -21949,7 +21949,7 @@ Watching TV, film
 \uwave off
 \noun off
 \color none
-0.07
+(0.07)
 \end_layout
 
 \end_inset
@@ -22025,7 +22025,7 @@ Match, sporting event
 \uwave off
 \noun off
 \color none
-0.28
+(0.28)
 \end_layout
 
 \end_inset
@@ -22101,7 +22101,7 @@ Eating, snacking
 \uwave off
 \noun off
 \color none
-0.06
+(0.06)
 \end_layout
 
 \end_inset
@@ -22177,7 +22177,7 @@ Cooking, preparing food
 \uwave off
 \noun off
 \color none
-0.10
+(0.10)
 \end_layout
 
 \end_inset
@@ -22253,7 +22253,7 @@ Washing, dressing, grooming
 \uwave off
 \noun off
 \color none
-0.11
+(0.11)
 \end_layout
 
 \end_inset
@@ -22329,7 +22329,7 @@ Listening to speech/podcast
 \uwave off
 \noun off
 \color none
-0.15
+(0.15)
 \end_layout
 
 \end_inset
@@ -22405,7 +22405,7 @@ Gambling, betting
 \uwave off
 \noun off
 \color none
-0.71
+(0.71)
 \end_layout
 
 \end_inset
@@ -22481,7 +22481,7 @@ Reading
 \uwave off
 \noun off
 \color none
-0.11
+(0.11)
 \end_layout
 
 \end_inset
@@ -22557,7 +22557,7 @@ Drinking tea/coffee
 \uwave off
 \noun off
 \color none
-0.11
+(0.11)
 \end_layout
 
 \end_inset
@@ -22633,7 +22633,7 @@ Shopping, errands
 \uwave off
 \noun off
 \color none
-0.11
+(0.11)
 \end_layout
 
 \end_inset
@@ -22709,7 +22709,7 @@ Sleeping, resting, relaxing
 \uwave off
 \noun off
 \color none
-0.09
+(0.09)
 \end_layout
 
 \end_inset
@@ -22785,7 +22785,7 @@ Texting, email, social media
 \uwave off
 \noun off
 \color none
-0.13
+(0.13)
 \end_layout
 
 \end_inset
@@ -22861,7 +22861,7 @@ Browsing the Internet
 \uwave off
 \noun off
 \color none
-0.10
+(0.10)
 \end_layout
 
 \end_inset
@@ -22947,7 +22947,7 @@ Smoking
 \uwave off
 \noun off
 \color none
-0.20
+(0.20)
 \end_layout
 
 \end_inset
@@ -23033,7 +23033,7 @@ In a meeting, seminar, class
 \uwave off
 \noun off
 \color none
-0.17
+(0.17)
 \end_layout
 
 \end_inset
@@ -23109,7 +23109,7 @@ Housework, chores, DIY
 \uwave off
 \noun off
 \color none
-0.10
+(0.10)
 \end_layout
 
 \end_inset
@@ -23185,7 +23185,7 @@ Something else (app version < 1.0.2)
 \uwave off
 \noun off
 \color none
-0.16
+(0.16)
 \end_layout
 
 \end_inset
@@ -23261,7 +23261,7 @@ Admin, finances, organising
 \uwave off
 \noun off
 \color none
-0.16
+(0.16)
 \end_layout
 
 \end_inset
@@ -23337,7 +23337,7 @@ Working, studying
 \uwave off
 \noun off
 \color none
-0.10
+(0.10)
 \end_layout
 
 \end_inset
@@ -23413,7 +23413,7 @@ Travelling, commuting
 \uwave off
 \noun off
 \color none
-0.12
+(0.12)
 \end_layout
 
 \end_inset
@@ -23493,7 +23493,7 @@ Something else (app version
 \uwave off
 \noun off
 \color none
-0.19
+(0.19)
 \end_layout
 
 \end_inset
@@ -23569,7 +23569,7 @@ Care or help for adults
 \uwave off
 \noun off
 \color none
-0.60
+(0.60)
 \end_layout
 
 \end_inset
@@ -23645,7 +23645,7 @@ Waiting, queueing
 \uwave off
 \noun off
 \color none
-0.15
+(0.15)
 \end_layout
 
 \end_inset
@@ -23721,7 +23721,7 @@ Sick in bed
 \uwave off
 \noun off
 \color none
-0.29
+(0.29)
 \end_layout
 
 \end_inset
@@ -23875,7 +23875,7 @@ Spouse, partner, girl/boyfriend
 \uwave off
 \noun off
 \color none
-0.11
+(0.11)
 \end_layout
 
 \end_inset
@@ -23951,7 +23951,7 @@ Friends
 \uwave off
 \noun off
 \color none
-0.09
+(0.09)
 \end_layout
 
 \end_inset
@@ -24027,7 +24027,7 @@ Other family members
 \uwave off
 \noun off
 \color none
-0.10
+(0.10)
 \end_layout
 
 \end_inset
@@ -24113,7 +24113,7 @@ Clients, customers
 \uwave off
 \noun off
 \color none
-0.41
+(0.41)
 \end_layout
 
 \end_inset
@@ -24199,7 +24199,7 @@ Children
 \uwave off
 \noun off
 \color none
-0.15
+(0.15)
 \end_layout
 
 \end_inset
@@ -24275,7 +24275,7 @@ Colleagues, classmates
 \uwave off
 \noun off
 \color none
-0.13
+(0.13)
 \end_layout
 
 \end_inset
@@ -24351,7 +24351,7 @@ Other people participant knows
 \uwave off
 \noun off
 \color none
-0.19
+(0.19)
 \end_layout
 
 \end_inset
@@ -24505,7 +24505,7 @@ Mon -- Fri, midnight -- < 3am
 \uwave off
 \noun off
 \color none
-0.44
+(0.44)
 \end_layout
 
 \end_inset
@@ -24579,7 +24579,7 @@ Mon -- Fri, 3am -- < 6am
 \uwave off
 \noun off
 \color none
-1.16
+(1.16)
 \end_layout
 
 \end_inset
@@ -24681,7 +24681,7 @@ Mon -- Fri, 9am -- < noon
 \uwave off
 \noun off
 \color none
-0.12
+(0.12)
 \end_layout
 
 \end_inset
@@ -24745,7 +24745,7 @@ Mon -- Fri, noon -- < 3pm
 \uwave off
 \noun off
 \color none
-0.12
+(0.12)
 \end_layout
 
 \end_inset
@@ -24809,7 +24809,7 @@ Mon -- Fri, 3pm -- < 6pm
 \uwave off
 \noun off
 \color none
-0.12
+(0.12)
 \end_layout
 
 \end_inset
@@ -24873,7 +24873,7 @@ Mon -- Fri, 6pm -- < 9pm
 \uwave off
 \noun off
 \color none
-0.13
+(0.13)
 \end_layout
 
 \end_inset
@@ -24937,7 +24937,7 @@ Mon -- Fri, 9pm -- < midnight
 \uwave off
 \noun off
 \color none
-0.14
+(0.14)
 \end_layout
 
 \end_inset
@@ -25013,7 +25013,7 @@ Sat -- Sun, midnight -- < 3am
 \uwave off
 \noun off
 \color none
-0.67
+(0.67)
 \end_layout
 
 \end_inset
@@ -25099,7 +25099,7 @@ Sat -- Sun, 3am -- < 6am
 \uwave off
 \noun off
 \color none
-1.67
+(1.67)
 \end_layout
 
 \end_inset
@@ -25175,7 +25175,7 @@ Sat -- Sun, 6am -- < 9am
 \uwave off
 \noun off
 \color none
-0.21
+(0.21)
 \end_layout
 
 \end_inset
@@ -25251,7 +25251,7 @@ Sat -- Sun, 9am -- < noon
 \uwave off
 \noun off
 \color none
-0.14
+(0.14)
 \end_layout
 
 \end_inset
@@ -25327,7 +25327,7 @@ Sat -- Sun, noon -- < 3pm
 \uwave off
 \noun off
 \color none
-0.14
+(0.14)
 \end_layout
 
 \end_inset
@@ -25403,7 +25403,7 @@ Sat -- Sun, 3pm -- < 6pm
 \uwave off
 \noun off
 \color none
-0.14
+(0.14)
 \end_layout
 
 \end_inset
@@ -25479,7 +25479,7 @@ Sat -- Sun, 6pm -- < 9pm
 \uwave off
 \noun off
 \color none
-0.14
+(0.14)
 \end_layout
 
 \end_inset
@@ -25555,7 +25555,7 @@ Sat -- Sun, 9pm -- < midnight
 \uwave off
 \noun off
 \color none
-0.16
+(0.16)
 \end_layout
 
 \end_inset
@@ -25709,7 +25709,7 @@ Response #1
 \uwave off
 \noun off
 \color none
-0.67
+(0.67)
 \end_layout
 
 \end_inset
@@ -25773,7 +25773,7 @@ Response #2 -- #11
 \uwave off
 \noun off
 \color none
-0.12
+(0.12)
 \end_layout
 
 \end_inset
@@ -25837,7 +25837,7 @@ Response #12 -- #51
 \uwave off
 \noun off
 \color none
-0.09
+(0.09)
 \end_layout
 
 \end_inset
@@ -25977,7 +25977,7 @@ Constant (mean fixed effect)
 \uwave off
 \noun off
 \color none
-0.14
+(0.14)
 \end_layout
 
 \end_inset

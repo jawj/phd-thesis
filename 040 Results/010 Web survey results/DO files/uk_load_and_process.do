@@ -478,6 +478,19 @@ label variable home_popdens_ppha "Pop. density (km2, people/ha)"
 label variable home_lsoa_house_price_fe "House price (std. LSOA mean)"
 label variable home_house_price_med9 "House price (std. local median)"
 
+label variable ipaq_total_mhw "IPAQ total MET-hours/week"
+label variable poor_health "Poor health"
+label variable good_health "Good health"
+label variable home_own_outright "Home owned outright"
+label variable social_tenant "Social tenant"
+label variable hh_ind_inc_ln "Equivalised household income, ln(£)"
+label variable male__q "Male"
+label variable age_mp "Age"
+label variable age_mp_sq "Age squared"
+label variable unemployed "Unemployed"
+label variable lives_alone "Lives alone"
+label variable religious "Religious"
+
 * }
 
 

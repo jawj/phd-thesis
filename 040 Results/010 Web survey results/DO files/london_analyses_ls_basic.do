@@ -11,7 +11,8 @@ foreach lcm in coast water mountain grassland farmland woodland suburban inlandb
 };
 **/
 
-foreach lcm in osm_green osm_park gigl_green greens {;
+ //foreach lcm in osm_green osm_park gigl_green greens {;
+foreach lcm in greens {;
   foreach lcmsuffix in r200 r1000 r3000 {;
 
   #delimit ;
@@ -42,8 +43,8 @@ regress
   // home_osm_park_`lcmsuffix'
   // home_gigl_green_`lcmsuffix'
   
-  hc_green
-  // home_aod_01
+  // hc_green
+  home_aod_01
   
   hc_blue
 
@@ -63,7 +64,7 @@ regress
   
   poor_health good_health  // self_reported_health__q
   
-  home_own_outright  // correlates 0.44 with age_mp and 0.48 with age_mp_sq
+  // home_own_outright  // correlates 0.44 with age_mp and 0.48 with age_mp_sq
   social_tenant 
   // num_house_problems
   // house_crowding
@@ -79,7 +80,7 @@ regress
 
 , cluster(home_lsoa_or_dzone);
 
-outreg2 using "/Users/gjm06/Downloads/regs_london_green_03_nopopdens.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
+outreg2 using "/Users/gjm06/Downloads/regs_london_green_05.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
 };
 };
 

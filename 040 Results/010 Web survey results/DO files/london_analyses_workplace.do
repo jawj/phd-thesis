@@ -35,7 +35,7 @@ regress
   
   poor_health good_health  // self_reported_health__q
   
-  home_own_outright  // correlates 0.44 with age_mp and 0.48 with age_mp_sq
+  // home_own_outright  // correlates 0.44 with age_mp and 0.48 with age_mp_sq
   social_tenant 
 
   hh_ind_inc_ln

@@ -4,8 +4,8 @@ set more off
 #delimit ;
 foreach lcmsuffix in r1000 r3000 r10000 {;
   
-  #delimit ;
-  local lcmsuffix r3000; // for non-looping lcmsuffix use
+  // #delimit ;
+  // local lcmsuffix r3000; // for non-looping lcmsuffix use
   foreach lcm in coast water mountain grassland farmland woodland suburban inlandbare {;
   // foreach lcm in coast water greens suburban inlandbare {;
     
@@ -50,7 +50,7 @@ regress
   ipaq_total_mhw
   poor_health good_health
   
-  home_own_outright  // correlates 0.44 with age_mp and 0.48 with age_mp_sq
+  // home_own_outright  // correlates 0.44 with age_mp and 0.48 with age_mp_sq
   social_tenant 
   // num_house_problems // don't include these -- should be compensated in rent
   // house_crowding
@@ -62,8 +62,9 @@ regress
   unemployed
   lives_alone
   religious
+, vce(robust)
 ;
-outreg2 using "/Users/George/Downloads/regs_uk_01_lcmagg.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
+outreg2 using "/Users/gjm06/Downloads/regs_uk_02_basic.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
 };
 #delimit CR
 
