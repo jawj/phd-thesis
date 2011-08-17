@@ -267,7 +267,7 @@ cal coordinates, which may each have an associated value or values.
 \begin_inset Float table
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -1123,7 +1123,7 @@ Air pollution values within Greater London are calculated using the modelling
  maps produced by the Environmental Research Group, Kings College London.
  These maps are the product of a dispersion model using data on mobile,
  point and area pollutant sources from the London Atmospheric Emissions
- Inventory (LAEI) 2006, weather conditions and street canyon locations 
+ Inventory (LAEI) 2008, weather conditions and street canyon locations 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "kelly:2011"
@@ -3825,6 +3825,23 @@ on regarding land cover and use.
 We identify public green spaces as areas tagged with the following key/value
  pairs: leisure/park, leisure/common, natural/heath, landuse/meadow, landuse/vil
 lage_green, and landuse/recreation_ground.
+\end_layout
+
+\begin_layout Subsubsection
+House prices
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Regression details
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
