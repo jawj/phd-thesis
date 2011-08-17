@@ -80,7 +80,7 @@
 \color #ffffff
 \end_branch
 \branch Appendices
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #ffffff
 \end_branch
@@ -383,6 +383,17 @@ filename "025 SWB and EQ/swb and eq 01.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "030 Methods/010 Web survey/survey methods 15.lyx"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: mention that we collect lots of unnecessary data for future use! Because
+ we hardly use any of it...
+\end_layout
 
 \end_inset
 

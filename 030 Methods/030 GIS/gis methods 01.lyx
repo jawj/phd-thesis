@@ -286,50 +286,50 @@ name "tab:spatial-data-sets"
 \end_inset
 
 
-\begin_inset Note Note
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-GiGL data? (e.g.
- AoDs?) Meridian 2? National Trust? ...
- ?
+
+
+\backslash
+resizebox{!}{8.5cm}{
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-
 \size footnotesize
+
 \begin_inset Tabular
-<lyxtabular version="3" rows="13" columns="4">
+<lyxtabular version="3" rows="17" columns="4">
 <features booktabs="true" tabularvalignment="middle">
-<column alignment="left" valignment="top" width="20text%">
-<column alignment="left" valignment="top" width="28text%">
+<column alignment="left" valignment="top" width="25text%">
+<column alignment="left" valignment="top" width="35text%">
 <column alignment="left" valignment="top" width="12text%">
-<column alignment="left" valignment="top" width="30text%">
+<column alignment="left" valignment="top" width="35text%">
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
-\size scriptsize
 \emph on
 Data set
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
-\size scriptsize
 \emph on
 Description
 \end_layout
@@ -341,9 +341,8 @@ Description
 
 \begin_layout Plain Layout
 
-\size scriptsize
 \emph on
-Format and resolution
+Format/resolution
 \end_layout
 
 \end_inset
@@ -353,7 +352,6 @@ Format and resolution
 
 \begin_layout Plain Layout
 
-\size scriptsize
 \emph on
 Source
 \end_layout
@@ -366,9 +364,7 @@ Source
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
-London Atmospheric Emissions Inventory (LAEI) 2006 Modelling Maps
+London Atmospheric Emissions Inventory (LAEI) 2008 Modelling Maps
 \end_layout
 
 \end_inset
@@ -377,18 +373,18 @@ London Atmospheric Emissions Inventory (LAEI) 2006 Modelling Maps
 \begin_inset Text
 
 \begin_layout Plain Layout
+Modelled annual average PM10 and NO
+\begin_inset script subscript
+
+\begin_layout Plain Layout
 
 \size scriptsize
-Modelled annual data including number of days on which daily mean PM10 concentra
-tions exceeded 50
-\begin_inset Formula $\mu$
+2
+\end_layout
+
 \end_inset
 
-g/m
-\begin_inset Formula $^{3}$
-\end_inset
-
- (the UK target and EU legal limit)
+ concentrations
 \end_layout
 
 \end_inset
@@ -397,8 +393,6 @@ g/m
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Raster: 20 
 \begin_inset Formula $\times$
 \end_inset
@@ -412,8 +406,6 @@ Raster: 20
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Greater London Authority, via email request
 \end_layout
 
@@ -425,8 +417,6 @@ Greater London Authority, via email request
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Environmental Noise (England) Regulations 2006: London Agglomeration --
  Road Traffic Noise Map 
 \end_layout
@@ -437,10 +427,7 @@ Environmental Noise (England) Regulations 2006: London Agglomeration --
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
-Modelled daytime (Lden) noise exposure from road traffic, in 5dB bands from
- 55dB
+Modelled daytime noise exposure from road traffic
 \end_layout
 
 \end_inset
@@ -449,8 +436,6 @@ Modelled daytime (Lden) noise exposure from road traffic, in 5dB bands from
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Raster: 10 
 \begin_inset Formula $\times$
 \end_inset
@@ -464,8 +449,6 @@ Raster: 10
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Department for Environment, Food and Rural Affairs, via request under Environmen
 tal Information Regulations 2004
 \end_layout
@@ -478,9 +461,7 @@ tal Information Regulations 2004
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
-Heathrow airport noise exposure contours 2008 (standardised)
+Heathrow airport noise exposure contours 2009 (standardised)
 \end_layout
 
 \end_inset
@@ -489,10 +470,8 @@ Heathrow airport noise exposure contours 2008 (standardised)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
-Modelled average summer day noise exposure in 3dB bands from 57dB upwards,
- based on standardised East/West split for take-off/landing
+Modelled average summer day noise exposure, assuming standard East/West
+ split for take-off/landing
 \end_layout
 
 \end_inset
@@ -501,8 +480,6 @@ Modelled average summer day noise exposure in 3dB bands from 57dB upwards,
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Vector: contours
 \end_layout
 
@@ -512,8 +489,6 @@ Vector: contours
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Environmental Research and Consultancy Department, Civil Aviation Authority,
  via Department for Transport (DfT) website
 \end_layout
@@ -526,8 +501,6 @@ Environmental Research and Consultancy Department, Civil Aviation Authority,
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Land Cover Map 2000 
 \end_layout
 
@@ -537,8 +510,6 @@ Land Cover Map 2000
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Highest-likelihood remote-sensed broad habitat classification
 \end_layout
 
@@ -548,8 +519,6 @@ Highest-likelihood remote-sensed broad habitat classification
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Raster: 25 
 \begin_inset Formula $\times$
 \end_inset
@@ -563,8 +532,6 @@ Raster: 25
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Centre for Ecology & Hydrology, Natural Environment Research Council, via
  LSE Library
 \end_layout
@@ -577,8 +544,6 @@ Centre for Ecology & Hydrology, Natural Environment Research Council, via
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Countryside designations
 \end_layout
 
@@ -588,10 +553,8 @@ Countryside designations
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
-Areas designated as National Parks, National Nature Reserves, and Areas
- of Outstanding Natural Beauty/National Scenic Areas
+National Parks, National Nature Reserves, and Areas of Outstanding Natural
+ Beauty/National Scenic Areas
 \end_layout
 
 \end_inset
@@ -600,8 +563,6 @@ Areas designated as National Parks, National Nature Reserves, and Areas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Vector: polygons
 \end_layout
 
@@ -611,10 +572,9 @@ Vector: polygons
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Natural England, Scottish Natural Heritage, Scottish Government, Countryside
- Council for Wales, and Department of Environment Northern Ireland websites
+ Council for Wales, and Dept.
+ of Environment Northern Ireland websites
 \end_layout
 
 \end_inset
@@ -625,9 +585,11 @@ Natural England, Scottish Natural Heritage, Scottish Government, Countryside
 \begin_inset Text
 
 \begin_layout Plain Layout
+OpenStreetMap 
+\begin_inset Newline newline
+\end_inset
 
-\size scriptsize
-OpenStreetMap data
+(current at 22 July 2011)
 \end_layout
 
 \end_inset
@@ -636,10 +598,8 @@ OpenStreetMap data
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
-Crowd-sourced mapping data including parks, heaths, commons, village greens
- and recreation grounds
+Crowd-sourced map including parks, heaths, commons, village greens and recreatio
+n grounds
 \end_layout
 
 \end_inset
@@ -648,8 +608,6 @@ Crowd-sourced mapping data including parks, heaths, commons, village greens
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Vector: polygons
 \end_layout
 
@@ -659,8 +617,6 @@ Vector: polygons
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 cloudmade.com 
 \begin_inset Newline newline
 \end_inset
@@ -676,8 +632,88 @@ cloudmade.com
 \begin_inset Text
 
 \begin_layout Plain Layout
+Greater London Authority (GLA) open space data
+\end_layout
 
-\size scriptsize
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Open spaces including parks, gardens, green corridors, sports areas, cemeteries
+ and allotments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vector: polygons
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greenspace Information for Greater London (GiGL)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GLA 'areas of deficiency'
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Areas more than 1km actual walking distance from green space of city or
+ borough importance (
+\begin_inset Formula $\approx$
+\end_inset
+
+ major parks)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vector: polygons
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greenspace Information for Greater London (GiGL)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Weather Underground
 \end_layout
 
@@ -687,8 +723,6 @@ Weather Underground
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 UK personal weather station data
 \end_layout
 
@@ -698,9 +732,7 @@ UK personal weather station data
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
-Vector panel: points through time
+Vector: points (panel)
 \end_layout
 
 \end_inset
@@ -709,8 +741,6 @@ Vector panel: points through time
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 wunderground.com, via hourly download to data server (
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -729,8 +759,6 @@ reference "sub:Weather-pollution-download"
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Crime statistics at sub-ward level for the financial year 2008/09
 \end_layout
 
@@ -740,9 +768,7 @@ Crime statistics at sub-ward level for the financial year 2008/09
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
-Number of reported Violence Against the Person offences
+Reported crime counts by LSOA
 \end_layout
 
 \end_inset
@@ -751,9 +777,7 @@ Number of reported Violence Against the Person offences
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
-Geocoded: LSOA (see text)
+Geocoded: LSOA
 \end_layout
 
 \end_inset
@@ -762,8 +786,6 @@ Geocoded: LSOA (see text)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Metropolitan Police Service, via request under Freedom of Information Act
  2000
 \end_layout
@@ -776,9 +798,7 @@ Metropolitan Police Service, via request under Freedom of Information Act
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
-Price Paid Dataset, 2006 -- mid-2008
+Nationwide House Price Index, mid-1995 -- mid-2004
 \end_layout
 
 \end_inset
@@ -787,10 +807,8 @@ Price Paid Dataset, 2006 -- mid-2008
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
-Price paid in all residential property sales, with date, postcode and other
- property data
+All Nationwide mortgages approved over the period, with price paid and property
+ characteristics
 \end_layout
 
 \end_inset
@@ -799,8 +817,6 @@ Price paid in all residential property sales, with date, postcode and other
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Geocoded: full postcode
 \end_layout
 
@@ -810,55 +826,6 @@ Geocoded: full postcode
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
-Land Registry, via Spatial Economics Research Centre, LSE
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
-Nationwide House Price Index 1995 -- 2004
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
-Data on all Nationwide mortgages approved over the period, including value
- of property and many property characteristics
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
-Geocoded: full postcode
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
 Nationwide Building Society, via Spatial Economics Research Centre, LSE
 \end_layout
 
@@ -870,8 +837,120 @@ Nationwide Building Society, via Spatial Economics Research Centre, LSE
 \begin_inset Text
 
 \begin_layout Plain Layout
+OS Meridian 2
+\end_layout
 
-\size scriptsize
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Map including roads, rivers, railways
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vector: points, lines, polygons
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ordnance Survey, via EDINA Digimap
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+London Underground stations
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Station data including travel zone
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vector: points
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transport for London
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Experian Mosaic Public Sector 2010
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Population and household counts by LSOA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Geocoded: LSOA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Census Dissemination Unit, MIMAS
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 National Statistics Postcode Directory (December 2009)
 \end_layout
 
@@ -881,8 +960,6 @@ National Statistics Postcode Directory (December 2009)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Postcode centroids and classifications within higher-level geographies
 \end_layout
 
@@ -892,8 +969,6 @@ Postcode centroids and classifications within higher-level geographies
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Vector: points
 \end_layout
 
@@ -903,8 +978,6 @@ Vector: points
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Office for National Statistics Geography, via UKBORDERS
 \end_layout
 
@@ -916,8 +989,6 @@ Office for National Statistics Geography, via UKBORDERS
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Code-Point with polygons
 \end_layout
 
@@ -927,8 +998,6 @@ Code-Point with polygons
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Maximum spatial extent of each postcode
 \end_layout
 
@@ -938,8 +1007,6 @@ Maximum spatial extent of each postcode
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Vector: polygons
 \end_layout
 
@@ -949,8 +1016,6 @@ Vector: polygons
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size scriptsize
 Ordnance Survey, via EDINA Digimap
 \end_layout
 
@@ -958,6 +1023,18 @@ Ordnance Survey, via EDINA Digimap
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\size footnotesize
+}
+\end_layout
 
 \end_inset
 
@@ -1406,7 +1483,7 @@ name "sub:Land-cover-map"
 \begin_inset Float figure
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -1484,7 +1561,7 @@ reference "fig:Land-Cover-Map"
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -3694,7 +3771,20 @@ LSOAs were created by aggregating 2001 Census Output Areas (typically 4
 \end_layout
 
 \begin_layout Subsubsection
-Public green spaces in London
+Green spaces in London
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+GiGL, OSM, LCM
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3766,20 +3856,11 @@ within
 contains
 \emph default
  join queries.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Corresponding to the PostGIS functions st_contains and st_within.
-\end_layout
-
-\end_inset
-
  For example: a dummy variable indicating National Park designation was
- set if the response location fell within any of the polygons defining the
- extents of that designation; and a categorical variable indicating the
- LCM subclass was set to the subclass code associated with the polygon containin
-g the response location.
+ set if an ESM response location fell within any of the polygons defining
+ the extents of that designation; and a categorical variable indicating
+ the LCM subclass was set to the subclass code associated with the polygon
+ containing the response location.
  In the case of noise contour data, the value set corresponds to the highest
  value associated with any of the containing polygons.
 \begin_inset Note Note
@@ -3860,7 +3941,24 @@ contains
 \end_layout
 
 \begin_layout Subsubsection
-Kernel-weighted proportions
+House prices: median of nearest N
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Talk about that...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Simple and kernel-weighted proportions
 \end_layout
 
 \begin_layout Standard
