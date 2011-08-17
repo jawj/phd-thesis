@@ -25,7 +25,7 @@ regress
   home_rb_per_khh 
   home_vap_per_kp 
   
-  home_popdens_kpkm2 // home_lsoa_popdens
+  // home_popdens_ppha // home_lsoa_popdens
   home_house_price_med9 // home_lsoa_house_price_fe
   
   poor_health good_health  // self_reported_health__q

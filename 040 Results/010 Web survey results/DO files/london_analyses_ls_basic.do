@@ -13,12 +13,17 @@ foreach lcm in coast water mountain grassland farmland woodland suburban inlandb
 
 foreach lcm in osm_green osm_park gigl_green greens {;
   foreach lcmsuffix in r200 r1000 r3000 {;
+
+  #delimit ;
+  local lcm greens;      // for non-looping use
+  local lcmsuffix r3000; // ditto
+  
   capture drop hc_green;
+  capture drop hc_blue;
   gen hc_green = home_`lcm'_`lcmsuffix';
+  gen hc_blue  = home_water_`lcmsuffix';
 
-
-#delimit ;
-capture regress 
+regress 
   life_sat__q 
 
   home_map_pm10a
@@ -37,8 +42,10 @@ capture regress
   // home_osm_park_`lcmsuffix'
   // home_gigl_green_`lcmsuffix'
   
-  // hc_green
-  home_aod_01
+  hc_green
+  // home_aod_01
+  
+  hc_blue
 
   home_lhr09_quiet  // home_lhr09_leq
   home_road_quiet   // home_noise_road_lden 
@@ -51,7 +58,7 @@ capture regress
   home_rb_per_khh 
   home_vap_per_kp 
   
-  home_popdens_kpkm2 // home_lsoa_popdens
+  // home_popdens_ppha // home_lsoa_popdens_ppha
   home_house_price_med9 // home_lsoa_house_price_fe
   
   poor_health good_health  // self_reported_health__q

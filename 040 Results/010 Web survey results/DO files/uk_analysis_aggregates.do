@@ -21,7 +21,7 @@ regress
   ln_home_station_dist
   ln_home_coast_dist
   
-  home_popdens_kpkm2 // home_lsoa_popdens
+  home_popdens_ppha // home_lsoa_popdens_ppha
   home_house_price_med9 // home_lsoa_house_price_fe 
   
   ipaq_total_mhw

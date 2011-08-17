@@ -52,6 +52,7 @@ local rhsvars
 home_map_pm10a 
 home_map_no2a 
 
+/**
 home_coast_r3000
 home_water_r3000
 home_mountain_r3000
@@ -60,11 +61,15 @@ home_farmland_r3000
 home_woodland_r3000
 home_suburban_r3000
 home_inlandbare_r3000
+**/
 
+home_greens_r3000
 home_osm_green_r3000 
 home_osm_park_r3000 
 home_gigl_green_r3000 
 home_aod_01
+
+home_water_r3000
 
 home_lhr09_quiet
 home_road_quiet 
@@ -78,8 +83,8 @@ home_tno_per_kp
 home_rb_per_khh 
 home_vap_per_kp 
 
-home_lsoa_popdens
-home_popdens_ppkm2
+home_lsoa_popdens_ppha 
+home_popdens_ppha 
 
 home_lsoa_house_price_fe
 home_house_price_med9
@@ -88,9 +93,10 @@ home_house_price_med9
  // sum `rhsvars';
  // corr `rhsvars';
 
+estpost sum `rhsvars';
+esttab using "/Users/gjm06/Downloads/londonsum.html", cells("mean(fmt(2)) sd(fmt(2)) min(fmt(2)) max(fmt(2))") label nomtitle nonumber html replace;
+
 estpost correlate `rhsvars', matrix listwise;
 est store c1;
-esttab * using "/Users/gjm06/Downloads/corrs.html", label unstack not nostar noobs html replace;
-
-delimit CR
+esttab * using "/Users/gjm06/Downloads/londoncorrs.html", label unstack not nostar noobs html replace;
 

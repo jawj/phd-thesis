@@ -417,15 +417,18 @@ recode nat_parks_visits (0 = 0) (1 = 1.5) (3 = 4) (5 = 8.5) (7 = 14)
 replace nat_parks_visits = 0 if nat_parks__q == "home"
 
 foreach loc in home other {
-  gen `loc'_lsoa_popdens = home_lsoa_pop / home_lsoa_area * 1000000
   foreach thing in mway aroad railway station coast river natpark aonb nnr {
     capture drop ln_`loc'_`thing'_dist
-    gen ln_`loc'_`thing'_dist = `loc'_`thing'_dist
+    gen ln_`loc'_`thing'_dist = ln(`loc'_`thing'_dist + 1)
   }
   foreach lcm in coast water mountain grassland farmland woodland suburban inlandbare {
     replace `loc'_`lcm'_lsoaprop = 0 if missing(`loc'_`lcm'_lsoaprop)
   }
   gen `loc'_popdens_kpkm2 = `loc'_popdens_ppkm2 / 1000
+  gen `loc'_popdens_ppha = `loc'_popdens_ppkm2 / 100
+  
+  gen `loc'_lsoa_popdens = `loc'_lsoa_pop / `loc'_lsoa_area * 1000000
+  gen `loc'_lsoa_popdens_ppha = `loc'_lsoa_pop / `loc'_lsoa_area * 10000
 }
 
 foreach loc in "" other_ {
@@ -447,7 +450,33 @@ merge 1:1 id using "$ukneadir/survey_data/sf-6d/bayes_posterior_means.dta", gene
 
 * Labels {
 
+foreach lcmsuffix in sd200 sd1000 r200 r1000 r3000 r10000 {
+  label variable home_coast_`lcmsuffix' "Marine and coastal margins^"
+  label variable home_water_`lcmsuffix' "Freshwater, wetlands and floodplains^"
+  label variable home_mountain_`lcmsuffix' "Mountains, moors and heathlands^"
+  label variable home_grassland_`lcmsuffix' "Semi-natural grasslands^"
+  label variable home_farmland_`lcmsuffix' "Enclosed farmland^"
+  label variable home_woodland_`lcmsuffix' "Woodland^"
+  label variable home_suburban_`lcmsuffix' "Suburban/rural developed^"
+  label variable home_inlandbare_`lcmsuffix' "Inland bare ground^"
+}
+foreach lcmsuffix in r1000 r3000 r10000 {
+  label variable home_greens_`lcmsuffix' "LCM green spaces^"
+}
+label variable ln_home_mway_dist "Distance to motorway, ln(m)"
+label variable ln_home_railway_dist "Distance to railway line, ln(m)"
+label variable ln_home_station_dist "Distance to station, ln(m)"
+label variable ln_home_coast_dist "Distance to coast, ln(m)"
+label variable ln_home_river_dist "Distance to river, ln(m)"
 
+label variable ln_home_natpark_dist "Distance to National Park, ln(m)"
+label variable ln_home_aonb_dist "Distance to AONB, ln(m)"
+label variable ln_home_nnr_dist "Distance to NNR, ln(m)"
+
+label variable home_lsoa_popdens_ppha "Pop. density (LSOA, people/ha)"
+label variable home_popdens_ppha "Pop. density (km2, people/ha)"
+label variable home_lsoa_house_price_fe "House price (std. LSOA mean)"
+label variable home_house_price_med9 "House price (std. local median)"
 
 * }
 

@@ -37,35 +37,46 @@ sum life_sat__q
 centile life_sat__q
 
 
-#delimit ;
-* sum 
-corr 
-* pca 
-* br
 
-home_coast_sd1000
-home_water_sd1000
-home_mountain_sd1000
-home_grassland_sd1000
-home_farmland_sd1000
-home_woodland_sd1000
-home_suburban_sd1000
-home_inlandbare_sd1000
+set more off
+#delimit ;
+local rhsvars
+
+home_coast_r3000
+home_water_r3000
+home_mountain_r3000
+home_grassland_r3000
+home_farmland_r3000
+home_woodland_r3000
+home_suburban_r3000
+home_inlandbare_r3000
 
 ln_home_natpark_dist
 ln_home_aonb_dist
 ln_home_nnr_dist
 
-ln_home_railway_dist
-ln_home_station_dist
 ln_home_coast_dist
 ln_home_river_dist
 
-home_lsoa_popdens 
+ln_home_mway_dist
+ln_home_railway_dist
+ln_home_station_dist
+
+home_lsoa_popdens_ppha 
+home_popdens_ppha 
+
 home_lsoa_house_price_fe
-home_popdens_ppkm2
-home_house_price_med9 
+home_house_price_med9
 ;
-delimit CR
+
+ // sum `rhsvars';
+ // corr `rhsvars';
+
+estpost sum `rhsvars';
+esttab using "/Users/gjm06/Downloads/uksum.html", cells("mean(fmt(2)) sd(fmt(2)) min(fmt(2)) max(fmt(2))") label nomtitle nonumber html replace;
+
+estpost correlate `rhsvars', matrix listwise;
+est store c1;
+esttab * using "/Users/gjm06/Downloads/ukcorrs.html", label unstack not nostar noobs html replace;
 
 

@@ -414,8 +414,10 @@ foreach loc in home other {
   }
 
   gen `loc'_popdens_kpkm2 = `loc'_popdens_ppkm2 / 1000
+  gen `loc'_popdens_ppha = `loc'_popdens_ppkm2 / 100
   
-  gen `loc'_lsoa_popdens = home_lsoa_pop / home_lsoa_area * 1000000
+  gen `loc'_lsoa_popdens = `loc'_lsoa_pop / `loc'_lsoa_area * 1000000
+  gen `loc'_lsoa_popdens_ppha = `loc'_lsoa_pop / `loc'_lsoa_area * 10000
   
   gen `loc'_aod_01 = .
   replace `loc'_aod_01 = 1 if `loc'_aod == "t"
@@ -425,7 +427,7 @@ foreach loc in home other {
   
   foreach thing in z1 z1tube tube mway railway station coast river tube_or_station {
     capture drop ln_`loc'_`thing'_dist
-    gen  ln_`loc'_`thing'_dist = `loc'_`thing'_dist
+    gen  ln_`loc'_`thing'_dist = ln(`loc'_`thing'_dist + 1)
   }
   
   gen `loc'_rb_per_khh = (`loc'_rb  * 1000) / `loc'_lsoa_hh_count
@@ -464,19 +466,20 @@ label variable home_map_pm10a "Annual average PM10 level (ug/m3)"
 label variable home_map_no2a "Annual average NO2 level (ug/m3)"
 
 foreach lcmsuffix in sd200 sd1000 r200 r1000 r3000 r10000 {
-  label variable home_coast_`lcmsuffix' "Marine and coastal margins"
-  label variable home_water_`lcmsuffix' "Freshwater, wetlands and floodplains"
-  label variable home_mountain_`lcmsuffix' "Mountains, moors and heathlands"
-  label variable home_grassland_`lcmsuffix' "Semi-natural grasslands"
-  label variable home_farmland_`lcmsuffix' "Enclosed farmland"
-  label variable home_woodland_`lcmsuffix' "Woodland"
-  label variable home_suburban_`lcmsuffix' "Suburban/rural developed"
-  label variable home_inlandbare_`lcmsuffix' "Inland bare ground"
+  label variable home_coast_`lcmsuffix' "Marine and coastal margins^"
+  label variable home_water_`lcmsuffix' "Freshwater, wetlands and floodplains^"
+  label variable home_mountain_`lcmsuffix' "Mountains, moors and heathlands^"
+  label variable home_grassland_`lcmsuffix' "Semi-natural grasslands^"
+  label variable home_farmland_`lcmsuffix' "Enclosed farmland^"
+  label variable home_woodland_`lcmsuffix' "Woodland^"
+  label variable home_suburban_`lcmsuffix' "Suburban/rural developed^"
+  label variable home_inlandbare_`lcmsuffix' "Inland bare ground^"
 }
 foreach lcmsuffix in sd200 sd1000 r200 r1000 r3000 {
-  label variable home_osm_green_`lcmsuffix' "OSM green spaces"
-  label variable home_osm_park_`lcmsuffix' "OSM parks"
-  label variable home_gigl_green_`lcmsuffix' "GiGL open spaces"
+  label variable home_greens_`lcmsuffix' "LCM green spaces^"
+  label variable home_osm_green_`lcmsuffix' "OSM green spaces^"
+  label variable home_osm_park_`lcmsuffix' "OSM parks^"
+  label variable home_gigl_green_`lcmsuffix' "GiGL open spaces^"
 }
 label variable home_aod_01 "GLA area of deficiency"
 label variable home_lhr09_quiet "LHR noise, Leq < 57 dB(A)"
@@ -488,8 +491,8 @@ label variable ln_home_railway_dist "Distance to railway line, ln(m)"
 label variable home_tno_per_kp "Total notifiable offences (LSOA, per 1,000 pop.)"
 label variable home_rb_per_khh "Residential burglaries (LSOA, per 1,000 households)"
 label variable home_vap_per_kp "Violence against the person (LSOA, per 1,000 pop.)"
-label variable home_lsoa_popdens "Pop. density (LSOA, people/m2)"
-label variable home_popdens_ppkm2 "Pop. density (km2, people/km2)"
+label variable home_lsoa_popdens_ppha "Pop. density (in LSOA, people/ha)"
+label variable home_popdens_ppha "Pop. density (in km2, people/ha)"
 label variable home_lsoa_house_price_fe "House price (std. LSOA mean)"
 label variable home_house_price_med9 "House price (std. local median)"
 

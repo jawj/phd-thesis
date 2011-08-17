@@ -3,11 +3,17 @@ set more off
 
 #delimit ;
 foreach lcmsuffix in r1000 r3000 r10000 {;
- // foreach lcm in coast water mountain grassland farmland woodland suburban inlandbare {;
-foreach lcm in coast water greens suburban inlandbare {;
-  capture drop hc_`lcm';
-  gen hc_`lcm' = home_`lcm'_`lcmsuffix';
-};
+  
+  #delimit ;
+  local lcmsuffix r3000; // for non-looping lcmsuffix use
+  foreach lcm in coast water mountain grassland farmland woodland suburban inlandbare {;
+  // foreach lcm in coast water greens suburban inlandbare {;
+    
+    capture drop hc_`lcm';
+    gen hc_`lcm' = home_`lcm'_`lcmsuffix';
+  };
+
+
 regress 
   life_sat__q 
   // sf36_emo_wb 
@@ -30,11 +36,13 @@ regress
   ln_home_aonb_dist
   ln_home_nnr_dist
   
+  ln_home_coast_dist
+  ln_home_river_dist
+  
   ln_home_mway_dist
   ln_home_station_dist
-  ln_home_coast_dist
   
-  home_popdens_kpkm2 // home_lsoa_popdens
+  home_popdens_ppha  // home_lsoa_popdens_ppha
   home_house_price_med9 // home_lsoa_house_price_fe 
   
   // i.home_country  // wipes out all lcm!
