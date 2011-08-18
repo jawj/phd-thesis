@@ -75,7 +75,7 @@
 \color #ffffff
 \end_branch
 \branch bib-when-alone
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #ffffff
 \end_branch
@@ -3051,6 +3051,13 @@ a lasting marriage (compared to widowhood as a ‘natural’ experiment)...
 
 \begin_layout Subsubsection
 Method
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:swb-valuation-Method"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

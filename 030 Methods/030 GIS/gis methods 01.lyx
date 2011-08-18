@@ -3771,24 +3771,63 @@ LSOAs were created by aggregating 2001 Census Output Areas (typically 4
 \end_layout
 
 \begin_layout Subsubsection
-Green spaces in London
+Urban green space
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
+We want to join the London survey data with data on high-quality, publicly-acces
+sible green spaces.
+ This is not completely straightforward, since the UK suffers a 'green informati
+on gap' regarding urban green spaces: 
+\begin_inset Quotes eld
+\end_inset
 
-\begin_layout Plain Layout
-GiGL, OSM, LCM
-\end_layout
+nobody knows how many there are, where they are, who owns them or what they
+ are like
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "cabe-space:2009"
 
 \end_inset
 
+.
+ We therefore try three different approaches.
+\end_layout
 
+\begin_layout Paragraph
+Land Cover Map 2000
 \end_layout
 
 \begin_layout Standard
-OpenStreetMap 
+We use LCM data (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Land-cover-map"
+
+\end_inset
+
+) to identify green spaces without regard for quality or access.
+ We consider as green spaces these four habitat types, as specified in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:broad-habitat-lcm-classes"
+
+\end_inset
+
+: mountains, moors and heathland; semi-natural grasslands; enclosed farmland;
+ and woodland.
+\end_layout
+
+\begin_layout Paragraph
+OpenStreetMap
+\end_layout
+
+\begin_layout Standard
+OpenStreetMap (OSM) 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3813,18 +3852,193 @@ key "haklay:2010"
 \end_layout
 
 \begin_layout Standard
-We use OpenStreetMap data to identify public green spaces in London.
- The advantage of OpenStreetMap data over traditional map data sources for
- this purpose is that map features are tagged with a richer variety of informati
-on regarding land cover and use.
+We use OSM data as another route to identifying green spaces in London.
+ The advantage of OSM data over traditional map data sources for this purpose
+ is that map features are tagged with a richer variety of information regarding
+ land cover and use.
  The disadvantages are that the data set may not be complete and tags may
  not be applied consistently.
 \end_layout
 
 \begin_layout Standard
-We identify public green spaces as areas tagged with the following key/value
- pairs: leisure/park, leisure/common, natural/heath, landuse/meadow, landuse/vil
-lage_green, and landuse/recreation_ground.
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+OpenStreetMap key/value tags used to identify green spaces and parks
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:OpenStreetMap-tags-used"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="33text%">
+<column alignment="left" valignment="top" width="33text%">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Green spaces
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Public parks
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+leisure/park
+\begin_inset Newline newline
+\end_inset
+
+leisure/common
+\begin_inset Newline newline
+\end_inset
+
+landuse/village_green
+\begin_inset Newline newline
+\end_inset
+
+landuse/recreation_ground
+\begin_inset Newline newline
+\end_inset
+
+landuse/forest
+\begin_inset Newline newline
+\end_inset
+
+landuse/meadow
+\begin_inset Newline newline
+\end_inset
+
+landuse/allotments
+\begin_inset Newline newline
+\end_inset
+
+natural/wood
+\begin_inset Newline newline
+\end_inset
+
+natural/heath
+\begin_inset Newline newline
+\end_inset
+
+natural/fell
+\begin_inset Newline newline
+\end_inset
+
+natural/marsh
+\begin_inset Newline newline
+\end_inset
+
+natural/wetland
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+leisure/park
+\begin_inset Newline newline
+\end_inset
+
+leisure/common
+\begin_inset Newline newline
+\end_inset
+
+landuse/village_green
+\begin_inset Newline newline
+\end_inset
+
+landuse/recreation_ground
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+We identify green spaces --- and a subset of these, public parks --- as
+ areas tagged with the key/value pairs listed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:OpenStreetMap-tags-used"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+GiGL/GLA data
+\end_layout
+
+\begin_layout Standard
+Greater London Authority (GLA) data on green spaces is collated from the
+ London borough authorities by Greenspace Information for Greater London
+ (GiGL).
+ We use two GLA data sets provided by GiGL.
+ The first maps public open spaces of various kinds, which are predominantly
+ green spaces.
+ The second maps Greater London's 
+\begin_inset Quotes eld
+\end_inset
+
+Areas of Deficiency
+\begin_inset Quotes erd
+\end_inset
+
+ (AoD), which are defined as locations that are more than 1km actual walking
+ distance from a green space site of borough- or city-wide importance.
+ In general, the latter are large public parks.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3832,16 +4046,51 @@ House prices
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Regression details
-\end_layout
+Data on house prices are required for the purposes of SWB valuation as noted
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:swb-valuation-Method"
 
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Standard
+We use data provided by the Nationwide building society, covering approximately
+ 800,000 UK transactions between mid-1995 and mid-2004.
+ The transactions are geocoded at full postcode level.
+ They include the sale price and detailed house characteristics: property
+ type, floor area, number of bathrooms, number of bedrooms, central heating
+ (by extent and type of fuel), parking facilities (space, single garage,
+ double garage, none), tenure, age and whether new-build, and the year and
+ month of sale.
+\end_layout
+
+\begin_layout Standard
+For SWB valuation purposes we need information on the contribution of spatial
+ factors to house prices after controlling for housing characteristics and
+ housing market fluctuations.
+ We extract this information at two scales.
+\end_layout
+
+\begin_layout Standard
+First, we associate the transaction postcodes with their LSOAs (or equivalently,
+ for transactions in Scotland, Scottish Data Zones).
+ We estimate a fixed-effects regression model with the LSOAs as the groups,
+ and use the fixed effects as per-LSOA standardised house price indicators.
+ Second, we estimate a simple OLS regression model, and use the regression
+ residuals as per-transaction standardised price indicators.
+ The regression specifications and results for both models are given in
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:analysis-appendix"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -3853,9 +4102,11 @@ Geocode matching
 \end_layout
 
 \begin_layout Standard
-Survey response postcodes were matched with crime rates via a lookup table.
- Each postcode was associated with an LSOA code using the NSPD, and the
- LSOA code was then associated with the crime rate data.
+Survey response postcodes were matched with crime rates and per-LSOA house
+ prices via a lookup table.
+ Each response postcode was associated with an LSOA code using the NSPD,
+ and the LSOA code was then associated with the crime rate and house price
+ data.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3894,12 +4145,23 @@ Also for some analyses: air pollution data, road traffic and airport noise
 \end_layout
 
 \begin_layout Subsubsection
-Weather: closest in space and time
+Median of nearest N
 \end_layout
 
 \begin_layout Standard
-We assume that current weather conditions at one location are correlated
- with weather conditions a short time earlier or later at nearby locations.
+In addition to house price data at LSOA level, a more localised house price
+ indicator was calculated for each survey response location as the median
+ of the standardised sale prices (regression residuals) of the nine nearest
+ transactions.
+\end_layout
+
+\begin_layout Subsubsection
+Closest in space and time
+\end_layout
+
+\begin_layout Standard
+We assume that current weather conditions at a location are correlated with
+ weather conditions a short time earlier or later at nearby locations.
  ESM response data was therefore associated with weather data by selecting
  the nearest weather station to the response location, and then selecting
  the data reported by that station at the moment closest to (either before
@@ -3958,40 +4220,12 @@ contains
 \end_layout
 
 \begin_layout Subsubsection
-House prices: median of nearest N
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Talk about that...
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
 Simple and kernel-weighted proportions
 \end_layout
 
 \begin_layout Standard
-Measures of the local availability of different land cover types and public
- green spaces were calculated for survey response locations as kernel-weighted
- proportions.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-WHY?! Simple theoretical justification...
-\end_layout
-
-\end_inset
-
-
+Measures of the local availability of different land cover types were calculated
+ for survey each response location as kernel-weighted proportions.
 \end_layout
 
 \begin_layout Standard
@@ -4025,7 +4259,7 @@ Common kernels include the uniform --- in which case the quantities become
  For a given kernel, one must also select the appropriate bandwidth distance,
  which determines the rate at which the applied weightings decline with
  distance.
- For example, for the Gaussian kernel, one defines the desired standard
+ For example, for the Gaussian kernel, one can define the desired standard
  deviation.
 \begin_inset Foot
 status collapsed
@@ -4085,8 +4319,7 @@ name "fig:kernel-weighting-example"
 \end_inset
 
 We calculated approximate kernel-weighted proportions by summing series
- of appropriately-weighted simple proportions over different radii from
- the central point.
+ of simple proportions over appropriate radii from the central point.
  This approach is visualised in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -4117,27 +4350,6 @@ reference "chap:analysis-appendix"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Subsubsection
-Predictive
-\end_layout
-
-\begin_layout Standard
-house price regressions
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-mention MAUP? and point out we're not affected (except for crime LSOAs)
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body

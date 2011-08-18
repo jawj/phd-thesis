@@ -10322,7 +10322,7 @@ UKNEA results
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -16082,7 +16082,7 @@ Adjusted R-squared
 \uwave off
 \noun off
 \color none
-0.263
+26.3%
 \end_layout
 
 \end_inset
@@ -16121,7 +16121,7 @@ Adjusted R-squared
 \uwave off
 \noun off
 \color none
-0.266
+26.6%
 \end_layout
 
 \end_inset
@@ -16160,7 +16160,7 @@ Adjusted R-squared
 \uwave off
 \noun off
 \color none
-0.265
+26.5%
 \end_layout
 
 \end_inset
@@ -16205,6 +16205,10 @@ status open
 \begin_inset Newline newline
 \end_inset
 
+Dependent variable: life satisfaction self-rating, 0 -- 10.
+\begin_inset Newline newline
+\end_inset
+
 Standard errors are sandwich estimators.
 \begin_inset Newline newline
 \end_inset
@@ -16245,7 +16249,7 @@ WCERE results
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -21147,7 +21151,7 @@ Adjusted R-squared
 \uwave off
 \noun off
 \color none
-0.251
+25.1%
 \end_layout
 
 \end_inset
@@ -21186,7 +21190,7 @@ Adjusted R-squared
 \uwave off
 \noun off
 \color none
-0.257
+25.7%
 \end_layout
 
 \end_inset
@@ -21225,7 +21229,7 @@ Adjusted R-squared
 \uwave off
 \noun off
 \color none
-0.251
+25.1%
 \end_layout
 
 \end_inset
@@ -21267,6 +21271,10 @@ status open
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+Dependent variable: life satisfaction self-rating, 0 -- 10.
 \begin_inset Newline newline
 \end_inset
 

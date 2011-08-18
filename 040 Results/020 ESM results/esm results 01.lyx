@@ -17921,7 +17921,7 @@ status open
 \noindent
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="123" columns="4">
+<lyxtabular version="3" rows="122" columns="4">
 <features booktabs="true" islongtable="true" longtabularalignment="center">
 <column alignment="left" valignment="top" width="50text%">
 <column alignment="right" valignment="top" width="12text%">
@@ -26080,7 +26080,7 @@ Observations
 \uwave off
 \noun off
 \color none
-1,138,481
+1138481
 \end_layout
 
 \end_inset
@@ -26121,7 +26121,7 @@ Observations
 \uwave off
 \noun off
 \color none
-Number of groups (participants)
+Groups (participants)
 \end_layout
 
 \end_inset
@@ -26142,7 +26142,7 @@ Number of groups (participants)
 \uwave off
 \noun off
 \color none
-21,947
+21947
 \end_layout
 
 \end_inset
@@ -26161,44 +26161,6 @@ Number of groups (participants)
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-F(91, 21946)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-328.2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-< 0.001
 \end_layout
 
 \end_inset
@@ -26314,8 +26276,16 @@ continues ...
 
 \size footnotesize
 Dependent variable: happiness self-report, scaled 0 -- 100.
- Standard errors are clustered at participant level.
- Significant coefficients (
+ 
+\begin_inset Newline newline
+\end_inset
+
+Standard errors are clustered at participant level.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Significant coefficients (
 \begin_inset Formula $p<0.05$
 \end_inset
 
@@ -26324,7 +26294,11 @@ Dependent variable: happiness self-report, scaled 0 -- 100.
 boldface
 \series default
 .
- Within sections, explanatory variables are ordered by descending coefficient
+ 
+\begin_inset Newline newline
+\end_inset
+
+Within sections, explanatory variables are ordered by descending coefficient
  except where variables themselves are ordered.
 \end_layout
 
