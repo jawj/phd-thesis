@@ -15292,7 +15292,7 @@ Land cover
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -26064,7 +26064,7 @@ Observations
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -26085,7 +26085,7 @@ Observations
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="2" alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -26126,7 +26126,7 @@ Groups (participants)
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -26147,7 +26147,7 @@ Groups (participants)
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="2" alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -26188,7 +26188,7 @@ R² (within groups)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell multicolumn="1" alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -26209,7 +26209,7 @@ R² (within groups)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -26273,6 +26273,13 @@ continues ...
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \size footnotesize
 Dependent variable: happiness self-report, scaled 0 -- 100.
@@ -26298,8 +26305,12 @@ boldface
 \begin_inset Newline newline
 \end_inset
 
-Within sections, explanatory variables are ordered by descending coefficient
- except where variables themselves are ordered.
+Within sections, explanatory variables are ordered by descending coefficient,
+ 
+\emph on
+except
+\emph default
+ where variables themselves are ordered.
 \end_layout
 
 \end_inset
