@@ -1,6 +1,6 @@
 set more off
 #delimit ;
-foreach dep in life_sat__q panas_positive panas_negative sf6d_bayespm {;
+foreach dep in life_sat__q panas_positive panas_negative sf36_emo_wb sf6d_bayespm {;
 regress 
   `dep'
 
@@ -41,5 +41,5 @@ regress
   religious
 , vce(robust)
 ;
-outreg2 using "/Users/gjm06/Downloads/regs_uk_mood_03.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
+outreg2 using "/Users/gjm06/Downloads/regs_uk_mood_04.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
 };
