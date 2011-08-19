@@ -2,11 +2,13 @@
 set more off
 #delimit ;
 
-foreach lcm in gigl_green greens {;
-  foreach lcmsuffix in r1000 r3000 {;
-    foreach dep in life_sat__q esswb_satisfying_life esswb_personal esswb_personal_and_social {;
+foreach lcm in greens {;  // gigl_green greens {;
+  foreach lcmsuffix in r3000 {;  // r1000 r3000 {;
+    foreach dep in esswb_satisfying_life esswb_personal esswb_personal_and_social {;
       capture drop hc_green;
+      capture drop hc_blue;
       gen hc_green = home_`lcm'_`lcmsuffix';
+      gen hc_blue  = home_water_`lcmsuffix';
 
 regress 
   `dep' 
@@ -14,6 +16,7 @@ regress
   home_map_pm10a
 
   hc_green
+  hc_blue
 
   home_lhr09_quiet  // home_lhr09_leq
   home_road_quiet   // home_noise_road_lden 
@@ -43,7 +46,7 @@ regress
   religious
 
 , cluster(home_lsoa_or_dzone);
-outreg2 using "/Users/gjm06/Downloads/regs_london_aggs_04.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
+outreg2 using "/Users/gjm06/Downloads/regs_london_aggs_05.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
 };
 };
 };
