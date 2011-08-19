@@ -1032,7 +1032,6 @@ status open
 
 \begin_layout Plain Layout
 
-\size footnotesize
 }
 \end_layout
 
@@ -4091,6 +4090,19 @@ reference "chap:analysis-appendix"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Assumption of stability of environment over this period
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
