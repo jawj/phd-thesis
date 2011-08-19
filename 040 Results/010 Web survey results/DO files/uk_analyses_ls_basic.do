@@ -4,8 +4,8 @@ set more off
 #delimit ;
 foreach lcmsuffix in r1000 r3000 r10000 {;
   
-  // #delimit ;
-  // local lcmsuffix r3000; // for non-looping lcmsuffix use
+  #delimit ;
+  local lcmsuffix r3000; // for non-looping lcmsuffix use
   foreach lcm in coast water mountain grassland farmland woodland suburban inlandbare {;
   // foreach lcm in coast water greens suburban inlandbare {;
     
@@ -14,7 +14,8 @@ foreach lcmsuffix in r1000 r3000 r10000 {;
   };
 
 
-regress 
+ // regress
+oprobit 
   life_sat__q 
   // sf36_emo_wb 
   // panas_positive 
@@ -64,7 +65,7 @@ regress
   religious
 , vce(robust)
 ;
-outreg2 using "/Users/gjm06/Downloads/regs_uk_02_basic.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
+outreg2 using "/Users/gjm06/Downloads/regs_uk_03_basic_oprobit.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
 };
 #delimit CR
 
