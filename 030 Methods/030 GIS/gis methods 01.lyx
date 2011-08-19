@@ -201,10 +201,10 @@ key "r-development-core-team:2007"
 \end_inset
 
 .
- In order to handle the large volume of data collected, a dedicated server
- was built and optimised for the database system.
+ In order to handle the large volume of data collected in the ESM study,
+ a dedicated server was built and optimised for the database system.
  Data were visualised, and diagrams were produced, using the open-source
- QGIS application
+ application QGIS 
 \begin_inset Foot
 status collapsed
 
@@ -1109,8 +1109,26 @@ http://wiki.openstreetmap.org/wiki/Osmosis
 \end_inset
 
 .
- Geocoded data was interpreted using either the National Statistics Postcode
+ Geocoded data were interpreted using either the National Statistics Postcode
  Directory (NSPD) or Code-Point with polygons data set.
+\end_layout
+
+\begin_layout Standard
+Where necessary, spatial location data were converted to the Ordnance Survey
+ National Grid spatial reference system (OSGB36), which expresses locations
+ in terms of metres east and north of an origin point in the English Channel
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ordnance-survey:2008"
+
+\end_inset
+
+.
+ For example, LCM data for Northern Ireland were originally defined using
+ eastings and northings in the Irish Grid system, and OSM data were defined
+ using latitude and longitude values in the global WGS84 coordinate system
+ used by GPS receivers.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1118,7 +1136,7 @@ Air pollution
 \end_layout
 
 \begin_layout Standard
-Air pollution values within Greater London are calculated using the modelling
+Air pollution values within Greater London are derived using the modelling
  maps produced by the Environmental Research Group, Kings College London.
  These maps are the product of a dispersion model using data on mobile,
  point and area pollutant sources from the London Atmospheric Emissions
@@ -3774,10 +3792,10 @@ Urban green space
 \end_layout
 
 \begin_layout Standard
-We want to join the London survey data with data on high-quality, publicly-acces
-sible green spaces.
- This is not completely straightforward, since the UK suffers a 'green informati
-on gap' regarding urban green spaces: 
+We wanted to join the London survey data with information on high-quality,
+ publicly-accessible green spaces.
+ However, the UK suffers a 'green information gap' regarding urban green
+ spaces: 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3809,7 +3827,7 @@ reference "sub:Land-cover-map"
 
 \end_inset
 
-) to identify green spaces without regard for quality or access.
+) to identify green spaces.
  We consider as green spaces these four habitat types, as specified in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -4080,7 +4098,7 @@ First, we associate the transaction postcodes with their LSOAs (or equivalently,
  We estimate a fixed-effects regression model with the LSOAs as the groups,
  and use the fixed effects as per-LSOA standardised house price indicators.
  Second, we estimate a simple OLS regression model, and use the regression
- residuals as per-transaction standardised price indicators.
+ residuals as per-transaction standardised prices.
  The regression specifications and results for both models are given in
  
 \begin_inset CommandInset ref
@@ -4093,16 +4111,8 @@ reference "chap:analysis-appendix"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Assumption of stability of environment over this period
-\end_layout
-
-\end_inset
-
-
+This approach assumes that spatial influences on house prices are reasonably
+ stable over the period from 1995 to the web survey fielding dates.
 \end_layout
 
 \begin_layout Subsection
@@ -4157,14 +4167,25 @@ Also for some analyses: air pollution data, road traffic and airport noise
 \end_layout
 
 \begin_layout Subsubsection
+Distance to nearest feature
+\end_layout
+
+\begin_layout Standard
+In other cases, the straight-line distance to the nearest feature of a particula
+r type was calculated: for example, the distance from a respondent's home
+ to the nearest point on a river or motorway or perimeter of a National
+ Park.
+\end_layout
+
+\begin_layout Subsubsection
 Median of nearest N
 \end_layout
 
 \begin_layout Standard
-In addition to house price data at LSOA level, a more localised house price
- indicator was calculated for each survey response location as the median
- of the standardised sale prices (regression residuals) of the nine nearest
- transactions.
+In addition to the house price information calculated at LSOA level, a more
+ localised house price indicator was calculated for each survey response
+ location as the median of the standardised sale prices (regression residuals)
+ of the nine nearest transactions.
 \end_layout
 
 \begin_layout Subsubsection
@@ -4232,7 +4253,7 @@ contains
 \end_layout
 
 \begin_layout Subsubsection
-Simple and kernel-weighted proportions
+Proportion of local area: simple and kernel-weighted
 \end_layout
 
 \begin_layout Standard

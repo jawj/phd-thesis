@@ -5015,6 +5015,11 @@ TODO Descriptives for other SWB indicators/aggregates?
 Spatial data
 \end_layout
 
+\begin_layout Standard
+All descriptives refer to are are calculated in relation to respondents'
+ home locations.
+\end_layout
+
 \begin_layout Subsubsection
 UK
 \end_layout
@@ -10298,6 +10303,11 @@ reference "tab:web-london-spatial-correlations"
 
 \begin_layout Section
 Analysis
+\end_layout
+
+\begin_layout Standard
+Except where otherwise noted, all spatial quantities are calculated in relation
+ to respondents' home locations.
 \end_layout
 
 \begin_layout Subsection
@@ -16242,6 +16252,20 @@ Standard errors are sandwich estimators.
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+The omitted class in this group is ‘Urban’, so the model coefficients reported
+ in the results section should be interpreted as describing the effect on
+ prices as the share in a given land cover is increased, whilst decreasing
+ the share of urban land cover.
+\begin_inset Quotes erd
 \end_inset
 
 
