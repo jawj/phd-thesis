@@ -80,7 +80,7 @@
 \color #ffffff
 \end_branch
 \branch Appendices
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #ffffff
 \end_branch
@@ -473,7 +473,7 @@ filename "050 Discussion/discussion 01.lyx"
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "all"
-options "bibtotoc,apalike2"
+options "bibtotoc,apalike2url"
 
 \end_inset
 
