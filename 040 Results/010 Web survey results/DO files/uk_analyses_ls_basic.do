@@ -14,8 +14,8 @@ foreach lcmsuffix in r1000 r3000 r10000 {;
   };
 
 
- // regress
-oprobit 
+regress
+ // oprobit 
   life_sat__q 
   // sf36_emo_wb 
   // panas_positive 

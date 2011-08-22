@@ -4129,6 +4129,15 @@ This approach assumes that spatial influences on house prices are reasonably
  stable over the period from 1995 to the web survey fielding dates.
 \end_layout
 
+\begin_layout Subsubsection
+London Transport
+\end_layout
+
+\begin_layout Standard
+We estimate the extent of the London Transport central travel zone (Zone
+ 1) as a convex hull around all Zone 1 London Underground stations.
+\end_layout
+
 \begin_layout Subsection
 Spatial join types
 \end_layout

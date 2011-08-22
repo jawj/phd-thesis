@@ -7659,11 +7659,12 @@ reference "tab:web-uk-spatial-correlations"
 .
  As expected, the two population density indicators are highly correlated
  with each other, as are the two house price indicators.
- Distances to the nearest railway station and railway line are highly correlated
- --- these will not be entered together in any regression specification.
- The proportion of enclosed farmland is substantially correlated with distance
- to nearest railway station and (negatively) with the population density
- indicators.
+ Distances to the nearest railway station and railway line are highly correlated.
+ To avoid issues of multicolinearity these will not be entered together
+ in any regression specification (we drop railway line distance).
+ The proportion of enclosed farmland is substantially correlated with the
+ distance to nearest railway station and (negatively) with the population
+ density indicators.
 \end_layout
 
 \begin_layout Subsection
@@ -7678,9 +7679,8 @@ Interactive map location
 As a sanity check on the locations indicated by respondents on the interactive
  map survey item, we compare these map locations with the polygons associated
  with the respondents' postcodes.
- 81% of map locations fall within the postcode polygon associated with the
- postcode given by the respondent.
- 95% are within 25m of the polygon's perimeter, and all are within 200m.
+ 81% of map locations fall within the associated postcode polygon.
+ 95% are within 25m of the polygon's perimeter, and all are within 190m.
 \end_layout
 
 \begin_layout Standard
@@ -7734,8 +7734,8 @@ reference "fig:centroid-distances"
 
 .
  This difference between the interactive map and postcode centroid locations
- translates into reasonably substantial differences in those environmental
- quality indicators which vary over short distances.
+ translates into non-trivial differences in those environmental quality
+ indicators that vary over short distances.
  For example, estimated average PM10 concentrations at the home postcode
  centroid and map location for the same respondent have a correlation coefficien
 t of only 0.75.
@@ -7796,7 +7796,7 @@ name "fig:response-locs-london"
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -10351,6 +10351,9 @@ reference "tab:web-london-spatial-summary"
 \end_inset
 
 .
+ Notably few respondents are resident in areas of high aircraft or railway
+ noise as identified by the data sets used (the proportions are 2% and 6%
+ respectively).
 \end_layout
 
 \begin_layout Standard
@@ -10423,7 +10426,7 @@ boldface
 
 \end_inset
 
-Spatial variable correlations are given in 
+Spatial variable correlations are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:web-london-spatial-correlations"
@@ -10431,6 +10434,41 @@ reference "tab:web-london-spatial-correlations"
 \end_inset
 
 .
+ As in the UK data, the two population density indicators are highly correlated
+ with each other, as are the two house price indicators.
+ As one might also expect, substantial correlations are also seen between
+ some green space measures, which were also not intended to be used in the
+ same regression model.
+\end_layout
+
+\begin_layout Standard
+Extremely high correlations are seen between the two air pollution indicators
+ (PM10 and NO
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+) and two of the crime indicators (Violence Against the Person and Total
+ Notifiable Offences).
+ To avoid issues of multicolinearity, these correlated pairs will not be
+ used together in any regression specification (we drop NO
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+ and Total Notifiable Offences).
+ As seems intuitive, distance from Zone 1 is moderately correlated with
+ air pollution, population density and house prices, and green space measures
+ are in some cases moderately correlated with air pollution and population
+ density.
 \end_layout
 
 \begin_layout Section
