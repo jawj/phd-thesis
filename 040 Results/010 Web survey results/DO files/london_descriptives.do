@@ -35,6 +35,11 @@ hist(d$hh_inc_mp[d$hh_inc_mp < 200000], breaks=c(0,4000,6000,8000,10000,12000,15
 hist(d$ind_inc_mp, breaks=c(0,4000,6000,8000,10000,12000,15000,18000,20000,23000,26000,29000,32000,38000,44000,50000,56000,68000,80000,100000,150000,200000), xlab = "Individual income (£GBP)", main = NA, col = "grey")
 
   // </R>
+  
+
+set scheme s1mono
+hist home_map_centroid_distance if home_map_poly_distance == 0, xtitle("Distance (m)") start(0) width(15)
+
 
 hist life_sat__q, discrete frequency xtitle("Life satisfaction")
 sum life_sat__q

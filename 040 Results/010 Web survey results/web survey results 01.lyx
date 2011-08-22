@@ -5005,6 +5005,19 @@ Spatial data
 \begin_layout Standard
 All spatial descriptives are calculated in relation to respondents' home
  locations.
+ Distances are given as logs of the original measurements (in metres) +
+ 1.
+ Population density and house price indicators are each shown at two scales:
+ population density is given both at LSOA level and within a 1km grid cell,
+ while house prices are given both as standardised LSOA means and as standardise
+d local medians, as discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Spatial-methods"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -7562,19 +7575,7 @@ reference "tab:web-uk-spatial-summary"
 
  (we show only 3km unweighted proportions for the LCM types, since these
  are our favoured measures in later analyses).
- Distances are given as logs of the original measurements (in metres) +
- 1.
- Population density and house price indicators are each shown at two scales:
- population density is given both at LSOA level and within a 1km grid cell,
- while house prices are given both as standardised LSOA means and as standardise
-d local medians, as discussed in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sec:Spatial-methods"
-
-\end_inset
-
-.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -7647,22 +7648,107 @@ boldface
 
 \end_inset
 
-
+Correlations between all combinations of spatial variables are shown in
+ 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:web-uk-spatial-correlations"
 
 \end_inset
 
-
+.
+ As expected, the two population density indicators are highly correlated
+ with each other, as are the two house price indicators.
+ Distances to the nearest railway station and railway line are highly correlated
+ --- these will not be entered together in any regression specification.
+ The proportion of enclosed farmland is substantially correlated with distance
+ to nearest railway station and (negatively) with the population density
+ indicators.
 \end_layout
 
 \begin_layout Subsection
 London
 \end_layout
 
+\begin_layout Subsubsection
+Interactive map location
+\end_layout
+
 \begin_layout Standard
-pinpointed map locations
+As a sanity check on the locations indicated by respondents on the interactive
+ map survey item, we compare these map locations with the polygons associated
+ with the respondents' postcodes.
+ 81% of map locations fall within the postcode polygon associated with the
+ postcode given by the respondent.
+ 95% are within 25m of the polygon's perimeter, and all are within 200m.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename centroid-distance.pdf
+	width 12cm
+	BoundingBox 0bp 0bp 396bp 288bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Distance from interactive map location to postcode centroid for responses
+ within the postcode polygon, London web survey
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:centroid-distances"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Responses that are inside the postcode polygon may still be up to 200m from
+ the postcode centroid, as seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:centroid-distances"
+
+\end_inset
+
+.
+ This difference between the interactive map and postcode centroid locations
+ translates into reasonably substantial differences in those environmental
+ quality indicators which vary over short distances.
+ For example, estimated average PM10 concentrations at the home postcode
+ centroid and map location for the same respondent have a correlation coefficien
+t of only 0.75.
+ 
+\end_layout
+
+\begin_layout Standard
+We assume that the map locations and associated spatial indicators are closer
+ to the true values, and use these exclusively in the rest of this chapter.
+\end_layout
+
+\begin_layout Subsubsection
+Descriptives
 \end_layout
 
 \begin_layout Standard
@@ -7707,20 +7793,10 @@ name "fig:response-locs-london"
 \end_inset
 
 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:response-locs-london"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -9558,7 +9634,7 @@ Total notifiable offences (LSOA, per 1,000 pop.)
 \uwave off
 \noun off
 \color none
-1352.38
+1352.38†
 \end_layout
 
 \end_inset
@@ -9772,7 +9848,7 @@ Violence against the person (LSOA, per 1,000 pop.)
 \uwave off
 \noun off
 \color none
-325.40
+325.40†
 \end_layout
 
 \end_inset
@@ -10217,16 +10293,64 @@ House price (std.
 
 \end_layout
 
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\size footnotesize
+\begin_inset VSpace smallskip
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+†
+\family default
+\series default
+\shape default
+\size footnotesize
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ High maximum crime values are associated with LSOAs having high levels
+ of tourism and/or many entertainment venues, such as Westminster, Soho
+ and Camden Town.
+\end_layout
+
+\end_inset
+
+Respondents' home locations are plotted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:response-locs-london"
+
+\end_inset
+
+, and descriptive statistics for spatial variables are presented in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:web-london-spatial-summary"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -10299,14 +10423,14 @@ boldface
 
 \end_inset
 
-
+Spatial variable correlations are given in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:web-london-spatial-correlations"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Section
@@ -37604,6 +37728,7 @@ Standard errors are sandwich estimators.
 
 \begin_layout Standard
 No effect in London either.
+ Low sample size because not everyone works in London.
 \end_layout
 
 \begin_layout Standard

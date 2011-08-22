@@ -106,7 +106,7 @@
 \begin_body
 
 \begin_layout Section
-Happiness models and valuation
+Happiness models
 \end_layout
 
 \begin_layout Standard
@@ -234,8 +234,8 @@ reference "sub:analysing-happiness"
  on happiness, but OLS models have generally given comparable results and
  may be preferable because of the straightforward interpretation of the
  coefficients.
- We therefore report OLS model estimates from our survey data, having verified
- that these are indeed comparable to the results from ordered models.
+ We report OLS model estimates from our survey data, having verified that
+ these are indeed comparable to the results from ordered models.
  
 \end_layout
 

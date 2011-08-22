@@ -211,7 +211,7 @@ key "r-development-core-team:2007"
  In order to handle the large volume of data collected in the ESM study,
  a dedicated server was built and optimised for the database system.
  Data were visualised, and diagrams were produced, using the open-source
- application QGIS 
+ application QGIS
 \begin_inset Foot
 status collapsed
 
@@ -1116,8 +1116,9 @@ http://wiki.openstreetmap.org/wiki/Osmosis
 \end_inset
 
 .
- Geocoded data were interpreted using either the National Statistics Postcode
- Directory (NSPD) or Code-Point with polygons data set.
+ Geocoded data were interpreted using the National Statistics Postcode Directory
+ (NSPD), Code-Point with Polygons, or Experian Mosaic Public Sector data
+ sets.
 \end_layout
 
 \begin_layout Standard
@@ -1132,10 +1133,19 @@ key "ordnance-survey:2008"
 \end_inset
 
 .
- For example, LCM data for Northern Ireland were originally defined using
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For example, LCM data for Northern Ireland were originally defined using
  eastings and northings in the Irish Grid system, and OSM data were defined
  using latitude and longitude values in the global WGS84 coordinate system
  used by GPS receivers.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -1177,16 +1187,6 @@ g/m
 
 .
  
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Use 2008 maps?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection
@@ -1194,7 +1194,14 @@ Road traffic noise
 \end_layout
 
 \begin_layout Standard
-We use Defra's Road Traffic Noise Map data.
+We use Defra's Road Traffic Noise Map data 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "defra:2011"
+
+\end_inset
+
+.
  These data have been modelled based on data on traffic flow, road type
  and vehicle type, and accounting for features affecting the spread of noise,
  including buildings, ground elevation, and acoustic absorbency/reflectivity.
@@ -4144,15 +4151,7 @@ Within/contains
 
 \begin_layout Standard
 In many cases response data were associated with spatial data via simple
- 
-\emph on
-within
-\emph default
- or 
-\emph on
-contains
-\emph default
- join queries.
+ 'within' or 'contains' join queries.
  For example: a dummy variable indicating National Park designation was
  set if an ESM response location fell within any of the polygons defining
  the extents of that designation; and a categorical variable indicating
@@ -4174,7 +4173,7 @@ Also for some analyses: air pollution data, road traffic and airport noise
 \end_layout
 
 \begin_layout Subsubsection
-Distance to nearest feature
+Distance to nearest
 \end_layout
 
 \begin_layout Standard
@@ -4182,8 +4181,8 @@ In other cases, the straight-line distance to the nearest feature of a particula
 r type was calculated: for example, the distance from a respondent's home
  to the nearest point on a river or motorway or perimeter of a National
  Park.
- Where the measurement origin point is inside a two-dimensional feature
- such as a National Park, the distance is taken as zero.
+ Where the measurement origin point was inside a two-dimensional feature
+ such as a National Park, the distance was taken to be zero.
  
 \end_layout
 
@@ -4263,7 +4262,7 @@ contains
 \end_layout
 
 \begin_layout Subsubsection
-Proportion of local area: simple and kernel-weighted
+Proportion of local area
 \end_layout
 
 \begin_layout Standard
