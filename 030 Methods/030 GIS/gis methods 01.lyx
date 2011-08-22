@@ -107,6 +107,13 @@ name "chap:analysis-methods"
 
 \begin_layout Section
 Spatial methods
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Spatial-methods"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4175,6 +4182,9 @@ In other cases, the straight-line distance to the nearest feature of a particula
 r type was calculated: for example, the distance from a respondent's home
  to the nearest point on a river or motorway or perimeter of a National
  Park.
+ Where the measurement origin point is inside a two-dimensional feature
+ such as a National Park, the distance is taken as zero.
+ 
 \end_layout
 
 \begin_layout Subsubsection

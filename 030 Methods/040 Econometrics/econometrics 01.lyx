@@ -110,15 +110,18 @@ Happiness models and valuation
 \end_layout
 
 \begin_layout Standard
-Stata + R
+All econometric analyses were performed using either Stata or R 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "statacorp:2003,r-development-core-team:2007"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
 Cross-sectional survey data
-\end_layout
-
-\begin_layout Subsubsection
-Model
 \end_layout
 
 \begin_layout Standard
@@ -208,43 +211,32 @@ reference "eq:swb-xsection"
 
 \end_inset
 
+ This specification, and its use for monetary valuation, are considered
+ in more detail in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:happiness-valuation"
 
-\end_layout
+\end_inset
 
-\begin_layout Subsubsection
-Estimation
-\end_layout
-
-\begin_layout Paragraph
-Ordered models
-\end_layout
-
-\begin_layout Paragraph
-OLS
-\end_layout
-
-\begin_layout Paragraph
-Probit-adapted OLS (?)
-\end_layout
-
-\begin_layout Paragraph
-'Experienced EQ' (?)
+.
 \end_layout
 
 \begin_layout Standard
-vP&B-style
-\end_layout
+As noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:analysing-happiness"
 
-\begin_layout Standard
-maybe
-\end_layout
+\end_inset
 
-\begin_layout Standard
-does this go in with results bit?
-\end_layout
-
-\begin_layout Subsubsection
-Valuation
+, ordered models (logit and probit) have dominated the economic literature
+ on happiness, but OLS models have generally given comparable results and
+ may be preferable because of the straightforward interpretation of the
+ coefficients.
+ We therefore report OLS model estimates from our survey data, having verified
+ that these are indeed comparable to the results from ordered models.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -371,7 +363,7 @@ key "greene:2003"
 status collapsed
 
 \begin_layout Plain Layout
-In the EMA literature this approach has been described as 
+In the EMA literature this approach may be described as 
 \begin_inset Quotes eld
 \end_inset
 
@@ -461,8 +453,7 @@ l variables are not of primary interest in this study; (b) our data set
  is large enough that efficiency considerations are not key; and (c) the
  assumption that unobserved individual effects are uncorrelated with any
  of the explanatory variables, which is required for the random effects
- estimator to be unbiased, does not seem reasonable (for reasons outlined
- above).
+ estimator to be unbiased, does not seem reasonable.
 \end_layout
 
 \begin_layout Standard
@@ -479,14 +470,6 @@ key "schwartz:1998,schwartz:2010"
  a large data set would be highly computationally expensive (especially
  since much tuning and many runs may be necessary to achieve convergence),
  and our main hypotheses can be addressed without them.
-\end_layout
-
-\begin_layout Paragraph
-Logit
-\end_layout
-
-\begin_layout Standard
-for spikes! -- but different model!
 \end_layout
 
 \begin_layout Standard

@@ -4998,26 +4998,13 @@ reference "fig:web-survey-ls-dists"
  For London, the median is 7, the mode is 8 and the mean is 6.20.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-TODO Descriptives for other SWB indicators/aggregates?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 Spatial data
 \end_layout
 
 \begin_layout Standard
-All descriptives refer to are are calculated in relation to respondents'
- home locations.
+All spatial descriptives are calculated in relation to respondents' home
+ locations.
 \end_layout
 
 \begin_layout Subsubsection
@@ -5047,8 +5034,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Response locations, UK web survey (there are 1,585 responses from England,
- 173 from Scotland, 94 from Wales and 26 from Northern Ireland)
+Response locations, UK web survey
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:response-locs-uk"
@@ -5065,14 +5051,18 @@ name "fig:response-locs-uk"
 
 \end_inset
 
-
+All locations in the UK data are postcode centroids.
+ Respondents' home locations are illustrated in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:response-locs-uk"
 
 \end_inset
 
-
+.
+ There are 1,585 in England, 173 in Scotland, 94 in Wales and 26 in Northern
+ Ireland.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -7563,14 +7553,28 @@ House price (std.
 
 \end_inset
 
-
+Descriptive statistics for key spatial variables are presented in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:web-uk-spatial-summary"
 
 \end_inset
 
+ (we show only 3km unweighted proportions for the LCM types, since these
+ are our favoured measures in later analyses).
+ Distances are given as logs of the original measurements (in metres) +
+ 1.
+ Population density and house price indicators are each shown at two scales:
+ population density is given both at LSOA level and within a 1km grid cell,
+ while house prices are given both as standardised LSOA means and as standardise
+d local medians, as discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Spatial-methods"
 
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -7655,6 +7659,10 @@ reference "tab:web-uk-spatial-correlations"
 
 \begin_layout Subsection
 London
+\end_layout
+
+\begin_layout Standard
+pinpointed map locations
 \end_layout
 
 \begin_layout Standard
