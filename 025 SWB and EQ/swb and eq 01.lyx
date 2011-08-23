@@ -1575,6 +1575,13 @@ reference "sec:eq-swb-evidence"
 
 \begin_layout Section
 Aims of this research
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:research-aims"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1671,7 +1678,8 @@ key "mackerron:2008"
 \end_inset
 
 .
- It also means that we are not subject the modifiable areal unit problem.
+ It also means that we escape the modifiable areal unit problem for almost
+ all spatial indicators.
 \end_layout
 
 \begin_layout Description
@@ -1693,6 +1701,8 @@ methods For parameters that are not point estimates -- such as the accessibility
 and
 \emph default
  proximity, in the form of kernel-weighted proportion estimates.
+ Neither simple nor kernel-weighted proportion measures have been used in
+ prior SWB research.
 \end_layout
 
 \begin_layout Description
@@ -1740,7 +1750,7 @@ Unlike previous studies in happiness economics, we also investigate indicators
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Or do we??
@@ -1905,13 +1915,13 @@ UK
 \end_layout
 
 \begin_layout Standard
-In comparison to London alone, the UK as a whole is of course much more
- heterogeneous in terms of EQ characteristics.
- UK locations provide greater variation in land cover types, and permit
- meaningful distinctions in relation to distance parameters which in London
- cannot be separated from other geographical characteristics (for example,
- the distance to the coast for a point in London is essentially just a measure
- of its westerliness).
+The UK as a whole is of course much more heterogeneous than London in terms
+ of EQ characteristics.
+ The UK-wide survey provides greater variation in land cover types, and
+ permits meaningful distinctions in relation to distance parameters which
+ in London cannot be separated from other geographical characteristics (for
+ example, the distance to the coast for a point in London is essentially
+ just a measure of its westerliness).
 \end_layout
 
 \begin_layout Subsection

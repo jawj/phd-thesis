@@ -10352,8 +10352,7 @@ reference "tab:web-london-spatial-summary"
 
 .
  Notably few respondents are resident in areas of high aircraft or railway
- noise as identified by the data sets used (the proportions are 2% and 6%
- respectively).
+ noise as identified by the data sets used (2% and 6% respectively).
 \end_layout
 
 \begin_layout Standard
@@ -10437,8 +10436,8 @@ reference "tab:web-london-spatial-correlations"
  As in the UK data, the two population density indicators are highly correlated
  with each other, as are the two house price indicators.
  As one might also expect, substantial correlations are also seen between
- some green space measures, which were also not intended to be used in the
- same regression model.
+ some green space measures.
+ None of these were intended to be used in the same regression model.
 \end_layout
 
 \begin_layout Standard
@@ -10466,8 +10465,8 @@ Extremely high correlations are seen between the two air pollution indicators
 
  and Total Notifiable Offences).
  As seems intuitive, distance from Zone 1 is moderately correlated with
- air pollution, population density and house prices, and green space measures
- are in some cases moderately correlated with air pollution and population
+ air pollution, population density and house prices, and some green space
+ measures are moderately correlated with air pollution and/or population
  density.
 \end_layout
 
@@ -10485,27 +10484,13 @@ Life satisfaction and the environment near the home
 \end_layout
 
 \begin_layout Standard
-UK: more variation.
- London: more precision, more/different data.
+We first consider standard SWB regression models having a single life satisfacti
+on response as the dependent variable, and as independent variables a variety
+ of environmental parameters, along with spatial and non-spatial controls.
 \end_layout
 
 \begin_layout Subsubsection
 UK
-\end_layout
-
-\begin_layout Standard
-UKNEA results
-\end_layout
-
-\begin_layout Standard
-OLS but oprobit also works: example for 3km radius in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "chap:survey-results-appendix"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -16424,7 +16409,167 @@ Standard errors are sandwich estimators.
 
 \end_inset
 
+For the UK data we estimate several models, differing only in the radius
+ within which we calculate the proportion of LCM land cover types.
+ In 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:UK-basic-ls-regs"
 
+\end_inset
+
+ we present models in which the radius is 1km, 3km and 10km.
+ 
+\end_layout
+
+\begin_layout Standard
+We also estimated models using kernel-weighted proportions of LCM types,
+ using the Normal kernel (truncated at 3 standard deviations) with standard
+ deviations of 200m and 1km.
+ These model estimates were very similar to those using the unweighted proportio
+ns with respectively 1km and 3km radii, and are therefore not shown.
+\end_layout
+
+\begin_layout Standard
+As noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:econometrics-survey-data"
+
+\end_inset
+
+ we estimate our models using OLS for ease of interpretation of the coefficients
+, having checked that the results are comparable with those of ordered models.
+ As an example, the results of estimating the 3km radius model in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:UK-basic-ls-regs"
+
+\end_inset
+
+ using an ordered probit are provided in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Sample-ordered-probit"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Control variables
+\end_layout
+
+\begin_layout Standard
+The coefficients on the non-spatial control variables vary little between
+ the three models, and are fully in line with the standard findings.
+\end_layout
+
+\begin_layout Standard
+The health dummy variables are highly significant, of large magnitude, and
+ have the expected signs.
+ The level of physical activity also shows a significant positive association
+ with LS.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename uk-age-curve.pdf
+	lyxscale 50
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The U-shaped relationship between age (
+\begin_inset Formula $x$
+\end_inset
+
+) and LS (
+\begin_inset Formula $y$
+\end_inset
+
+): 
+\begin_inset Formula $y=-0.072x+0.00098x^{2}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:age-ls-curve"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Gender has no significant effect, but the classic U-shaped relationship
+ between age and LS (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:happiness-tells-us-Other-factors"
+
+\end_inset
+
+) is present and highly significant.
+ It is graphed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:age-ls-curve"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As is usual, unemployment and living alone
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Living alone is used as a proxy for marital/relationship status, on which
+ data was unfortunately not collected, as noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:survey-other-items"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ both have a large and significant negative association with LS, while religious
+ belief (answering 6 or higher on the 0 -- 10 religious belief scale) has
+ a large and significant positive effect.
+\end_layout
+
+\begin_layout Paragraph
+Spatial variables
 \end_layout
 
 \begin_layout Standard

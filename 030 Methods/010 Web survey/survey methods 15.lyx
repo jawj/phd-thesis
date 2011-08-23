@@ -3034,6 +3034,13 @@ hyperlink{ssb.27}{pages SB-27 -- SB-38}
 
 \begin_layout Subsubsection
 Other items
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:survey-other-items"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3080,8 +3087,9 @@ hyperlink{ssb.58}{page SB-58}
 \end_inset
 
 ) were unfortunately not shown to most respondents.
- The web panel provider, Toluna, were able to supply marital status and
- qualification information, but with rather high rates of missing data.
+ The web panel provider, Toluna, were able to supply some marital status
+ and qualification information, but high rates of missing data limit the
+ usefulness of this data.
 \end_layout
 
 \begin_layout Standard

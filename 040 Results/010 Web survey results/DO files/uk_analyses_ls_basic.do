@@ -63,6 +63,7 @@ regress
   unemployed
   lives_alone
   religious
+  // if household_sixteen_plus__q < 2
 , vce(robust)
 ;
 outreg2 using "/Users/gjm06/Downloads/regs_uk_03_basic_oprobit.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;

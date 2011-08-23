@@ -4160,14 +4160,15 @@ Within/contains
 
 \begin_layout Standard
 In many cases response data were associated with spatial data via simple
- 'within' or 'contains' join queries.
+ 'within' or 'contains/covers' join queries.
  For example: a dummy variable indicating National Park designation was
  set if an ESM response location fell within any of the polygons defining
  the extents of that designation; and a categorical variable indicating
  the LCM subclass was set to the subclass code associated with the polygon
  containing the response location.
- In the case of noise contour data, the value set corresponds to the highest
- value associated with any of the containing polygons.
+ In the case of contour data, the value assigned to a location corresponds
+ to the highest value associated with any of the contour polygons covering
+ it.
 \begin_inset Note Note
 status collapsed
 
@@ -4196,14 +4197,43 @@ r type was calculated: for example, the distance from a respondent's home
 \end_layout
 
 \begin_layout Subsubsection
-Median of nearest N
+Median of nearest 
+\begin_inset Formula $\boldsymbol{N}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 In addition to the house price information calculated at LSOA level, a more
  localised house price indicator was calculated for each survey response
  location as the median of the standardised sale prices (regression residuals)
- of the nine nearest transactions.
+ of the 
+\begin_inset Formula $N$
+\end_inset
+
+ nearest transactions.
+\end_layout
+
+\begin_layout Standard
+The choice of 
+\begin_inset Formula $N$
+\end_inset
+
+ represents a balance between spatial resolution (better at low 
+\begin_inset Formula $N$
+\end_inset
+
+) and robustness to unrepresentative values (better at high 
+\begin_inset Formula $N$
+\end_inset
+
+), and is somewhat arbitrary.
+ For this calculation we set 
+\begin_inset Formula $N=9$
+\end_inset
+
+ .
 \end_layout
 
 \begin_layout Subsubsection
@@ -4263,11 +4293,7 @@ reference "fig:Weather-station-locations"
 
 .
  We were then able to locate the nearest station to a response using a simple
- 
-\emph on
-contains
-\emph default
- query as above.
+ 'contains' query as above.
 \end_layout
 
 \begin_layout Subsubsection
@@ -4401,6 +4427,27 @@ reference "chap:analysis-appendix"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Paragraph
+How local is local?
+\end_layout
+
+\begin_layout Standard
+We calculate proportion measures for LCM land cover types (UK survey) and
+ areas of green and 'blue' space under various definitions (London survey).
+ In choosing appropriate bandwidth values, we are guided by three considerations.
+ 
+\end_layout
+
+\begin_layout Standard
+First, what values have been used in previous literature? 
+\end_layout
+
+\begin_layout Standard
+And third, intuition: over what distances from the home does it seem reasonable
+ that one's SWB might be affected by environmental characteristics? , the
+ literature (outside happiness economics) 
 \end_layout
 
 \end_body

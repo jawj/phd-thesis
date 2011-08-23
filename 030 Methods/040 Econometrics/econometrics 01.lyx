@@ -122,6 +122,13 @@ key "statacorp:2003,r-development-core-team:2007"
 
 \begin_layout Subsection
 Cross-sectional survey data
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:econometrics-survey-data"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -237,6 +244,15 @@ reference "sub:analysing-happiness"
  We report OLS model estimates from our survey data, having verified that
  these are indeed comparable to the results from ordered models.
  
+\end_layout
+
+\begin_layout Standard
+In case there is heteroskedasticity in the residuals we report Huber/White/sandw
+ich estimators of the standard errors.
+ In the London data set some spatial explanatory variables are joined with
+ our observations at area (LSOA) level; in this case, we use cluster-robust
+ sandwich estimators in case of correlation of the residuals within observations
+ from the same area.
 \end_layout
 
 \begin_layout Subsection
@@ -418,8 +434,8 @@ key "wooldridge:2009"
  The serial correlation restriction is likely to be problematic for our
  data, since it seems highly plausible that unobserved influences on a person's
  happiness may persist from one response to the next.
- Therefore standard errors are calculated using the cluster-robust/Huber/White/s
-andwich estimator 
+ Therefore standard errors are calculated using the cluster-robust sandwich
+ estimator 
 \begin_inset CommandInset citation
 LatexCommand citep
 after "463"
