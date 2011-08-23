@@ -4068,8 +4068,8 @@ Areas of Deficiency
 \end_inset
 
  (AoD), which are defined as locations that are more than 1km actual walking
- distance from a green space site of borough- or city-wide importance.
- In general, the latter are large public parks.
+ distance from a green space site of borough- or city-wide importance (these
+ being, in general, large public parks).
 \end_layout
 
 \begin_layout Subsubsection
@@ -4135,7 +4135,20 @@ London Transport
 
 \begin_layout Standard
 We estimate the extent of the London Transport central travel zone (Zone
- 1) as a convex hull around all Zone 1 London Underground stations.
+ 1) as a convex hull
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A convex hull is most easily understood as follows.
+ Imagine a set of points as nails protruding from a board.
+ The shape that would be made made by an elastic band placed around all
+ the nails is the convex hull for those points.
+\end_layout
+
+\end_inset
+
+ for all Zone 1 London Underground stations.
 \end_layout
 
 \begin_layout Subsection
@@ -4298,6 +4311,13 @@ reference "fig:Weather-station-locations"
 
 \begin_layout Subsubsection
 Proportion of local area
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:kernel-Proportion-methods"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4430,24 +4450,298 @@ reference "chap:analysis-appendix"
 \end_layout
 
 \begin_layout Paragraph
-How local is local?
+What is local?
 \end_layout
 
 \begin_layout Standard
 We calculate proportion measures for LCM land cover types (UK survey) and
  areas of green and 'blue' space under various definitions (London survey).
- In choosing appropriate bandwidth values, we are guided by three considerations.
+ In choosing appropriate bandwidth values, we are guided by several consideratio
+ns.
  
 \end_layout
 
 \begin_layout Standard
-First, what values have been used in previous literature? 
+First, what values have been used in the literature? As noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:research-aims"
+
+\end_inset
+
+, proportion measures have not previously been used in SWB studies.
+ However, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "maas:2009"
+
+\end_inset
+
+ calculate land cover proportions within 1km and 3km radii for an epidemiologica
+l study, and in their hedonic pricing work 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "gibbons:2011a"
+
+\end_inset
+
+ take the proportion in a 1km grid square.
 \end_layout
 
 \begin_layout Standard
-And third, intuition: over what distances from the home does it seem reasonable
- that one's SWB might be affected by environmental characteristics? , the
- literature (outside happiness economics) 
+Second, what is the lowest reasonable bandwidth given the precision of our
+ locations and the resolution of our EQ data? Location accuracy constrains
+ this quantity more than the EQ data, particularly in the case of the UK
+ survey, where we use a postcode centroid that may be up to several hundred
+ metres from the target location.
+ 
+\end_layout
+
+\begin_layout Standard
+Third, what is the highest bandwidth that is not computationally prohibitive?
+ This is an issue primarily for kernel-weighted proportion calculations,
+ which involve many more computations.
+\end_layout
+
+\begin_layout Standard
+Finally, what is our intuition: over what distances from the home does it
+ seem reasonable that one's SWB might be affected by environmental characteristi
+cs?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Proportion measures calculated for London and UK data
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:proportion-measures"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="12text%">
+<column alignment="left" valignment="middle" width="20text%">
+<column alignment="center" valignment="middle" width="20text%">
+<column alignment="center" valignment="middle" width="20text%">
+<row>
+<cell alignment="left" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="middle" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Kernel, bandwidth parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="middle" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Uniform, radius
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Gaussian, std.
+ dev.†
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Location and data
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="middle" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+UK, LCM types
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1km, 3km, 10km
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200m, 1km
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="middle" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+London, green and blue space indicators
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200m, 1km, 3km
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200m, 1km
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\size footnotesize
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+† Gaussian kernel-weighted proportions are truncated at 3 standard deviations.
+\end_layout
+
+\end_inset
+
+These considerations lead us to calculate in the first instance the proportion
+ measures shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:proportion-measures"
+
+\end_inset
+
+.
 \end_layout
 
 \end_body

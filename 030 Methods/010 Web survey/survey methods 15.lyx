@@ -2908,8 +2908,8 @@ hyperlink{ssb.39}{pages SB-39 -- SB-52}
  The IPAQ includes questions regarding walking, moderate exercise and vigorous
  exercise in work, leisure, travel and domestic contexts.
  It provides a standardised scoring system to translate these into metabolic
- equivalence values (METs), which provide a straightforward absolute measure
- of physical activity 
+ equivalence values (METs), which are multiplied by activity duration to
+ provide a straightforward absolute measure of physical activity 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "the-ipaq-group-:2005"
@@ -2917,6 +2917,8 @@ key "the-ipaq-group-:2005"
 \end_inset
 
 .
+ METs are multiples of the resting metabolic rate, and reach 8 for vigorous
+ activity.
 \end_layout
 
 \begin_layout Standard
@@ -2926,6 +2928,16 @@ In addition to the standard IPAQ items, we asked respondents to estimate
  Although the addition of items to a standard questionnaire might compromise
  the comparability of our response data with that collected elsewhere, the
  additional items were important for this research.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Not this research --- not used here! --- but the NEA research
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
