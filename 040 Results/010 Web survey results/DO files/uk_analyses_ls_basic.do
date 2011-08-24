@@ -10,12 +10,12 @@ foreach lcmsuffix in r1000 r3000 r10000 {;
   // foreach lcm in coast water greens suburban inlandbare {;
     
     capture drop hc_`lcm';
-    gen hc_`lcm' = home_`lcm'_`lcmsuffix';
+    gen hc_`lcm' = ln_home_`lcm'_`lcmsuffix';
   };
 
 
-  //regress
- oprobit 
+regress
+ // oprobit 
   life_sat__q 
   // sf36_emo_wb 
   // panas_positive 

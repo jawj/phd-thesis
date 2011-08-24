@@ -4997,9 +4997,10 @@ reference "fig:web-survey-ls-dists"
 \end_inset
 
 .
- For the UK, on the 0 -- 10 scale, the median is 7, the mode is 7 and the
- mean is 6.40.
- For London, the median is 7, the mode is 8 and the mean is 6.20.
+ For the UK, on the 0 -- 10 scale, the median is 7, the mode is 7, the mean
+ is 6.40 and the standard deviation is 2.13.
+ For London, the median is 7, the mode is 8, the mean is 6.20 and the standard
+ deviation is again 2.13.
 \end_layout
 
 \begin_layout Subsection
@@ -10911,7 +10912,7 @@ Good health
 \uwave off
 \noun off
 \color none
-Social tenant 
+Social tenant‡
 \end_layout
 
 \end_inset
@@ -10991,7 +10992,7 @@ Social tenant
 \uwave off
 \noun off
 \color none
-Equivalised household income, ln(£)†*
+Equivalised household income, ln(£) *†
 \end_layout
 
 \end_inset
@@ -11187,7 +11188,7 @@ Male
 \uwave off
 \noun off
 \color none
-Age†
+Age*
 \end_layout
 
 \end_inset
@@ -11303,7 +11304,7 @@ Age†
 \uwave off
 \noun off
 \color none
-Age† squared 
+Age squared 
 \end_layout
 
 \end_inset
@@ -11579,7 +11580,7 @@ Lives alone
 \uwave off
 \noun off
 \color none
-Religious‡
+Religious^
 \end_layout
 
 \end_inset
@@ -11909,7 +11910,7 @@ Good health
 \uwave off
 \noun off
 \color none
-Social tenant 
+Social tenant‡
 \end_layout
 
 \end_inset
@@ -11977,7 +11978,7 @@ Social tenant
 \uwave off
 \noun off
 \color none
-Equivalised household income, ln(£)†*
+Equivalised household income, ln(£) *†
 \end_layout
 
 \end_inset
@@ -12161,7 +12162,7 @@ Male
 \uwave off
 \noun off
 \color none
-Age†
+Age*
 \end_layout
 
 \end_inset
@@ -12277,7 +12278,7 @@ Age†
 \uwave off
 \noun off
 \color none
-Age† squared 
+Age squared 
 \end_layout
 
 \end_inset
@@ -12629,7 +12630,7 @@ Divorced or separated
 \uwave off
 \noun off
 \color none
-Religious‡
+Religious^
 \end_layout
 
 \end_inset
@@ -12710,6 +12711,11 @@ status open
 \begin_inset Newline newline
 \end_inset
 
+‡ Dummy variable set to 1 where respondent rents accommodation from local
+ authority or housing association.
+\begin_inset Newline newline
+\end_inset
+
 * Taken as the midpoint of the respondent's selected bracket.
 \begin_inset Newline newline
 \end_inset
@@ -12738,12 +12744,15 @@ status open
 \uwave default
 \noun default
 \color inherit
- Household income is equivalised by dividing by a household size factor
- of 
+ Equivalised by dividing by a household size factor of 
 \begin_inset Formula $\sqrt{a+0.7c}$
 \end_inset
 
- , where 
+ , 
+\begin_inset Newline newline
+\end_inset
+
+where 
 \begin_inset Formula $a$
 \end_inset
 
@@ -12768,8 +12777,8 @@ Non-standard but correlates 0.99 with 'modified OECD' scale in both data
 \begin_inset Newline newline
 \end_inset
 
-‡ This dummy variable is set to 1 where the respondent answers 6 or higher
- on the 0 -- 10 religious belief item.
+^ Dummy variable set to 1 where the respondent answers 6 or higher on the
+ 0 -- 10 religious belief item.
 \end_layout
 
 \end_inset
@@ -12844,7 +12853,7 @@ textwidth}{!}{
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="38" columns="9">
+<lyxtabular version="3" rows="39" columns="9">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0">
@@ -17979,6 +17988,89 @@ Religious
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -18617,13 +18709,6 @@ reference "sub:happiness-tells-us-Other-factors"
 \end_layout
 
 \begin_layout Standard
-Coefficients on the two health dummy variables are highly significant, of
- large magnitude, and have the expected signs.
- The level of physical activity also shows a significant positive association
- with LS.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -18675,7 +18760,9 @@ name "fig:age-ls-curve"
 
 \end_inset
 
-The classic U-shaped relationship between age and LS is present and highly
+Coefficients on the two health dummy variables are highly significant, of
+ large magnitude, and have the expected signs.
+ The classic U-shaped relationship between age and LS is present and highly
  significant.
  It is graphed in 
 \begin_inset CommandInset ref
@@ -18685,11 +18772,11 @@ reference "fig:age-ls-curve"
 \end_inset
 
 .
- Gender has no significant association with LS.
+ Gender has no significant association with LS, as is usual.
 \end_layout
 
 \begin_layout Standard
-As is usual, unemployment and living alone
+As is also usual, unemployment and living alone
 \begin_inset Foot
 status collapsed
 
@@ -18712,8 +18799,59 @@ reference "sub:survey-other-items"
  large and significant positive effect.
 \end_layout
 
+\begin_layout Standard
+Income and LS show a highly significant positive relationship.
+ The magnitude of the coefficient is such that, across the full range of
+ incomes seen in the sample, predicted LS ratings would vary by 1.8 points
+ (0.85 standard deviations) on the 0 -- 10 scale.
+\end_layout
+
+\begin_layout Standard
+Finally, LS is significantly higher where the respondent's accommodation
+ is rented from a local authority or housing association.
+ This effect is in the expected direction, since such rents might be at
+ below-market rates, allowing for a higher effective income
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We note, however, that the coefficient on a public housing dummy has the
+ opposite sign in the study by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "brereton:2007"
+
+\end_inset
+
+, who do not offer any explanation for this.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Paragraph
-Spatial variables
+Distances
+\end_layout
+
+\begin_layout Standard
+We include distance variables both as indicators of the availability of
+ natural environments (National Parks, AONBs, NNRs, coast, river) and as
+ proxies for local amenities which may affect wellbeing and/or house prices
+ (motorways and stations).
+ However, no coefficient on these variables is significant in any of the
+ three specifications.
+\end_layout
+
+\begin_layout Standard
+In the models shown, the distances are entered in logs.
+ We also entered them as simple distances in alternative models but, again,
+ no coefficient was significant in any specification (not shown).
+\end_layout
+
+\begin_layout Paragraph
+Land cover proportions
 \end_layout
 
 \begin_layout Standard
@@ -18721,6 +18859,51 @@ In each model, eight land cover proportion variables are entered: the omitted
  land cover type is 'continuous urban', so the coefficients can be interpreted
  as the describing the variation in LS as the share of a given type is increased
 , while decreasing the share of urban land cover.
+\end_layout
+
+\begin_layout Standard
+Coefficients (and their 
+\begin_inset Formula $p$
+\end_inset
+
+ values) on the land cover proportions are not entirely consistent across
+ the three scales considered.
+ The coefficient on freshwater is positive and significant in the models
+ with proportions over a 1km and 3km radius.
+ That on grasslands is positive and significant in the 3km and 10km radius
+ models.
+ That on woodlands is significant only in the 3km radius model.
+ No other land cover coefficient is significant at the 5% level.
+ The 3km radius model is our preferred model, and the one we discuss further.
+\end_layout
+
+\begin_layout Standard
+The land cover coefficients are of a fairly large magnitude.
+ Going in each case from the minimum to the maximum of the 3km-radius proportion
+s observed in our sample, predicted 0 -- 10 LS would vary by 1.9 scale points
+ in the case of freshwater, 1.4 points in the case of grasslands, and 1.1
+ points in the case of woodland.
+\end_layout
+
+\begin_layout Paragraph
+Other spatial variables
+\end_layout
+
+\begin_layout Standard
+pop dens + house price
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Mention multiple comparisons issue?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -18775,7 +18958,7 @@ textwidth}{!}{
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="33" columns="9">
+<lyxtabular version="3" rows="34" columns="9">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0">
@@ -23219,6 +23402,89 @@ Religious
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -23813,7 +24079,7 @@ PANAS scale (UK)
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -23853,7 +24119,7 @@ textwidth}{!}{
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="39" columns="9">
+<lyxtabular version="3" rows="40" columns="9">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0">
@@ -29732,6 +29998,89 @@ Religious
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -30411,7 +30760,7 @@ textwidth}{!}{
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="34" columns="10">
+<lyxtabular version="3" rows="35" columns="10">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top" width="0pt">
@@ -35215,6 +35564,98 @@ Religious
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -35815,7 +36256,7 @@ resizebox{8cm}{!}{
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="50" columns="3">
+<lyxtabular version="3" rows="51" columns="3">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0">
@@ -38458,6 +38899,35 @@ Religious
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -38759,14 +39229,14 @@ status open
 
 
 \backslash
-resizebox{9.25cm}{!}{
+resizebox{9cm}{!}{
 \end_layout
 
 \end_inset
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="48" columns="3">
+<lyxtabular version="3" rows="49" columns="3">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0">
@@ -41286,6 +41756,35 @@ Religious
 \noun off
 \color none
 (0.20)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset

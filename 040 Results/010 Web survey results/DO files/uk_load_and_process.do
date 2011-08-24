@@ -430,6 +430,8 @@ foreach loc in home other {
   }
   foreach lcm in coast water mountain grassland farmland woodland suburban inlandbare {
     replace `loc'_`lcm'_lsoaprop = 0 if missing(`loc'_`lcm'_lsoaprop)
+    
+    gen ln_`loc'_`lcm'_r3000 = ln(`loc'_`lcm'_r3000 + 1)
   }
   gen `loc'_popdens_kpkm2 = `loc'_popdens_ppkm2 / 1000
   gen `loc'_popdens_ppha = `loc'_popdens_ppkm2 / 100

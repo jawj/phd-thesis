@@ -4500,7 +4500,7 @@ Second, what is the lowest reasonable bandwidth given the precision of our
 \begin_layout Standard
 Third, what is the highest bandwidth that is not computationally prohibitive?
  This is an issue primarily for kernel-weighted proportion calculations,
- which involve many more computations.
+ which are more computationally intensive.
 \end_layout
 
 \begin_layout Standard
@@ -4513,7 +4513,7 @@ cs?
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
