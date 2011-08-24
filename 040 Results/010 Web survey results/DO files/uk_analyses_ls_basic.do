@@ -14,8 +14,8 @@ foreach lcmsuffix in r1000 r3000 r10000 {;
   };
 
 
-regress
- // oprobit 
+  //regress
+ oprobit 
   life_sat__q 
   // sf36_emo_wb 
   // panas_positive 
@@ -48,7 +48,7 @@ regress
   
   // i.home_country  // wipes out all lcm!
   
-  ipaq_total_mhw
+  // ipaq_total_mhw
   poor_health good_health
   
   // home_own_outright  // correlates 0.44 with age_mp and 0.48 with age_mp_sq
@@ -57,6 +57,7 @@ regress
   // house_crowding
   
   hh_ind_inc_ln
+  // hh_oecd_inc_ln
   
   male__q
   age_mp age_mp_sq
@@ -64,9 +65,10 @@ regress
   lives_alone
   religious
   // if household_sixteen_plus__q < 2
+  // if ipaq_total_mhw < 300
 , vce(robust)
 ;
-outreg2 using "/Users/gjm06/Downloads/regs_uk_03_basic_oprobit.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
+outreg2 using "/Users/gjm06/Downloads/regs_uk_07_oprobit.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
 };
 #delimit CR
 

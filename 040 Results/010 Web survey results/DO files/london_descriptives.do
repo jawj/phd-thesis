@@ -105,3 +105,23 @@ estpost correlate `rhsvars', matrix listwise;
 est store c1;
 esttab * using "/Users/gjm06/Downloads/londoncorrs.html", label unstack not nostar noobs html replace;
 
+
+set more off
+#delimit ;
+local rhsvars
+poor_health
+good_health
+social_tenant
+hh_ind_inc_ln
+male__q
+age_mp  age_mp_sq
+degree
+unemployed 
+really_single divsep
+religious
+;
+
+estpost sum `rhsvars';
+esttab using "/Users/gjm06/Downloads/londonsum2.html", cells("mean(fmt(2)) sd(fmt(2)) min(fmt(2)) max(fmt(2))") label nomtitle nonumber html replace;
+
+

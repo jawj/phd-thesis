@@ -119,7 +119,7 @@ name "sec:Sample-ordered-probit"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -150,14 +150,14 @@ status open
 
 
 \backslash
-resizebox{9.5cm}{!}{
+resizebox{9.6cm}{!}{
 \end_layout
 
 \end_inset
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="40" columns="3">
+<lyxtabular version="3" rows="39" columns="3">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0">
@@ -296,7 +296,7 @@ Marine and coastal margins
 \uwave off
 \noun off
 \color none
-0.0054
+0.0058
 \end_layout
 
 \end_inset
@@ -556,7 +556,7 @@ Enclosed farmland
 \uwave off
 \noun off
 \color none
-0.0023
+0.0022
 \end_layout
 
 \end_inset
@@ -621,7 +621,7 @@ Woodland
 \uwave off
 \noun off
 \color none
-0.0088*
+0.0085*
 \end_layout
 
 \end_inset
@@ -686,7 +686,7 @@ Suburban/rural developed
 \uwave off
 \noun off
 \color none
-0.0024
+0.0023
 \end_layout
 
 \end_inset
@@ -876,7 +876,7 @@ National Park
 \uwave off
 \noun off
 \color none
--0.0023
+-0.0036
 \end_layout
 
 \end_inset
@@ -897,7 +897,7 @@ National Park
 \uwave off
 \noun off
 \color none
-(0.019)
+(0.020)
 \end_layout
 
 \end_inset
@@ -941,7 +941,7 @@ AONB
 \uwave off
 \noun off
 \color none
-0.0090
+0.0064
 \end_layout
 
 \end_inset
@@ -1006,7 +1006,7 @@ NNR
 \uwave off
 \noun off
 \color none
-0.032
+0.033
 \end_layout
 
 \end_inset
@@ -1071,7 +1071,7 @@ Coast
 \uwave off
 \noun off
 \color none
-0.000012
+-0.00041
 \end_layout
 
 \end_inset
@@ -1136,7 +1136,7 @@ River
 \uwave off
 \noun off
 \color none
--0.00066
+-0.0027
 \end_layout
 
 \end_inset
@@ -1157,7 +1157,7 @@ River
 \uwave off
 \noun off
 \color none
-(0.023)
+(0.022)
 \end_layout
 
 \end_inset
@@ -1201,7 +1201,7 @@ Motorway
 \uwave off
 \noun off
 \color none
-0.016
+0.015
 \end_layout
 
 \end_inset
@@ -1365,7 +1365,7 @@ Pop.
 \uwave off
 \noun off
 \color none
-0.0028+
+0.0027+
 \end_layout
 
 \end_inset
@@ -1431,7 +1431,7 @@ House price (std.
 \uwave off
 \noun off
 \color none
--0.068
+-0.078
 \end_layout
 
 \end_inset
@@ -1504,71 +1504,6 @@ House price (std.
 \uwave off
 \noun off
 \color none
-IPAQ total MET-hours/week
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-0.00063**
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-(0.00023)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 Poor health
 \end_layout
 
@@ -1590,7 +1525,7 @@ Poor health
 \uwave off
 \noun off
 \color none
--0.66***
+-0.68***
 \end_layout
 
 \end_inset
@@ -1611,7 +1546,7 @@ Poor health
 \uwave off
 \noun off
 \color none
-(0.065)
+(0.064)
 \end_layout
 
 \end_inset
@@ -1720,7 +1655,7 @@ Social tenant
 \uwave off
 \noun off
 \color none
-0.16*
+0.17*
 \end_layout
 
 \end_inset
@@ -1850,7 +1785,7 @@ Male
 \uwave off
 \noun off
 \color none
--0.072
+-0.058
 \end_layout
 
 \end_inset
@@ -1980,7 +1915,7 @@ Age squared
 \uwave off
 \noun off
 \color none
-0.00063***
+0.00062***
 \end_layout
 
 \end_inset
@@ -2045,7 +1980,7 @@ Unemployed
 \uwave off
 \noun off
 \color none
--0.55***
+-0.57***
 \end_layout
 
 \end_inset
@@ -2110,7 +2045,7 @@ Lives alone
 \uwave off
 \noun off
 \color none
--0.29***
+-0.30***
 \end_layout
 
 \end_inset
@@ -2327,7 +2262,7 @@ Observations
 \begin_inset Text
 
 \begin_layout Plain Layout
-1846
+1848
 \end_layout
 
 \end_inset
@@ -2359,7 +2294,7 @@ Observations
 \uwave off
 \noun off
 \color none
-Pseudo R-squared
+McFadden's pseudo R-squared
 \end_layout
 
 \end_inset
@@ -2368,7 +2303,7 @@ Pseudo R-squared
 \begin_inset Text
 
 \begin_layout Plain Layout
-7.6%
+7.4%
 \end_layout
 
 \end_inset

@@ -349,6 +349,13 @@ gen ind_inc_mp_ln = ln(ind_inc_mp)
 gen hh_ind_inc = hh_inc_mp / hh_size_weighted
 gen hh_ind_inc_ln = ln(hh_ind_inc)
 
+gen hh_oecd_size = 2 / 3
+replace hh_oecd_size = hh_oecd_size + (1 / 3) * (household_sixteen_plus__q - 1) if household_sixteen_plus__q > 1
+replace hh_oecd_size = hh_oecd_size + (1 / 5) * household_sixteen_plus__q if household_under_sixteen__q > 0
+
+gen hh_oecd_inc = hh_inc_mp / hh_oecd_size
+gen hh_oecd_inc_ln = ln(hh_oecd_inc)
+
 gen weekend = (start_time_days_since_sunday == 0 | start_time_days_since_sunday == 6)
 
 gen groupie = clubs_groups_etc__q < 3
