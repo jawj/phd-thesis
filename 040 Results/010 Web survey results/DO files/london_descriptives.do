@@ -125,3 +125,15 @@ estpost sum `rhsvars';
 esttab using "/Users/gjm06/Downloads/londonsum2.html", cells("mean(fmt(2)) sd(fmt(2)) min(fmt(2)) max(fmt(2))") label nomtitle nonumber html replace;
 
 
+set more off
+#delimit ;
+local lhsvars
+life_sat__q 
+esswb_satisfying_life 
+esswb_personal
+esswb_personal_and_social 
+;
+
+estpost sum `lhsvars';
+esttab using "/Users/gjm06/Downloads/londonsumlhs.html", cells("mean(fmt(2)) sd(fmt(2)) min(fmt(2)) max(fmt(2))") label nomtitle nonumber html replace;
+

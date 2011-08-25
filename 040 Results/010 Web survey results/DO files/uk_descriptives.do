@@ -101,3 +101,16 @@ religious
 estpost sum `rhsvars';
 esttab using "/Users/gjm06/Downloads/uksum2.html", cells("mean(fmt(2)) sd(fmt(2)) min(fmt(2)) max(fmt(2))") label nomtitle nonumber html replace;
 
+
+set more off
+#delimit ;
+local lhsvars
+life_sat__q 
+panas_positive
+panas_negative 
+sf36_emo_wb 
+;
+
+estpost sum `lhsvars';
+esttab using "/Users/gjm06/Downloads/uksumlhs.html", cells("mean(fmt(2)) sd(fmt(2)) min(fmt(2)) max(fmt(2))") label nomtitle nonumber html replace;
+
