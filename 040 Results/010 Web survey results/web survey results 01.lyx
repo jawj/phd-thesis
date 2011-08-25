@@ -4389,7 +4389,7 @@ name "tab:web-london-spatial-summary"
 \begin_inset Tabular
 <lyxtabular version="3" rows="25" columns="5">
 <features booktabs="true" tabularvalignment="middle">
-<column alignment="left" valignment="top" width="40text%">
+<column alignment="left" valignment="top" width="45text%">
 <column alignment="right" valignment="top" width="10text%">
 <column alignment="right" valignment="top" width="10text%">
 <column alignment="right" valignment="top" width="10text%">
@@ -4451,7 +4451,7 @@ Max.
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4498,7 +4498,7 @@ Max.
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4868,7 +4868,7 @@ OSM parks
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5129,7 +5129,7 @@ Freshwater, wetlands and floodplains
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5236,7 +5236,7 @@ GLA area of (green space) deficiency
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5347,7 +5347,7 @@ Annual average PM10 level (
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -7039,23 +7039,6 @@ Control variables
 \end_layout
 
 \begin_layout Standard
-Descriptive statistics for the 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Justify specifications here? Or in econometric methods?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -7101,7 +7084,7 @@ textwidth}{!}{
 \begin_inset Tabular
 <lyxtabular version="3" rows="27" columns="6">
 <features booktabs="true" tabularvalignment="middle">
-<column alignment="left" valignment="top" width="42text%">
+<column alignment="left" valignment="top" width="0pt">
 <column alignment="right" valignment="top" width="10text%">
 <column alignment="right" valignment="top" width="10text%">
 <column alignment="right" valignment="top" width="10text%">
@@ -9336,7 +9319,15 @@ Non-standard but correlates 0.99 with 'modified OECD' scale in both data
 
 \end_inset
 
+Descriptive statistics for the control variables used in the regression
+ models are given in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:surveys-non-spatial-summary"
 
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -15212,9 +15203,9 @@ reference "sub:kernel-Proportion-methods"
 \end_inset
 
 .
- We also estimated models using Gaussian kernel-weighted proportion measures,
- but the estimates were very similar to those using the simple proportions
- and are therefore not shown.
+ We also estimated models using Gaussian kernel-weighted proportion measures.
+ Since these estimates were very similar to those using simple proportions,
+ but the coefficients are less easy to interpret, they are not shown.
 \end_layout
 
 \begin_layout Standard
@@ -15227,7 +15218,7 @@ reference "sub:econometrics-survey-data"
 
  the models are estimated by OLS, but we have checked that the results are
  comparable with those from ordered models.
- As an example, the results of estimating the 3km radius model in 
+ As an example, estimates of the 3km radius model in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:UK-basic-ls-regs"
@@ -15431,9 +15422,16 @@ Coefficients (and their
 \end_layout
 
 \begin_layout Standard
-The land cover coefficients are of a fairly large magnitude.
- Going in each case from the minimum to the maximum of the 3km-radius proportion
-s observed in our sample, predicted 0 -- 10 LS would vary by 1.9 scale points
+The land cover coefficients are of a reasonably large magnitude.
+ There are approximately 2,800 hectares within a 3km radius, so an increase
+ of 1% in the proportion of a given land cover type corresponds to the addition
+ of 28 hectares of that type.
+ 
+\end_layout
+
+\begin_layout Standard
+Going in each case from the minimum to the maximum of the 3km-radius proportions
+ observed in our sample, predicted 0 -- 10 LS would vary by 1.9 scale points
  in the case of freshwater, 1.4 points in the case of grasslands, and 1.1
  points in the case of woodland.
 \end_layout
@@ -15513,7 +15511,7 @@ textwidth}{!}{
 \begin_inset Tabular
 <lyxtabular version="3" rows="34" columns="9">
 <features booktabs="true" tabularvalignment="middle">
-<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="45text%">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0pt">
@@ -16214,7 +16212,7 @@ LCM freshwater, wetlands and floodplains
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -16949,7 +16947,7 @@ den
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -17533,7 +17531,7 @@ Residential burglaries (LSOA, per 1,000 hhs.)
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -17700,7 +17698,7 @@ Violence against the person (LSOA, per 1,000 pop.)
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -17868,7 +17866,7 @@ House price (std.
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18953,7 +18951,7 @@ Age
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19454,7 +19452,7 @@ Unemployed
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19955,7 +19953,7 @@ Religious
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -20632,7 +20630,7 @@ PANAS scale (UK)
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -26612,7 +26610,7 @@ textwidth}{!}{
 \begin_inset Tabular
 <lyxtabular version="3" rows="35" columns="10">
 <features booktabs="true" tabularvalignment="middle">
-<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="45text%">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0pt">
@@ -26725,7 +26723,7 @@ Personal & social wb.
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -26836,7 +26834,7 @@ Std.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -27466,7 +27464,7 @@ LCM freshwater, wetlands and floodplains
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -28237,7 +28235,7 @@ den
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -28857,7 +28855,7 @@ Residential burglaries (LSOA, per 1,000 hhs.)
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -29210,7 +29208,7 @@ House price (std.
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -30358,7 +30356,7 @@ Age
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -30886,7 +30884,7 @@ Unemployed
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -31414,7 +31412,7 @@ Religious
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
