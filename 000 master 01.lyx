@@ -203,7 +203,7 @@ of the London School of Economics
 \begin_inset Newline newline
 \end_inset
 
-for the degree of Doctor of Philosophy, London, August 2011
+for the degree of Doctor of Philosophy, London, September 2011
 \end_layout
 
 \begin_layout Standard
@@ -233,7 +233,7 @@ The copyright of this thesis rests with the author.
 \end_layout
 
 \begin_layout Standard
-I warrant that this authorization does not, to the best of my belief, infringe
+I warrant that this authorisation does not, to the best of my belief, infringe
  the rights of any third party.
 \end_layout
 
@@ -249,7 +249,58 @@ Abstract
 \end_layout
 
 \begin_layout Standard
-Abstract here...
+Subjective wellbeing --- happiness --- is of increasing interest to economists,
+ including environmental economists.
+ There are several reasons for thinking that environmental quality (EQ),
+ defined as high levels of environmental goods and low levels of environmental
+ ‘bads’, will be positively related to happiness.
+\end_layout
+
+\begin_layout Standard
+Quantitative evidence on this remains limited, however.
+ Some papers use cross-sectional data aggregated at country level, but it
+ is open to doubt whether these aggregated measures reflect individuals’
+ real EQ exposures.
+ Other papers use individual-level data, but in general have spatial data
+ at very coarse resolution, and consider a limited range of EQ parameters,
+ exclusively around individuals’ homes.
+\end_layout
+
+\begin_layout Standard
+This thesis reports two related strands of work.
+ The first designs, implements and analyses data from two new cross-sectional
+ surveys.
+ It builds on earlier work by using spatial data at very high resolution,
+ and advanced Geographical Information Systems (GIS) techniques; by simultaneous
+ly considering multiple EQ characteristics, around both homes and workplaces;
+ and by investigating the sensitivity of results to the choice of happiness
+ indicator.
+\end_layout
+
+\begin_layout Standard
+The second strand develops and implements a new methodology focused on individua
+ls’ momentary experiences of the environment.
+ It extends a protocol known by psychologists as the Experience Sampling
+ Method (ESM) to incorporate satellite (GPS) location data.
+ Using an app for participants’ own smartphones, called 
+\emph on
+Mappiness
+\emph default
+, it collects a panel data set comprising millions of geo-located responses
+ from thousands of volunteers.
+ EQ indicators are again joined to this data set using GIS.
+ 
+\end_layout
+
+\begin_layout Standard
+Results of the first strand of work are mixed, but support some links between
+ happiness and the accessibility of natural environments, providing quantitative
+ (including monetary) estimates of their strength.
+ The second strand demonstrates that individuals are significantly and substanti
+ally happier outdoors in natural environments than in cities.
+ It introduces a new and powerful line of evidence on this question, and
+ has great potential for future extension.
+ 
 \begin_inset Newpage newpage
 \end_inset
 
