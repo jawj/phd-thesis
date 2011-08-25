@@ -393,7 +393,15 @@ name "app:websperiment-framework"
 \end_layout
 
 \begin_layout Standard
-This paper has been accepted for publication in Journal of Choice Modelling.
+The paper reproduced below is published in the Journal of Choice Modelling
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mackerron:2009a"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
