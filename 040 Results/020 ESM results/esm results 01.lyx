@@ -122,8 +122,8 @@ name "chap:esm-results"
 \end_layout
 
 \begin_layout Standard
-A snapshot of the data collected to date was taken on 14 February 2011,
- and all analyses reported here are based on that snapshot.
+A snapshot of the data collected in the ESM study was taken on 14 February
+ 2011, and the analyses reported here are based on that snapshot.
 \end_layout
 
 \begin_layout Section
@@ -174,7 +174,7 @@ More sophisticated options for the treatment of missing data, such as multiple
  We exclude responses from outside the UK, which are identified by the non-avail
 ability of LCM data.
  As a simple quality criterion, we exclude responses where more than twelve
- activities have been ticked.
+ simultaneous activities have been ticked.
 \end_layout
 
 \begin_layout Standard
@@ -7765,7 +7765,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename ls_dist.pdf
-	width 14cm
+	width 10cm
 	BoundingBox 2.7000000000000002cm 15.6cm 16.699999999999999cm 27cm
 	clip
 
@@ -8499,7 +8499,7 @@ status collapsed
 
 \begin_inset Graphics
 	filename response_rate_all.pdf
-	width 13cm
+	width 11cm
 	BoundingBox 0cm 0.5cm 19.18cm 12cm
 	clip
 
@@ -8516,7 +8516,7 @@ status collapsed
 
 \begin_inset Graphics
 	filename response_rate_min10signals.pdf
-	width 13cm
+	width 11cm
 	BoundingBox 0cm 0.5cm 19.18cm 13cm
 
 \end_inset
@@ -13358,7 +13358,7 @@ Device
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -13382,6 +13382,21 @@ name "tab:device-response-counts"
 \begin_layout Plain Layout
 \noindent
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+resizebox{
+\backslash
+textwidth}{!}{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="11" columns="8">
 <features booktabs="true" tabularvalignment="middle">
@@ -14258,7 +14273,7 @@ iPad (original)
 \begin_inset Text
 
 \begin_layout Plain Layout
-(✔)
+varies
 \end_layout
 
 \end_inset
@@ -14946,11 +14961,29 @@ iPhone 4 (Verizon)
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \noindent
 \align center
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
 
 \size footnotesize
 * iPhone3,3 was released on 10 February 2010 --- 12 days before our data

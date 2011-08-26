@@ -15192,8 +15192,8 @@ reference "tab:UK-basic-ls-regs"
 
 \end_inset
 
- presents three models, differing only in the set of land cover proportion
- measures used.
+ presents three models for the UK, differing only in the set of land cover
+ proportion measures used.
  There is one model for each of the simple (uniform kernel-weighted) proportion
  measures described in 
 \begin_inset CommandInset ref
@@ -15380,7 +15380,7 @@ key "brereton:2007"
 \end_layout
 
 \begin_layout Paragraph
-Land cover proportions
+Land cover
 \end_layout
 
 \begin_layout Standard
@@ -15457,9 +15457,9 @@ Other spatial variables
 
 \begin_layout Standard
 We include distance variables both as indicators of the availability of
- natural environments (National Parks, AONBs, NNRs, coast, river) and as
- proxies for local amenities which may affect wellbeing and/or house prices
- (motorways and stations).
+ natural environments (National Parks, AONBs, NNRs, coastline and rivers)
+ and as proxies for local amenities which may affect wellbeing and/or house
+ prices (motorways and stations).
  However, no coefficient on any of these variables is significantly different
  from zero.
 \begin_inset Foot
@@ -15467,7 +15467,7 @@ status collapsed
 
 \begin_layout Plain Layout
 In the models discussed here, all distances are entered in logs.
- We also entered them as simple distances in alternative models (not shown),
+ They were entered as simple distances in alternative models (not shown),
  but still no coefficient was significant in any specification.
 \end_layout
 
@@ -15494,7 +15494,7 @@ Alternative specifications were tried (not shown) omitting either or both
  Only specifications in which no population density indicator was included
  produced appreciably different results.
  In these specifications, the coefficients on the three significant land
- cover types were somewhat reduced, with the coefficient on woodland just
+ cover types were slightly reduced, with the coefficient on woodland just
  losing significance at the 5% level (p < 0.09).
 \end_layout
 
@@ -15505,10 +15505,6 @@ Alternative specifications were tried (not shown) omitting either or both
 
 \begin_layout Subsubsection
 London
-\end_layout
-
-\begin_layout Standard
-WCERE results
 \end_layout
 
 \begin_layout Standard
@@ -20652,12 +20648,60 @@ Standard errors are sandwich estimators clustered at LSOA level.
 
 \end_inset
 
+For the London data we again present three models differing in the area
+ proportion measures used.
+ These models are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:london-basic-ls-regs"
 
+\end_inset
+
+.
+ As in the UK case there is one model for each of the simple proportion
+ measures calculated.
+ Again, we also estimated models using Gaussian kernel-weighted proportions;
+ again, these are highly similar and we do not report them.
+\end_layout
+
+\begin_layout Paragraph
+Control variables
 \end_layout
 
 \begin_layout Standard
-(OSM green, OSM parks, GiGL open space) x (200, 1k, 3k), and AoD, all just
- as useless
+Coefficients on the non-spatial control variables follow exactly the same
+ pattern (and have broadly similar magnitudes) as those in the UK models
+ discussed above.
+ The sole exception is the coefficient on renting accommodation from a council
+ or housing association, which in these models is not significant.
+ We are not certain of the explanation for this, save that the London housing
+ market may have a distinctive structure.
+\end_layout
+
+\begin_layout Paragraph
+Green and blue space
+\end_layout
+
+\begin_layout Standard
+The models shown use the LCM-based green space proportion indicators.
+ No coefficient on these variables is significantly different from zero
+ at any of the three radii considered.
+ We also estimated alternative models (not shown) in which we substituted
+ proportion measures calculated from the OSM green space, OSM parks and
+ GiGL open space data sets, and one in which we used the GiGL 'Area of Deficienc
+y' dummy variable.
+ Again, no coefficient was significant at any radius.
+ The LCM blue space proportion indicator was also not significantly different
+ from zero over any radius.
+\end_layout
+
+\begin_layout Paragraph
+Air pollution, noise, crime and control variables
+\end_layout
+
+\begin_layout Standard
+None of the other coefficients on spatial variables are significantly different
+ from zero.
 \end_layout
 
 \begin_layout Subsection
@@ -20685,7 +20729,7 @@ status collapsed
 Aggregate dependent variable OLS regressions, UK
 \begin_inset CommandInset label
 LatexCommand label
-name "tab:UK-basic-ls-regs-1"
+name "tab:UK-aggregate-regs"
 
 \end_inset
 
@@ -26613,7 +26657,7 @@ status collapsed
 ESS aggregate indicator OLS regressions, London
 \begin_inset CommandInset label
 LatexCommand label
-name "tab:london-basic-ls-regs-1"
+name "tab:london-aggregate-regs"
 
 \end_inset
 
@@ -37951,6 +37995,9 @@ Comparison with hedonic valuation
 
 \begin_layout Subsection
 Interpretation
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -37961,6 +38008,9 @@ Or does this go with valuation?
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -37971,6 +38021,50 @@ Mention multiple comparisons issue
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Unobservables: e.g.
+ school quality
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+No guarantee of causality
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Lack of results for London, lack of robustness in general
+\end_layout
+
+\end_inset
+
+By looking at the question at different scales, using different LS meansures,
+ and with many EQ and spatial variables, we do not discover not some grand
+ and unifying pattern, but instead cast down on the robustness of the whole
+ enterprise.
+ A new way is needed...
 \end_layout
 
 \end_body
