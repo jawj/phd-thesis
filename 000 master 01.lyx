@@ -80,7 +80,7 @@
 \color #ffffff
 \end_branch
 \branch Appendices
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #ffffff
 \end_branch
@@ -442,8 +442,8 @@ filename "030 Methods/010 Web survey/survey methods 15.lyx"
 status open
 
 \begin_layout Plain Layout
-TODO: mention that we collect lots of unnecessary data for future use! Because
- we hardly use any of it...
+TODO: mention that we collect lots of unnecessary survey data for future/other
+ use?! Because we hardly use any of it...
 \end_layout
 
 \end_inset
