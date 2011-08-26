@@ -119,6 +119,8 @@ degree
 unemployed 
 really_single divsep
 religious
+long_hours_normal
+commutetimemp
 ;
 
 estpost sum `rhsvars';

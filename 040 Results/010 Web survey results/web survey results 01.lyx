@@ -7082,7 +7082,7 @@ textwidth}{!}{
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="27" columns="6">
+<lyxtabular version="3" rows="30" columns="6">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="right" valignment="top" width="10text%">
@@ -8180,6 +8180,110 @@ Religious^
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Commuting time*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+27.02
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+19.88
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+7.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+75
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
@@ -9150,7 +9254,7 @@ Divorced or separated
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -9171,11 +9275,173 @@ Religious^
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 33%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Commuting time*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+37.28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+23.05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+7.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+75
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Long working hours
+\size footnotesize
+•
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15%
 \end_layout
 
 \end_inset
@@ -9247,8 +9513,8 @@ status open
 \begin_inset Newline newline
 \end_inset
 
-‡ Dummy variable set to 1 where respondent rents accommodation from local
- authority or housing association.
+‡ Dummy indicating respondent rents accommodation from local authority or
+ housing association.
 \begin_inset Newline newline
 \end_inset
 
@@ -9284,7 +9550,7 @@ status open
 \begin_inset Formula $\sqrt{a+0.7c}$
 \end_inset
 
- , 
+, 
 \begin_inset Newline newline
 \end_inset
 
@@ -9313,13 +9579,18 @@ Non-standard but correlates 0.99 with 'modified OECD' scale in both data
 \begin_inset Newline newline
 \end_inset
 
-^ Dummy variable set to 1 where the respondent answers 6 or higher on the
- 0 -- 10 religious belief item.
+^ Dummy indicating respondent answers 6 or higher on the 0 -- 10 religious
+ belief item.
+\begin_inset Newline newline
+\end_inset
+
+• Dummy indicating respondent works a 48-hour week (or longer) more than
+ once a month.
 \end_layout
 
 \end_inset
 
-Descriptive statistics for the control variables used in the regression
+Descriptive statistics for all control variables used in the regression
  models are given in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -32257,7 +32528,10 @@ reference "tab:london-aggregate-regs"
 \end_layout
 
 \begin_layout Standard
-As in 
+As was also the case when using the basic life satisfaction scale, no EQ
+ parameter coefficient is significant (at the 5% level) in any of the three
+ models.
+ As in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:London-basic-ls-regs"
@@ -32268,12 +32542,11 @@ reference "sub:London-basic-ls-regs"
  types, but we also estimated models using variables calculated using the
  four OSM and GiGL data sets, and these produced qualitatively indistinguishable
  results.
+ 
 \end_layout
 
 \begin_layout Standard
-No EQ parameter coefficient is significant (at the 5% level) in any of the
- three models.
- One spatial control variable does have a significant coefficient in all
+One spatial control variable does have a significant coefficient in all
  three models, however: the residential burglary rate is in each case positively
  associated with wellbeing.
  This result is not intuitive, but might relate to unobserved spatial correlates
@@ -32285,7 +32558,11 @@ The environment near the workplace
 \end_layout
 
 \begin_layout Standard
-UK only -- no effect! Lower sample size and more regressors.
+Finally, we investigate whether EQ parameters in the vicinity of respondents'
+ workplaces have a measurable association with LS.
+ Sample sizes are substantially reduced in these models, since they include
+ only respondents who are employed and --- for the London survey --- work
+ within London.
 \end_layout
 
 \begin_layout Standard
@@ -32301,7 +32578,7 @@ status collapsed
 Life satisfaction OLS regression including workplace EQ indicators, UK
 \begin_inset CommandInset label
 LatexCommand label
-name "tab:UK-wokplace-ls-reg"
+name "tab:UK-workplace-ls-reg"
 
 \end_inset
 
@@ -35261,18 +35538,10 @@ Standard errors are sandwich estimators.
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-No effect in London either.
- Even lower sample size because not everyone works in London.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -36015,7 +36284,7 @@ Commuting time (minutes)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Long working hours^
+Long working hours
 \end_layout
 
 \end_inset
@@ -38102,11 +38371,6 @@ Standard errors are sandwich estimators clustered at LSOA level.
 \begin_inset Newline newline
 \end_inset
 
-^ Dummy indicating respondent works a minimum 48-hour week more than once
- a month.
-\begin_inset Newline newline
-\end_inset
-
 + 
 \begin_inset Formula $p<0.1$
 \end_inset
@@ -38128,11 +38392,42 @@ Standard errors are sandwich estimators clustered at LSOA level.
 
 \end_inset
 
+Models estimated from UK and London data are displayed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:UK-workplace-ls-reg"
 
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:london-workplace-ls-reg"
+
+\end_inset
+
+ respectively.
+ In each case, no workplace EQ variable has a significant coefficient.
+\end_layout
+
+\begin_layout Standard
+In these models we also control for respondents' commuting time and ---
+ for the London survey --- an indicator of long working hours.
+ Longer commuting times bring significantly lower predicted LS in the UK
+ model (approximately one-third of point on the 0 -- 10 scale per travelling
+ hour).
+ Neither variable has a significant coefficient in the London model.
 \end_layout
 
 \begin_layout Subsection
 Valuation
+\end_layout
+
+\begin_layout Standard
+Value the three significant land cover types for UK LS model, and the one
+ for UK SF-36 emo.
+ wb.
+ model.
 \end_layout
 
 \begin_layout Standard
@@ -38141,8 +38436,10 @@ Mention differing magnitudes of income coeffs in London aggregates, despite
  It's in line with Fujiwara's suggestion that LS is most sensitive to income.
 \end_layout
 
-\begin_layout Subsubsection
-Comparison with hedonic valuation
+\begin_layout Standard
+Re-estimate models without health vars and use inflated income coefficient
+ in line with Dolan & Fujiwara 2011.
+ And try instrumenting income with something??
 \end_layout
 
 \begin_layout Subsection
@@ -38165,6 +38462,7 @@ Or does this go with valuation?
 \begin_layout Standard
 Comparison of UK results with Gibbons et al --> mixed (we find fewer sig.
  effects, and disagree on the sign of grasslands).
+ Compare values also.
 \end_layout
 
 \begin_layout Standard
@@ -38179,11 +38477,12 @@ Lack of results for London, lack of robustness in general
 
 By looking at the question at different scales, using different LS measures,
  and with many EQ and spatial variables (i.e.
- a uniquely comprehensive approach?), we do not discover not some grand
- and unifying pattern, but instead cast down on the robustness of the whole
+ a uniquely comprehensive approach?), we do not discover not a grand and
+ unifying pattern, but instead cast doubt on the robustness of the whole
  enterprise.
  Perhaps a larger sample would have helped, but perhaps not -- and our sample
- is not small in the literature (?).
+ is not particularly small re the literature (well, maybe the London one
+ is?).
 \end_layout
 
 \begin_layout Standard
@@ -38202,7 +38501,8 @@ No guarantee of causality.
 \end_layout
 
 \begin_layout Standard
-A new way is needed...
+A new approach is needed...
+ cue Mappiness.
 \end_layout
 
 \end_body

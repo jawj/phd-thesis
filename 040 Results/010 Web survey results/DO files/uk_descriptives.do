@@ -96,6 +96,7 @@ age_mp_sq
 unemployed
 lives_alone
 religious
+commutetimemp
 ;
 
 estpost sum `rhsvars';
