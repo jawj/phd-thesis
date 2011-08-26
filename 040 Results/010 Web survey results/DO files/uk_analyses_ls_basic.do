@@ -10,7 +10,7 @@ foreach lcmsuffix in r1000 r3000 r10000 {;
   // foreach lcm in coast water greens suburban inlandbare {;
     
     capture drop hc_`lcm';
-    gen hc_`lcm' = ln_home_`lcm'_`lcmsuffix';
+    gen hc_`lcm' = home_`lcm'_`lcmsuffix';
   };
 
 
@@ -68,7 +68,7 @@ regress
   // if ipaq_total_mhw < 300
 , vce(robust)
 ;
-outreg2 using "/Users/gjm06/Downloads/regs_uk_07_oprobit.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
+outreg2 using "/Users/gjm06/Downloads/regs_uk_08.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
 };
 #delimit CR
 

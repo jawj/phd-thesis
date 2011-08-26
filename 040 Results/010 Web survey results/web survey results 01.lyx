@@ -15012,7 +15012,7 @@ Observations
 \uwave off
 \noun off
 \color none
-R-squared
+Adjusted R-squared
 \end_layout
 
 \end_inset
@@ -15359,8 +15359,12 @@ Finally, LS is significantly higher where the respondent's accommodation
 status collapsed
 
 \begin_layout Plain Layout
-We note, however, that the coefficient on a public housing dummy has the
- opposite sign in the study by 
+We note, however, that the coefficient on a public housing dummy is significant
+ and 
+\emph on
+negative
+\emph default
+ in the study by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "brereton:2007"
@@ -15376,33 +15380,15 @@ key "brereton:2007"
 \end_layout
 
 \begin_layout Paragraph
-Distances
-\end_layout
-
-\begin_layout Standard
-We include distance variables both as indicators of the availability of
- natural environments (National Parks, AONBs, NNRs, coast, river) and as
- proxies for local amenities which may affect wellbeing and/or house prices
- (motorways and stations).
- However, no coefficient on these variables is significant in any of the
- three specifications.
-\end_layout
-
-\begin_layout Standard
-In the models shown, the distances are entered in logs.
- We also entered them as simple distances in alternative models but, again,
- no coefficient was significant in any specification (not shown).
-\end_layout
-
-\begin_layout Paragraph
 Land cover proportions
 \end_layout
 
 \begin_layout Standard
-In each model, eight land cover proportion variables are entered: the omitted
- land cover type is 'continuous urban', so the coefficients can be interpreted
- as the describing the variation in LS as the share of a given type is increased
-, while decreasing the share of urban land cover.
+In each model, eight land cover proportion variables are entered.
+ The omitted land cover type is 'continuous urban', so the coefficients
+ can be interpreted as the describing the variation in LS as the share of
+ a given type is increased, while decreasing the share of continuous urban
+ land cover.
 \end_layout
 
 \begin_layout Standard
@@ -15414,26 +15400,55 @@ Coefficients (and their
  the three scales considered.
  The coefficient on freshwater is positive and significant in the models
  with proportions over a 1km and 3km radius.
- That on grasslands is positive and significant in the 3km and 10km radius
- models.
- That on woodlands is significant only in the 3km radius model.
- No other land cover coefficient is significant at the 5% level.
- The 3km radius model is our preferred model, and the one we discuss further.
+ The coefficient on grasslands is positive and significant in the 3km and
+ 10km radius models.
+ The coefficient on woodlands is significant only in the 3km radius model.
+ No other land cover coefficient is significantly different from zero at
+ the 5% level.
+ Since it has the greatest number of significant coefficients, the 3km radius
+ model is our preferred model, and the model we discuss further below.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In the models discussed, the land cover proportion variables are entered
+ as simple percentages.
+ In alternative models (not shown) they were entered as logs; in these models,
+ no coefficient was significantly different from zero at the 5% level.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-The land cover coefficients are of a reasonably large magnitude.
- There are approximately 2,800 hectares within a 3km radius, so an increase
+The significant land cover coefficients --- on freshwater, grasslands and
+ woodland --- are of fairly large magnitude.
+ The explanatory variables are scaled as percentages, so the coefficients
+ tell us much how the predicted 0 -- 10 LS scale value would change for
+ every 1% increase in the relevant land cover type.
+ Since there are approximately 2,800ha of land within a 3km radius, an increase
  of 1% in the proportion of a given land cover type corresponds to the addition
- of 28 hectares of that type.
- 
+ of 28ha of that type.
 \end_layout
 
 \begin_layout Standard
-Going in each case from the minimum to the maximum of the 3km-radius proportions
- observed in our sample, predicted 0 -- 10 LS would vary by 1.9 scale points
- in the case of freshwater, 1.4 points in the case of grasslands, and 1.1
- points in the case of woodland.
+Turning these figures around, how big a change in each land cover type would
+ increase the predicted 0 -- 10 LS rating by 1 point? Freshwater would need
+ to cover an an additional 23% or 641ha; grasslands would need to cover
+ an extra 58% or 1,652ha; or woodland would need to cover 57% or 1,623ha
+ more.
+ As might be expected, these are very large changes --- equivalent to several
+ standard deviations in each case --- but they are not outside the absolute
+ ranges of the values seen in the sample (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:web-uk-spatial-summary"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Paragraph
@@ -15441,15 +15456,46 @@ Other spatial variables
 \end_layout
 
 \begin_layout Standard
-pop dens + house price
+We include distance variables both as indicators of the availability of
+ natural environments (National Parks, AONBs, NNRs, coast, river) and as
+ proxies for local amenities which may affect wellbeing and/or house prices
+ (motorways and stations).
+ However, no coefficient on any of these variables is significantly different
+ from zero.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In the models discussed here, all distances are entered in logs.
+ We also entered them as simple distances in alternative models (not shown),
+ but still no coefficient was significant in any specification.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
+As an additional control for local characteristics and amenities we include
+ a measure of local population density (in the 1km grid square containing
+ the respondent's home).
+ In the 3km radius model only, the coefficient on this measure is significantly
+ positive.
+ As noted previously, we also include a house price indicator, which should
+ allow us to estimate the full values of EQ parameters below.
+ The coefficient on this variable is not significant in any specification.
+\begin_inset Foot
+status collapsed
 
 \begin_layout Plain Layout
-Mention multiple comparisons issue?
+Alternative specifications were tried (not shown) omitting either or both
+ variables, or replacing them with their LSOA-level equivalents.
+ Only specifications in which no population density indicator was included
+ produced appreciably different results.
+ In these specifications, the coefficients on the three significant land
+ cover types were somewhat reduced, with the coefficient on woodland just
+ losing significance at the 5% level (p < 0.09).
 \end_layout
 
 \end_inset
@@ -20433,7 +20479,7 @@ Observations
 \uwave off
 \noun off
 \color none
-R-squared
+Adjusted R-squared
 \end_layout
 
 \end_inset
@@ -26374,7 +26420,7 @@ Observations
 \uwave off
 \noun off
 \color none
-R-squared
+Adjusted R-squared
 \end_layout
 
 \end_inset
@@ -26539,16 +26585,6 @@ Standard errors are sandwich estimators.
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Remove SF-6D from this table?
 \end_layout
 
 \end_inset
@@ -31904,7 +31940,7 @@ Observations
 \uwave off
 \noun off
 \color none
-R-squared
+Adjusted R-squared
 \end_layout
 
 \end_inset
@@ -34939,7 +34975,7 @@ Observations
 \uwave off
 \noun off
 \color none
-R-squared
+Adjusted R-squared
 \end_layout
 
 \end_inset
@@ -37802,7 +37838,7 @@ Observations
 \uwave off
 \noun off
 \color none
-R-squared
+Adjusted R-squared
 \end_layout
 
 \end_inset
@@ -37911,6 +37947,30 @@ Valuation
 
 \begin_layout Subsubsection
 Comparison with hedonic valuation
+\end_layout
+
+\begin_layout Subsection
+Interpretation
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Or does this go with valuation?
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Mention multiple comparisons issue
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
