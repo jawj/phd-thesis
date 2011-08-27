@@ -10,6 +10,13 @@
 \usepackage[bf,hang,small]{caption}
 \definecolor{LinkColor}{rgb}{0,0,0.4}
 \usepackage[mmddyyyy,nodayofweek]{datetime}
+
+\newrefformat{app}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{par}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{sec}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{sub}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{fig}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{tab}{\hyperlink{#1}{\autoref{#1}}}
 \end_preamble
 \use_default_options false
 \master ../../000 master 01.lyx
@@ -182,8 +189,7 @@ reference "tab:net-use"
 \end_inset
 
 .
- In addition, those in paid employment are somewhat under-represented in
- both surveys.
+ Those in paid employment are also somewhat under-represented in both surveys.
 \end_layout
 
 \begin_layout Subsubsection
@@ -214,12 +220,12 @@ reference "chap:survey-results-appendix"
 
 .
  Incomes in our survey data appear similar to, or very slightly below, those
- in large-scale surveys using probability sampling.
+ reported in large-scale surveys using probability sampling.
 \end_layout
 
 \begin_layout Standard
 For the UK as a whole in 2004/05, median gross annual household income was
- £24,700, and the mean was £31,884 
+ £24,700, while the mean was £31,884 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "house-of-commons:2006"
@@ -233,21 +239,14 @@ key "house-of-commons:2006"
 \end_layout
 
 \begin_layout Standard
-In London in 2006, median gross weekly pay for
-\emph on
+In London in 2006, median gross weekly pay for full-time employees was £541
  
-\emph default
-full-time employees was £541 
-\size footnotesize
-
 \begin_inset CommandInset citation
 LatexCommand citep
 key "national-statistics:2007"
 
 \end_inset
 
-
-\size default
 .
  The median individual income bracket for employees in the London survey
  data is consistent with this, being equivalent to £498 -- £556 per week
@@ -1518,8 +1517,8 @@ ESS personal and social wellbeing
 
 \end_inset
 
-Descriptive statistics for all subjective wellbeing indicators are presented
- in 
+Descriptive statistics for all subjective wellbeing indicators used in the
+ analyses to follow are presented in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:swb-var-descriptives"
@@ -1527,8 +1526,7 @@ reference "tab:swb-var-descriptives"
 \end_inset
 
 .
- The calculation of the aggregate PANAS, SF-36 and European Social Survey
- Wellbeing Module scales is explained in 
+ The calculations underlying the multi-item scales are explained in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Aggregate-swb-calculations"
@@ -4211,8 +4209,8 @@ boldface
 
 \end_inset
 
-Correlations between all combinations of spatial variables are shown in
- 
+Correlations between all pairwise combinations of spatial variables are
+ shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:web-uk-spatial-correlations"
@@ -4221,9 +4219,8 @@ reference "tab:web-uk-spatial-correlations"
 
 .
  As expected, the two population density indicators are highly correlated
- with each other, as are the two house price indicators.
- These correlated pairs were not intended to be used in the same regression
- model.
+ with each other, as are the two house price indicators (these correlated
+ pairs were not intended to be used in the same regression model).
  Distances to the nearest railway station and railway line are also highly
  correlated.
  To avoid issues of multicolinearity these will also not be entered together
@@ -6918,7 +6915,7 @@ reference "tab:web-london-spatial-summary"
 
  (again, for brevity, we show only 3km unweighted proportions for green
  and blue space indicator variables).
- Notably, few respondents are resident in areas of high aircraft or railway
+ Notably few respondents are resident in areas of high aircraft or railway
  noise as identified by the data sets used (2% and 6% respectively).
 \end_layout
 
@@ -9615,9 +9612,9 @@ Life satisfaction and the environment near the home
 \end_layout
 
 \begin_layout Standard
-We first consider standard SWB regression models having a single LS response
+We first consider regression models with the single-item 0 -- 10 LS response
  as the dependent variable, and as independent variables a variety of environmen
-tal parameters, along with spatial and non-spatial controls.
+tal parameters alongside spatial and non-spatial controls.
 \end_layout
 
 \begin_layout Subsubsection
@@ -15472,8 +15469,8 @@ reference "tab:UK-basic-ls-regs"
 
  presents three models for the UK, differing only in the set of land cover
  proportion measures used.
- There is one model for each of the simple (uniform kernel-weighted) proportion
- measures described in 
+ There is one model for each of the simple (unweighted or uniform kernel-weighte
+d) proportion measures described in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:kernel-Proportion-methods"
@@ -15482,7 +15479,7 @@ reference "sub:kernel-Proportion-methods"
 
 .
  We also estimated models using Gaussian kernel-weighted proportion measures.
- Since these estimates were very similar to those using simple proportions,
+ Since the estimates were very similar to those using simple proportions,
  but the coefficients are less easy to interpret, they are not shown.
 \end_layout
 
@@ -15495,7 +15492,7 @@ reference "sub:econometrics-survey-data"
 \end_inset
 
  the models are estimated by OLS, but we have checked that the results are
- comparable with those from ordered models.
+ comparable with those of ordered models.
  As an example, estimates of the 3km radius model in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -15510,6 +15507,13 @@ reference "sec:Sample-ordered-probit"
 
 \end_inset
 
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:survey-results-appendix"
+
+\end_inset
+
 .
 \end_layout
 
@@ -15519,8 +15523,8 @@ Control variables
 
 \begin_layout Standard
 The coefficients on the non-spatial control variables vary little between
- the three models, and are fully in line with the standard findings (for
- which see 
+ the three models, and are fully in line with the standard findings (discussed
+ in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:happiness-tells-us-Other-factors"
@@ -15617,8 +15621,7 @@ reference "sub:survey-other-items"
 \end_inset
 
  both have large and significant negative associations with LS, while religious
- belief (answering above 5 on the 0 -- 10 religious belief scale) has a
- large and significant positive effect.
+ belief has a large and significant positive effect.
 \end_layout
 
 \begin_layout Standard
@@ -15664,8 +15667,8 @@ Land cover
 \begin_layout Standard
 In each model, eight land cover proportion variables are entered.
  The omitted land cover type is 'continuous urban', so the coefficients
- can be interpreted as the describing the variation in LS as the share of
- a given type is increased, while decreasing the share of continuous urban
+ can be interpreted as describing the variation in LS as the share of a
+ given type is increased, while decreasing the share of continuous urban
  land cover.
 \end_layout
 
@@ -15674,17 +15677,15 @@ Coefficients (and their
 \begin_inset Formula $p$
 \end_inset
 
- values) on the land cover proportions are not entirely consistent across
- the three scales considered.
+ values) on the land cover proportions are not consistent across the three
+ scales considered.
  The coefficient on freshwater is positive and significant in the models
  with proportions over a 1km and 3km radius.
  The coefficient on grasslands is positive and significant in the 3km and
  10km radius models.
  The coefficient on woodlands is significant only in the 3km radius model.
  No other land cover coefficient is significantly different from zero at
- the 5% level.
- Since it has the greatest number of significant coefficients, the 3km radius
- model is our preferred model, and the model we discuss further below.
+ the 5% level in any model
 \begin_inset Foot
 status collapsed
 
@@ -15697,16 +15698,19 @@ In the models discussed, the land cover proportion variables are entered
 
 \end_inset
 
-
+.
+ Since it has the greatest number of significant coefficients the 3km radius
+ model is our preferred model, and the one we use for purposes of monetary
+ valuation below.
 \end_layout
 
 \begin_layout Standard
-The significant land cover coefficients --- on freshwater, grasslands and
- woodland --- are of fairly large magnitude.
+The significant land cover coefficients in the 3km radius model --- on freshwate
+r, grasslands and woodland --- are of fairly large magnitude.
  The explanatory variables are scaled as percentages, so the coefficients
  tell us much how the predicted 0 -- 10 LS scale value would change for
  every 1% increase in the relevant land cover type.
- Since there are approximately 2,800ha of land within a 3km radius, an increase
+ There are approximately 2,800ha of land within a 3km radius, so an increase
  of 1% in the proportion of a given land cover type corresponds to the addition
  of 28ha of that type.
 \end_layout
@@ -15715,10 +15719,10 @@ The significant land cover coefficients --- on freshwater, grasslands and
 Turning these figures around, how big a change in each land cover type would
  increase the predicted 0 -- 10 LS rating by 1 point? Freshwater would need
  to cover an an additional 23% or 641ha; grasslands would need to cover
- an extra 58% or 1,652ha; or woodland would need to cover 57% or 1,623ha
+ an extra 58% or 1,652ha; and woodland would need to cover 57% or 1,623ha
  more.
  As might be expected, these are very large changes --- equivalent to several
- standard deviations in each case --- but they are not outside the absolute
+ standard deviations in each case --- but they are not outside the total
  ranges of the values seen in the sample (
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -15760,20 +15764,22 @@ As an additional control for local characteristics and amenities we include
  the respondent's home).
  In the 3km radius model only, the coefficient on this measure is significantly
  positive.
- As noted previously, we also include a house price indicator, which should
- allow us to estimate the full values of EQ parameters below.
+ As noted previously, we also include an indicator of house prices, which
+ should allow us to estimate total values for the EQ parameters.
  The coefficient on this variable is not significant in any specification.
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
 Alternative specifications were tried (not shown) omitting either or both
- variables, or replacing them with their LSOA-level equivalents.
+ of the population density and house price variables, or replacing them
+ with their LSOA-level equivalents.
  Only specifications in which no population density indicator was included
  produced appreciably different results.
  In these specifications, the coefficients on the three significant land
  cover types were slightly reduced, with the coefficient on woodland just
- losing significance at the 5% level (p < 0.09).
+ losing significance at the 5% level (p < 0.09) in the model using proportions
+ within 3km.
 \end_layout
 
 \end_inset
@@ -20946,7 +20952,7 @@ reference "tab:london-basic-ls-regs"
  As in the UK case there is one model for each of the simple proportion
  measures calculated.
  Again, we also estimated models using Gaussian kernel-weighted proportions;
- again, these are highly similar and we do not report them.
+ again, these are very similar and we do not report them.
 \end_layout
 
 \begin_layout Paragraph
@@ -20976,7 +20982,11 @@ The models shown use the LCM-based green space proportion indicators.
  GiGL open space data sets, and one in which we used the GiGL 'Area of Deficienc
 y' dummy variable.
  Again, no coefficient was significant at any radius.
- The LCM blue space proportion indicator was also not significantly different
+ 
+\end_layout
+
+\begin_layout Standard
+The LCM blue space proportion indicator was also not significantly different
  from zero over any radius.
 \end_layout
 
@@ -20991,10 +21001,10 @@ None of the other coefficients on spatial variables are significantly different
 
 \begin_layout Standard
 The results in these models are not substantially altered if we omit either
- or both of the distance variables (to Zone 1 and to nearest Underground
- or railway station) that are included as controls, replace distance to
- Zone 1 with either of the population density measures (with which it is
- substantially correlated), or use the LSOA-level house price indicator.
+ or both of the distance variables that are included as controls, replace
+ distance to Zone 1 with either of the population density measures (with
+ which it is substantially correlated), or use the LSOA-level house price
+ indicator.
 \end_layout
 
 \begin_layout Subsection
@@ -21002,11 +21012,12 @@ Alternative happiness indicators
 \end_layout
 
 \begin_layout Standard
-We now consider the sensitivity of our results to the use of alternative
+We now consider the sensitivity of our findings to the use of alternative
  SWB measures.
  For both the UK and London data we estimate models with the same explanatory
- variables as above, but limiting ourselves to proportion variables calculated
- over a 3km radius only.
+ variables as above.
+ We limit ourselves to proportion variables calculated over a 3km radius
+ only.
  
 \end_layout
 
@@ -26941,9 +26952,9 @@ negative
 
 \end_inset
 
-Using the UK data we substitute for the basic life satisfaction item three
- alternative independent variables: the emotional wellbeing sub-scale of
- the SF-36, and the positive and negative components of the PANAS.
+Using the UK data we substitute for the 0 -- 10 life satisfaction item three
+ alternative dependent variables: the emotional wellbeing sub-scale of the
+ SF-36, and the positive and negative components of the PANAS.
  The resulting model estimates are presented in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -26958,8 +26969,8 @@ reference "tab:UK-aggregate-regs"
 status collapsed
 
 \begin_layout Plain Layout
-Coefficients on control variables are also a little different, but since
- they are not of primary interest we do not discuss them here.
+Coefficients on control variables are also a little different in some cases,
+ but since they are not of primary interest we do not discuss them here.
 \end_layout
 
 \end_inset
@@ -26975,8 +26986,8 @@ SF-36 emotional wellbeing
 In the emotional wellbeing model, the only spatial regressor with a coefficient
  significantly different from zero is the proportion of farmland within
  3km, which is positively associated with wellbeing.
- This regressor did not have a significant relationship with the life satisfacti
-on.
+ This regressor did not have a significant relationship with the 0 -- 10
+ life satisfaction item.
 \end_layout
 
 \begin_layout Standard
@@ -32514,9 +32525,9 @@ Standard errors are sandwich estimators clustered at LSOA level.
 
 Using the London data we estimate models having as their dependent variables
  three different aggregated scales from the ESS Wellbeing Module: a multi-item
- life satisfaction scale, and two broader scales (of which the life satisfaction
- scale is in each case a part) aggregating respectively personal, and personal
- and social, wellbeing items.
+ life satisfaction scale, and two more wide-ranging scales (of which the
+ life satisfaction scale is in each case a part) aggregating respectively
+ personal, and both personal and social, wellbeing items.
  These models are presented in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -32528,9 +32539,9 @@ reference "tab:london-aggregate-regs"
 \end_layout
 
 \begin_layout Standard
-As was also the case when using the basic life satisfaction scale, no EQ
- parameter coefficient is significant (at the 5% level) in any of the three
- models.
+As was also the case when using the basic life satisfaction scale with the
+ London data, no EQ parameter coefficient is significant (at the 5% level)
+ in any of the three models.
  As in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -32549,8 +32560,8 @@ reference "sub:London-basic-ls-regs"
 One spatial control variable does have a significant coefficient in all
  three models, however: the residential burglary rate is in each case positively
  associated with wellbeing.
- This result is not intuitive, but might relate to unobserved spatial correlates
- of the burglary rate.
+ This result is certainly not intuitive, but could relate to unobserved
+ spatial correlates of the burglary rate.
 \end_layout
 
 \begin_layout Subsection
@@ -32561,7 +32572,7 @@ The environment near the workplace
 Finally, we investigate whether EQ parameters in the vicinity of respondents'
  workplaces have a measurable association with LS.
  Sample sizes are substantially reduced in these models, since they include
- only respondents who are employed and --- for the London survey --- work
+ only respondents who are employed and --- in the London survey --- work
  within London.
 \end_layout
 
@@ -35541,7 +35552,7 @@ Standard errors are sandwich estimators.
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -38414,13 +38425,20 @@ reference "tab:london-workplace-ls-reg"
 In these models we also control for respondents' commuting time and ---
  for the London survey --- an indicator of long working hours.
  Longer commuting times bring significantly lower predicted LS in the UK
- model (approximately one-third of point on the 0 -- 10 scale per travelling
- hour).
- Neither variable has a significant coefficient in the London model.
+ model (equivalent to approximately one-third of a point on the 0 -- 10
+ scale per travelling hour).
+ Neither variable has a significant coefficient in the London model, however.
 \end_layout
 
 \begin_layout Subsection
 Valuation
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:surveys-Valuation"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

@@ -4142,7 +4142,12 @@ key "layard:2008a"
 \end_inset
 
 ).
- The precise nature of these connections remains a matter of some contention,
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The precise nature of these connections remains a matter of some contention,
  though (
 \begin_inset CommandInset citation
 LatexCommand citealp
@@ -4151,6 +4156,11 @@ key "stevenson:2008"
 \end_inset
 
 ).
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5248,7 +5258,7 @@ Income habituation and (if individuals make social comparisons primarily
  
 \begin_inset CommandInset citation
 LatexCommand citealp
-key "stevenson:2008a"
+key "stevenson:2008"
 
 \end_inset
 

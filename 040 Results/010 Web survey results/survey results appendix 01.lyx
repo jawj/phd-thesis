@@ -4841,17 +4841,264 @@ name "sec:Aggregate-swb-calculations"
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO
+\begin_layout Subsection
+SF-36
 \end_layout
+
+\begin_layout Standard
+The SF-36 emotional wellbeing scale runs from 0 -- 100 and is calculated
+ as the mean of recoded responses to the following five questions 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "rand-health:2011"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+How much of the time during the 
+\series bold
+past 4 weeks
+\series default
+...
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+24.
+ Have you been a very nervous person?
+\begin_inset Newline newline
+\end_inset
+
+25.
+ Have you felt so down in the dumps that nothing could cheer you up?
+\begin_inset Newline newline
+\end_inset
+
+26.
+ Have you felt calm and peaceful?
+\begin_inset Newline newline
+\end_inset
+
+28.
+ Have you felt downhearted and blue?
+\begin_inset Newline newline
+\end_inset
+
+30.
+ Have you been a happy person?
+\end_layout
+
+\begin_layout Standard
+Questions 26 and 30 --- being positively phrased --- are coded as follows:
+\end_layout
+
+\begin_layout Standard
+All of the time = 100
+\begin_inset Newline newline
+\end_inset
+
+Most of the time = 80
+\begin_inset Newline newline
+\end_inset
+
+A good bit of the time = 60
+\begin_inset Newline newline
+\end_inset
+
+Some of the time = 40
+\begin_inset Newline newline
+\end_inset
+
+A little of the time = 20
+\begin_inset Newline newline
+\end_inset
+
+None of the time = 0
+\end_layout
+
+\begin_layout Standard
+Questions 24, 25 and 28 --- being negatively phrased --- are coded in reverse:
+\end_layout
+
+\begin_layout Standard
+All of the time = 0
+\begin_inset Newline newline
+\end_inset
+
+Most of the time = 20
+\begin_inset Newline newline
+\end_inset
+
+A good bit of the time = 40
+\begin_inset Newline newline
+\end_inset
+
+Some of the time = 60
+\begin_inset Newline newline
+\end_inset
+
+A little of the time = 80
+\begin_inset Newline newline
+\end_inset
+
+None of the time = 100
+\end_layout
+
+\begin_layout Subsection
+PANAS
+\end_layout
+
+\begin_layout Standard
+The PANAS is introduced as follows:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Here are a number of words that describe different feelings and emotions.
+ For each item, please indicate to what extent you have felt this way 
+\series bold
+during the past few weeks
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+For each word, respondents pick one of five options, which are coded as
+ follows:
+\end_layout
+
+\begin_layout Standard
+Very slightly or not at all = 1
+\begin_inset Newline newline
+\end_inset
+
+A little = 2
+\begin_inset Newline newline
+\end_inset
+
+Moderately = 3
+\begin_inset Newline newline
+\end_inset
+
+Quite a bit = 4
+\begin_inset Newline newline
+\end_inset
+
+Extremely = 5
+\end_layout
+
+\begin_layout Standard
+The positive sub-scale runs from 10 -- 50 and is calculated as 
+\begin_inset Formula $10\times$
+\end_inset
+
+ the mean of the responses to the positive words: 
+\emph on
+interested, alert, excited, inspired, strong, determined, attentive, active,
+ enthusiastic 
+\emph default
+and
+\emph on
+ proud
+\emph default
+.
+ Similarly, the negative sub-scale runs from 10 -- 50 and is calculated
+ as 
+\begin_inset Formula $10\times$
+\end_inset
+
+ the mean of the responses to the negative words: 
+\emph on
+irritable, distressed, ashamed, upset, nervous, guilty, scared, hostile,
+ jittery 
+\emph default
+and
+\emph on
+ afraid
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 226"
+key "mcdowell:2006"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+European Social Survey Wellbeing Module
+\end_layout
+
+\begin_layout Standard
+We use the satisfying life, personal wellbeing, and personal and social
+ wellbeing scales calculated from responses to our ESS Wellbeing Module
+ items.
+\end_layout
+
+\begin_layout Standard
+The satisfying life scale is calculated as the mean of five survey item
+ response z-scores, which are coded so that higher responses indicate higher
+ wellbeing.
+\end_layout
+
+\begin_layout Standard
+The personal wellbeing scale is the mean of five lower-level scales ---
+ emotional wellbeing, satisfying life, vitality, resilience and self-esteem,
+ and positive functioning --- which are themselves calculated as the means
+ of various item response z-scores.
+\end_layout
+
+\begin_layout Standard
+The personal and social wellbeing scale is calculated as the mean of the
+ personal wellbeing and social wellbeing scales.
+ The social wellbeing scale is calculated as the mean of two lower-level
+ scales --- supportive relationships and trust and belonging --- which are
+ themselves calculated as the means of item response z-scores.
+\end_layout
+
+\begin_layout Standard
+Full details of the ESS scale calculations are given by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "michaelson:2009"
 
 \end_inset
 
 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note, however, that there is an error in the last two rows of the table
+ in Appendix 3 on page 64 of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "michaelson:2009"
+
+\end_inset
+
+: the aligned scale for the last question, on appropriate pay, should be
+ marked as '(inv)', while the penultimate question, on the likelihood of
+ unemployment, should 
+\emph on
+not
+\emph default
+ be so marked.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
