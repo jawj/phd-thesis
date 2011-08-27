@@ -73,17 +73,27 @@ outreg2 using "/Users/gjm06/Downloads/regs_uk_08.xls", sideway label alpha(0.001
 #delimit CR
 
 
-// after sd1000
-local inc_coeff _b[hh_ind_inc_ln]
-local water_coeff _b[home_water_`lcmsuffix']
-sum(hh_ind_inc)
+// after r3000
+
+sum(hh_ind_inc)  // mean: 19204.41
 local mean_inc = r(mean)
 
-disp `water_coeff' * (`mean_inc' / `inc_coeff')
+nlcom _b[hc_water] * (`mean_inc' / _b[hh_ind_inc_ln])
+nlcom _b[hc_grassland] * (`mean_inc' / _b[hh_ind_inc_ln])
+nlcom _b[hc_woodland] * (`mean_inc' / _b[hh_ind_inc_ln])
+
+nlcom _b[hc_water] * (`mean_inc' / .5285416)
+nlcom _b[hc_grassland] * (`mean_inc' / .5285416)
+nlcom _b[hc_woodland] * (`mean_inc' / .5285416)
+
+
+ // larger income coefficient from: regress life_sat__q hh_ind_inc_ln , vce(robust)
+
+
 
 
 // ES for additional 1% water: £1.4K
-disp exp(ln(`mean_inc') + (`water_coeff' / `inc_coeff') * 1) - `mean_inc'
+// disp exp(ln(`mean_inc') + (`water_coeff' / `inc_coeff') * 1) - `mean_inc'
 
 
 

@@ -451,6 +451,33 @@ TODO: mention that we collect lots of unnecessary survey data for future/other
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: what do I say to Maddison's objection that I don't include climate
+ data in UK models?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: ignore need to cluster UK errors on 1km square?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "030 Methods/020 ESM/esm methods 01.lyx"

@@ -1,6 +1,7 @@
 set more off
 #delimit ;
-foreach dep in life_sat__q panas_positive panas_negative sf36_emo_wb sf6d_bayespm {;
+ // foreach dep in life_sat__q panas_positive panas_negative sf36_emo_wb sf6d_bayespm {;
+ foreach dep in sf36_emo_wb {;
 regress 
   `dep'
 
@@ -42,5 +43,14 @@ regress
   // if ipaq_total_mhw < 300
 , vce(robust)
 ;
-outreg2 using "/Users/gjm06/Downloads/regs_uk_mood_07.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
+ // outreg2 using "/Users/gjm06/Downloads/regs_uk_mood_07.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
 };
+
+
+sum(hh_ind_inc)  // mean: 19204.41
+local mean_inc = r(mean)
+
+nlcom _b[home_farmland_r3000] * (`mean_inc' / _b[hh_ind_inc_ln])
+nlcom _b[home_farmland_r3000] * (`mean_inc' / 4.883644)
+
+ // larger income coefficient from: regress sf36_emo_wb hh_ind_inc_ln, vce(robust)

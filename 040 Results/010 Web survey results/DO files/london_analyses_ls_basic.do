@@ -43,8 +43,8 @@ regress
   // home_osm_park_`lcmsuffix'
   // home_gigl_green_`lcmsuffix'
   
-  // hc_green
-  home_aod_01
+  hc_green
+  // home_aod_01
   
   hc_blue
 
@@ -72,7 +72,7 @@ regress
   hh_ind_inc_ln
 
   male__q
-  age_mp  age_mp_sq
+  age_mp age_mp_sq
   degree
   unemployed 
   really_single divsep
