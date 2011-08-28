@@ -92,7 +92,7 @@ nlcom _b[hc_woodland] * (`mean_inc' / .5285416)
 
 
 
-// ES for additional 1% water: £1.4K
+// CS for additional 1% water: £1.4K
 // disp exp(ln(`mean_inc') + (`water_coeff' / `inc_coeff') * 1) - `mean_inc'
 
 

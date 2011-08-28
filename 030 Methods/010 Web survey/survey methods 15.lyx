@@ -3191,25 +3191,6 @@ websperiment
  the extent to which layout and logic have to duplicated throughout a survey
  definition; and it will be released under an open-source licence, enabling
  any researcher to extend and modify it, and then to share those changes.
- Further details on 
-\emph on
-websperiment 
-\emph default
-are provided by 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "mackerron:2009a"
-
-\end_inset
-
-, and that paper is reproduced in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "app:websperiment-framework"
-
-\end_inset
-
-.
  The 
 \emph on
 websperiment
@@ -3236,6 +3217,29 @@ reference "chap:surveys-appendix"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Further details on 
+\emph on
+websperiment 
+\emph default
+are provided by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "mackerron:2009a"
+
+\end_inset
+
+, and that paper is reproduced in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "app:websperiment-framework"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Subsection

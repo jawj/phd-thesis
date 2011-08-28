@@ -45,7 +45,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize 11
-\spacing other 1.1499999999999999
+\spacing onehalf
 \use_hyperref true
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
@@ -75,7 +75,7 @@
 \color #ffffff
 \end_branch
 \branch bib-when-alone
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #ffffff
 \end_branch
@@ -83,9 +83,9 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2.5cm
+\leftmargin 4cm
 \topmargin 2cm
-\rightmargin 2.5cm
+\rightmargin 2cm
 \bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
@@ -94,7 +94,7 @@
 \quotes_language english
 \papercolumns 1
 \papersides 1
-\paperpagestyle default
+\paperpagestyle plain
 \bullet 2 0 9 -1
 \tracking_changes false
 \output_changes false
@@ -114,6 +114,20 @@ name "part:lit-review"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+An earlier draft of this chapter is published in the Journal of Economic
+ Surveys 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mackerron:2010"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -269,7 +283,7 @@ reference "fig:econlit-citations"
  And the topic has more recently begun to receive attention --- if not always
  approval --- in some of the more prestigious economic journals.
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 For example, the Journal of Economic Literature, the Journal of Economic
@@ -3305,7 +3319,7 @@ The compensating surplus represents maximum willingness to pay (WTP) for
  an improvement in the good, or minimum willingness to accept (WTA) for
  a deterioration.
  Conversely, the equivalent surplus represents maximum WTP to avoid a deteriorat
-ion in the good, or minimum WTA to forego an improvement 
+ion in the good, or minimum WTA to forgo an improvement 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "brookshire:1980"
@@ -3349,7 +3363,6 @@ Strengths and weaknesses
 \begin_layout Standard
 \begin_inset CommandInset citation
 LatexCommand citet
-before "e.g."
 key "frey:2008a"
 
 \end_inset
@@ -3376,8 +3389,8 @@ key "fujiwara:2011"
 \end_inset
 
  all provide summaries of the strengths and weaknesses of the SWB valuation
- method as compared with the conventional alternatives --- revealed and
- stated preference techniques.
+ method as compared with the conventional alternatives: revealed and stated
+ preference techniques.
  In general, SWB valuation is presented as a complement rather than an alternati
 ve to conventional valuation techniques, on the basis that it has quite
  different strengths and weaknesses.
@@ -6221,6 +6234,7 @@ key "koszegi:2008"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Section
@@ -6263,6 +6277,7 @@ SWB research suggests --- in line with intuition, but not always with the
  It also opens some new question to potential investigation.
  In respect of pubic policy, it is of particular value in informing debate
  around the desirability and feasibility of continuing economic growth.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -6278,10 +6293,12 @@ Scope remains for new research at many levels --- theoretical, methodological,
 status open
 
 \begin_layout Standard
+\paragraph_spacing single
+\noindent
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "/Users/gjm06/Documents/PhD thesis/all"
-options "bibtotoc,apalike2"
+bibfiles "../all"
+options "bibtotoc,apalike2url"
 
 \end_inset
 
