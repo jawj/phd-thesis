@@ -38461,10 +38461,17 @@ name "sub:surveys-Valuation"
 \end_layout
 
 \begin_layout Standard
-Value the three significant land cover types for UK LS model, and the one
- for UK SF-36 emo.
- wb.
- model.
+As discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:happiness-valuation"
+
+\end_inset
+
+, SWB models of the type estimated above may be used for monetary valuation.
+ The scope for using our results for this purpose is somewhat limited, however,
+ since for most EQ parameters the estimated wellbeing effects are not significan
+tly different from zero.
 \end_layout
 
 \begin_layout Standard
@@ -38477,7 +38484,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Marginal rates of substitution between EQ parameters and income
+Implicit prices at mean income for significant EQ parameters in UK models
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:MRS-values"
@@ -38531,7 +38538,7 @@ EQ parameter
 \begin_layout Plain Layout
 
 \emph on
-MRS with income (£/%/year)
+Implicit price (£/%/year)
 \end_layout
 
 \end_inset
@@ -38542,7 +38549,8 @@ MRS with income (£/%/year)
 \begin_layout Plain Layout
 
 \emph on
-MRS with income (upper-bound) (£/%/year)
+Implicit price using upper-bound income coeff.
+ (£/%/year)
 \end_layout
 
 \end_inset
@@ -38709,19 +38717,178 @@ SF-36 emotional wellbeing
 
 \end_inset
 
+Implicit prices for EQ parameters that do have significant effects are shown
+ in the third column of 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:MRS-values"
 
+\end_inset
+
+.
+ These are the marginal rates of substitution (MRS) between the EQ parameters
+ and income, at the mean income, calculated according to Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:swb-mrs"
+
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:swb-valuation-Method"
+
+\end_inset
+
+.
+ The life satisfaction model from which the freshwater, grassland and woodland
+ implicit prices are estimated is the 3km radius model reported in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:UK-basic-ls-regs"
+
+\end_inset
+
+.
+ The SF-36 emotional wellbeing model from which the implicit price on farmland
+ is calculated is the first model presented in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:UK-aggregate-regs"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The values reported are annual values applying to a 1% (28ha) change in
+ land cover type within 3km, matched by an oppositely-signed change in the
+ continuous urban type.
+ In common with values estimated in almost all previous research, these
+ values clearly seem too high.
+ For example, using Equation 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:cs"
+
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:swb-valuation-Method"
+
+\end_inset
+
+ to calculate compensating surplus values reveals that, at the mean income
+ (£19,204), respondents would be willing to pay an amount equal to the mean
+ income for a 60% (1,696ha) increase in freshwater land cover within 3km.
+\end_layout
+
+\begin_layout Subsubsection
+Correcting the income coefficient
+\end_layout
+
+\begin_layout Standard
+As noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:swb-valuation-Strengths-weaknesses"
+
+\end_inset
+
+, underestimation of the income coefficient has generally been posited as
+ the reason for such high values, and various means of correcting this have
+ been proposed.
+ Not all of these are possible with the data available to us, but we try
+ two different approaches.
+\end_layout
+
+\begin_layout Paragraph
+Indirect effects
+\end_layout
+
+\begin_layout Standard
+First, it may be that income has indirect positive impacts on SWB, mediated
+ by other variables that are also included in the regression models, such
+ as health status.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "dolan:2011"
+
+\end_inset
+
+ suggest a step-based approach to recovering these individual effects, and
+ suggest that the coefficient on income in a univariate regression of SWB
+ on income may be considered as an upper-bound on the true coefficient.
+ 
+\end_layout
+
+\begin_layout Standard
+We estimate this 'upper-bound' coefficient --- for the life satisfaction
+ model it is 0.53, up from 0.30 --- and in the final column of 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:MRS-values"
+
+\end_inset
+
+ present modified implicit prices calculated from it.
+ These are indeed reduced from the previous values, but still appear implausibly
+ large.
+ For example, despite being annual figures, they are approximately twice
+ as large as the implicit prices estimated in the hedonic study by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "gibbons:2011a"
+
+\end_inset
+
+, which are one-off values capitalised in house prices.
+\end_layout
+
+\begin_layout Paragraph
+Costs of income generation
+\end_layout
+
+\begin_layout Standard
+The second correction we investigate is accounting for the costs of income
+ generation.
+ We compare the income coefficients in our models using only data on working
+ respondents (in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:UK-workplace-ls-reg"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:london-workplace-ls-reg"
+
+\end_inset
+
+) with coefficients from models that are identical apart from the omission
+ of the variables indicating commuting time and (for London only) habitually
+ long working hours.
+ The comparison reveals that including the costs of income generation does
+ inflate the income coefficients slightly (from 0.31 to 0.35 in the UK model,
+ and from 0.34 to 0.36 for London), but not enough to make a substantial differenc
+e to the calculated values.
+\end_layout
+
+\begin_layout Subsubsection
+Alternative SWB indicators
 \end_layout
 
 \begin_layout Standard
 Mention differing magnitudes of income coeffs in London aggregates, despite
  lack of significant EQ coeffs to value.
  It's in line with Fujiwara's suggestion that LS is most sensitive to income.
-\end_layout
-
-\begin_layout Standard
-Re-estimate models without health vars and use inflated income coefficient
- in line with Dolan & Fujiwara 2011.
- And try instrumenting income with something??
 \end_layout
 
 \begin_layout Subsection
@@ -38739,6 +38906,13 @@ Or does this go with valuation?
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Arguable that locus of decisions is hh, so could restrict to those living
+ alone (as tried by Ferreira + Moro).
+ But samples too small, and no EQ parameters significant at all (London
+ < 200, UK < 400).
 \end_layout
 
 \begin_layout Standard

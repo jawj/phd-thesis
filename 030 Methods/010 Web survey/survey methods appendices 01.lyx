@@ -393,6 +393,8 @@ name "app:websperiment-framework"
 \end_layout
 
 \begin_layout Standard
+
+\emph on
 The paper reproduced below is published in the Journal of Choice Modelling
  
 \begin_inset CommandInset citation
@@ -408,7 +410,7 @@ key "mackerron:2009a"
 \begin_inset External
 	template PDFPages
 	filename re-revised_webspt_paper_04.pdf
-	lyxscale 30
+	lyxscale 40
 	extra LaTeX "pages=-"
 
 \end_inset

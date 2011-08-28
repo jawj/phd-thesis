@@ -75,7 +75,7 @@
 \color #ffffff
 \end_branch
 \branch bib-when-alone
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #ffffff
 \end_branch
@@ -3134,9 +3134,9 @@ From this, the implicit price of the good
 
 
 \begin_inset Formula 
-\[
-\frac{\delta r/\delta q}{\delta r/\delta y}=\gamma\frac{\bar{y}}{\beta}
-\]
+\begin{equation}
+\frac{\delta r/\delta q}{\delta r/\delta y}=\gamma\frac{\bar{y}}{\beta}\label{eq:swb-mrs}
+\end{equation}
 
 \end_inset
 
@@ -3260,8 +3260,15 @@ Which rearranges to give, at mean income
 :
 \begin_inset Formula 
 \[
-c=\bar{y}-\exp\left(\ln(\bar{y})+\frac{\gamma}{\beta}(g_{0}-g_{1})\right)
 \]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+c=\bar{y}-\exp\left(\ln(\bar{y})+\frac{\gamma}{\beta}(g_{0}-g_{1})\right)\label{eq:cs}
+\end{equation}
 
 \end_inset
 
@@ -3306,8 +3313,15 @@ To give, at mean income
 :
 \begin_inset Formula 
 \[
-e=-\bar{y}+\exp\left(\ln(\bar{y})+\frac{\gamma}{\beta}(g_{1}-g_{0})\right)
 \]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+e=-\bar{y}+\exp\left(\ln(\bar{y})+\frac{\gamma}{\beta}(g_{1}-g_{0})\right)\label{eq:es}
+\end{equation}
 
 \end_inset
 
@@ -3358,6 +3372,13 @@ key "luechinger:2009,ferreira:2010"
 
 \begin_layout Subsubsection
 Strengths and weaknesses
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:swb-valuation-Strengths-weaknesses"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3479,8 +3500,9 @@ reference "sub:Concepts-and-terminology"
 \end_inset
 
 , a variety of concepts and indicators of SWB exist.
- In the context of valuation studies, 'life satisfaction' measures have
- been the most frequently used, and 
+ In the context of valuation studies, LS measures have been the most frequently
+ used.
+ 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "fujiwara:2011"
@@ -3488,8 +3510,10 @@ key "fujiwara:2011"
 \end_inset
 
  argue that these have implicitly been assumed to most closely resemble
- the conventional PS notion of utility.
- But 
+ the conventional PS notion of utility, noting also that using LS as the
+ SWB measure produces lower value estimates, since income tends to correlate
+ more strongly with life satisfaction than other indicators.
+ In this connection, 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "powdthavee:2011"
@@ -3498,7 +3522,7 @@ key "powdthavee:2011"
 
  find that values calculated for health conditions can vary substantially
  --- in some cases, by orders of magnitude --- depending on the indicator
- used.
+ used, with LS producing the lowest values.
 \end_layout
 
 \begin_layout Standard
@@ -3696,7 +3720,11 @@ key "clark:2008a"
 \end_inset
 
 .
- Finally, indirect impacts of income on SWB may be absorbed by other explanatory
+ 
+\end_layout
+
+\begin_layout Standard
+Finally, indirect impacts of income on SWB may be absorbed by other explanatory
  variables, such as health --- 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -3713,7 +3741,7 @@ remarkably silent on this matter
 \begin_inset Quotes erd
 \end_inset
 
-, and suggest a method for countering it.
+, and suggest a practical method for countering it.
 \end_layout
 
 \begin_layout Section

@@ -64,7 +64,8 @@ regress
   unemployed
   lives_alone
   religious
-  // if household_sixteen_plus__q < 2
+  
+  // if hh_size_unweighted == 1
   // if ipaq_total_mhw < 300
 , vce(robust)
 ;
@@ -90,10 +91,9 @@ nlcom _b[hc_woodland] * (`mean_inc' / .5285416)
  // larger income coefficient from: regress life_sat__q hh_ind_inc_ln , vce(robust)
 
 
-
-
-// CS for additional 1% water: £1.4K
-// disp exp(ln(`mean_inc') + (`water_coeff' / `inc_coeff') * 1) - `mean_inc'
+ // CS for additional water: (at 60% it's equal to the mean income!)
+sum(hh_ind_inc)  // mean: 19204.41
+disp r(mean) - exp(ln(r(mean)) + (_b[hc_water] / _b[hh_ind_inc_ln]) * -60)
 
 
 

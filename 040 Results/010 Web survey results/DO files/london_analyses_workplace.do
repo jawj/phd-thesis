@@ -50,5 +50,5 @@ regress
   religious
 
 , cluster(home_lsoa_or_dzone);
-outreg2 using "/Users/gjm06/Downloads/regs_london_work_02.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
+ //outreg2 using "/Users/gjm06/Downloads/regs_london_work_02.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
 };
