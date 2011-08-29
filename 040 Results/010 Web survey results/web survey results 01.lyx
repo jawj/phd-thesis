@@ -9611,9 +9611,9 @@ Except where otherwise noted, all spatial quantities are calculated in relation
 To check for multicolinearity we calculate the Variance Inflation Factor
  (VIF) for each explanatory variable in the regression models described
  below.
- Except in the case of age and age squared, which necessarily account for
- much of each other's variation, no VIF is greater than 3.5, and almost all
- are less than 2.
+ Except in the case of age and age squared --- which necessarily account
+ for much of each other's variation --- no VIF is greater than 3.5, and almost
+ all are less than 2.
  Common rules-of-thumb for identifying multicolinearity problems suggest
  VIF thresholds of 4, 5 or 10 
 \begin_inset CommandInset citation
@@ -9622,8 +9622,27 @@ key "obrien:2007a"
 
 \end_inset
 
-, which we fall safely below.
+, so we fall safely below these.
  
+\end_layout
+
+\begin_layout Standard
+It might be objected that in the models below we use household-level spatial
+ variables to explain individual LS.
+ Following 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+to address the issue of using household-level variables to explain individual
+ LS, we ran a SWB regression reducing the sample to one- person households
+ for which household and individual variables (in particular income) coincide.
+\begin_inset Quotes erd
+\end_inset
+
+ (F+M)
 \end_layout
 
 \begin_layout Subsection
@@ -38799,9 +38818,9 @@ reference "sub:swb-valuation-Strengths-weaknesses"
 
 \end_inset
 
-, underestimation of the income coefficient has generally been posited as
- the reason for such high values, and various means of correcting this have
- been proposed.
+, underestimation of the income coefficient has commonly been identified
+ as the reason for such high values, and various means of correcting this
+ have been suggested.
  Not all of these are possible with the data available to us, but we try
  two different approaches.
 \end_layout
@@ -38811,9 +38830,9 @@ Indirect effects
 \end_layout
 
 \begin_layout Standard
-First, it may be that income has indirect positive impacts on SWB, mediated
- by other variables that are also included in the regression models, such
- as health status.
+First, it may be that income has indirect positive impacts on SWB mediated
+ by other variables that are included in the regression models, such as
+ health status.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -38821,22 +38840,23 @@ key "dolan:2011"
 
 \end_inset
 
- suggest a step-based approach to recovering these individual effects, and
- suggest that the coefficient on income in a univariate regression of SWB
+ suggest a step-based approach to recovering these indirect effects, and
+ propose that the coefficient on income in a univariate regression of SWB
  on income may be considered as an upper-bound on the true coefficient.
  
 \end_layout
 
 \begin_layout Standard
 We estimate this 'upper-bound' coefficient --- for the life satisfaction
- model it is 0.53, up from 0.30 --- and in the final column of 
+ model it is 0.53, up from 0.30 --- and we present modified implicit prices
+ calculated using it in the final column of 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:MRS-values"
 
 \end_inset
 
- present modified implicit prices calculated from it.
+.
  These are indeed reduced from the previous values, but still appear implausibly
  large.
  For example, despite being annual figures, they are approximately twice
@@ -38857,8 +38877,8 @@ Costs of income generation
 \begin_layout Standard
 The second correction we investigate is accounting for the costs of income
  generation.
- We compare the income coefficients in our models using only data on working
- respondents (in 
+ We compare the income coefficients in our models that use data on working
+ respondents only (
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:UK-workplace-ls-reg"
@@ -38875,8 +38895,12 @@ reference "tab:london-workplace-ls-reg"
 ) with coefficients from models that are identical apart from the omission
  of the variables indicating commuting time and (for London only) habitually
  long working hours.
- The comparison reveals that including the costs of income generation does
- inflate the income coefficients slightly (from 0.31 to 0.35 in the UK model,
+ 
+\end_layout
+
+\begin_layout Standard
+This comparison reveals that including the costs of income generation does
+ inflate the income coefficients somewhat (from 0.31 to 0.35 in the UK model,
  and from 0.34 to 0.36 for London), but not enough to make a substantial differenc
 e to the calculated values.
 \end_layout
@@ -38886,9 +38910,29 @@ Alternative SWB indicators
 \end_layout
 
 \begin_layout Standard
-Mention differing magnitudes of income coeffs in London aggregates, despite
- lack of significant EQ coeffs to value.
- It's in line with Fujiwara's suggestion that LS is most sensitive to income.
+Since we do not find significant coefficients on any of the same EQ parameters
+ using different wellbeing indicators, we cannot compare the values that
+ result.
+ We do note, however, that the three different dependent variables shown
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:london-aggregate-regs"
+
+\end_inset
+
+ --- which are equivalently scaled, being z-score averages in each case
+ --- provide rather varying estimated income coefficients.
+ The coefficient in the 'satisfying life' model (0.20) is approximately twice
+ the magnitude of those in the models using broader wellbeing measures (0.11
+ and 0.10), which is in line with the previous findings discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:swb-valuation-Strengths-weaknesses"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
