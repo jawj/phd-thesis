@@ -9607,44 +9607,6 @@ Except where otherwise noted, all spatial quantities are calculated in relation
  to respondents' home locations.
 \end_layout
 
-\begin_layout Standard
-To check for multicolinearity we calculate the Variance Inflation Factor
- (VIF) for each explanatory variable in the regression models described
- below.
- Except in the case of age and age squared --- which necessarily account
- for much of each other's variation --- no VIF is greater than 3.5, and almost
- all are less than 2.
- Common rules-of-thumb for identifying multicolinearity problems suggest
- VIF thresholds of 4, 5 or 10 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "obrien:2007a"
-
-\end_inset
-
-, so we fall safely below these.
- 
-\end_layout
-
-\begin_layout Standard
-It might be objected that in the models below we use household-level spatial
- variables to explain individual LS.
- Following 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Quotes eld
-\end_inset
-
-to address the issue of using household-level variables to explain individual
- LS, we ran a SWB regression reducing the sample to one- person households
- for which household and individual variables (in particular income) coincide.
-\begin_inset Quotes erd
-\end_inset
-
- (F+M)
-\end_layout
-
 \begin_layout Subsection
 Life satisfaction and the environment near the home
 \end_layout
@@ -38469,6 +38431,52 @@ In these models we also control for respondents' commuting time and ---
 \end_layout
 
 \begin_layout Subsection
+Robustness checks
+\end_layout
+
+\begin_layout Standard
+We have already described a number of checks on the robustness of our results
+ to variations in model specification, as appropriate to the specific models
+ being run.
+\end_layout
+
+\begin_layout Standard
+It might be objected that our models use household-level spatial variables
+ to explain individuals' wellbeing.
+ Following 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferreira:2010"
+
+\end_inset
+
+, we therefore attempted to estimate models in which the household and individua
+l variables coincide, by restricting our sample to individuals living alone.
+ However, in both the UK and London data sets this subsample is too small
+ (fewer than 400 and than 200 individuals respectively) to permit the discovery
+ of any significant EQ effects.
+\end_layout
+
+\begin_layout Standard
+Finally, to check for multicolinearity, we calculate the Variance Inflation
+ Factor (VIF) for each explanatory variable in the regression models we
+ report.
+ Except in the case of age and age squared --- which necessarily account
+ for much of each other's variation --- no VIF is greater than 3.5, and almost
+ all are less than 2.
+ Common rules-of-thumb for identifying multicolinearity problems suggest
+ VIF thresholds of 4, 5 or 10 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "obrien:2007a"
+
+\end_inset
+
+, so we fall safely below these.
+ 
+\end_layout
+
+\begin_layout Subsection
 Valuation
 \begin_inset CommandInset label
 LatexCommand label
@@ -38488,9 +38496,9 @@ reference "sub:happiness-valuation"
 \end_inset
 
 , SWB models of the type estimated above may be used for monetary valuation.
- The scope for using our results for this purpose is somewhat limited, however,
- since for most EQ parameters the estimated wellbeing effects are not significan
-tly different from zero.
+ The scope for using our results for this purpose is limited, however, since
+ for most EQ parameters the estimated wellbeing effects are not significantly
+ different from zero.
 \end_layout
 
 \begin_layout Standard
@@ -38782,11 +38790,31 @@ reference "tab:UK-aggregate-regs"
 \end_layout
 
 \begin_layout Standard
-The values reported are annual values applying to a 1% (28ha) change in
- land cover type within 3km, matched by an oppositely-signed change in the
- continuous urban type.
- In common with values estimated in almost all previous research, these
- values clearly seem too high.
+The values reported are annual values of a 1% (28ha) change in land cover
+ type within 3km, matched by an oppositely-signed change in the continuous
+ urban type.
+ Since we include both house price indicators and income in our model specificat
+ions, we can interpret these values as the full values of the relevant EQ
+ parameters
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+However, since dropping house price indicators from the regressions does
+ not much reduce the coefficients on EQ parameters, it would seem --- perhaps
+ implausibly, in the light of what is known from hedonic pricing studies
+ --- that variations in the EQ parameters considered are mainly uncompensated
+ through the housing market.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In common with values estimated in almost all previous research, the values
+ seem too high.
  For example, using Equation 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -38801,9 +38829,9 @@ reference "sub:swb-valuation-Method"
 
 \end_inset
 
- to calculate compensating surplus values reveals that, at the mean income
- (£19,204), respondents would be willing to pay an amount equal to the mean
- income for a 60% (1,696ha) increase in freshwater land cover within 3km.
+ to calculate compensating surpluses reveals that, at the mean income (£19,204),
+ respondents would be willing to pay an amount equal to that mean income
+ for a 60% (1,696ha) increase in freshwater land cover within 3km.
 \end_layout
 
 \begin_layout Subsubsection
@@ -38818,11 +38846,11 @@ reference "sub:swb-valuation-Strengths-weaknesses"
 
 \end_inset
 
-, underestimation of the income coefficient has commonly been identified
- as the reason for such high values, and various means of correcting this
+, underestimation of the coefficient on income has commonly been identified
+ as the cause of such high values, and various means of correcting this
  have been suggested.
  Not all of these are possible with the data available to us, but we try
- two different approaches.
+ three different approaches.
 \end_layout
 
 \begin_layout Paragraph
@@ -38832,7 +38860,7 @@ Indirect effects
 \begin_layout Standard
 First, it may be that income has indirect positive impacts on SWB mediated
  by other variables that are included in the regression models, such as
- health status.
+ the health status indicators.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -38840,15 +38868,15 @@ key "dolan:2011"
 
 \end_inset
 
- suggest a step-based approach to recovering these indirect effects, and
- propose that the coefficient on income in a univariate regression of SWB
- on income may be considered as an upper-bound on the true coefficient.
+ suggest a step-based approach to recovering these indirect effects, but
+ also propose that the coefficient on income in a univariate regression
+ of SWB on income may be considered as an upper-bound on the true coefficient.
  
 \end_layout
 
 \begin_layout Standard
 We estimate this 'upper-bound' coefficient --- for the life satisfaction
- model it is 0.53, up from 0.30 --- and we present modified implicit prices
+ model it is 0.53, up from 0.30 --- and we present alternative implicit prices
  calculated using it in the final column of 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -38857,17 +38885,18 @@ reference "tab:MRS-values"
 \end_inset
 
 .
- These are indeed reduced from the previous values, but still appear implausibly
+ These prices are indeed somewhat reduced, but still appear implausibly
  large.
- For example, despite being annual figures, they are approximately twice
- as large as the implicit prices estimated in the hedonic study by 
+ For example, they are approximately twice as large as the implicit prices
+ estimated in the hedonic study by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "gibbons:2011a"
 
 \end_inset
 
-, which are one-off values capitalised in house prices.
+, when we would expect them to be much smaller, since they are annual values
+ rather than 'one-off' values capitalised in house prices.
 \end_layout
 
 \begin_layout Paragraph
@@ -38875,8 +38904,8 @@ Costs of income generation
 \end_layout
 
 \begin_layout Standard
-The second correction we investigate is accounting for the costs of income
- generation.
+The second correction we attempt is to account for the costs of income generatio
+n.
  We compare the income coefficients in our models that use data on working
  respondents only (
 \begin_inset CommandInset ref
@@ -38905,14 +38934,34 @@ This comparison reveals that including the costs of income generation does
 e to the calculated values.
 \end_layout
 
+\begin_layout Paragraph
+The self-employed
+\end_layout
+
+\begin_layout Standard
+Finally, we follow 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "luechinger:2009"
+
+\end_inset
+
+ in estimating our models with self-employed respondents excluded from the
+ sample, on the basis that the self-employed may be more likely to understate
+ their incomes.
+ This makes almost no difference at all either to our coefficient estimates,
+ including those on income, or to the mean income, and will thus has very
+ little effect on the calculated values.
+\end_layout
+
 \begin_layout Subsubsection
 Alternative SWB indicators
 \end_layout
 
 \begin_layout Standard
 Since we do not find significant coefficients on any of the same EQ parameters
- using different wellbeing indicators, we cannot compare the values that
- result.
+ using alternative wellbeing indicators, we cannot compare the valuations
+ that result.
  We do note, however, that the three different dependent variables shown
  in 
 \begin_inset CommandInset ref
@@ -38921,11 +38970,12 @@ reference "tab:london-aggregate-regs"
 
 \end_inset
 
- --- which are equivalently scaled, being z-score averages in each case
- --- provide rather varying estimated income coefficients.
+ --- which are equivalently scaled, being in each case z-score averages
+ --- provide substantially varying income coefficient estimates.
  The coefficient in the 'satisfying life' model (0.20) is approximately twice
- the magnitude of those in the models using broader wellbeing measures (0.11
- and 0.10), which is in line with the previous findings discussed in 
+ as large as those in the models using broader wellbeing measures (0.11 and
+ 0.10).
+ This is in line with the previous findings discussed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:swb-valuation-Strengths-weaknesses"

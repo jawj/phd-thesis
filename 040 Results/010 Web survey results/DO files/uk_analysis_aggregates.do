@@ -1,7 +1,7 @@
 set more off
 #delimit ;
- // foreach dep in life_sat__q panas_positive panas_negative sf36_emo_wb sf6d_bayespm {;
- foreach dep in sf36_emo_wb {;
+ foreach dep in panas_positive panas_negative sf36_emo_wb  {;
+ //foreach dep in sf36_emo_wb {;
 regress 
   `dep'
 

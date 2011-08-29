@@ -67,6 +67,7 @@ regress
   
   // if hh_size_unweighted == 1
   // if ipaq_total_mhw < 300
+  // if work_status__q != "self_emp"
 , vce(robust)
 ;
 outreg2 using "/Users/gjm06/Downloads/regs_uk_08.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
