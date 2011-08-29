@@ -38950,8 +38950,8 @@ key "luechinger:2009"
  sample, on the basis that the self-employed may be more likely to understate
  their incomes.
  This makes almost no difference at all either to our coefficient estimates,
- including those on income, or to the mean income, and will thus has very
- little effect on the calculated values.
+ including those on income, or to the mean income, and thus has very little
+ effect on the calculated values.
 \end_layout
 
 \begin_layout Subsubsection
@@ -38990,26 +38990,6 @@ Interpretation
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Or does this go with valuation?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Arguable that locus of decisions is hh, so could restrict to those living
- alone (as tried by Ferreira + Moro).
- But samples too small, and no EQ parameters significant at all (London
- < 200, UK < 400).
-\end_layout
-
-\begin_layout Standard
 Comparison of UK results with Gibbons et al --> mixed (we find fewer sig.
  effects, and disagree on the sign of grasslands).
  Compare values also.
@@ -39025,6 +39005,10 @@ Lack of results for London, lack of robustness in general
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 By looking at the question at different scales, using different LS measures,
  and with many EQ and spatial variables (i.e.
  a uniquely comprehensive approach?), we do not discover not a grand and
