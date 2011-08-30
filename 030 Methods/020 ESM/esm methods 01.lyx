@@ -142,8 +142,12 @@ fboxsep{0pt}
 
 \end_layout
 
+\begin_layout Standard
+[TODO: brief intro, motivation]
+\end_layout
+
 \begin_layout Section
-Aims and objectives
+Priorities
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:esm-aims-and-objectives"
@@ -164,8 +168,8 @@ To test our research hypothesis will require that we observe amongst our
 \end_layout
 
 \begin_layout Standard
-A key aim informing many aspects of the study's design, implementation and
- operation is therefore to maximise the number of participants recruited,
+A key priority informing many aspects of the study's design, implementation
+ and operation is therefore to maximise the number of participants recruited,
  and the number of assessments completed by each.
  This implies a number of subordinate objectives, including:
 \end_layout
@@ -4558,6 +4562,13 @@ Snapshots are crucial to the effectiveness of backup.
 
 \begin_layout Subsection
 Web statistics
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:web-statistics"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
