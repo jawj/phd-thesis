@@ -110,7 +110,7 @@
 \begin_body
 
 \begin_layout Chapter
-Research methods: experience sampling 
+Research methods: experience sampling
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:esm-research-methods"
@@ -3843,10 +3843,6 @@ reference "sec:Data-server-implementation-details"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \begin_layout Section

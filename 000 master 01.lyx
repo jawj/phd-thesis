@@ -25,6 +25,8 @@
 
 \renewcommand\chaptername{Chapter}
 \definecolor{grey}{gray}{0.3}
+
+\vrefwarning  % prevents varioref errors when a page reference spans pages
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false

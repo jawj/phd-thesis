@@ -15727,7 +15727,8 @@ Coefficients (and their
  with proportions over a 1km and 3km radius.
  The coefficient on grasslands is positive and significant in the 3km and
  10km radius models.
- The coefficient on woodlands is significant only in the 3km radius model.
+ The coefficient on woodlands is positive and significant only in the 3km
+ radius model.
  No other land cover coefficient is significantly different from zero at
  the 5% level in any model
 \begin_inset Foot
@@ -21067,6 +21068,17 @@ We now consider the sensitivity of our findings to the use of alternative
 
 \begin_layout Subsubsection
 Emotional wellbeing and affect measures
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: note these are all shorter timeframe (last few weeks) and briefly
+ describe
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -39034,8 +39046,21 @@ Interpretation
 \end_layout
 
 \begin_layout Standard
-This chapter has presented results from an investigation of links between
- SWB indicators and EQ p
+This chapter has presented results from a more comprehensive investigation
+ of links between SWB and EQ than has previously been attempted in the economics
+ literature.
+ We include a wide range of EQ characteristics, including some not previously
+ considered; we use spatial and location data at very high resolution, and
+ advanced GIS-based measures, to produce highly accurate EQ indicator variables;
+ we investigate the use of alternative SWB measures; and in each case we
+ do so at two different scales, to make best use of the available data.
+\end_layout
+
+\begin_layout Standard
+In the light of this, our results appear somewhat disappointing.
+ We find no effect of any EQ parameter on SWB in London.
+ We find no effect of EQ around respondents' workplaces.
+ 
 \end_layout
 
 \end_body
