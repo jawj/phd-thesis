@@ -84,10 +84,11 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2.5cm
+\leftmargin 4cm
 \topmargin 2cm
-\rightmargin 2.5cm
+\rightmargin 2cm
 \bottommargin 2cm
+\columnsep 1cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation skip
@@ -114,6 +115,2184 @@ name "chap:esm-appendix"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+twocolumn
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Surveys
+\end_layout
+
+\begin_layout Standard
+The surveys span multiple screens, delineated below by horizontal rules.
+ Tapping an option suffixed by '>' immediately advances to the next screen.
+ The first screen has a 'Cancel' button that discontinues the questionnaire,
+ and each subsequent screen has a 'Back' button to return to the preceding
+ screen.
+\end_layout
+
+\begin_layout Subsection
+Registration survey
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:registration-survey"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Satisfaction
+\end_layout
+
+\begin_layout Standard
+How satisfied are you with your life as a whole nowadays?
+\end_layout
+
+\begin_layout Standard
+Segmented control: (Not at all) 1 / 2 / 3 / 4 / 5 / 6 / 7/ 8 / 9 / 10 (Extremely
+)
+\end_layout
+
+\begin_layout Standard
+Next >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Health
+\end_layout
+
+\begin_layout Standard
+Is your health in general… ?
+\end_layout
+
+\begin_layout Standard
+Excellent >
+\end_layout
+
+\begin_layout Standard
+Very good >
+\end_layout
+
+\begin_layout Standard
+Good >
+\end_layout
+
+\begin_layout Standard
+Fair >
+\end_layout
+
+\begin_layout Standard
+Poor >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Asthma
+\end_layout
+
+\begin_layout Standard
+Do you suffer from asthma or other respiratory disease?
+\end_layout
+
+\begin_layout Standard
+Yes >
+\end_layout
+
+\begin_layout Standard
+No >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Gender
+\end_layout
+
+\begin_layout Standard
+Are you… ?
+\end_layout
+
+\begin_layout Standard
+Male >
+\end_layout
+
+\begin_layout Standard
+Female >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Birth year
+\end_layout
+
+\begin_layout Standard
+When were you born?
+\end_layout
+
+\begin_layout Standard
+Scrolling picker: 1900 -- 2010 (initial position: 1975)
+\end_layout
+
+\begin_layout Standard
+Next >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Marriage
+\end_layout
+
+\begin_layout Standard
+Are you… ?
+\end_layout
+
+\begin_layout Standard
+Never married >
+\end_layout
+
+\begin_layout Standard
+Married and living with spouse >
+\end_layout
+
+\begin_layout Standard
+Married but separated >
+\end_layout
+
+\begin_layout Standard
+Divorced >
+\end_layout
+
+\begin_layout Standard
+Widowed >
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Please choose the first that applies, and treat Civil Partnership like marriage
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+this screen is not shown if the participant answered 'married and living
+ with spouse' above
+\end_layout
+
+\begin_layout Subsubsection*
+Relationship
+\end_layout
+
+\begin_layout Standard
+And are you currently in a relationship?
+\end_layout
+
+\begin_layout Standard
+Yes >
+\end_layout
+
+\begin_layout Standard
+No >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Work status
+\end_layout
+
+\begin_layout Standard
+Are you… ?
+\end_layout
+
+\begin_layout Standard
+Employed or self-employed >
+\end_layout
+
+\begin_layout Standard
+In full-time education >
+\end_layout
+
+\begin_layout Standard
+Retired >
+\end_layout
+
+\begin_layout Standard
+Unemployed and seeking work >
+\end_layout
+
+\begin_layout Standard
+Long-term sick or disabled >
+\end_layout
+
+\begin_layout Standard
+Looking after family or home >
+\end_layout
+
+\begin_layout Standard
+Other >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Adults
+\end_layout
+
+\begin_layout Standard
+In your household, including yourself, are there… ?
+\end_layout
+
+\begin_layout Standard
+1 adult >
+\end_layout
+
+\begin_layout Standard
+2 adults >
+\end_layout
+
+\begin_layout Standard
+3 adults >
+\end_layout
+
+\begin_layout Standard
+4 adults or more >
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Please count as adults those aged 16 or above
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Children
+\end_layout
+
+\begin_layout Standard
+In your household, are there… ?
+\end_layout
+
+\begin_layout Standard
+No children >
+\end_layout
+
+\begin_layout Standard
+1 child >
+\end_layout
+
+\begin_layout Standard
+2 children >
+\end_layout
+
+\begin_layout Standard
+3 children >
+\end_layout
+
+\begin_layout Standard
+4 children or more >
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Please count as children those aged 15 or under
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Household
+\end_layout
+
+\begin_layout Standard
+Is your gross annual household income from all sources… ?
+\end_layout
+
+\begin_layout Standard
+Under £8,000 >
+\end_layout
+
+\begin_layout Standard
+£8,000 – £11,999 >
+\end_layout
+
+\begin_layout Standard
+£12,000 – £15,999 >
+\end_layout
+
+\begin_layout Standard
+£16,000 – £19,999 >
+\end_layout
+
+\begin_layout Standard
+£20,000 – £23,999 >
+\end_layout
+
+\begin_layout Standard
+£24,000 – £31,999 >
+\end_layout
+
+\begin_layout Standard
+£32,000 – £39,999 >
+\end_layout
+
+\begin_layout Standard
+£40,000 – £55,999 >
+\end_layout
+
+\begin_layout Standard
+£56,000 – £71,999 >
+\end_layout
+
+\begin_layout Standard
+£72,000 – £95,999 >
+\end_layout
+
+\begin_layout Standard
+£96,000 or more >
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Don't know >
+\end_layout
+
+\begin_layout Standard
+Prefer not to say >
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+We'd be very grateful if you could answer this question, since it's important
+ to our research
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Income change
+\end_layout
+
+\begin_layout Standard
+Compared to 3 years ago, is your gross annual household income now… ?
+\end_layout
+
+\begin_layout Standard
+Higher than it was >
+\end_layout
+
+\begin_layout Standard
+Just the same >
+\end_layout
+
+\begin_layout Standard
+Lower than it was >
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Don't know >
+\end_layout
+
+\begin_layout Standard
+Prefer not to say >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+this screen is shown only if the participant answered 'higher than it was'
+ above
+\end_layout
+
+\begin_layout Subsubsection*
+Income rise
+\end_layout
+
+\begin_layout Standard
+And finally, compared to 3 years ago, is your gross annual household income
+ now… ?
+\end_layout
+
+\begin_layout Standard
+Higher by up to £999 >
+\end_layout
+
+\begin_layout Standard
+Higher by £1,000 – £1,999 >
+\end_layout
+
+\begin_layout Standard
+Higher by £2,000 – £3,999 >
+\end_layout
+
+\begin_layout Standard
+Higher by £4,000 – £7,999 >
+\end_layout
+
+\begin_layout Standard
+Higher by £8,000 – £15,999 >
+\end_layout
+
+\begin_layout Standard
+Higher by £16,000 or more >
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Don't know >
+\end_layout
+
+\begin_layout Standard
+Prefer not to say >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+this screen is shown only if the participant answered 'lower than it was'
+ above
+\end_layout
+
+\begin_layout Subsubsection*
+Income fall
+\end_layout
+
+\begin_layout Standard
+And finally, compared to 3 years ago, is your gross annual household income
+ now… ?
+\end_layout
+
+\begin_layout Standard
+Lower by up to £999 >
+\end_layout
+
+\begin_layout Standard
+Lower by £1,000 – £1,999 >
+\end_layout
+
+\begin_layout Standard
+Lower by £2,000 – £3,999 >
+\end_layout
+
+\begin_layout Standard
+Lower by £4,000 – £7,999 >
+\end_layout
+
+\begin_layout Standard
+Lower by £8,000 – £15,999 >
+\end_layout
+
+\begin_layout Standard
+Lower by £16,000 or more >
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Don't know >
+\end_layout
+
+\begin_layout Standard
+Prefer not to say >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+the questionnaire dismisses itself immediately after this screen is displayed
+\end_layout
+
+\begin_layout Subsubsection*
+Finished
+\end_layout
+
+\begin_layout Standard
+Thank you!
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ESM survey
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:esm-survey"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Feelings
+\end_layout
+
+\begin_layout Standard
+Do you feel… ?
+\end_layout
+
+\begin_layout Standard
+Happy 
+\begin_inset Newline newline
+\end_inset
+
+Slider: Not at all … Extremely (initial position: midpoint)
+\end_layout
+
+\begin_layout Standard
+Relaxed 
+\begin_inset Newline newline
+\end_inset
+
+Slider: Not at all … Extremely (initial position: midpoint)
+\end_layout
+
+\begin_layout Standard
+Awake 
+\begin_inset Newline newline
+\end_inset
+
+Slider: Not at all … Extremely (initial position: midpoint)
+\end_layout
+
+\begin_layout Standard
+Next >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+People
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Please tick all that apply
+\end_layout
+
+\begin_layout Standard
+Are you… ?
+\end_layout
+
+\begin_layout Standard
+Alone, or with strangers only >
+\end_layout
+
+\begin_layout Standard
+Or are you with your… ?
+\end_layout
+
+\begin_layout Standard
+[ ] Spouse, partner, girl/boyfriend
+\end_layout
+
+\begin_layout Standard
+[ ] Children
+\end_layout
+
+\begin_layout Standard
+[ ] Other family members
+\end_layout
+
+\begin_layout Standard
+[ ] Colleagues, classmates
+\end_layout
+
+\begin_layout Standard
+[ ] Clients, customers
+\end_layout
+
+\begin_layout Standard
+[ ] Friends
+\end_layout
+
+\begin_layout Standard
+[ ] Other people you know
+\end_layout
+
+\begin_layout Standard
+Next >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Place
+\end_layout
+
+\begin_layout Standard
+Are you… ?
+\end_layout
+
+\begin_layout Standard
+Indoors >
+\end_layout
+
+\begin_layout Standard
+Outdoors >
+\end_layout
+
+\begin_layout Standard
+In a vehicle >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Place (2)
+\end_layout
+
+\begin_layout Standard
+And are you… ?
+\end_layout
+
+\begin_layout Standard
+At home >
+\end_layout
+
+\begin_layout Standard
+At work >
+\end_layout
+
+\begin_layout Standard
+Elsewhere >
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+If you're working from home, please choose 'At home'
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+tapping 'add or edit notes' displays a text entry area with keyboard — the
+ participant taps 'done' when finished to return to this screen 
+\end_layout
+
+\begin_layout Subsubsection*
+Activities
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Please tick all that apply
+\end_layout
+
+\begin_layout Standard
+Just now, what were you doing?
+\end_layout
+
+\begin_layout Standard
+[ ] Working, studying
+\end_layout
+
+\begin_layout Standard
+[ ] In a meeting, seminar, class
+\end_layout
+
+\begin_layout Standard
+[ ] Travelling, commuting
+\end_layout
+
+\begin_layout Standard
+[ ] Cooking, preparing food
+\end_layout
+
+\begin_layout Standard
+[ ] Housework, chores, DIY
+\end_layout
+
+\begin_layout Standard
+[ ] Admin, finances, organising
+\end_layout
+
+\begin_layout Standard
+[ ] Shopping, errands
+\end_layout
+
+\begin_layout Standard
+[ ] Waiting, queueing
+\end_layout
+
+\begin_layout Standard
+[ ] Childcare, playing with children
+\end_layout
+
+\begin_layout Standard
+[ ] Pet care, playing with pets
+\end_layout
+
+\begin_layout Standard
+[ ] Care or help for adults
+\end_layout
+
+\begin_layout Standard
+[ ] Sleeping, resting, relaxing
+\end_layout
+
+\begin_layout Standard
+[ ] Sick in bed
+\end_layout
+
+\begin_layout Standard
+[ ] Meditating, religious activities
+\end_layout
+
+\begin_layout Standard
+[ ] Washing, dressing, grooming
+\end_layout
+
+\begin_layout Standard
+[ ] Intimacy, making love
+\end_layout
+
+\begin_layout Standard
+[ ] Talking, chatting, socialising
+\end_layout
+
+\begin_layout Standard
+[ ] Eating, snacking
+\end_layout
+
+\begin_layout Standard
+[ ] Drinking tea/coffee
+\end_layout
+
+\begin_layout Standard
+[ ] Drinking alcohol
+\end_layout
+
+\begin_layout Standard
+[ ] Smoking
+\end_layout
+
+\begin_layout Standard
+[ ] Texting, email, social media
+\end_layout
+
+\begin_layout Standard
+[ ] Browsing the Internet
+\end_layout
+
+\begin_layout Standard
+[ ] Watching TV, film
+\end_layout
+
+\begin_layout Standard
+[ ] Listening to music
+\end_layout
+
+\begin_layout Standard
+[ ] Listening to speech/podcast
+\end_layout
+
+\begin_layout Standard
+[ ] Reading
+\end_layout
+
+\begin_layout Standard
+[ ] Theatre, dance, concert
+\end_layout
+
+\begin_layout Standard
+[ ] Exhibition, museum, library
+\end_layout
+
+\begin_layout Standard
+[ ] Match, sporting event
+\end_layout
+
+\begin_layout Standard
+[ ] Walking, hiking
+\end_layout
+
+\begin_layout Standard
+[ ] Sports, running, exercise
+\end_layout
+
+\begin_layout Standard
+[ ] Gardening, allotment
+\end_layout
+
+\begin_layout Standard
+[ ] Birdwatching, nature watching
+\end_layout
+
+\begin_layout Standard
+[ ] Hunting, fishing
+\end_layout
+
+\begin_layout Standard
+[ ] Computer games, iPhone games
+\end_layout
+
+\begin_layout Standard
+[ ] Other games, puzzles
+\end_layout
+
+\begin_layout Standard
+[ ] Gambling, betting
+\end_layout
+
+\begin_layout Standard
+[ ] Hobbies, arts, crafts
+\end_layout
+
+\begin_layout Standard
+[ ] Singing, performing
+\end_layout
+
+\begin_layout Standard
+[ ] Something else
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Add or edit notes
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Next >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+by default, this digital camera screen is shown only when outdoors
+\end_layout
+
+\begin_layout Standard
+Please take a photo straight ahead
+\end_layout
+
+\begin_layout Standard
+Or tap Cancel to skip this step
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+this screen is shown only if a photo was taken
+\end_layout
+
+\begin_layout Subsubsection*
+Map
+\end_layout
+
+\begin_layout Standard
+Add this photo to the public map?
+\end_layout
+
+\begin_layout Standard
+Yes >
+\end_layout
+
+\begin_layout Standard
+No >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+this screen is shown only when outdoors and in the rare event that gps location
+ accuracy is still worse than 100m.
+ it advances automatically when accuracy reaches 100m or 60 seconds has
+ elapsed.
+\end_layout
+
+\begin_layout Subsubsection*
+Location
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Improving location accuracy
+\end_layout
+
+\begin_layout Standard
+Skip >
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+the questionnaire dismisses itself immediately after this screen is displayed
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Finished
+\end_layout
+
+\begin_layout Standard
+Thank you!
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "100col%"
+height "0.5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onecolumn
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Data server implementation details
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Data-server-implementation-details"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Database
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:data-server-Database"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At the heart of the data server is a PostgreSQL relational database system
+ with PostGIS spatial extensions
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.postgresql.org/
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://postgis.refractions.net/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ The Mappiness database schema (presented in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:db-schema"
+
+\end_inset
+
+) consists of five key tables:
+\end_layout
+
+\begin_layout Description
+users stores administrative details at participant (app) level: each row
+ maps to one past or current registered installation of the Mappiness app
+ on a participant's iPhone.
+ Details stored include the participant ID number and authentication secret
+ for that app installation, the participant's beep settings, and the 'device
+ token' identifying the installation to Apple's push notification servers.
+\end_layout
+
+\begin_layout Description
+demographic_answer_sets
+\emph on
+ 
+\emph default
+also contains one row per registered app installation.
+ It holds the participant's answers to the survey presented during the registrat
+ion process, and is linked to the relevant row of the users table.
+\end_layout
+
+\begin_layout Description
+esm_answer_sets has one row per participant response.
+ It holds the participant's answers, and links to the relevant row of the
+ users table and (where applicable) the sent_beeps table.
+ It does not hold contributed photographs, which are instead stored within
+ the file system.
+\end_layout
+
+\begin_layout Description
+pending_beeps
+\begin_inset space ~
+\end_inset
+
+&
+\begin_inset space ~
+\end_inset
+
+sent_beeps support the beeper system.
+ The former is a transient store of signals that will be sent in the next
+ 24 hours, while the latter records details of all signals sent.
+ Both are linked to the relevant rows of the users table.
+\end_layout
+
+\begin_layout Subsection
+Signalling
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:signalling"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+The Apple Push Notifications Service (APNS)
+\end_layout
+
+\begin_layout Standard
+Apps for Apple's iOS can make use of the Apple Push Notifications Service
+ (APNS).
+ This service enables an app provider to send a notification to an app user's
+ device.
+ APNS notifications operate, and appear to device users, in a manner very
+ similar to SMS text messages, but can be sent at no cost to sender or recipient.
+ Notifications are sent via APNS servers operated by Apple.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Late in the development of the Mappiness app a new version of the iPhone
+ operating system, iOS 4, introduced Local Notifications.
+ Local Notifications are scheduled by an app itself.
+ Local Notifications would have some advantages over Push Notifications
+ --- chiefly, that they would not require an active data connection, and
+ so could be received at any location.
+ Used alone, they would also have disadvantages --- no more than 64 Local
+ Notifications may be scheduled, and if the app is not opened before these
+ expire then no more notifications can be received.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A notification can be delivered at any time the target device is available
+ --- that is, powered on and connected to the Internet --- whether or not
+ the relevant app is open.
+ If the device is available, a notification is usually delivered within
+ a few seconds; if it is not, the notification is queued for delivery at
+ the next opportunity.
+ Delivery of notifications 
+\begin_inset Quotes eld
+\end_inset
+
+is 'best effort' and is not guaranteed
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "31"
+key "apple-inc.:2010a"
+
+\end_inset
+
+, although testing indicates that the vast majority of notifications are
+ delivered successfully.
+\end_layout
+
+\begin_layout Standard
+If an app provider attempts to send a notification to an app which no longer
+ exists on the target device, the device reports this to the APNS, which
+ updates an app-specific list of devices for which there were failed delivery
+ attempts.
+ App providers are obliged to query a feedback service regularly to retrieve
+ this list, and to refrain from sending future notifications to the listed
+ devices unless they are subsequently re-registered.
+\end_layout
+
+\begin_layout Subsubsection
+Communicating with the APNS
+\end_layout
+
+\begin_layout Standard
+Mappiness uses APNS notifications to signal participants.
+ Communicating with the APNS requires use of a proprietary binary protocol
+ over a persistent, authenticated connection.
+ Managing such a connection is somewhat technically demanding, and Mappiness
+ therefore relies on intermediary software.
+\end_layout
+
+\begin_layout Standard
+Initially, the free tier of a commercial service operated by Urban Airship,
+ Inc.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://urbanairship.com/products/push-notifications/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ was used.
+ This service connects to the APNS on behalf of app providers, and is controlled
+ via a simple API
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Application Programming Interface: a documented interface that enables one
+ computer program or system to communicate with another.
+\end_layout
+
+\end_inset
+
+ that sends and receives data using JSON
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+JavaScript Object Notation: a concise, text-based data format.
+\end_layout
+
+\end_inset
+
+ messages over HTTPS
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+HyperText Transfer Protocol Secure: the encrypted protocol used to transmit
+ secure web pages.
+\end_layout
+
+\end_inset
+
+.
+ However, the volume of notifications to be sent rapidly approached the
+ usage limits of the free service tier.
+\end_layout
+
+\begin_layout Standard
+After evaluating various alternatives we therefore installed an additional
+ open-source software package on the Mappiness data server: PyAPNS
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/samuraisam/pyapns/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Like the Urban Airship service, PyAPNS handles all communication with the
+ APNS and is controlled by a simple API.
+ The PyAPNS API communicates over XML-RPC
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+eXtensible Markup Language Remote Procedure Call: a verbose, text-based
+ protocol for sending and receiving API messages.
+\end_layout
+
+\end_inset
+
+, but also provides a Ruby client library to encapsulate this communication.
+ The Mappiness signalling software was rewritten to use the PyAPNS client
+ library (to which we also contributed several fixes).
+\end_layout
+
+\begin_layout Subsubsection
+Signalling using APNS
+\end_layout
+
+\begin_layout Standard
+Signalling is performed by the signalling programme on the Mappiness data
+ server.
+ The programme is executed every 2 minutes, and on each execution performs
+ the following sequence of tasks:
+\end_layout
+
+\begin_layout Enumerate
+(This task is only performed if it has not been performed in the past hour).
+ Connect to the APNS feedback service to retrieve a list of app installations
+ with failed deliveries.
+ Mark all listed installations inactive in the users database table, and
+ delete any pending signals associated with them from the
+\emph on
+ 
+\emph default
+pending_beeps table.
+ 
+\end_layout
+
+\begin_layout Enumerate
+For each participant who has reached the end of signalling hours since the
+ last programme execution, calculate the signalling schedule for the next
+ day according to the algorithm described in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:scheduling"
+
+\end_inset
+
+.
+ Similarly, for each participant who has changed their beep settings since
+ last programme execution, recalculate the signalling schedule for the remaining
+ hours of this day
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+If settings are changed during the (potentially newly set) hours of the
+ participant's signalling day, the number of signals to be sent during the
+ remainder of the day is calculated on a probabilistic 
+\emph on
+pro rata 
+\emph default
+basis.
+ For example, a participant who selects to receive 3 signals per day half-way
+ through a day is theoretically due 1.5 signals during the remainder of the
+ day.
+ He or she will thus certainly be sent 1 signal, and will be sent a second
+ with a probability of 50%.
+\end_layout
+
+\end_inset
+
+ or the next day.
+ Store the resulting pending signals in the
+\emph on
+ 
+\emph default
+pending_beeps table.
+\end_layout
+
+\begin_layout Enumerate
+For each signal in the pending_beeps table that has fallen due since the
+ last programme execution, delete the pending signal, send an APNS notification
+ to the associated participant, and create a record of the sent signal in
+ the sent_beeps table.
+\end_layout
+
+\begin_layout Subsubsection
+Safeguards
+\end_layout
+
+\begin_layout Standard
+Foreseeable failure modes of the signalling system could antagonise participants.
+ For example, participants might be woken from sleep if they were signalled
+ outside the hours they have specified, or feel harassed and irritated if
+ they were signalled many times over a short period.
+ In such cases, the reputation of the project --- and its ability to recruit
+ and keep participants --- could be damaged.
+\end_layout
+
+\begin_layout Standard
+The signalling system was therefore implemented defensively, to try to prevent
+ such failures.
+ For example, the system considers the hours during which a participant
+ may be beeped as finishing 10 minutes prior to the time specified by the
+ participant, to account for possible delays in notification delivery.
+ It deletes pending signals from the database prior to attempting their
+ delivery, so that multiple deliveries will not be attempted if an error
+ occurs during the delivery or deletion phase.
+ And it refuses to proceed (and emails the system administrator) if more
+ than a certain number of signals appear to fall due at one moment.
+\end_layout
+
+\begin_layout Subsection
+Data API
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Data-API"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Mappiness app communicates with the data server via the private data
+ API.
+ The data API is a web application that receives and sends JSON messages
+ over an encrypted HTTPS connection.
+ It is written using the Sinatra framework for Ruby and served by the Phusion
+ Passenger module for the nginx web server (all open-source).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.sinatrarb.com/
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.modrails.com/
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://nginx.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ The data API makes the following nine endpoints available to the app:
+\end_layout
+
+\begin_layout Description
+register is called on completion of the participant sign-up process.
+ The app sends details of the APNS device token required for sending signals
+ to the registering device, and of the participant's confirmed signalling
+ settings (both of which are stored in the users table).
+ It also sends the participant's answers to the registration survey (which
+ are stored in demographic_answer_sets).
+ In response, the API returns a unique participant ID and a random 20-character
+ secret.
+ The app stores these, and uses them to authenticate itself (using HTTP
+ Basic authentication) for all future API requests.
+\end_layout
+
+\begin_layout Description
+esm_answers is called with new ESM assessment responses, which are stored
+ in the esm_answer_sets
+\emph on
+ 
+\emph default
+table.
+ The API also links the response set with the signal it was given in response
+ to (if applicable) in the sent_beeps table.
+\end_layout
+
+\begin_layout Description
+image is called with the JPEG image data resulting from a photo taken during
+ an ESM assessment, and a code identifying the associated ESM assessment.
+ The image is stored in the filesystem.
+ If it was marked as public, it is also made accessible via a URL within
+ the public website.
+\end_layout
+
+\begin_layout Description
+user_status is called on app launch or when there are no further ESM assessment
+ responses queued for sending to the API.
+ The API calculates and returns the response statistics alongside a status
+ message to be displayed on the main screen.
+\end_layout
+
+\begin_layout Description
+graphs_bluff is called when the participant taps the 'My happiness' control.
+ The API returns instructions for displaying the participant's feedback
+ charts (using the Bluff
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://bluff.jcoglan.com/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ charting library for JavaScript) as an HTML+CSS+JavaScript document.
+\end_layout
+
+\begin_layout Description
+settings is called when the participant changes his or her signalling settings.
+ The new settings are stored in the users table.
+\end_layout
+
+\begin_layout Description
+toggle_download is called when the participant enables or disables data
+ download.
+ When enabling data download, the API returns the new, secret HTTPS URL
+ via which the participant's data may be accessed.
+\end_layout
+
+\begin_layout Description
+update_token is called if the app detects that its APNS device token has
+ changed.
+ The message includes the new device token, which is stored in the users
+ table.
+\end_layout
+
+\begin_layout Description
+apn_ignored is called in the rare case that the app is open and receives
+ an APNS notification that cannot be displayed because another modal activity
+ is in progress (such as completing an ESM assessment, or changing signalling
+ settings).
+ The API flags the relevant notification in the sent_beeps database table
+ to indicate that it should not count towards the total signals received
+ by the participant.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The signal is not rescheduled, so the participant receives fewer than the
+ scheduled number of signals on the day in question.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Asynchronous endpoint priorities
+\end_layout
+
+\begin_layout Standard
+Four of the API endpoints listed above are handled asynchronously by the
+ Mappiness app.
+ In other words, communication with these endpoints occurs in the background,
+ without blocking other app functions.
+ These endpoints are: update_token, esm_answers, image, and apn_ignored.
+\end_layout
+
+\begin_layout Standard
+The app manages a single queue of messages to the asynchronous endpoints.
+ If the queue is not empty and no asynchronous message is currently being
+ transmitted, the app will begin sending the message at the head of the
+ queue.
+ Reflecting the importance of different endpoints to the data collection
+ process, the message queue is ordered by endpoint priority.
+ The endpoints are listed in the preceding paragraph in descending priority
+ order.
+ For example, all ESM assessment response data will be transmitted before
+ any image is sent.
+ Messages for the same endpoint are processed in first-in-first-out order.
+\end_layout
+
+\begin_layout Subsection
+Security and backup
+\end_layout
+
+\begin_layout Standard
+Security against intrusions is essential for participants' privacy and for
+ the integrity of the collected data.
+ The data servers are firewalled to prevent access to any services but the
+ Mappiness data services (over HTTP and HTTPS) and a secure shell (SSH)
+ for system administration.
+ SSH access is restricted to the researcher's IP addresses
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Internet Protocol (IP) addresses identify the networks and computers from
+ which data sent across the Internet originate.
+\end_layout
+
+\end_inset
+
+.
+ All installed software is updated regularly to ensure that known exploits
+ are patched.
+\end_layout
+
+\begin_layout Standard
+To guard against the loss of collected data in case of intrusion, hardware
+ failure or other disaster, an offsite backup is performed daily.
+ The backup is made in the early hours of the morning (UK time), when load
+ on the server is at its lowest.
+ The server backup script invokes the open-source Duplicity software
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://duplicity.nongnu.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ to back up the contents of the database, and all photos, weather and pollution
+ data, to the Amazon Simple Storage Service (S3).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://aws.amazon.com/s3/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ S3 provides durable and redundant data storage across multiple devices
+ and physical locations.
+ To comply with Data Protection Act requirements, backup data is stored
+ only on S3 servers located within the EU.
+ Backups are encrypted, and also transmitted over an encrypted connection.
+ 
+\end_layout
+
+\begin_layout Standard
+Full backups are performed monthly.
+ The daily backups occurring in between are incremental: only changes relative
+ to the previous backup are transmitted and stored.
+ Each backup creates a snapshot, so that the data that was held on the server
+ on any particular day may be restored as needed.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Snapshots are crucial to the effectiveness of backup.
+ Without snapshots, corruption or deletion of data on the server is quickly
+ mirrored to the backup, rendering it useless.
+\end_layout
+
+\end_inset
+
+ To verify that data is being backed up correctly, data for analysis is
+ retrieved not directly from the production server, but from the latest
+ backup instead.
+ This strategy also reduces load on the production server.
+\end_layout
+
+\begin_layout Subsection
+Web statistics
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:web-statistics"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The public Mappiness web site has four elements that require up-to-date
+ statistics from the production data server.
+ These are: 
+\end_layout
+
+\begin_layout Itemize
+a count at the bottom of every page of the total number of participants
+ that have signed up;
+\end_layout
+
+\begin_layout Itemize
+a map of the most recent 120 responses where the 'happy' self-rating was
+ at least 70%, and a photo was taken and allowed to be displayed;
+\end_layout
+
+\begin_layout Itemize
+'hedonimeters' displaying the average and current happiness ratings for
+ London and the whole of the UK --- these are the mean values of respectively
+ all responses and the 25 most recent responses; and
+\end_layout
+
+\begin_layout Itemize
+a chart showing the mean happiness response for the UK and London, hour-by-hour
+ during the past week --- excluding any hours for which there were fewer
+ than 10 responses.
+\end_layout
+
+\begin_layout Standard
+Statistics for the hour-by-hour chart are calculated every hour, and statistics
+ for the others are calculated every 5 minutes, by scripts executed on the
+ appropriate schedule.
+ The statistics are saved (in JSON format) in a directory publicly accessible
+ over an HTTP connection, and are loaded as required from the public website.
+ 
+\end_layout
+
+\begin_layout Subsection
+Download API
+\end_layout
+
+\begin_layout Standard
+As an additional incentive, participants are able to access all of their
+ own contributed data.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This feature was added with the launch of version 1.1 of the app in May 2011.
+\end_layout
+
+\end_inset
+
+ The data download feature is initially disabled for each participant, and
+ it can be enabled and disabled within the app.
+ When it is enabled, the participant's data is available via a secure (HTTPS)
+ link.
+ To ensure privacy, this link cannot be guessed --- it includes 8 random
+ characters --- and it changes each time the download feature is enabled.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The link is of the form https://mappiness.me/
+\emph on
+xxxx
+\emph default
+.
+\emph on
+yyyy
+\emph default
+.
+\emph on
+yyyy
+\emph default
+ --- for example, 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://mappiness.me/3kkq.pk7d.23wb
+\end_layout
+
+\end_inset
+
+.
+ The 
+\emph on
+xxxx
+\emph default
+ component encodes the participant's ID, while the 
+\emph on
+yyyy
+\emph default
+.
+\emph on
+yyyy 
+\emph default
+component is a random eight-character string, displayed in two groups of
+ four characters for ease of reading.
+ The 
+\emph on
+x
+\emph default
+s and 
+\emph on
+y
+\emph default
+s can be any digit (0--9) or lower-case letter (a--z) except the following:
+ 0, 1, a, e, i, o, u, l (vowels are excluded to ensure that offensive words
+ cannot be generated, and 0, 1, i, o and l are excluded because they are
+ easily visually confused).
+ The 8-character string can therefore take any of 
+\begin_inset Formula $28^{8}$
+\end_inset
+
+ (approximately 378 billion) values.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Data download is made available by another web application built using the
+ Sinatra framework.
+ Several formats are supported:
+\end_layout
+
+\begin_layout Description
+HTML reproducing the charts available within the app (which can then be
+ emailed, saved or printed), providing a gallery of the photos submitted
+ by the participant, and displaying all responses on an interactive map.
+\end_layout
+
+\begin_layout Description
+KMZ for exploration within mapping applications such as Google Earth.
+\end_layout
+
+\begin_layout Description
+iCalendar for viewing (and subscribing to) within calendaring applications
+ such as iCal.
+\end_layout
+
+\begin_layout Description
+XLS
+\begin_inset space ~
+\end_inset
+
+and
+\begin_inset space ~
+\end_inset
+
+CSV for import into spreadsheet or statistics applications, for subsequent
+ graphing or statistical analysis.
+\end_layout
+
+\begin_layout Description
+JSON for consumption by third-party services.
+ For example, services could be developed to display a personal 'hedonimeter'
+ on a participant's own blog, to post details of responses to a participant's
+ Twitter or Facebook account, or to provide a participant with more detailed
+ analysis of his or her responses.
+\end_layout
+
+\begin_layout Standard
+For all formats except HTML charts, response data are provided in descending
+ order of response date/time, and the web application accepts query parameters
+ limiting the data to be returned by date/time and by position in the response
+ sequence.
+\end_layout
+
+\begin_layout Subsection
+Weather & pollution
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Weather-pollution-download"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Every hour, weather data is downloaded from Weather Underground
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.wunderground.com/global/UK.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, and air pollution data is downloaded from Defra
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://uk-air.defra.gov.uk/latest/currentlevels?type=Current
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ These data are stored for later processing.
+ 
 \end_layout
 
 \begin_layout Section
@@ -1407,1245 +3586,6 @@ Don't beep after
  to silent during these periods.
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-twocolumn
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Surveys
-\end_layout
-
-\begin_layout Standard
-The surveys span multiple screens, delineated below by horizontal rules.
- Tapping an option suffixed by '>' immediately advances to the next screen.
- The first screen has a 'Cancel' button that discontinues the questionnaire,
- and each subsequent screen has a 'Back' button to return to the preceding
- screen.
-\end_layout
-
-\begin_layout Subsection
-Registration survey
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:registration-survey"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Satisfaction
-\end_layout
-
-\begin_layout Standard
-How satisfied are you with your life as a whole nowadays?
-\end_layout
-
-\begin_layout Standard
-Segmented control: (Not at all) 1 / 2 / 3 / 4 / 5 / 6 / 7/ 8 / 9 / 10 (Extremely
-)
-\end_layout
-
-\begin_layout Standard
-Next >
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Health
-\end_layout
-
-\begin_layout Standard
-Is your health in general… ?
-\end_layout
-
-\begin_layout Standard
-Excellent >
-\end_layout
-
-\begin_layout Standard
-Very good >
-\end_layout
-
-\begin_layout Standard
-Good >
-\end_layout
-
-\begin_layout Standard
-Fair >
-\end_layout
-
-\begin_layout Standard
-Poor >
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Asthma
-\end_layout
-
-\begin_layout Standard
-Do you suffer from asthma or other respiratory disease?
-\end_layout
-
-\begin_layout Standard
-Yes >
-\end_layout
-
-\begin_layout Standard
-No >
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Gender
-\end_layout
-
-\begin_layout Standard
-Are you… ?
-\end_layout
-
-\begin_layout Standard
-Male >
-\end_layout
-
-\begin_layout Standard
-Female >
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Birth year
-\end_layout
-
-\begin_layout Standard
-When were you born?
-\end_layout
-
-\begin_layout Standard
-Scrolling picker: 1900 -- 2010 (initial position: 1975)
-\end_layout
-
-\begin_layout Standard
-Next >
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Marriage
-\end_layout
-
-\begin_layout Standard
-Are you… ?
-\end_layout
-
-\begin_layout Standard
-Never married >
-\end_layout
-
-\begin_layout Standard
-Married and living with spouse >
-\end_layout
-
-\begin_layout Standard
-Married but separated >
-\end_layout
-
-\begin_layout Standard
-Divorced >
-\end_layout
-
-\begin_layout Standard
-Widowed >
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Please choose the first that applies, and treat Civil Partnership like marriage
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\noun on
-this screen is not shown if the participant answered 'married and living
- with spouse' above
-\end_layout
-
-\begin_layout Subsubsection*
-Relationship
-\end_layout
-
-\begin_layout Standard
-And are you currently in a relationship?
-\end_layout
-
-\begin_layout Standard
-Yes >
-\end_layout
-
-\begin_layout Standard
-No >
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Work status
-\end_layout
-
-\begin_layout Standard
-Are you… ?
-\end_layout
-
-\begin_layout Standard
-Employed or self-employed >
-\end_layout
-
-\begin_layout Standard
-In full-time education >
-\end_layout
-
-\begin_layout Standard
-Retired >
-\end_layout
-
-\begin_layout Standard
-Unemployed and seeking work >
-\end_layout
-
-\begin_layout Standard
-Long-term sick or disabled >
-\end_layout
-
-\begin_layout Standard
-Looking after family or home >
-\end_layout
-
-\begin_layout Standard
-Other >
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Adults
-\end_layout
-
-\begin_layout Standard
-In your household, including yourself, are there… ?
-\end_layout
-
-\begin_layout Standard
-1 adult >
-\end_layout
-
-\begin_layout Standard
-2 adults >
-\end_layout
-
-\begin_layout Standard
-3 adults >
-\end_layout
-
-\begin_layout Standard
-4 adults or more >
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Please count as adults those aged 16 or above
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Children
-\end_layout
-
-\begin_layout Standard
-In your household, are there… ?
-\end_layout
-
-\begin_layout Standard
-No children >
-\end_layout
-
-\begin_layout Standard
-1 child >
-\end_layout
-
-\begin_layout Standard
-2 children >
-\end_layout
-
-\begin_layout Standard
-3 children >
-\end_layout
-
-\begin_layout Standard
-4 children or more >
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Please count as children those aged 15 or under
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Household
-\end_layout
-
-\begin_layout Standard
-Is your gross annual household income from all sources… ?
-\end_layout
-
-\begin_layout Standard
-Under £8,000 >
-\end_layout
-
-\begin_layout Standard
-£8,000 – £11,999 >
-\end_layout
-
-\begin_layout Standard
-£12,000 – £15,999 >
-\end_layout
-
-\begin_layout Standard
-£16,000 – £19,999 >
-\end_layout
-
-\begin_layout Standard
-£20,000 – £23,999 >
-\end_layout
-
-\begin_layout Standard
-£24,000 – £31,999 >
-\end_layout
-
-\begin_layout Standard
-£32,000 – £39,999 >
-\end_layout
-
-\begin_layout Standard
-£40,000 – £55,999 >
-\end_layout
-
-\begin_layout Standard
-£56,000 – £71,999 >
-\end_layout
-
-\begin_layout Standard
-£72,000 – £95,999 >
-\end_layout
-
-\begin_layout Standard
-£96,000 or more >
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Don't know >
-\end_layout
-
-\begin_layout Standard
-Prefer not to say >
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-We'd be very grateful if you could answer this question, since it's important
- to our research
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Income change
-\end_layout
-
-\begin_layout Standard
-Compared to 3 years ago, is your gross annual household income now… ?
-\end_layout
-
-\begin_layout Standard
-Higher than it was >
-\end_layout
-
-\begin_layout Standard
-Just the same >
-\end_layout
-
-\begin_layout Standard
-Lower than it was >
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Don't know >
-\end_layout
-
-\begin_layout Standard
-Prefer not to say >
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\noun on
-this screen is shown only if the participant answered 'higher than it was'
- above
-\end_layout
-
-\begin_layout Subsubsection*
-Income rise
-\end_layout
-
-\begin_layout Standard
-And finally, compared to 3 years ago, is your gross annual household income
- now… ?
-\end_layout
-
-\begin_layout Standard
-Higher by up to £999 >
-\end_layout
-
-\begin_layout Standard
-Higher by £1,000 – £1,999 >
-\end_layout
-
-\begin_layout Standard
-Higher by £2,000 – £3,999 >
-\end_layout
-
-\begin_layout Standard
-Higher by £4,000 – £7,999 >
-\end_layout
-
-\begin_layout Standard
-Higher by £8,000 – £15,999 >
-\end_layout
-
-\begin_layout Standard
-Higher by £16,000 or more >
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Don't know >
-\end_layout
-
-\begin_layout Standard
-Prefer not to say >
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\noun on
-this screen is shown only if the participant answered 'lower than it was'
- above
-\end_layout
-
-\begin_layout Subsubsection*
-Income fall
-\end_layout
-
-\begin_layout Standard
-And finally, compared to 3 years ago, is your gross annual household income
- now… ?
-\end_layout
-
-\begin_layout Standard
-Lower by up to £999 >
-\end_layout
-
-\begin_layout Standard
-Lower by £1,000 – £1,999 >
-\end_layout
-
-\begin_layout Standard
-Lower by £2,000 – £3,999 >
-\end_layout
-
-\begin_layout Standard
-Lower by £4,000 – £7,999 >
-\end_layout
-
-\begin_layout Standard
-Lower by £8,000 – £15,999 >
-\end_layout
-
-\begin_layout Standard
-Lower by £16,000 or more >
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Don't know >
-\end_layout
-
-\begin_layout Standard
-Prefer not to say >
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\noun on
-the questionnaire dismisses itself immediately after this screen is displayed
-\end_layout
-
-\begin_layout Subsubsection*
-Finished
-\end_layout
-
-\begin_layout Standard
-Thank you!
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-ESM survey
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:esm-survey"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Feelings
-\end_layout
-
-\begin_layout Standard
-Do you feel… ?
-\end_layout
-
-\begin_layout Standard
-Happy 
-\begin_inset Newline newline
-\end_inset
-
-Slider: Not at all … Extremely (initial position: midpoint)
-\end_layout
-
-\begin_layout Standard
-Relaxed 
-\begin_inset Newline newline
-\end_inset
-
-Slider: Not at all … Extremely (initial position: midpoint)
-\end_layout
-
-\begin_layout Standard
-Awake 
-\begin_inset Newline newline
-\end_inset
-
-Slider: Not at all … Extremely (initial position: midpoint)
-\end_layout
-
-\begin_layout Standard
-Next >
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-People
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Please tick all that apply
-\end_layout
-
-\begin_layout Standard
-Are you… ?
-\end_layout
-
-\begin_layout Standard
-Alone, or with strangers only >
-\end_layout
-
-\begin_layout Standard
-Or are you with your… ?
-\end_layout
-
-\begin_layout Standard
-[ ] Spouse, partner, girl/boyfriend
-\end_layout
-
-\begin_layout Standard
-[ ] Children
-\end_layout
-
-\begin_layout Standard
-[ ] Other family members
-\end_layout
-
-\begin_layout Standard
-[ ] Colleagues, classmates
-\end_layout
-
-\begin_layout Standard
-[ ] Clients, customers
-\end_layout
-
-\begin_layout Standard
-[ ] Friends
-\end_layout
-
-\begin_layout Standard
-[ ] Other people you know
-\end_layout
-
-\begin_layout Standard
-Next >
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Place
-\end_layout
-
-\begin_layout Standard
-Are you… ?
-\end_layout
-
-\begin_layout Standard
-Indoors >
-\end_layout
-
-\begin_layout Standard
-Outdoors >
-\end_layout
-
-\begin_layout Standard
-In a vehicle >
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Place (2)
-\end_layout
-
-\begin_layout Standard
-And are you… ?
-\end_layout
-
-\begin_layout Standard
-At home >
-\end_layout
-
-\begin_layout Standard
-At work >
-\end_layout
-
-\begin_layout Standard
-Elsewhere >
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-If you're working from home, please choose 'At home'
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\noun on
-tapping 'add or edit notes' displays a text entry area with keyboard — the
- participant taps 'done' when finished to return to this screen 
-\end_layout
-
-\begin_layout Subsubsection*
-Activities
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Please tick all that apply
-\end_layout
-
-\begin_layout Standard
-Just now, what were you doing?
-\end_layout
-
-\begin_layout Standard
-[ ] Working, studying
-\end_layout
-
-\begin_layout Standard
-[ ] In a meeting, seminar, class
-\end_layout
-
-\begin_layout Standard
-[ ] Travelling, commuting
-\end_layout
-
-\begin_layout Standard
-[ ] Cooking, preparing food
-\end_layout
-
-\begin_layout Standard
-[ ] Housework, chores, DIY
-\end_layout
-
-\begin_layout Standard
-[ ] Admin, finances, organising
-\end_layout
-
-\begin_layout Standard
-[ ] Shopping, errands
-\end_layout
-
-\begin_layout Standard
-[ ] Waiting, queueing
-\end_layout
-
-\begin_layout Standard
-[ ] Childcare, playing with children
-\end_layout
-
-\begin_layout Standard
-[ ] Pet care, playing with pets
-\end_layout
-
-\begin_layout Standard
-[ ] Care or help for adults
-\end_layout
-
-\begin_layout Standard
-[ ] Sleeping, resting, relaxing
-\end_layout
-
-\begin_layout Standard
-[ ] Sick in bed
-\end_layout
-
-\begin_layout Standard
-[ ] Meditating, religious activities
-\end_layout
-
-\begin_layout Standard
-[ ] Washing, dressing, grooming
-\end_layout
-
-\begin_layout Standard
-[ ] Intimacy, making love
-\end_layout
-
-\begin_layout Standard
-[ ] Talking, chatting, socialising
-\end_layout
-
-\begin_layout Standard
-[ ] Eating, snacking
-\end_layout
-
-\begin_layout Standard
-[ ] Drinking tea/coffee
-\end_layout
-
-\begin_layout Standard
-[ ] Drinking alcohol
-\end_layout
-
-\begin_layout Standard
-[ ] Smoking
-\end_layout
-
-\begin_layout Standard
-[ ] Texting, email, social media
-\end_layout
-
-\begin_layout Standard
-[ ] Browsing the Internet
-\end_layout
-
-\begin_layout Standard
-[ ] Watching TV, film
-\end_layout
-
-\begin_layout Standard
-[ ] Listening to music
-\end_layout
-
-\begin_layout Standard
-[ ] Listening to speech/podcast
-\end_layout
-
-\begin_layout Standard
-[ ] Reading
-\end_layout
-
-\begin_layout Standard
-[ ] Theatre, dance, concert
-\end_layout
-
-\begin_layout Standard
-[ ] Exhibition, museum, library
-\end_layout
-
-\begin_layout Standard
-[ ] Match, sporting event
-\end_layout
-
-\begin_layout Standard
-[ ] Walking, hiking
-\end_layout
-
-\begin_layout Standard
-[ ] Sports, running, exercise
-\end_layout
-
-\begin_layout Standard
-[ ] Gardening, allotment
-\end_layout
-
-\begin_layout Standard
-[ ] Birdwatching, nature watching
-\end_layout
-
-\begin_layout Standard
-[ ] Hunting, fishing
-\end_layout
-
-\begin_layout Standard
-[ ] Computer games, iPhone games
-\end_layout
-
-\begin_layout Standard
-[ ] Other games, puzzles
-\end_layout
-
-\begin_layout Standard
-[ ] Gambling, betting
-\end_layout
-
-\begin_layout Standard
-[ ] Hobbies, arts, crafts
-\end_layout
-
-\begin_layout Standard
-[ ] Singing, performing
-\end_layout
-
-\begin_layout Standard
-[ ] Something else
-\begin_inset VSpace medskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Add or edit notes
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace medskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Next >
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\noun on
-by default, this digital camera screen is shown only when outdoors
-\end_layout
-
-\begin_layout Standard
-Please take a photo straight ahead
-\end_layout
-
-\begin_layout Standard
-Or tap Cancel to skip this step
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\noun on
-this screen is shown only if a photo was taken
-\end_layout
-
-\begin_layout Subsubsection*
-Map
-\end_layout
-
-\begin_layout Standard
-Add this photo to the public map?
-\end_layout
-
-\begin_layout Standard
-Yes >
-\end_layout
-
-\begin_layout Standard
-No >
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\noun on
-this screen is shown only when outdoors and in the rare event that gps location
- accuracy is still worse than 100m.
- it advances automatically when accuracy reaches 100m or 60 seconds has
- elapsed.
-\end_layout
-
-\begin_layout Subsubsection*
-Location
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-Improving location accuracy
-\end_layout
-
-\begin_layout Standard
-Skip >
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\noun on
-the questionnaire dismisses itself immediately after this screen is displayed
- 
-\end_layout
-
-\begin_layout Subsubsection*
-Finished
-\end_layout
-
-\begin_layout Standard
-Thank you!
-\end_layout
-
-\begin_layout Subsubsection*
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "100col%"
-height "0.5pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-onecolumn
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Participant feedback charts sample
 \begin_inset CommandInset label
@@ -2681,6 +3621,17 @@ name "sec:ui-mock-ups"
 \end_layout
 
 \begin_layout Standard
+User interface mock-ups are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:User-interface-mock-ups"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways true
@@ -2703,6 +3654,13 @@ status open
 \begin_layout Plain Layout
 User interface mock-ups (created with Interface Builder and OmniGraffle
  Pro)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:User-interface-mock-ups"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

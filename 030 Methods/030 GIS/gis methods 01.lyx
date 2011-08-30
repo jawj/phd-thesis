@@ -3772,7 +3772,7 @@ status collapsed
 
 \begin_layout Plain Layout
 Use of the UK Met Office's MIDAS Land Surface Stations hourly report data
- would be preferable in future research.
+ might be preferable in future research.
 \end_layout
 
 \end_inset
@@ -4481,8 +4481,8 @@ key "maas:2009"
 
 \end_inset
 
- calculate land cover proportions within 1km and 3km radii for an epidemiologica
-l study, and in their hedonic pricing work 
+ calculate land cover proportions within 1km and 3km radii for their epidemiolog
+ical study, and in their hedonic pricing work 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "gibbons:2011a"
@@ -4737,8 +4737,8 @@ London, green and blue space indicators
 
 \end_inset
 
-These considerations lead us to calculate in the first instance the proportion
- measures shown in 
+These considerations lead us to calculate the proportion measures shown
+ in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:proportion-measures"

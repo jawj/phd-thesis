@@ -586,7 +586,7 @@ The first external dimension of experience listed above, time, is captured
  These sensed data are discussed further in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "par:esm-sensor-data"
+reference "sub:esm-sensor-data"
 
 \end_inset
 
@@ -1457,7 +1457,7 @@ Mappiness permits ESM assessments to be volunteered at any time.
 \end_layout
 
 \begin_layout Section
-Implementation --- app
+App implementation
 \end_layout
 
 \begin_layout Standard
@@ -1966,6 +1966,149 @@ reference "fig:app-main-screen"
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Subsubsection
+Signals
+\end_layout
+
+\begin_layout Standard
+Mappiness signals make use of the three features made available by the Apple
+ Push Notification Service: each signal plays an alert sound, displays a
+ textual message, and causes the number '1' to be displayed on a red badge
+ over the app's icon to indicate that there is one ESM survey pending.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+(a)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename apns_unlocked_screenshot.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+(b)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fbox{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename apns_locked_screenshot.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Mappiness APNS notification display when device is (a) unlocked or (b) locked
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:APNS-notification"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+The alert sound is chosen by participants from a list within the app settings
+ screen.
+ The message reads: '
+\series bold
+mappiness
+\series default
+ --- How do you feel? Please tell us as soon as you safely can'.
+ If the device is unlocked, two associated buttons are displayed: 'Close'
+ dismisses the notification, and 'View' launches the Mappiness app directly
+ into ESM survey mode.
+ If the device is locked, a slider is available to launch the app into ESM
+ survey mode.
+ The notification display is illustrated in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:APNS-notification"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3117,7 +3260,7 @@ My happiness
 ESM assessment data
 \begin_inset CommandInset label
 LatexCommand label
-name "par:esm-sensor-data"
+name "sub:esm-sensor-data"
 
 \end_inset
 
@@ -3363,8 +3506,8 @@ iPhone model
 
 \begin_layout Standard
 The iPhone model (original, 3G, 3GS or 4) is recorded automatically, so
- that we can account for any variation in GPS, microphone and camera characteris
-tics.
+ that any variation in GPS, microphone and camera characteristics can be
+ accounted for in future research.
 \end_layout
 
 \begin_layout Subsection
@@ -3624,7 +3767,7 @@ reference "tab:App-revisions"
 \end_layout
 
 \begin_layout Section
-Implementation --- data server
+Data server implementation
 \end_layout
 
 \begin_layout Standard
@@ -3644,8 +3787,8 @@ Each server is a VPS
 status collapsed
 
 \begin_layout Plain Layout
-Virtual Private Server: a virtual machine that runs in software alongside
- other virtual machines on a single physical computer.
+A VPS is a Virtual Private Server: a virtual machine that runs in software
+ alongside other virtual machines on a single physical computer.
  It is functionally equivalent to and has the privacy of a separate physical
  computer --- it runs its own full-fledged operating system and can be independe
 ntly rebooted --- but is generally cheaper to operate.
@@ -3653,70 +3796,18 @@ ntly rebooted --- but is generally cheaper to operate.
 
 \end_inset
 
- hosted by Linode, LLC
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://www.linode.com/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- in their London data centre.
- The servers run the Ubuntu Linux operating system
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://www.ubuntu.com/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- and a range of other open-source software packages.
+ hosted by Linode, LLC in their London data centre.
+ The servers run the Ubuntu Linux operating system and a range of other
+ open-source software packages.
  All original Mappiness software running on the data servers is written
- in Ruby
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://www.ruby-lang.org/en/
-\end_layout
+ in Ruby, a dynamic, open source programming language 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "flanagan:2008"
 
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-, a dynamic, open source programming language.
+.
 \end_layout
 
 \begin_layout Standard
@@ -3735,1071 +3826,23 @@ My happiness
 screen.
 \end_layout
 
-\begin_layout Subsection
-Database
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:data-server-Database"
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
-At the heart of the data server is a PostgreSQL relational database system
- with PostGIS spatial extensions
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://www.postgresql.org/
-\end_layout
-
-\end_inset
-
- and 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://postgis.refractions.net/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-.
- The Mappiness database schema (presented in 
+Further information on the implementation of the data server is provided
+ in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sec:db-schema"
+reference "sec:Data-server-implementation-details"
 
 \end_inset
 
-) consists of five key tables:
-\end_layout
-
-\begin_layout Description
-users stores administrative details at participant (app) level: each row
- maps to one past or current registered installation of the Mappiness app
- on a participant's iPhone.
- Details stored include the participant ID number and authentication secret
- for that app installation, the participant's beep settings, and the 'device
- token' identifying the installation to Apple's push notification servers.
-\end_layout
-
-\begin_layout Description
-demographic_answer_sets
-\emph on
- 
-\emph default
-also contains one row per registered app installation.
- It holds the participant's answers to the survey presented during the registrat
-ion process, and is linked to the relevant row of the users table.
-\end_layout
-
-\begin_layout Description
-esm_answer_sets has one row per participant response.
- It holds the participant's answers, and links to the relevant row of the
- users table and (where applicable) the sent_beeps table.
- It does not hold contributed photographs, which are instead stored within
- the file system.
-\end_layout
-
-\begin_layout Description
-pending_beeps
-\begin_inset space ~
-\end_inset
-
-&
-\begin_inset space ~
-\end_inset
-
-sent_beeps support the beeper system.
- The former is a transient store of signals that will be sent in the next
- 24 hours, while the latter records details of all signals sent.
- Both are linked to the relevant rows of the users table.
-\end_layout
-
-\begin_layout Subsection
-Signalling
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:signalling"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-The Apple Push Notifications Service (APNS)
-\end_layout
-
-\begin_layout Standard
-Apps for Apple's iOS can make use of the Apple Push Notifications Service
- (APNS).
- This service enables an app provider to send a notification to an app user's
- device.
- APNS notifications operate, and appear to device users, in a manner very
- similar to SMS text messages, but can be sent at no cost to sender or recipient.
- Notifications are sent via APNS servers operated by Apple.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Late in the development of the Mappiness app a new version of the iPhone
- operating system, iOS 4, introduced Local Notifications.
- Local Notifications are scheduled by an app itself.
- Local Notifications would have some advantages over Push Notifications
- --- chiefly, that they would not require an active data connection, and
- so could be received at any location.
- Used alone, they would also have disadvantages --- no more than 64 Local
- Notifications may be scheduled, and if the app is not opened before these
- expire then no more notifications can be received.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-A notification can be delivered at any time the target device is available
- --- that is, powered on and connected to the Internet --- whether or not
- the relevant app is open.
- If the device is available, a notification is usually delivered within
- a few seconds; if it is not, the notification is queued for delivery at
- the next opportunity.
- Delivery of notifications 
-\begin_inset Quotes eld
-\end_inset
-
-is 'best effort' and is not guaranteed
-\begin_inset Quotes erd
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-after "31"
-key "apple-inc.:2010a"
-
-\end_inset
-
-, although testing indicates that the vast majority of notifications are
- delivered successfully.
-\end_layout
-
-\begin_layout Standard
-If an app provider attempts to send a notification to an app which no longer
- exists on the target device, the device reports this to the APNS, which
- updates an app-specific list of devices for which there were failed delivery
- attempts.
- App providers are obliged to query a feedback service regularly to retrieve
- this list, and to refrain from sending future notifications to the listed
- devices unless they are subsequently re-registered.
-\end_layout
-
-\begin_layout Subsubsection
-Communicating with the APNS
-\end_layout
-
-\begin_layout Standard
-Mappiness uses APNS notifications to signal participants.
- Communicating with the APNS requires use of a proprietary binary protocol
- over a persistent, authenticated connection.
- Managing such a connection is somewhat technically demanding, and Mappiness
- therefore relies on intermediary software.
-\end_layout
-
-\begin_layout Standard
-Initially, the free tier of a commercial service operated by Urban Airship,
- Inc.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://urbanairship.com/products/push-notifications/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- was used.
- This service connects to the APNS on behalf of app providers, and is controlled
- via a simple API
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Application Programming Interface: a documented interface that enables one
- computer program or system to communicate with another.
-\end_layout
-
-\end_inset
-
- that sends and receives data using JSON
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-JavaScript Object Notation: a concise, text-based data format.
-\end_layout
-
-\end_inset
-
- messages over HTTPS
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-HyperText Transfer Protocol Secure: the encrypted protocol used to transmit
- secure web pages.
-\end_layout
-
-\end_inset
-
-.
- However, the volume of notifications to be sent rapidly approached the
- usage limits of the free service tier.
-\end_layout
-
-\begin_layout Standard
-After evaluating various alternatives we therefore installed an additional
- open-source software package on the Mappiness data server: PyAPNS
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://github.com/samuraisam/pyapns/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-.
- Like the Urban Airship service, PyAPNS handles all communication with the
- APNS and is controlled by a simple API.
- The PyAPNS API communicates over XML-RPC
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-eXtensible Markup Language Remote Procedure Call: a verbose, text-based
- protocol for sending and receiving API messages.
-\end_layout
-
-\end_inset
-
-, but also provides a Ruby client library to encapsulate this communication.
- The Mappiness signalling software was rewritten to use the PyAPNS client
- library (to which we also contributed several fixes).
-\end_layout
-
-\begin_layout Subsubsection
-Signalling using APNS
-\end_layout
-
-\begin_layout Standard
-Mappiness makes use of the three available APNS features: it plays an alert
- sound, displays a textual message, and causes the number '1' to be displayed
- on a red badge over the app's icon to indicate that there is one ESM survey
- pending.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
-(a)
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-fbox{
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename apns_unlocked_screenshot.png
-	lyxscale 40
-	scale 30
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- 
-\begin_inset space ~
-\end_inset
-
-(b)
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-fbox{
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename apns_locked_screenshot.png
-	lyxscale 40
-	scale 30
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Mappiness APNS notification display when device is (a) unlocked or (b) locked
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:APNS-notification"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-The alert sound is chosen by participants from a list within the app settings
- screen.
- The message reads: '
-\series bold
-mappiness
-\series default
- --- How do you feel? Please tell us as soon as you safely can'.
- If the device is unlocked, two associated buttons are displayed: 'Close'
- dismisses the notification, and 'View' launches the Mappiness app directly
- into ESM survey mode.
- If the device is locked, a slider is available to launch the app into ESM
- survey mode.
- Notification display is illustrated in 
+ of Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:APNS-notification"
+reference "sec:Data-server-implementation-details"
 
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Signalling is performed by the signalling programme on the Mappiness data
- server.
- The programme is executed every 2 minutes, and on each execution performs
- the following sequence of tasks:
-\end_layout
-
-\begin_layout Enumerate
-(This task is only performed if it has not been performed in the past hour).
- Connect to the APNS feedback service to retrieve a list of app installations
- with failed deliveries.
- Mark all listed installations inactive in the users database table, and
- delete any pending signals associated with them from the
-\emph on
- 
-\emph default
-pending_beeps table.
- 
-\end_layout
-
-\begin_layout Enumerate
-For each participant who has reached the end of signalling hours since the
- last programme execution, calculate the signalling schedule for the next
- day according to the algorithm described in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sub:scheduling"
-
-\end_inset
-
-.
- Similarly, for each participant who has changed their beep settings since
- last programme execution, recalculate the signalling schedule for the remaining
- hours of this day
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-If settings are changed during the (potentially newly set) hours of the
- participant's signalling day, the number of signals to be sent during the
- remainder of the day is calculated on a probabilistic 
-\emph on
-pro rata 
-\emph default
-basis.
- For example, a participant who selects to receive 3 signals per day half-way
- through a day is theoretically due 1.5 signals during the remainder of the
- day.
- He or she will thus certainly be sent 1 signal, and will be sent a second
- with a probability of 50%.
-\end_layout
-
-\end_inset
-
- or the next day.
- Store the resulting pending signals in the
-\emph on
- 
-\emph default
-pending_beeps table.
-\end_layout
-
-\begin_layout Enumerate
-For each signal in the pending_beeps table that has fallen due since the
- last programme execution, delete the pending signal, send an APNS notification
- to the associated participant, and create a record of the sent signal in
- the sent_beeps table.
-\end_layout
-
-\begin_layout Subsubsection
-Safeguards
-\end_layout
-
-\begin_layout Standard
-Foreseeable failure modes of the signalling system could antagonise participants.
- For example, participants might be woken from sleep if they were signalled
- outside the hours they have specified, or feel harassed and irritated if
- they were signalled many times over a short period.
- In such cases, the reputation of the project --- and its ability to recruit
- and keep participants --- could be damaged.
-\end_layout
-
-\begin_layout Standard
-The signalling system was therefore implemented defensively, to try to prevent
- such failures.
- For example, the system considers the hours during which a participant
- may be beeped as finishing 10 minutes prior to the time specified by the
- participant, to account for possible delays in notification delivery.
- It deletes pending signals from the database prior to attempting their
- delivery, so that multiple deliveries will not be attempted if an error
- occurs during the delivery or deletion phase.
- And it refuses to proceed (and emails the system administrator) if more
- than a certain number of signals appear to fall due at one moment.
-\end_layout
-
-\begin_layout Subsection
-Data API
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Data-API"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The Mappiness app communicates with the data server via the private data
- API.
- The data API is a web application that receives and sends JSON messages
- over an encrypted HTTPS connection.
- It is written using the Sinatra framework for Ruby and served by the Phusion
- Passenger module for the nginx web server (all open-source).
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://www.sinatrarb.com/
-\end_layout
-
-\end_inset
-
-, 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://www.modrails.com/
-\end_layout
-
-\end_inset
-
- and 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://nginx.org/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- The data API makes the following nine endpoints available to the app:
-\end_layout
-
-\begin_layout Description
-register is called on completion of the participant sign-up process.
- The app sends details of the APNS device token required for sending signals
- to the registering device, and of the participant's confirmed signalling
- settings (both of which are stored in the users table).
- It also sends the participant's answers to the registration survey (which
- are stored in demographic_answer_sets).
- In response, the API returns a unique participant ID and a random 20-character
- secret.
- The app stores these, and uses them to authenticate itself (using HTTP
- Basic authentication) for all future API requests.
-\end_layout
-
-\begin_layout Description
-esm_answers is called with new ESM assessment responses, which are stored
- in the esm_answer_sets
-\emph on
- 
-\emph default
-table.
- The API also links the response set with the signal it was given in response
- to (if applicable) in the sent_beeps table.
-\end_layout
-
-\begin_layout Description
-image is called with the JPEG image data resulting from a photo taken during
- an ESM assessment, and a code identifying the associated ESM assessment.
- The image is stored in the filesystem.
- If it was marked as public, it is also made accessible via a URL within
- the public website.
-\end_layout
-
-\begin_layout Description
-user_status is called on app launch or when there are no further ESM assessment
- responses queued for sending to the API.
- The API calculates and returns the response statistics alongside a status
- message to be displayed on the main screen.
-\end_layout
-
-\begin_layout Description
-graphs_bluff is called when the participant taps the 'My happiness' control.
- The API returns instructions for displaying the participant's feedback
- charts (using the Bluff
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://bluff.jcoglan.com/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- charting library for JavaScript) as an HTML+CSS+JavaScript document.
-\end_layout
-
-\begin_layout Description
-settings is called when the participant changes his or her signalling settings.
- The new settings are stored in the users table.
-\end_layout
-
-\begin_layout Description
-toggle_download is called when the participant enables or disables data
- download.
- When enabling data download, the API returns the new, secret HTTPS URL
- via which the participant's data may be accessed.
-\end_layout
-
-\begin_layout Description
-update_token is called if the app detects that its APNS device token has
- changed.
- The message includes the new device token, which is stored in the users
- table.
-\end_layout
-
-\begin_layout Description
-apn_ignored is called in the rare case that the app is open and receives
- an APNS notification that cannot be displayed because another modal activity
- is in progress (such as completing an ESM assessment, or changing signalling
- settings).
- The API flags the relevant notification in the sent_beeps database table
- to indicate that it should not count towards the total signals received
- by the participant.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-The signal is not rescheduled, so the participant receives fewer than the
- scheduled number of signals on the day in question.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Asynchronous endpoint priorities
-\end_layout
-
-\begin_layout Standard
-Four of the API endpoints listed above are handled asynchronously by the
- Mappiness app.
- In other words, communication with these endpoints occurs in the background,
- without blocking other app functions.
- These endpoints are: update_token, esm_answers, image, and apn_ignored.
-\end_layout
-
-\begin_layout Standard
-The app manages a single queue of messages to the asynchronous endpoints.
- If the queue is not empty and no asynchronous message is currently being
- transmitted, the app will begin sending the message at the head of the
- queue.
- Reflecting the importance of different endpoints to the data collection
- process, the message queue is ordered by endpoint priority.
- The endpoints are listed in the preceding paragraph in descending priority
- order.
- For example, all ESM assessment response data will be transmitted before
- any image is sent.
- Messages for the same endpoint are processed in first-in-first-out order.
-\end_layout
-
-\begin_layout Subsection
-Security and backup
-\end_layout
-
-\begin_layout Standard
-Security against intrusions is essential for participants' privacy and for
- the integrity of the collected data.
- The data servers are firewalled to prevent access to any services but the
- Mappiness data services (over HTTP and HTTPS) and a secure shell (SSH)
- for system administration.
- SSH access is restricted to the researcher's IP addresses
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Internet Protocol (IP) addresses identify the networks and computers from
- which data sent across the Internet originate.
-\end_layout
-
-\end_inset
-
-.
- All installed software is updated regularly to ensure that known exploits
- are patched.
-\end_layout
-
-\begin_layout Standard
-To guard against the loss of collected data in case of intrusion, hardware
- failure or other disaster, an offsite backup is performed daily.
- The backup is made in the early hours of the morning (UK time), when load
- on the server is at its lowest.
- The server backup script invokes the open-source Duplicity software
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://duplicity.nongnu.org/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- to back up the contents of the database, and all photos, weather and pollution
- data, to the Amazon Simple Storage Service (S3).
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://aws.amazon.com/s3/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- S3 provides durable and redundant data storage across multiple devices
- and physical locations.
- To comply with Data Protection Act requirements, backup data is stored
- only on S3 servers located within the EU.
- Backups are encrypted, and also transmitted over an encrypted connection.
- 
-\end_layout
-
-\begin_layout Standard
-Full backups are performed monthly.
- The daily backups occurring in between are incremental: only changes relative
- to the previous backup are transmitted and stored.
- Each backup creates a snapshot, so that the data that was held on the server
- on any particular day may be restored as needed.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Snapshots are crucial to the effectiveness of backup.
- Without snapshots, corruption or deletion of data on the server is quickly
- mirrored to the backup, rendering it useless.
-\end_layout
-
-\end_inset
-
- To verify that data is being backed up correctly, data for analysis is
- retrieved not directly from the production server, but from the latest
- backup instead.
- This strategy also reduces load on the production server.
-\end_layout
-
-\begin_layout Subsection
-Web statistics
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:web-statistics"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The public Mappiness web site has four elements that require up-to-date
- statistics from the production data server.
- These are: 
-\end_layout
-
-\begin_layout Itemize
-a count at the bottom of every page of the total number of participants
- that have signed up;
-\end_layout
-
-\begin_layout Itemize
-a map of the most recent 120 responses where the 'happy' self-rating was
- at least 70%, and a photo was taken and allowed to be displayed;
-\end_layout
-
-\begin_layout Itemize
-'hedonimeters' displaying the average and current happiness ratings for
- London and the whole of the UK --- these are the mean values of respectively
- all responses and the 25 most recent responses; and
-\end_layout
-
-\begin_layout Itemize
-a chart showing the mean happiness response for the UK and London, hour-by-hour
- during the past week --- excluding any hours for which there were fewer
- than 10 responses.
-\end_layout
-
-\begin_layout Standard
-Statistics for the hour-by-hour chart are calculated every hour, and statistics
- for the others are calculated every 5 minutes, by scripts executed on the
- appropriate schedule.
- The statistics are saved (in JSON format) in a directory publicly accessible
- over an HTTP connection, and are loaded as required from the public website.
- 
-\end_layout
-
-\begin_layout Subsection
-Download API
-\end_layout
-
-\begin_layout Standard
-As an additional incentive, participants are able to access all of their
- own contributed data.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-This feature was added with the launch of version 1.1 of the app in May 2011.
-\end_layout
-
-\end_inset
-
- The data download feature is initially disabled for each participant, and
- it can be enabled and disabled within the app.
- When it is enabled, the participant's data is available via a secure (HTTPS)
- link.
- To ensure privacy, this link cannot be guessed --- it includes 8 random
- characters --- and it changes each time the download feature is enabled.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-The link is of the form https://mappiness.me/
-\emph on
-xxxx
-\emph default
-.
-\emph on
-yyyy
-\emph default
-.
-\emph on
-yyyy
-\emph default
- --- for example, 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://mappiness.me/3kkq.pk7d.23wb
-\end_layout
-
-\end_inset
-
-.
- The 
-\emph on
-xxxx
-\emph default
- component encodes the participant's ID, while the 
-\emph on
-yyyy
-\emph default
-.
-\emph on
-yyyy 
-\emph default
-component is a random eight-character string, displayed in two groups of
- four characters for ease of reading.
- The 
-\emph on
-x
-\emph default
-s and 
-\emph on
-y
-\emph default
-s can be any digit (0--9) or lower-case letter (a--z) except the following:
- 0, 1, a, e, i, o, u, l (vowels are excluded to ensure that offensive words
- cannot be generated, and 0, 1, i, o and l are excluded because they are
- easily visually confused).
- The 8-character string can therefore take any of 
-\begin_inset Formula $28^{8}$
-\end_inset
-
- (approximately 378 billion) values.
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Data download is made available by another web application built using the
- Sinatra framework.
- Several formats are supported:
-\end_layout
-
-\begin_layout Description
-HTML reproducing the charts available within the app (which can then be
- emailed, saved or printed), providing a gallery of the photos submitted
- by the participant, and displaying all responses on an interactive map.
-\end_layout
-
-\begin_layout Description
-KMZ for exploration within mapping applications such as Google Earth.
-\end_layout
-
-\begin_layout Description
-iCalendar for viewing (and subscribing to) within calendaring applications
- such as iCal.
-\end_layout
-
-\begin_layout Description
-XLS
-\begin_inset space ~
-\end_inset
-
-and
-\begin_inset space ~
-\end_inset
-
-CSV for import into spreadsheet or statistics applications, for subsequent
- graphing or statistical analysis.
-\end_layout
-
-\begin_layout Description
-JSON for consumption by third-party services.
- For example, services could be developed to display a personal 'hedonimeter'
- on a participant's own blog, to post details of responses to a participant's
- Twitter or Facebook account, or to provide a participant with more detailed
- analysis of his or her responses.
-\end_layout
-
-\begin_layout Standard
-For all formats except HTML charts, response data are provided in descending
- order of response date/time, and the web application accepts query parameters
- limiting the data to be returned by date/time and by position in the response
- sequence.
-\end_layout
-
-\begin_layout Subsection
-Weather & pollution
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Weather-pollution-download"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Every hour, weather data is downloaded from Weather Underground
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://www.wunderground.com/global/UK.html
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-, and air pollution data is downloaded from Defra
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://uk-air.defra.gov.uk/latest/currentlevels?type=Current
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-.
- These data are stored for later processing.
- 
 \end_layout
 
 \begin_layout Standard
