@@ -86,7 +86,7 @@
 \color #ffffff
 \end_branch
 \branch bib-when-not-master
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #ffffff
 \end_branch
@@ -2115,8 +2115,8 @@ status open
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "/Users/gjm06/Documents/PhD thesis/all"
-options "apalike2"
+bibfiles "../all"
+options "apalike2url"
 
 \end_inset
 
