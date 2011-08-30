@@ -46,7 +46,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize 11
-\spacing other 1.1499999999999999
+\spacing onehalf
 \use_hyperref true
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
@@ -1449,8 +1449,6 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
-\lang english
 Survey item sources
 \begin_inset CommandInset label
 LatexCommand label
@@ -1639,6 +1637,12 @@ reference "tab:item-sources"
  with published data.
 \end_layout
 
+\begin_layout Standard
+A wide range of items were included in both surveys to support additional
+ and future research: not all of the items are used in the analyses presented
+ in this thesis.
+\end_layout
+
 \begin_layout Subsection
 London
 \end_layout
@@ -1735,18 +1739,6 @@ All things considered, how satisfied are you with your life as a whole nowadays?
 0 (extremely dissatisfied) -- 10 (extremely satisfied)
 \end_layout
 
-\begin_layout Standard
-This is the same item used in previous research on life satisfaction and
- environmental quality in London 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "mackerron:2008"
-
-\end_inset
-
-, permitting direct comparison.
-\end_layout
-
 \begin_layout Paragraph
 ESS Round 3 module
 \end_layout
@@ -1814,17 +1806,22 @@ reference "app:survey-screenshots"
 .
 \end_layout
 
+\begin_layout Paragraph
+Vignettes
+\end_layout
+
 \begin_layout Standard
 Third, the single-item life satisfaction item was followed by a set of anchoring
- vignettes.
- 
-\end_layout
+ vignette items.
+ Responses to these items are not analysed in this thesis.
+\begin_inset Note Note
+status collapsed
 
 \begin_layout Subsubsection
 Anchoring vignettes
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Anchoring vignettes are intended to help correct for differential item functioni
 ng (DIF) or, equivalently, differing happiness reporting functions across
  individuals.
@@ -1852,7 +1849,7 @@ key "king:2003"
 Vignettes for life satisfaction
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 For a number of reasons, the use of vignettes for life satisfaction should
  be regarded as somewhat experimental.
  Some have suggested that vignettes be used only for concepts that are unidimens
@@ -1880,7 +1877,7 @@ subjective
  however.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 One existing application of anchoring vignettes to life satisfaction measures
  is known.
  The 2006 wave of the Survey of Health, Ageing and Retirement in Europe
@@ -1915,7 +1912,7 @@ Carry is 72 years old and a widow.
  How satisfied with her life do you think Carry is?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 This survey data has been used by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1931,7 +1928,7 @@ ion scores between residents of different European nations.
 Vignette design
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Devising a vignette question involves selecting attributes of the hypothetical
  individual to be described, selecting the levels of those attributes, in
  plausible combinations, and then selecting a particular ordering and phrasing
@@ -1954,7 +1951,7 @@ It is potentially also a process which might usefully be guided by qualitative
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 To provide the greatest discriminatory power, vignette responses should
  be spaced evenly throughout the distribution of self-assessment responses
  
@@ -1974,7 +1971,7 @@ es---of the self-assessment.
  and the results of piloting, can help in approaching it.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 In this study, it was decided to use four vignettes---which can be used
  create a 9-point DIF-free scale
 \begin_inset Foot
@@ -1998,7 +1995,7 @@ Those assessing themselves lower than they assess the lowest of the vignettes
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A simple Ordinary Least Squares (OLS) regression was run, having the LS
  item as the dependent variable, and a number of items that are usually
  significantly associated with LS scores as independent variables.
@@ -2031,7 +2028,7 @@ ns.
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset CommandInset citation
 LatexCommand citet
 key "king:2006"
@@ -2049,7 +2046,7 @@ y by age and gender, and many occupations and hobbies might draw more attention
  Age and gender were therefore fixed for each vignette.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Within genders, it was decided to investigate whether the use of different
  names had any association with LS ratings.
  For three of the vignettes, the name of the hypothetical individual was
@@ -2077,7 +2074,7 @@ key "hanks:2006"
 ).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 The vignettes were all answered on the same 0 -- 10 scale as the LS item,
  and were as follows:
 \end_layout
@@ -2179,7 +2176,7 @@ d son on her own.
  Approximate predicted LS rating is 9.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 The order of presentation of the four vignettes was randomised per respondent,
  as ordering effects have previously been demonstrated in vignettes research
  
@@ -2212,7 +2209,7 @@ key "hopkins:2008"
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 The presentation and rubric for the vignette items can be seen on 
 \begin_inset ERT
 status open
@@ -2236,6 +2233,11 @@ reference "app:survey-screenshots"
 .
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Map locations
 \end_layout
@@ -2250,30 +2252,6 @@ t is necessary to discover respondents' spatial locations as accurately
  time was spent (for example, the workplace).
  Respondents were also asked about their usual means of travel between these
  two locations.
-\end_layout
-
-\begin_layout Standard
-For locations, respondents were asked initially for a full UK postcode.
- If respondents ticked a box to indicate they did not know the postcode,
- they were immediately asked instead for the name of the street and city/town.
- If neither of these items was supplied, respondents were asked on a later
- page, as a fallback, which was their nearest Tube or railway station.
- However, if either postcode or street and city/town were supplied---and
- as long as the respondent's browser supported JavaScript---these were used
- on the following page to set the starting centre position of an interactive
- map.
- Respondents were then asked to pinpoint the precise location by dragging
- the map so that the location was framed by a viewfinder in the centre,
- as illustrated in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:interactive-map"
-
-\end_inset
-
-.
- The latitude and longitude of the centre of the map, and the final map
- scale, were recorded alongside the other response data.
 \end_layout
 
 \begin_layout Standard
@@ -2299,9 +2277,9 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
-\lang english
 Interactive map item for home location
+\lang english
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:interactive-map"
@@ -2318,23 +2296,27 @@ name "fig:interactive-map"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\lang english
-Better reference at: http://msdn.microsoft.com/en-us/library/bb259689%28lightweigh
-t%29.aspx
-\end_layout
+For locations, respondents were asked initially for a full UK postcode.
+ If respondents ticked a box to indicate they did not know the postcode,
+ they were immediately asked instead for the name of the street and city/town.
+ If neither of these items was supplied, respondents were asked on a later
+ page, as a fallback, which was their nearest Tube or railway station.
+ However, if either postcode or street and city/town were supplied---and
+ as long as the respondent's browser supported JavaScript---these were used
+ on the following page to set the starting centre position of an interactive
+ map.
+ Respondents were then asked to pinpoint the precise location by dragging
+ the map so that the location was framed by a viewfinder in the centre,
+ as illustrated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:interactive-map"
 
 \end_inset
 
-
+.
+ The latitude and longitude of the centre of the map, and the final map
+ scale, were recorded alongside the other response data.
 \end_layout
 
 \begin_layout Standard
@@ -2403,15 +2385,13 @@ When you're ready, please zoom in again to pinpoint a more accurate location
 \end_layout
 
 \begin_layout Subsubsection
-Home and local environments
+Demographic information
 \end_layout
 
 \begin_layout Standard
-Housing quality may be correlated with EQ (for example, nicer housing might
- generally occur in nicer areas).
- It may also mediate the effects of EQ (for example, aircraft noise could
- be attenuated by double glazing).
- A number of items on housing quality were therefore included (
+Standard demographic items were included, including gender, age, marital
+ and relationship status, children and children's ages, qualifications,
+ work status, and income (
 \begin_inset ERT
 status open
 
@@ -2419,7 +2399,60 @@ status open
 
 
 \backslash
-hyperlink{ssa.35}{pages SA-35 -- SA-36}
+hyperlink{ssa.4}{pages SA-4}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssa.57}{SA-57 -- SA-58}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssa.60}{SA-60}
+\end_layout
+
+\end_inset
+
+).
+ Because they are generally significantly associated with LS, and because
+ income is important in valuing aspects of EQ, the age and income items
+ used unusually numerous and narrow response bands in order to minimise
+ measurement error.
+ Income was requested at both individual and household level, and a special
+ request was included for completion of these sensitive items.
+\end_layout
+
+\begin_layout Subsubsection
+Other items
+\end_layout
+
+\begin_layout Standard
+A number of items on housing type and quality were included (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssa.33}{pages SA-33 and SA-35 -- SA-36}
 \end_layout
 
 \end_inset
@@ -2431,28 +2464,9 @@ reference "app:survey-screenshots"
 
 \end_inset
 
-).
- Items regarding the type of housing were also presented, to permit broad
- estimates of value using Land Registry data (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hyperlink{ssa.33}{page SA-33}
-\end_layout
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-A number of subjective perception items on the topic of the respondent's
- local environment were included, regarding litter, crime, personal safety,
- green space, air pollution, noise, and overall satisfaction (
+), as well as subjective perception items on the topic of the respondent's
+ local environment, regarding litter, crime, personal safety, green space,
+ air pollution, noise, and overall satisfaction (
 \begin_inset ERT
 status open
 
@@ -2516,9 +2530,8 @@ hyperlink{ssa.26}{pages SA-26 -- SA-28}
 
 ).
  Respondents were asked how long they had lived in their present accommodation,
- and about the size of the settlement where they had lived previously, to
- help provide an indication of possible adaptation to current environmental
- quality (
+ and about the size of the settlement where they had lived previously, which
+ might provide an indication of possible adaptation to current EQ (
 \begin_inset ERT
 status open
 
@@ -2534,63 +2547,47 @@ hyperlink{ssa.33}{pages SA-33 -- SA-34}
 ).
 \end_layout
 
-\begin_layout Subsubsection
-Other items
-\end_layout
-
 \begin_layout Standard
-Standard demographic items were included, including gender, age, marital
- and relationship status, children and children's ages, qualifications,
- work status, and income (
-\begin_inset ERT
-status open
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename scale_separation_01.png
+	lyxscale 50
+	width 16cm
+
+\end_inset
 
 
-\backslash
-hyperlink{ssa.4}{pages SA-4}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+'Add comment' link, and separation of non-scale options in scale items
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:scale-separation"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
-, 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-hyperlink{ssa.57}{SA-57 -- SA-58}
 \end_layout
 
 \end_inset
 
- and 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hyperlink{ssa.60}{SA-60}
-\end_layout
-
-\end_inset
-
-).
- Because they are generally significantly associated with LS, and because
- income is important in valuing aspects of EQ, the age and income items
- used unusually numerous and narrow response bands in order to minimise
- measurement error.
- Income was requested at both individual and household level, and a special
- request was included for completion of these sensitive items.
-\end_layout
-
-\begin_layout Standard
-A number of other items were presented, on the hypothesis that these might
+A number of further items were presented, on the hypothesis that these might
  be associated with LS ratings.
  These included items on physical exercise, health, diet and sleep (
 \begin_inset ERT
@@ -2684,9 +2681,9 @@ hyperlink{ssa.68}{page SA-68}
 \end_inset
 
 ).
- In addition, respondents were able to make free-text comments and clarification
-s by using an 'add comment' link at the bottom of each page which expanded,
- when clicked, into a text entry field (see 
+ Respondents were able to make free-text comments by using an 'add comment'
+ link at the bottom of each page which expanded, when clicked, into a text
+ entry field (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:scale-separation"
@@ -2710,46 +2707,7 @@ hyperlink{ssa.66}{pages SA-66 -- SA-67}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename scale_separation_01.png
-	lyxscale 50
-	width 16cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-'Add comment' link, and separation of non-scale options in scale items
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:scale-separation"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+The majority of these items are not analysed in this thesis.
 \end_layout
 
 \begin_layout Subsection
@@ -2781,7 +2739,7 @@ reference "app:survey-screenshots"
 \end_layout
 
 \begin_layout Subsubsection
-Happiness and physical and mental health
+Happiness and health
 \end_layout
 
 \begin_layout Standard
@@ -2790,7 +2748,7 @@ The same standard single-item life satisfaction (LS) scale was used as in
 \end_layout
 
 \begin_layout Standard
-For general and physical health, the SF-36 Health Survey was employed (
+For general health, the SF-36 Health Survey was employed (
 \begin_inset ERT
 status open
 
@@ -2880,68 +2838,6 @@ Indicate to what extent you have felt this way during the past few weeks
 \end_layout
 
 \begin_layout Subsubsection
-Physical exercise
-\end_layout
-
-\begin_layout Standard
-As a measure of physical activity, the long-form self-administered International
- Physical Activity Questionnaire (IPAQ) was presented 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "craig:2003"
-
-\end_inset
-
- (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hyperlink{ssb.39}{pages SB-39 -- SB-52}
-\end_layout
-
-\end_inset
-
-).
- The IPAQ includes questions regarding walking, moderate exercise and vigorous
- exercise in work, leisure, travel and domestic contexts.
- It provides a standardised scoring system to translate these into metabolic
- equivalence values (METs), which are multiplied by activity duration to
- provide a straightforward absolute measure of physical activity 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "the-ipaq-group-:2005"
-
-\end_inset
-
-.
- METs are multiples of the resting metabolic rate, and reach 8 for vigorous
- activity.
-\end_layout
-
-\begin_layout Standard
-In addition to the standard IPAQ items, we asked respondents to estimate
- the proportion of time spent in different forms of leisure-time exercise
- that was spent in natural environments.
- Although the addition of items to a standard questionnaire might compromise
- the comparability of our response data with that collected elsewhere, the
- additional items were important for this research.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Not this research --- not used here! --- but the NEA research
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
 Location
 \end_layout
 
@@ -2982,78 +2878,7 @@ hyperlink{ssb.54}{SB-54}
 \end_layout
 
 \begin_layout Subsubsection
-Home and local environments
-\end_layout
-
-\begin_layout Standard
-As on the London survey, several items on housing type and quality were
- included (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hyperlink{ssb.21}{pages SB-21 -- SB-24}
-\end_layout
-
-\end_inset
-
-), as well as a number of items regarding the respondent's local environment
- (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hyperlink{ssb.25}{pages SB-25 -- SB-27}
-\end_layout
-
-\end_inset
-
-).
- 
-\end_layout
-
-\begin_layout Subsubsection
-Nature
-\end_layout
-
-\begin_layout Standard
-We asked a variety of additional questions regarding direct and indirect
- use and enjoyment of nature.
- These included: views from the home and workplace; membership of and legacies
- to wildlife and conservation organisations; visits to National Parks and
- National Trust and RSPB land; nature watching and photography; time spent
- in the garden, countryside and other green spaces; and experience of nature
- via exhibitions, magazines and television (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hyperlink{ssb.27}{pages SB-27 -- SB-38}
-\end_layout
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Subsubsection
-Other items
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:survey-other-items"
-
-\end_inset
-
-
+Demographic information
 \end_layout
 
 \begin_layout Standard
@@ -3105,6 +2930,98 @@ hyperlink{ssb.58}{page SB-58}
  usefulness of this data.
 \end_layout
 
+\begin_layout Subsubsection
+Other items
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:survey-other-items"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As a measure of physical activity, the long-form self-administered International
+ Physical Activity Questionnaire (IPAQ) was presented 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "craig:2003"
+
+\end_inset
+
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssb.39}{pages SB-39 -- SB-52}
+\end_layout
+
+\end_inset
+
+).
+ In addition to the standard IPAQ items, we asked respondents to estimate
+ the proportion of time spent in different forms of leisure-time exercise
+ that was spent in natural environments.
+ As on the London survey, several items on housing type and quality were
+ included (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssb.21}{pages SB-21 -- SB-24}
+\end_layout
+
+\end_inset
+
+), as well as a number of items regarding the respondent's local environment
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssb.25}{pages SB-25 -- SB-27}
+\end_layout
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+We asked a variety of additional questions regarding direct and indirect
+ use and enjoyment of nature.
+ These included: views from the home and workplace; membership of and legacies
+ to wildlife and conservation organisations; visits to National Parks and
+ National Trust and RSPB land; nature watching and photography; time spent
+ in the garden, countryside and other green spaces; and experience of nature
+ via exhibitions, magazines and television (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hyperlink{ssb.27}{pages SB-27 -- SB-38}
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
 \begin_layout Standard
 Most of the other items from the London survey were also used, with the
  exception (for brevity) of those regarding work activities and hours, religious
@@ -3127,6 +3044,10 @@ hyperlink{ssb.63}{page SB-63}
  This change was made because an unexpectedly large proportion of respondents
  on the London survey reported one or more shocks occurring during the three-yea
 r time frame.
+\end_layout
+
+\begin_layout Standard
+The majority of these items are not analysed in this thesis.
 \end_layout
 
 \begin_layout Subsection
@@ -3587,6 +3508,10 @@ key "nielsen:1997"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 Finally, vignette 4, which was intended to elicit the highest vignette rating,
  was not rated highest by some individuals.
  At this point, vignette 4 read as follows:
@@ -3604,7 +3529,7 @@ Finally, vignette 4, which was intended to elicit the highest vignette rating,
  and nephews.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Some pre-pilot respondents commented that the reason why the individual
  had no children was unclear, but that this could be a source of regret
  for her, and had thus reduced their assessment of her LS.
@@ -3612,11 +3537,21 @@ Some pre-pilot respondents commented that the reason why the individual
  grown-up children.
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
 The survey was subsequently piloted on a larger scale using an email snowball
  sampling method, giving 181 respondents prior to the full survey launch.
- Vignette item responses were in most cases ordered as anticipated, and
- no additional issues were identified from this pilot data.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Vignette item responses were in most cases ordered as anticipated, and
+\end_layout
+
+\end_inset
+
+No additional issues were identified from this pilot data.
  Please note that all screenshots and descriptions in other subsections
  relate to the final, post-piloting version of the survey.
 \end_layout
@@ -3900,11 +3835,17 @@ In addition, to help identify responses selected completely at random, pairs
  of items identified as related were checked for logical consistency.
  For example, on the London survey, a response could be flagged as inconsistent
  on up to 13 grounds, including where: 
-\end_layout
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 the predicted least happy vignette (vignette 1) was rated higher than the
  predicted happiest (vignette 4); 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize

@@ -4237,9 +4237,55 @@ Interactive map location
 \end_layout
 
 \begin_layout Standard
-As a sanity check on the locations indicated by respondents on the interactive
- map survey item, we compare these map locations with the polygons associated
- with the respondents' postcodes.
+We make use of the interactive map location data only where respondents
+ selected the follow-up options 
+\begin_inset Quotes eld
+\end_inset
+
+My home is in the yellow box
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+My home is in or near the yellow box—it could be one or two buildings either
+ way
+\begin_inset Quotes erd
+\end_inset
+
+ (conversely, we exclude records where respondents checked the options 
+\begin_inset Quotes eld
+\end_inset
+
+I couldn’t find my home on the map
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+The map didn’t load/didn’t work
+\begin_inset Quotes erd
+\end_inset
+
+, or 
+\begin_inset Quotes eld
+\end_inset
+
+I prefer not to say exactly where I live
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+As a sanity check on the locations indicated by respondents, we compare
+ these map locations with the polygons associated with the respondents'
+ postcodes.
  81% of map locations fall within the associated postcode polygon.
  95% are within 25m of the polygon's perimeter, and all are within 190m.
 \end_layout
