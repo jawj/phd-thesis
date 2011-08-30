@@ -120,7 +120,17 @@ Demographics and sample representativeness
 \end_layout
 
 \begin_layout Standard
-Tables 
+As discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Quota-methods"
+
+\end_inset
+
+, both web surveys used quota sampling.
+ Basic demographic characteristics in the samples should therefore be close
+ to representative of the respective populations.
+ Tables 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:web-uk-demographics"
@@ -155,28 +165,13 @@ reference "chap:survey-results-appendix"
 
 \end_inset
 
- summarise demographic information for the UK and London surveys alongside
+ provide full demographic information for the UK and London surveys, alongside
  comparator data where available.
- 
 \end_layout
 
 \begin_layout Standard
-As discussed in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sub:Quota-methods"
-
-\end_inset
-
-, both web surveys used quota sampling.
- Basic demographic characteristics in the samples should therefore be close
- to representative of the respective populations, and this is indeed broadly
- observed.
- 
-\end_layout
-
-\begin_layout Standard
-However, in each case the oldest age group (65+) is slightly under-represented
+The samples are indeed broadly representative on key characteristics.
+ However, in each case the oldest age group (65+) is slightly under-represented
  and the 45 -- 64 group somewhat over-represented.
  Similarly, those with degree-level qualifications are somewhat over-represented
  and those with no qualifications under-represented.
@@ -197,30 +192,9 @@ Income
 \end_layout
 
 \begin_layout Standard
-Household income distributions in the two surveys are shown in Figures 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:hh-inc-uk"
-
-\end_inset
-
- and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:hh-inc-london"
-
-\end_inset
-
- in Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:survey-results-appendix"
-
-\end_inset
-
-.
- Incomes in our survey data appear similar to, or very slightly below, those
+Incomes in our survey data appear similar to, or very slightly below, those
  reported in large-scale surveys using probability sampling.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -272,6 +246,32 @@ key "national-statistics:2007"
 .
  Our mean of annual gross household income bracket midpoints is slightly
  lower, at £36,002, equivalent to £690 per week.
+\end_layout
+
+\begin_layout Standard
+Household income distributions in the two surveys are shown in Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hh-inc-uk"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hh-inc-london"
+
+\end_inset
+
+ in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:survey-results-appendix"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -1533,20 +1533,14 @@ reference "sec:Aggregate-swb-calculations"
 
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Need to write this appendix!
-\end_layout
+ in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:survey-results-appendix"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsection
@@ -38973,8 +38967,8 @@ reference "tab:london-aggregate-regs"
  --- which are equivalently scaled, being in each case z-score averages
  --- provide substantially varying income coefficient estimates.
  The coefficient in the 'satisfying life' model (0.20) is approximately twice
- as large as those in the models using broader wellbeing measures (0.11 and
- 0.10).
+ as large as those in the models predicting broader wellbeing measures (0.11
+ and 0.10).
  This is in line with the previous findings discussed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
