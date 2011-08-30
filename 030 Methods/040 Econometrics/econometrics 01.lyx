@@ -242,7 +242,25 @@ reference "sub:analysing-happiness"
  may be preferable because of the straightforward interpretation of the
  coefficients.
  We report OLS model estimates from our survey data, having verified that
- these are indeed comparable to the results from ordered models.
+ these are indeed comparable to the results from ordered models
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+See, for example, 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "chapters 2 and 21"
+key "greene:2003"
+
+\end_inset
+
+ for treatments of OLS and ordered models.
+\end_layout
+
+\end_inset
+
+.
  
 \end_layout
 
