@@ -39520,6 +39520,25 @@ Arguably, we could have tried including a range of additional controls,
 \end_layout
 
 \begin_layout Description
+Habituation It is known that individuals adapt to differing degrees to different
+ kinds of circumstances.
+ For example, in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Past-and-relative-income"
+
+\end_inset
+
+ we noted that individuals adapt to income levels to a very high degree.
+ Approximately 80% of our sample have lived in the same location for at
+ least two years; 40% have lived there for at least ten.
+ It is therefore possible that individuals in our sample have largely become
+ habituated to local EQ levels, so that they no longer has a significant
+ impact on LS.
+ 
+\end_layout
+
+\begin_layout Description
 Existence
 \begin_inset space ~
 \end_inset
@@ -39550,10 +39569,6 @@ One exception here might be viewshed data, as has been used in some hedonic
 \end_layout
 
 \begin_layout Description
-Habituation
-\end_layout
-
-\begin_layout Description
 No
 \begin_inset space ~
 \end_inset
@@ -39566,18 +39581,35 @@ at
 \begin_inset space ~
 \end_inset
 
-all Finally, we should at least consider the possibility that EQ is not
- significantly related to LS.
+all Finally, we should at least consider the possibility that our London
+ results tell us truthfully that LS simply is not significantly related
+ to EQ.
  After all, LS is a broad, temporally non-specific, primarily cognitive
  indicator.
  It presumably reflects an individual's perceptions of his or her past,
  present and possible future, in relation to his or her hopes and expectations.
- Perhaps we should not expect such a general quantity to be significantly
- related to EQ characteristics.
- Of course, a fair volume of other research contradicts this position; if
- we were to accept it, we would need to ascribe all previous results to
- flawed study designs (such as omitted variables issues) and/or coincidences
- coupled with publication bias.
+ Perhaps we should not expect such a quantity to be significantly related
+ to EQ characteristics.
+ 
+\end_layout
+
+\begin_layout Standard
+The latter two explanations appear to contradict a reasonable volume of
+ previous research.
+ To accept them, we would need to ascribe many previous results to flawed
+ study design (such as omitted variables issues) and/or coincidence coupled
+ with publication bias.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO state position here!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
