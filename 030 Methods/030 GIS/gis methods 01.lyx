@@ -4474,15 +4474,23 @@ reference "sec:research-aims"
 \end_inset
 
 , proportion measures have not previously been used in SWB studies.
- However, 
+ However, Maas et al.
+ (
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citeyear
+key "maas:2006"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citeyear
 key "maas:2009"
 
 \end_inset
 
- calculate land cover proportions within 1km and 3km radii for their epidemiolog
-ical study, and in their hedonic pricing work 
+) and calculate land cover proportions within 1km and 3km radii in epidemiologic
+al studies, and in their hedonic pricing work 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "gibbons:2011a"

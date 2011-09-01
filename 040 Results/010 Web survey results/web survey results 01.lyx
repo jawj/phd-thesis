@@ -38492,8 +38492,8 @@ Robustness checks
 
 \begin_layout Standard
 We have already described a number of checks on the robustness of our results
- to variations in model specification, as appropriate to the specific models
- being run.
+ to variations in model specification, as appropriate to the particular
+ models being run.
 \end_layout
 
 \begin_layout Standard
@@ -38886,8 +38886,9 @@ reference "sub:swb-valuation-Method"
 \end_inset
 
  to calculate compensating surpluses reveals that, at the mean income (£19,204),
- respondents would be willing to pay an amount equal to that mean income
- for a 60% (1,696ha) increase in freshwater land cover within 3km.
+ respondents would be willing to pay an amount equal to half that mean income
+ for an increase of just under 5% (141ha) in freshwater land cover within
+ 3km.
 \end_layout
 
 \begin_layout Subsubsection
@@ -38943,16 +38944,7 @@ reference "tab:MRS-values"
 .
  These prices are indeed somewhat reduced, but still appear implausibly
  large.
- For example, they are approximately twice as large as the implicit prices
- estimated in the hedonic study by 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "gibbons:2011a"
-
-\end_inset
-
-, when we would expect them to be much smaller, since they are annual values
- rather than 'one-off' values capitalised in house prices.
+ 
 \end_layout
 
 \begin_layout Paragraph
@@ -39041,26 +39033,490 @@ reference "sub:swb-valuation-Strengths-weaknesses"
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Interpretation
 \end_layout
 
 \begin_layout Standard
-This chapter has presented results from a more comprehensive investigation
- of links between SWB and EQ than has previously been attempted in the economics
- literature.
+This chapter has presented results from a more detailed and comprehensive
+ investigation of links between SWB and EQ than has previously been attempted.
  We include a wide range of EQ characteristics, including some not previously
  considered; we use spatial and location data at very high resolution, and
  advanced GIS-based measures, to produce highly accurate EQ indicator variables;
  we investigate the use of alternative SWB measures; and in each case we
- do so at two different scales, to make best use of the available data.
+ do so at two different scales, to make best use of the available spatial
+ data.
+ 
 \end_layout
 
 \begin_layout Standard
-In the light of this, our results appear somewhat disappointing.
- We find no effect of any EQ parameter on SWB in London.
- We find no effect of EQ around respondents' workplaces.
+These improved methods have not always led to more informative results,
+ however.
+ Our findings are, at best, mixed.
+\end_layout
+
+\begin_layout Subsection
+Environment and life satisfaction in the UK
+\end_layout
+
+\begin_layout Standard
+At the whole-country level, we find that the prevalence around individual's
+ homes of some natural land cover types has a significant and substantial
+ positive relationship with LS.
+ These types are: freshwater, wetlands and floodplains; semi-natural grasslands;
+ and woodland.
+ None of the other EQ measurements we investigated were significantly related
+ to LS.
  
+\end_layout
+
+\begin_layout Standard
+The residential land cover types with significant coefficients clearly represent
+ certain kinds of green and blue spaces.
+ That their effects are positive is therefore in line with our research
+ hypotheses.
+ On the other hand there are other land cover types, also representing green
+ and blue spaces, for which we do not find a significant effect.
+ Our findings thus do not unequivocally support a relationship between LS
+ and green and blue spaces.
+\end_layout
+
+\begin_layout Standard
+We use the significant EQ coefficients, alongside the coefficient on income,
+ to derive monetary values for the relevant green and blue space amenities.
+ Even after applying several corrections, the values remain implausibly
+ high.
+\end_layout
+
+\begin_layout Paragraph
+Robustness
+\end_layout
+
+\begin_layout Standard
+The magnitude of the significant coefficients is large.
+ However, in most cases their 
+\begin_inset Formula $p$
+\end_inset
+
+-values do not much exceed the customary 5% threshold.
+ We have focused on the model using proportions calculated within a 3km
+ radius, but the model estimates do vary according to the radius chosen,
+ and we have no 
+\emph on
+a priori
+\emph default
+ justification for preferring a particular set.
+ In addition, we estimated a series of models with a variety of explanatory
+ variables, and this increases the risk that some coefficients might appear
+ significant by chance, even if the null hypothesis (of no effect on LS)
+ were correct.
+ As noted previously, our results are robust to some variations in specification
+ as regards spatial control variables.
+ Overall, however, they are not as robust as we might wish.
+\end_layout
+
+\begin_layout Paragraph
+The workplace
+\end_layout
+
+\begin_layout Standard
+The positive relationships we identify around the home do not extend to
+ individuals' places of work, nor are there any other significant relationships
+ between LS and nearby EQ for workplace locations.
+ It may be that individuals do not spend a substantial enough proportion
+ of their time in the vicinity of the workplace, or that for other reasons
+ the characteristics of this environment affect wellbeing to a lesser degree
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+On the other hand, it could be that LS is not directly affected by EQ either
+ at home or at work, but that the effects we pick up for the home location
+ are due to unobserved spatial covariates of EQ that are relevant to the
+ home but not the workplace location.
+\end_layout
+
+\end_inset
+
+.
+ Given the patchiness of our other findings, we would hesitate to claim
+ that this absence of evidence of any link between workplace EQ and LS should
+ be accorded much weight as evidence of absence.
+\end_layout
+
+\begin_layout Paragraph
+Comparison with previous findings
+\end_layout
+
+\begin_layout Standard
+The EQ parameters we use here have not, apart from distance to the coast,
+ been included in previous LS studies
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Of the two previous studies addressing distance to coast cited in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:eq-swb-economic-studies"
+
+\end_inset
+
+, one found that proximity was positive, and the other that it had no effect.
+ Our results are consistent with these, in as far as that we do not find
+ proximity to be significantly negative.
+\end_layout
+
+\end_inset
+
+.
+ We therefore look to studies on health and house prices for broad comparative
+ purposes.
+ As outlined in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:eq-swb-economic-studies"
+
+\end_inset
+
+, epidemiological studies have found that green space (generally not further
+ defined or disaggregated) is positively related to general and mental health
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "vries:2003,maas:2009"
+
+\end_inset
+
+.
+ This is broadly consistent with our results.
+ 
+\end_layout
+
+\begin_layout Standard
+Also consistent with our results, the recent hedonic study by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "gibbons:2011a"
+
+\end_inset
+
+ finds that freshwater and woodland land cover types are significantly and
+ positively associated with house prices, with freshwater having the largest
+ effect
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We compare their 'Model 5: All Great Britain, which is the most similar
+ to ours by specification and geographical extent.
+\end_layout
+
+\end_inset
+
+.
+ Less consistently, they also identify a smaller positive link with farmland
+ and a negative relationship with inland bare ground, and find no significant
+ relationship with grassland.
+ Comparing the values calculated for freshwater and woodland land cover
+ highlights the implausibility of our estimates, since our 
+\emph on
+annual
+\emph default
+ values (even when calculated with the 'upper bound' income coefficient)
+ are approximately twice as large as the 
+\emph on
+capitalised
+\emph default
+ house price premiums calculated by 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "gibbons:2011a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We know of no other studies examining EQ around the workplace.
+\end_layout
+
+\begin_layout Subsection
+Environment and wellbeing in London
+\end_layout
+
+\begin_layout Standard
+We find no significant links between LS and EQ parameters in our London
+ data set.
+\end_layout
+
+\begin_layout Paragraph
+Comparison with previous findings
+\end_layout
+
+\begin_layout Standard
+Regarding noise, previous results are consistent with this: the only known
+ study regressing LS scores on objective noise indicators also finds no
+ significant relationship
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Except when instrumenting perceived scores with objective data.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "praag:2005"
+
+\end_inset
+
+.
+ In addition, for all three of our sources of noise data --- road, rail
+ and air --- the vast majority of our respondents are classified in the
+ lowest category, giving us little power to detect significant effects
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Arguably, these noise data sets should differentiate substantially lower
+ noise levels --- for example, the researcher finds aircraft noise a significant
+ nuisance several miles beyond the lowest-level noise contours for Heathrow
+ and City airports.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Local proportions of green and blue space have not previously been investigated
+ in LS research.
+ However, a recent hedonic study found substantial positive effects on house
+ prices of local green space and proximity to the Thames 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "smith:2010"
+
+\end_inset
+
+ and, as noted in the previous section, epidemiological studies have also
+ found local green space to be related to better health.
+ The lack of any effect of green space on LS, across several independent
+ data sets and a number of different radii, therefore seems a little surprising.
+\end_layout
+
+\begin_layout Standard
+The most surprising non-association is probably that of LS and air pollution.
+ In 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:eq-swb-economic-studies"
+
+\end_inset
+
+ we cite 10 studies that find air pollution negatively related to LS ---
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "mackerron:2008"
+
+\end_inset
+
+ even address the issue using individual-level data in London.
+ The lack of a significant finding here seems to require some explanation.
+\end_layout
+
+\begin_layout Paragraph
+Potential problems
+\end_layout
+
+\begin_layout Standard
+There are many possible explanations as to why we find no significant effects.
+ We deal with them roughly in order of increasing generality.
+\end_layout
+
+\begin_layout Description
+Poor
+\begin_inset space ~
+\end_inset
+
+quality
+\begin_inset space ~
+\end_inset
+
+data? It might be that our paid web survey panel did not respond conscientiously
+ to the questions they were asked; in this case, random noise in the data
+ might obscure the patterns we were seeking.
+ However, as described in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:data-quality"
+
+\end_inset
+
+, we ran thorough checks on data quality.
+ Furthermore, the non-spatial variables in our London models (such as age,
+ income, unemployment and religion) all have the expected effects, generally
+ at high significance levels.
+\end_layout
+
+\begin_layout Description
+Insufficient
+\begin_inset space ~
+\end_inset
+
+sample? The London sample, with around 800 usable response sets, is about
+ half the size of the UK sample, and smaller than some others in the literature.
+ The Irish data set used by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "brereton:2007"
+
+\end_inset
+
+ and others, for example, has about 1,500 usable responses.
+ On the other hand, 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "mackerron:2008"
+
+\end_inset
+
+'s sample is half the size again, with about 400 responses.
+ A larger sample will always enable smaller effects to be revealed, but
+ it is not clear if this is the problem here.
+\end_layout
+
+\begin_layout Description
+Insufficient
+\begin_inset space ~
+\end_inset
+
+EQ
+\begin_inset space ~
+\end_inset
+
+variation? Our sample is unusual in that it deals with data from a single
+ city.
+ Large though London is, it is possible that there is not enough EQ variation
+ within the city boundary to drive detectable LS effects.
+ Although 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "mackerron:2008"
+
+\end_inset
+
+'s results indicate otherwise, this is only one study, it uses a convenience
+ sample, and its findings are not unassailably robust (the coefficient on
+ air pollution only just exceeds the 5% threshold).
+\end_layout
+
+\begin_layout Description
+Varying
+\begin_inset space ~
+\end_inset
+
+measures? Different studies on air quality and LS have used data on different
+ pollutants.
+ These include sulphur dioxide (SO
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+), nitrogen dioxide (NO
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+), lead and particulates (PM10).
+ Different indicators may also be used, such as annual average concentrations
+ or the number of days on which a pollutant's concentration exceeds a threshold
+ value, such as an EU-mandated limit.
+ However, the pollutant data we used covered both NO
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+ and PM10 levels, for which effects commonly have been found.
+ It also includes a measure of exceedence days
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The LAEI maps include data on the number of days on which PM10 levels exceeded
+ the EU threshold of 50
+\begin_inset Formula $\mu$
+\end_inset
+
+g/m
+\begin_inset Formula $^{2}$
+\end_inset
+
+.
+ For our respondents this measure has a 0.99 correlation with the annual
+ average figure, and also has no significant effect when used in an alternative
+ regression specification not reported above.
+\end_layout
+
+\end_inset
+
+.
+ None of these variables was related to LS.
+\end_layout
+
+\begin_layout Standard
+Flawed method (+ publication bias?)
+\end_layout
+
+\begin_layout Standard
+- unobservables, e.g.
+ school quality?
+\end_layout
+
+\begin_layout Standard
+- reluctant to over-fish our data
+\end_layout
+
+\begin_layout Standard
+- location too poor an indicator of exposure/use/enjoyment? (even if it
+ improves greatly on a national averages/electoral district approach)
+\end_layout
+
+\begin_layout Standard
+No effect of EQ on LS (+ publication bias?)
+\end_layout
+
+\begin_layout Standard
+- A broad, recalled, cognitive measure about progress in relation to expectation
+s -- maybe we shouldn't expect one.
+\end_layout
+
+\begin_layout Subsection
+Sensitivity to choice of wellbeing indicators
+\end_layout
+
+\begin_layout Subsection
+Summary
 \end_layout
 
 \end_body
