@@ -39252,10 +39252,6 @@ We find no significant links between LS and EQ parameters in our London
  data set.
 \end_layout
 
-\begin_layout Paragraph
-Comparison with previous findings
-\end_layout
-
 \begin_layout Standard
 Regarding noise, previous results are consistent with this: the only known
  study regressing LS scores on objective noise indicators also finds no
@@ -39330,29 +39326,25 @@ key "mackerron:2008"
 \end_inset
 
  even address the issue using individual-level data in London.
- The lack of a significant finding here seems to require some explanation.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Potential problems
 \end_layout
 
 \begin_layout Standard
-There are many possible explanations as to why we find no significant effects.
- We deal with them roughly in order of increasing generality.
+Overall, the lack of any significant findings seems to require some explanation,
+ and a wide range of potential explanations could apply.
+ We address these roughly in order of increasing generality.
 \end_layout
 
 \begin_layout Description
-Poor
+Data
 \begin_inset space ~
 \end_inset
 
-quality
-\begin_inset space ~
-\end_inset
-
-data? It might be that our paid web survey panel did not respond conscientiously
- to the questions they were asked; in this case, random noise in the data
+quality It might be that our paid web survey panel did not respond conscientious
+ly to the questions they were asked; in this case, random noise in the data
  might obscure the patterns we were seeking.
  However, as described in 
 \begin_inset CommandInset ref
@@ -39368,12 +39360,12 @@ reference "sub:data-quality"
 \end_layout
 
 \begin_layout Description
-Insufficient
+Sample
 \begin_inset space ~
 \end_inset
 
-sample? The London sample, with around 800 usable response sets, is about
- half the size of the UK sample, and smaller than some others in the literature.
+size The London sample, with around 800 usable response sets, is about half
+ the size of the UK sample, and smaller than some others in the literature.
  The Irish data set used by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -39395,15 +39387,11 @@ key "mackerron:2008"
 \end_layout
 
 \begin_layout Description
-Insufficient
-\begin_inset space ~
-\end_inset
-
 EQ
 \begin_inset space ~
 \end_inset
 
-variation? Our sample is unusual in that it deals with data from a single
+variation Our sample is unusual in that it deals with data from a single
  city.
  Large though London is, it is possible that there is not enough EQ variation
  within the city boundary to drive detectable LS effects.
@@ -39420,11 +39408,11 @@ key "mackerron:2008"
 \end_layout
 
 \begin_layout Description
-Varying
+Specific
 \begin_inset space ~
 \end_inset
 
-measures? Different studies on air quality and LS have used data on different
+indicators Different studies on air quality and LS have used data on different
  pollutants.
  These include sulphur dioxide (SO
 \begin_inset script subscript
@@ -39448,7 +39436,8 @@ measures? Different studies on air quality and LS have used data on different
  Different indicators may also be used, such as annual average concentrations
  or the number of days on which a pollutant's concentration exceeds a threshold
  value, such as an EU-mandated limit.
- However, the pollutant data we used covered both NO
+ However, the pollutant data we use covers average concentrations of both
+ NO
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -39457,8 +39446,8 @@ measures? Different studies on air quality and LS have used data on different
 
 \end_inset
 
- and PM10 levels, for which effects commonly have been found.
- It also includes a measure of exceedence days
+ and PM10, for which impacts commonly have been found.
+ It also includes a measure of PM10 exceedence days
 \begin_inset Foot
 status collapsed
 
@@ -39474,8 +39463,8 @@ g/m
 
 .
  For our respondents this measure has a 0.99 correlation with the annual
- average figure, and also has no significant effect when used in an alternative
- regression specification not reported above.
+ average figure, and has no significant effect when used in an alternative
+ regression specification that was not reported above.
 \end_layout
 
 \end_inset
@@ -39484,31 +39473,111 @@ g/m
  None of these variables was related to LS.
 \end_layout
 
-\begin_layout Standard
-Flawed method (+ publication bias?)
+\begin_layout Description
+Quantifying
+\begin_inset space ~
+\end_inset
+
+quality The inadequacy of current green space data sources was noted in
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Urban-green-space"
+
+\end_inset
+
+.
+ Although we try a number of different green space indicators, it may be
+ that none pays sufficient regard to the accessibility and quality of green
+ space.
 \end_layout
 
-\begin_layout Standard
-- unobservables, e.g.
- school quality?
+\begin_layout Description
+Omitted
+\begin_inset space ~
+\end_inset
+
+variables It may be that EQ in London is highly correlated with other spatial
+ characteristics that we cannot or do not observe.
+ We have controlled for the distance to central London and public transport
+ facilities, and for crime.
+ However, factors which are not controlled could mask (or, if we had found
+ significant effects, might have amplified) the effects of the characteristics
+ of interest.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Arguably, we could have tried including a range of additional controls,
+ but since it is not clear which controls are required ahead of time this
+ would also arguably have constituted a 'fishing' expedition for significant
+ results.
 \end_layout
 
-\begin_layout Standard
-- reluctant to over-fish our data
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-- location too poor an indicator of exposure/use/enjoyment? (even if it
- improves greatly on a national averages/electoral district approach)
+\begin_layout Description
+Existence
+\begin_inset space ~
+\end_inset
+
+vs
+\begin_inset space ~
+\end_inset
+
+exposure Our data resolution and GIS techniques both represent significant
+ advances on those used in previous LS research.
+ However, the best indicators of EQ around an individual's home still do
+ not necessarily correspond with the individual's exposure to that EQ
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+One exception here might be viewshed data, as has been used in some hedonic
+ pricing studies.
+ Unfortunately, acquiring viewshed data was beyond the scope of this thesis.
 \end_layout
 
-\begin_layout Standard
-No effect of EQ on LS (+ publication bias?)
+\end_inset
+
+.
+ As examples, people may live 20 yards from a park but never use it, and
+ those living on higher levels of tall buildings may be exposed to less
+ air pollution than those lower down.
 \end_layout
 
-\begin_layout Standard
-- A broad, recalled, cognitive measure about progress in relation to expectation
-s -- maybe we shouldn't expect one.
+\begin_layout Description
+Habituation
+\end_layout
+
+\begin_layout Description
+No
+\begin_inset space ~
+\end_inset
+
+problem
+\begin_inset space ~
+\end_inset
+
+at
+\begin_inset space ~
+\end_inset
+
+all Finally, we should at least consider the possibility that EQ is not
+ significantly related to LS.
+ After all, LS is a broad, temporally non-specific, primarily cognitive
+ indicator.
+ It presumably reflects an individual's perceptions of his or her past,
+ present and possible future, in relation to his or her hopes and expectations.
+ Perhaps we should not expect such a general quantity to be significantly
+ related to EQ characteristics.
+ Of course, a fair volume of other research contradicts this position; if
+ we were to accept it, we would need to ascribe all previous results to
+ flawed study designs (such as omitted variables issues) and/or coincidences
+ coupled with publication bias.
 \end_layout
 
 \begin_layout Subsection
