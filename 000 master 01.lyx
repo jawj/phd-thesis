@@ -8,14 +8,9 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage[bf,hang,small]{caption}
-%\usepackage[sf,bf,raggedright]{titlesec}
 \definecolor{LinkColor}{rgb}{0,0,0.4}
 \usepackage[mmddyyyy,nodayofweek]{datetime}
-%\usepackage{pdfpages}
-%\usepackage{lineno}
-%\runninglinenumbers
-%\newrefformat{sub}{subsection \ref{#1}}
-%\newrefformat{app}{Appendix \ref{#1}}
+
 \newrefformat{app}{\hyperlink{#1}{\autoref{#1}}}
 \newrefformat{par}{\hyperlink{#1}{\autoref{#1}}}
 \newrefformat{sec}{\hyperlink{#1}{\autoref{#1}}}

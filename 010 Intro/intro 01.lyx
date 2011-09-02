@@ -8,20 +8,18 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage[bf,hang,small]{caption}
-%\usepackage[sf,bf,raggedright]{titlesec}
 \definecolor{LinkColor}{rgb}{0,0,0.4}
 \usepackage[mmddyyyy,nodayofweek]{datetime}
-%\usepackage{pdfpages}
-%\usepackage{lineno}
-%\runninglinenumbers
-%\newrefformat{sub}{subsection \ref{#1}}
-%\newrefformat{app}{Appendix \ref{#1}}
-\newrefformat{app}{\hyperlink{#1}{\autoref{#1}}}
-\newrefformat{par}{\hyperlink{#1}{\autoref{#1}}}
-\newrefformat{sec}{\hyperlink{#1}{\autoref{#1}}}
-\newrefformat{sub}{\hyperlink{#1}{\autoref{#1}}}
-\newrefformat{fig}{\hyperlink{#1}{\autoref{#1}}}
-\newrefformat{tab}{\hyperlink{#1}{\autoref{#1}}}
+
+%\newrefformat{app}{\hyperlink{#1}{\autoref{#1}}}
+%\newrefformat{par}{\hyperlink{#1}{\autoref{#1}}}
+%\newrefformat{sec}{\hyperlink{#1}{\autoref{#1}}}
+%\newrefformat{sub}{\hyperlink{#1}{\autoref{#1}}}
+%\newrefformat{fig}{\hyperlink{#1}{\autoref{#1}}}
+%\newrefformat{tab}{\hyperlink{#1}{\autoref{#1}}}
+
+\renewcommand\chaptername{Chapter}
+\definecolor{grey}{gray}{0.3}
 \end_preamble
 \use_default_options false
 \master ../000 master 01.lyx
@@ -46,7 +44,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize 11
-\spacing other 1.1499999999999999
+\spacing onehalf
 \use_hyperref true
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
@@ -84,9 +82,9 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2.5cm
+\leftmargin 4cm
 \topmargin 2cm
-\rightmargin 2.5cm
+\rightmargin 2cm
 \bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
@@ -125,14 +123,14 @@ The economics of happiness
 \end_layout
 
 \begin_layout Standard
-Economists are increasingly becoming interested in subjective wellbeing
- (SWB)
+Economists are increasingly becoming interested in happiness, or subjective
+ wellbeing (SWB)
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-In this paper, as is usual in the literature, we use the terms SWB, wellbeing,
- happiness, and life satisfaction interchangeably.
+In this thesis, as is usual in the literature, we use the terms SWB, wellbeing
+ and happiness more-or-less interchangeably.
  This decision is discussed in more detail in the next chapter.
 \end_layout
 
@@ -203,8 +201,8 @@ key "welsch:2009a,ferreira:2010"
  equivalent size.
  As a method of monetary valuation this could represent a useful complement
  to the conventional revealed- and stated-preference techniques, since it
- has quite different strengths and weaknesses in terms of its assumptions
- and limitations 
+ has quite different strengths and weaknesses in terms of its applications,
+ assumptions and limitations 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "welsch:2009"
@@ -212,7 +210,6 @@ key "welsch:2009"
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Subsection
@@ -222,16 +219,27 @@ Policy relevance
 \begin_layout Standard
 Both of these reasons for environmental and ecological economists' interest
  in happiness economics map rather directly to the policy realm.
- Think-tanks and other policy
+ Although it in no way obviates debates over ethics, values or objectives,
+ a 'new utilitarianism' grounded in SWB research could inform policy development
+ and evaluation at all levels 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "diener:2009"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
-On the international scale the last several years have seen initiatives
- from the EU, the OECD, and individual nation states --- including the UK,
- France and Canada --- all proposing the wider use of SWB measures as part
- of a reconceptualising of the policymaker's notions of prosperity and progress.
- Non- and quasi-governmental actors in the UK policy sphere have been lobbying
- for just this kind of shift 
+On the international scale the last several years have seen 'big picture'
+ initiatives launched by the EU, the OECD, and individual nation states
+ including the UK, France and Canada.
+ All have proposed wider use of SWB measures as part of a reconceptualising
+ of the policymaker's notions of prosperity and progress --- a shift that
+ policy organisations with interests in sustainability have been promoting
+ for some time 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
@@ -243,10 +251,51 @@ key "jackson:2009,michaelson:2009"
 \end_layout
 
 \begin_layout Standard
-A 'new utilitarianism' grounded in SWB research could inform policy development
- and evaluation at all levels.
- It is not a solution to debates over ethics, values or objectives, but
- it offers valuable insight into the varied sources of welfare
+On a smaller scale, the methods of happiness economics may be used to evaluate
+ the social costs and benefits of specific projects or policies --- including
+ environmental projects and policies --- in the first instance by converting
+ SWB impacts into monetary values.
+ To date, SWB valuation methods have almost universally produced values
+ that seem implausibly high.
+ But research is ongoing, and HM Treasury has this year updated its Green
+ Book --- the appraisal and evaluation framework for UK central government
+ --- to incorporate discussion on this topic for the first time 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 58"
+key "hm-treasury:2003"
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This edition of the Green Book is officially dated 2003, but pages 57 --
+ 58 were updated in 2011.
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Day to day, meanwhile, the findings of happiness economics can be used directly
+ by individuals to improve their own wellbeing, since they highlight areas
+ in which bounded rationality --- including various forms of systematic
+ utility mis-prediction --- can lead to widespread yet avoidable patterns
+ of sub-optimal choice 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "gilbert:2006,stutzer:2008"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -254,9 +303,26 @@ Existing research
 \end_layout
 
 \begin_layout Standard
-Evidence regarding the impact of EQ on SWB is less strong than for many
- other factors, however.
- 
+Evidence regarding the impact of EQ on SWB is not as strong as it is for
+ many other factors.
+\end_layout
+
+\begin_layout Standard
+Country-level studies predict national average SWB measures using nationally
+ aggregated indicators of EQ 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "welsch:2002"
+
+\end_inset
+
+.
+ For characteristics such as air pollution that vary at a sub-national scale,
+ however, these aggregated variables might not be strongly related to individual
+s' real exposures to EQ.
+ Furthermore, other sources of heterogeneity between countries are many,
+ and are not always adequately controlled for.
 \end_layout
 
 \begin_layout Section
