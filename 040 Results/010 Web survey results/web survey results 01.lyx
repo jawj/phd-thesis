@@ -112,12 +112,60 @@ name "chap:survey-results"
 \end_layout
 
 \begin_layout Standard
-[TODO: brief intro -- recap what this is about, motivation, etc.; then structure
- of chapter]
+In this chapter we characterise and analyse responses and associated spatial
+ data from the cross-sectional surveys of UK and London residents described
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:survey-methods"
+
+\end_inset
+
+.
+ As outlined in earlier chapters, this work incorporates substantial methodologi
+cal improvements on previous research in this area.
+ In spite of this, however, our findings are somewhat mixed.
+\end_layout
+
+\begin_layout Standard
+Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:survey-results-Descriptives"
+
+\end_inset
+
+ describes the data, including the demographic characteristics of respondents,
+ their SWB responses, and the spatial and non-spatial variables we will
+ use to predict these.
+ Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:survey-results-analysis"
+
+\end_inset
+
+ reports on the regression analyses we run to investigate the effects of
+ a variety of EQ parameters, around individuals' homes and workplaces, on
+ a number of different indicators of SWB, and in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:survey-results-Discussion"
+
+\end_inset
+
+ we discuss our findings.
 \end_layout
 
 \begin_layout Section
 Descriptives
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:survey-results-Descriptives"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -5405,7 +5453,28 @@ Annual average PM10 level (
 \uwave off
 \noun off
 \color none
-Annual average NO2 level (
+Annual average NO
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+2
+\end_layout
+
+\end_inset
+
+ level (
 \begin_inset Formula $\mu g/m^{3}$
 \end_inset
 
@@ -5516,7 +5585,28 @@ Annual average NO2 level (
 \uwave off
 \noun off
 \color none
-LHR noise, Leq < 57 dB(A)
+LHR noise, L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+eq
+\end_layout
+
+\end_inset
+
+ < 57 dB(A)
 \end_layout
 
 \end_inset
@@ -5623,7 +5713,28 @@ LHR noise, Leq < 57 dB(A)
 \uwave off
 \noun off
 \color none
-Road noise, Lden < 55 dB(A)
+Road noise, L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+den
+\end_layout
+
+\end_inset
+
+ < 55 dB(A)
 \end_layout
 
 \end_inset
@@ -5730,7 +5841,28 @@ Road noise, Lden < 55 dB(A)
 \uwave off
 \noun off
 \color none
-Rail noise, Lden < 55 dB(A)
+Rail noise, L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+den
+\end_layout
+
+\end_inset
+
+ < 55 dB(A)
 \end_layout
 
 \end_inset
@@ -9645,6 +9777,13 @@ reference "tab:surveys-non-spatial-summary"
 
 \begin_layout Section
 Analysis
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:survey-results-analysis"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -21069,6 +21208,9 @@ We now consider the sensitivity of our findings to the use of alternative
 
 \begin_layout Subsubsection
 Emotional wellbeing and affect measures
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -39035,7 +39177,14 @@ reference "sub:swb-valuation-Strengths-weaknesses"
 \end_layout
 
 \begin_layout Section
-Interpretation
+Discussion
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:survey-results-Discussion"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -39495,7 +39644,7 @@ Omitted
 
 variables EQ in London might be highly correlated with other spatial characteris
 tics that we cannot or do not observe; for example, the quality of local
- schools, or characteristics of the .
+ schools.
  We have controlled for house prices, for the distance to central London
  and public transport facilities, and for crime.
  Arguably, we could have tried including a wide range of additional controls.
@@ -39503,7 +39652,7 @@ tics that we cannot or do not observe; for example, the quality of local
 \emph on
 a priori
 \emph default
- which additional controls would be required, it is also arguable that this
+ which additional controls should be used, it is also arguable that this
  would have constituted a 'fishing' expedition for significant results.
 \end_layout
 
@@ -39594,8 +39743,8 @@ association Finally, we should consider the possibility that our London
  Perhaps we should not expect such a quantity to be significantly related
  to EQ characteristics.
  Of course, this explanation would contradict a reasonable volume of previous
- research.
- To accept it, we would need to discount the results of those previous studies
+ research, and our own findings for the UK.
+ To accept it, we would need to discount the results of those other studies
  (ascribing them, perhaps, to omitted variables and/or to coincidence plus
  publication bias).
  On balance, this would seem rather premature.
@@ -39626,25 +39775,30 @@ For the UK, we instead examine three shorter-run, affective SWB indicators:
  the PANAS (both positive and negative affect) and the emotional wellbeing
  sub-scale of the SF-36.
  Interestingly, our models using these as dependent variables have entirely
- different results to the LS models --- no variable with a significant coefficie
-nt in the LS model has a significant coefficient in any affective SWB model,
- and vice versa --- suggesting a very high degree of sensitivity to the
- choice of wellbeing indicator.
+ different results to the LS models: no variable with a significant coefficient
+ in the LS model has a significant coefficient in any affective SWB model,
+ and vice versa.
+ Our conclusions regarding EQ effects on SWB thus seem to exhibit a very
+ high degree of sensitivity to the wellbeing indicator examined.
+\end_layout
+
+\begin_layout Paragraph
+EQ and affect
 \end_layout
 
 \begin_layout Standard
-Both the emotional wellbeing scale and the PANAS negative affect scale suggest
- a positive relationship between local farmland and wellbeing.
+Models using the emotional wellbeing scale and the PANAS negative affect
+ scale both suggest a positive relationship between local farmland and wellbeing.
  This might result from the benefits of green space outlined in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "chap:happiness-and-eq"
 
 \end_inset
 
 .
- It could arguably also reflect other characteristics of agricultural communitie
-s.
+ It could arguably also reflect other, unobserved characteristics of agricultura
+l communities.
 \end_layout
 
 \begin_layout Standard
@@ -39652,8 +39806,7 @@ Our results are also quite different as between the positive and negative
  PANAS affect scales, with EQ links confined exclusively to the negative
  scale.
  Predicted negative affect scores are reduced with greater local farmland
- and suburban or developed rural land cover, and with closer proximity to
- rivers.
+ and suburban/developed rural land cover, and with closer proximity to rivers.
  Though by no means proof of such a hypothesis, this might suggest greater
  EQ impacts at the lower end of SWB (such as reducing depression) than at
  the higher end.
@@ -39664,8 +39817,22 @@ Comparison with previous findings
 \end_layout
 
 \begin_layout Standard
-Studies on these EQ parameters have not been undertaken previously in the
- happiness economics literature but, as noted above, some epidemiological
+Investigating health conditions, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "powdthavee:2011"
+
+\end_inset
+
+ also find that estimates of SWB impacts (and associated monetary values)
+ can vary substantially according to the SWB indicator selected.
+ Our findings cast further doubt on the ability of SWB measures to be used
+ uncritically in valuation work as a proxy for PS-style utility.
+\end_layout
+
+\begin_layout Standard
+Studies on the EQ parameters used here have not been undertaken previously
+ in the happiness economics literature but, as noted above, some epidemiological
  papers have found similar impacts of green spaces on psychological ill
  health.
  In the Netherlands 
@@ -39725,8 +39892,9 @@ Despite these improved methods our findings are, at best, mixed.
 
 \begin_layout Standard
 In interpreting these results we have discussed some limitations of the
- approach taken here, using cross-sectional survey data to relate an individual'
-s usual location(s) to a single global evaluation of SWB.
+ approach taken here --- and in most previous research --- which uses cross-sect
+ional survey data to relate an individual's usual location(s) to a single
+ global evaluation of SWB.
  These limitations include issues of omitted spatial variables, the potential
  for habituation to and spatial sorting by EQ levels, and the difficulty
  of assessing real exposures to EQ.
@@ -39736,8 +39904,8 @@ riant effects such as personality.
 \end_layout
 
 \begin_layout Standard
-Fortunately, the novel spatial experience sampling approach taken in the
- following chapter ameliorates or eliminates many of these limitations.
+The novel spatial experience sampling approach taken in the following chapter
+ ameliorates or eliminates many of these limitations.
 \end_layout
 
 \end_body

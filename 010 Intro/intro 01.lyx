@@ -107,6 +107,13 @@
 
 \begin_layout Chapter
 Introduction
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Introduction"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -117,12 +124,139 @@ Happiness, economics, and the environment
 The economics of happiness
 \end_layout
 
+\begin_layout Standard
+Economists are increasingly becoming interested in subjective wellbeing
+ (SWB)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In this paper, as is usual in the literature, we use the terms SWB, wellbeing,
+ happiness, and life satisfaction interchangeably.
+ This decision is discussed in more detail in the next chapter.
+\end_layout
+
+\end_inset
+
+.
+ In contrast to the standard economic account of wellbeing as the satisfaction
+ of preferences, SWB research holds that wellbeing can be measured and compared
+ between people; that this can be achieved simply by asking people how happy
+ they are, and fitting econometric models to explain their responses; and
+ that a wide range of influences on happiness are important and can be assessed
+ empirically within such a framework.
+\end_layout
+
+\begin_layout Standard
+The influences on happiness that this work highlights are comprehensively
+ reviewed by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "dolan:2008"
+
+\end_inset
+
+.
+ They include one’s income (positively correlated with SWB); the incomes
+ of others, because of rivalry (negative) and/or ambition (positive); and
+ one’s own lagged income, because of habituation (negative).
+ They include unemployment; separation, divorce and widowhood; and poor
+ health (all negatively correlated with SWB).
+ They also include social capital indicators and ‘relational goods’, such
+ as membership of interest groups or friendly relations with neighbours;
+ trust; and belief in a god (all positively correlated with SWB).
+ They may also include environmental quality (EQ) parameters including climate,
+ noise, air quality, and access to green spaces.
+ 
+\end_layout
+
 \begin_layout Subsection
 Happiness and the environment
 \end_layout
 
+\begin_layout Standard
+Environmental and ecological economists have taken a particularly strong
+ interest in happiness economics.
+ First, for those concerned with 'strong' sustainability especially, a significa
+nt advantage of SWB indicators is that they do not conflate welfare and
+ progress with consumption and growth 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gowdy:2005"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Second, happiness economics offers a new means by which the effects of EQ
+ characteristics can be quantified 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "welsch:2009a,ferreira:2010"
+
+\end_inset
+
+ --- either directly, in terms of their impacts on SWB, or in monetary terms,
+ by calculating the change in income which would produce an SWB impact of
+ equivalent size.
+ As a method of monetary valuation this could represent a useful complement
+ to the conventional revealed- and stated-preference techniques, since it
+ has quite different strengths and weaknesses in terms of its assumptions
+ and limitations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "welsch:2009"
+
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Subsection
 Policy relevance
+\end_layout
+
+\begin_layout Standard
+Both of these reasons for environmental and ecological economists' interest
+ in happiness economics map rather directly to the policy realm.
+ Think-tanks and other policy
+\end_layout
+
+\begin_layout Standard
+On the international scale the last several years have seen initiatives
+ from the EU, the OECD, and individual nation states --- including the UK,
+ France and Canada --- all proposing the wider use of SWB measures as part
+ of a reconceptualising of the policymaker's notions of prosperity and progress.
+ Non- and quasi-governmental actors in the UK policy sphere have been lobbying
+ for just this kind of shift 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "jackson:2009,michaelson:2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A 'new utilitarianism' grounded in SWB research could inform policy development
+ and evaluation at all levels.
+ It is not a solution to debates over ethics, values or objectives, but
+ it offers valuable insight into the varied sources of welfare
+\end_layout
+
+\begin_layout Subsection
+Existing research
+\end_layout
+
+\begin_layout Standard
+Evidence regarding the impact of EQ on SWB is less strong than for many
+ other factors, however.
+ 
 \end_layout
 
 \begin_layout Section

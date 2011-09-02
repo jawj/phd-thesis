@@ -1224,9 +1224,9 @@ key "israel:2003"
  Although this has the advantage that unobserved heterogeneity across individual
 s is evened out, it means that SWB and EQ levels are assessed only on an
  extremely aggregated scale --- with no indication of variability or of
- actual EQ exposures --- and that unobserved heterogeneity across countries,
- including linguistic and cultural heterogeneity, then has to be controlled
- for
+ actual EQ exposures --- and that other sources of heterogeneity across
+ countries, including linguistic and cultural heterogeneity, then need to
+ be controlled for
 \begin_inset Foot
 status collapsed
 
@@ -1516,10 +1516,7 @@ key "gibbons:2010"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Finally, only one study 
+ Finally, only one study 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "luechinger:2009"
@@ -1527,8 +1524,6 @@ key "luechinger:2009"
 \end_inset
 
  offers a convincing strategy for the identification of causal effects.
- The remaining papers report only on associations, substantially limiting
- their usefulness in policy.
 \end_layout
 
 \begin_layout Paragraph
@@ -1817,16 +1812,6 @@ key "fujiwara:2011"
 \end_inset
 
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Do we? Which?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection

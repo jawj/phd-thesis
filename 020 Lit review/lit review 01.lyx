@@ -109,7 +109,7 @@
 Literature review: happiness economics
 \begin_inset CommandInset label
 LatexCommand label
-name "part:lit-review"
+name "chap:lit-review"
 
 \end_inset
 
@@ -2634,10 +2634,20 @@ partial
  variables, which then take a single coefficient throughout the outcome
  distribution, but not on others (this can be automated by a stepwise process
  using likelihood-ratio tests).
- Applications of this model to BHPS and GSOEP data (with the inclusion,
- in some cases, of random effects) potentially vindicate concern over the
- parallel regression assumption; they suggest, amongst other things, that
- higher incomes may have a significant 
+ Applications of this model to BHPS and GSOEP data
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The BHPS and GSOEP are respectively the British Household Panel Survey and
+ the German Socio-Economic Panel.
+\end_layout
+
+\end_inset
+
+ (with the inclusion, in some cases, of random effects) potentially vindicate
+ concern over the parallel regression assumption; they suggest, amongst
+ other things, that higher incomes may have a significant 
 \emph on
 negative
 \emph default
@@ -3878,9 +3888,9 @@ key "clark:2008a"
 
 .
  It correlates strongly with objective indicators including neural activity
- (measured with MRI), heart rate, blood pressure, smiling and suicide, and
- subjective data including recall of positive and negative events and others'
- SWB assessments --- 
+ (measured with magnetic resonance imaging), heart rate, blood pressure,
+ smiling and suicide, and subjective data including recall of positive and
+ negative events and others' SWB assessments --- 
 \begin_inset CommandInset citation
 LatexCommand citet
 after "pp. 370--371"

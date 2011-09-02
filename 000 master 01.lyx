@@ -387,6 +387,178 @@ LatexCommand tableofcontents
 
 \end_layout
 
+\begin_layout Part*
+List of Abbreviations
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+AONB Area of Outstanding Natural Beauty
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+DRM Day Reconstruction Method
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+EQ environmental quality
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ESS European Social Survey
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+EMA Ecological Momentary Assessment
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ESM Experience Sampling Method
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+GDP Gross Domestic Product
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+GIS Geographical Information Systems
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+GiGL Greenspace Information for Greater London
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+GHQ General Health Questionnaire
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+GLA Greater London Authority
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+LAEI London Atmospheric Emissions Inventory
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+LCM Land Cover Map 2000
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+LHR London Heathrow airport
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+LS life satisfaction
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+LSOA Lower Super Output Area
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+NEA UK National Ecosystem Assessment
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+NO
+\begin_inset Formula $_{2}$
+\end_inset
+
+ nitrogen dioxide
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+NNR National Nature Reserve
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+OLS Ordinary Least Squares
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ONS UK Office for National Statistics
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+OS Ordnance Survey
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+OSM OpenStreetMap
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+PANAS Positive And Negative Affect Schedule
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+PM10 particles smaller than 10 microns diameter
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+PS preference satisfaction
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+SF-36 Short-Form 36 (RAND-36) Health Survey
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+SO
+\begin_inset Formula $_{2}$
+\end_inset
+
+ sulphur dioxide
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+SWB subjective wellbeing
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+VIF variance inflation factor
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+WTA willingness-to-accept
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+WTP willingness-to-pay
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
