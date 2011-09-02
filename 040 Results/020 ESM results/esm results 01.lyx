@@ -8555,7 +8555,7 @@ The distribution of the valid response rate across participants is shown
  in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:num-response-distribution"
+reference "fig:response_rate_distributions"
 
 \end_inset
 
@@ -8885,7 +8885,7 @@ reference "tab:Frequencies-of-places"
 
 \end_inset
 
- has the precise figures.
+ shows the precise figures.
  There is a clear seasonal effect on time spent outdoors: in August a little
  over 10% of responses were out of doors, while for December the figure
  was just under 5%.
@@ -16191,7 +16191,7 @@ Mountains, moors and heathland
 
 According to LCM data (see 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "sub:Land-cover-map"
 
 \end_inset
@@ -16426,14 +16426,14 @@ National Nature Reserves
 The numbers of responses from outdoor locations subject to the three designation
 s discussed in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "sub:Countryside-designations"
 
 \end_inset
 
  are given in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "tab:Frequencies-of-designations"
 
 \end_inset
@@ -26709,12 +26709,51 @@ The relationships we estimate between happiness and environment are highly
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+robustness, and why this is brilliant
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Causal pathways may run in both directions, such that people choose an environme
 nt partly according to their mood, and people's moods are partly determined
  by their environment.
  It seems highly plausible that the latter pathway makes an important contributi
 on to the relationship, and future research using this data will address
  this in greater detail.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+comparison with survey research
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+comparison with previous studies? none similar! but previous ESM?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -26732,6 +26771,17 @@ states
  and explore the use of this data for monetary valuation of the environment.
  In our view there is enormous potential for this data, and for geo-located
  experience sampling in general, to provide further insights in this area.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+and fix many of the issues with survey research --- though it does address
+ a somewhat different question
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

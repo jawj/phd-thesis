@@ -39037,24 +39037,6 @@ reference "sub:swb-valuation-Strengths-weaknesses"
 Interpretation
 \end_layout
 
-\begin_layout Standard
-This chapter has presented results from a more detailed and comprehensive
- investigation of links between SWB and EQ than has previously been attempted.
- We include a wide range of EQ characteristics, including some not previously
- considered; we use spatial and location data at very high resolution, and
- advanced GIS-based measures, to produce highly accurate EQ indicator variables;
- we investigate the use of alternative SWB measures; and in each case we
- do so at two different scales, to make best use of the available spatial
- data.
- 
-\end_layout
-
-\begin_layout Standard
-These improved methods have not always led to more informative results,
- however.
- Our findings are, at best, mixed.
-\end_layout
-
 \begin_layout Subsection
 Environment and life satisfaction in the UK
 \end_layout
@@ -39318,24 +39300,25 @@ reference "sub:eq-swb-economic-studies"
 \end_inset
 
  we cite 10 studies that find air pollution negatively related to LS ---
- 
+ including 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "mackerron:2008"
 
 \end_inset
 
- even address the issue using individual-level data in London.
+, who address this issue using individual-level data in London.
 \end_layout
 
 \begin_layout Subsubsection
-Potential problems
+Possible explanations
 \end_layout
 
 \begin_layout Standard
-Overall, the lack of any significant findings seems to require some explanation,
- and a wide range of potential explanations could apply.
- We address these roughly in order of increasing generality.
+Given the contrast with previous research, especially regarding air pollution,
+ the lack of any significant findings requires some explanation.
+ A wide range of explanations could potentially apply, which we address
+ in order of increasing generality.
 \end_layout
 
 \begin_layout Description
@@ -39345,7 +39328,7 @@ Data
 
 quality It might be that our paid web survey panel did not respond conscientious
 ly to the questions they were asked; in this case, random noise in the data
- might obscure the patterns we were seeking.
+ might obscure the patterns we are seeking.
  However, as described in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -39353,7 +39336,7 @@ reference "sub:data-quality"
 
 \end_inset
 
-, we ran thorough checks on data quality.
+, data quality was thoroughly checked.
  Furthermore, the non-spatial variables in our London models (such as age,
  income, unemployment and religion) all have the expected effects, generally
  at high significance levels.
@@ -39365,8 +39348,8 @@ Sample
 \end_inset
 
 size The London sample, with around 800 usable response sets, is about half
- the size of the UK sample, and smaller than some others in the literature.
- The Irish data set used by 
+ the size of the UK sample, and smaller than some others in the literature:
+ the Irish data set used by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "brereton:2007"
@@ -39381,30 +39364,9 @@ key "mackerron:2008"
 
 \end_inset
 
-'s sample is half the size again, with about 400 responses.
+'s sample is half the size again, at about 400 responses.
  A larger sample will always enable smaller effects to be revealed, but
- it is not clear if this is the problem here.
-\end_layout
-
-\begin_layout Description
-EQ
-\begin_inset space ~
-\end_inset
-
-variation Our sample is unusual in that it deals with data from a single
- city.
- Large though London is, it is possible that there is not enough EQ variation
- within the city boundary to drive detectable LS effects.
- Although 
-\begin_inset CommandInset citation
-LatexCommand citeauthor
-key "mackerron:2008"
-
-\end_inset
-
-'s results indicate otherwise, this is only one study, it uses a convenience
- sample, and its findings are not unassailably robust (the coefficient on
- air pollution only just exceeds the 5% threshold).
+ it is not clear whether this is a problem here.
 \end_layout
 
 \begin_layout Description
@@ -39412,9 +39374,8 @@ Specific
 \begin_inset space ~
 \end_inset
 
-indicators Different studies on air quality and LS have used data on different
- pollutants.
- These include sulphur dioxide (SO
+indicators Different studies of air quality and LS have used data on different
+ pollutants, including sulphur dioxide (SO
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -39433,11 +39394,10 @@ indicators Different studies on air quality and LS have used data on different
 \end_inset
 
 ), lead and particulates (PM10).
- Different indicators may also be used, such as annual average concentrations
+ Different statistics may also be used, such as annual average concentrations
  or the number of days on which a pollutant's concentration exceeds a threshold
- value, such as an EU-mandated limit.
- However, the pollutant data we use covers average concentrations of both
- NO
+ value.
+ However, our pollutant data covers average concentrations of both NO
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -39446,14 +39406,14 @@ indicators Different studies on air quality and LS have used data on different
 
 \end_inset
 
- and PM10, for which impacts commonly have been found.
- It also includes a measure of PM10 exceedence days
+ and PM10, for which impacts commonly have been found, and also includes
+ counts of PM10 exceedence days
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
 The LAEI maps include data on the number of days on which PM10 levels exceeded
- the EU threshold of 50
+ the EU-mandated limit of 50
 \begin_inset Formula $\mu$
 \end_inset
 
@@ -39462,15 +39422,44 @@ g/m
 \end_inset
 
 .
- For our respondents this measure has a 0.99 correlation with the annual
- average figure, and has no significant effect when used in an alternative
- regression specification that was not reported above.
+ For our respondents' home locations this measure has a 0.99 correlation
+ with the annual average figure, and is not significant when used in an
+ alternative regression specification.
 \end_layout
 
 \end_inset
 
 .
  None of these variables was related to LS.
+\end_layout
+
+\begin_layout Description
+EQ
+\begin_inset space ~
+\end_inset
+
+variation Our sample is unusual in that it deals with data from a single
+ city, and it is possible that there is not enough EQ variation within the
+ city boundaries to drive detectable LS effects
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "mackerron:2008"
+
+\end_inset
+
+'s results might indicate otherwise for air pollution; on the other hand,
+ this is only one study, its sample is unrepresentative, and its findings
+ are not unassailably robust (the coefficient on air pollution only just
+ exceeds the 5% threshold).
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Description
@@ -39488,8 +39477,8 @@ reference "sub:Urban-green-space"
 
 .
  Although we try a number of different green space indicators, it may be
- that none pays sufficient regard to the accessibility and quality of green
- space.
+ that none sufficiently captures the quality and accessibility of green
+ spaces.
 \end_layout
 
 \begin_layout Description
@@ -39497,44 +39486,56 @@ Omitted
 \begin_inset space ~
 \end_inset
 
-variables It may be that EQ in London is highly correlated with other spatial
- characteristics that we cannot or do not observe.
- We have controlled for the distance to central London and public transport
- facilities, and for crime.
- However, factors which are not controlled could mask (or, if we had found
- significant effects, might have amplified) the effects of the characteristics
- of interest.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Arguably, we could have tried including a range of additional controls,
- but since it is not clear which controls are required ahead of time this
- would also arguably have constituted a 'fishing' expedition for significant
- results.
-\end_layout
-
-\end_inset
-
-
+variables EQ in London might be highly correlated with other spatial characteris
+tics that we cannot or do not observe.
+ We have controlled for house prices, for the distance to central London
+ and public transport facilities, and for crime.
+ However, additional factors which are not controlled could mask the effects
+ of the characteristics of interest.
+ Arguably, we could have tried including a range of additional controls.
+ However, since it is not obvious 
+\emph on
+a priori
+\emph default
+ which additional controls would be required, it is also arguable that this
+ would have constituted a 'fishing' expedition for significant results.
 \end_layout
 
 \begin_layout Description
 Habituation It is known that individuals adapt to differing degrees to different
  kinds of circumstances.
- For example, in 
+ For example, as discussed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Past-and-relative-income"
 
 \end_inset
 
- we noted that individuals adapt to income levels to a very high degree.
- Approximately 80% of our sample have lived in the same location for at
- least two years; 40% have lived there for at least ten.
- It is therefore possible that individuals in our sample have largely become
- habituated to local EQ levels, so that they no longer has a significant
- impact on LS.
+, individuals adapt to income levels to a very high degree.
+ Approximately 80% of our sample have lived in the same house for at least
+ two years, and 40% have lived there for at least ten.
+ It is therefore possible that individuals in our sample have become substantial
+ly habituated to local EQ levels, so that these no longer have much impact
+ on LS
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Regarding 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "mackerron:2008"
+
+\end_inset
+
+'s results, their convenience sample included a large number of students,
+ who are more likely to be new to the city and hence less likely to have
+ habituated fully to EQ.
+\end_layout
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -39547,25 +39548,12 @@ vs
 \begin_inset space ~
 \end_inset
 
-exposure Our data resolution and GIS techniques both represent significant
- advances on those used in previous LS research.
- However, the best indicators of EQ around an individual's home still do
- not necessarily correspond with the individual's exposure to that EQ
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-One exception here might be viewshed data, as has been used in some hedonic
- pricing studies.
- Unfortunately, acquiring viewshed data was beyond the scope of this thesis.
-\end_layout
-
-\end_inset
-
-.
- As examples, people may live 20 yards from a park but never use it, and
- those living on higher levels of tall buildings may be exposed to less
- air pollution than those lower down.
+exposure The resolution of our data and our GIS techniques both represent
+ significant advances on those used in previous LS research.
+ However, even the best indicators of EQ around an individual's home might
+ not necessarily correspond with the individual's exposure to it.
+ In the case of green space, for example, a person might live 20 yards from
+ a park and never use it.
 \end_layout
 
 \begin_layout Description
@@ -39573,51 +39561,152 @@ No
 \begin_inset space ~
 \end_inset
 
-problem
-\begin_inset space ~
-\end_inset
-
-at
-\begin_inset space ~
-\end_inset
-
-all Finally, we should at least consider the possibility that our London
- results tell us truthfully that LS simply is not significantly related
- to EQ.
- After all, LS is a broad, temporally non-specific, primarily cognitive
- indicator.
- It presumably reflects an individual's perceptions of his or her past,
- present and possible future, in relation to his or her hopes and expectations.
+association Finally, we must consider the possibility that our London results
+ tell us simply that LS is not significantly related to EQ.
+ LS is a broad, temporally non-specific, primarily cognitive indicator.
+ It presumably reflects an individual's evaluation of his or her past, present
+ and possible futures, in relation to his or her hopes and expectations.
  Perhaps we should not expect such a quantity to be significantly related
  to EQ characteristics.
- 
-\end_layout
-
-\begin_layout Standard
-The latter two explanations appear to contradict a reasonable volume of
- previous research.
- To accept them, we would need to ascribe many previous results to flawed
- study design (such as omitted variables issues) and/or coincidence coupled
- with publication bias.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO state position here!
-\end_layout
-
-\end_inset
-
-
+ Of course, this explanation would contradict a reasonable volume of previous
+ research.
+ To accept it, we would need to discount the results of those previous studies
+ (ascribing them, perhaps, to omitted variables and/or to coincidence plus
+ publication bias).
+ On balance, this seems highly premature.
 \end_layout
 
 \begin_layout Subsection
 Sensitivity to choice of wellbeing indicators
 \end_layout
 
+\begin_layout Standard
+Our two survey data sets include different alternative indicators of wellbeing.
+\end_layout
+
+\begin_layout Standard
+For London, our models having a multi-item life satisfaction scale and two
+ more general wellbeing scales as dependent variables replicate our results
+ using a single-item life satisfaction measure: no EQ parameter has a significan
+t coefficient.
+ In this limited sense our London results are robust to the use of different
+ wellbeing indicators.
+ Unfortunately this adds little of interest to our understanding of relations
+ between SWB and EQ.
+ 
+\end_layout
+
+\begin_layout Standard
+For the UK, we look instead at three shorter-run, affective SWB indicators:
+ the PANAS (positive and negative) and the emotional wellbeing sub-scale
+ of the SF-36.
+ Interestingly, our models using these as dependent variables have entirely
+ different results to the LS models --- no variable with a significant coefficie
+nt in the LS model has a significant coefficient in any affective SWB model,
+ and vice versa --- suggesting a very high degree of sensitivity to the
+ choice of wellbeing indicator.
+\end_layout
+
+\begin_layout Standard
+Both the emotional wellbeing scale and the PANAS negative affect scale suggest
+ a positive relationship between local farmland and wellbeing.
+ This might result from the benefits of green space outlined in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:happiness-and-eq"
+
+\end_inset
+
+; it could arguably also reflect other characteristics of agricultural communiti
+es.
+\end_layout
+
+\begin_layout Standard
+Our results are also quite different as between the positive and negative
+ PANAS affect scales, with EQ links confined exclusively to the negative
+ scale.
+ Predicted negative affect scores are reduced with greater local farmland
+ and suburban or developed rural land cover, and with closer proximity to
+ rivers.
+ Though by no means proof of such a hypothesis, this might suggest greater
+ EQ impacts at the lower end of SWB (such as reducing depression) than at
+ the higher end.
+\end_layout
+
+\begin_layout Paragraph
+Comparison with previous findings
+\end_layout
+
+\begin_layout Standard
+Studies on these EQ parameters have not been undertaken previously in the
+ happiness economics literature, but some epidemiological papers have found
+ similar impacts of green spaces on psychological ill health.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "maas:2009"
+
+\end_inset
+
+ find that more green space in 1km and 3km radii of individuals' homes predicts
+ fewer symptoms of anxiety and depression logged in their medical records
+ in the Netherlands, and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "vries:2003"
+
+\end_inset
+
+ report similar findings in relation to General Health Questionnaire (GHQ)
+ scores, such that more green space predicts lower levels of psychological
+ morbidity (neither study reports on different varieties of green space
+ land cover).
+ These findings are also broadly consistent with the psychological theory
+ and experimental evidence linking exposure to green space with improved
+ mental health summarised in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:happiness-and-eq"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsection
 Summary
+\end_layout
+
+\begin_layout Standard
+This chapter has presented results from a more detailed and comprehensive
+ investigation of links between SWB and EQ than has previously been attempted.
+ We include a wide range of EQ characteristics, including some not previously
+ considered; we use spatial and location data at very high resolution, and
+ advanced GIS-based measures, to produce highly accurate EQ indicator variables;
+ we investigate the use of alternative SWB measures; and in each case we
+ do so at two different scales, to make best use of the available spatial
+ data.
+ 
+\end_layout
+
+\begin_layout Standard
+These improved methods have not always led to more informative results,
+ however.
+ Our findings are, at best, mixed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+which are the key problems with this study type? and how we're going to
+ fix them in mappiness...
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
