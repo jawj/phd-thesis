@@ -46,7 +46,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize 11
-\spacing other 1.1499999999999999
+\spacing onehalf
 \use_hyperref true
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
@@ -127,7 +127,8 @@ name "chap:happiness-and-eq"
 \end_layout
 
 \begin_layout Standard
-In this brief chapter we ask two additional questions.
+In this short chapter we look somewhat beyond the economics of happiness
+ in search of answers to two additional questions.
  Why might we expect links between happiness and EQ? And what evidence is
  there that such links exist?
 \end_layout
@@ -137,10 +138,10 @@ Why might happiness and EQ be linked?
 \end_layout
 
 \begin_layout Standard
-We define environmental quality (EQ) broadly as the presence of environmental
- goods --- such as natural landscapes, scenic views, preferred climates,
- or biodiversity --- and the absence of environmental 'bads', such as air
- pollution or noise.
+In this thesis we define environmental quality (EQ) broadly as the presence
+ of environmental goods --- such as natural landscapes, scenic views, preferred
+ climates, or biodiversity --- and the absence of environmental 'bads',
+ such as air pollution or noise.
  Looking beyond economics, there are at least three broad reasons for hypothesis
 ing that EQ might be positively related to SWB.
  
@@ -713,8 +714,8 @@ Science
 \end_layout
 
 \begin_layout Standard
-Most studies report beneficial impacts of natural environments on health
- or wellbeing, but they have some common weaknesses.
+Though all of these studies report beneficial impacts of natural environments
+ on health or wellbeing, they have some common weaknesses.
  Observational studies measure domestic proximity to natural environments
  but rarely look at actual experiences of such environments (which may not
  occur near home, and may occur elsewhere); cannot provide data on the moment-by
@@ -1461,19 +1462,6 @@ key "ferreira:2010"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Also don't look at green exercise?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Apart from 
 \begin_inset CommandInset citation
 LatexCommand citeauthor
@@ -1481,9 +1469,9 @@ key "engelbrecht:2009"
 
 \end_inset
 
-, none of the studies investigate the sensitivity of their results to the
- use of alternative SWB items, and none make use of potentially more robust
- multiple-item SWB scales.
+'s, none of the studies investigate the sensitivity of their results to
+ the use of alternative SWB items, and none make use of potentially more
+ robust multiple-item SWB scales.
  Perhaps surprisingly given the spatial nature of the data, only one study
  
 \begin_inset CommandInset citation
@@ -1583,8 +1571,12 @@ reference "sec:eq-swb-evidence"
 \end_layout
 
 \begin_layout Standard
+[conclude and lead on to methods chapters]
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch bib-when-not-master
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset CommandInset bibtex

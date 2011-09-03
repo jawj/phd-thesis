@@ -310,8 +310,8 @@ Acknowledgements
 \end_layout
 
 \begin_layout Standard
-I would like to thank: Susana Mourato, Steve Gibbons, Jouni Kuha, Raphael
- Calel, Antoine Dechezlepr
+I would like to thank: Susana Mourato, Steve Gibbons, Gordon MacKerron,
+ Briony Goulden, Jouni Kuha, Raphael Calel, Antoine Dechezlepr
 \begin_inset ERT
 status open
 
@@ -324,7 +324,7 @@ status open
 
 \end_inset
 
-tre, and Rich Aston; testers of the iPhone app; and all Mappiness study
+tre, and Rich Aston; all testers of the iPhone app; and all Mappiness study
  participants.
 \end_layout
 
@@ -440,6 +440,11 @@ GHQ General Health Questionnaire
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 GLA Greater London Authority
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+GPS Global Positioning System
 \end_layout
 
 \begin_layout Labeling

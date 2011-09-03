@@ -471,8 +471,8 @@ key "bruni:2006b"
 \end_inset
 
 ).
- Absent any disciplinary affiliation, there is a range of ideas that I might
- want to convey by such words.
+ Absent any disciplinary affiliation, there is a range of ideas that we
+ might want to convey by such words.
  A useful typology, distinguishing five broad accounts of wellbeing, is
  offered by 
 \begin_inset CommandInset citation
@@ -589,8 +589,12 @@ key "gowdy:2004"
 \end_inset
 
 ).
- First, the neo-classical (PS) project is born at least partly out of dissatisfa
-ction with the strongly hedonic flavour of late nineteenth-century economics.
+ 
+\end_layout
+
+\begin_layout Standard
+First, the neo-classical (PS) project is born at least partly out of dissatisfac
+tion with the strongly hedonic flavour of late nineteenth-century economics.
  The cardinalist and utilitarian ideas of those such as Bentham, Mill, and
  later Edgeworth
 \begin_inset Foot
@@ -668,9 +672,13 @@ key "pasinetti:2006"
 
 \end_inset
 
- Later, deficiencies of the PS account and its associated methods spur a
+ 
+\end_layout
+
+\begin_layout Standard
+Later, deficiencies of the PS account and its associated methods spur a
  'counter-revolution': the rediscovery within economics of SWB accounts,
- by Easterlin (whose 
+ by Richard Easterlin (whose 
 \begin_inset CommandInset citation
 LatexCommand citeyear
 key "easterlin:1974"
@@ -714,7 +722,7 @@ as if
  they are maximising utility, and their behaviour can be modelled and analysed
  as such.
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 In respect of the axioms of consumer preference: 
@@ -4122,15 +4130,8 @@ key "easterlin:1974"
 
 \end_inset
 
- paper, 
-\begin_inset Quotes eld
-\end_inset
-
-Does economic growth improve the human lot?
-\begin_inset Quotes erd
-\end_inset
-
-, is often cited as an early (re)introduction of SWB into economics.
+ paper, 'Does economic growth improve the human lot?', is often cited as
+ an early (re)introduction of SWB into economics.
  Connections between income and happiness at the national and international
  scales have since been a important strand of happiness research (e.g.
  
@@ -5471,10 +5472,18 @@ key "brereton:2007"
 , but other aspects of housing quality seem to be little studied.
  Living in large cities appears unfavourable, while rural living has a positive
  impact in SWB terms (at least once lower rural incomes are controlled for).
- The evidence of environmental quality effects is still very limited, although
+ The evidence of environmental quality effects is still limited, although
  several studies find a negative impact of air pollution on SWB.
  Some studies also find a link between climate and SWB, such that more extreme
  climates are detrimental.
+ This research is examined in greater detail in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:eq-swb-economic-studies"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -5570,7 +5579,10 @@ key "institute-of-wellbeing:2009"
 \end_inset
 
 .
- In the UK, happiness entered electoral politics in the speeches of, and
+\end_layout
+
+\begin_layout Standard
+In the UK, happiness entered electoral politics in the speeches of, and
  Quality of Life policy commission set up by, the UK Conservative Party
  leader 
 \begin_inset CommandInset citation
@@ -5608,7 +5620,14 @@ key "sustainable-development.gov.uk:2007"
 
 \end_inset
 
-, and the government has just announced that official 
+.
+ The Treasury's 
+\emph on
+Green Book
+\emph default
+ has been updated with a brief discussion of the use of wellbeing data for
+ project evaluation and appraisal, and the government recently announced
+ that official 
 \begin_inset Quotes eld
 \end_inset
 
@@ -5620,22 +5639,11 @@ general wellbeing
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "stratton:2010"
+key "office-for-national-statistics:2011"
 
 \end_inset
 
 .
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Update with ONS report and Treasury Green Book update.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -5749,7 +5757,7 @@ key "sen:1978"
  If preventing the burning of Rome would have made the emperor Nero feel
  worse off, then letting him burn Rome would have been Pareto optimal.
  In short, a society or an economy can be Pareto optimal and still be perfectly
- disgusting."
+ disgusting".
 \end_layout
 
 \end_inset

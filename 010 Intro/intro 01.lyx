@@ -362,7 +362,7 @@ Individual-level studies have modelled individuals' SWB ratings using EQ
 \end_layout
 
 \begin_layout Standard
-Some of the best and most direct evidence on other wellbeing influences,
+Some of the best and most direct evidence on other influences on wellbeing,
  such as health status or companionship, comes from experience-level studies
  using the Day Reconstruction Method, Experience Sampling Method, or Ecological
  Momentary Assessment (DRM, ESM, EMA).
@@ -376,8 +376,8 @@ key "csikszentmihalyi:2003,krueger:2008"
 \end_inset
 
 .
- To our knowledge, however, these methods have not anywhere been applied
- to hypotheses regarding EQ.
+ To our knowledge, however, these methods have not been applied to hypotheses
+ regarding EQ.
 \end_layout
 
 \begin_layout Section
@@ -399,14 +399,13 @@ The research described in this thesis starts from the hypothesis that positive
 \end_layout
 
 \begin_layout Standard
-We contribute to the existing literature by conducting two separate but
- related strands of empirical research.
- Both strands involve substantial new primary data collection.
+We conduct two separate but related strands of empirical research.
+ Both involve substantial new primary data collection.
  Both aim to test the hypothesis that EQ characteristics are significantly
  related to individuals' SWB, and to measure the extent of these relationships,
  in some cases in monetary terms.
- The first strand is largely evolutionary, while the second is somewhat
- more revolutionary.
+ In relation to previous research, the first strand is largely evolutionary
+ while the second is somewhat more revolutionary.
 \end_layout
 
 \begin_layout Standard
@@ -427,8 +426,8 @@ Retrospective happiness and the usual environment
 
 \begin_layout Standard
 In the first strand we build directly on previous work in happiness economics
- linking retrospective happiness assessments to respondents' usual environments,
- extending and improving on this in a number of areas.
+ that links retrospective happiness assessments to respondents' usual environmen
+ts, extending and improving on this in a number of areas.
 \end_layout
 
 \begin_layout Subsubsection
@@ -440,15 +439,15 @@ We design, implement, and collect and analyse data from two new cross-sectional
  web surveys.
  We use Geographical Information Systems (GIS) software to link survey responden
 ts' home and workplace locations to objective indicators of EQ, and estimate
- econometric models using these indicators to predict SWB responses.
+ econometric models that use these indicators to predict SWB responses.
+ Using the results of these models, we calculate monetary values for EQ
+ parameters where applicable.
  
 \end_layout
 
 \begin_layout Standard
-Using the results of these models, we calculate monetary values for those
- EQ parameters for which significant effects are found.
- As EQ variables we consider road, rail and aircraft noise, air pollution,
- and land cover (including green and blue space types), while controlling
+As regards EQ variables we consider road, rail and aircraft noise, air pollution
+, and land cover (including green and blue space types), while controlling
  for house prices and for proxies of other spatial amenities and characteristics.
 \end_layout
 
@@ -458,9 +457,10 @@ Study areas
 
 \begin_layout Standard
 The first survey is completed by a quota sample of approximately 1,000 Londoners
-, and the second by approximately 2,000 people across the UK.
- These two scales bring different advantages and limitations, enabling different
- EQ parameters to be investigated effectively.
+, and the second by a quota sample of approximately 2,000 people across
+ the UK.
+ Working at these two scales brings different advantages and limitations,
+ enabling different EQ parameters to be investigated effectively.
 \end_layout
 
 \begin_layout Paragraph
@@ -529,9 +529,18 @@ The UK as a whole is of course much more heterogeneous than London in terms
  of EQ characteristics.
  The UK-wide survey provides greater variation in land cover types, and
  permits meaningful distinctions in relation to distance parameters which
- in London cannot be separated from other geographical characteristics (for
- example, distance to the coast in London is approximately just a measure
- of westerliness).
+ in London cannot be separated from other geographical characteristics
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For example, distance to the coast in London is approximately just a measure
+ of westerliness.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -576,7 +585,7 @@ data Most existing studies have access to EQ data and respondent location
  By contrast, most of the EQ data we use is of 25m resolution or better.
  We have full UK postcodes for all respondents, and in London we ask respondents
  to locate their home even more precisely using an interactive map survey
- item, which we develop.
+ item, which we develop for this purpose.
  This additional precision in location is particularly valuable in relation
  to air pollution and noise estimates, since these parameters may vary over
  very short distances
@@ -619,9 +628,9 @@ GIS
 \begin_inset space ~
 \end_inset
 
-methods For parameters that are not point estimates -- such as the accessibility
- of particular land cover types -- we make use of the same advances in GIS
- that have been exploited in hedonic pricing studies.
+methods For parameters that are not point estimates --- such as the accessibilit
+y of particular land cover types --- we make use of the same advances in
+ GIS that have been exploited in hedonic pricing studies.
  We measure the local quantity of amenities by calculating the proportion
  of land they represent within a certain radius of respondents' locations.
  We also calculate more advanced measures accounting for both quantity 
@@ -644,7 +653,7 @@ EQ
 
 characteristics Unlike most previous studies, which focus on a single element
  of EQ, we combine a range of EQ characteristics is a single model.
- We hope this will ameliorate problems of omitted variable bias in the case
+ We intend this to ameliorate problems of omitted variable bias in the case
  of interrelated characteristics, such as air pollution, noise and green
  space.
 \end_layout
@@ -665,7 +674,6 @@ and
 space We consider a number of EQ characteristics which have not previously
  been included in happiness economics research, including accessibility
  of green and 'blue' space.
- 
 \begin_inset Note Note
 status collapsed
 
@@ -694,7 +702,7 @@ the
 
 home To try to achieve a more complete picture of EQ exposure, we estimate
  SWB models including EQ characteristics not only at respondents' residential
- locations, but also at workplaces.
+ locations, but also at their workplaces.
 \end_layout
 
 \begin_layout Description
@@ -746,7 +754,7 @@ In the second strand of research we design, implement, and collect and analyse
  We enhance the standard ESM protocol to include precise geographical coordinate
 s, enabling us to link objective indicators of spatial characteristics to
  every response received.
- We believe that this ESM study is the first to address --- or be capable
+ We believe that this is the first ESM study to address --- or be capable
  of addressing --- hypotheses regarding EQ.
  
 \end_layout
@@ -756,8 +764,8 @@ In addition, we achieve what we believe to be the largest ESM sample ever:
  more than one million responses from over 20,000 participants.
  We do so by making use of individuals' own smartphones as response devices,
  by prioritising speed and ease of use in our signalling and response protocols,
- and by offering interesting feedback to participants about the data they
- provide.
+ and by offering interesting feedback to participants regarding the data
+ they provide.
 \end_layout
 
 \begin_layout Subsubsection
@@ -786,7 +794,7 @@ Prospective participants download the app at no charge, indicate their informed
  doing.
  While they answer, their precise location is determined by satellite positionin
 g (GPS).
- All data are then transmitted wirelessly to our server.
+ All data are then transmitted wirelessly to our data server.
  Participants receive simple feedback, charting their happiness in different
  contexts, and can take part for as long or short a period as they wish.
 \end_layout
@@ -944,10 +952,10 @@ It is powerful line of evidence compared to that provided by cross-sectional
  of the potential associations between people and locations that may confound
  cross-sectional research.
  Because we can precisely and objectively locate individuals at the moment
- of each response, each EQ indicator that we calculate should much more
- closely reflect an actual exposure to EQ.
- And because we have an extremely large sample, it is likely that we will
- have the power to detect even very small EQ effects.
+ of each response, the EQ indicators that we calculate should much more
+ closely reflect actual exposures to EQ.
+ And because we collect an extremely large sample, it is likely that we
+ will have the power to detect even very small EQ effects.
 \end_layout
 
 \begin_layout Standard
@@ -978,7 +986,7 @@ reference "chap:lit-review"
 \end_layout
 
 \begin_layout Standard
-Then in 
+In 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:happiness-and-eq"
