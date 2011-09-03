@@ -736,38 +736,28 @@ key "fujiwara:2011"
 .
 \end_layout
 
-\begin_layout Standard
-Although the results of this strand of research are somewhat mixed, but
- they inform
-\end_layout
-
 \begin_layout Subsection
 Momentary happiness and the immediate environment
 \end_layout
 
 \begin_layout Standard
 In the second strand of research we design, implement, and collect and analyse
- panel data from a unique and large-scale ESM study, which we believe to
- be the first to address (or be capable of addressing) hypotheses regarding
- EQ.
- 
-\end_layout
-
-\begin_layout Standard
-Our contribution to knowledge in this strand is twofold.
- 
-\end_layout
-
-\begin_layout Standard
-First, we enhance the standard ESM protocol to include precise geographical
- coordinates.
- These coordinates enable us to calculate objective indicators of EQ for
+ panel data from a unique and large-scale ESM study.
+ We enhance the standard ESM protocol to include precise geographical coordinate
+s, enabling us to link objective indicators of spatial characteristics to
  every response received.
- Second, we work hard to achieve what we believe to be the largest ever
- ESM sample: more than one million responses from over 20,000 participants.
+ We believe that this ESM study is the first to address --- or be capable
+ of addressing --- hypotheses regarding EQ.
+ 
+\end_layout
+
+\begin_layout Standard
+In addition, we achieve what we believe to be the largest ESM sample ever:
+ more than one million responses from over 20,000 participants.
  We do so by making use of individuals' own smartphones as response devices,
  by prioritising speed and ease of use in our signalling and response protocols,
- and by offering simple feedback to participants about the data they provide.
+ and by offering interesting feedback to participants about the data they
+ provide.
 \end_layout
 
 \begin_layout Subsubsection
@@ -810,12 +800,36 @@ e location and time, using GIS.
  location type, time, day, and any response trend.
 \end_layout
 
+\begin_layout Subsubsection
+Study area
+\end_layout
+
 \begin_layout Standard
+While this study could easily be extended worldwide, each additional country
+ included would require a new collection of environmental data sets to be
+ identified, obtained and processed.
+ At present, we therefore limit our analyses to the UK.
+\end_layout
+
+\begin_layout Subsubsection
+Contribution to knowledge
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 The principal limitation of this strand is that we do not reach a representative
  sample of the UK population.
- However, as far as we are aware, our research methodology is completely
- novel both within happiness economics and in the broader context of research
- across disciplines into the wellbeing effects of EQ
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+As far as we are aware, our spatial experience sampling methodology is novel
+ both within happiness economics and in the broader context of research
+ across disciplines that seeks to quantify the wellbeing effects of EQ
 \begin_inset Foot
 status collapsed
 
@@ -894,7 +908,7 @@ key "killingsworth:2010"
 
 \end_inset
 
-'s study relates to wellbeing, and that study is not able to investigate
+'s study investigates wellbeing, and that study is not able to investigate
  environmental factors since it does not collect location data.
  
 \end_layout
@@ -902,23 +916,46 @@ key "killingsworth:2010"
 \end_inset
 
 .
- As such, it provides a powerful and entirely new line of evidence on the
- relationship between wellbeing and EQ.
+ It provides an entirely new line of evidence on this question, which may
+ ultimately be of significant use to environmental policymakers
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The value of this method is not confined to environmental questions, however:
+ it has applications in many other areas of academic and market research,
+ including transport, tourism, and consumer behaviour.
 \end_layout
 
-\begin_layout Subsubsection
-Study area
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
-While this study could easily be extended worldwide, each additional country
- included would require a new collection of environmental data sets to be
- identified, obtained and processed.
- At present, we therefore limit our analyses to the UK.
+It is powerful line of evidence compared to that provided by cross-sectional
+ approaches.
+ Because we ask the same people the same subjective questions many times,
+ we need not assume comparability of different individuals' use of the response
+ scales, and all individual characteristics that are invariant over the
+ study period can be controlled through the use of fixed effects.
+ Because we observe each individual in multiple locations, we break some
+ of the potential associations between people and locations that may confound
+ cross-sectional research.
+ Because we can precisely and objectively locate individuals at the moment
+ of each response, each EQ indicator that we calculate should much more
+ closely reflect an actual exposure to EQ.
+ And because we have an extremely large sample, it is likely that we will
+ have the power to detect even very small EQ effects.
 \end_layout
 
-\begin_layout Subsection
-Contribution to knowledge
+\begin_layout Standard
+Additionally, since we use many of the same EQ indicators in both strands
+ of our research, we are able for the first time to compare relationships
+ between retrospective happiness and usual environment, and between momentary
+ happiness and immediate environment, contributing further to existing understan
+ding of the relation between SWB and EQ.
 \end_layout
 
 \begin_layout Section
@@ -965,14 +1002,14 @@ reference "sec:survey-methods"
 
 \end_inset
 
-, the methods of analysis are outlined in 
+, methods of spatial and econometric analysis are outlined in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:analysis-methods"
 
 \end_inset
 
-, and the results are presented in 
+, and results are presented in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:survey-results"
@@ -984,22 +1021,22 @@ reference "chap:survey-results"
 \end_layout
 
 \begin_layout Standard
-For the second strand, investigating momentary happiness, data collection
- methods are described in 
+For the second strand, investigating momentary happiness, our spatial experience
+ sampling methods are described in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:esm-research-methods"
 
 \end_inset
 
-, the methods of analysis are again outlined in 
+, methods of analysis are again outlined in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:analysis-methods"
 
 \end_inset
 
-, and the results are presented in 
+, and results are presented in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:esm-results"
