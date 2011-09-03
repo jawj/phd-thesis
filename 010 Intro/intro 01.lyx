@@ -155,16 +155,17 @@ key "dolan:2008"
 \end_inset
 
 .
- They include one’s income (positively correlated with SWB); the incomes
+ They include one's income (positively correlated with SWB); the incomes
  of others, because of rivalry (negative) and/or ambition (positive); and
- one’s own lagged income, because of habituation (negative).
+ one's own lagged income, because of habituation (negative).
  They include unemployment; separation, divorce and widowhood; and poor
  health (all negatively correlated with SWB).
- They also include social capital indicators and ‘relational goods’, such
+ They also include social capital indicators and 'relational goods', such
  as membership of interest groups or friendly relations with neighbours;
  trust; and belief in a god (all positively correlated with SWB).
- They may also include environmental quality (EQ) parameters including climate,
- noise, air quality, and access to green spaces.
+ As is discussed further below, they may also include environmental quality
+ (EQ) parameters such as climate, noise, air quality, and access to green
+ spaces.
  
 \end_layout
 
@@ -173,11 +174,15 @@ Happiness and the environment
 \end_layout
 
 \begin_layout Standard
-Environmental and ecological economists have taken a particularly strong
+Some environmental and ecological economists have taken a particularly strong
  interest in happiness economics.
- First, for those concerned with 'strong' sustainability especially, a significa
-nt advantage of SWB indicators is that they do not conflate welfare and
- progress with consumption and growth 
+ There are two main reasons for this.
+\end_layout
+
+\begin_layout Standard
+First, for those concerned with 'strong' sustainability especially, a significan
+t advantage of SWB indicators is that they do not automatically conflate
+ welfare and progress with consumption and growth 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "gowdy:2005"
@@ -197,11 +202,11 @@ key "welsch:2009a,ferreira:2010"
 \end_inset
 
  --- either directly, in terms of their impacts on SWB, or in monetary terms,
- by calculating the change in income which would produce an SWB impact of
+ by estimating the change in income which would produce an SWB impact of
  equivalent size.
  As a method of monetary valuation this could represent a useful complement
- to the conventional revealed- and stated-preference techniques, since it
- has quite different strengths and weaknesses in terms of its applications,
+ to conventional revealed- and stated-preference techniques, since it has
+ quite different strengths and weaknesses in respect of its applications,
  assumptions and limitations 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -224,6 +229,7 @@ Both of these reasons for environmental and ecological economists' interest
  and evaluation at all levels 
 \begin_inset CommandInset citation
 LatexCommand citep
+before "e.g."
 key "diener:2009"
 
 \end_inset
@@ -233,13 +239,13 @@ key "diener:2009"
 \end_layout
 
 \begin_layout Standard
-On the international scale the last several years have seen 'big picture'
- initiatives launched by the EU, the OECD, and individual nation states
- including the UK, France and Canada.
+On the international scale the last several years have seen initiatives
+ launched by the EU, the OECD, and individual nation states including the
+ UK, France and Canada.
  All have proposed wider use of SWB measures as part of a reconceptualising
- of the policymaker's notions of prosperity and progress --- a shift that
- policy organisations with interests in sustainability have been promoting
- for some time 
+ of policymakers' notions of prosperity and progress --- a shift that policy
+ organisations with interests in sustainability have been promoting for
+ some time 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
@@ -253,13 +259,23 @@ key "jackson:2009,michaelson:2009"
 \begin_layout Standard
 On a smaller scale, the methods of happiness economics may be used to evaluate
  the social costs and benefits of specific projects or policies --- including
- environmental projects and policies --- in the first instance by converting
- SWB impacts into monetary values.
+ environmental projects and policies --- in the first instance by translating
+ effects on SWB into monetary values.
  To date, SWB valuation methods have almost universally produced values
- that seem implausibly high.
- But research is ongoing, and HM Treasury has this year updated its Green
- Book --- the appraisal and evaluation framework for UK central government
- --- to incorporate discussion on this topic for the first time 
+ that seem implausibly high 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "ferreira:2010"
+
+\end_inset
+
+; but research is ongoing, and HM Treasury has this year updated its 
+\emph on
+Green Book
+\emph default
+ --- the appraisal and evaluation framework for UK central government ---
+ to incorporate discussion on this topic for the first time 
 \begin_inset CommandInset citation
 LatexCommand citep
 after "p. 58"
@@ -272,8 +288,8 @@ key "hm-treasury:2003"
 status collapsed
 
 \begin_layout Plain Layout
-This edition of the Green Book is officially dated 2003, but pages 57 --
- 58 were updated in 2011.
+This edition of the Green Book is officially still dated 2003, but pages
+ 57 -- 58 were updated in 2011.
 \end_layout
 
 \end_inset
@@ -283,15 +299,15 @@ This edition of the Green Book is officially dated 2003, but pages 57 --
 \end_layout
 
 \begin_layout Standard
-Day to day, meanwhile, the findings of happiness economics can be used directly
- by individuals to improve their own wellbeing, since they highlight areas
- in which bounded rationality --- including various forms of systematic
- utility mis-prediction --- can lead to widespread yet avoidable patterns
- of sub-optimal choice 
+Day to day, meanwhile, the findings of happiness economics might also be
+ used directly by individuals to improve their own wellbeing, since they
+ highlight areas in which bounded rationality --- including systematic mis-predi
+ction of future utility --- leads to widespread but avoidable patterns of
+ sub-optimal choice 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
-key "gilbert:2006,stutzer:2008"
+key "stutzer:2008"
 
 \end_inset
 
@@ -303,13 +319,16 @@ Existing research
 \end_layout
 
 \begin_layout Standard
-Evidence regarding the impact of EQ on SWB is not as strong as it is for
- many other factors.
+Economic evidence on the relationship between EQ and SWB exists, but it
+ is less strong than for many other factors (such as income, employment,
+ or marital status).
+ Published studies report positive impacts, but they have some common weaknesses.
+ 
 \end_layout
 
 \begin_layout Standard
-Country-level studies predict national average SWB measures using nationally
- aggregated indicators of EQ 
+Country-level studies have predicted national average SWB levels using nationall
+y aggregated indicators of EQ 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
@@ -319,10 +338,41 @@ key "welsch:2002"
 
 .
  For characteristics such as air pollution that vary at a sub-national scale,
- however, these aggregated variables might not be strongly related to individual
-s' real exposures to EQ.
- Furthermore, other sources of heterogeneity between countries are many,
- and are not always adequately controlled for.
+ however, these aggregated variables are not convincingly related to individuals
+' real exposures to EQ.
+ Furthermore, these studies do not always adequately control for the many
+ other sources of heterogeneity between nations.
+\end_layout
+
+\begin_layout Standard
+Individual-level studies have modelled individuals' SWB ratings using EQ
+ indicators for the vicinity of their homes.
+ However, these studies have still generally relied on large-area aggregates
+ of EQ measures; have focused exclusively on the levels or existence of
+ EQ characteristics, rather than real-life exposures or use; have looked
+ for the most part at isolated EQ parameters, despite widespread correlations
+ (such as between air pollution and noise); and have not, to date, investigated
+ land cover relationships, such as the effects of green and 'blue' spaces.
+ 
+\end_layout
+
+\begin_layout Standard
+Some of the best and most direct evidence on other wellbeing influences,
+ such as health status or companionship, comes from experience-level studies
+ using the Day Reconstruction Method, Experience Sampling Method, or Ecological
+ Momentary Assessment (DRM, ESM, EMA).
+ These methods minimise biases of recall and interpretation, and provide
+ rich panel data sets in which time-invariant individual characteristics,
+ including personality, can be factored out 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "csikszentmihalyi:2003,krueger:2008"
+
+\end_inset
+
+.
+ To our knowledge, however, these methods have not anywhere been applied
+ to hypotheses regarding EQ.
 \end_layout
 
 \begin_layout Section
