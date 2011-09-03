@@ -11,6 +11,7 @@
 \definecolor{LinkColor}{rgb}{0,0,0.4}
 \usepackage[mmddyyyy,nodayofweek]{datetime}
 
+\newrefformat{chap}{\hyperlink{#1}{\autoref{#1}}}
 \newrefformat{app}{\hyperlink{#1}{\autoref{#1}}}
 \newrefformat{par}{\hyperlink{#1}{\autoref{#1}}}
 \newrefformat{sec}{\hyperlink{#1}{\autoref{#1}}}

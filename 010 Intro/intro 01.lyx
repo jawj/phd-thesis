@@ -11,12 +11,13 @@
 \definecolor{LinkColor}{rgb}{0,0,0.4}
 \usepackage[mmddyyyy,nodayofweek]{datetime}
 
-%\newrefformat{app}{\hyperlink{#1}{\autoref{#1}}}
-%\newrefformat{par}{\hyperlink{#1}{\autoref{#1}}}
-%\newrefformat{sec}{\hyperlink{#1}{\autoref{#1}}}
-%\newrefformat{sub}{\hyperlink{#1}{\autoref{#1}}}
-%\newrefformat{fig}{\hyperlink{#1}{\autoref{#1}}}
-%\newrefformat{tab}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{chap}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{app}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{par}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{sec}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{sub}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{fig}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{tab}{\hyperlink{#1}{\autoref{#1}}}
 
 \renewcommand\chaptername{Chapter}
 \definecolor{grey}{gray}{0.3}
@@ -74,6 +75,11 @@
 \color #ffffff
 \end_branch
 \branch Not in master doc
+\selected 1
+\filename_suffix 0
+\color #ffffff
+\end_branch
+\branch bib-when-not-master
 \selected 1
 \filename_suffix 0
 \color #ffffff
@@ -323,7 +329,6 @@ Economic evidence on the relationship between EQ and SWB exists, but it
  is less strong than for many other factors (such as income, employment,
  or marital status).
  Published studies report positive impacts, but they have some common weaknesses.
- 
 \end_layout
 
 \begin_layout Standard
@@ -376,11 +381,540 @@ key "csikszentmihalyi:2003,krueger:2008"
 \end_layout
 
 \begin_layout Section
-Aims and objectives
+Aims and methods
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:research-aims"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-include broad hypotheses
+The research described in this thesis starts from the hypothesis that positive
+ EQ characteristics --- air quality, tranquillity, and green and 'blue'
+ space --- will be positively related to SWB.
+ 
+\end_layout
+
+\begin_layout Standard
+We contribute to the existing literature by conducting two separate but
+ related strands of empirical research.
+ Both strands involve substantial new primary data collection.
+ Both aim to test the hypothesis that EQ characteristics are significantly
+ related to individuals' SWB, and to measure the extent of these relationships,
+ in some cases in monetary terms.
+ The first strand is largely evolutionary, while the second is somewhat
+ more revolutionary.
+\end_layout
+
+\begin_layout Standard
+Time is not the researcher's friend.
+ The second research strand is reliant on consumer technology that became
+ available only after work on the thesis was under way, and has potential
+ for exploitation enormously beyond what has been possible within the constraint
+s of the doctorate.
+ The first strand, meanwhile, was conceived of several years ago and has
+ in certain respects been overtaken by developments elsewhere.
+ Both strands nevertheless offer significant advances on earlier research
+ in this field.
+\end_layout
+
+\begin_layout Subsection
+Retrospective happiness and the usual environment
+\end_layout
+
+\begin_layout Standard
+In the first strand we build directly on previous work in happiness economics
+ linking retrospective happiness assessments to respondents' usual environments,
+ extending and improving on this in a number of areas.
+\end_layout
+
+\begin_layout Subsubsection
+Summary of methods
+\end_layout
+
+\begin_layout Standard
+We design, implement, and collect and analyse data from two new cross-sectional
+ web surveys.
+ We use Geographical Information Systems (GIS) software to link survey responden
+ts' home and workplace locations to objective indicators of EQ, and estimate
+ econometric models using these indicators to predict SWB responses.
+ 
+\end_layout
+
+\begin_layout Standard
+Using the results of these models, we calculate monetary values for those
+ EQ parameters for which significant effects are found.
+ As EQ variables we consider road, rail and aircraft noise, air pollution,
+ and land cover (including green and blue space types), while controlling
+ for house prices and for proxies of other spatial amenities and characteristics.
+\end_layout
+
+\begin_layout Subsubsection
+Study areas
+\end_layout
+
+\begin_layout Standard
+The first survey is completed by a quota sample of approximately 1,000 Londoners
+, and the second by approximately 2,000 people across the UK.
+ These two scales bring different advantages and limitations, enabling different
+ EQ parameters to be investigated effectively.
+\end_layout
+
+\begin_layout Paragraph
+London
+\end_layout
+
+\begin_layout Standard
+For London, a range of high-resolution spatial data sets exist that are
+ not available UK-wide, such as modelled air pollutant concentrations and
+ noise levels from roads and railways.
+ London also has distinctive EQ characteristics.
+ Its air quality is the worst in the UK and among the worst in Europe, consisten
+tly exceeding EU limits for nitrogen dioxide and particulates
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Particulates on the Underground system represent an additional and distinctive
+ source of airborne pollution in London, although these are not believed
+ to be significantly harmful 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "seaton:2005"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "authority:2005"
+
+\end_inset
+
+, and most residents see this as a significant environmental problem 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mori:2007"
+
+\end_inset
+
+.
+ It is also one of the larger cities in the developed world, and most residents
+ are thus some distance from any wild natural environment.
+ On the other hand, it has more parks and green spaces than any other city
+ of comparable size worldwide 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "national-statistics:2007"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+UK
+\end_layout
+
+\begin_layout Standard
+The UK as a whole is of course much more heterogeneous than London in terms
+ of EQ characteristics.
+ The UK-wide survey provides greater variation in land cover types, and
+ permits meaningful distinctions in relation to distance parameters which
+ in London cannot be separated from other geographical characteristics (for
+ example, distance to the coast in London is approximately just a measure
+ of westerliness).
+\end_layout
+
+\begin_layout Subsubsection
+Contribution to knowledge
+\end_layout
+
+\begin_layout Standard
+This work makes a significant contribution to the literature by building
+ on previous research in the following ways:
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The two main limitations of this strand --- the areas in which we do not
+ improve upon existing literature in ways that we we would ideally like
+ --- are that we do not seek to determine the causality of the associations
+ we investigate, and that we do not employ spatial econometric models that
+ might help deal with omitted spatial covariates of our explanatory variables.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+High
+\begin_inset space ~
+\end_inset
+
+resolution
+\begin_inset space ~
+\end_inset
+
+spatial
+\begin_inset space ~
+\end_inset
+
+data Most existing studies have access to EQ data and respondent location
+ only at ward level (or worse).
+ By contrast, most of the EQ data we use is of 25m resolution or better.
+ We have full UK postcodes for all respondents, and in London we ask respondents
+ to locate their home even more precisely using an interactive map survey
+ item, which we develop.
+ This additional precision in location is particularly valuable in relation
+ to air pollution and noise estimates, since these parameters may vary over
+ very short distances
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citet
+key "mackerron:2008"
+
+\end_inset
+
+ use the same high resolution air pollution maps, but have only postcode
+ location data from a small convenience sample.
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+It also means that we escape the modifiable areal unit problem for almost
+ all spatial indicators.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Advanced
+\begin_inset space ~
+\end_inset
+
+GIS
+\begin_inset space ~
+\end_inset
+
+methods For parameters that are not point estimates -- such as the accessibility
+ of particular land cover types -- we make use of the same advances in GIS
+ that have been exploited in hedonic pricing studies.
+ We measure the local quantity of amenities by calculating the proportion
+ of land they represent within a certain radius of respondents' locations.
+ We also calculate more advanced measures accounting for both quantity 
+\emph on
+and
+\emph default
+ proximity, in the form of kernel-weighted proportion estimates.
+ Neither simple nor kernel-weighted proportion measures have been used in
+ prior SWB research.
+\end_layout
+
+\begin_layout Description
+Multiple
+\begin_inset space ~
+\end_inset
+
+EQ
+\begin_inset space ~
+\end_inset
+
+characteristics Unlike most previous studies, which focus on a single element
+ of EQ, we combine a range of EQ characteristics is a single model.
+ We hope this will ameliorate problems of omitted variable bias in the case
+ of interrelated characteristics, such as air pollution, noise and green
+ space.
+\end_layout
+
+\begin_layout Description
+Green
+\begin_inset space ~
+\end_inset
+
+and
+\begin_inset space ~
+\end_inset
+
+'blue'
+\begin_inset space ~
+\end_inset
+
+space We consider a number of EQ characteristics which have not previously
+ been included in happiness economics research, including accessibility
+ of green and 'blue' space.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Unlike previous studies in happiness economics, we also investigate indicators
+ of the use of these environments, including 'green exercise'.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Looking
+\begin_inset space ~
+\end_inset
+
+beyond
+\begin_inset space ~
+\end_inset
+
+the
+\begin_inset space ~
+\end_inset
+
+home To try to achieve a more complete picture of EQ exposure, we estimate
+ SWB models including EQ characteristics not only at respondents' residential
+ locations, but also at workplaces.
+\end_layout
+
+\begin_layout Description
+Sensitivity
+\begin_inset space ~
+\end_inset
+
+to
+\begin_inset space ~
+\end_inset
+
+SWB
+\begin_inset space ~
+\end_inset
+
+indicator We compare the results of using several alternative SWB indicators.
+ This kind of sensitivity testing has rarely been done in happiness economics
+ research, and as far as we are aware has never been done in work on EQ.
+\end_layout
+
+\begin_layout Description
+Valuation
+\begin_inset space ~
+\end_inset
+
+best
+\begin_inset space ~
+\end_inset
+
+practices We follow a number of the recommendations for high-quality SWB
+ valuation research emerging from the most recent valuation literature,
+ including 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "fujiwara:2011"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Although the results of this strand of research are somewhat mixed, but
+ they inform
+\end_layout
+
+\begin_layout Subsection
+Momentary happiness and the immediate environment
+\end_layout
+
+\begin_layout Standard
+In the second strand of research we design, implement, and collect and analyse
+ panel data from a unique and large-scale ESM study, which we believe to
+ be the first to address (or be capable of addressing) hypotheses regarding
+ EQ.
+ 
+\end_layout
+
+\begin_layout Standard
+Our contribution to knowledge in this strand is twofold.
+ 
+\end_layout
+
+\begin_layout Standard
+First, we enhance the standard ESM protocol to include precise geographical
+ coordinates.
+ These coordinates enable us to calculate objective indicators of EQ for
+ every response received.
+ Second, we work hard to achieve what we believe to be the largest ever
+ ESM sample: more than one million responses from over 20,000 participants.
+ We do so by making use of individuals' own smartphones as response devices,
+ by prioritising speed and ease of use in our signalling and response protocols,
+ and by offering simple feedback to participants about the data they provide.
+\end_layout
+
+\begin_layout Subsubsection
+Summary of methods
+\end_layout
+
+\begin_layout Standard
+We develop a native software application (app), named 
+\emph on
+Mappiness
+\emph default
+, that runs on the Apple iPhone.
+ We distribute the app via the iPhone App Store, a central software repository
+ accessible to all device users.
+ Participants are recruited opportunistically, assisted by coverage in tradition
+al and social media.
+ 
+\end_layout
+
+\begin_layout Standard
+Prospective participants download the app at no charge, indicate their informed
+ consent to take part, and provide some basic demographic information.
+ They are then signalled at random moments and asked to report on their
+ mood on a continuous sliding scale.
+ They are also asked whom they are with, where they are, and what they are
+ doing.
+ While they answer, their precise location is determined by satellite positionin
+g (GPS).
+ All data are then transmitted wirelessly to our server.
+ Participants receive simple feedback, charting their happiness in different
+ contexts, and can take part for as long or short a period as they wish.
+\end_layout
+
+\begin_layout Standard
+To each response received from participants we join indicators of land cover
+ at the response location, and daylight and weather conditions at the appropriat
+e location and time, using GIS.
+ We then estimate fixed effects models predicting happiness responses from
+ the objective spatial data, while controlling for activity, companionship,
+ location type, time, day, and any response trend.
+\end_layout
+
+\begin_layout Standard
+The principal limitation of this strand is that we do not reach a representative
+ sample of the UK population.
+ However, as far as we are aware, our research methodology is completely
+ novel both within happiness economics and in the broader context of research
+ across disciplines into the wellbeing effects of EQ
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Since commencing this research we have become aware of other studies using
+ smartphones to collect data from large samples --- a method sometimes referred
+ to as (or as a part of) crowdsourcing, ubiquitous computing (UbiComp),
+ or citizen (cyber-)science.
+ For example, studies are described at 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://trackyourhappiness.org/
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "killingsworth:2010"
+
+\end_inset
+
+, 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.ccs.neu.edu/home/amislove/twittermood/
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://web.mit.edu/wockets/
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://myexperience.sourceforge.net/
+\end_layout
+
+\end_inset
+
+, and 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.projectcharm.info/
+\end_layout
+
+\end_inset
+
+.
+ However, only 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "killingsworth:2010"
+
+\end_inset
+
+'s study relates to wellbeing, and that study is not able to investigate
+ environmental factors since it does not collect location data.
+ 
+\end_layout
+
+\end_inset
+
+.
+ As such, it provides a powerful and entirely new line of evidence on the
+ relationship between wellbeing and EQ.
+\end_layout
+
+\begin_layout Subsubsection
+Study area
+\end_layout
+
+\begin_layout Standard
+While this study could easily be extended worldwide, each additional country
+ included would require a new collection of environmental data sets to be
+ identified, obtained and processed.
+ At present, we therefore limit our analyses to the UK.
 \end_layout
 
 \begin_layout Subsection
@@ -388,11 +922,122 @@ Contribution to knowledge
 \end_layout
 
 \begin_layout Section
-Summary of methods
+Structure of thesis
 \end_layout
 
-\begin_layout Section
-Structure of this thesis
+\begin_layout Standard
+The remainder of this thesis is set out as follows.
+ In 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:lit-review"
+
+\end_inset
+
+ we review the happiness economics literature, structuring our discussion
+ around the following seven questions.
+ What is happiness economics? What does it involve? Is it real economics?
+ Who does it? What does it tell us? And what does it mean for policy? 
+\end_layout
+
+\begin_layout Standard
+Then in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:happiness-and-eq"
+
+\end_inset
+
+ we narrow our focus to environmental factors, and briefly address two further
+ questions.
+ For what reasons might we expect links between EQ and happiness? And what
+ evidence is there that such links exist?
+\end_layout
+
+\begin_layout Standard
+The next five chapters address our empirical contributions on that latter
+ question.
+ For the first research strand, looking at retrospective happiness, data
+ collection methods are described in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:survey-methods"
+
+\end_inset
+
+, the methods of analysis are outlined in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:analysis-methods"
+
+\end_inset
+
+, and the results are presented in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:survey-results"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+For the second strand, investigating momentary happiness, data collection
+ methods are described in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:esm-research-methods"
+
+\end_inset
+
+, the methods of analysis are again outlined in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:analysis-methods"
+
+\end_inset
+
+, and the results are presented in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:esm-results"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Discussion-and-conclusions"
+
+\end_inset
+
+ discusses and concludes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch bib-when-not-master
+status open
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "../all"
+options "apalike2url"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

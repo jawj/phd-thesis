@@ -130,10 +130,6 @@ key "mackerron:2010"
 .
 \end_layout
 
-\begin_layout Section
-Introduction
-\end_layout
-
 \begin_layout Standard
 What is 
 \begin_inset Quotes eld
@@ -189,6 +185,47 @@ Brave New World
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename econlit graph v2.pdf
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:econlit-citations"
+
+\end_inset
+
+Number of EconLit journal articles with titles including the terms 'happiness',
+ 'wellbeing', 'well-being' or 'life satisfaction', by year.
+ The series plotted with filled circles excludes articles from the Journal
+ of Happiness Studies.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 This combination of characteristics has assured happiness economics sustained
  media coverage, certainly out of proportion to the volume of economic research
  it represents.
@@ -383,51 +420,6 @@ reference "sec:Conclusions"
 \end_inset
 
  concludes.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename econlit graph v2.pdf
-	lyxscale 50
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:econlit-citations"
-
-\end_inset
-
-Number of EconLit journal articles with titles including the terms 'happiness',
- 'wellbeing', 'well-being' or 'life satisfaction', by year.
- The series plotted with filled circles excludes articles from the Journal
- of Happiness Studies.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
