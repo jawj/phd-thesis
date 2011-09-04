@@ -101,7 +101,7 @@
 \begin_body
 
 \begin_layout Chapter
-Results: retrospective happiness and the usual environment
+Retrospective happiness and the usual environment
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:survey-results"
@@ -121,9 +121,10 @@ reference "sec:survey-methods"
 
 \end_inset
 
-.
+, in order to investigate relationships between individuals' retrospective
+ SWB evaluations and levels of EQ around their home and workplaces.
  As outlined in earlier chapters, this work incorporates substantial methodologi
-cal improvements on previous research in this area.
+cal improvements over previous research in this area.
  In spite of this, however, our findings are somewhat mixed.
 \end_layout
 
@@ -135,7 +136,7 @@ reference "sec:survey-results-Descriptives"
 
 \end_inset
 
- describes the data, including the demographic characteristics of respondents,
+ describes our data, including the demographic characteristics of respondents,
  their SWB responses, and the spatial and non-spatial variables we will
  use to predict these.
  Section 
@@ -147,7 +148,8 @@ reference "sec:survey-results-analysis"
 
  reports on the regression analyses we run to investigate the effects of
  a variety of EQ parameters, around individuals' homes and workplaces, on
- a number of different indicators of SWB, and in 
+ a number of different indicators of SWB.
+ In 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:survey-results-Discussion"
@@ -158,7 +160,7 @@ reference "sec:survey-results-Discussion"
 \end_layout
 
 \begin_layout Section
-Descriptives
+Descriptive results
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:survey-results-Descriptives"
@@ -39187,6 +39189,18 @@ name "sec:survey-results-Discussion"
 
 \end_layout
 
+\begin_layout Standard
+This chapter has presented results from a more detailed and comprehensive
+ investigation of links between SWB and EQ than has previously been attempted.
+ We include a wide range of EQ characteristics, including some not previously
+ considered; we use spatial and location data at very high resolution, and
+ advanced GIS-based measures, to produce highly accurate EQ indicator variables;
+ we investigate the use of alternative SWB measures; and in each case we
+ do so at two different scales, to make best use of the available spatial
+ data.
+ 
+\end_layout
+
 \begin_layout Subsection
 Environment and life satisfaction in the UK
 \end_layout
@@ -39411,9 +39425,9 @@ key "praag:2005"
 \end_inset
 
 .
- For all three of our sources of noise data --- road, rail and air --- the
- vast majority of our respondents are classified in the lowest category,
- giving us little power to detect significant effects
+ However, for all three of our sources of noise data --- road, rail and
+ air --- the vast majority of our respondents are classified in the lowest
+ category, giving us little power to detect significant effects
 \begin_inset Foot
 status collapsed
 
@@ -39467,7 +39481,7 @@ key "mackerron:2008"
 \end_layout
 
 \begin_layout Subsubsection
-Possible explanations
+Lack of significant findings
 \end_layout
 
 \begin_layout Standard
@@ -39738,7 +39752,7 @@ No
 association Finally, we should consider the possibility that our London
  results tell us simply that LS is not significantly related to EQ.
  LS is a broad, temporally non-specific, primarily cognitive indicator.
- It presumably reflects an individual's evaluation of his or her past, present
+ It presumably reflects an individual's evaluation of his or her past, present,
  and possible futures, in relation to his or her hopes and expectations.
  Perhaps we should not expect such a quantity to be significantly related
  to EQ characteristics.
@@ -39871,21 +39885,10 @@ Conclusions
 \end_layout
 
 \begin_layout Standard
-This chapter has presented results from a more detailed and comprehensive
- investigation of links between SWB and EQ than has previously been attempted.
- We include a wide range of EQ characteristics, including some not previously
- considered; we use spatial and location data at very high resolution, and
- advanced GIS-based measures, to produce highly accurate EQ indicator variables;
- we investigate the use of alternative SWB measures; and in each case we
- do so at two different scales, to make best use of the available spatial
- data.
- 
-\end_layout
-
-\begin_layout Standard
-Despite these improved methods our findings are, at best, mixed.
+Despite a number of methodological advances relative to previous research,
+ our findings in this chapter are, at best, mixed.
  We find some positive SWB effects of green and blue space UK-wide, but
- these are not enormously robust.
+ these are not hugely robust.
  Meanwhile, in London we simply find no evidence of links between EQ and
  SWB.
 \end_layout
@@ -39904,8 +39907,9 @@ riant effects such as personality.
 \end_layout
 
 \begin_layout Standard
-The novel spatial experience sampling approach taken in the following chapter
- ameliorates or eliminates many of these limitations.
+The following chapter reports results from our research using a novel spatial
+ experience sampling approach, which ameliorates or eliminates many of these
+ limitations.
 \end_layout
 
 \end_body

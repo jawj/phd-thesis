@@ -106,7 +106,7 @@
 \begin_body
 
 \begin_layout Chapter
-Research methods: surveys
+Survey methods
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:survey-methods"
@@ -3924,7 +3924,7 @@ Given the importance of location to our study, postcodes that could not
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset CommandInset bibtex

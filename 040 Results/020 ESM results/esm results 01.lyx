@@ -46,7 +46,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize 11
-\spacing other 1.1499999999999999
+\spacing onehalf
 \use_hyperref true
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
@@ -111,7 +111,7 @@
 \begin_body
 
 \begin_layout Chapter
-Results: momentary happiness and the immediate environment
+Momentary happiness and the immediate environment
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:esm-results"
@@ -122,12 +122,91 @@ name "chap:esm-results"
 \end_layout
 
 \begin_layout Standard
-[TODO: brief intro -- recap what this is about, motivation, etc.]
+This chapter describes and analyses the data collected using the spatial
+ experience sampling methodology detailed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:esm-research-methods"
+
+\end_inset
+
+, and augmented with objective spatial data using GIS.
+ We use this data to test the hypothesis that individuals' momentary feelings
+ of happiness are positively related to EQ levels at the immediate locations
+ in they are experienced.
+ As indicators of EQ, we focus on land cover characteristics, while controlling
+ for daylight and weather conditions.
+ We control also for a large set of indicators of activity, companionship,
+ and additional context.
+\end_layout
+
+\begin_layout Standard
+Our findings provide a new line of evidence on relationships between SWB
+ and EQ.
+ They also, however, address a subtly different hypothesis than that addressed
+ by previous work --- including that reported in the previous chapter ---
+ which has generally set out to examine the supposition that individuals'
+ general, retrospective SWB evaluations will be linked to EQ levels in the
+ vicinity of their homes.
+ Both hypotheses are interesting and, since momentary and retrospective
+ SWB evaluations are related, it seems likely that the evidence for each
+ may point a similar way.
+ 
+\end_layout
+
+\begin_layout Standard
+Our data addressing momentary happiness and environment, we are able to
+ 
+\end_layout
+
+\begin_layout Standard
+ask the same people the same subjective questions many times, we need not
+ assume comparability of different individuals' use of the response scales,
+ and all individual characteristics that are invariant over the study period
+ can be controlled through the use of fixed effects.
+ Because we observe each individual in multiple locations, we break some
+ of the potential associations between people and locations that may confound
+ cross-sectional research.
+ Because we can precisely and objectively locate individuals at the moment
+ of each response, the EQ indicators that we calculate should much more
+ closely reflect actual exposures to EQ.
+ And because we collect an extremely large sample, it is likely that we
+ will have the power to detect even very small EQ effects.
+\end_layout
+
+\begin_layout Standard
+Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:survey-results-Descriptives"
+
+\end_inset
+
+ characterises the data set.
+ Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:survey-results-analysis"
+
+\end_inset
+
+ reports on the regression analyses we run to investigate the effects of
+ a variety of EQ parameters, around individuals' homes and workplaces, on
+ a number of different indicators of SWB.
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:survey-results-Discussion"
+
+\end_inset
+
+ discusses our findings.
 \end_layout
 
 \begin_layout Standard
 A snapshot of the data collected in the ESM study was taken on 14 February
- 2011, and the analyses reported here are based on that snapshot.
+ 2011, and the descriptions and analyses reported here are all based on
+ that snapshot.
 \end_layout
 
 \begin_layout Section
@@ -845,6 +924,13 @@ reference "fig:weather-delay"
 
 \begin_layout Subsection
 Robustness
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:esm-resp-validity-robustness"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -854,7 +940,7 @@ We test the robustness of our findings to more stringent choices on response
 \end_layout
 
 \begin_layout Section
-Descriptives
+Descriptive results
 \end_layout
 
 \begin_layout Subsection
@@ -13362,7 +13448,7 @@ Device
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -17945,7 +18031,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch Massive_results_table
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset Newpage newpage
@@ -26443,7 +26529,7 @@ Participants are least happy when sick in bed, with a negative coefficient
 \end_layout
 
 \begin_layout Subsubsection
-Company
+Companionship
 \end_layout
 
 \begin_layout Standard
@@ -26622,8 +26708,8 @@ Robustness checks
 \end_layout
 
 \begin_layout Standard
-We have performed a number of robustness checks on these results.
- 
+We performed a number of robustness checks on these findings regarding the
+ positive effects of EQ.
 \end_layout
 
 \begin_layout Subsubsection
@@ -26839,7 +26925,7 @@ National Nature Reserve
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.002
+0.0020
 \end_layout
 
 \end_inset
@@ -26879,7 +26965,7 @@ National Park
 \begin_inset Text
 
 \begin_layout Plain Layout
-< 0.001
+< 0.0001
 \end_layout
 
 \end_inset
@@ -26919,7 +27005,7 @@ Area of Outstanding Natural Beauty
 \begin_inset Text
 
 \begin_layout Plain Layout
-< 0.001
+< 0.0001
 \end_layout
 
 \end_inset
@@ -27246,33 +27332,1257 @@ reference "tab:Landscape-designation-model"
 \end_layout
 
 \begin_layout Subsubsection
+Holidays
+\end_layout
+
+\begin_layout Standard
+Although we include a wide range of control variables in our ESM happiness
+ model, one factor we do not collect data on is whether participants are
+ on holiday
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In future work, we may add an item regarding holidays to the ESM survey
+ (alongside other states, such as being drunk, hungover, hungry, or unwell)
+ and/or investigate the use of heuristics, including distance from home
+ and time since a 'working, studying' response, for identifying probable
+ holiday responses.
+\end_layout
+
+\end_inset
+
+.
+ Because participants may be more likely to visit remote high-EQ environments
+ when on holiday, it is possible that the positive happiness effects we
+ identify for natural environments could be partly due to such an effect.
+ To address this issue we re-estimate the model using only responses received
+ on weekends and Bank Holidays, when the great majority of respondents are
+ 'on holiday' to the extent that they are free to engage in leisure activities.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Landscape designation model --- weekend and Bank Holiday responses only
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:weekends-only-esm"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="17" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="50text%">
+<column alignment="right" valignment="top" width="0pt">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Variable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Coeff.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Std.
+ err.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Pr(coeff.
+ = 0)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Land cover type when participant is outdoors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Continuous urban (base category)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Marine and coastal margins
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+4.33
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+(0.87)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+< 0.0001
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Mountains, moors and heathland
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+1.76
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+(0.96)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0.0671
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Woodland
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0.98
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+(1.22)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0.4197
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Semi-natural grasslands
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1.22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+(0.45)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0.0067
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Enclosed farmland
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1.65
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+(0.32)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+< 0.0001
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Freshwater, wetlands and flood plains
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1.60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+(0.46)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0.0005
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Suburban/rural developed
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0.95
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+(0.75)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0.2053
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Inland bare ground
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0.53
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+(0.27)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0.0451
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+All other variables from main land cover model, except weekend time-of-day
+ dummies
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Observations
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+316059
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Groups (participants)
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19561
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+R² (within groups)
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.3%
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size footnotesize
+Dependent variable: happiness self-report, scaled 0 -- 100.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Standard errors are clustered at participant level.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Significant coefficients (
+\begin_inset Formula $p<0.05$
+\end_inset
+
+) are marked in 
+\series bold
+boldface
+\series default
+.
+\end_layout
+
+\end_inset
+
+Abbreviated estimates from this model are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:weekends-only-esm"
+
+\end_inset
+
+.
+ All LCM type coefficients remain positive in this model.
+ Coefficients on all types except inland bare ground are reduced somewhat
+ in magnitude, however, and those on the mountains, moors and heathlands,
+ woodland, and suburban/rural developed types are no longer significantly
+ different from zero at the 5% level (though this loss of significance may
+ be simply due to the reduction of the sample size by two-thirds).
+\end_layout
+
+\begin_layout Standard
+This is by no means a perfect test, but the results would appear to indicate
+ that, while the omission of a 'holiday' variable might account for some
+ element of the positive EQ results obtained, natural (green and blue space)
+ land cover types retain substantial positive links with happiness in their
+ own right.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Validity criteria
+\end_layout
+
+\begin_layout Standard
+As noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:esm-resp-validity-robustness"
+
+\end_inset
+
+ we tested the effect of imposing more stringent response validity criteria,
+ requiring responses to be made within 20 minutes of a signal instead of
+ 60 minutes, and reported accuracy to be 100m or better instead of 250m
+ or better.
+ 
+\end_layout
+
+\begin_layout Standard
+These criteria reduce the sample size to 652,736 responses and 20,648 participan
+ts.
+ The sign and significance of all LCM habitat variable coefficients is unchanged
+ in this regression relative to that reported in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:lcm-model"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+NOT broken
+\end_layout
+
+\end_inset
+
+, and no coefficient varies by more than 0.5 between the two.
+\end_layout
+
+\begin_layout Subsubsection
 Happiness spikes
 \end_layout
 
 \begin_layout Standard
-We re-ran the original model excluding responses with happiness ratings
- at either extreme of the scale (10,582 at zero and 80,994 at 100), eliminating
- the spikes seen in 
+To test the extent to which our findings are driven by the relatively large
+ numbers of extremely high and low responses --- the spikes seen in the
+ histogram in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Distributions-of-feelings"
 
 \end_inset
 
-.
- In this specification all natural land cover coefficients are somewhat
- reduced in magnitude, but only the coefficient on the freshwater environment
- drops below significance.
- We also investigated the spikes alone, using logit models (with the same
- explanatory variables) to predict extreme happy and unhappy answers.
+ --- we re-ran our original model excluding responses with happiness ratings
+ at either extreme of the scale (10,582 at zero and 80,994 at 100).
+\end_layout
+
+\begin_layout Standard
+In this specification all natural land cover coefficients are somewhat reduced
+ in magnitude, as might be expected, but only the coefficient on the freshwater
+ environment drops below significance.
+\end_layout
+
+\begin_layout Standard
+We also investigated the spikes alone, using logit models (with the same
+ explanatory variables) to predict extreme happy and extreme unhappy answers.
  All land cover types except freshwater and mountains are positively predictive
  of extreme happy answers
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-And these two land cover types are also positively predictive of extreme
- happy answers at the less stringent threshold of 
+These two land cover types are positively predictive of extreme happy answers
+ at the less stringent threshold of 
 \begin_inset Formula $p<0.1$
 \end_inset
 
@@ -27282,29 +28592,6 @@ And these two land cover types are also positively predictive of extreme
 \end_inset
 
 , while none significantly predicts extreme unhappy ones.
-\end_layout
-
-\begin_layout Subsubsection
-Inclusion criteria
-\end_layout
-
-\begin_layout Standard
-Third, we tested the effect of imposing more stringent response inclusion
- criteria, requiring responses to be made within 20 minutes of a signal
- instead of 60 and reported accuracy to be 100m or better instead of 250m
- or better.
- This reduces the sample size to 652,736 responses and 20,648 participants.
- The sign and significance of all LCM habitat variable coefficients is unchanged
- in this regression relative to the one reported above, and no coefficient
- varies by more than 0.5 between the two regressions.
-\end_layout
-
-\begin_layout Subsubsection
-Weekends
-\end_layout
-
-\begin_layout Standard
-[TODO]
 \end_layout
 
 \begin_layout Subsubsection
@@ -27323,7 +28610,11 @@ key "leamer:1978"
 , and our sample size is very large.
  In addition, in interpreting our coefficients of interest, we are making
  multiple comparisons.
- We can account for the first issue by using the natural log of the sample
+ 
+\end_layout
+
+\begin_layout Standard
+We can account for the first issue by using the natural log of the sample
  size as a higher-than-usual critical 
 \begin_inset Formula $F$
 \end_inset
@@ -27349,13 +28640,17 @@ key "abdi:2007"
 \end_inset
 
 .
- Coefficients on all green or natural land cover types except two --- again,
+ 
+\end_layout
+
+\begin_layout Standard
+Coefficients on all green or natural land cover types except two --- again,
  freshwater and mountainous environments --- retain significance even using
  the substantially more stringent thresholds calculated using these procedures.
 \end_layout
 
 \begin_layout Section
-Interpretation
+Discussion
 \end_layout
 
 \begin_layout Standard
@@ -27439,8 +28734,8 @@ comparison with previous studies? none similar! but previous ESM?
 In future research we also hope to: relax the assumption of independent
  effects we have made in relation to most of our explanatory variables,
  and investigate the huge variety of possible interactions; estimate more
- complex econometric models accounting for spatial and/or serial correlation;
- use heuristics, and/or add new ESM assessment questions, to identify not
+ complex econometric models accounting for spatial and/or serial autocorrelation
+; use heuristics, and/or add new ESM assessment questions, to identify not
  only activities but also 
 \emph on
 states
