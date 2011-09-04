@@ -19,11 +19,12 @@ xtreg feel_hpy_100
 if valid  
   // & loc_h_acc <= 100 & response_lag < 20 * 60
   // & ! min_hpy & ! max_hpy
+  // & weekend
   
 , fe vce(robust);
 #delimit cr
 
-outreg2 using "S:\XYZ.rtf", stats(coef se pval) sideway label alpha(0.001, 0.01, 0.05) symbol(***, **, *) auto(2) pdec(4) pfmt(f) word
+outreg2 using "S:\weekendsonly.xls", stats(coef se pval) sideway label alpha(0.001, 0.01, 0.05) symbol(***, **, *) auto(2) pdec(4) pfmt(f) word
 
 
 #delimit ;

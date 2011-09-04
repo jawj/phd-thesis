@@ -17945,7 +17945,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch Massive_results_table
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset Newpage newpage
@@ -26101,7 +26101,7 @@ Observations
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -26163,7 +26163,7 @@ Groups (participants)
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -26225,7 +26225,7 @@ R² (within groups)
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -26405,8 +26405,7 @@ Control variables
 
 \begin_layout Standard
 Coefficients on control variables demonstrate relationships with reported
- happiness that are intuitive and in line with previous SWB research (where
- such research exists).
+ happiness that are in all cases highly intuitive.
 \end_layout
 
 \begin_layout Standard
@@ -26548,28 +26547,74 @@ Location and environment
 \end_layout
 
 \begin_layout Standard
-Participants are happier at home than at work, and happier still elsewhere.
- Participants are happier outdoors than indoors or in a vehicle.
- When outdoors, greater happiness is associated with higher temperatures
- and lower wind speeds, with sunshine, and with the absence of rain and
- fog.
+Participants are happier at home than at work, and happier still when in
+ neither location.
+ Happiness levels when indoors or in a vehicle are not significantly different,
+ but participants are happier than in either when they are outdoors.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Weather
+\end_layout
+
+\begin_layout Standard
+Weather parameters --- considered only when participants are outdoors ---
+ have significant effects on predicted happiness.
  
 \end_layout
 
 \begin_layout Standard
+Participants are happier when temperatures are higher.
+ In particular, a large jump in happiness levels is associated with the
+ highest temperature category, 24ºC and above.
+ This effect is of a similar magnitude to those of the happiest activities.
+\end_layout
+
+\begin_layout Standard
+Slightly greater happiness is also associated with sunshine.
+ By contrast, high wind speeds, rain and fog are all linked to lower happiness
+ levels.
+ Coefficients on daylight and snow are not significant.
+\end_layout
+
+\begin_layout Subsubsection
+Land cover
+\end_layout
+
+\begin_layout Standard
+We now turn to the regression results bearing directly on our research hypothesi
+s.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
 When outdoors, every habitat type except inland bare ground is associated
  with significantly higher happiness levels than continuous urban.
- Coastal locations are by some distance the happiest, with responses approximate
-ly 6 points higher than continuous urban environments on the 0 -- 100 scale.
+\end_layout
+
+\begin_layout Standard
+Coastal locations are by some distance the happiest, with responses approximatel
+y 6 points higher than continuous urban environments on the 0 -- 100 scale.
  Alternatively expressed, this is a difference of 0.28 standard deviations,
  or one of similar magnitude to, for instance, the difference between attending
  an exhibition and doing housework.
 \end_layout
 
 \begin_layout Standard
-All other green or natural environment types are between 2.7 and 1.8 points
- happier than continuous urban environments, while suburban and developed
- rural environments are a little under 1 point happier.
+All other green or natural environment types --- mountains, moors, heathlands,
+ woodlands, grasslands, farmland, freshwater, wetlands and flood plains
+ --- are between 2.7 and 1.8 points happier than continuous urban environments.
+ Suburban or rural developed environments are a little under 1 point happier.
+\end_layout
+
+\begin_layout Standard
+Accounting for the fact that participants are in any case happier outdoors
+ than indoors, an additional 2.3 points may be added to each land cover coefficie
+nt if we wish to compare happiness levels outdoors in these higher-EQ environmen
+ts with levels indoors in cities.
 \end_layout
 
 \begin_layout Subsection
@@ -26577,71 +26622,637 @@ Robustness checks
 \end_layout
 
 \begin_layout Standard
-We have performed a number of robustness checks on our results.
- First, as an alternative approach to identifying high-quality natural environme
-nts, we re-ran the model replacing the LCM habitat variables with the three
- (in some cases overlapping) indicators of UK landscape designations discussed
- in 
+We have performed a number of robustness checks on these results.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Landscape designations
+\end_layout
+
+\begin_layout Standard
+As an alternative approach to identifying high-EQ locations, we re-ran the
+ model replacing the LCM habitat variables with the three (in some cases
+ overlapping) indicators of UK landscape designations discussed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Countryside-designations"
 
 \end_inset
 
-.
- All three designations were positively and significantly related to happiness
- ratings (AONB coeff.
- 
-\begin_inset Formula $2.39$
-\end_inset
-
-, std.
- err.
- 
-\begin_inset Formula $0.55$
-\end_inset
-
-, 
-\begin_inset Formula $p<0.001$
-\end_inset
-
-; NP coeff.
- 
-\begin_inset Formula $4.59$
-\end_inset
-
-, std.
- err.
- 
-\begin_inset Formula $0.58$
-\end_inset
-
-, 
-\begin_inset Formula $p<0.001$
-\end_inset
-
-; NNR coeff.
- 
-\begin_inset Formula $5.00$
-\end_inset
-
-, std.
- err.
- 
-\begin_inset Formula $1.62$
-\end_inset
-
-, 
-\begin_inset Formula $p=0.002$
-\end_inset
-
-).
+: National Nature Reserves, National Parks, and Areas of Outstanding Natural
+ Beauty.
 \end_layout
 
 \begin_layout Standard
-Second, we re-ran the original model excluding responses with happiness
- ratings at either extreme of the scale (10,582 at zero and 80,994 at 100),
- eliminating the spikes seen in 
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Landscape designation model
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Landscape-designation-model"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="50text%">
+<column alignment="right" valignment="top" width="0pt">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Variable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Coeff.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Std.
+ err.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Pr(coeff.
+ = 0)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Landscape designation when participant is outdoors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+National Nature Reserve
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+5.00
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(1.62)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.002
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+National Park
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+4.59
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.58)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+< 0.001
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Area of Outstanding Natural Beauty
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2.39
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.55)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+< 0.001
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+All other variables except land cover from land cover model
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Observations
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1138481
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Groups (participants)
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21947
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+R² (within groups)
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.5%
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size footnotesize
+Dependent variable: happiness self-report, scaled 0 -- 100.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Standard errors are clustered at participant level.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Significant coefficients (
+\begin_inset Formula $p<0.05$
+\end_inset
+
+) are marked in 
+\series bold
+boldface
+\series default
+.
+\end_layout
+
+\end_inset
+
+Abbreviated model estimates are presented in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Landscape-designation-model"
+
+\end_inset
+
+.
+ All three designations are positively, significantly and substantially
+ associated with happiness ratings.
+ The effects of National Nature Reserves and National Parks are higher than
+ those estimated for any land cover type but marine and coastal margins.
+\end_layout
+
+\begin_layout Subsubsection
+Happiness spikes
+\end_layout
+
+\begin_layout Standard
+We re-ran the original model excluding responses with happiness ratings
+ at either extreme of the scale (10,582 at zero and 80,994 at 100), eliminating
+ the spikes seen in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Distributions-of-feelings"
@@ -26673,6 +27284,10 @@ And these two land cover types are also positively predictive of extreme
 , while none significantly predicts extreme unhappy ones.
 \end_layout
 
+\begin_layout Subsubsection
+Inclusion criteria
+\end_layout
+
 \begin_layout Standard
 Third, we tested the effect of imposing more stringent response inclusion
  criteria, requiring responses to be made within 20 minutes of a signal
@@ -26682,6 +27297,18 @@ Third, we tested the effect of imposing more stringent response inclusion
  The sign and significance of all LCM habitat variable coefficients is unchanged
  in this regression relative to the one reported above, and no coefficient
  varies by more than 0.5 between the two regressions.
+\end_layout
+
+\begin_layout Subsubsection
+Weekends
+\end_layout
+
+\begin_layout Standard
+[TODO]
+\end_layout
+
+\begin_layout Subsubsection
+Hypothesis testing
 \end_layout
 
 \begin_layout Standard
@@ -26753,6 +27380,11 @@ The relationships we estimate between happiness and environment are highly
  variation.
  And we have controlled for a reasonably comprehensive set of potential
  confounders at the response level.
+\end_layout
+
+\begin_layout Standard
+Robustness results...
+ AONBs, spikes, criteria, testing
 \end_layout
 
 \begin_layout Standard
