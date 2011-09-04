@@ -17945,7 +17945,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch Massive_results_table
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset Newpage newpage
@@ -26405,90 +26405,137 @@ Control variables
 
 \begin_layout Standard
 Coefficients on control variables demonstrate relationships with reported
- happiness that are intuitive and (where applicable) in line with previous
- SWB research.
-\begin_inset Foot
-status collapsed
+ happiness that are intuitive and in line with previous SWB research (where
+ such research exists).
+\end_layout
 
-\begin_layout Plain Layout
-All effects are, of course, controlled for all others, which means results
- are somewhat different than when considering each factor in isolation.
+\begin_layout Standard
+All effects are, of course, controlled for all others, so results are somewhat
+ different than when considering each factor in isolation.
  For example, simple mean happiness on weekdays keeps rising to an evening
  peak, whereas in the model --- after controlling for activity, companionship,
  and other factors --- the happiest period is mid-afternoon.
 \end_layout
 
-\end_inset
-
-
+\begin_layout Subsubsection
+Activity
 \end_layout
 
 \begin_layout Standard
 Participants' happiest activity, by a large margin, is intimacy or lovemaking.
- Physical exercise and cultural and social activities also score highly,
- as do various activities that may be common in natural environments, including
- gardening, fishing and birdwatching.
- Participants are least happy when sick in bed (with a negative coefficient
- more than four times the size of the next greatest).
+ Physical exercise, cultural activities (theatre, dance, concert, exhibition,
+ museum, library) and creative and performative activities (singing, performing,
+ hobbies, arts, crafts) also score very highly
+\end_layout
+
+\begin_layout Standard
+Participants are notably happy when engaged in various activities that may
+ be common in natural environments, including gardening, hunting, fishing,
+ hiking and birdwatching.
+ 
+\end_layout
+
+\begin_layout Standard
+Participants are least happy when sick in bed, with a negative coefficient
+ more than four times the size of the next greatest.
  Queuing, care-giving, and travelling are also associated with significantly
- reduced happiness, as is the commonest activity in the data set, working
+ reduced happiness, as is the commonest activity in the data set: working
  or studying.
+\end_layout
+
+\begin_layout Subsubsection
+Company
 \end_layout
 
 \begin_layout Standard
 The company of a partner or friend is strongly associated with greater happiness.
- Responses in the presence of other family members are slightly happier,
- while those with colleagues and other acquaintances are slightly less happy,
+ Responses in the presence of other family members are slightly happier
  than those when the participant is alone.
+ 
+\end_layout
+
+\begin_layout Standard
+Conversely, responses in the company of colleagues and other acquaintances
+ are slightly less happy.
+ Happiness when with children, clients or customers is not significantly
+ different from happiness when alone.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Time
 \end_layout
 
 \begin_layout Standard
 All else being equal, participants are significantly less happy during weekday
  early mornings (3am -- 9am) and the very early hours of weekend days (3am
- -- 6am) than at other times.
- And they are happier at any time of day during the weekend than at the
- corresponding time during the week
+ -- 6am) than at any other time.
+ Since we include only signalled responses, participants who respond during
+ these hours presumably expected to be awake.
+ Such responses therefore appear more likely to be associated with shift
+ working, for example, than with being woken by a child.
+\end_layout
+
+\begin_layout Standard
+In addition, participants are happier at any time of day during the weekend
+ than at the corresponding time during the week.
+ 
+\begin_inset Formula $F$
+\end_inset
+
+ tests show this weekday/weekend difference to be significant at the 5%
+ level for all periods except 3am -- 6am.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Sequence
+\end_layout
+
+\begin_layout Standard
+Reported happiness on average increases substantially during the course
+ of an individual's participation.
+ There could be a number of explanations for this.
+ 
+\end_layout
+
+\begin_layout Standard
+Although the aim of the study is to observe natural levels of wellbeing,
+ and not to influence those levels, regular prompts to report on wellbeing
+ might well have some wellbeing effects.
+ For example, it may be that taking part in the study leads to increased
+ reflection on states of mind and awareness of the factors that affect them,
+ enabling participants to act to improve their mood.
+ We have received correspondence from participants providing anecdotal support
+ for this explanation.
+\end_layout
+
+\begin_layout Standard
+It may also be that participants initially respond to signals assiduously,
+ irrespective of mood, but in later stages are more inclined to respond
+ when feeling good
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-\begin_inset Formula $F$
-\end_inset
-
- tests show this weekday/weekend difference to be significant (
-\begin_inset Formula $p>0.05$
-\end_inset
-
-) for all periods except 3am -- 6am
+Unfortunately, the design of the 
+\emph on
+Mappiness
+\emph default
+ database schema makes this hypothesis particularly difficult to test.
+ 
 \end_layout
 
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-Finally, reported happiness on average increases substantially during the
- course of an individual's participation.
- There may be several explanations for this.
- For example, it could be that taking part in the study leads to increased
- awareness of states of mind and of the factors that affect them, enabling
- participants to act to improve their mood.
- It could also be that participants initially respond to signals assiduously,
- irrespective of mood, but in later stages are more inclined to respond
- when feeling good.
- (We have received correspondence from participants providing anecdotal
- support for both of these explanations).
-\end_layout
-
-\begin_layout Standard
+ We have received correspondence from participants supporting this explanation
+ too.
 \begin_inset Note Note
 status collapsed
 
 \begin_layout Plain Layout
 TODO Really ought to check if response rates do fall off...
- but particularly fiddly
 \end_layout
 
 \end_inset

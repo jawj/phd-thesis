@@ -383,7 +383,7 @@ LatexCommand tableofcontents
 
 \end_layout
 
-\begin_layout Part*
+\begin_layout Chapter*
 List of Abbreviations
 \end_layout
 
