@@ -24,7 +24,7 @@ if valid
 , fe vce(robust);
 #delimit cr
 
-outreg2 using "S:\weekendsonly.xls", stats(coef se pval) sideway label alpha(0.001, 0.01, 0.05) symbol(***, **, *) auto(2) pdec(4) pfmt(f) word
+outreg2 using "S:\spikeless.xls", stats(coef se pval) sideway label alpha(0.001, 0.01, 0.05) symbol(***, **, *) auto(2) pdec(4) pfmt(f) word
 
 
 #delimit ;
