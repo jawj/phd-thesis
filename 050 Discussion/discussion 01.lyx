@@ -106,7 +106,7 @@
 \begin_body
 
 \begin_layout Chapter
-Discussion and conclusions
+Synthesis and conclusions
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Discussion-and-conclusions"
@@ -116,35 +116,307 @@ name "chap:Discussion-and-conclusions"
 
 \end_layout
 
-\begin_layout Section
-Comparisons
+\begin_layout Standard
+Happiness economics -- growing interest.
+ Especially for environmental economists.
+ Way to quantify EQ impacts.
 \end_layout
 
 \begin_layout Standard
-what do we learn from X-sectional vs.
- real-time and hedonic approaches?
+Reasons to think EQ may affect happiness.
+ Previous economics research.
+ Limitations/crudeness.
 \end_layout
 
 \begin_layout Standard
-difficulties of cross-sectional home location data --- untangling a mass
- of spatial correlates amongst noise of individual-level unobservables such
- as personality, life events, wealth
-\end_layout
-
-\begin_layout Section
-Contribution
+Incremental approach: range and resolution of data and measurements on EQ
+ and SWB.
+ Two new surveys.
+ Advanced GIS.
+ Happiness models.
+ Some results -- some lack of results.
+ UK: green and blue space effects.
+ Possible differences in different mood measures.
+ London + workplaces: difficulties of cross-sectional location data ---
+ untangling a mass of spatial correlates amongst noise of individual-level
+ unobservables such as personality, life events, wealth; habituation; sorting,
+ etc.
 \end_layout
 
 \begin_layout Standard
-Contributions to knowledge
+Radical approach: a new question: immediate relations.
+ New methods: crowd-sourced spatial experience sampling.
+ Powerful panel data (repeat reasons from intro).
+ Main limitation is demography.
+ But going to get better as more people have the technology (especially
+ if can support lower-end devices, esp.
+ Android).
+ Strong, intuitive, convincing results.
+ All natural land cover types better than cities.
+ Challenge to urban design?
+\end_layout
+
+\begin_layout Standard
+Two methods addressing different but related questions.
+ Both questions important: want good experiences in the moment, but live
+ mainly with our memories and interpretations of those experiences (Kahneman
+ thought expt.).
+ Reasons to expect compatible answers: both sides of the equation relate.
+ More access to local EQ => more use and exposure (and desire to use and
+ be exposed => live nearby).
+ Similarly, a sequence of happy moments => happy recollections.
+\end_layout
+
+\begin_layout Standard
+In principle, results may be pointing the same way.
+ Nearby results a bit limited, not too robust.
+ Momentary results more robust and have more scope for future refinement.
 \end_layout
 
 \begin_layout Section
-Conclusions
+Causality
+\end_layout
+
+\begin_layout Paragraph
+Omitted variables (endogeneity)
+\end_layout
+
+\begin_layout Standard
+still possible in both methods (different levels).
+ Especially for surveys.
+\end_layout
+
+\begin_layout Paragraph
+Reverse causality
+\end_layout
+
+\begin_layout Standard
+Surveys: Less direct.
+ Happy people earn more and buy houses in nicer EQ areas.
+\end_layout
+
+\begin_layout Standard
+ESM: Causal pathways may run in both directions, such that people choose
+ an environment partly according to their mood, and people's moods are partly
+ determined by their environment.
+ But seems highly plausible that the latter pathway makes an important contribut
+ion to the relationship.
+\end_layout
+
+\begin_layout Standard
+need to find external sources of variation (like Luechinger); for ESM, potential
+ly helpful if can address the sequence of events (unhappy -> park -> happy).
 \end_layout
 
 \begin_layout Section
-Future research
+Original contribution
+\end_layout
+
+\begin_layout Subsection
+Research methods
+\end_layout
+
+\begin_layout Standard
+Web surveys: incremental methodological advances x 7 or so.
+ Problems with old, crude methodologies.
+ Future work should build on this, especially as new and more accurate data
+ sets become available.
+ 
+\end_layout
+
+\begin_layout Standard
+S-ESM.
+ New and terribly promising.
+ Implemented a system and shown it works.
+ Many ways to expand.
+ Using our data and new data.
+\end_layout
+
+\begin_layout Subsection
+Happiness and environmental quality
+\end_layout
+
+\begin_layout Standard
+Some new evidence at national level that green and blue spaces near home
+ are linked to greater happiness in retrospective reports.
+ Some values, but not useful because not plausible.
+\end_layout
+
+\begin_layout Standard
+Much stronger evidence on the related point that green and blue 
+\end_layout
+
+\begin_layout Section
+Future directions
+\end_layout
+
+\begin_layout Subsection
+Retrospective happiness and the usual environment
+\end_layout
+
+\begin_layout Standard
+More work definitely needed on the SWB valuation approach to date: some
+ scepticism regarding claims that the next study will solve the high values
+ problem.
+ 
+\end_layout
+
+\begin_layout Subsection
+Momentary happiness and the immediate environment
+\end_layout
+
+\begin_layout Standard
+In our view there is enormous potential for this data, and methodology more
+ generally, to provide further insights in this area.
+ In future research we also hope to: 
+\end_layout
+
+\begin_layout Subsubsection
+Data
+\end_layout
+
+\begin_layout Standard
+improve collection techniques -- e.g.
+ not require data connection, track location more frequently, provide reminder
+ beeps, 
+\end_layout
+
+\begin_layout Standard
+support additional platforms for better demographics (demand for Android)
+\end_layout
+
+\begin_layout Standard
+add new ESM assessment questions and/or use heuristics to identify not only
+ activities but also 
+\emph on
+states
+\emph default
+ --- such as being unwell, on holiday, drunk, or hung over; 
+\end_layout
+
+\begin_layout Standard
+appreciate length of participation: provide means to update slowly-varying
+ things (employment, relationships, income, etc.)
+\end_layout
+
+\begin_layout Standard
+consider additional EQ data, e.g.
+ in London, UCL Nowcast air pollution map (varies in space AND time) --
+ plus our photos (man/machine-coded) and noise measures (improve noise measures
+ to distinguish traffic from music!); 
+\end_layout
+
+\begin_layout Standard
+compare retrospective data too -- i.e.
+ causes of individual's retrospective vs momentary happiness, and relations
+ between the two.
+\end_layout
+
+\begin_layout Subsubsection
+Analysis
+\end_layout
+
+\begin_layout Standard
+population sub-groups; geographical regions;
+\end_layout
+
+\begin_layout Standard
+relax the assumption of independent effects we have made in relation to
+ most of our explanatory variables, and investigate the huge variety of
+ possible interactions; 
+\end_layout
+
+\begin_layout Standard
+estimate more complex econometric models accounting for spatial and/or serial
+ autocorrelation; 
+\end_layout
+
+\begin_layout Standard
+incorporate contrasts, such as between the current environment and home
+ environment;
+\end_layout
+
+\begin_layout Subsubsection
+Valuation
+\end_layout
+
+\begin_layout Standard
+and explore the use of this data for monetary valuation of the environment.
+ More work definitely also required to bring monetary values into the ESM
+ framework --- perhaps using known costs of paid-for activities (e.g.
+ spending 2 hours in the cinema) to provide a lower bound on WTP for experiences
+ of high-EQ environments?
+\end_layout
+
+\begin_layout Standard
+Subject to appropriate safeguards on privacy/anonymity hope other academic
+ researchers will find useful too.
+\end_layout
+
+\begin_layout Section
+Wider implications
+\end_layout
+
+\begin_layout Subsection
+Experience sampling research
+\end_layout
+
+\begin_layout Standard
+crowd-sourced ESM, spatial ESM
+\end_layout
+
+\begin_layout Standard
+it works -- taken the risk out of it (commercial research firm)
+\end_layout
+
+\begin_layout Standard
+extensions -- other data (e.g.
+ heart rate, sensors); other sampling methods (e.g.
+ location-contingent) -- social (and other) networks
+\end_layout
+
+\begin_layout Standard
+broad academic & commercial applications --
+\end_layout
+
+\begin_layout Standard
+been approached: spatial recommendation systems (CS), transport (DfT), business
+ metrics (e.g.
+ staff satisfaction), advertising (ad agencies) --- (in some commercial
+ applications it's no problem at all if you've got only iPhone owners: rich
+ people buy stuff!)
+\end_layout
+
+\begin_layout Standard
+also: health + exercise, urban planning, consumer behaviour, incl.
+ linking experience to choice -- and seeing if there's learning, preference
+ updating?
+\end_layout
+
+\begin_layout Subsection
+Policy
+\end_layout
+
+\begin_layout Standard
+new evidence that green and blue space near home related to SWB as seen
+ in retrospective assessments.
+ not super robust, but there
+\end_layout
+
+\begin_layout Standard
+stronger new evidence that people are happier in natural envs.
+ not yet ready to evaluate policy alternatives against.
+ but in broad terms encourages to take seriously: e.g.
+ massive forest sell-off could have been a stupid plan.
+\end_layout
+
+\begin_layout Standard
+limitations here: demographic issues + causality issues.
+\end_layout
+
+\begin_layout Standard
+but a powerful new way to think about (and commission research on!) these
+ issues 
 \end_layout
 
 \end_body

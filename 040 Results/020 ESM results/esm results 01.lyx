@@ -30917,15 +30917,6 @@ robustness, and why this is brilliant
 \end_layout
 
 \begin_layout Standard
-Causal pathways may run in both directions, such that people choose an environme
-nt partly according to their mood, and people's moods are partly determined
- by their environment.
- It seems highly plausible that the latter pathway makes an important contributi
-on to the relationship, and future research using this data will address
- this in greater detail.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -30944,34 +30935,6 @@ status open
 
 \begin_layout Plain Layout
 comparison with previous studies? none similar! but previous ESM?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In future research we also hope to: relax the assumption of independent
- effects we have made in relation to most of our explanatory variables,
- and investigate the huge variety of possible interactions; estimate more
- complex econometric models accounting for spatial and/or serial autocorrelation
-; use heuristics, and/or add new ESM assessment questions, to identify not
- only activities but also 
-\emph on
-states
-\emph default
- --- such as being unwell, on holiday, drunk, or hung over; incorporate
- contrasts, such as between the current environment and home environment;
- and explore the use of this data for monetary valuation of the environment.
- In our view there is enormous potential for this data, and for geo-located
- experience sampling in general, to provide further insights in this area.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-and fix many of the issues with survey research --- though it does address
- a somewhat different question
 \end_layout
 
 \end_inset
