@@ -39234,7 +39234,7 @@ We use the significant EQ coefficients, alongside the coefficient on income,
  high.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Robustness
 \end_layout
 
@@ -39260,7 +39260,7 @@ a priori
  In sum, however, they are not as robust as we might wish.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 The workplace
 \end_layout
 
@@ -39289,7 +39289,7 @@ On the other hand, it could be that LS is not directly affected by EQ either
  and LS should be accorded substantial weight as evidence of absence.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Comparison with previous findings
 \end_layout
 
@@ -39881,14 +39881,56 @@ reference "chap:happiness-and-eq"
 \end_layout
 
 \begin_layout Subsection
+Causality
+\end_layout
+
+\begin_layout Standard
+In common with almost all previous research into this topic in happiness
+ economics 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "excepting"
+key "luechinger:2009"
+
+\end_inset
+
+, we cannot offer proof that the relationships we describe are causal ones.
+ 
+\end_layout
+
+\begin_layout Standard
+First, although we have tried to control for as many spatial and individual
+ characteristics as is feasible, there might be variables missing from our
+ models that are correlated with both happiness and EQ.
+ These might be spatial characteristics (e.g.
+ if school quality is correlated with air quality) or individual characteristics
+ (e.g.
+ if people with lower capital choose to live closer to green spaces).
+ If such variables exist, then our estimated effects could be biased either
+ up or down.
+ Second, there could be an element of reverse causality.
+ EQ parameters clearly do not vary in response to individuals' SWB levels,
+ but happier people might conceivably choose to live in locations with higher
+ (or lower) EQ.
+\end_layout
+
+\begin_layout Standard
+This is an important limitation of studies of this kind.
+ It arises because of the difficulty of finding natural experiments: sources
+ of exogenous (random) variation in individuals' spatial locations.
+ In everyday life --- the context that is of primary interest --- people
+ choose almost invariably choose where to be.
+\end_layout
+
+\begin_layout Subsection
 Conclusions
 \end_layout
 
 \begin_layout Standard
 Despite a number of methodological advances relative to previous research,
  our findings in this chapter are, at best, mixed.
- We find some positive SWB effects of green and blue space UK-wide, but
- these are not hugely robust.
+ We find some positive relationships between SWB and green and blue spaces
+ UK-wide, but these are not hugely robust.
  Meanwhile, in London we simply find no evidence of links between EQ and
  SWB.
 \end_layout

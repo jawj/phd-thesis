@@ -46,7 +46,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize 11
-\spacing other 1.1499999999999999
+\spacing onehalf
 \use_hyperref true
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
@@ -157,7 +157,7 @@ Radical approach: a new question: immediate relations.
 \end_layout
 
 \begin_layout Standard
-Two methods addressing different but related questions.
+In summary, two methods addressing different but related questions.
  Both questions important: want good experiences in the moment, but live
  mainly with our memories and interpretations of those experiences (Kahneman
  thought expt.).
@@ -171,41 +171,6 @@ Two methods addressing different but related questions.
 In principle, results may be pointing the same way.
  Nearby results a bit limited, not too robust.
  Momentary results more robust and have more scope for future refinement.
-\end_layout
-
-\begin_layout Section
-Causality
-\end_layout
-
-\begin_layout Paragraph
-Omitted variables (endogeneity)
-\end_layout
-
-\begin_layout Standard
-still possible in both methods (different levels).
- Especially for surveys.
-\end_layout
-
-\begin_layout Paragraph
-Reverse causality
-\end_layout
-
-\begin_layout Standard
-Surveys: Less direct.
- Happy people earn more and buy houses in nicer EQ areas.
-\end_layout
-
-\begin_layout Standard
-ESM: Causal pathways may run in both directions, such that people choose
- an environment partly according to their mood, and people's moods are partly
- determined by their environment.
- But seems highly plausible that the latter pathway makes an important contribut
-ion to the relationship.
-\end_layout
-
-\begin_layout Standard
-need to find external sources of variation (like Luechinger); for ESM, potential
-ly helpful if can address the sequence of events (unhappy -> park -> happy).
 \end_layout
 
 \begin_layout Section
@@ -243,7 +208,8 @@ Some new evidence at national level that green and blue spaces near home
 \end_layout
 
 \begin_layout Standard
-Much stronger evidence on the related point that green and blue 
+Much stronger evidence on the related point that people are happy when they're
+ *in* green and blue spaces.
 \end_layout
 
 \begin_layout Section
@@ -258,6 +224,27 @@ Retrospective happiness and the usual environment
 More work definitely needed on the SWB valuation approach to date: some
  scepticism regarding claims that the next study will solve the high values
  problem.
+ Concur with Fujiwara + C that 
+\begin_inset Quotes eld
+\end_inset
+
+still very much in development
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Still important to address causality.
+ Exogenous variation.
+ E.g.
+ C-charge changes? park closures for Olympics? Etc.
+\end_layout
+
+\begin_layout Standard
+Still scope to use more spatial models with high-res data (Rehdanz is country
+ level) -- could help with possible spatial unobservables.
  
 \end_layout
 
@@ -268,7 +255,12 @@ Momentary happiness and the immediate environment
 \begin_layout Standard
 In our view there is enormous potential for this data, and methodology more
  generally, to provide further insights in this area.
- In future research we also hope to: 
+ Technology was not available at start of research process, so less developed
+ than might have been given more time.
+\end_layout
+
+\begin_layout Standard
+In future research we also hope to: 
 \end_layout
 
 \begin_layout Subsubsection
@@ -405,13 +397,17 @@ new evidence that green and blue space near home related to SWB as seen
 
 \begin_layout Standard
 stronger new evidence that people are happier in natural envs.
- not yet ready to evaluate policy alternatives against.
- but in broad terms encourages to take seriously: e.g.
+ not yet ready to evaluate policy alternatives against i.e.
+ still to early to say what's optimal/make trade-offs.
+ but in broad terms shows effects are real and encourages to look at provision
+ and facilitation of use: e.g.
  massive forest sell-off could have been a stupid plan.
+ and urban planning (lcm types not only rural): more trees and green spaces
+ may have additional justification.
 \end_layout
 
 \begin_layout Standard
-limitations here: demographic issues + causality issues.
+limitations here: sampling issues + causality issues.
 \end_layout
 
 \begin_layout Standard

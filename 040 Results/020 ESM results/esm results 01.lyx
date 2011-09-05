@@ -26693,7 +26693,7 @@ y 6 points higher than continuous urban environments on the 0 -- 100 scale.
 All other green or natural environment types --- mountains, moors, heathlands,
  woodlands, grasslands, farmland, freshwater, wetlands and flood plains
  --- are between 2.7 and 1.8 points happier than continuous urban environments.
- Suburban or rural developed environments are a little under 1 point happier.
+ Suburban or rural developed environments are a little under one point happier.
 \end_layout
 
 \begin_layout Standard
@@ -26708,8 +26708,8 @@ Robustness checks
 \end_layout
 
 \begin_layout Standard
-We performed a number of robustness checks on these findings regarding the
- positive effects of EQ.
+We have performed a number of robustness checks on these findings regarding
+ the positive effects of EQ.
 \end_layout
 
 \begin_layout Subsubsection
@@ -27372,7 +27372,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Landscape designation model --- weekend and Bank Holiday responses only
+Land cover model --- weekend and Bank Holiday responses only
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:weekends-only-esm"
@@ -29682,7 +29682,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Land cover model --- excluding extreme happiness responses (0 and 100)
+Land cover model --- extreme happiness responses (0 and 100) excluded
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:spikeless-esm"
@@ -30875,11 +30875,29 @@ Discussion
 \end_layout
 
 \begin_layout Standard
+In this chapter we have reported on the findings of a unique investigation
+ into links between EQ in an individual's immediate surroundings and his
+ or her momentary happiness reports.
+ We rely on data set we have collected from thousands of volunteer participants,
+ via their own mobile devices, using a novel spatial experience sampling
+ technique.
+\end_layout
+
+\begin_layout Standard
+After controlling for many other factors, participants remain happier outdoors
+ than indoors, and happier when outdoors in any kind of green or blue space
+ than when outdoors in continuous urban environments.
+ These relationship are highly statistically significant, and their magnitudes
+ are substantial.
+ The land cover type associated with the greatest happiness --- by a considerabl
+e margin --- is marine and coastal margins, suggesting a particularly strong
+ link between immediate happiness and blue space.
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-TODO Quick summary of what we've done in this chapter
+Or that people enjoy what they do at the beach.
+ But is this different?
 \end_layout
 
 \end_inset
@@ -30888,58 +30906,85 @@ TODO Quick summary of what we've done in this chapter
 \end_layout
 
 \begin_layout Standard
-The relationships we estimate between happiness and environment are highly
- statistically significant, and their magnitudes are substantial.
- We know that the relationships are not confounded at the participant level
- --- that is, by associations between types of locations and types of people
- --- because our model is estimated exclusively from the within-individual
- variation.
- And we have controlled for a reasonably comprehensive set of potential
- confounders at the response level.
+Our findings appear robust to various alternative approaches.
+ We find positive links of a similar magnitude when we substitute indicators
+ of high-EQ landscape designations for the land cover indicators of EQ.
+ Furthermore, land cover EQ variables remain significantly linked to happiness
+ when we consider only weekend responses; exclude the spikes at the extremes
+ of the response distribution; apply response time and location accuracy
+ criteria for response validity that are considerably more stringent; or
+ account for the fact that we are making multiple comparisons using an extremely
+ large data set.
+\end_layout
+
+\begin_layout Subsection
+Causation
 \end_layout
 
 \begin_layout Standard
-Robustness results...
- AONBs, spikes, criteria, testing
+We know that the relationships we describe are not confounded at the participant
+ level --- that is, by associations between types of locations and types
+ of people --- because our model is estimated exclusively from the within-indivi
+dual variation.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-robustness, and why this is brilliant
-\end_layout
-
-\end_inset
-
-
+Omitted variables (endogeneity) still possible, at a different level: other
+ aspects of experiences.
+ likeliest candidates are temporary ongoing states (holiday, hangover, short
+ illness) that may be associated independently with both more or less happiness
+ and more or less exposure to EQ.
+ but our indicative robustness test suggests holiday not all of it, and
+ seems unlikely that omitted variables are responsible for whole effect.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-comparison with survey research
+Reverse causality: causal pathways may run in both directions, such that
+ people choose an environment partly according to their mood, and people's
+ moods are partly determined by their environment.
+ But seems highly plausible that the latter pathway makes an important contribut
+ion to the relationship.
+ Future research might be able to provide greater assurance on this point
+ by looking at sequences of feelings and events (unhappy -> park -> happy),
+ and/or by finding (still challenging) external sources of variation in
+ the locations people find themselves in that don't also have direct effects
+ on wellbeing.
+ 
 \end_layout
 
-\end_inset
-
-
+\begin_layout Subsection
+Generalisation
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-comparison with previous studies? none similar! but previous ESM?
+demographics (no particular reason to think different -- though the urban
+ environments we contrast with might well be nicer than the average) and
+ self-selection (could be a problem if there are substantial differentials
+ in sensitivity to the EQ characteristics we examine, and those who choose
+ to enrol are those who are particularly sensitive).
 \end_layout
 
-\end_inset
+\begin_layout Subsection
+Comparison with previous findings
+\end_layout
 
+\begin_layout Standard
+Method completely novel.
+ But consistent with theories.
+ Immediate impacts: science results (experimental exposures work) -- bolsters
+ those findings for everyday experiences.
+\end_layout
 
+\begin_layout Standard
+And hedonic work (Gibbons et al, Smith) -- implication that EQ valued, so
+ logical that people happier there.
+\end_layout
+
+\begin_layout Standard
+Answers a somewhat different question than cross-sectional work, so direct
+ comparisons not possible.
+ But is arguably a considerably stronger line of evidence, because...
+ 
 \end_layout
 
 \end_body

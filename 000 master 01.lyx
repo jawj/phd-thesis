@@ -654,6 +654,19 @@ TODO: ignore need to cluster UK errors on 1km square?
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: why didn't we include population density in ESM models?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "030 Methods/020 ESM/esm methods 01.lyx"
