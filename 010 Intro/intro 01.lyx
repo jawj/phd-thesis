@@ -80,7 +80,7 @@
 \color #ffffff
 \end_branch
 \branch bib-when-not-master
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #ffffff
 \end_branch
@@ -136,7 +136,7 @@ status collapsed
 
 \begin_layout Plain Layout
 In this thesis, as is usual in the literature, we use the terms SWB, wellbeing
- and happiness more-or-less interchangeably.
+ and happiness interchangeably.
  This decision is discussed in more detail in the next chapter.
 \end_layout
 
@@ -163,16 +163,18 @@ key "dolan:2008"
 .
  They include one's income (positively correlated with SWB); the incomes
  of others, because of rivalry (negative) and/or ambition (positive); and
- one's own lagged income, because of habituation (negative).
+ one's own past income, because of habituation (negative).
  They include unemployment; separation, divorce and widowhood; and poor
  health (all negatively correlated with SWB).
  They also include social capital indicators and 'relational goods', such
  as membership of interest groups or friendly relations with neighbours;
  trust; and belief in a god (all positively correlated with SWB).
- As is discussed further below, they may also include environmental quality
- (EQ) parameters such as climate, noise, air quality, and access to green
- spaces.
- 
+\end_layout
+
+\begin_layout Standard
+They may also include environmental quality (EQ) parameters such as climate,
+ noise, air quality, and access to green spaces --- which is the proposition
+ that this thesis sets out to explore.
 \end_layout
 
 \begin_layout Subsection
@@ -183,12 +185,9 @@ Happiness and the environment
 Some environmental and ecological economists have taken a particularly strong
  interest in happiness economics.
  There are two main reasons for this.
-\end_layout
-
-\begin_layout Standard
-First, for those concerned with 'strong' sustainability especially, a significan
-t advantage of SWB indicators is that they do not automatically conflate
- welfare and progress with consumption and growth 
+ First, for those concerned with 'strong' sustainability especially, a significa
+nt advantage of happiness indicators and analyses is that they do not automatica
+lly conflate welfare and progress with consumption and growth 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "gowdy:2005"
@@ -229,7 +228,7 @@ Policy relevance
 
 \begin_layout Standard
 Both of these reasons for environmental and ecological economists' interest
- in happiness economics map rather directly to the policy realm.
+ in happiness map quite directly to the policy realm.
  Although it in no way obviates debates over ethics, values or objectives,
  a 'new utilitarianism' grounded in SWB research could inform policy development
  and evaluation at all levels 
@@ -246,8 +245,15 @@ key "diener:2009"
 
 \begin_layout Standard
 On the international scale the last several years have seen initiatives
- launched by the EU, the OECD, and individual nation states including the
- UK, France and Canada.
+ launched by the EU (
+\emph on
+Beyond GDP
+\emph default
+), the OECD (
+\emph on
+Measuring the Progress of Societies
+\emph default
+), and individual nation states including the UK, France and Canada.
  All have proposed wider use of SWB measures as part of a reconceptualising
  of policymakers' notions of prosperity and progress --- a shift that policy
  organisations with interests in sustainability have been promoting for
@@ -325,8 +331,8 @@ Existing research
 \end_layout
 
 \begin_layout Standard
-Economic evidence on the relationship between EQ and SWB exists, but it
- is less strong than for many other factors (such as income, employment,
+Economic evidence on the relationship between EQ and happiness exists, but
+ it is less strong than for many other factors (such as income, employment,
  or marital status).
  Published studies report positive impacts, but they have some common weaknesses.
 \end_layout
@@ -350,22 +356,23 @@ key "welsch:2002"
 \end_layout
 
 \begin_layout Standard
-Individual-level studies have modelled individuals' SWB ratings using EQ
+Individual-level studies have modelled individuals' SWB reports using EQ
  indicators for the vicinity of their homes.
  However, these studies have still generally relied on large-area aggregates
  of EQ measures; have focused exclusively on the levels or existence of
  EQ characteristics, rather than real-life exposures or use; have looked
  for the most part at isolated EQ parameters, despite widespread correlations
  (such as between air pollution and noise); and have not, to date, investigated
- land cover relationships, such as the effects of green and 'blue' spaces.
+ links with land cover --- the effects of green spaces and 'blue spaces',
+ such as rivers, lakes and sea.
  
 \end_layout
 
 \begin_layout Standard
-Some of the best and most direct evidence on other influences on wellbeing,
- such as health status or companionship, comes from experience-level studies
- using the Day Reconstruction Method, Experience Sampling Method, or Ecological
- Momentary Assessment (DRM, ESM, EMA).
+Some of the best and most direct evidence regarding other influences on
+ wellbeing, such as health status or companionship, comes from experience-level
+ studies using the Day Reconstruction Method, Experience Sampling Method,
+ or Ecological Momentary Assessment (DRM, ESM, EMA).
  These methods minimise biases of recall and interpretation, and provide
  rich panel data sets in which time-invariant individual characteristics,
  including personality, can be factored out 
@@ -376,7 +383,7 @@ key "csikszentmihalyi:2003,krueger:2008"
 \end_inset
 
 .
- To our knowledge, however, these methods have not been applied to hypotheses
+ To our knowledge, however, these methods have never been applied to hypotheses
  regarding EQ.
 \end_layout
 
@@ -393,8 +400,8 @@ name "sec:research-aims"
 
 \begin_layout Standard
 The research described in this thesis starts from the hypothesis that positive
- EQ characteristics --- air quality, tranquillity, and green and 'blue'
- space --- will be positively related to SWB.
+ EQ characteristics --- air quality, tranquillity, and green and blue space
+ --- will be positively related to SWB.
  
 \end_layout
 
@@ -416,8 +423,12 @@ Time is not the researcher's friend.
 s of the doctorate.
  The first strand, meanwhile, was conceived of several years ago and has
  in certain respects been overtaken by developments elsewhere.
- Both strands nevertheless offer significant advances on earlier research
- in this field.
+ 
+\end_layout
+
+\begin_layout Standard
+Both strands of work nevertheless offer significant advances on earlier
+ research in this field.
 \end_layout
 
 \begin_layout Subsection
@@ -446,8 +457,8 @@ ts' home and workplace locations to objective indicators of EQ, and estimate
 \end_layout
 
 \begin_layout Standard
-As regards EQ variables we consider road, rail and aircraft noise, air pollution
-, and land cover (including green and blue space types), while controlling
+As EQ variables we consider road, rail and aircraft noise, air pollution,
+ and land cover (including green and blue space types), while controlling
  for house prices and for proxies of other spatial amenities and characteristics.
 \end_layout
 
@@ -629,8 +640,9 @@ GIS
 \end_inset
 
 methods For parameters that are not point estimates --- such as the accessibilit
-y of particular land cover types --- we make use of the same advances in
- GIS that have been exploited in hedonic pricing studies.
+y of particular land cover types --- we make use of advances in GIS that
+ have been exploited in hedonic pricing studies, but have not previously
+ been applied in happiness economics research.
  We measure the local quantity of amenities by calculating the proportion
  of land they represent within a certain radius of respondents' locations.
  We also calculate more advanced measures accounting for both quantity 
@@ -638,8 +650,6 @@ y of particular land cover types --- we make use of the same advances in
 and
 \emph default
  proximity, in the form of kernel-weighted proportion estimates.
- Neither simple nor kernel-weighted proportion measures have been used in
- prior SWB research.
 \end_layout
 
 \begin_layout Description
@@ -667,24 +677,13 @@ and
 \begin_inset space ~
 \end_inset
 
-'blue'
+blue
 \begin_inset space ~
 \end_inset
 
 space We consider a number of EQ characteristics which have not previously
  been included in happiness economics research, including accessibility
- of green and 'blue' space.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Unlike previous studies in happiness economics, we also investigate indicators
- of the use of these environments, including 'green exercise'.
-\end_layout
-
-\end_inset
-
-
+ of green and blue space.
 \end_layout
 
 \begin_layout Description
@@ -760,12 +759,12 @@ s, enabling us to link objective indicators of spatial characteristics to
 \end_layout
 
 \begin_layout Standard
-In addition, we achieve what we believe to be the largest ESM sample ever:
- more than one million responses from over 20,000 participants.
+In addition, we achieve what we believe to be the largest ESM sample ever
+ collected: more than one million responses from over 20,000 participants.
  We do so by making use of individuals' own smartphones as response devices,
  by prioritising speed and ease of use in our signalling and response protocols,
- and by offering interesting feedback to participants regarding the data
- they provide.
+ and by offering interesting feedback to participants in relation to the
+ data they provide.
 \end_layout
 
 \begin_layout Subsubsection
@@ -835,18 +834,15 @@ The principal limitation of this strand is that we do not reach a representative
 \end_layout
 
 \begin_layout Standard
-As far as we are aware, our spatial experience sampling methodology is novel
- both within happiness economics and in the broader context of research
- across disciplines that seeks to quantify the wellbeing effects of EQ
+Since commencing this research we have become aware of other studies using
+ smartphones to collect data from large samples --- a method sometimes referred
+ to as (or as a part of) crowdsourcing, ubiquitous computing (UbiComp),
+ or citizen (cyber-)science
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-Since commencing this research we have become aware of other studies using
- smartphones to collect data from large samples --- a method sometimes referred
- to as (or as a part of) crowdsourcing, ubiquitous computing (UbiComp),
- or citizen (cyber-)science.
- For example, studies are described at 
+Studies and enabling technologies are described, for example, at 
 \begin_inset Flex URL
 status collapsed
 
@@ -909,21 +905,28 @@ http://www.projectcharm.info/
 \end_inset
 
 .
- However, only 
-\begin_inset CommandInset citation
-LatexCommand citeauthor
-key "killingsworth:2010"
-
-\end_inset
-
-'s study investigates wellbeing, and that study is not able to investigate
- environmental factors since it does not collect location data.
- 
 \end_layout
 
 \end_inset
 
 .
+ However, we know of only one such study that investigates wellbeing ---
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "killingsworth:2010"
+
+\end_inset
+
+ --- and that study is not able to investigate environmental factors since
+ location data is not collected.
+ 
+\end_layout
+
+\begin_layout Standard
+We therefore believe that our spatial experience sampling methodology is
+ novel both within happiness economics and in the broader context of research
+ across disciplines that seeks to quantify the wellbeing effects of EQ.
  It provides an entirely new line of evidence on this question, which may
  ultimately be of significant use to environmental policymakers
 \begin_inset Foot
@@ -942,7 +945,7 @@ The value of this method is not confined to environmental questions, however:
 \end_layout
 
 \begin_layout Standard
-It is powerful line of evidence compared to that provided by cross-sectional
+It is a powerful line of evidence compared to that provided by cross-sectional
  approaches.
  Because we ask the same people the same subjective questions many times,
  we need not assume comparability of different individuals' use of the response
@@ -954,8 +957,8 @@ It is powerful line of evidence compared to that provided by cross-sectional
  Because we can precisely and objectively locate individuals at the moment
  of each response, the EQ indicators that we calculate should much more
  closely reflect actual exposures to EQ.
- And because we collect an extremely large sample, it is likely that we
- will have the power to detect even very small EQ effects.
+ And because we collect an extremely large sample, we may have the statistical
+ power to detect even small EQ effects.
 \end_layout
 
 \begin_layout Standard
