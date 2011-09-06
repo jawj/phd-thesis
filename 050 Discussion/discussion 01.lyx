@@ -197,6 +197,12 @@ S-ESM.
  Using our data and new data.
 \end_layout
 
+\begin_layout Standard
+In both cases, still significant limitations (esp.
+ causality and omitted variables) BUT an important step up from previous
+ state of the art.
+\end_layout
+
 \begin_layout Subsection
 Happiness and environmental quality
 \end_layout
@@ -326,6 +332,10 @@ estimate more complex econometric models accounting for spatial and/or serial
 \begin_layout Standard
 incorporate contrasts, such as between the current environment and home
  environment;
+\end_layout
+
+\begin_layout Standard
+investigate rate and extent of habituation
 \end_layout
 
 \begin_layout Subsubsection

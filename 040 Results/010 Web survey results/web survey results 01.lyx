@@ -39483,6 +39483,13 @@ key "mackerron:2008"
 
 \begin_layout Subsubsection
 Lack of significant findings
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Lack-of-significant-findings"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -39672,41 +39679,21 @@ a priori
 \end_layout
 
 \begin_layout Description
-Habituation It is known that individuals adapt to differing degrees to different
- kinds of circumstances.
- For example, as discussed in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sub:Past-and-relative-income"
-
+Existence
+\begin_inset space ~
 \end_inset
 
-, individuals adapt to income levels to a very high degree.
- Approximately 80% of our sample have lived in the same house for at least
- two years, and 40% have lived there for at least ten.
- It is therefore possible that individuals in our sample have become substantial
-ly habituated to local EQ levels, so that these no longer have much impact
- on LS
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Regarding 
-\begin_inset CommandInset citation
-LatexCommand citeauthor
-key "mackerron:2008"
-
+vs
+\begin_inset space ~
 \end_inset
 
-'s results, their convenience sample included a large number of students,
- who are more likely to be new to the city and hence less likely to have
- habituated fully to EQ.
-\end_layout
-
-\end_inset
-
-.
- 
+exposure The resolution of our data and our GIS techniques both represent
+ significant advances on those used in previous LS research.
+ However, even the best indicators of EQ around an individual's home may
+ not necessarily correspond with the individual's exposure to or use of
+ it.
+ In the case of green space, for example, a person might live 100 yards
+ from a park but never spend time there.
 \end_layout
 
 \begin_layout Description
@@ -39728,21 +39715,41 @@ reference "sub:happiness-valuation"
 \end_layout
 
 \begin_layout Description
-Existence
-\begin_inset space ~
+Habituation It is known that individuals adapt to differing degrees to different
+ kinds of circumstances.
+ For example, as discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Past-and-relative-income"
+
 \end_inset
 
-vs
-\begin_inset space ~
+, individuals adapt to income levels to a very high degree.
+ Approximately 80% of our sample have lived in the same house for at least
+ two years, and 40% have lived there for at least ten.
+ It is therefore possible that individuals in our sample have become substantial
+ly habituated to EQ in the vicinity of their homes, so that these no longer
+ have much impact on LS
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Regarding 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "mackerron:2008"
+
 \end_inset
 
-exposure The resolution of our data and our GIS techniques both represent
- significant advances on those used in previous LS research.
- However, even the best indicators of EQ around an individual's home may
- not necessarily correspond with the individual's exposure to or use of
- it.
- In the case of green space, for example, a person might live 100 yards
- from a park but never spend time there.
+'s results, their convenience sample included a large number of students,
+ who are more likely to be new to the city and hence less likely to have
+ habituated fully to EQ.
+\end_layout
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Description
@@ -39920,12 +39927,12 @@ key "luechinger:2009"
 \end_layout
 
 \begin_layout Subsection
-Conclusions
+Summary
 \end_layout
 
 \begin_layout Standard
-Despite a number of methodological advances relative to previous research,
- our findings in this chapter are, at best, mixed.
+In summary, despite a number of methodological advances relative to previous
+ research, our findings in this chapter are, at best, mixed.
  We find some positive relationships between SWB and green and blue spaces
  UK-wide, but these are not hugely robust.
  Meanwhile, in London we simply find no evidence of links between EQ and
@@ -39947,8 +39954,7 @@ riant effects such as personality.
 
 \begin_layout Standard
 The following chapter reports results from our research using a novel spatial
- experience sampling approach, which ameliorates or eliminates many of these
- limitations.
+ experience sampling approach, which ameliorates many of these limitations.
 \end_layout
 
 \end_body

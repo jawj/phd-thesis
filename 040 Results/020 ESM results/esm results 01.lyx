@@ -30876,45 +30876,6 @@ name "sec:esm-discussion"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Our findings provide a new line of evidence on relationships between SWB
- and EQ.
- They also, however, address a subtly different hypothesis than that addressed
- by previous work --- including that reported in the previous chapter ---
- which has generally set out to examine the supposition that individuals'
- general, retrospective SWB evaluations will be linked to EQ levels in the
- vicinity of their homes.
- Both hypotheses are interesting and, since momentary and retrospective
- SWB evaluations are related, it seems likely that the evidence for each
- may point a similar way.
- 
-\end_layout
-
-\begin_layout Plain Layout
-Our data addressing momentary happiness and environment, we are able to
- 
-\end_layout
-
-\begin_layout Plain Layout
-ask the same people the same subjective questions many times, we need not
- assume comparability of different individuals' use of the response scales,
- and all individual characteristics that are invariant over the study period
- can be controlled through the use of fixed effects.
- Because we observe each individual in multiple locations, we break some
- of the potential associations between people and locations that may confound
- cross-sectional research.
- Because we can precisely and objectively locate individuals at the moment
- of each response, the EQ indicators that we calculate should much more
- closely reflect actual exposures to EQ.
- And because we collect an extremely large sample, it is likely that we
- will have the power to detect even very small EQ effects.
-\end_layout
-
-\end_inset
-
 In this chapter we have reported on the findings of a unique investigation
  into links between EQ in an individual's immediate surroundings and his
  or her momentary happiness reports.
@@ -30927,11 +30888,11 @@ In this chapter we have reported on the findings of a unique investigation
 After controlling for many other factors, participants are happier outdoors
  than indoors, and happier when outdoors in any kind of green or blue space
  than when outdoors in continuous urban environments.
- These relationship are highly statistically significant, and their magnitudes
+ These relationships are highly statistically significant, and their magnitudes
  are substantial.
- The land cover associated with by some distance the greatest happiness
- is marine and coastal margins, suggesting a strong link between immediate
- happiness and blue space.
+ The land cover type associated with the greatest happiness is marine and
+ coastal margins, suggesting a strong link between immediate happiness and
+ this variety of blue space.
 \begin_inset Note Note
 status collapsed
 
@@ -30947,14 +30908,15 @@ Or that people enjoy what they do at the beach.
 
 \begin_layout Standard
 Our findings appear robust to various alternative approaches.
- We find positive links of a similar magnitude when we substitute indicators
- of high-EQ landscape designations for the land cover indicators of EQ.
- Furthermore, land cover EQ variables remain significantly linked to happiness
- when we consider only weekend and Bank Holiday responses; exclude the spikes
- at the extremes of the response distribution; increase the stringency of
- our response time and location accuracy criteria for response validity;
- or account for the fact that we are making multiple comparisons using an
- extremely large data set.
+ Land cover EQ variables remain significantly linked to happiness when we
+ consider only weekend and Bank Holiday responses; exclude the spikes at
+ the extremes of the response distribution; increase the stringency of our
+ response time and location accuracy criteria for response validity; or
+ account for the fact that we are making multiple comparisons using an extremely
+ large data set.
+ Furthermore, we find positive links of a similar magnitude when we substitute
+ high-EQ landscape designation indicators for the land cover indicators
+ of EQ.
 \end_layout
 
 \begin_layout Subsection
@@ -30969,26 +30931,26 @@ dual variation.
 \end_layout
 
 \begin_layout Standard
-Omitted variables (endogeneity issues) are still a possibility, in this
- case at the level of experiences.
+Omitted variables (endogeneity issues) remain a possibility, however, in
+ this case at the level of experiences.
  Perhaps the likeliest candidates for unobserved characteristics of experience
  are certain temporary ongoing states --- such as holidays, hangovers, or
  short periods of illness --- that may be associated independently with
  changes in both happiness and exposure to EQ.
  Ideally, we might have included additional survey items addressing these.
  On the other hand, our weekends-only model still demonstrates highly significan
-t associations, and it seems rather unlikely that these relatively infrequent
- states are responsible for all of the effects we report.
+t EQ -- SWB associations, and it would seem unlikely that such states are
+ responsible for the whole of the effect we report.
 \end_layout
 
 \begin_layout Standard
 Causal pathways may well run in both directions, such that people choose
  an environment partly according to their mood, and people's moods are partly
  determined by their environments.
- Although not proven, it seems both plausible and highly likely that the
- latter pathway --- environment causing mood --- is an important component
- of the relationship, particularly in the light of the findings of experimental/
-intervention studies mentioned in 
+ Although unproven, it seems both plausible and likely that the latter pathway
+ --- environment causing mood --- is an important component of the relationship,
+ particularly in the light of the findings of experimental/intervention
+ studies mentioned in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Studies-outside-economics"
@@ -30997,8 +30959,8 @@ reference "sub:Studies-outside-economics"
 
 .
  Future research might be able to provide greater assurance on this point
- either by identifying exogenous sources of variation (still challenging)
- or, where the time resolution of data is high enough, by careful analysis
+ either by identifying exogenous sources of variation in EQ exposure or,
+ where the temporal resolution of data is high enough, by careful analysis
  of sequences of change (for example, is it unhappy 
 \begin_inset Formula $\rightarrow$
 \end_inset
@@ -31027,7 +30989,7 @@ Our sample in this research is limited to individuals who have iPhones,
  who encounter the opportunity to participate in the study, and who then
  self-select.
  We therefore did not expect to obtain a sample that is representative of
- the population as a whole and, as noted in 
+ the population as a whole and, as seen in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:esm-Demographics-representativeness"
@@ -31040,13 +31002,23 @@ ity of our results.
 \end_layout
 
 \begin_layout Standard
-We know of no particular reason to expect that the demographic differences
- in our sample --- who are younger, richer, and better educated than average
- --- will cause differences in the relationship between SWB and EQ.
+We know of no particular reason to expect that the demographic peculiarities
+ of our sample --- who are younger, richer, and better educated than average
+ --- will affect our estimates of relationships between SWB and EQ.
  These differences might mean they are exposed to a somewhat different selection
- of environments, though (it might be that our base category urban environments
- are, in fact, nicer than the average, which could lead to an underestimation
- of the positive links with other land cover types).
+ of environments, though
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For example, it might be that our base category urban environments are,
+ in fact, nicer than the average, which could lead to an underestimation
+ of the positive links with other land cover types.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -31054,7 +31026,7 @@ Self-selection could affect our findings if there are meaningful differentials
  in individuals' sensitivity to the EQ characteristics we examine, and if
  these differentials play a part in individuals' decisions to participate
  in the study.
- We cannot tell how far this might restrict the ability to generalise from
+ We cannot tell how far this restricts the potential to generalise from
  our results.
 \end_layout
 
@@ -31063,13 +31035,9 @@ Comparison with previous findings
 \end_layout
 
 \begin_layout Standard
-Since we believe our hypothesis to be novel, comparisons with previous research
- will necessarily be indirect.
- 
-\end_layout
-
-\begin_layout Standard
-Our findings do appear consistent with the theory and experimental evidence
+Since our research methods and hypothesis are novel, comparisons with previous
+ research will necessarily be indirect.
+ Our findings do appear consistent with the theory and experimental evidence
  outlined in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -31101,9 +31069,9 @@ key "smith:2010"
  since proximity is likely to facilitate exposure, these positive values
  for nearby EQ seem generally consistent with our findings on happiness
  and immediate experience.
- The relative effect sizes for specific land cover types are not quite aligned,
- however: our most strongly SWB-predicting type, marine and coastal margins,
- is not significant in 
+ Effects for specific land cover types are not quite aligned, however: our
+ most strongly SWB-predicting type, marine and coastal margins, is not significa
+nt in 
 \begin_inset CommandInset citation
 LatexCommand citeauthor
 key "gibbons:2011a"
@@ -31111,7 +31079,8 @@ key "gibbons:2011a"
 \end_inset
 
 's price model, and their most strongly price-predicting type, freshwater,
- wetlands and floodplains, has one of the smallest effects on SWB.
+ wetlands and floodplains, has one of the smallest effects on SWB in our
+ model.
  There are many potential explanations for this discrepancy
 \begin_inset Foot
 status collapsed
@@ -31130,28 +31099,63 @@ For example, people might be mis-predicting the utility effects of different
 \end_layout
 
 \begin_layout Standard
-The most relevant comparators from our survey research strand, described
+The most relevant comparators from our web survey research strand, described
  in the previous chapter, are the UK-wide findings.
  These again use the same land cover EQ data we use here, and the comparison
  again shows agreement as to generalities --- some green and blue land cover
- types are positively linked to SWB --- while the specific types do not
+ types are positively linked to SWB --- although the specific types do not
  tally.
- We find all of the types that are significant in the life satisfaction
- model or either affective indicator model significant in our ESM-based
+ We find all of the types that are significant in either the survey-based
+ life satisfaction or affective indicator models significant in our ESM-based
  immediate happiness model.
- Again, however, the strongest predictor type for immediate happiness, marine
- and coastal margins, is not significant in either of the survey-based models.
+ Again, however, the strongest predictor type for immediate happiness in
+ our ESM study, marine and coastal margins, is not significant in either
+ of the survey-based models.
 \end_layout
 
 \begin_layout Subsection
-Conclusions
+Summary
 \end_layout
 
 \begin_layout Standard
-Answers a somewhat different question than cross-sectional work, so direct
- comparisons not possible.
- But is arguably a considerably stronger line of evidence, because...
- 
+In summary, this chapter has reported on the application of a novel research
+ method to test a new hypothesis in EQ and SWB research.
+ This method has significant advantages over the conventional cross-sectional
+ survey-based approach.
+\end_layout
+
+\begin_layout Standard
+We are able to gather an extremely large sample, so that even relatively
+ small effects may be identifiable.
+ The use of satellite positioning (GPS) provides us with accurate and objective
+ data on participants' actual locations, including when they are outdoors.
+ This allows us to calculate particularly convincing indicators of EQ exposure.
+ We use fixed effects to eliminate from our models all individual characteristic
+s that are invariant over the period of study --- which may include personality
+ characteristics, wealth, and varying interpretations of the subjective
+ response scale (the reporting function 
+\begin_inset Formula $R(\cdot)$
+\end_inset
+
+ discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:ps-swb-Subjective-wellbeing"
+
+\end_inset
+
+).
+ We can therefore be confident that our results are not confounded by individual
+-level factors varying in tandem with home-area EQ.
+ Finally, spatial sorting issues are eliminated because we observe individuals
+ in a variety of locations with differing EQ.
+\end_layout
+
+\begin_layout Standard
+Using this method, we find that momentary happiness is positively associated
+ with all green and blue space land cover types.
+ We believe that this work represents a new and promising line of evidence
+ on relationships between SWB and EQ.
 \end_layout
 
 \end_body

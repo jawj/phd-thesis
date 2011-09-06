@@ -709,7 +709,7 @@ n between the PS and SWB approaches.
  
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Preference satisfaction
 \end_layout
 
@@ -832,8 +832,15 @@ Note some problems with PS?
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Subjective wellbeing
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:ps-swb-Subjective-wellbeing"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
