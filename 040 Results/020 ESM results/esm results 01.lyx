@@ -18025,7 +18025,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch Massive_results_table
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset Newpage newpage
@@ -30915,10 +30915,6 @@ ask the same people the same subjective questions many times, we need not
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 In this chapter we have reported on the findings of a unique investigation
  into links between EQ in an individual's immediate surroundings and his
  or her momentary happiness reports.
@@ -30970,7 +30966,6 @@ We know that the relationships we describe are not confounded at the participant
  level --- that is, by associations between types of locations and types
  of people --- because our model is estimated exclusively from the within-indivi
 dual variation.
- This is one of the major attractions of a panel data set such as ours.
 \end_layout
 
 \begin_layout Standard
@@ -31029,7 +31024,8 @@ Generalisation
 
 \begin_layout Standard
 Our sample in this research is limited to individuals who have iPhones,
- who encounter the opportunity to participate, and who then self-select.
+ who encounter the opportunity to participate in the study, and who then
+ self-select.
  We therefore did not expect to obtain a sample that is representative of
  the population as a whole and, as noted in 
 \begin_inset CommandInset ref
@@ -31049,17 +31045,17 @@ We know of no particular reason to expect that the demographic differences
  --- will cause differences in the relationship between SWB and EQ.
  These differences might mean they are exposed to a somewhat different selection
  of environments, though (it might be that our base category urban environments
- are, in fact, nicer than the average, which would lead to an underestimation
+ are, in fact, nicer than the average, which could lead to an underestimation
  of the positive links with other land cover types).
 \end_layout
 
 \begin_layout Standard
 Self-selection could affect our findings if there are meaningful differentials
  in individuals' sensitivity to the EQ characteristics we examine, and if
- sensitivity plays a part in individuals' decisions to participate in the
- study.
- We do now know how far this might restrict the validity of generalising
- from our results.
+ these differentials play a part in individuals' decisions to participate
+ in the study.
+ We cannot tell how far this might restrict the ability to generalise from
+ our results.
 \end_layout
 
 \begin_layout Subsection
@@ -31067,15 +31063,88 @@ Comparison with previous findings
 \end_layout
 
 \begin_layout Standard
-Method completely novel.
- But consistent with theories.
- Immediate impacts: science results (experimental exposures work) -- bolsters
- those findings for everyday experiences.
+Since we believe our hypothesis to be novel, comparisons with previous research
+ will necessarily be indirect.
+ 
 \end_layout
 
 \begin_layout Standard
-And hedonic work (Gibbons et al, Smith) -- implication that EQ valued, so
- logical that people happier there.
+Our findings do appear consistent with the theory and experimental evidence
+ outlined in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:happiness-and-eq"
+
+\end_inset
+
+, and potentially provide some support for the applicability of the findings
+ of experimental studies --- in which a brief exposure to nature improves
+ SWB --- to everyday life.
+\end_layout
+
+\begin_layout Standard
+Hedonic pricing studies such as those by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "gibbons:2011a"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "smith:2010"
+
+\end_inset
+
+ have found that EQ of the kind we examine is capitalised is property prices;
+ since proximity is likely to facilitate exposure, these positive values
+ for nearby EQ seem generally consistent with our findings on happiness
+ and immediate experience.
+ The relative effect sizes for specific land cover types are not quite aligned,
+ however: our most strongly SWB-predicting type, marine and coastal margins,
+ is not significant in 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "gibbons:2011a"
+
+\end_inset
+
+'s price model, and their most strongly price-predicting type, freshwater,
+ wetlands and floodplains, has one of the smallest effects on SWB.
+ There are many potential explanations for this discrepancy
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For example, people might be mis-predicting the utility effects of different
+ land cover types when making house-buying decisions; different land cover
+ types might have genuinely different effects on momentary happiness vs.
+ (preference satisfaction) utility; and/or there may be biases from omitted
+ variables in either or both studies.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The most relevant comparators from our survey research strand, described
+ in the previous chapter, are the UK-wide findings.
+ These again use the same land cover EQ data we use here, and the comparison
+ again shows agreement as to generalities --- some green and blue land cover
+ types are positively linked to SWB --- while the specific types do not
+ tally.
+ We find all of the types that are significant in the life satisfaction
+ model or either affective indicator model significant in our ESM-based
+ immediate happiness model.
+ Again, however, the strongest predictor type for immediate happiness, marine
+ and coastal margins, is not significant in either of the survey-based models.
+\end_layout
+
+\begin_layout Subsection
+Conclusions
 \end_layout
 
 \begin_layout Standard
