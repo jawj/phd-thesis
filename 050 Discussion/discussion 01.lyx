@@ -117,43 +117,84 @@ name "chap:Discussion-and-conclusions"
 \end_layout
 
 \begin_layout Standard
-Happiness economics -- growing interest.
- Especially for environmental economists.
- Way to quantify EQ impacts.
+There are a number of reasons, largely outside the scope of economics, for
+ hypothesising that higher EQ will lead to greater wellbeing.
+ There is some existing evidence --- from studies in the economics of subjective
+ happiness, other areas of economics, and other disciplines --- that this
+ is indeed the case.
+ 
 \end_layout
 
 \begin_layout Standard
-Reasons to think EQ may affect happiness.
- Previous economics research.
- Limitations/crudeness.
+The previous research in happiness economics covers a range of EQ characteristic
+s, but is generally somewhat crude.
+ It has relied on simple cross-sectional analyses, asking either whether
+ the average of people's retrospective happiness reports in a country is
+ related to aggregate EQ indicators in that country, or whether a person's
+ retrospectively-assessed happiness is related to EQ characteristics around
+ his or home.
+ Even in the latter case, studies have generally included only a narrow
+ range of EQ characteristics, aggregated over relatively large areas.
+ This thesis has taken two approaches to improving on this research.
+ 
 \end_layout
 
 \begin_layout Standard
-Incremental approach: range and resolution of data and measurements on EQ
- and SWB.
- Two new surveys.
- Advanced GIS.
- Happiness models.
- Some results -- some lack of results.
- UK: green and blue space effects.
- Possible differences in different mood measures.
- London + workplaces: difficulties of cross-sectional location data ---
- untangling a mass of spatial correlates amongst noise of individual-level
- unobservables such as personality, life events, wealth; habituation; sorting,
- etc.
+Our first, incremental, approach was to stick to the cross-sectional study
+ design while improving the range and resolution of data and measurements
+ on EQ and SWB.
+ The results of this approach were mixed.
+ We found some positive links between SWB reports and some types of green
+ and blue space across the UK as a whole, and some evidence of differing
+ effects on different elements of SWB.
+ 
 \end_layout
 
 \begin_layout Standard
-Radical approach: a new question: immediate relations.
- New methods: crowd-sourced spatial experience sampling.
- Powerful panel data (repeat reasons from intro).
- Main limitation is demography.
- But going to get better as more people have the technology (especially
- if can support lower-end devices, esp.
- Android).
- Strong, intuitive, convincing results.
- All natural land cover types better than cities.
- Challenge to urban design?
+On the other hand, these results were not enormously robust; we found no
+ links between SWB and workplace EQ; and in London we found no links with
+ EQ at all.
+ We suspect that this is due at least in part to the limitations of the
+ conventional, cross-sectional study design.
+ It may be unrealistic to hope to pick out the effects of multiple, partially
+ correlated spatial characteristics amongst the noise of individual-level
+ unobservables (such as personality, wealth, and recent life events); in
+ the potential presence of sorting by EQ sensitivity in individuals' home
+ location choices; and given the indirect relationship between simple levels
+ of and actual exposure to or use of EQ.
+\end_layout
+
+\begin_layout Standard
+Our second approach was thus somewhat more radical.
+ We posed a slightly different question: is a person's 
+\emph on
+momentary
+\emph default
+ happiness related to EQ in his or her 
+\emph on
+immediate
+\emph default
+ surroundings? To address this question, we developed and implemented a
+ new method of data collection: crowd-sourced, spatial experience sampling,
+ using an app for individuals' own GPS-equipped mobile phones.
+ The principal limitation of this strand of our study is sampling: we rely
+ on a convenience sample of users of a specific smartphone.
+ It is not obvious, though, that EQ will affect these individuals differently
+ to others.
+ Meanwhile, the great benefit of this method is that it provides a large
+ panel data set, comprising many precisely geo-located responses from each
+ of many individuals.
+ We are able to use this data to ameliorate many of the problems identified
+ with the conventional approach.
+\end_layout
+
+\begin_layout Standard
+Our results using this approach are strong and intuitive.
+ Even after controlling for a range of other spatial and non-spatial factors,
+ participants are happier when outdoors in any green or blue space land
+ cover type than when they are outdoors in a continuous urban environment.
+ These results are robust to estimation with a variety of different models,
+ specifications and sample restrictions.
 \end_layout
 
 \begin_layout Standard
@@ -195,6 +236,9 @@ S-ESM.
  Implemented a system and shown it works.
  Many ways to expand.
  Using our data and new data.
+ Sampling going to get better as more people have the technology (especially
+ if can support lower-end devices, esp.
+ Android).
 \end_layout
 
 \begin_layout Standard
@@ -301,7 +345,8 @@ appreciate length of participation: provide means to update slowly-varying
 consider additional EQ data, e.g.
  in London, UCL Nowcast air pollution map (varies in space AND time) --
  plus our photos (man/machine-coded) and noise measures (improve noise measures
- to distinguish traffic from music!); 
+ to distinguish traffic from music!); better weather data (and focus on
+ that -- more convincingly causal?)
 \end_layout
 
 \begin_layout Standard
@@ -423,6 +468,11 @@ limitations here: sampling issues + causality issues.
 \begin_layout Standard
 but a powerful new way to think about (and commission research on!) these
  issues 
+\end_layout
+
+\begin_layout Standard
+urban planning; land use; environmental stewardship and accessibility (e.g.
+ public transport) --- also noise + pollution damages etc.
 \end_layout
 
 \end_body
