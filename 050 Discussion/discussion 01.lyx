@@ -191,27 +191,54 @@ immediate
 \begin_layout Standard
 Our results using this approach are strong and intuitive.
  Even after controlling for a range of other spatial and non-spatial factors,
- participants are happier when outdoors in any green or blue space land
- cover type than when they are outdoors in a continuous urban environment.
+ participants are substantially happier when outdoors in any green or blue
+ space land cover type than when they are outdoors in a continuous urban
+ environment.
  These results are robust to estimation with a variety of different models,
  specifications and sample restrictions.
 \end_layout
 
 \begin_layout Standard
-In summary, two methods addressing different but related questions.
- Both questions important: want good experiences in the moment, but live
- mainly with our memories and interpretations of those experiences (Kahneman
- thought expt.).
- Reasons to expect compatible answers: both sides of the equation relate.
- More access to local EQ => more use and exposure (and desire to use and
- be exposed => live nearby).
- Similarly, a sequence of happy moments => happy recollections.
+We do not underestimate 
+\begin_inset Quotes eld
+\end_inset
+
+the importance of the distinction between the judgments individuals make
+ when they think about their life and the feelings that they experience
+ as they live it
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 16492"
+key "kahneman:2010"
+
+\end_inset
+
+: the questions addressed by the two strands of this thesis are related
+ but distinct.
+ On the other hand, broadly comparable answers will not be surprising: for
+ happiness and EQ indicators, we can expect immediate and retrospective
+ quantities to be linked.
+ An individual who experiences more positive moments is likely to come to
+ a more positive evaluation of his or her life, and an individual living
+ in a high-EQ location is more likely to use and be exposed to higher EQ
+ (with cause-and-effect running, in the latter case, both ways).
+ Unfortunately, our survey-based results are not strong enough to permit
+ detailed comparison of the immediate and retrospective links.
+ We can say, however, that the findings of the two approaches appear compatible:
+ in each case, green and blue spaces have a measurably positive impact on
+ wellbeing.
+ 
 \end_layout
 
 \begin_layout Standard
-In principle, results may be pointing the same way.
- Nearby results a bit limited, not too robust.
- Momentary results more robust and have more scope for future refinement.
+There is considerable scope for both approaches to be developed further
+ and answers to both questions to be further refined.
+ The spatial experience sampling method, in particular, offers tremendous
+ scope for new insight in future research.
 \end_layout
 
 \begin_layout Section
@@ -220,6 +247,10 @@ Original contribution
 
 \begin_layout Subsection
 Research methods
+\end_layout
+
+\begin_layout Standard
+Our web surveys research (chapters )
 \end_layout
 
 \begin_layout Standard
@@ -305,8 +336,8 @@ Momentary happiness and the immediate environment
 \begin_layout Standard
 In our view there is enormous potential for this data, and methodology more
  generally, to provide further insights in this area.
- Technology was not available at start of research process, so less developed
- than might have been given more time.
+ Low-hanging fruit! Technology was not available at start of research process,
+ so less developed than might have been given more time.
 \end_layout
 
 \begin_layout Standard
