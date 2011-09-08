@@ -237,8 +237,8 @@ key "kahneman:2010"
 \begin_layout Standard
 There is considerable scope for both approaches to be developed further
  and answers to both questions to be further refined.
- The spatial experience sampling method, in particular, offers tremendous
- scope for new insight in future research.
+ As discussed further below, the spatial experience sampling method offers
+ particularly great scope for new insight in future research.
 \end_layout
 
 \begin_layout Section
@@ -247,6 +247,14 @@ Original contribution
 
 \begin_layout Subsection
 Research methods
+\end_layout
+
+\begin_layout Standard
+Both of our approaches share important limitations with the earlier work
+ in this area, particularly with regard to questions of causality and potential
+ omitted variables.
+ Nevertheless, we believe that each contributes significant methodological
+ advances on the previous state of the art.
 \end_layout
 
 \begin_layout Standard
@@ -273,7 +281,7 @@ reference "chap:survey-results"
 \end_inset
 
 ) offers several incremental advances on the methods that have conventionally
- been applied in happiness economics research into EQ.
+ been applied in the happiness economics literature on EQ.
  
 \end_layout
 
@@ -301,12 +309,12 @@ We hope and expect that future research in this area will build on these
 \end_layout
 
 \begin_layout Standard
-Our spatial experience sampling method is novel and a more radical departure
- within the relevant literature.
- We have successfully implemented an experience sampling system of reasonable
- complexity at a very large scale, demonstrating that this can work, with
- respect both to the technology and to the recruitment and retention of
- participant volunteers
+Our spatial experience sampling method study is a novel and more radical
+ departure from the literature.
+ We have successfully implemented a sampling system of reasonable complexity
+ at a very large scale, demonstrating that this is feasible with respect
+ both to the technology and to the recruitment and retention of participant
+ volunteers
 \begin_inset Foot
 status collapsed
 
@@ -341,12 +349,12 @@ key "idc:2011"
 
 \begin_layout Standard
 There are innumerable ways to extend and apply this methodology more broadly
- to questions regarding EQ and happiness, using our existing data, or new
- data from 
+ to questions regarding EQ and happiness, using our existing data, new data
+ from the 
 \emph on
 Mappiness
 \emph default
-, or data from new projects.
+ system, or data from new projects.
  We discuss these further in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -355,8 +363,8 @@ reference "sec:Future-directions"
 \end_inset
 
 .
- There are even more possibilities for application of this methodology more
- broadly, and we touch on some of these in 
+ There are also possibilities for application of this methodology more broadly,
+ and we touch on some of these in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Wider-implications"
@@ -366,27 +374,30 @@ reference "sec:Wider-implications"
 .
 \end_layout
 
-\begin_layout Standard
-Both of our approaches share important limitations with the earlier work
- in this area, particularly with regard to questions of causality and potential
- omitted variables.
- Nevertheless, we believe that each contributes significant methodological
- advances on the previous state of the art.
-\end_layout
-
 \begin_layout Subsection
 Happiness and environmental quality
 \end_layout
 
 \begin_layout Standard
-Some new evidence at national level that green and blue spaces near home
- are linked to greater happiness in retrospective reports.
- Some values, but not useful because not plausible.
+We present new evidence at national level that certain types of green and
+ blue spaces near the home are linked to retrospective evaluations indicating
+ higher life satisfaction, greater emotional wellbeing, and lesser negative
+ affect.
+ This evidence is not exceptionally robust, but for life satisfaction it
+ is the first available on this question, and has significant potential
+ for elaboration in future research.
 \end_layout
 
 \begin_layout Standard
-Much stronger evidence on the related point that people are happy when they're
- *in* green and blue spaces.
+We show much stronger evidence on the related point that people are happy
+ when they are 
+\emph on
+in
+\emph default
+ green and blue spaces.
+ The effects we describe are both substantial and highly robust.
+ This constitutes a new line of evidence in EQ and wellbeing research, and
+ could have significant implications beyond academic work.
 \end_layout
 
 \begin_layout Section
