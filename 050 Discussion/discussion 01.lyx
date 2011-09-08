@@ -250,32 +250,128 @@ Research methods
 \end_layout
 
 \begin_layout Standard
-Our web surveys research (chapters )
-\end_layout
+Our survey-based research on retrospective happiness evaluations (chapters
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:survey-methods"
 
-\begin_layout Standard
-Web surveys: incremental methodological advances x 7 or so.
- Problems with old, crude methodologies.
- Future work should build on this, especially as new and more accurate data
- sets become available.
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:analysis-methods"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:survey-results"
+
+\end_inset
+
+) offers several incremental advances on the methods that have conventionally
+ been applied in happiness economics research into EQ.
  
 \end_layout
 
 \begin_layout Standard
-S-ESM.
- New and terribly promising.
- Implemented a system and shown it works.
- Many ways to expand.
- Using our data and new data.
- Sampling going to get better as more people have the technology (especially
- if can support lower-end devices, esp.
- Android).
+We join very high resolution spatial data and with very precise location
+ information, where most existing studies have had data only at ward level
+ (or worse).
+ We use more advanced GIS methods, calculating weighted proportions of land
+ cover types within a certain radius of respondents' locations.
+ We consider multiple EQ characteristics simultaneously, where many previous
+ studies look at only one.
+ We explore a number of EQ characteristics which have not previously been
+ used, including the accessibility of green and blue space.
+ We estimate SWB models including EQ characteristics not only at respondents'
+ homes, but also at their workplaces.
+ We compare the results of using several alternative SWB indicators, and
+ we follow a number of the recommendations for high-quality SWB valuation
+ research emerging from the most recent valuation literature.
 \end_layout
 
 \begin_layout Standard
-In both cases, still significant limitations (esp.
- causality and omitted variables) BUT an important step up from previous
- state of the art.
+We hope and expect that future research in this area will build on these
+ improvements, particularly with the increasing availability of high-resolution
+ data sources and powerful GIS tools.
+\end_layout
+
+\begin_layout Standard
+Our spatial experience sampling method is novel and a more radical departure
+ within the relevant literature.
+ We have successfully implemented an experience sampling system of reasonable
+ complexity at a very large scale, demonstrating that this can work, with
+ respect both to the technology and to the recruitment and retention of
+ participant volunteers
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+One commercial research professional told the researcher that we had 
+\begin_inset Quotes eld
+\end_inset
+
+taken the risk out of
+\begin_inset Quotes erd
+\end_inset
+
+ embarking on projects of this sort.
+\end_layout
+
+\end_inset
+
+.
+ The major limitation of this method as applied today --- sampling from
+ a restricted pool of smartphone owners --- seems likely to all but disappear
+ in the medium-term, as smartphones attain greater market penetration at
+ all income levels (the smartphone market is predicted to grow by 50% worldwide
+ in 2011 alone --- 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "idc:2011"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+There are innumerable ways to extend and apply this methodology more broadly
+ to questions regarding EQ and happiness, using our existing data, or new
+ data from 
+\emph on
+Mappiness
+\emph default
+, or data from new projects.
+ We discuss these further in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Future-directions"
+
+\end_inset
+
+.
+ There are even more possibilities for application of this methodology more
+ broadly, and we touch on some of these in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Wider-implications"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Both of our approaches share important limitations with the earlier work
+ in this area, particularly with regard to questions of causality and potential
+ omitted variables.
+ Nevertheless, we believe that each contributes significant methodological
+ advances on the previous state of the art.
 \end_layout
 
 \begin_layout Subsection
@@ -295,6 +391,13 @@ Much stronger evidence on the related point that people are happy when they're
 
 \begin_layout Section
 Future directions
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Future-directions"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -355,7 +458,8 @@ improve collection techniques -- e.g.
 \end_layout
 
 \begin_layout Standard
-support additional platforms for better demographics (demand for Android)
+support additional platforms for better demographics/bigger population (demand
+ for Android)
 \end_layout
 
 \begin_layout Standard
@@ -433,6 +537,13 @@ Subject to appropriate safeguards on privacy/anonymity hope other academic
 
 \begin_layout Section
 Wider implications
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Wider-implications"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
