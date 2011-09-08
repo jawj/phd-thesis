@@ -397,7 +397,7 @@ in
  green and blue spaces.
  The effects we describe are both substantial and highly robust.
  This constitutes a new line of evidence in EQ and wellbeing research, and
- could have significant implications beyond academic work.
+ has significant implications beyond academic work.
 \end_layout
 
 \begin_layout Section
@@ -411,139 +411,155 @@ name "sec:Future-directions"
 
 \end_layout
 
-\begin_layout Subsection
-Retrospective happiness and the usual environment
-\end_layout
-
 \begin_layout Standard
-More work definitely needed on the SWB valuation approach to date: some
- scepticism regarding claims that the next study will solve the high values
- problem.
- Concur with Fujiwara + C that 
-\begin_inset Quotes eld
+In relation to both types of research, we have identified causality and
+ omitted variables as remaining challenges.
+ For questions of causality, exogenous variation is key.
+ Such variations in most EQ exposures remain difficult to identify, but
+ researchers could profitably remain on the look-out for them (for example,
+ the abolition of the western extension of London's Congestion Charging
+ zone, or the closure of Greenwich Park during the 2012 Olympics, might
+ be investigated as possible candidates).
+ In principle, spatial econometric models could help to mitigate omitted
+ variables issues: to date only one application of these models to SWB and
+ EQ is known, and none with high-resolution data
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citet
+key "rehdanz:2007a"
+
 \end_inset
 
-still very much in development
-\begin_inset Quotes erd
+ applies these techniques to a cross-national data set.
+\end_layout
+
 \end_inset
 
-
+.
+ In relation to research using retrospective happiness data, more work is
+ also needed to bring down the excessively high values invariably calculated
+ using the SWB valuation technique.
 \end_layout
 
 \begin_layout Standard
-Still important to address causality.
- Exogenous variation.
- E.g.
- C-charge changes? park closures for Olympics? Etc.
-\end_layout
-
-\begin_layout Standard
-Still scope to use more spatial models with high-res data (Rehdanz is country
- level) -- could help with possible spatial unobservables.
+As noted above, we are particularly optimistic regarding the prospects for
+ future research using the spatial experience sampling technique.
+ As a powerful new method, it offers plenty of low-hanging fruit.
+ Below, we list ideas for potential extensions.
+ Time constraints --- partly imposed by the unavailability of the necessary
+ consumer technology at the start of the research process --- prevented
+ these points from being addressed within this thesis.
  
 \end_layout
 
-\begin_layout Subsection
-Momentary happiness and the immediate environment
+\begin_layout Subsubsection
+Spatial ESM data
 \end_layout
 
 \begin_layout Standard
-In our view there is enormous potential for this data, and methodology more
- generally, to provide further insights in this area.
- Low-hanging fruit! Technology was not available at start of research process,
- so less developed than might have been given more time.
+Our ESM data collection technique could be extended in a number of ways.
+ 
 \end_layout
 
-\begin_layout Standard
-In future research we also hope to: 
+\begin_layout Description
+Platforms Additional platforms could be supported (such as the wide variety
+ of Android handsets), to provide wider coverage of the population and some
+ additional capabilities.
+\end_layout
+
+\begin_layout Description
+Signalling The system could be reimplemented so that signalling did not
+ require a data connection, in order to obtain more responses from remote
+ (high-EQ, low-mobile Internet) locations
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This is possible on Android handsets and on the iPhone beginning with iOS
+ version 4.
+\end_layout
+
+\end_inset
+
+.
+ As some participants have requested, follow-up reminder signals could be
+ provided, improving the chances of a response.
+\end_layout
+
+\begin_layout Description
+ESM
+\begin_inset space ~
+\end_inset
+
+questions Additional ESM assessment questions could be asked, including
+ ones that identify not only activities but also states, such as being on
+ holiday, unwell, or hung over.
+ A contextual question system (not asking, for example, if someone is hunting
+ if they are indoors) could help to keep the response process speedy in
+ spite of such additions.
+ In the light of how long some people are willing to take part in the study,
+ it would also be useful to provide a means to update some demographic informati
+on (employment, relationships, income and so on) and/or to provide information
+ on unusual but significant events (redundancy or bereavement, for example).
+\end_layout
+
+\begin_layout Description
+Sensor
+\begin_inset space ~
+\end_inset
+
+data Contributed photos could be coded either manually, or using computer
+ vision techniques, to provide additional data on EQ (such as the aesthetic
+ character of urban spaces).
+ The app could be enhanced to register not only an overall noise level,
+ but information that could allow different kinds of noise sources (such
+ as traffic, music, or conversation) to be recognised.
+ And subject to participants' consent, location data could be collected
+ more frequently --- for example, on the hour, or every 5 minutes in the
+ lead-up to a signal.
+\end_layout
+
+\begin_layout Description
+External
+\begin_inset space ~
+\end_inset
+
+data Data on other types of EQ could usefully be exploited, such as historical
+ air pollution concentrations by both location and time.
 \end_layout
 
 \begin_layout Subsubsection
-Data
+Spatial ESM analysis
 \end_layout
 
 \begin_layout Standard
-improve collection techniques -- e.g.
- not require data connection, track location more frequently, provide reminder
- beeps, 
-\end_layout
-
-\begin_layout Standard
-support additional platforms for better demographics/bigger population (demand
- for Android)
-\end_layout
-
-\begin_layout Standard
-add new ESM assessment questions and/or use heuristics to identify not only
- activities but also 
-\emph on
-states
-\emph default
- --- such as being unwell, on holiday, drunk, or hung over; 
-\end_layout
-
-\begin_layout Standard
-appreciate length of participation: provide means to update slowly-varying
- things (employment, relationships, income, etc.)
-\end_layout
-
-\begin_layout Standard
-consider additional EQ data, e.g.
- in London, UCL Nowcast air pollution map (varies in space AND time) --
- plus our photos (man/machine-coded) and noise measures (improve noise measures
- to distinguish traffic from music!); better weather data (and focus on
- that -- more convincingly causal?)
-\end_layout
-
-\begin_layout Standard
-compare retrospective data too -- i.e.
- causes of individual's retrospective vs momentary happiness, and relations
+More advanced econometric models, accounting for spatial and/or serial autocorre
+lation could be estimated from the data.
+ Our analyses could be broken down by population sub-groups or in geographical
+ regions.
+ The assumption of independent effects we have made in relation to most
+ of our explanatory variables could be relaxed, and the huge variety of
+ possible interactions be investigated.
+ Relative levels or contrasts could be investigated, such as between the
+ immediate environment and the environment around the home.
+ The retrospective happiness evaluation provided on sign-up could be compare
+ with the momentary happiness data, providing more information on relations
  between the two.
-\end_layout
-
-\begin_layout Subsubsection
-Analysis
-\end_layout
-
-\begin_layout Standard
-population sub-groups; geographical regions;
+ Our data set might also be used to investigate the rate and extent of habituati
+on to different characteristics of EQ.
 \end_layout
 
 \begin_layout Standard
-relax the assumption of independent effects we have made in relation to
- most of our explanatory variables, and investigate the huge variety of
- possible interactions; 
-\end_layout
-
-\begin_layout Standard
-estimate more complex econometric models accounting for spatial and/or serial
- autocorrelation; 
-\end_layout
-
-\begin_layout Standard
-incorporate contrasts, such as between the current environment and home
- environment;
-\end_layout
-
-\begin_layout Standard
-investigate rate and extent of habituation
-\end_layout
-
-\begin_layout Subsubsection
-Valuation
-\end_layout
-
-\begin_layout Standard
-and explore the use of this data for monetary valuation of the environment.
- More work definitely also required to bring monetary values into the ESM
- framework --- perhaps using known costs of paid-for activities (e.g.
- spending 2 hours in the cinema) to provide a lower bound on WTP for experiences
- of high-EQ environments?
-\end_layout
-
-\begin_layout Standard
-Subject to appropriate safeguards on privacy/anonymity hope other academic
- researchers will find useful too.
+It could also be profitable to explore the use of this ESM data for monetary
+ valuation.
+ For example, the known costs of certain paid activities (e.g.
+ cinema attendance) might be used to provide a lower bound on WTP for experience
+s of high-EQ environments.
+ Income information might also be used, although it is unclear whether WTP
+ values might derived in this way.
 \end_layout
 
 \begin_layout Section
