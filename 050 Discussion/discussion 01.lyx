@@ -575,18 +575,18 @@ The analysis of this and similar data could also be taken much further.
 \begin_layout Standard
 More advanced econometric models, accounting for spatial and/or serial autocorre
 lation could be estimated from the data.
- Analyses could be compared across population sub-groups or by geographical
- region.
  The assumption of independent effects we have made in relation to most
  of our explanatory variables could be relaxed, and the huge variety of
  possible interactions be investigated.
+ Analyses could be compared across population sub-groups, between urban
+ and rural environments, or by geographical region.
  Relative levels or contrasts could be explored, such as between the immediate
  environment and the environment around the home.
  Retrospective happiness evaluations provided on sign-up could be compared
  with the momentary happiness data, providing more information on relations
  between the two.
  The trajectories of individuals' response sequences could also be analysed
- in more detail, to seek evidence of whether individuals learn and update
+ in more detail, to discover whether and how participants learn and update
  their preferences as a result of taking part.
  Our data set might profitably also be used to investigate the rate and
  extent of habituation to different characteristics of EQ.
@@ -620,7 +620,7 @@ Experience sampling research
 
 \begin_layout Standard
 We have shown that crowd-sourced and spatial ESM techniques can be highly
- effective, and these methodologies could be adapted to many other questions
+ effective, and these methodologies may be adapted to many other questions
  in both academic and commercial research.
  We have already been approached by computer scientists studying spatial
  recommendation systems, policymakers at the Department for Transport, advertisi
@@ -631,38 +631,55 @@ ng agencies (interested in people's moods around their hoardings), consultancies
 \end_layout
 
 \begin_layout Subsection
-Policy
+Planning and policy
 \end_layout
 
 \begin_layout Standard
-new evidence that green and blue space near home related to SWB as seen
- in retrospective assessments.
- not super robust, but there
+We show that people are happier in green and blue spaces than in continuous
+ urban environments.
+ Evidence on this topic may be of interest to those concerned with natural
+ and built environments --- such as conservationists, landscape architects
+ and urban planners --- and to those involved with issues of mental health
+ and wellbeing.
+ 
 \end_layout
 
 \begin_layout Standard
-stronger new evidence that people are happier in natural envs.
- not yet ready to evaluate policy alternatives against i.e.
- still to early to say what's optimal/make trade-offs.
- but in broad terms shows effects are real and encourages to look at provision
- and facilitation of use: e.g.
- massive forest sell-off could have been a stupid plan.
- and urban planning (lcm types not only rural): more trees and green spaces
- may have additional justification.
+Such evidence also has the ability to inform planning and policy development
+ at all levels: it could be used in the evaluation of such schemes as the
+ imminent removal of 'brownfield' housing development targets for local
+ authorities 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 49"
+key "dclg:2011"
+
+\end_inset
+
+ and the recent proposals to dispose of much of the UK's publicly-held woodland
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "forestry-commission--defra:2011"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-limitations here: sampling issues + causality issues.
+Our findings are not yet ready to be used in the evaluation of specific
+ policies, but in broad terms they strengthen the evidence that environmental
+ links with happiness are real, measurable and substantial.
+ They might encourage policymakers to take seriously the public provision
+ of green and blue spaces, and the promotion and facilitation of their use.
+ 
 \end_layout
 
 \begin_layout Standard
-but a powerful new way to think about (and commission research on!) these
- issues 
-\end_layout
-
-\begin_layout Standard
-urban planning; land use; environmental stewardship and accessibility (e.g.
- public transport) --- also noise + pollution damages etc.
+We hope that this research will be developed further.
+ We believe it offers a valuable new way for policymakers and researchers
+ to ask and answer questions about happiness and environmental quality.
 \end_layout
 
 \end_body
