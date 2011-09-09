@@ -219,15 +219,15 @@ key "kahneman:2010"
 
 : the questions addressed by the two strands of this thesis are related
  but distinct.
- On the other hand, broadly comparable answers will not be surprising: for
- happiness and EQ indicators, we can expect immediate and retrospective
- quantities to be linked.
- An individual who experiences more positive moments is likely to come to
- a more positive evaluation of his or her life, and an individual living
- in a high-EQ location is more likely to use and be exposed to higher EQ
- (with cause-and-effect running, in the latter case, both ways).
+ On the other hand, broadly comparable answers will not be surprising.
+ For both happiness and EQ indicators, we can expect immediate and retrospective
+ quantities to be linked: an individual who experiences more positive moments
+ is likely to come to a more positive evaluation of his or her life, and
+ an individual living in a high-EQ location is more likely to use and be
+ exposed to higher EQ (with cause-and-effect running, in the latter case,
+ both ways).
  Unfortunately, our survey-based results are not strong enough to permit
- detailed comparison of the immediate and retrospective links.
+ detailed comparison of the immediate and retrospective relationships.
  We can say, however, that the findings of the two approaches appear compatible:
  in each case, green and blue spaces have a measurably positive impact on
  wellbeing.
@@ -237,8 +237,8 @@ key "kahneman:2010"
 \begin_layout Standard
 There is considerable scope for both approaches to be developed further
  and answers to both questions to be further refined.
- As discussed further below, the spatial experience sampling method offers
- particularly great scope for new insight in future research.
+ As discussed further below, the spatial experience sampling method appears
+ to offer particularly great scope for new insight.
 \end_layout
 
 \begin_layout Section
@@ -251,10 +251,10 @@ Research methods
 
 \begin_layout Standard
 Both of our approaches share important limitations with the earlier work
- in this area, particularly with regard to questions of causality and potential
- omitted variables.
+ in this area, particularly with regard to questions of causality and the
+ potential for omitted variables biases.
  Nevertheless, we believe that each contributes significant methodological
- advances on the previous state of the art.
+ advances beyond the previous state of the art.
 \end_layout
 
 \begin_layout Standard
@@ -280,8 +280,8 @@ reference "chap:survey-results"
 
 \end_inset
 
-) offers several incremental advances on the methods that have conventionally
- been applied in the happiness economics literature on EQ.
+) offers several incremental improvements on the methods that have conventionall
+y been applied in the happiness economics literature on EQ.
  
 \end_layout
 
@@ -291,10 +291,9 @@ We join very high resolution spatial data and with very precise location
  (or worse).
  We use more advanced GIS methods, calculating weighted proportions of land
  cover types within a certain radius of respondents' locations.
- We consider multiple EQ characteristics simultaneously, where many previous
- studies look at only one.
- We explore a number of EQ characteristics which have not previously been
- used, including the accessibility of green and blue space.
+ We consider multiple EQ characteristics simultaneously, and explore a number
+ of EQ characteristics which have not previously been looked at, including
+ the accessibility of green and blue space.
  We estimate SWB models including EQ characteristics not only at respondents'
  homes, but also at their workplaces.
  We compare the results of using several alternative SWB indicators, and
@@ -309,8 +308,28 @@ We hope and expect that future research in this area will build on these
 \end_layout
 
 \begin_layout Standard
-Our spatial experience sampling method study is a novel and more radical
- departure from the literature.
+Our spatial experience sampling method study (chapters 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:esm-research-methods"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:analysis-methods"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:esm-results"
+
+\end_inset
+
+) is a novel and more radical departure from the literature.
  We have successfully implemented a sampling system of reasonable complexity
  at a very large scale, demonstrating that this is feasible with respect
  both to the technology and to the recruitment and retention of participant
@@ -319,7 +338,11 @@ Our spatial experience sampling method study is a novel and more radical
 status collapsed
 
 \begin_layout Plain Layout
-One commercial research professional told the researcher that we had 
+One commercial research professional told the researcher that 
+\emph on
+Mappiness
+\emph default
+ has 
 \begin_inset Quotes eld
 \end_inset
 
@@ -333,11 +356,11 @@ taken the risk out of
 \end_inset
 
 .
- The major limitation of this method as applied today --- sampling from
- a restricted pool of smartphone owners --- seems likely to all but disappear
- in the medium-term, as smartphones attain greater market penetration at
- all income levels (the smartphone market is predicted to grow by 50% worldwide
- in 2011 alone --- 
+ The major limitation of this method as applied today --- having to sample
+ from a restricted pool of smartphone owners --- seems likely to all but
+ disappear in the medium-term, as smartphones attain greater market penetration
+ at all income levels (the smartphone market is predicted to grow by 50%
+ worldwide in 2011 alone --- 
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "idc:2011"
@@ -354,7 +377,7 @@ There are innumerable ways to extend and apply this methodology more broadly
 \emph on
 Mappiness
 \emph default
- system, or data from new projects.
+ project, or new data from new studies.
  We discuss these further in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -379,6 +402,11 @@ Happiness and environmental quality
 \end_layout
 
 \begin_layout Standard
+We contribute to the state of knowledge regarding quantitative links between
+ happiness and EQ in two ways.
+\end_layout
+
+\begin_layout Standard
 We present new evidence at national level that certain types of green and
  blue spaces near the home are linked to retrospective evaluations indicating
  higher life satisfaction, greater emotional wellbeing, and lesser negative
@@ -389,15 +417,16 @@ We present new evidence at national level that certain types of green and
 \end_layout
 
 \begin_layout Standard
-We show much stronger evidence on the related point that people are happy
+We provide much stronger evidence on the related point that people are happy
  when they are 
 \emph on
 in
 \emph default
  green and blue spaces.
  The effects we describe are both substantial and highly robust.
- This constitutes a new line of evidence in EQ and wellbeing research, and
- has significant implications beyond academic work.
+ This constitutes a new line of evidence in EQ and wellbeing research and,
+ as discussed further below, has significant implications beyond academic
+ work.
 \end_layout
 
 \begin_layout Section
@@ -415,14 +444,14 @@ name "sec:Future-directions"
 In relation to both types of research, we have identified causality and
  omitted variables as remaining challenges.
  For questions of causality, exogenous variation is key.
- Such variations in most EQ exposures remain difficult to identify, but
- researchers could profitably remain on the look-out for them (for example,
- the abolition of the western extension of London's Congestion Charging
- zone, or the closure of Greenwich Park during the 2012 Olympics, might
- be investigated as possible candidates).
- In principle, spatial econometric models could help to mitigate omitted
- variables issues: to date only one application of these models to SWB and
- EQ is known, and none with high-resolution data
+ Such variation in most EQ exposures remains difficult to identify, but
+ researchers need to stay on the look-out for them (for example, the abolition
+ of the western extension of London's Congestion Charging zone, or the closure
+ of Greenwich Park during the 2012 Olympics, could be investigated as possible
+ candidates).
+ In principle, spatial econometric models could help mitigate omitted variables
+ issues: to date, only one application of these models to SWB and EQ is
+ known, and this does not use high-resolution  data on EQ
 \begin_inset Foot
 status collapsed
 
@@ -447,12 +476,11 @@ key "rehdanz:2007a"
 \begin_layout Standard
 As noted above, we are particularly optimistic regarding the prospects for
  future research using the spatial experience sampling technique.
- As a powerful new method, it offers plenty of low-hanging fruit.
- Below, we list ideas for potential extensions.
+ As a new method, it offers the promise of more low-hanging fruit.
+ Below, we list ideas for potential extensions on the work we have presented.
  Time constraints --- partly imposed by the unavailability of the necessary
  consumer technology at the start of the research process --- prevented
- these points from being addressed within this thesis.
- 
+ some of these points from being addressed within this thesis.
 \end_layout
 
 \begin_layout Subsubsection
@@ -460,7 +488,8 @@ Spatial ESM data
 \end_layout
 
 \begin_layout Standard
-Our ESM data collection technique could be extended in a number of ways.
+The spatial ESM data collection technique could be extended in a number
+ of ways.
  
 \end_layout
 
@@ -487,6 +516,8 @@ This is possible on Android handsets and on the iPhone beginning with iOS
 .
  As some participants have requested, follow-up reminder signals could be
  provided, improving the chances of a response.
+ In addition, other signalling schemes could be looked into, such as location-co
+ntingent signalling.
 \end_layout
 
 \begin_layout Description
@@ -494,13 +525,12 @@ ESM
 \begin_inset space ~
 \end_inset
 
-questions Additional ESM assessment questions could be asked, including
- ones that identify not only activities but also states, such as being on
- holiday, unwell, or hung over.
- A contextual question system (not asking, for example, if someone is hunting
- if they are indoors) could help to keep the response process speedy in
- spite of such additions.
- In the light of how long some people are willing to take part in the study,
+questions Additional ESM assessment questions could be asked, to give finer
+ categorisation of activities and location types, and to assess short- and
+ medium-term states.
+ A branching and/or contextual question path could help to keep the response
+ process speedy in spite of such additions.
+ In the light of how long some people are willing to take part in such studies,
  it would also be useful to provide a means to update some demographic informati
 on (employment, relationships, income and so on) and/or to provide information
  on unusual but significant events (redundancy or bereavement, for example).
@@ -512,14 +542,17 @@ Sensor
 \end_inset
 
 data Contributed photos could be coded either manually, or using computer
- vision techniques, to provide additional data on EQ (such as the aesthetic
- character of urban spaces).
+ vision techniques, to provide additional data on EQ, such as the aesthetic
+ character of urban spaces.
  The app could be enhanced to register not only an overall noise level,
  but information that could allow different kinds of noise sources (such
  as traffic, music, or conversation) to be recognised.
+ Accelerometer data could be gathered to assess physical activity levels.
  And subject to participants' consent, location data could be collected
- more frequently --- for example, on the hour, or every 5 minutes in the
- lead-up to a signal.
+ more frequently --- for example, on the hour, or every 5 minutes for the
+ hour prior to signalling .
+ This would also provide data to help model the factors affecting the probabilit
+y of response.
 \end_layout
 
 \begin_layout Description
@@ -536,25 +569,33 @@ Spatial ESM analysis
 \end_layout
 
 \begin_layout Standard
-More advanced econometric models, accounting for spatial and/or serial autocorre
-lation could be estimated from the data.
- Our analyses could be broken down by population sub-groups or in geographical
- regions.
- The assumption of independent effects we have made in relation to most
- of our explanatory variables could be relaxed, and the huge variety of
- possible interactions be investigated.
- Relative levels or contrasts could be investigated, such as between the
- immediate environment and the environment around the home.
- The retrospective happiness evaluation provided on sign-up could be compare
- with the momentary happiness data, providing more information on relations
- between the two.
- Our data set might also be used to investigate the rate and extent of habituati
-on to different characteristics of EQ.
+The analysis of this and similar data could also be taken much further.
 \end_layout
 
 \begin_layout Standard
-It could also be profitable to explore the use of this ESM data for monetary
- valuation.
+More advanced econometric models, accounting for spatial and/or serial autocorre
+lation could be estimated from the data.
+ Analyses could be compared across population sub-groups or by geographical
+ region.
+ The assumption of independent effects we have made in relation to most
+ of our explanatory variables could be relaxed, and the huge variety of
+ possible interactions be investigated.
+ Relative levels or contrasts could be explored, such as between the immediate
+ environment and the environment around the home.
+ Retrospective happiness evaluations provided on sign-up could be compared
+ with the momentary happiness data, providing more information on relations
+ between the two.
+ The trajectories of individuals' response sequences could also be analysed
+ in more detail, to seek evidence of whether individuals learn and update
+ their preferences as a result of taking part.
+ Our data set might profitably also be used to investigate the rate and
+ extent of habituation to different characteristics of EQ.
+ 
+\end_layout
+
+\begin_layout Standard
+It would also be constructive to explore the use of this spatial ESM data
+ for monetary valuation.
  For example, the known costs of certain paid activities (e.g.
  cinema attendance) might be used to provide a lower bound on WTP for experience
 s of high-EQ environments.
@@ -578,35 +619,15 @@ Experience sampling research
 \end_layout
 
 \begin_layout Standard
-crowd-sourced ESM, spatial ESM
-\end_layout
-
-\begin_layout Standard
-it works -- taken the risk out of it (commercial research firm)
-\end_layout
-
-\begin_layout Standard
-extensions -- other data (e.g.
- heart rate, sensors); other sampling methods (e.g.
- location-contingent) -- social (and other) networks
-\end_layout
-
-\begin_layout Standard
-broad academic & commercial applications --
-\end_layout
-
-\begin_layout Standard
-been approached: spatial recommendation systems (CS), transport (DfT), business
- metrics (e.g.
- staff satisfaction), advertising (ad agencies) --- (in some commercial
- applications it's no problem at all if you've got only iPhone owners: rich
- people buy stuff!)
-\end_layout
-
-\begin_layout Standard
-also: health + exercise, urban planning, consumer behaviour, incl.
- linking experience to choice -- and seeing if there's learning, preference
- updating?
+We have shown that crowd-sourced and spatial ESM techniques can be highly
+ effective, and these methodologies could be adapted to many other questions
+ in both academic and commercial research.
+ We have already been approached by computer scientists studying spatial
+ recommendation systems, policymakers at the Department for Transport, advertisi
+ng agencies (interested in people's moods around their hoardings), consultancies
+ wishing to measure workforce satisfaction using similar methods, and others.
+ We also anticipate future applications to questions of health and physical
+ exercise, urban planning, consumer behaviour and more.
 \end_layout
 
 \begin_layout Subsection

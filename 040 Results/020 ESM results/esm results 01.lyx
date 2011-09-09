@@ -15345,7 +15345,7 @@ name "fig:noise-level-dist"
 Of valid responses, 96.5% included noise measurements (as noted in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "par:esm-sensor-data"
+reference "sub:Sound-level-measurement"
 
 \end_inset
 
