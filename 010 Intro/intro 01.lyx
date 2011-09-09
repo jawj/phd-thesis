@@ -949,10 +949,10 @@ key "killingsworth:2010"
 
 \begin_layout Standard
 We therefore believe that our spatial experience sampling methodology is
- novel both within happiness economics and in the broader context of research
- across disciplines that seeks to quantify the wellbeing effects of EQ.
- It provides an entirely new line of evidence on this question, which may
- ultimately be of significant use to environmental policymakers
+ novel both within happiness economics and more broadly.
+ It provides an entirely new line of evidence on the links between wellbeing
+ and EQ, which may ultimately be of significant use to environmental policymaker
+s
 \begin_inset Foot
 status collapsed
 
@@ -969,8 +969,8 @@ The value of this method is not confined to environmental questions, however:
 \end_layout
 
 \begin_layout Standard
-It is a powerful line of evidence compared to that provided by cross-sectional
- approaches.
+It is also a powerful line of evidence compared to that provided by cross-sectio
+nal approaches.
  Because we ask the same people the same subjective questions many times,
  we need not assume comparability of different individuals' use of the response
  scales, and all individual characteristics that are invariant over the
@@ -987,10 +987,10 @@ It is a powerful line of evidence compared to that provided by cross-sectional
 
 \begin_layout Standard
 Additionally, since we use many of the same EQ indicators in both strands
- of our research, we are able for the first time to compare relationships
- between retrospective happiness and usual environment, and between momentary
- happiness and immediate environment, contributing further to existing understan
-ding of the relation between SWB and EQ.
+ of our research, we hope for the first time to compare relationships between
+ retrospective happiness and usual environment, and between momentary happiness
+ and immediate environment, contributing further to existing understanding
+ of the relation between SWB and EQ.
 \end_layout
 
 \begin_layout Section
@@ -1033,7 +1033,7 @@ The next five chapters address our empirical contributions on that latter
  collection methods are described in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sec:survey-methods"
+reference "chap:survey-methods"
 
 \end_inset
 
@@ -1044,7 +1044,7 @@ reference "chap:analysis-methods"
 
 \end_inset
 
-, and results are presented in 
+, and results are presented and discussed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:survey-results"
@@ -1071,7 +1071,7 @@ reference "chap:analysis-methods"
 
 \end_inset
 
-, and results are presented in 
+, and results and discussion are presented in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:esm-results"
@@ -1089,7 +1089,8 @@ reference "chap:Discussion-and-conclusions"
 
 \end_inset
 
- discusses and concludes.
+ concludes with a brief synthesis of our findings, suggestions for future
+ work in this area, and some wider implications of this research.
 \end_layout
 
 \begin_layout Standard

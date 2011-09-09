@@ -45,7 +45,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize 11
+\paperfontsize 10
 \spacing onehalf
 \use_hyperref true
 \pdf_bookmarks true
@@ -18025,7 +18025,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch Massive_results_table
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset Newpage newpage
@@ -31067,7 +31067,7 @@ key "smith:2010"
 
 \end_inset
 
- have found that EQ of the kind we examine is capitalised is property prices;
+ have found that EQ of the kind we examine is capitalised in property prices;
  since proximity is likely to facilitate exposure, these positive values
  for nearby EQ seem generally consistent with our findings on happiness
  and immediate experience.

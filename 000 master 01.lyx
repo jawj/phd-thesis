@@ -23,6 +23,7 @@
 \definecolor{grey}{gray}{0.3}
 
 \vrefwarning  % prevents varioref errors when a page reference spans pages
+\usepackage{fixltx2e}
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
@@ -295,9 +296,9 @@ Results of the first strand of work are mixed, but support some links between
  happiness and the accessibility of natural environments, providing quantitative
  (including monetary) estimates of their strength.
  The second strand demonstrates that individuals are significantly and substanti
-ally happier outdoors in natural environments than in cities.
- It introduces a new and powerful line of evidence on this question, and
- has great potential for future extension.
+ally happier outdoors in natural environments than continuous urban ones.
+ It introduces a valuable new line of evidence on this question, and has
+ great potential for future extension.
  
 \begin_inset Newpage newpage
 \end_inset
@@ -329,8 +330,8 @@ tre, and Rich Aston; all testers of the iPhone app; and all Mappiness study
 \end_layout
 
 \begin_layout Standard
-This work was supported by the UK Economic & Social Research Council, grant
- number PTA-031-2006-00280.
+This work was supported by the UK Economic & Social Research Council (grant
+ number PTA-031-2006-00280).
  Additional funding for the UK web survey was provided by the United Nations
  Environment Programme World Conservation Monitoring Centre (UNEP WCMC).
 \end_layout

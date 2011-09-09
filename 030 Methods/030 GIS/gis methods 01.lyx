@@ -34,8 +34,8 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize 11
-\spacing other 1.1499999999999999
+\paperfontsize 10
+\spacing onehalf
 \use_hyperref true
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
@@ -77,6 +77,7 @@
 \topmargin 2cm
 \rightmargin 2cm
 \bottommargin 2cm
+\columnsep 1cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation skip
@@ -309,7 +310,7 @@ status open
 
 
 \backslash
-resizebox{!}{7.5cm}{
+resizebox{!}{7.6cm}{
 \end_layout
 
 \end_inset
@@ -318,12 +319,12 @@ resizebox{!}{7.5cm}{
 \size footnotesize
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="17" columns="4">
+<lyxtabular version="3" rows="18" columns="4">
 <features booktabs="true" tabularvalignment="middle">
-<column alignment="left" valignment="top" width="28text%">
-<column alignment="left" valignment="top" width="38text%">
+<column alignment="left" valignment="top" width="25text%">
+<column alignment="left" valignment="top" width="35text%">
 <column alignment="left" valignment="top" width="16text%">
-<column alignment="left" valignment="top" width="38text%">
+<column alignment="left" valignment="top" width="33text%">
 <row>
 <cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
@@ -371,7 +372,7 @@ Source
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -380,7 +381,7 @@ London Atmospheric Emissions Inventory (LAEI) 2008 Modelling Maps
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -413,7 +414,7 @@ Raster: 20
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -752,14 +753,7 @@ Vector: points (panel)
 \begin_inset Text
 
 \begin_layout Plain Layout
-wunderground.com, via hourly download to data server (
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sub:Weather-pollution-download"
-
-\end_inset
-
-)
+wunderground.com
 \end_layout
 
 \end_inset
@@ -996,7 +990,7 @@ Office for National Statistics Geography, via UKBORDERS
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1005,7 +999,7 @@ Code-Point with polygons
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1014,7 +1008,7 @@ Maximum spatial extent of each postcode
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1023,11 +1017,53 @@ Vector: polygons
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 Ordnance Survey, via EDINA Digimap
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Population density
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+UK population density grid
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Raster: 1 
+\begin_inset Formula $\times$
+\end_inset
+
+ 1km cells
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+UNEP World Conservation Monitoring Centre
 \end_layout
 
 \end_inset
@@ -1324,7 +1360,7 @@ night
 \begin_inset Float figure
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -1340,6 +1376,21 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\size scriptsize
+Data © Crown copyright 2006
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -1352,7 +1403,7 @@ den
 
 \end_inset
 
-indicator) against outline of Greater London
+indicator) against outline of Greater London.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Road-traffic-noise"
@@ -1440,6 +1491,21 @@ status collapsed
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\size scriptsize
+Data © Crown copyright 2008
 \end_layout
 
 \begin_layout Plain Layout
@@ -3398,6 +3464,38 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\paragraph_spacing single
+\noindent
+\align center
+
+\size scriptsize
+England data: Contains, or is based on, information supplied by Natural
+ England.
+ Contains, or is derived from, information supplied by Ordnance Survey.
+ © Crown copyright and database right 2011.
+ All rights reserved.
+ Ordnance Survey Licence number 100022021.
+ Wales data: © Crown copyright.
+ All rights reserved.
+ Countryside Council for Wales, 100018813 2011.
+ Scotland data: © Crown copyright and database right.
+ 2011.
+ All rights reserved.
+ Northern Ireland data: This material is based upon Crown Copyright and
+ is reproduced with the permission of Land & Property Services under delegated
+ authority from the Controller of Her Majesty’s Stationery Office, Crown
+ copyright and database rights, EMOU206.2.
+ Northern Ireland Environment Agency Copyright 2011.
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -3425,7 +3523,8 @@ Nature
 \begin_inset space ~
 \end_inset
 
-Reserves
+Reserves.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Statutory-landscape-designations"
@@ -3437,10 +3536,6 @@ name "fig:Statutory-landscape-designations"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 

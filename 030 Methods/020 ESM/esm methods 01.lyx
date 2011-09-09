@@ -44,7 +44,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize 11
+\paperfontsize 10
 \spacing other 1.1499999999999999
 \use_hyperref true
 \pdf_bookmarks true
@@ -4812,7 +4812,7 @@ reference "sec:esm-Response-validity"
 
 \begin_layout Standard
 \begin_inset Branch bib-for-esm-methods
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset CommandInset bibtex
