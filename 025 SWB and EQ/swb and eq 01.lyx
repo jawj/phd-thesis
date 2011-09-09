@@ -127,10 +127,11 @@ name "chap:happiness-and-eq"
 \end_layout
 
 \begin_layout Standard
-In this short chapter we look somewhat beyond the economics of happiness
- in search of answers to two additional questions.
- Why might we expect links between happiness and EQ? And what evidence is
- there that such links exist?
+Having surveyed the topic of happiness within economics, in this short chapter
+ we look somewhat beyond that discipline in search of answers to two additional
+ questions.
+ Why might we expect links between happiness and environmental quality (EQ)?
+ And what evidence is there that such links exist?
 \end_layout
 
 \begin_layout Section
@@ -138,12 +139,12 @@ Why might happiness and EQ be linked?
 \end_layout
 
 \begin_layout Standard
-In this thesis we define environmental quality (EQ) broadly as the presence
- of environmental goods --- such as natural landscapes, scenic views, preferred
- climates, or biodiversity --- and the absence of environmental 'bads',
- such as air pollution or noise.
- Looking beyond economics, there are at least three broad reasons for hypothesis
-ing that EQ might be positively related to SWB.
+In this thesis we define EQ broadly as the presence of environmental goods
+ --- such as natural landscapes, scenic views, preferred climates, or biodiversi
+ty --- and the absence of environmental 'bads', such as air pollution or
+ noise.
+ There are at least three broad reasons for hypothesising that EQ might
+ be positively related to SWB.
  
 \end_layout
 
@@ -616,7 +617,8 @@ Researchers in urban planning, epidemiology and psychology have pursued
  observational and experimental evidence on links between physical or mental
  wellbeing and EQ.
  Economists have sought observational evidence of links between happiness
- and EQ, generally using these to derive monetary valuations of EQ parameters.
+ and EQ, generally using these to derive monetary valuations of EQ characteristi
+cs.
 \end_layout
 
 \begin_layout Subsection
@@ -757,9 +759,9 @@ key "moro:2008"
 \end_inset
 
 .
- Hedonic valuation has been used to investigate the impacts of various EQ
- parameters, including road noise, air quality, water quality, forests,
- wetlands, view of nature, urban trees and open spaces.
+ Hedonic valuation has been used to investigate the impacts of various dimension
+s of EQ, including road noise, air quality, water quality, forests, wetlands,
+ view of nature, urban trees and open spaces.
  
 \end_layout
 
@@ -949,7 +951,7 @@ key "rehdanz:2005"
 
 \end_inset
 
-, looking at climate parameters at country level across 67 countries, find
+, looking at climate variables at country level across 67 countries, find
  that higher mean SWB is associated with higher mean temperature during
  cold months and lower mean temperature during hot months.
  
@@ -996,7 +998,7 @@ key "ferreira:2010"
 
 \end_inset
 
- include fewer other climate parameters in their model, so the difference
+ include fewer other climate characteristics in their model, so the difference
  in findings might be a result of omitted variables or of multicolinearity
  in the explanatory variables.
 \end_layout

@@ -138,7 +138,7 @@ key "mackerron:2010"
 \end_layout
 
 \begin_layout Standard
-What is 
+We begin by asking: what is 
 \begin_inset Quotes eld
 \end_inset
 
@@ -426,7 +426,7 @@ reference "sec:Conclusions"
 
 \end_inset
 
- concludes.
+ briefly summarises and concludes.
 \end_layout
 
 \begin_layout Section
@@ -871,7 +871,7 @@ The empirical SWB literature often leaves its theoretical base largely unstated.
  directly.
  SWB research thus throws any and every potential influence on happiness
  into a function together, wraps this in a reporting function, and proceeds
- to estimate parameters empirically.
+ to estimate coefficients empirically.
 \end_layout
 
 \begin_layout Standard
@@ -993,7 +993,7 @@ The vector
 \end_inset
 
  can be include just about anything, but economists have been especially
- interested in relative income parameters (both time-lagged and peer incomes:
+ interested in relative income variables (both time-lagged and peer incomes:
  
 \begin_inset Formula $y_{i,t}-y_{i,t-1}$
 \end_inset
@@ -3159,7 +3159,7 @@ From this, the implicit price of the good
 
 \begin_inset Formula 
 \begin{equation}
-\frac{\delta r/\delta q}{\delta r/\delta y}=\gamma\frac{\bar{y}}{\beta}\label{eq:swb-mrs}
+\frac{\delta r/\delta g}{\delta r/\delta y}=\gamma\frac{\bar{y}}{\beta}\label{eq:swb-mrs}
 \end{equation}
 
 \end_inset
@@ -3579,8 +3579,8 @@ key "luechinger:2009"
 \end_layout
 
 \begin_layout Standard
-Unlike stated preference methods, SWB data cannot be used to value parameters
- outside of their observed (past and current) range.
+Unlike stated preference methods, SWB data cannot be used to value characteristi
+cs outside of their observed (past and current) range.
  Although SWB valuation may be able to capture certain non-use values, such
  as for regional biodiversity 
 \begin_inset CommandInset citation
@@ -4672,7 +4672,7 @@ To imagine such a way out requires an emphasis on non-income factors that
  and their advisers --- have therefore become increasingly interested in
  the relation of happiness to these factors.
  And ecological and environmental economists are understandably particularly
- interested in happiness in relation to environmental quality parameters
+ interested in happiness in relation to aspects of environmental quality
  and their valuation (e.g.
  
 \begin_inset CommandInset citation
@@ -6290,7 +6290,7 @@ key "koszegi:2008"
 \end_layout
 
 \begin_layout Section
-Conclusions
+Summary and conclusions
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Conclusions"
@@ -6327,9 +6327,8 @@ SWB research suggests --- in line with intuition, but not always with the
 , such as non-market valuation, where both their strengths and their weaknesses
  are different.
  It also opens some new question to potential investigation.
- In respect of pubic policy, it is of particular value in informing debate
+ In respect of public policy, it is of particular value in informing debate
  around the desirability and feasibility of continuing economic growth.
- 
 \end_layout
 
 \begin_layout Standard
@@ -6337,7 +6336,10 @@ Scope remains for new research at many levels --- theoretical, methodological,
  and empirical --- in the economics of SWB.
  Temporal, spatial and social dimensions seem especially ripe for future
  investigation.
- 
+ In both strands of the research presented in this thesis, we investigate
+ environmental associations with wellbeing using spatial methods.
+ In the second, we adapt ESM techniques to provide information about wellbeing
+ both across space and through time.
 \end_layout
 
 \begin_layout Standard

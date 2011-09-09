@@ -172,9 +172,9 @@ key "dolan:2008"
 \end_layout
 
 \begin_layout Standard
-They may also include environmental quality (EQ) parameters such as climate,
- noise, air quality, and access to green spaces --- which is the proposition
- that this thesis sets out to explore.
+They may also include environmental quality (EQ) characteristics such as
+ climate, noise, air quality, and access to green spaces --- which is the
+ proposition that this thesis sets out to explore.
 \end_layout
 
 \begin_layout Subsection
@@ -361,7 +361,7 @@ Individual-level studies have modelled individuals' SWB reports using EQ
  However, these studies have still generally relied on large-area aggregates
  of EQ measures; have focused exclusively on the levels or existence of
  EQ characteristics, rather than real-life exposures or use; have looked
- for the most part at isolated EQ parameters, despite widespread correlations
+ for the most part at isolated EQ variables, despite widespread correlations
  (such as between air pollution and noise); and have not, to date, investigated
  links with land cover --- the effects of green spaces and 'blue spaces',
  such as rivers, lakes and sea.
@@ -466,7 +466,7 @@ We design, implement, and collect and analyse data from two new cross-sectional
 ts' home and workplace locations to objective indicators of EQ, and estimate
  econometric models that use these indicators to predict SWB responses.
  Using the results of these models, we calculate monetary values for EQ
- parameters where applicable.
+ characteristics where applicable.
  
 \end_layout
 
@@ -485,7 +485,7 @@ The first survey is completed by a quota sample of approximately 1,000 Londoners
 , and the second by a quota sample of approximately 2,000 people across
  the UK.
  Working at these two scales brings different advantages and limitations,
- enabling different EQ parameters to be investigated effectively.
+ enabling different EQ characteristics to be investigated effectively.
 \end_layout
 
 \begin_layout Paragraph
@@ -553,7 +553,7 @@ UK
 The UK as a whole is of course much more heterogeneous than London in terms
  of EQ characteristics.
  The UK-wide survey provides greater variation in land cover types, and
- permits meaningful distinctions in relation to distance parameters which
+ permits meaningful distinctions in relation to distance variables which
  in London cannot be separated from other geographical characteristics
 \begin_inset Foot
 status collapsed
@@ -622,7 +622,7 @@ data Most existing studies have access to EQ data and respondent location
  to locate their home even more precisely using an interactive map survey
  item, which we develop for this purpose.
  This additional precision in location is particularly valuable in relation
- to air pollution and noise estimates, since these parameters may vary over
+ to air pollution and noise estimates, since these indicators may vary over
  very short distances
 \begin_inset Foot
 status collapsed
@@ -663,8 +663,8 @@ GIS
 \begin_inset space ~
 \end_inset
 
-methods For parameters that are not point estimates --- such as the accessibilit
-y of particular land cover types --- we make use of advances in GIS that
+methods For measures that are not point estimates --- such as the accessibility
+ of particular land cover types --- we make use of advances in GIS that
  have been exploited in hedonic pricing studies, but have not previously
  been applied in happiness economics research.
  We measure the local quantity of amenities by calculating the proportion

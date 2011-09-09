@@ -45,7 +45,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize 10
-\spacing other 1.1499999999999999
+\spacing onehalf
 \use_hyperref true
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
@@ -639,7 +639,7 @@ The information we collect on the internal dimensions of experience is limited
 The 'happy' response is of primary interest in this study.
  The other two adjectives were chosen as being reasonably orthogonal to
  happiness and to each other, and as being plausibly affected by environmental
- parameters.
+ factors.
  In all three cases we chose familiar, everyday terms in order to increase
  acceptance by participants, and presented unipolar items for simplicity
  (a bipolar item scale, by contrast, might put 'very sad' on the left and

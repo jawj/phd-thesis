@@ -17995,15 +17995,14 @@ We believe the sample supporting this analysis --- over 1,000,000 assessment
 \end_layout
 
 \begin_layout Standard
-The estimated parameters of our fixed effects model of reported happiness
- (discussed in 
+Our fixed effects model of reported happiness (discussed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Fixed-effects-model"
 
 \end_inset
 
-) are presented in 
+) is presented in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:lcm-model"
@@ -18025,7 +18024,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch Massive_results_table
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset Newpage newpage
@@ -26639,7 +26638,7 @@ Weather
 \end_layout
 
 \begin_layout Standard
-Weather parameters --- considered only when participants are outdoors ---
+Weather variables --- considered only when participants are outdoors ---
  have significant effects on predicted happiness.
  
 \end_layout

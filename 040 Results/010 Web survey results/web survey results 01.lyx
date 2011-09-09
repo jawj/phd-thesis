@@ -117,7 +117,7 @@ In this chapter we characterise and analyse responses and associated spatial
  in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sec:survey-methods"
+reference "chap:survey-methods"
 
 \end_inset
 
@@ -147,8 +147,8 @@ reference "sec:survey-results-analysis"
 \end_inset
 
  reports on the regression analyses we run to investigate the effects of
- a variety of EQ parameters, around individuals' homes and workplaces, on
- a number of different indicators of SWB.
+ a variety of EQ characteristics, around individuals' homes and workplaces,
+ on a number of different indicators of SWB.
  In 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -262,9 +262,9 @@ key "house-of-commons:2006"
 \end_inset
 
 .
- These parameters are closely matched in our UK survey data, in which the
- median household income bracket is £23,000 -- £25,999, and the mean of
- the bracket midpoints is £29,331.
+ These values are closely matched in our UK survey data, in which the median
+ household income bracket is £23,000 -- £25,999, and the mean of the bracket
+ midpoints is £29,331.
 \end_layout
 
 \begin_layout Standard
@@ -9800,7 +9800,7 @@ Life satisfaction and the environment near the home
 \begin_layout Standard
 We first consider regression models with the single-item 0 -- 10 LS response
  as the dependent variable, and as independent variables a variety of environmen
-tal parameters alongside spatial and non-spatial controls.
+tal indicators alongside spatial and non-spatial controls.
 \end_layout
 
 \begin_layout Subsubsection
@@ -15952,7 +15952,7 @@ As an additional control for local characteristics and amenities we include
  In the 3km radius model only, the coefficient on this measure is significantly
  positive.
  As noted previously, we also include an indicator of house prices, which
- should allow us to estimate total values for the EQ parameters.
+ should allow us to estimate total values for the EQ characteristics.
  The coefficient on this variable is not significant in any specification.
 \begin_inset Foot
 status collapsed
@@ -27231,7 +27231,7 @@ Higher values on the PANAS negative affect scale indicate lower levels of
 \end_layout
 
 \begin_layout Standard
-Three EQ parameters have a significant association with the dependent variable.
+Three EQ variables have a significant association with the dependent variable.
  As in the emotional wellbeing model, local farmland is positively related
  to wellbeing.
  A higher local share of suburban or rural developed land, and closer proximity
@@ -32770,8 +32770,8 @@ The environment near the workplace
 \end_layout
 
 \begin_layout Standard
-Finally, we investigate whether EQ parameters in the vicinity of respondents'
- workplaces have a measurable association with LS.
+Finally, we investigate whether EQ characteristics in the vicinity of respondent
+s' workplaces have a measurable association with LS.
  Sample sizes are substantially reduced in these models, since they include
  only respondents who are employed and --- in the London survey --- work
  within London.
@@ -38698,7 +38698,7 @@ reference "sub:happiness-valuation"
 
 , SWB models of the type estimated above may be used for monetary valuation.
  The scope for using our results for this purpose is limited, however, since
- for most EQ parameters the estimated wellbeing effects are not significantly
+ for most EQ variables the estimated wellbeing effects are not significantly
  different from zero.
 \end_layout
 
@@ -38706,13 +38706,14 @@ reference "sub:happiness-valuation"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Implicit prices at mean income for significant EQ parameters in UK models
+Implicit prices at mean income for significant EQ characteristics in UK
+ models
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:MRS-values"
@@ -38945,8 +38946,8 @@ SF-36 emotional wellbeing
 
 \end_inset
 
-Implicit prices for EQ parameters that do have significant effects are shown
- in the third column of 
+Implicit prices for EQ characteristics that do have significant effects
+ are shown in the third column of 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:MRS-values"
@@ -38954,8 +38955,8 @@ reference "tab:MRS-values"
 \end_inset
 
 .
- These are the marginal rates of substitution (MRS) between the EQ parameters
- and income, at the mean income, calculated according to Equation 
+ These are the marginal rates of substitution (MRS) between the EQ characteristi
+cs and income, at the mean income, calculated according to Equation 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:swb-mrs"
@@ -38996,16 +38997,16 @@ The values reported are annual values of a 1% (28ha) change in land cover
  urban type.
  Since we include both house price indicators and income in our model specificat
 ions, we can interpret these values as the full values of the relevant EQ
- parameters
+ features
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
 However, since dropping house price indicators from the regressions does
- not much reduce the coefficients on EQ parameters, it would seem --- perhaps
+ not much reduce the coefficients on EQ variables, it would seem --- perhaps
  implausibly, in the light of what is known from hedonic pricing studies
- --- that variations in the EQ parameters considered are mainly uncompensated
- through the housing market.
+ --- that variations in the EQ characteristics considered are mainly uncompensat
+ed through the housing market.
 \end_layout
 
 \end_inset
@@ -39152,7 +39153,7 @@ Alternative SWB indicators
 \end_layout
 
 \begin_layout Standard
-Since we do not find significant coefficients on any of the same EQ parameters
+Since we do not find significant coefficients on any of the same EQ variables
  using alternative wellbeing indicators, we cannot compare the valuations
  that result.
  We do note, however, that the three different dependent variables shown
@@ -39294,7 +39295,7 @@ Comparison with previous findings
 \end_layout
 
 \begin_layout Standard
-The EQ parameters we use here have not, apart from distance to the coast,
+The EQ indicators we use here have not, apart from distance to the coast,
  been included in previous LS studies
 \begin_inset Foot
 status collapsed
@@ -39401,7 +39402,7 @@ Environment and wellbeing in London
 
 \begin_layout Standard
 By contrast with our UK-wide results, we find no significant links between
- LS and EQ parameters in our London data set.
+ LS and EQ characteristics in our London data set.
 \end_layout
 
 \begin_layout Standard
@@ -39853,7 +39854,7 @@ key "powdthavee:2011"
 \end_layout
 
 \begin_layout Standard
-Studies on the EQ parameters used here have not been undertaken previously
+Studies on the EQ indicators used here have not been undertaken previously
  in the happiness economics literature but, as noted above, some epidemiological
  papers have found similar impacts of green spaces on psychological ill
  health.
@@ -39903,9 +39904,9 @@ tics as is feasible, there might be variables missing from our models that
  If such variables exist, then our estimated effects could be biased either
  up or down.
  There might also be an element of reverse causality.
- While EQ parameters clearly do not vary in response to individuals' SWB
- levels, happier people might conceivably choose to live in locations with
- higher (or lower) EQ.
+ While EQ clearly does not vary in response to individuals' SWB levels,
+ happier people might conceivably choose to live in locations with higher
+ (or lower) EQ.
 \end_layout
 
 \begin_layout Standard

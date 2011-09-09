@@ -310,7 +310,7 @@ name "tab:net-use"
 
 \end_inset
 
-Internet use by selected demographic parameters 
+Internet use by selected demographic characteristics 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "source:"
@@ -1312,9 +1312,9 @@ Since the pre-recruited panel is not a probability sample of the population
  of interest, and also includes individuals outside that population, sampling
  quotas were imposed.
  These quotas ensured that respondents fell within the desired population
- and were approximately representative of that population across specific
- demographic parameters (representativeness across other parameters cannot
- be assured by this method, of course).
+ and were approximately representative of that population according to specific
+ demographic characteristics (representativeness across other characteristics
+ cannot be assured by this method, of course).
 \end_layout
 
 \begin_layout Standard
@@ -1359,8 +1359,8 @@ key "office-for-national-statistics:2007a"
 
 .
  The LFS was nevertheless believed to be the best and most recent available
- data set covering the parameters of interest, including income and economic
- activity.
+ data set covering the characteristics of interest, including income and
+ economic activity.
 \end_layout
 
 \begin_layout Standard
@@ -3709,13 +3709,13 @@ reference "sub:sampling"
 
 \begin_layout Standard
 In addition to the raw survey data and paradata, a set of approximately
- 30 further quality parameters was calculated for each completed response
+ 30 further quality indicators was calculated for each completed response
  set using a custom Ruby program.
- Parameters potentially indicating an invalid completion were flagged.
+ Values potentially indicating an invalid completion were flagged.
  Any response set flagged two or more times was subject to scrutiny and
  possible exclusion by the researcher (exclusion was not a mechanical process:
- some parameters and parameter values were given more weight than others,
- and the combination of parameters was also taken into consideration).
+ some indicators and indicator values were given more weight than others,
+ and the combination of indicators was also taken into consideration).
  
 \end_layout
 
@@ -3830,7 +3830,7 @@ Where a long series of items was presented with the same response scale,
  Of course, like other techniques in this section, this algorithm may produce
  both false negatives (occasionally flagging legitimate responses) and false
  positives (sometimes failing to flag invalid responses, such as those selected
- completely at random), which is why the full set of validity parameters
+ completely at random), which is why the full set of validity indicators
  was evaluated on a case-by-case basis.
 \end_layout
 
