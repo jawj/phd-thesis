@@ -139,11 +139,7 @@
 \begin_inset Newline newline
 \end_inset
 
-
-\series default
 Happiness and Environmental Quality
-\series bold
-
 \begin_inset Newline newline
 \end_inset
 
@@ -198,11 +194,12 @@ A thesis submitted to the Department of Geography & Environment
 \begin_inset Newline newline
 \end_inset
 
-of the London School of Economics 
+of the London School of Economics for the degree of Doctor of Philosophy,
+ 
 \begin_inset Newline newline
 \end_inset
 
-for the degree of Doctor of Philosophy, London, September 2011
+London, September 2011
 \end_layout
 
 \begin_layout Standard
@@ -334,19 +331,6 @@ This work was supported by the UK Economic & Social Research Council (grant
  number PTA-031-2006-00280).
  Additional funding for the UK web survey was provided by the United Nations
  Environment Programme World Conservation Monitoring Centre (UNEP WCMC).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-data acknowledgements? + in figure captions?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -609,17 +593,6 @@ filename "025 SWB and EQ/swb and eq 01.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "030 Methods/010 Web survey/survey methods 15.lyx"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: mention that we collect lots of unnecessary survey data for future/other
- use?! Because we hardly use any of it...
-\end_layout
 
 \end_inset
 

@@ -126,15 +126,17 @@ In this chapter we describe the collection of new primary data to inform
 To address our research questions we require precise and reliable location
  data for respondents' homes and workplaces; responses to standardised life
  satisfaction, affect, and general wellbeing items and scales, free as far
- as possible of context effects; and the major relevant control variables
- used in previous happiness research.
+ as possible of context effects; and major relevant control variables used
+ in previous happiness research.
  No existing data sets are known that could provide this information.
+ 
 \end_layout
 
 \begin_layout Standard
-In common with any survey research we aim to obtain high quality response
- data from a sample representative of the population of interest, and to
- provide a straightforward and pleasant experience for respondents.
+Our claim is to improve on existing research, and the collection of valid,
+ reliable, accurate survey data is not a trivial undertaking.
+ In the hope of establishing the truth of our claim, we therefore provide
+ a reasonably detailed account of our methods here.
 \end_layout
 
 \begin_layout Section
@@ -148,23 +150,6 @@ Two web surveys were conducted: one in Greater London and the other across
  August and early September 2009.
  The UK survey had a target sample of 2,000 and was in the field in late
  August and September 2010.
-\end_layout
-
-\begin_layout Standard
-As described in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sub:survey-design"
-
-\end_inset
-
-, the London survey included a wide range of items on subjective wellbeing
- and subjective connection to nature.
- The UK survey instead included a range of items on exercise, physical and
- mental health, and the use and enjoyment of nature.
- Because extremely detailed EQ information is available for London, the
- design of the London survey also emphasised the elicitation of especially
- accurate location data for respondents' homes and workplaces.
 \end_layout
 
 \begin_layout Subsection
@@ -190,7 +175,7 @@ key "schonlau:2002"
 
 , and are much debated in the literature.
  These advantages were judged to be significant in the present case, especially
- given the researcher's prior experience and expertise.
+ given the researcher's prior experience and expertise in web development.
 \end_layout
 
 \end_inset
@@ -260,9 +245,9 @@ The population of interest in this research is defined as all residents
  of Greater London (comprising the 32 London boroughs and City of London)
  --- or of the UK --- aged 16 and above.
  Wellbeing amongst children and young adolescents is out of scope here for
- both theoretical and practical reasons.
+ both theoretical and practical reasons
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Many of the most important external correlates of adults' life satisfaction
@@ -283,7 +268,7 @@ key "chaplin:2009"
 
 \end_inset
 
- 
+ .
 \end_layout
 
 \begin_layout Standard
@@ -1068,7 +1053,7 @@ Trust in 'most people'
 \end_inset
 
 Sometimes I feel that I don't have enough control over the direction my
- like is taking
+ life is taking
 \begin_inset Quotes erd
 \end_inset
 
@@ -1109,10 +1094,6 @@ Sometimes I feel that I don't have enough control over the direction my
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Across the UK in early 2009, 70% of households had an Internet connection
  (of which 96% had broadband), and 70% of individuals aged 14 or over reported
  having regular Internet access---at home, work, or college, for example
@@ -1158,7 +1139,7 @@ reference "tab:net-user-stats"
 \end_inset
 
  highlights differences that might be expected to correlate with self-reported
- wellbeing.
+ wellbeing
 \begin_inset Foot
 status collapsed
 
@@ -1182,7 +1163,7 @@ key "dutton:2009"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1212,7 +1193,7 @@ The best feasible method for this study was judged to be use of a pre-recruited
  This does not provide a true probability sample, but does permit quotas
  to be set on a range of attributes.
  For this study the panel provider Toluna was selected based on personal
- recommendations from market research professionals.
+ recommendations from market research professionals
 \begin_inset Foot
 status collapsed
 
@@ -1223,8 +1204,9 @@ Rob Sheldon (Managing Director of Accent MR) and Bill Blyth (European Research
 
 \end_inset
 
+.
  Methods of pre-recruitment by panel providers are generally specified only
- in very broad terms for reasons of commercial confidentiality.
+ in very broad terms for reasons of commercial confidentiality
 \begin_inset Foot
 status collapsed
 
@@ -1262,7 +1244,7 @@ key "toluna:2009"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -1662,6 +1644,13 @@ reference "tab:item-sources"
 A wide range of items were included in both surveys to support additional
  and future research: not all of the items are used in the analyses presented
  in this thesis.
+ The London survey included a wide range of items on subjective wellbeing
+ and subjective connection to nature.
+ The UK survey instead included a range of items on exercise, physical and
+ mental health, and the use and enjoyment of nature.
+ Because extremely detailed EQ information is available for London, the
+ design of the London survey also emphasised the elicitation of especially
+ accurate location data for respondents' homes and workplaces.
 \end_layout
 
 \begin_layout Subsection
@@ -2349,7 +2338,7 @@ reference "fig:interactive-map"
 
 \end_inset
 
-).
+)
 \begin_inset Foot
 status collapsed
 
@@ -2383,6 +2372,7 @@ key "pendleton:2006"
 
 \end_inset
 
+.
  This was felt to represent a good compromise between accuracy (higher at
  more zoomed-in scales) and respondent orientation and perception of privacy
  (higher at less zoomed-in scales).
@@ -3102,8 +3092,7 @@ These items included: the time of the first viewing of each survey page
 status collapsed
 
 \begin_layout Plain Layout
-The referrer header is mis-spelled in the HTTP specification and, therefore,
- universally.
+The referrer header is mis-spelled in the HTTP specification.
 \end_layout
 
 \end_inset
@@ -3356,7 +3345,7 @@ Paging vs.
 The large number of items was judged to count against a one-item-per-page
  design, based on of the number of extra mouse clicks that would be required.
  Items were instead assembled into thematic pages, some of which required
- scrolling.
+ scrolling
 \begin_inset Foot
 status collapsed
 
@@ -3373,6 +3362,7 @@ key "peytchev:2006"
 
 \end_inset
 
+.
  This did not interfere with requirements for routing, since the survey
  software was able to show and hide items dynamically within a single page.
  To help respondents navigate through long pages, a moving pointer was developed
@@ -3504,7 +3494,7 @@ Several pre-pilot respondents commented on the excessive length of the survey.
  was eliminated.
  Pre-pilot respondents felt that this page presented too much text and was
  excessively bureaucratic, and that this made them uncertain whether they
- would be willing to continue.
+ would be willing to continue
 \begin_inset Foot
 status collapsed
 
@@ -3523,6 +3513,7 @@ key "nielsen:1997"
 
 \end_inset
 
+.
  The information from this page was abridged, broken into titled sections,
  and moved to a new 'Help & information' page, highlighted on the introductory
  page and accessible throughout the survey.
@@ -3752,7 +3743,7 @@ An IP address is a numerical label assigned to any device connected directly
 \begin_layout Standard
 Any response sets having an IP address in common were flagged, as potentially
  being multiple completions by the same respondent.
- IP addresses were also used to geolocate respondents.
+ IP addresses were also used to geolocate respondents
 \begin_inset Foot
 status collapsed
 
@@ -3775,6 +3766,7 @@ http://www.maxmind.com/app/geolitecity
 
 \end_inset
 
+.
  Respondents reported as located outside the UK were automatically excluded
  (unless geolocation placed them in the United States---a relatively common
  error).
@@ -3802,7 +3794,7 @@ London
 \begin_layout Standard
 For the London survey, IP-derived locations outside London were flagged.
  In addition, the respondent's home postcode, if provided, was associated
- with a local authority or borough.
+ with a local authority or borough
 \begin_inset Foot
 status collapsed
 
@@ -3824,6 +3816,7 @@ http://developer.yahoo.com/geo/geoplanet/
 
 \end_inset
 
+.
  This was flagged if it did not match the London borough reported by the
  respondent on the second screening page.
 \end_layout
