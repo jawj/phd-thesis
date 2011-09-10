@@ -4847,6 +4847,30 @@ reference "sec:esm-Response-validity"
 .
 \end_layout
 
+\begin_layout Section
+Summary
+\end_layout
+
+\begin_layout Standard
+In this chapter we have discussed the design and implementation of our spatial
+ ESM data collection technique.
+ We developed an app for iPhones (and other Apple iOS devices), and data
+ server software to signal to and receive data back from it.
+ We prioritised speed and simplicity in the app-based ESM assessments, to
+ facilitate recruitment and retention of volunteers.
+ We collected a range of data using survey items and the devices' sensors,
+ not all of which will be analysed within the scope of this thesis.
+ 
+\end_layout
+
+\begin_layout Standard
+As already stated, this data enables us to examine links between EQ and
+ SWB at the highest spatial and temporal resolution.
+ And as we discuss further in the final chapter, we believe this methodology
+ to have significant potential for further exploitation, in this and many
+ other fields.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Branch bib-for-esm-methods
 status collapsed

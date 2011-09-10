@@ -3947,13 +3947,13 @@ Summary
 \begin_layout Standard
 This chapter has described the survey data collection underpinning our first
  research strand.
- The data collected is unique in combining high-resolution location information
- and several types of detailed SWB evaluations, alongside appropriate controls.
- A significant effort has been made to assure the quality of this data,
- through careful design of the survey instruments and rigorous checking
- of the responses provided.
+ A significant effort has been made to assure the quality of the data, through
+ careful design of the survey instruments and rigorous checking of the responses
+ provided.
+ The data is unique in combining high-resolution location information and
+ several types of detailed SWB evaluations, alongside appropriate controls.
  This enables us to address our research questions in such a way as to advance
- the present state of the literature as described in 
+ the present state of the literature, as described in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:intro-surveys-Original-contribution"
