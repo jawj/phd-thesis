@@ -305,6 +305,16 @@ We join very high resolution spatial data and with very precise location
 We hope and expect that future research in this area will build on these
  improvements, particularly with the increasing availability of high-resolution
  data sources and powerful GIS tools.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+We provide a new web survey framework too!!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

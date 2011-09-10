@@ -3110,6 +3110,13 @@ Implementation
 
 \begin_layout Subsection
 Platform
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Platform-websperiment"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3932,24 +3939,40 @@ Given the importance of location to our study, postcodes that could not
  and I and !.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "../../all"
-options "apalike2url"
-
-\end_inset
-
-
+\begin_layout Section
+Summary
 \end_layout
 
+\begin_layout Standard
+This chapter has described the survey data collection underpinning our first
+ research strand.
+ The data collected is unique in combining high-resolution location information
+ with several types of detailed SWB evaluations, alongside appropriate controls.
+ A significant effort has been made to assure the quality of this data,
+ through careful design of the survey instruments and rigorous checking
+ of the responses provided.
+ This enables us to address our research questions in such a way as to advance
+ the present state of the literature as described in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:intro-surveys-Original-contribution"
+
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Standard
+As part of this undertaking we have developed a new platform for the implementat
+ion of flexible and attractive web-based surveys and experiments, outlined
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Platform-websperiment"
+
+\end_inset
+
+, which we hope will be of future benefit to researchers across disciplines.
 \end_layout
 
 \end_body
