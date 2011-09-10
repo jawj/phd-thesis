@@ -144,8 +144,8 @@ fboxsep{0pt}
 
 \begin_layout Standard
 This chapter describes the spatial experience sampling data collection methodolo
-gy we develop as part of our second research strand, looking at momentary
- SWB in relation to people's immediate surroundings.
+gy we develop and implement as part of our second research strand, looking
+ at momentary SWB in relation to people's immediate surroundings.
  Elements of this method are entirely novel, and the whole is novel in the
  contexts of happiness economics and studies of the impacts of EQ.
  We therefore provide a reasonably thorough exposition, although certain
@@ -161,7 +161,7 @@ reference "chap:esm-appendix"
 \end_layout
 
 \begin_layout Standard
-The information collected by this method is related but rather different
+The novel data set collected by this method is related but rather different
  to that gathered in the survey research described in the previous chapter.
  Here we ask individuals for simple, instantaneous assessments of SWB alongside
  some contextual information.
@@ -4859,13 +4859,13 @@ In this chapter we have discussed the design and implementation of our spatial
  We prioritised speed and simplicity in the app-based ESM assessments, to
  facilitate recruitment and retention of volunteers.
  We collected a range of data using survey items and the devices' sensors,
- not all of which will be analysed within the scope of this thesis.
+ not all of which can be analysed within the scope of this thesis.
  
 \end_layout
 
 \begin_layout Standard
-As already stated, this data enables us to examine links between EQ and
- SWB at the highest spatial and temporal resolution.
+As already stated, the data collected by this means enables us to examine
+ links between EQ and SWB at the highest spatial and temporal resolution.
  And as we discuss further in the final chapter, we believe this methodology
  to have significant potential for further exploitation, in this and many
  other fields.

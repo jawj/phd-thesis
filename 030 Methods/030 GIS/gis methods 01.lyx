@@ -107,7 +107,30 @@ name "chap:analysis-methods"
 \end_layout
 
 \begin_layout Standard
-[TODO: v brief intro]
+The previous two chapters detailed our collection of original survey data
+ --- conventional and ESM --- to inform analyses of EQ and its relations
+ to happiness.
+ Responses from the London survey have one or two associated point locations:
+ the indicated map locations of the respondent's home and, if applicable,
+ workplace.
+ Responses from the UK survey include one or two full postcodes: again,
+ those of the respondent's home and, sometimes, workplace.
+ And each ESM study response has associated point coordinates: the GPS-derived
+ response location.
+ 
+\end_layout
+
+\begin_layout Standard
+In all three cases, we use the available location information to augment
+ the response variables with information from environmental and other spatial
+ data sets.
+ In the first part of this chapter we describe those external data sources
+ and the methods by which we have joined them to our primary data.
+ Some of the methods and most of the data have not previously been applied
+ in the happiness economics literature on EQ.
+ In the chapter's second brief section we outline the simple OLS and fixed
+ effects models which we employ in the analysis of this primary and secondary
+ data.
 \end_layout
 
 \begin_layout Section
@@ -123,7 +146,7 @@ name "sec:Spatial-methods"
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Mention hedonics use of GIS (or in Literature Review?) --- see 
@@ -139,32 +162,9 @@ key "brereton:2007"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Responses from the London survey have one or two associated point locations:
- the indicated map locations of the respondent's home and, if applicable,
- workplace.
- Responses from the UK survey include one or two full postcodes: again,
- those of the respondent's home and, sometimes, workplace.
- ESM study responses have one associated point location: the GPS-derived
- response location.
- This location information was used to augment the response data with informatio
-n from environmental and other spatial data sets.
-\end_layout
-
-\begin_layout Standard
-Spatial data processing was done within a PostgreSQL relational database
- system with PostGIS spatial extensions --- as also used for the ESM data
- collection (
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sub:data-server-Database"
-
-\end_inset
-
-) --- using SQL commands.
+Spatial data was processed within a PostgreSQL relational database system
+ with PostGIS spatial extensions --- as also used for the ESM data collection
+ --- using SQL commands.
  For some tasks we also made use of the PostgreSQL procedural language PL/pgSQL
 \begin_inset Foot
 status collapsed
@@ -1178,9 +1178,9 @@ status collapsed
 
 \begin_layout Plain Layout
 For example, LCM data for Northern Ireland were originally defined using
- eastings and northings in the Irish Grid system, and OSM data were defined
- using latitude and longitude values in the global WGS84 coordinate system
- used by GPS receivers.
+ eastings and northings in the Irish Grid system, and our ESM point locations
+ were defined by latitude and longitude values in the global coordinate
+ system (WGS84) used by GPS receivers.
 \end_layout
 
 \end_inset
@@ -1360,7 +1360,7 @@ night
 \begin_inset Float figure
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -3812,6 +3812,25 @@ Snow
 
 Weather reports from 280 personal weather stations operated by private individua
 ls across the UK were downloaded hourly from the Weather Underground website
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.wunderground.com/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
  throughout the study period, and processed using a custom Ruby script
 \begin_inset Foot
 status collapsed

@@ -507,6 +507,34 @@ key "schwartz:1998,schwartz:2010"
  to achieve convergence).
 \end_layout
 
+\begin_layout Section
+Summary
+\end_layout
+
+\begin_layout Standard
+In this chapter we have outlined the wide range of high-resolution spatial
+ data sets with which we have joined our survey and ESM data, and the methods
+ by which we have done so.
+ As noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:Introduction"
+
+\end_inset
+
+, in many cases the use of these spatial data sets and methods represents
+ an original contribution to the literature in happiness economics and EQ.
+ We have also set out the econometric models to be used in the analysis
+ of the resulting combined data.
+ 
+\end_layout
+
+\begin_layout Standard
+This concludes our discussion of methods.
+ In the following two chapters we present and discuss the findings from
+ our survey and ESM research strands respectively.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status collapsed
