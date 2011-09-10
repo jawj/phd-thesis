@@ -124,10 +124,11 @@ In this chapter we describe the collection of new primary data to inform
 
 \begin_layout Standard
 To address our research questions we require precise and reliable location
- data for respondents' homes and workplaces; responses to standardised life
- satisfaction, affect, and general wellbeing items and scales, free as far
- as possible of context effects; and major relevant control variables used
- in previous happiness research.
+ data for respondents' homes and workplaces, which can later be joined with
+ appropriate spatial data; responses to standardised life satisfaction,
+ affect, and general wellbeing items and scales, free as far as possible
+ of context effects; and major relevant control variables used in previous
+ happiness research.
  No existing data sets are known that could provide this information.
  
 \end_layout
@@ -3947,7 +3948,7 @@ Summary
 This chapter has described the survey data collection underpinning our first
  research strand.
  The data collected is unique in combining high-resolution location information
- with several types of detailed SWB evaluations, alongside appropriate controls.
+ and several types of detailed SWB evaluations, alongside appropriate controls.
  A significant effort has been made to assure the quality of this data,
  through careful design of the survey instruments and rigorous checking
  of the responses provided.
@@ -3963,9 +3964,9 @@ reference "sub:intro-surveys-Original-contribution"
 \end_layout
 
 \begin_layout Standard
-As part of this undertaking we have developed a new platform for the implementat
-ion of flexible and attractive web-based surveys and experiments, outlined
- in 
+As part of this undertaking we have also developed a new platform for the
+ implementation of flexible and attractive web-based surveys and experiments,
+ outlined in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Platform-websperiment"

@@ -143,7 +143,36 @@ fboxsep{0pt}
 \end_layout
 
 \begin_layout Standard
-This chapter
+This chapter describes the spatial experience sampling data collection methodolo
+gy we develop as part of our second research strand, looking at momentary
+ SWB in relation to people's immediate surroundings.
+ Elements of this method are entirely novel, and the whole is novel in the
+ contexts of happiness economics and studies of the impacts of EQ.
+ We therefore provide a reasonably thorough exposition, although certain
+ details, and the most technical aspects of the implementation, are elaborated
+ further in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:esm-appendix"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The information collected by this method is related but rather different
+ to that gathered in the survey research described in the previous chapter.
+ Here we ask individuals for simple, instantaneous assessments of SWB alongside
+ some contextual information.
+ While they answer, current location is recorded, which is later used to
+ join responses with other spatial (and time-varying) data.
+ For each study participant there are repeated interactions, producing a
+ large, panel-structured data set.
+ This data set allows us to approach our over-arching subject --- links
+ between happiness and EQ --- at a more detailed and disaggregated level
+ than has previously been attempted: not at country or even person level,
+ but at the scale of individual, momentary experiences.
 \end_layout
 
 \begin_layout Section
@@ -158,19 +187,23 @@ name "sub:esm-aims-and-objectives"
 \end_layout
 
 \begin_layout Standard
-To test our research hypothesis will require that we observe amongst our
- ESM assessments some experiences of the natural environment.
+We focus on an EQ indicator for which high-resolution UK-wide data are available
+: land cover types (to be discussed further in the next chapter), including
+ different types of green and blue space.
+ To test our research hypothesis on links between links between momentary
+ happiness and EQ will therefore require that we observe amongst our ESM
+ assessments some experiences of these natural environments.
  These experiences are expected to occur with relatively low frequency,
  and may have only a moderate impact on happiness.
- We may therefore need to collect a large number of ESM assessments in order
+ We may thus need to collect a large number of ESM assessments in order
  to obtain enough relating to the natural environment for our hypothesis
  tests to have reasonable statistical power.
 \end_layout
 
 \begin_layout Standard
-A key priority informing many aspects of the study's design, implementation
- and operation is therefore to maximise the number of participants recruited,
- and the number of assessments completed by each.
+For this reason a key priority informing many aspects of the study's design,
+ implementation and operation is to maximise the number of participants
+ recruited, and the number of assessments completed by each.
  This implies a number of subordinate objectives, including:
 \end_layout
 
@@ -189,8 +222,9 @@ burden Signing up and continuing to take part in the study both need to
  These processes should be fast, simple, attractive and --- ideally ---
  fun.
  They will ideally involve no typing.
- They should be capable of completion using only the respondent's device
- --- for example, there should be no need to meet or speak to researchers.
+ They should be capable of completion using only the participant's handheld
+ device --- for example, there should be no need to meet or speak to researchers
+, or use a desktop computer.
  We will want to minimise the amount of information requested from participants.
 \end_layout
 
@@ -204,7 +238,8 @@ participant
 \end_inset
 
 motivation It is important to reach and then motivate prospective participants
- to sign up to the study, and to keep existing participants engaged in it.
+ to sign up to the study, and to keep existing participants engaged in taking
+ part.
  This will require us to produce and publicise information about and data
  from the study in an accessible and interesting format.
  Keeping participants engaged may also be assisted by the provision of stimulati
@@ -234,8 +269,14 @@ High
 \begin_inset space ~
 \end_inset
 
-scalability The system obviously must be capable of handling a large volume
- of participants and responses.
+scalability The system obviously must be capable of handling the desired
+ large volume of participants and responses.
+\end_layout
+
+\begin_layout Standard
+The remainder of this chapter describes how the study was implemented and
+ how these objectives were met.
+ 
 \end_layout
 
 \begin_layout Section
@@ -3486,8 +3527,8 @@ key "apple-inc.:2010d"
 \begin_inset Formula $320\times240$
 \end_inset
 
- pixels --- and obtain a compressed JPEG representation for speedy transmission
- over the network.
+ pixels --- and obtain a compressed (JPEG) representation for speedy transmissio
+n over the network.
 \end_layout
 
 \begin_layout Standard
