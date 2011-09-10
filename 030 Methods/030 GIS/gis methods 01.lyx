@@ -1172,7 +1172,7 @@ key "ordnance-survey:2008"
 
 \end_inset
 
-.
+
 \begin_inset Foot
 status collapsed
 
@@ -1185,7 +1185,7 @@ For example, LCM data for Northern Ireland were originally defined using
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3255,7 +3255,7 @@ key "fuller:2002a"
 
 .
  In most cases our habitat categories aggregate whole target classes, and
- thus should also be classified with at least 85% success.
+ thus should also be classified with at least 85% success
 \begin_inset Foot
 status collapsed
 
@@ -3270,7 +3270,7 @@ The exceptions are our 'continuous urban' and 'suburban/rural developed'
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3706,7 +3706,7 @@ Keywords
 \begin_inset Text
 
 \begin_layout Plain Layout
-rain
+Rain
 \end_layout
 
 \end_inset
@@ -3726,7 +3726,7 @@ Thunderstorm, Squalls, Rain, Showers, Drizzle
 \begin_inset Text
 
 \begin_layout Plain Layout
-fog
+Fog
 \end_layout
 
 \end_inset
@@ -3746,7 +3746,7 @@ Fog, Mist
 \begin_inset Text
 
 \begin_layout Plain Layout
-cloud
+Cloud
 \end_layout
 
 \end_inset
@@ -3766,7 +3766,7 @@ Cloudy, Overcast
 \begin_inset Text
 
 \begin_layout Plain Layout
-clear
+Clear
 \end_layout
 
 \end_inset
@@ -3786,7 +3786,7 @@ Clear, Scattered clouds
 \begin_inset Text
 
 \begin_layout Plain Layout
-snow
+Snow
 \end_layout
 
 \end_inset
@@ -3810,9 +3810,9 @@ Snow
 
 \end_inset
 
-Weather data from 280 personal weather stations across the UK were downloaded
- hourly from the Weather Underground website throughout the study period,
- and processed using a custom Ruby script.
+Weather reports from 280 personal weather stations operated by private individua
+ls across the UK were downloaded hourly from the Weather Underground website
+ throughout the study period, and processed using a custom Ruby script
 \begin_inset Foot
 status collapsed
 
@@ -3834,6 +3834,7 @@ http://rubydoc.info/gems/hpricot/0.8.4/frames
 
 \end_inset
 
+.
  The weather station locations are shown in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -3853,26 +3854,16 @@ reference "tab:Weather-condition-keywords"
 \end_inset
 
 .
- Sunny conditions were identified as the interaction of clear conditions
- and daylight.
+ Sunny conditions were identified as the interaction of clear skies and
+ daylight.
 \end_layout
 
 \begin_layout Standard
 These data were selected for their availability and for their high spatial
  and temporal resolution.
  The accuracy of the data, which are collected using different equipment
- in different locations, is not specified.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Use of the UK Met Office's MIDAS Land Surface Stations hourly report data
- might be preferable in future research.
-\end_layout
-
-\end_inset
-
-
+ in different locations, is not specified (use of the Met Office's MIDAS
+ Land Surface Stations data might be preferable in future research).
 \end_layout
 
 \begin_layout Subsubsection
@@ -3883,7 +3874,7 @@ Crime
 We use data from the Metropolitan Police for the financial year 2008 --
  09 regarding total notifiable offences, residential burglary and violence
  against the person.
- These data are geocoded to Lower Super Output Area (LSOA) level.
+ These data are geocoded to Lower Super Output Area (LSOA) level
 \begin_inset Foot
 status collapsed
 
@@ -3896,6 +3887,7 @@ LSOAs were created by aggregating 2001 Census Output Areas (typically 4
 
 \end_inset
 
+.
  We combine these data with Office for National Statistics (ONS) mid-2008
  LSOA population estimates to derive crime rates expressed per person.
 \end_layout
@@ -4248,8 +4240,8 @@ status collapsed
 \begin_layout Plain Layout
 A convex hull is most easily understood as follows.
  Imagine a set of points as nails protruding from a board.
- The shape that would be made made by an elastic band placed around all
- the nails is the convex hull for those points.
+ The shape that would be made by an elastic band placed around all the nails
+ is the convex hull for those points.
 \end_layout
 
 \end_inset
@@ -4463,7 +4455,7 @@ Common kernels include the uniform --- in which case the quantities become
  which determines the rate at which the applied weightings decline with
  distance.
  For example, for the Gaussian kernel, one can define the desired standard
- deviation.
+ deviation
 \begin_inset Foot
 status collapsed
 
@@ -4476,7 +4468,7 @@ ed to zero, otherwise all data must be used in calculating all proportions
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard

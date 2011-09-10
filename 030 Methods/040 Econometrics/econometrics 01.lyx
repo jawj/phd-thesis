@@ -46,7 +46,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize 11
-\spacing other 1.1499999999999999
+\spacing onehalf
 \use_hyperref true
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
@@ -84,9 +84,9 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2.5cm
+\leftmargin 4cm
 \topmargin 2cm
-\rightmargin 2.5cm
+\rightmargin 2cm
 \bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
@@ -271,19 +271,6 @@ ich estimators of the standard errors.
  our observations at area (LSOA) level; in this case, we use cluster-robust
  sandwich estimators in case of correlation of the residuals within observations
  from the same area.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Subsubsection
-Model specifications
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -513,15 +500,16 @@ key "schwartz:1998,schwartz:2010"
 \end_inset
 
 .
- We do not use these models because they are complex, their use with such
- a large data set would be highly computationally expensive (especially
- since much tuning and many runs may be necessary to achieve convergence),
- and our main hypotheses can be addressed without them.
+ However, these models are also random effects models.
+ We therefore do not use them for the same reasons outlined above, and also
+ because their use with such a large data set would be highly computationally
+ expensive (especially since much tuning and many runs may be necessary
+ to achieve convergence).
 \end_layout
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset CommandInset bibtex

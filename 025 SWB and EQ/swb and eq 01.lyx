@@ -127,9 +127,9 @@ name "chap:happiness-and-eq"
 \end_layout
 
 \begin_layout Standard
-Having surveyed the topic of happiness within economics, in this short chapter
- we look somewhat beyond that discipline in search of answers to two additional
- questions.
+Having surveyed the literature on subjective happiness within economics,
+ in this short chapter we look somewhat beyond the discipline in search
+ of answers to two additional questions.
  Why might we expect links between happiness and environmental quality (EQ)?
  And what evidence is there that such links exist?
 \end_layout
@@ -1572,13 +1572,61 @@ reference "sec:eq-swb-evidence"
  collected in this way.
 \end_layout
 
+\begin_layout Section
+Summary and conclusions
+\end_layout
+
 \begin_layout Standard
-[conclude and lead on to methods chapters]
+In sum, there are good reasons to hypothesise that EQ levels will be positively
+ related to SWB, and the existing evidence from a variety of experimental
+ and observational sources --- in happiness economics, other economic studies,
+ and beyond --- appears to point in this direction.
+ We have identified a number of limitations of the existing evidence, focusing
+ particularly on work in economics on happiness and EQ.
+ In this thesis we attempt to rectify several, but not all, of these.
+\end_layout
+
+\begin_layout Standard
+As discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:research-aims"
+
+\end_inset
+
+, we conduct two strands of new empirical research.
+ One makes significant but evolutionary improvements to the cross-sectional,
+ individual-level happiness models commonly employed in earlier work on
+ EQ.
+ These were detailed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:intro-surveys"
+
+\end_inset
+
+.
+ The other takes a somewhat more pioneering approach, augmenting experience
+ sampling techniques with objective spatial measures, as explained in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:intro-esm"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The following three chapters set out the methods employed in this connection.
+ They cover our survey and then ESM data collection methods, and describe
+ the spatial and econometric analyses subsequently applied.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Branch bib-when-not-master
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset CommandInset bibtex

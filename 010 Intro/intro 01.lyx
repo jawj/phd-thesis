@@ -447,6 +447,13 @@ nevertheless
 
 \begin_layout Subsection
 Retrospective happiness and the usual environment
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:intro-surveys"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -570,8 +577,15 @@ For example, distance to the coast in London is approximately just a measure
 
 \begin_layout Subsubsection
 Original contribution
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:intro-surveys-Original-contribution"
+
+\end_inset
+
+
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 TOO DETAILED AND TECHNICAL FOR HERE? Mention in methods or chapter 3?
@@ -769,6 +783,13 @@ key "fujiwara:2011"
 
 \begin_layout Subsection
 Momentary happiness and the immediate environment
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:intro-esm"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -844,6 +865,13 @@ While this study could easily be extended worldwide, each additional country
 
 \begin_layout Subsubsection
 Original contribution
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:intro-esm-Original-contribution"
+
+\end_inset
+
+
 \begin_inset Note Note
 status collapsed
 
