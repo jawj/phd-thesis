@@ -117,7 +117,28 @@ name "chap:survey-methods"
 \end_layout
 
 \begin_layout Standard
-[TODO: brief intro]
+In this chapter we describe the collection of new primary data to inform
+ our analysis of retrospective happiness and local-area EQ.
+ 
+\end_layout
+
+\begin_layout Standard
+To address our research questions we require precise and reliable location
+ data for respondents' homes and workplaces; responses to standardised life
+ satisfaction, affect, and general wellbeing items and scales, free as far
+ as possible of context effects; and the major relevant control variables
+ used in previous happiness research.
+ No existing data sets are known that could provide this information.
+\end_layout
+
+\begin_layout Standard
+In common with any survey research we aim to obtain high quality response
+ data from a sample representative of the population of interest, and to
+ provide a straightforward and pleasant experience for respondents.
+\end_layout
+
+\begin_layout Section
+Web surveys
 \end_layout
 
 \begin_layout Standard
@@ -142,12 +163,12 @@ reference "sub:survey-design"
  The UK survey instead included a range of items on exercise, physical and
  mental health, and the use and enjoyment of nature.
  Because extremely detailed EQ information is available for London, the
- design of the London survey also emphasised the elicitation of very accurate
- location data for respondents' homes and workplaces.
+ design of the London survey also emphasised the elicitation of especially
+ accurate location data for respondents' homes and workplaces.
 \end_layout
 
-\begin_layout Section
-Web surveys
+\begin_layout Subsection
+Survey mode characteristics
 \end_layout
 
 \begin_layout Standard
@@ -178,10 +199,6 @@ key "schonlau:2002"
  Like all survey modes, web surveying has specific strengths and limitations,
  which are discussed further below; the balance of these strengths and limitatio
 ns was felt to be acceptable for this research.
-\end_layout
-
-\begin_layout Subsection
-Survey mode characteristics
 \end_layout
 
 \begin_layout Standard

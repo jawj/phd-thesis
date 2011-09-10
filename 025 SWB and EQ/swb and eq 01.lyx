@@ -1595,10 +1595,10 @@ reference "sec:research-aims"
 \end_inset
 
 , we conduct two strands of new empirical research.
- One makes significant but evolutionary improvements to the cross-sectional,
- individual-level happiness models commonly employed in earlier work on
- EQ.
- These were detailed in 
+ One makes significant but evolutionary improvements to the earlier work
+ modelling retrospective happiness evaluations as a function of EQ in the
+ local area, using cross-sectional, individual-level data.
+ These improvements are detailed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:intro-surveys"
@@ -1606,8 +1606,10 @@ reference "sub:intro-surveys"
 \end_inset
 
 .
- The other takes a somewhat more pioneering approach, augmenting experience
- sampling techniques with objective spatial measures, as explained in 
+ The other takes a somewhat more pioneering direction, investigating momentary
+ happiness reports as a function of EQ in their immediate surroundings,
+ using experience sampling techniques augmented with objective spatial measures,
+ as explained in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:intro-esm"
@@ -1620,8 +1622,8 @@ reference "sub:intro-esm"
 
 \begin_layout Standard
 The following three chapters set out the methods employed in this connection.
- They cover our survey and then ESM data collection methods, and describe
- the spatial and econometric analyses subsequently applied.
+ They cover our survey and ESM data collection methods, and describe the
+ spatial and econometric analyses subsequently applied.
 \end_layout
 
 \begin_layout Standard

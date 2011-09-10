@@ -162,8 +162,8 @@ To test our research hypothesis will require that we observe amongst our
  ESM assessments some experiences of the natural environment.
  These experiences are expected to occur with relatively low frequency,
  and may have only a moderate impact on happiness.
- We will therefore need to collect a large number of ESM assessments, in
- order to obtain enough relating to the natural environment for our hypothesis
+ We may therefore need to collect a large number of ESM assessments in order
+ to obtain enough relating to the natural environment for our hypothesis
  tests to have reasonable statistical power.
 \end_layout
 
@@ -724,13 +724,9 @@ key "bureau-of-labor-statistics:2009"
 
 \end_inset
 
-, and the 
-\emph on
-trackyourhappiness.org
-\emph default
- ESM study 
+, and the large-scale ESM study by 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "killingsworth:2010"
 
 \end_inset
