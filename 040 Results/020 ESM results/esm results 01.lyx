@@ -25117,13 +25117,29 @@ Assuming, of course, that our model is correctly specified in its inclusion
 Thus, for example, the predicted happiness of a person who is outdoors (+2.32),
  birdwatching (+4.32) with friends (+4.38), in heathland (+2.71), on a hot
  (+5.13) and sunny (+0.46) Sunday early afternoon (+4.30) is approximately
- 26 points higher out of 100 than that of someone who is commuting (
+ 26 points out of 100 (or 1.2 standard deviations) higher than that of someone
+ who is commuting (
 \begin_inset Formula $-$
 \end_inset
 
 2.03), on his or her own, in the inner city, in a vehicle, on a cold, grey,
- early weekday morning.
- 
+ early weekday morning
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Equivalently, this is a difference of about the same size as between being
+ ill in bed (
+\begin_inset Formula $-$
+\end_inset
+
+19.65) versus doing physical exercise (+6.51), keeping all other factors the
+ same.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection

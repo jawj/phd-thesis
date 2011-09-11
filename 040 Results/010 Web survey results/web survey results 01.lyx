@@ -1828,18 +1828,18 @@ Max.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \emph on
-% LCM NEA category within 3km
+% LCM NEA category within 3km (omitted category: continuous urban)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" usebox="none">
+<cell multicolumn="2" alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1848,7 +1848,7 @@ Max.
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" usebox="none">
+<cell multicolumn="2" alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1857,7 +1857,7 @@ Max.
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+<cell multicolumn="2" alignment="right" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1866,7 +1866,7 @@ Max.
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" usebox="none">
+<cell multicolumn="2" alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -15863,8 +15863,7 @@ Coefficients (and their
 \begin_inset Formula $p$
 \end_inset
 
- values) on the land cover proportions are not consistent across the three
- scales considered.
+ values) on the land cover proportions vary across the three scales considered.
  The coefficient on freshwater is positive and significant in the models
  with proportions over a 1km and 3km radius.
  The coefficient on grasslands is positive and significant in the 3km and
@@ -38673,7 +38672,7 @@ key "obrien:2007a"
 
 \end_inset
 
-, so we fall safely below these.
+, which we fall safely below.
  
 \end_layout
 
@@ -38706,7 +38705,7 @@ reference "sub:happiness-valuation"
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -38767,7 +38766,7 @@ EQ parameter
 \begin_layout Plain Layout
 
 \emph on
-Implicit price (£/%/year)
+Implicit price (£/1%/year)
 \end_layout
 
 \end_inset
@@ -38778,8 +38777,7 @@ Implicit price (£/%/year)
 \begin_layout Plain Layout
 
 \emph on
-Implicit price using upper-bound income coeff.
- (£/%/year)
+Implicit price from models excluding health status (£/1%/year)
 \end_layout
 
 \end_inset
@@ -38808,7 +38806,7 @@ Life satisfaction
 \begin_inset Text
 
 \begin_layout Plain Layout
-2813
+2813*
 \end_layout
 
 \end_inset
@@ -38817,7 +38815,7 @@ Life satisfaction
 \begin_inset Text
 
 \begin_layout Plain Layout
-1605
+1720*
 \end_layout
 
 \end_inset
@@ -38846,7 +38844,7 @@ Life satisfaction
 \begin_inset Text
 
 \begin_layout Plain Layout
-1093
+1093*
 \end_layout
 
 \end_inset
@@ -38855,7 +38853,7 @@ Life satisfaction
 \begin_inset Text
 
 \begin_layout Plain Layout
-624
+718*
 \end_layout
 
 \end_inset
@@ -38884,7 +38882,7 @@ Life satisfaction
 \begin_inset Text
 
 \begin_layout Plain Layout
-1109
+1109*
 \end_layout
 
 \end_inset
@@ -38893,7 +38891,7 @@ Life satisfaction
 \begin_inset Text
 
 \begin_layout Plain Layout
-633
+665*
 \end_layout
 
 \end_inset
@@ -38922,7 +38920,7 @@ SF-36 emotional wellbeing
 \begin_inset Text
 
 \begin_layout Plain Layout
-521
+521+
 \end_layout
 
 \end_inset
@@ -38931,7 +38929,7 @@ SF-36 emotional wellbeing
 \begin_inset Text
 
 \begin_layout Plain Layout
-278
+199
 \end_layout
 
 \end_inset
@@ -38939,6 +38937,37 @@ SF-36 emotional wellbeing
 </row>
 </lyxtabular>
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\size footnotesize
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
++ 
+\begin_inset Formula $p<0.1$
+\end_inset
+
+, * 
+\begin_inset Formula $p<0.05$
+\end_inset
+
+, ** 
+\begin_inset Formula $p<0.01$
+\end_inset
+
+, *** 
+\begin_inset Formula $p<0.001$
 \end_inset
 
 
@@ -39062,25 +39091,32 @@ Indirect effects
 
 \begin_layout Standard
 First, it may be that income has indirect positive impacts on SWB mediated
- by other variables that are included in the regression models, such as
- the health status indicators.
- 
+ by other variables included in the regression models, such as health status
+ indicators 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "dolan:2011"
 
 \end_inset
 
- suggest a step-based approach to recovering these indirect effects, but
- also propose that the coefficient on income in a univariate regression
- of SWB on income may be considered as an upper-bound on the true coefficient.
- 
+.
+ To test this, we estimate alternative models from which we exclude the
+ two health status dummy variables
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We also try excluding other variables, but only health status makes a substantia
+l difference.
 \end_layout
 
-\begin_layout Standard
-We estimate this 'upper-bound' coefficient --- for the life satisfaction
- model it is 0.53, up from 0.30 --- and we present alternative implicit prices
- calculated using it in the final column of 
+\end_inset
+
+.
+ In these models the income coefficient is indeed somewhat increased ---
+ for the life satisfaction model it is 0.48, up from 0.30.
+ We present alternative implicit prices calculated from these models in
+ the final column of 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:MRS-values"
@@ -39089,8 +39125,8 @@ reference "tab:MRS-values"
 
 .
  These prices are indeed somewhat reduced, but still appear implausibly
- large.
- 
+ large (except for the price derived from the emotional wellbeing model,
+ which is no longer significantly different from zero).
 \end_layout
 
 \begin_layout Paragraph
@@ -39123,9 +39159,9 @@ reference "tab:london-workplace-ls-reg"
 
 \begin_layout Standard
 This comparison reveals that including the costs of income generation does
- inflate the income coefficients somewhat (from 0.31 to 0.35 in the UK model,
- and from 0.34 to 0.36 for London), but not enough to make a substantial differenc
-e to the calculated values.
+ again inflate the income coefficients somewhat (from 0.31 to 0.35 in the
+ UK model, and from 0.34 to 0.36 for London), but not sufficiently to make
+ a substantial difference to the calculated values.
 \end_layout
 
 \begin_layout Paragraph
