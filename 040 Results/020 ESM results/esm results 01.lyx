@@ -30819,9 +30819,55 @@ reference "tab:lcm-model"
 
 \end_inset
 
- using OLS (effectively, this is the same model but excluding the per-individual
+ using OLS (in other words, this is our main fixed effects model minus the
  fixed effects).
- The results, which are tabulated in x of Appendix x,
+ The results, which are tabulated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:esm-OLS-models"
+
+\end_inset
+
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:esm-results-appendix"
+
+\end_inset
+
+, are very similar to those of the fixed effects model.
+ 
+\end_layout
+
+\begin_layout Standard
+We ran an additional OLS model, also shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:esm-OLS-models"
+
+\end_inset
+
+, including participant-level variables that cannot be included in a fixed
+ effects model.
+ Again, coefficients on the response-level variables are very similar, while
+ those on participant-level variables all conform to expectations from previous
+ SWB research: higher incomes and marriage are linked to higher happiness,
+ while unemployment, poor health, and long-term illness or disablement predict
+ substantially lower happiness reports
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The age variables are not significantly different from zero in this OLS
+ specification, although they are significant in an alternative specification
+ (not shown) from which health status indicators are omitted.
+ In both cases, the coefficients define the classic U-shaped relationship
+ of happiness with age, with its lowest point at around age 40.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
