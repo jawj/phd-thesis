@@ -1,0 +1,33 @@
+		(1)	(2)	(3)
+		feel_hpy_100		
+VARIABLES	LABELS	coef	se	pval
+				
+lctout_marine		10.1***	(0.78)	0.0000
+lctout_watery		4.38***	(0.70)	0.0000
+lctout_mountain		5.30***	(0.95)	0.0000
+lctout_grassy		4.62***	(0.39)	0.0000
+lctout_farmland		4.64***	(0.27)	0.0000
+lctout_allwood		5.08***	(0.37)	0.0000
+lctout_bare		0.75	(0.52)	0.1484
+lctout_suburb		1.53***	(0.17)	0.0000
+vehicle		-1.12***	(0.097)	0.0000
+outdoors		2.83***	(0.48)	0.0000
+is_daylight_out		-1.65***	(0.19)	0.0000
+sunny_out		0.46*	(0.20)	0.0202
+rain_out		-2.36***	(0.24)	0.0000
+snow_out		0.68	(0.76)	0.3705
+fog_out		-2.04***	(0.57)	0.0004
+temp_8_out		0.061	(0.44)	0.8891
+temp_16_out		1.73***	(0.45)	0.0001
+temp_24_out		2.96***	(0.46)	0.0000
+temp_hi_out		7.14***	(1.27)	0.0000
+wind_15_out		-0.21	(0.20)	0.3071
+wind_25_out		-0.44*	(0.21)	0.0401
+wind_hi_out		-1.36***	(0.27)	0.0000
+Constant	Constant	66.2***	(0.011)	0.0000
+				
+Observations		1,138,481		
+R-squared		0.006		
+Number of user_id		21,947		
+Robust standard errors in parentheses				
+*** p<0.001, ** p<0.01, * p<0.05				

@@ -142,7 +142,7 @@ regress
     // i.home_country  // wipes out all lcm!
 
     // ipaq_total_mhw
-    // poor_health good_health
+    poor_health good_health
 
     // home_own_outright  // correlates 0.44 with age_mp and 0.48 with age_mp_sq
     social_tenant 
