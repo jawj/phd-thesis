@@ -13772,6 +13772,13 @@ The quietest activity is 'Sleeping, resting, relaxing'; the loudest is 'Theatre,
 
 \begin_layout Subsubsection
 Spatial variables
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:esm-Spatial-variables-descriptives"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -16350,7 +16357,7 @@ a priori
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 TODO Note that we 
@@ -16385,15 +16392,38 @@ We believe the sample supporting this analysis --- over 1,000,000 assessment
  achieved by an ESM study.
 \end_layout
 
+\begin_layout Subsection
+Model building
+\end_layout
+
 \begin_layout Standard
-Our fixed effects model of reported happiness (discussed in 
+As discussed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:Fixed-effects-model"
 
 \end_inset
 
-) is presented in 
+, we estimate fixed effects models from the ESM data.
+ We run three models, each with reported happiness as the dependent variable
+ (scaled 0 -- 100).
+ 
+\end_layout
+
+\begin_layout Standard
+The first model includes only spatial characteristics --- whether the respondent
+ is indoors, outdoors or in a vehicle, and land cover and weather when outdoors
+ --- as explanatory variables.
+ The second model adds control variables from the ESM assessment survey
+ --- activity, companionship, and whether the respondent is at home, at
+ work or elsewhere --- to the specification.
+ Finally, to the second specification the third model adds indicators of
+ the day and time, and of the position of the response in the contributing
+ participant's response sequence.
+\end_layout
+
+\begin_layout Standard
+The third model is presented below in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:lcm-model"
@@ -16410,7 +16440,69 @@ status open
 
 \end_inset
 
+, while the first and second models are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:ESM-models-one-two"
+
+\end_inset
+
+ of Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:esm-results-appendix"
+
+\end_inset
+
 .
+\end_layout
+
+\begin_layout Standard
+By far the largest EQ (land cover) impacts on predicted happiness are seen
+ in the first model.
+ The addition of companionship, activity and location type controls in the
+ second model reduces the size of the land cover coefficients by approximately
+ a factor of two.
+ This appears intuitive: for example, the occasions on which people visit
+ a park or the countryside may well be associated with leisure activities,
+ relaxation and good company.
+ Therefore, if we do not control for these factors we are liable to overestimate
+ the link with land cover alone.
+ 
+\end_layout
+
+\begin_layout Standard
+The R
+\begin_inset Formula $^{2}$
+\end_inset
+
+ statistic also jumps from 0.6% in the first model to 13.1% in the second.
+ The reason for the first model's very low R
+\begin_inset Formula $^{2}$
+\end_inset
+
+, despite large and significant coefficients on the explanatory variables,
+ is the low rate of responses received from outdoor, non-urban locations,
+ noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:esm-Spatial-variables-descriptives"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Differences between the second model and the third model are much less great,
+ although the inclusion of additional controls in the third model does very
+ slightly reduce the land cover coefficients again.
+\end_layout
+
+\begin_layout Standard
+In the remainder of this chapter we focus exclusively on the the third model,
+ incorporating the widest range of control variables.
+ We refer to this as our main land cover model.
 \end_layout
 
 \begin_layout Standard
@@ -16422,7 +16514,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch Massive_results_table
-status open
+status collapsed
 
 \begin_layout Standard
 \noindent
@@ -24912,8 +25004,8 @@ Control variables
 \end_layout
 
 \begin_layout Standard
-Coefficients on control variables demonstrate relationships with reported
- happiness that are in all cases highly intuitive.
+Coefficients on control variables in the main land cover model demonstrate
+ relationships with reported happiness that are in all cases highly intuitive.
 \end_layout
 
 \begin_layout Standard
@@ -25085,14 +25177,16 @@ Weather variables --- considered only when participants are outdoors ---
 Participants are happier when temperatures are higher.
  In particular, a large jump in happiness levels is associated with the
  highest temperature category, 24ºC and above.
- This effect is of a similar magnitude to those of the happiest activities.
+ This effect is of a similar magnitude to those of the happiest activities:
+ approximately 5 points on the 0 -- 100 happiness scale, or one quarter
+ of a standard deviation.
 \end_layout
 
 \begin_layout Standard
 Slightly greater happiness is also associated with sunshine.
- By contrast, high wind speeds, rain and fog are all linked to lower happiness
- levels.
- Coefficients on daylight and snow are not significant.
+ By contrast, high wind speeds, rain and fog are all linked to somewhat
+ lower happiness levels.
+ The coefficients on daylight and snow are not significant.
 \end_layout
 
 \begin_layout Subsubsection
@@ -25133,21 +25227,20 @@ Additivity
 
 \begin_layout Standard
 Accounting for the fact that participants are in any case happier outdoors
- than indoors, an additional 2.3 points may be added to each land cover coefficie
-nt if we wish to compare happiness levels outdoors in these higher-EQ environmen
-ts with levels indoors in a continuous urban environment.
+ than indoors, an additional 2.3 scale points (one tenth of a standard deviation)
+ may be added to each land cover coefficient if we wish to compare happiness
+ levels outdoors in these higher-EQ environments with levels indoors in
+ a continuous urban environment.
 \end_layout
 
 \begin_layout Standard
-Assuming, of course, that our model is correctly specified in its inclusion
- of most variables as independent effects, then we may take this further
- by adding different coefficients together to compare predicted happiness
- in specific scenarios.
- For example, certain activities, such as gardening, birdwatching, hunting
- and fishing, may be mainly or exclusively carried on outdoors in green
- or blue spaces.
- And, of course, people may be more likely to venture into these high-EQ
+Certain activities, such as gardening, birdwatching, hunting and fishing,
+ may be mainly or exclusively carried on outdoors in green or blue spaces.
+ And, of course, people may be more likely to venture into high-EQ outdoor
  environments in pleasant weather.
+ Assuming, of course, that our model is correctly specified in its inclusion
+ of most variables as independent effects, we may simply add coefficients
+ together to compare predicted happiness in such scenarios.
  
 \end_layout
 
@@ -25155,8 +25248,8 @@ Assuming, of course, that our model is correctly specified in its inclusion
 Thus, for example, the predicted happiness of a person who is outdoors (+2.32),
  birdwatching (+4.32) with friends (+4.38), in heathland (+2.71), on a hot
  (+5.13) and sunny (+0.46) Sunday early afternoon (+4.30) is approximately
- 26 points out of 100 (or 1.2 standard deviations) higher than that of someone
- who is commuting (
+ 26 scale points (1.2 standard deviations) higher than that of someone who
+ is commuting (
 \begin_inset Formula $-$
 \end_inset
 
@@ -25531,7 +25624,7 @@ Area of Outstanding Natural Beauty
 \begin_inset Text
 
 \begin_layout Plain Layout
-All other variables except land cover from land cover model
+All other variables except land cover from main land cover model
 \end_layout
 
 \end_inset
@@ -29431,9 +29524,9 @@ In this chapter we have reported on the findings of a unique investigation
 \end_layout
 
 \begin_layout Standard
-After controlling for many other factors, participants are happier outdoors
- than indoors, and happier when outdoors in any kind of green or blue space
- than when outdoors in continuous urban environments.
+Even after controlling for many other factors, participants are happier
+ outdoors than indoors, and happier when outdoors in any kind of green or
+ blue space than when outdoors in continuous urban environments.
  These green and blue spaces are not necessarily remote: urban parks are
  also recognised as such in our data.
  The relationships are highly statistically significant, and their magnitudes
@@ -29554,7 +29647,7 @@ We know of no particular reason to expect that the demographic peculiarities
  of our sample --- who are younger, richer, and better educated than average
  --- will affect our estimates of relationships between SWB and EQ.
  These differences might mean they are exposed to a somewhat different selection
- of environments, though
+ of environments, however
 \begin_inset Foot
 status collapsed
 
