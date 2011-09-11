@@ -74,7 +74,7 @@ outreg2 using "S:\spikeless.xls", stats(coef se pval) sideway label alpha(0.001,
  // spikes
 
 #delimit ;
-logit max_hpy  // max_hpy not_min_hpy
+probit min_hpy  // max_hpy not_min_hpy
 
   lctout_*
   do_* with_*
