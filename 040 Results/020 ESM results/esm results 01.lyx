@@ -25080,11 +25080,41 @@ All other green or natural environment types --- mountains, moors, heathlands,
  Suburban or rural developed environments are a little under one point happier.
 \end_layout
 
+\begin_layout Subsubsection
+Additivity
+\end_layout
+
 \begin_layout Standard
 Accounting for the fact that participants are in any case happier outdoors
  than indoors, an additional 2.3 points may be added to each land cover coefficie
 nt if we wish to compare happiness levels outdoors in these higher-EQ environmen
 ts with levels indoors in cities.
+\end_layout
+
+\begin_layout Standard
+Assuming, of course, that our model is correctly specified in its inclusion
+ of most variables as independent effects, then we may take this further
+ by adding different coefficients together to compare predicted happiness
+ in specific scenarios.
+ For example, certain activities, such as gardening, birdwatching, hunting
+ and fishing, may be mainly or exclusively carried on outdoors in green
+ or blue spaces.
+ And, of course, people may be more likely to venture into these high-EQ
+ environments in pleasant weather.
+ 
+\end_layout
+
+\begin_layout Standard
+Thus, for example, the predicted happiness of a person who is outdoors (+2.32),
+ birdwatching (+4.32) with friends (+4.38), in heathland (+2.71), on a hot
+ (+5.13) and sunny (+0.46) Sunday early afternoon (+4.30) is approximately
+ 26 points higher out of 100 than that of someone who is commuting (
+\begin_inset Formula $-$
+\end_inset
+
+2.03), on his or her own, in the city, in a vehicle, on a cold, grey, early
+ weekday morning.
+ 
 \end_layout
 
 \begin_layout Subsection
