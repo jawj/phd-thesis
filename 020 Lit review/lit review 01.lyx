@@ -563,7 +563,7 @@ Orthodox, neo-classical economics relies overwhelmingly on the preference
  the hedonic account, generally lumping these two together under the banner
  of 'subjective wellbeing' (SWB).
  These two principal approaches to happiness in contemporary economics ---
- PS and SWB --- do share certain core premises.
+ PS and SWB --- do share some core premises.
  In particular, they both generally reject external criteria or judgements,
  privileging the individual as the only one qualified to assess his or her
  own wellbeing (this allowing both of them potential compatibility with
@@ -706,8 +706,8 @@ reference "sub:who-Others"
  Differing judgements as to the meaningfulness and inter-personal comparability
  of subjective self-ratings of wellbeing are thus at the heart of the distinctio
 n between the PS and SWB approaches.
- Out of these, each approach has developed its own apparatus of methods,
- theories and assumptions.
+ Out of these, each approach has developed its own set of methods, theories
+ and assumptions.
  
 \end_layout
 
@@ -720,7 +720,7 @@ In its strictest form the PS approach, since it steers clear of subjective
  data and rules out interpersonal comparisons, is left with a limited number
  of interesting things to say directly regarding happiness, or its closest
  available synonym, utility.
- In utility theory, utility is only an index, an analytically instrumental
+ Utility is to be understood only an index, an analytically instrumental
  quantity, which individuals need not be assumed to experience or understand.
  Assuming only that individuals' preferences conform to the axioms of completene
 ss, transitivity, reflexivity and continuity, and that they always choose
@@ -870,8 +870,25 @@ status collapsed
 The empirical SWB literature often leaves its theoretical base largely unstated.
  The premises are also straightforward, though.
  The fundamental distinction from PS is the conviction that there is a quantity,
- 'happiness', that individuals experience and that can be measured and modelled
- directly.
+ 'happiness', that individuals experience and that can be modelled 
+\emph on
+and measured
+\emph default
+ directly
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+We note that utility is in fact modelled directly in various other areas
+ of economics, such as in the application of random utility models (and
+ that our summary of the PS approach could therefore by argued to be something
+ of a straw man).
+ The PS approach does not extend to direct utility measurement, however.
+\end_layout
+
+\end_inset
+
+.
  SWB research thus throws any and every potential influence on happiness
  into a function together, wraps this in a reporting function, and proceeds
  to estimate coefficients empirically.
