@@ -235,7 +235,7 @@ Number of EconLit journal articles with titles including the terms 'happiness',
 
 This combination of characteristics has assured happiness economics sustained
  media coverage, certainly out of proportion to the volume of economic research
- it represents.
+ it represents
 \begin_inset Foot
 status collapsed
 
@@ -315,6 +315,7 @@ key "kennedy:1968"
 
 \end_inset
 
+.
  But that volume is increasing rapidly: Figure 
 \begin_inset CommandInset ref
 LatexCommand vref
@@ -325,7 +326,7 @@ reference "fig:econlit-citations"
 , which plots by year the number of journal article results for a simple
  EconLit search, gives some indication of its extraordinary growth.
  And the topic has more recently begun to receive attention --- if not always
- approval --- in some of the more prestigious economic journals.
+ approval --- in some of the more prestigious economic journals
 \begin_inset Foot
 status collapsed
 
@@ -347,6 +348,7 @@ key "frey:2002a,tella:2006,rayo:2007"
 
 \end_inset
 
+.
  
 \end_layout
 
@@ -654,7 +656,7 @@ key "bruni:2007"
 
 \end_inset
 
-).
+)
 \begin_inset Foot
 status collapsed
 
@@ -679,7 +681,7 @@ key "pasinetti:2006"
 
 \end_inset
 
- 
+.
 \end_layout
 
 \begin_layout Standard
@@ -727,7 +729,7 @@ ss, transitivity, reflexivity and continuity, and that they always choose
 as if
 \emph default
  they are maximising utility, and their behaviour can be modelled and analysed
- as such.
+ as such
 \begin_inset Foot
 status collapsed
 
@@ -772,6 +774,7 @@ strict convexity
 
 \end_inset
 
+.
  The set of choices an individual can make is understood to be constrained
  by his or her budget and, assuming non-satiation, a larger budget always
  implies that more highly preferred options can be chosen.
@@ -1035,7 +1038,7 @@ key "kahneman:1997,kahneman:2005"
 .
  But while this does capture a useful distinction between the two quantities,
  it would be misleading to portray them, as this terminology might imply,
- as simply prospective and retrospective versions of an equivalent metric.
+ as simply prospective and retrospective versions of an equivalent metric
 \begin_inset Foot
 status collapsed
 
@@ -1062,6 +1065,7 @@ we consider that maximising happiness is closely linked, if not identical,
 
 \end_inset
 
+.
  
 \begin_inset CommandInset citation
 LatexCommand Citet
@@ -1108,7 +1112,7 @@ name "sub:measuring-happiness"
 
 \begin_layout Standard
 SWB data consist, more or less by definition, of the aggregated self-reports
- of individuals --- what people say about themselves when asked.
+ of individuals --- what people say about themselves when asked
 \begin_inset Foot
 status collapsed
 
@@ -1134,6 +1138,7 @@ wellbeing data is debatable.
 
 \end_inset
 
+.
  Widely used data sets with wellbeing items include those from the World
  Values Survey, European Social Survey, German Socio-Economic Panel and
  British Household Panel Survey.
@@ -1189,7 +1194,7 @@ on with one's life situation, with life as a whole, or with quality of life;
 \begin_layout Standard
 Authors generally seem to have reflected rather little on the wide range
  of terms employed in research under the SWB banner, and to have shown a
- perhaps surprising lack of unease about this.
+ perhaps surprising lack of unease about this
 \begin_inset Foot
 status collapsed
 
@@ -1209,6 +1214,7 @@ key "johns:2007"
 
 \end_inset
 
+.
  Empirically, studies asking different questions have produced results that
  are generally fairly consistent with each other.
  But the use of different questions does make comparison of findings between
@@ -1425,7 +1431,7 @@ key "kahneman:2006a"
  too.
  In either case, there is a problematic lack of clarity as to what exactly
  is to be assessed on the time dimension.
- Even where the timescale of the assessment is more precise,
+ Even where the timescale of the assessment is more precise
 \begin_inset Foot
 status collapsed
 
@@ -1442,8 +1448,8 @@ key "huppert:2009"
 
 \end_inset
 
- the recollection and aggregation of experiences has been shown to be systematic
-ally distorted --- such as by neglect of experiences' duration 
+, the recollection and aggregation of experiences has been shown to be systemati
+cally distorted --- such as by neglect of experiences' duration 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "kahneman:2006b"
@@ -1649,7 +1655,7 @@ key "littlewood:2008"
 
 \end_inset
 
-.
+
 \begin_inset Foot
 status collapsed
 
@@ -1677,6 +1683,7 @@ d member appeared to mourn only briefly and slightly...
 
 \end_inset
 
+.
  More generally, the potential for social desirability biases needs to be
  acknowledged and, ideally, minimised 
 \begin_inset CommandInset citation
@@ -1723,7 +1730,7 @@ key "inglehart:2003"
 
 , for example, describe surprisingly large differences in SWB ratings between
  European countries in a paper that barely admits the possibility of cultural
- variability in interpretation and reporting.
+ variability in interpretation and reporting
 \begin_inset Foot
 status collapsed
 
@@ -1773,7 +1780,7 @@ and
 
 \end_inset
 
- 
+.
 \end_layout
 
 \begin_layout Standard
@@ -1782,7 +1789,7 @@ On the other hand, there are ways around this issue.
  groups can produce interesting and valid data.
  Panel data can allow comparative analysis of SWB trends over time (at least
  if we can assume certain commonalities in the shapes of different countries'
- reporting functions).
+ reporting functions)
 \begin_inset Foot
 status collapsed
 
@@ -1826,6 +1833,7 @@ key "littlewood:2008"
 
 \end_inset
 
+.
  Biological markers such as saliva cortisol levels or heart rate --- to
  be discussed in 
 \begin_inset CommandInset ref
@@ -1953,7 +1961,7 @@ key "larsen:2001"
 
 \end_inset
 
-,
+
 \begin_inset Foot
 status collapsed
 
@@ -1985,7 +1993,7 @@ positive and negative affect are separable and...
 
 \end_inset
 
- and the great majority of people have no difficulty in answering along
+, and the great majority of people have no difficulty in answering along
  one dimension 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2327,7 +2335,7 @@ Cardinal SWB comparability
 \end_layout
 
 \begin_layout Standard
-Under the cardinality assumption, A3, simple OLS regressions are appropriate.
+Under the cardinality assumption, A3, simple OLS regressions are appropriate
 \begin_inset Foot
 status collapsed
 
@@ -2351,6 +2359,7 @@ key "praag:2004a"
 
 \end_inset
 
+.
  If a panel data set is available, the use of OLS makes it straightforward
  to include individual fixed effects (or use first differencing) to control
  for time-invariant unobserved influences on SWB 
@@ -2548,7 +2557,7 @@ key "williams:2006,boes:2004,boes:2006,boes:2007,fu:1997"
 
 \end_inset
 
-, principally the generalised ordered logit and probit.
+, principally the generalised ordered logit and probit
 \begin_inset Foot
 status collapsed
 
@@ -2579,6 +2588,7 @@ key "winkelmann:2009"
 
 \end_inset
 
+.
  
 \end_layout
 
@@ -2602,7 +2612,7 @@ key "williams:2006"
 
 \end_inset
 
-.
+
 \begin_inset Foot
 status collapsed
 
@@ -2638,6 +2648,7 @@ For clarification, this grouping would proceed as follows.
 
 \end_inset
 
+.
  A 
 \emph on
 partial
@@ -2888,7 +2899,7 @@ on, save for income (usually logged) and age (usually in linear and quadratic
  Most researchers have also assumed the effects of different explanatory
  variables to be independent, and potential interactions have not been widely
  explored (for example, could the SWB effect of having --- or not having
- --- children be partly contingent on age and gender?).
+ --- children be partly contingent on age and gender?)
 \begin_inset Foot
 status collapsed
 
@@ -2912,6 +2923,7 @@ key "yang:2008,yang:2008a"
 
 \end_inset
 
+.
  
 \end_layout
 
@@ -3781,7 +3793,7 @@ name "sub:Is-happiness-valid"
 
 \begin_layout Standard
 Despite the growth of SWB research within economics, it is not currently
- a fully mainstream approach.
+ a fully mainstream approach
 \begin_inset Foot
 status collapsed
 
@@ -3801,6 +3813,7 @@ key "colander:2004"
 
 \end_inset
 
+.
  It continues to attract varying degrees of scepticism from within the PS
  tradition --- perhaps unsurprisingly, given the historical roots of the
  two approaches.
@@ -4100,7 +4113,7 @@ name "sec:Who"
 There are not, or at least were not until recently, any dedicated 'happiness
  economists'.
  Happiness economics has been done by people in various areas --- and on
- various edges --- of the discipline.
+ various edges --- of the discipline
 \begin_inset Foot
 status collapsed
 
@@ -4119,6 +4132,7 @@ key "cantril:1965"
 
 \end_inset
 
+.
  One may therefore ask which areas of economics, and which economists, have
  been most closely associated with which aspects.
  Three major areas are outlined below --- as well as one area more notable
@@ -4537,7 +4551,7 @@ key "dasgupta:2008"
 \end_inset
 
  --- SWB is of interest in part because it makes strong sustainability more
- palatable.
+ palatable
 \begin_inset Foot
 status collapsed
 
@@ -4589,6 +4603,7 @@ key "ipcc:2007"
 
 \end_inset
 
+.
  Strong sustainability appears to require future economic growth to rely
  less on material goods, and/or to proceed at a slower (or even negative)
  rate (
@@ -4732,7 +4747,7 @@ key "csikszentmihalyi:2000,sanne:2002,layard:2005,scitovsky:1977"
 
 \end_inset
 
-.
+
 \begin_inset Foot
 status collapsed
 
@@ -4755,7 +4770,7 @@ key "kasser:2002,jackson:2004,kasser:2007"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsection
@@ -4976,7 +4991,7 @@ In general, the literature gives a fairly consistent picture of which factors
  have what associations with SWB.
  Where studies' findings do contrast, an important cause may be endogeneity,
  in that one (or both) of the studies fails to control for correlated explanator
-y factors.
+y factors
 \begin_inset Foot
 status collapsed
 
@@ -4990,6 +5005,7 @@ For example, the effects of gender and care-giving, of religion and sociable
 
 \end_inset
 
+.
  Since several authors have reviewed the specific findings of the SWB literature
  in detail 
 \begin_inset CommandInset citation
@@ -5055,7 +5071,7 @@ key "layard:2008a"
 \emph on
 faster
 \emph default
- than in proportion to the rise in income.
+ than in proportion to the rise in income
 \begin_inset Foot
 status collapsed
 
@@ -5084,6 +5100,7 @@ They assume
 
 \end_inset
 
+.
  Studies making use of exogenous income variation, such as lottery wins,
  have helped to establish that the apparent impact of income on SWB is at
  least partly causal 
@@ -5094,7 +5111,7 @@ key "gardner:2007a"
 
 \end_inset
 
-.
+
 \begin_inset Foot
 status collapsed
 
@@ -5141,6 +5158,7 @@ made
 
 \end_inset
 
+.
  
 \end_layout
 
@@ -5512,7 +5530,7 @@ key "tellegen:1988"
 
 \end_inset
 
-.
+
 \begin_inset Foot
 status collapsed
 
@@ -5528,6 +5546,7 @@ As with all heritability measures, however, this figure is as much dependent
 
 \end_inset
 
+.
  
 \end_layout
 
@@ -5753,7 +5772,7 @@ key "sen:1978"
 
 \end_inset
 
-.
+
 \begin_inset Foot
 status collapsed
 
@@ -5776,7 +5795,7 @@ key "sen:1978"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -5944,7 +5963,7 @@ key "thompson:2008"
 \end_inset
 
  see this argument behind the association of government interest in wellbeing
- with 'paternalism' and the 'nanny state' in sections of the media.
+ with 'paternalism' and the 'nanny state' in sections of the media
 \begin_inset Foot
 status collapsed
 
@@ -5975,6 +5994,7 @@ The ‘national happiness audit’ would enable us to form and judge social
 
 \end_inset
 
+.
  As to the specifics, commentators on the Right have taken against the suggested
  benefits of greater redistributive taxation 
 \begin_inset CommandInset citation
