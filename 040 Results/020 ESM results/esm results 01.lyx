@@ -24912,8 +24912,18 @@ Participants are least happy when sick in bed, with a negative coefficient
  or studying.
 \end_layout
 
+\begin_layout Standard
+Note that, since the activity dummy variables are not mutually exclusive,
+ there is no base category in the model.
+\end_layout
+
 \begin_layout Subsubsection
 Companionship
+\end_layout
+
+\begin_layout Standard
+The companionship dummies are not mutually exclusive, but the implicit base
+ category (when all are zero) is 'Alone or with strangers only'.
 \end_layout
 
 \begin_layout Standard
@@ -24928,7 +24938,6 @@ Conversely, responses in the company of colleagues and other acquaintances
  are slightly less happy.
  Happiness when with children, clients or customers is not significantly
  different from happiness when alone.
- 
 \end_layout
 
 \begin_layout Subsubsection
@@ -25088,7 +25097,7 @@ Additivity
 Accounting for the fact that participants are in any case happier outdoors
  than indoors, an additional 2.3 points may be added to each land cover coefficie
 nt if we wish to compare happiness levels outdoors in these higher-EQ environmen
-ts with levels indoors in cities.
+ts with levels indoors in a continuous urban environment.
 \end_layout
 
 \begin_layout Standard
@@ -25112,8 +25121,8 @@ Thus, for example, the predicted happiness of a person who is outdoors (+2.32),
 \begin_inset Formula $-$
 \end_inset
 
-2.03), on his or her own, in the city, in a vehicle, on a cold, grey, early
- weekday morning.
+2.03), on his or her own, in the inner city, in a vehicle, on a cold, grey,
+ early weekday morning.
  
 \end_layout
 
