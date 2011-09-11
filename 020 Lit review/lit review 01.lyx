@@ -876,7 +876,7 @@ and measured
 \emph default
  directly
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 We note that utility is in fact modelled directly in various other areas
@@ -2269,6 +2269,7 @@ The interpretation of SWB responses is one of the key subjects about which
  are associated with a variety of different models 
 \begin_inset CommandInset citation
 LatexCommand citep
+after "p. 643"
 key "ferrer-i-carbonell:2004"
 
 \end_inset
@@ -2391,31 +2392,33 @@ key "ferrer-i-carbonell:2004"
 \end_layout
 
 \begin_layout Standard
-OLS models have been widely used in the psychology literature, but economists
- have tended to turn to them principally when the use of aggregated (mean)
- SWB ratings has forced them to assume cardinality in any case (
+OLS models have been widely used in the psychology literature.
+ In earlier research, happiness economists tended to turn to them principally
+ when the use of aggregated (mean) SWB ratings has forced them to assume
+ cardinality in any case (
 \emph on
 ibid.
 \emph default
 ) --- see, for instance, 
 \begin_inset CommandInset citation
 LatexCommand citet
-key "welsch:2006"
+key "welsch:2002"
 
 \end_inset
 
- --- or when the OLS results have been shown to be qualitatively indistinguishab
-le from the results of models not requiring cardinality --- as in the case
- of 
+.
+ However, several more recent studies have shown OLS results to be qualitatively
+ indistinguishable from the results of models not requiring cardinality
+ 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
+before "e.g."
 key "moro:2008"
 
 \end_inset
 
-, for example.
- In the latter case, OLS models may be preferred because of the straightforward
- interpretation of the coefficients.
+, and OLS models may then be preferred because of the straightforward interpreta
+tion of the coefficients.
 \end_layout
 
 \begin_layout Standard
@@ -3000,6 +3003,13 @@ key "praag:2003"
 
 \begin_layout Subsubsection
 Causality
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:analysing-Causality"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

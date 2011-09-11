@@ -122,22 +122,42 @@ name "chap:esm-results"
 \end_layout
 
 \begin_layout Standard
-This chapter describes and analyses the data collected using the spatial
- experience sampling methodology detailed in 
+This chapter describes and analyses the large panel data set collected using
+ the spatial experience sampling methodology detailed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:esm-research-methods"
 
 \end_inset
 
-, and augmented with objective spatial data using GIS.
+, and augmented with objective spatial data using GIS as described in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:analysis-methods"
+
+\end_inset
+
+.
  We use this data to test the hypothesis that individuals' momentary feelings
  of happiness are positively related to EQ levels in their immediate surrounding
 s.
  As indicators of EQ, we focus on land cover characteristics, while controlling
  for daylight and weather conditions.
- We control also for a large set of contextual indicators, including companionsh
-ip and activity.
+ We control also for per-individual fixed effects and a large set of contextual
+ indicators, including companionship and activity.
+\end_layout
+
+\begin_layout Standard
+As noted previously, we believe both this hypothesis and this method to
+ be novel within (and, in part, beyond) the happiness economics literature.
+ As discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:analysing-happiness"
+
+\end_inset
+
+, the simple availability of any panel data has been a rarity in this area.
 \end_layout
 
 \begin_layout Standard
@@ -165,8 +185,8 @@ reference "sec:esm-analysis"
 
 \end_inset
 
- reports on the fixed effects models we estimate to quantify the relationship
- between happiness and immediate environment, and 
+ reports on the models we estimate to quantify the relationship between
+ happiness and immediate environment, and 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:survey-results-Discussion"
