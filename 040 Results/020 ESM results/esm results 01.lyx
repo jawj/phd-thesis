@@ -18023,15 +18023,15 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch Massive_results_table
-status collapsed
-
-\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Branch Massive_results_table
+status collapsed
 
 \begin_layout Standard
 \noindent
@@ -26466,13 +26466,13 @@ except
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
 \end_inset
 
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -26702,7 +26702,7 @@ Robustness checks
 
 \begin_layout Standard
 We have performed a number of robustness checks on these findings regarding
- the positive effects of EQ.
+ the positive links between SWB and EQ.
 \end_layout
 
 \begin_layout Subsubsection
@@ -30788,8 +30788,8 @@ reference "tab:spikeless-esm"
 \begin_layout Standard
 We also investigated the spikes alone, using logit models (with the same
  explanatory variables) to predict extreme happy and extreme unhappy answers.
- All land cover types except freshwater and mountains are positively predictive
- of extreme happy answers
+ All land cover types except the freshwater and mountain types are positively
+ predictive of extreme happy answers
 \begin_inset Foot
 status collapsed
 
@@ -30805,6 +30805,23 @@ These two land cover types are positively predictive of extreme happy answers
 \end_inset
 
 , while none significantly predicts extreme unhappy ones.
+\end_layout
+
+\begin_layout Subsubsection
+Econometric model
+\end_layout
+
+\begin_layout Standard
+We estimated a model with the same specification as in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:lcm-model"
+
+\end_inset
+
+ using OLS (effectively, this is the same model but excluding the per-individual
+ fixed effects).
+ The results, which are tabulated in x of Appendix x,
 \end_layout
 
 \begin_layout Subsubsection

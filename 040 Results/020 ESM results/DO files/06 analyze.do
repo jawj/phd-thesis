@@ -111,6 +111,29 @@ if valid
 outreg2 using "S:\ols-fe-spec.xls", stats(coef se pval) sideway label alpha(0.001, 0.01, 0.05) symbol(***, **, *) auto(2) pdec(4) pfmt(f) word
 
 
+ // OLS -- FE spec plus individual FX
+ 
+#delimit ;
+regress feel_hpy_100
+
+ lctout_*  
+ do_* with_*
+ at_work elsewhere
+ vehicle outdoors
+ rseq_0 rseq_10 rseq_50
+ wkdayhour_* wkendhour_*
+ is_daylight_out sunny_out rain_out snow_out fog_out temp_*_out wind_*_out
+ 
+ male age agesq ib5.health ib(freq).work_enc ib(freq).mrg_enc lnpcinck
+
+if valid  
+
+, vce(cluster user_id);
+#delimit cr
+
+outreg2 using "S:\ols-with-ind.xls", stats(coef se pval) sideway label alpha(0.001, 0.01, 0.05) symbol(***, **, *) auto(2) pdec(4) pfmt(f) word
+
+
  // RE -- FE spec plus individual FX
 
 #delimit ;
