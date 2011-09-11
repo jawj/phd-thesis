@@ -39044,8 +39044,7 @@ ed through the housing market.
 \end_layout
 
 \begin_layout Standard
-In common with values estimated in almost all previous research, the values
- seem too high.
+These values seem too high.
  For example, using Equation 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -39064,6 +39063,32 @@ reference "sub:swb-valuation-Method"
  respondents would be willing to pay an amount equal to half that mean income
  for an increase of just under 5% (141ha) in freshwater land cover within
  3km.
+ As noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:swb-valuation-Strengths-weaknesses"
+
+\end_inset
+
+, implausibly large value estimates are a widespread problem in previous
+ research.
+ For example, from their 'baseline' model 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferreira:2010"
+
+\end_inset
+
+ calculate MRS values of €15,585 per 1ºC per year for changes in January
+ mean temperature, and of −€945 per 1
+\begin_inset Formula $\mu$
+\end_inset
+
+g/m
+\begin_inset Formula $^{3}$
+\end_inset
+
+ per year for changes in PM10 concentrations.
 \end_layout
 
 \begin_layout Subsubsection
@@ -39071,16 +39096,32 @@ Correcting the income coefficient
 \end_layout
 
 \begin_layout Standard
-As noted in 
+As also noted in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:swb-valuation-Strengths-weaknesses"
 
 \end_inset
 
-, underestimation of the coefficient on income has commonly been identified
- as the cause of such high values, and various means of correcting this
- have been suggested.
+, underestimation of the effect of income has commonly been suggested as
+ the cause of such high values.
+ Our income coefficients seem low even in relation to some others in the
+ literature.
+ For example, in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferreira:2010"
+
+\end_inset
+
+'s 'baseline' model a one standard deviation change in log income implies
+ a 0.33 standard deviation change in SWB score, while a one standard deviation
+ change in log income in our 3km UK LS model implies only a 0.11 standard
+ deviation change in LS.
+\end_layout
+
+\begin_layout Standard
+Various means of correcting such underestimation have been proposed.
  Not all of these are possible with the data available to us, but we try
  three different approaches.
 \end_layout
