@@ -123,7 +123,7 @@ In this chapter we describe the collection of new primary data to inform
 \end_layout
 
 \begin_layout Standard
-To address our research questions we require precise and reliable location
+To address our research questions we require valid and precise location
  data for respondents' homes and workplaces, which can later be joined with
  appropriate spatial data; responses to standardised life satisfaction,
  affect, and general wellbeing items and scales, free as far as possible
@@ -134,10 +134,10 @@ To address our research questions we require precise and reliable location
 \end_layout
 
 \begin_layout Standard
-Our claim is to improve on existing research, and the collection of valid,
- reliable, accurate survey data is not a trivial undertaking.
- In the hope of establishing the truth of our claim, we therefore provide
- a reasonably detailed account of our methods here.
+Our claim is to improve on existing research, and this cannot be achieved
+ with poor quality data.
+ To demonstrate that appropriate care was taken to collect data of a high
+ quality, we provide a reasonably detailed account of our methods here.
 \end_layout
 
 \begin_layout Section
@@ -3014,11 +3014,11 @@ hyperlink{ssb.25}{pages SB-25 -- SB-27}
 \begin_layout Standard
 We asked a variety of additional questions regarding direct and indirect
  use and enjoyment of nature.
- These included: views from the home and workplace; membership of and legacies
- to wildlife and conservation organisations; visits to National Parks and
- National Trust and RSPB land; nature watching and photography; time spent
- in the garden, countryside and other green spaces; and experience of nature
- via exhibitions, magazines and television (
+ These included: views from the home and workplace; membership of and intended
+ legacies to wildlife and conservation organisations; visits to National
+ Parks and National Trust and RSPB land; nature watching and photography;
+ time spent in the garden, countryside and other green spaces; and experience
+ of nature via exhibitions, magazines and television (
 \begin_inset ERT
 status open
 
@@ -3128,9 +3128,10 @@ websperiment
 , a new tool developed by the researcher for this purpose, which has three
  distinctive aspects: it is a domain-specific language; it makes liberal
  use of inheritance and polymorphism, increasing modularity and reducing
- the extent to which layout and logic have to duplicated throughout a survey
- definition; and it will be released under an open-source licence, enabling
- any researcher to extend and modify it, and then to share those changes.
+ the extent to which layout and logic have to be duplicated throughout a
+ survey definition; and it will be released under an open-source licence,
+ enabling any researcher to extend and modify it, and then to share those
+ changes.
  The 
 \emph on
 websperiment

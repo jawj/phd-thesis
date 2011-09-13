@@ -1632,9 +1632,9 @@ Non-random variation in interpretations represents a more serious challenge
  to the validity of SWB research.
  An obvious source of such variation is individuals' cultural and linguistic
  backgrounds.
- And there are identifiable cultural groupings in SWB ratings: historically
- communist countries may tend to lower scores; historically Protestant,
- island and south-American nations to higher ones 
+ And there are identifiable cultural groupings in SWB ratings: historically-comm
+unist countries may tend to lower scores; historically-Protestant, island
+ and south-American nations to higher ones 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "inglehart:2003,nef:2006"
@@ -1737,7 +1737,7 @@ emphasizing a success of the self may lead to jealousy and envy by others.
 \begin_layout Standard
 This all makes naïve comparisons of SWB between nations --- and perhaps
  even between different ethnic groups within nations --- problematic.
- Unfortunately, this has not stopped such comparisons being drawn.
+ Unfortunately, this has not stopped naïve comparisons being drawn.
  
 \begin_inset CommandInset citation
 LatexCommand citet

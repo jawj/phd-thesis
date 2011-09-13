@@ -719,10 +719,11 @@ Science
 Though all of these studies report beneficial impacts of natural environments
  on health or wellbeing, they have some common weaknesses.
  Observational studies measure domestic proximity to natural environments
- but rarely look at actual experiences of such environments (which may not
- occur near home, and may occur elsewhere); cannot provide data on the moment-by
--moment hedonic or affective element of wellbeing; and are reliant on retrospect
-ive assessments that are subject to substantial recall bias 
+ but rarely look at actual experiences of such environments (which may or
+ may not occur around the home, and may occur elsewhere); cannot provide
+ data on the moment-by-moment hedonic or affective element of wellbeing;
+ and are reliant on retrospective assessments that are subject to substantial
+ recall bias 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "robinson:2002"
@@ -1598,7 +1599,7 @@ reference "sec:research-aims"
  One makes significant but evolutionary improvements to the earlier work
  modelling retrospective happiness evaluations as a function of EQ in the
  local area, using cross-sectional, individual-level data.
- These improvements are detailed in 
+ These improvements were detailed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:intro-surveys"
