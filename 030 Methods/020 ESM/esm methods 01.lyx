@@ -784,7 +784,7 @@ key "killingsworth:2010"
 
 \begin_layout Standard
 The activities are presented in a broadly thematic order, proceeding from
- work-related actvities through chores and errands to leisure activities.
+ work-related activities through chores and errands to leisure activities.
  We considered randomising the order of response options per response or
  per participant to counter possible ordering effects.
  However, the disadvantages of this approach were considered to outweigh
@@ -3509,7 +3509,7 @@ reference "sub:Mappiness-ESM-assessment"
 status collapsed
 
 \begin_layout Plain Layout
-We us the iPhone's UIImagePickerController interface 
+We use the iPhone's UIImagePickerController interface 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "apple-inc.:2010d"
@@ -3589,7 +3589,7 @@ name "tab:App-revisions"
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="3">
+<lyxtabular version="3" rows="7" columns="3">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
@@ -3779,9 +3779,36 @@ My data
 \begin_inset Text
 
 \begin_layout Plain Layout
-Fixed a bug causing occasional crashes on passcode screens, wording of email
- template, and behaviour when installed on multiple devices via restore
- of backup in iTunes.
+Fixed a bug causing occasional crashes on passcode screens.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.1.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6 August 2011
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fixed minor compatibility issues for forthcoming iOS 5 update.
 \end_layout
 
 \end_inset
@@ -3906,7 +3933,7 @@ Testers were provided with the app prior to release in the App Store using
 \end_inset
 
 .
- Testers were asked comment on the reliability and stability of the app's
+ Testers were asked to comment on the reliability and stability of the app's
  implementation, the usability and aesthetics of the user interface, and
  the clarity and style of explanatory text.
  The testing phase also served as the pilot for the registration and ESM
@@ -3987,16 +4014,24 @@ name "sub:Participant-motivation"
 
 \begin_layout Standard
 Recruitment of participants to the study was opportunistic.
- We hoped that potential participants would be attracted by three main factors
- 
+ We hoped that potential participants would be attracted by three main factors:
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+These factors are discussed by, for example, 
 \begin_inset CommandInset citation
-LatexCommand citep
-before "e.g."
+LatexCommand citet
 key "cavusgil:1998"
 
 \end_inset
 
-:
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -4660,7 +4695,7 @@ Recruitment and response trends
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -4697,8 +4732,8 @@ status collapsed
 
 \begin_layout Plain Layout
 Recruitment statistics: weekly website visits, app downloads and participant
- registrations, (a) globally and (b) from the UK only (registrations are
- not geographically located)
+ registrations, (a) globally and (b) from the UK only (UK registrations
+ cannot be shown, because registrations are not geographically located)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Recruitment-statistics"
