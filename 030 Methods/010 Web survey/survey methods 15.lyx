@@ -2891,6 +2891,13 @@ hyperlink{ssb.54}{SB-54}
 
 \begin_layout Subsubsection
 Demographic information
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:survey-Demographic-info"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
