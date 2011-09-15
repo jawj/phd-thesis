@@ -8549,8 +8549,7 @@ In calculating this fraction, we count in the denominator only beeps sent
 \end_inset
 
 .
- This response rate is low in relation to reports in the EMA literature,
- but not unprecedentedly so.
+ This response rate is low in relation to reports in the EMA literature.
  Although they admit the figure is 
 \begin_inset Quotes eld
 \end_inset
@@ -8562,14 +8561,18 @@ arbitrary
 , 
 \begin_inset CommandInset citation
 LatexCommand citet
-after "240"
+after "p. 240"
 key "stone:2002"
 
 \end_inset
 
- propose a lower bound of 80%, suggesting that rates below this raise questions
- over the representativeness of sampling.
- But 
+ propose a guideline lower bound of 80%, suggesting that rates below this
+ raise questions over the representativeness of sampling.
+ 
+\end_layout
+
+\begin_layout Standard
+On the other hand, our rate is not unprecedentedly low: 
 \begin_inset CommandInset citation
 LatexCommand citet
 after "213"
@@ -8578,6 +8581,18 @@ key "turk:2007"
 \end_inset
 
 , for example, report a response rate of 49.7% in an EMA study of fibromyalgia.
+ Furthermore, we can be reasonably confident that these responses genuinely
+ are valid --- unlike studies using paper-based diaries, in which a large
+ majority of seemingly valid responses have sometimes been discovered to
+ have been fabricated long before or after the signalling time 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "stone:2002"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -29728,7 +29743,7 @@ key "gibbons:2011a"
  model.
  There are many potential explanations for this discrepancy
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 For example, people might be mis-predicting the utility effects of different

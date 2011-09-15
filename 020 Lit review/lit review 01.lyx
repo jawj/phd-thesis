@@ -1444,10 +1444,10 @@ key "kahneman:2006a"
 
 \end_inset
 
-, although in some cases future expectations could arguably be relevant
- too.
- In either case, there is a problematic lack of clarity as to what exactly
- is to be assessed on the time dimension.
+ --- and elsewhere in this thesis --- although in some cases future expectations
+ could arguably be relevant too.
+ In either case, there is often a lack of clarity as to what exactly is
+ to be assessed on the time dimension.
  Even where the timescale of the assessment is more precise
 \begin_inset Foot
 status collapsed
@@ -1481,10 +1481,31 @@ key "robinson:2002"
 \end_inset
 
 .
- On the other hand, in respect of this benchmark, it could also be argued
+\end_layout
+
+\begin_layout Standard
+On the other hand, in respect of this benchmark, it could also be argued
  that a recollected and aggregated assessment is as valid a measure of SWB
  as a perfect integral of momentary experiences over time: humans do not
  live exclusively in the immediate present.
+ The key point is simply that these are different sorts of quantities: 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p. 16492"
+key "kahneman:2010"
+
+\end_inset
+
+, for example, stress 
+\begin_inset Quotes eld
+\end_inset
+
+the distinction between the judgments individuals make when they think about
+ their life and the feelings that they experience as they live it
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -1492,8 +1513,8 @@ Experience sampling or reconstruction
 \end_layout
 
 \begin_layout Standard
-As implied by the above, SWB measures have been devised to approximate the
- average or integral of individuals' momentary utilities too 
+As implied by the above discussion, SWB measures have been devised to approximat
+e the average or integral of individuals' momentary utilities too 
 \begin_inset CommandInset citation
 LatexCommand citep
 after "p. 5"

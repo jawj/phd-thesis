@@ -2251,6 +2251,13 @@ reference "app:survey-screenshots"
 
 \begin_layout Subsubsection
 Map locations
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:survey-Map-locations"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3132,14 +3139,27 @@ The surveys were implemented using
 \emph on
 websperiment
 \emph default
-, a new tool developed by the researcher for this purpose, which has three
- distinctive aspects: it is a domain-specific language; it makes liberal
+, a new platform developed by the researcher for this purpose, which has
+ three distinctive aspects: it is a domain-specific language; it makes liberal
  use of inheritance and polymorphism, increasing modularity and reducing
  the extent to which layout and logic have to be duplicated throughout a
  survey definition; and it will be released under an open-source licence,
  enabling any researcher to extend and modify it, and then to share those
  changes.
- The 
+ A significant motivation for the development of this platform was the desire
+ to incorporate the interactive map location questions described in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:survey-Map-locations"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The 
 \emph on
 websperiment
 \emph default
@@ -3165,14 +3185,7 @@ reference "chap:surveys-appendix"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Further details on 
-\emph on
-websperiment 
-\emph default
-are provided by 
+ Further details on the platform are provided by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "mackerron:2009a"

@@ -739,8 +739,9 @@ key "kuo:2001a"
 
 \end_inset
 
-'s --- by their nature tell us a limited amount about peoples' real experiences
- of natural environments in their everyday lives.
+'s --- are generally low in ecological validity: by their nature they tell
+ us a limited amount about peoples' real experiences of natural environments
+ in their everyday lives.
 \end_layout
 
 \begin_layout Subsection
@@ -1198,6 +1199,13 @@ key "engelbrecht:2009"
 
 \begin_layout Subsubsection
 Limitations
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:econ-eq-swb-Limitations"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
@@ -1559,8 +1567,8 @@ key "kahneman:2004a"
 
 \end_inset
 
- --- provide some of the best evidence regarding influences on wellbeing
- in general.
+ --- provide some of the best, most ecologically valid evidence regarding
+ influences on wellbeing in general.
  None of the studies cited in this section (
 \begin_inset CommandInset ref
 LatexCommand ref
