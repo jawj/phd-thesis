@@ -110,25 +110,29 @@ name "chap:analysis-methods"
 The previous two chapters detailed our collection of original survey data
  --- conventional and ESM --- to inform analyses of EQ and its relations
  to happiness.
- Responses from the London survey have one or two associated point locations:
+ 
+\end_layout
+
+\begin_layout Standard
+Responses from the London survey have one or two associated point locations:
  the indicated map locations of the respondent's home and, if applicable,
  workplace.
  Responses from the UK survey include one or two full postcodes: again,
  those of the respondent's home and, sometimes, workplace.
  And each ESM study response has associated point coordinates: the GPS-derived
  response location.
+ In all three cases, we use the available location information to augment
+ the response variables with information from environmental and other spatial
+ data sets.
  
 \end_layout
 
 \begin_layout Standard
-In all three cases, we use the available location information to augment
- the response variables with information from environmental and other spatial
- data sets.
- In the first part of this chapter we describe those external data sources
+In the first part of this chapter we describe those external data sources
  and the methods by which we have joined them to our primary data.
  Some of the methods and most of the data have not previously been applied
  in the happiness economics literature on EQ.
- In the chapter's second brief section we outline the simple OLS and fixed
+ In the chapter's brief second section we outline the simple OLS and fixed
  effects models which we employ in the analysis of this primary and secondary
  data.
 \end_layout
@@ -1197,7 +1201,19 @@ Air pollution values within Greater London are derived using the modelling
  maps produced by the Environmental Research Group, Kings College London.
  These maps are the product of a dispersion model using data on mobile,
  point and area pollutant sources from the London Atmospheric Emissions
- Inventory (LAEI) 2008, weather conditions and street canyon locations 
+ Inventory (LAEI) 2008, weather conditions and street canyons
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+By analogy with natural canyons --- deep ravines between cliffs --- urban
+ or street canyons exist where streets pass between tall buildings on both
+ sides, affecting airflow and the accumulation/dispersal of pollutants.
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "kelly:2011"
@@ -3306,7 +3322,7 @@ http://www.naturalengland.org.uk/ourwork/conservation/designatedareas/
 
 \end_inset
 
-:
+ (but applied across the UK):
 \end_layout
 
 \begin_layout Description
@@ -3327,6 +3343,7 @@ extensive tracts of country that are protected by law for future generations
 .
  There are 15 National Parks in the UK, and they cover approximately 9%
  of the land area.
+ None are in Northern Ireland.
 \end_layout
 
 \begin_layout Description
@@ -3362,7 +3379,7 @@ areas of high scenic quality that have statutory protection in order to
 \end_inset
 
 .
- We treat Scotland's National Scenic Areas (NSAs), described by Scottish
+ We treat Scotland's National Scenic Areas (NSAs, described by Scottish
  Natural Heritage as areas 
 \begin_inset Quotes eld
 \end_inset
@@ -3371,9 +3388,9 @@ of outstanding scenic value in a national context
 \begin_inset Quotes erd
 \end_inset
 
-, as equivalent to AONBs.
- There are 86 AONBs and NSAs in the UK, covering approximately 15% of the
- land area.
+) as equivalent to AONBs, and in all subsequent uses intend both by that
+ term.
+ There are 86 AONBs in the UK, covering approximately 15% of the land area.
 \end_layout
 
 \begin_layout Description
@@ -4439,7 +4456,7 @@ name "sub:kernel-Proportion-methods"
 
 \begin_layout Standard
 Measures of the local availability of different land cover types were calculated
- for survey each response location as kernel-weighted proportions.
+ for each survey response location as kernel-weighted proportions.
 \end_layout
 
 \begin_layout Standard
@@ -4602,8 +4619,8 @@ key "maas:2009"
 
 \end_inset
 
-) and calculate land cover proportions within 1km and 3km radii in epidemiologic
-al studies, and in their hedonic pricing work 
+) calculate land cover proportions within 1km and 3km radii in epidemiological
+ studies, and in their hedonic pricing work 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "gibbons:2011a"
