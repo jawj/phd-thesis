@@ -189,7 +189,7 @@ reference "sec:esm-analysis"
  happiness and immediate environment, and 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sec:survey-results-Discussion"
+reference "sec:esm-discussion"
 
 \end_inset
 
@@ -13414,7 +13414,8 @@ Clients, customers
 
 \end_inset
 
-Participants report being alone on 40% of valid response occasions.
+Participants report being alone or with strangers on 40% of valid response
+ occasions.
  When not alone, they are most frequently with partners (24% of occasions)
  and/or colleagues (18%).
  Full companionship statistics are provided in 
@@ -16417,9 +16418,9 @@ The first model includes only spatial characteristics --- whether the respondent
  The second model adds control variables from the ESM assessment survey
  --- activity, companionship, and whether the respondent is at home, at
  work or elsewhere --- to the specification.
- Finally, to the second specification the third model adds indicators of
- the day and time, and of the position of the response in the contributing
- participant's response sequence.
+ Finally, the third model also adds indicators of the day and time, and
+ of the position of the response in the contributing participant's response
+ sequence.
 \end_layout
 
 \begin_layout Standard
@@ -16458,20 +16459,15 @@ reference "chap:esm-results-appendix"
 \end_layout
 
 \begin_layout Standard
-By far the largest EQ (land cover) impacts on predicted happiness are seen
- in the first model.
+The largest EQ (land cover) impacts on predicted happiness are seen in the
+ first model.
  The addition of companionship, activity and location type controls in the
  second model reduces the size of the land cover coefficients by approximately
- a factor of two.
- This appears intuitive: for example, the occasions on which people visit
- a park or the countryside may well be associated with leisure activities,
- relaxation and good company.
- Therefore, if we do not control for these factors we are liable to overestimate
- the link with land cover alone.
- 
-\end_layout
+ a factor of two
+\begin_inset Foot
+status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 The R
 \begin_inset Formula $^{2}$
 \end_inset
@@ -16483,7 +16479,7 @@ The R
 
 , despite large and significant coefficients on the explanatory variables,
  is the low rate of responses received from outdoor, non-urban locations,
- noted in 
+ which was noted in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:esm-Spatial-variables-descriptives"
@@ -16493,10 +16489,17 @@ reference "sub:esm-Spatial-variables-descriptives"
 .
 \end_layout
 
-\begin_layout Standard
-Differences between the second model and the third model are much less great,
- although the inclusion of additional controls in the third model does very
- slightly reduce the land cover coefficients again.
+\end_inset
+
+.
+ This appears intuitive: for example, the occasions on which people visit
+ a park or the countryside may well be associated with leisure activities,
+ relaxation and good company.
+ Therefore, if we do not control for these factors we are liable to overestimate
+ the link with land cover alone.
+ Differences between the second model and the third model are much less
+ great, although the inclusion of additional controls in the third model
+ does again very slightly reduce the land cover coefficients.
 \end_layout
 
 \begin_layout Standard
@@ -25078,15 +25081,16 @@ Time
 All else being equal, participants are significantly less happy during weekday
  early mornings (3am -- 9am) and the very early hours of weekend days (3am
  -- 6am) than at any other time.
- Since we include only signalled responses, participants who respond during
- these hours presumably expected to be awake.
- Such responses therefore appear more likely to be associated with shift
- working, for example, than with being woken by a child.
+ Since we include only signalled responses in our analyses, participants
+ responding during these hours presumably expected to be awake.
+ Such responses therefore appear more likely to be associated with the demands
+ of employment (including shift working) than with being woken by a child,
+ for example.
 \end_layout
 
 \begin_layout Standard
-In addition, participants are happier at any time of day during the weekend
- than at the corresponding time during the week.
+Participants are also happier at any time of day during the weekend than
+ at the corresponding time during the week.
  
 \begin_inset Formula $F$
 \end_inset
@@ -29724,7 +29728,7 @@ key "gibbons:2011a"
  model.
  There are many potential explanations for this discrepancy
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 For example, people might be mis-predicting the utility effects of different
@@ -29732,6 +29736,9 @@ For example, people might be mis-predicting the utility effects of different
  types might have genuinely different effects on momentary happiness vs.
  (preference satisfaction) utility; and/or there may be biases from omitted
  variables in either or both studies.
+ There could also be specific factors affecting house prices in relation
+ to specific land cover types: for example, house prices in marine and coastal
+ margin locations might be depressed by flood risk.
 \end_layout
 
 \end_inset
