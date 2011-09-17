@@ -3909,6 +3909,13 @@ reference "sec:Data-server-implementation-details"
  of Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "chap:esm-appendix"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
 reference "sec:Data-server-implementation-details"
 
 \end_inset
@@ -4734,6 +4741,17 @@ status collapsed
 Recruitment statistics: weekly website visits, app downloads and participant
  registrations, (a) globally and (b) from the UK only (UK registrations
  cannot be shown, because registrations are not geographically located)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Recruitment statistics: weekly website visits, app downloads and participant
+ registrations, (a) globally and (b) from the UK only
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Recruitment-statistics"

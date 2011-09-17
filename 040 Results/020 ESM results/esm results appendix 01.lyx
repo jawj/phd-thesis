@@ -136,7 +136,8 @@ key "office-for-national-statistics:2003"
 	template PDFPages
 	filename uktus_activities.pdf
 	lyxscale 30
-	extra LaTeX "pages=-"
+	extra LaTeX "pages=-,pagecommand={}"
+	scale 90
 
 \end_inset
 
@@ -1835,7 +1836,7 @@ reference "tab:lcm-model-building"
 
 \begin_layout Standard
 \begin_inset Branch Massive_results_table
-status collapsed
+status open
 
 \begin_layout Standard
 \noindent
@@ -1876,7 +1877,7 @@ status open
 
 
 \backslash
-caption[]{ESM fixed effects model building
+caption{ESM fixed effects model building
 \backslash
 label{tab:lcm-model-building}}
 \backslash
@@ -13200,7 +13201,7 @@ status open
 
 
 \backslash
-caption[]{OLS model with response and individual-level variables
+caption{OLS model with response and individual-level variables
 \backslash
 label{tab:esm-ols-models}}
 \backslash

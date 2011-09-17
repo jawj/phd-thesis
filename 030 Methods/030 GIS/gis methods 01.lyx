@@ -4533,6 +4533,17 @@ status collapsed
 Illustrated example of the approximation of the Gaussian kernel-weighted
  proportion of water near a point location.
  Kernel weights are represented as the height dimension.
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Illustrated example of the approximation of the Gaussian kernel-weighted
+ proportion of water near a point location
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:kernel-weighting-example"

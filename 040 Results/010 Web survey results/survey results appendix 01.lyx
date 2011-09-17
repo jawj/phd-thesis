@@ -4755,7 +4755,17 @@ status collapsed
 \begin_layout Plain Layout
 Distribution of gross annual household income, UK web survey (bars span
  survey response brackets, and three respondents with a household income
- of £200,000 or more are not shown) 
+ of £200,000 or more are not shown)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Distribution of gross annual household income, UK web survey
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:hh-inc-uk"
@@ -4796,7 +4806,17 @@ status collapsed
 \begin_layout Plain Layout
 Distribution of gross annual household income, London web survey (bars span
  survey response brackets, and three respondents with a household income
- of £200,000 -- £399,999 are not shown) 
+ of £200,000 -- £399,999 are not shown)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Distribution of gross annual household income, London web survey
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:hh-inc-london"

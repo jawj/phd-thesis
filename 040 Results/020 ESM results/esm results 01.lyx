@@ -1015,6 +1015,16 @@ Top 25 signalling periods, considering only the most recent setting for
 boldface
 \series default
 .
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Top 25 signalling periods
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:signalling-period-settings"
@@ -2986,6 +2996,16 @@ Signals per day, considering only the most recent setting for each participant.
 boldface
 \series default
 .
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Signals per day
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:signalling-frequency-settings"
@@ -4154,6 +4174,16 @@ status collapsed
 \begin_layout Plain Layout
 Distribution of the number of responses per participant (89 participants
  not shown here provided between 400 and 737 responses)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Distribution of the number of responses per participant
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:num-response-distribution"
@@ -5963,7 +5993,17 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Distribution of year of birth (excluding a single response at 1900).
+Distribution of year of birth (excluding a single response at 1900)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Distribution of year of birth
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:birth-years"
@@ -9301,6 +9341,16 @@ status collapsed
 \begin_layout Plain Layout
 Frequencies of activities (not mutually exclusive).
  Starred activities were available only from app version 1.0.2.
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Frequencies of activities
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Frequencies-of-activities"
@@ -10910,6 +10960,16 @@ Activity comparisons with UK Time Use Survey 2000 'main' activities.
 boldface
 \series default
 .
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Activity comparisons with UK Time Use Survey 2000 'main' activities
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:activity-comparisons"
@@ -12878,6 +12938,16 @@ status collapsed
 
 \begin_layout Plain Layout
 Frequencies of companionship (not mutually exclusive, except for 'Alone')
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Frequencies of companionship
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Frequencies-of-companionship"
@@ -13733,6 +13803,16 @@ Distribution of 90th percentile peak volume measure.
 \end_inset
 
 70 dB.
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Distribution of 90th percentile peak volume measure
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:noise-level-dist"
@@ -16532,7 +16612,7 @@ In the remainder of this chapter we focus exclusively on the the third model,
 
 \begin_layout Standard
 \begin_inset Branch Massive_results_table
-status collapsed
+status open
 
 \begin_layout Standard
 \noindent
@@ -16556,7 +16636,7 @@ status open
 
 
 \backslash
-caption[]{Main land cover model
+caption{Main land cover model
 \backslash
 label{tab:lcm-model}}
 \backslash

@@ -117,12 +117,29 @@ name "chap:Discussion-and-conclusions"
 \end_layout
 
 \begin_layout Standard
-There are a number of reasons, largely outside the scope of economics, for
- hypothesising that higher EQ will lead to greater wellbeing.
- There is some existing evidence --- from studies in the economics of subjective
- happiness, other areas of economics, and other disciplines --- that this
- is indeed the case.
- 
+Subjective wellbeing or happiness is a topic of growing interest in economics,
+ not least amongst researchers concerned with the quality of the environment,
+ as was discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:lit-review"
+
+\end_inset
+
+.
+ There are a number of reasons for hypothesising that higher EQ will lead
+ to greater wellbeing.
+ There is some existing evidence --- from studies in the economics of happiness,
+ other areas of economics, and other disciplines --- that this is indeed
+ the case.
+ These reasons, and this evidence, were discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:happiness-and-eq"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -138,7 +155,7 @@ s, but its methodology is in many cases somewhat crude.
  As indicated in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sec:research-aims"
+reference "chap:Introduction"
 
 \end_inset
 
@@ -150,7 +167,16 @@ reference "sec:research-aims"
 Our first, incremental, approach was to stick to the cross-sectional study
  design while improving the range and resolution of data and measurements
  on EQ and SWB.
- The results of this approach were mixed.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The results of this approach were mixed.
+ 
+\end_layout
+
+\end_inset
+
  We found some positive links between SWB reports and some types of green
  and blue space across the UK as a whole, and some evidence of differing
  effects on different elements or indicators of SWB.
@@ -213,7 +239,7 @@ Our results using this approach are strong and intuitive.
 As discussed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:domains-and-timescales"
+reference "sub:measuring-happiness"
 
 \end_inset
 
@@ -545,7 +571,7 @@ In relation to research using retrospective happiness data, more work is
  the SWB valuation technique, an issue discussed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:swb-valuation-Method"
+reference "sub:happiness-valuation"
 
 \end_inset
 
@@ -678,7 +704,7 @@ The analysis of this and similar data could also be taken much further.
 
 \begin_layout Standard
 More advanced econometric models, accounting for spatial and/or serial autocorre
-lation could be estimated from the data.
+lation, could be estimated from the data.
  The assumption of independent effects we have made in relation to most
  of our explanatory variables could be relaxed, and the huge variety of
  possible interactions be investigated.
@@ -713,7 +739,7 @@ It would also be constructive to explore the use of this spatial ESM data
  cinema attendance) might be used to provide a lower bound on WTP for experience
 s of high-EQ environments.
  Income information might also be used, although it is unclear whether conventio
-nal WTP values might derived in this way.
+nal WTP values might be derived in this way.
 \end_layout
 
 \begin_layout Section

@@ -33,7 +33,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize 11
+\paperfontsize 10
 \spacing other 1.1499999999999999
 \use_hyperref true
 \pdf_bookmarks true
@@ -72,9 +72,9 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2.5cm
+\leftmargin 4cm
 \topmargin 2cm
-\rightmargin 2.5cm
+\rightmargin 2cm
 \bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
@@ -203,7 +203,7 @@ London
 \begin_layout Standard
 \begin_inset Graphics
 	filename quota_status_p1.pdf
-	width 16cm
+	width 100text%
 	BoundingBox 2.2000000000000002cm 28cm 19cm 2cm
 
 \end_inset
@@ -221,7 +221,7 @@ London
 \begin_layout Standard
 \begin_inset Graphics
 	filename quota_status_p2.pdf
-	width 16cm
+	width 100text%
 	BoundingBox 2.2000000000000002cm 28cm 19cm 2cm
 
 \end_inset
@@ -243,7 +243,7 @@ UK
 \begin_layout Standard
 \begin_inset Graphics
 	filename uk_quota_status_p1.pdf
-	width 16cm
+	width 100text%
 	BoundingBox 2.2000000000000002cm 28cm 19cm 2cm
 
 \end_inset
@@ -261,7 +261,7 @@ UK
 \begin_layout Standard
 \begin_inset Graphics
 	filename uk_quota_status_p2.pdf
-	width 16cm
+	width 100text%
 	BoundingBox 2.2000000000000002cm 28cm 19cm 2cm
 
 \end_inset
@@ -291,7 +291,7 @@ name "app:sample-invitation"
 \begin_inset Graphics
 	filename invitation_sample_01.pdf
 	lyxscale 50
-	width 16cm
+	width 100text%
 
 \end_inset
 
@@ -335,7 +335,8 @@ London
 	template PDFPages
 	filename london_screenshots_numbered_01.pdf
 	lyxscale 40
-	extra LaTeX "pages=-,nup=1x2,landscape,link,linkname=ssa"
+	extra LaTeX "pages=-,nup=1x2,landscape,link,linkname=ssa,pagecommand={}"
+	scale 95
 
 \end_inset
 
@@ -353,7 +354,8 @@ UK
 	template PDFPages
 	filename uk_screenshots_numbered_01.pdf
 	lyxscale 40
-	extra LaTeX "pages=-,nup=1x2,landscape,link,linkname=ssb"
+	extra LaTeX "pages=-,nup=1x2,landscape,link,linkname=ssb,pagecommand={}"
+	scale 95
 
 \end_inset
 
@@ -409,9 +411,9 @@ key "mackerron:2009a"
 \begin_layout Standard
 \begin_inset External
 	template PDFPages
-	filename re-revised_webspt_paper_04.pdf
+	filename ../../Websperiment paper/re-revised paper 04.pdf
 	lyxscale 40
-	extra LaTeX "pages=-"
+	extra LaTeX "pages=-,pagecommand={}"
 
 \end_inset
 

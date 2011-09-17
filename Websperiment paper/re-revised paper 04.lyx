@@ -1,0 +1,4525 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[bf,hang,small]{caption}
+\definecolor{LinkColor}{rgb}{0,0,0}
+\definecolor{grey}{gray}{0.3}
+%\usepackage[mmddyyyy,nodayofweek]{datetime}
+\newrefformat{app}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{par}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{sec}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{sub}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{fig}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{tab}{\hyperlink{#1}{\autoref{#1}}}
+\newrefformat{lst}{\hyperlink{#1}{\autoref{#1}}}
+\pagenumbering{gobble}
+\date{}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans helvet
+\font_typewriter beramono
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc true
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 84
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing onehalf
+\use_hyperref true
+\pdf_title "websperiment"
+\pdf_author "George MacKerron"
+\pdf_keywords "web survey, domain-specific language, DSL"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 10
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "linkcolor=LinkColor,anchorcolor=LinkColor,citecolor=LinkColor,filecolor=LinkColor,menucolor=LinkColor,urlcolor=LinkColor"
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 4cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\columnsep 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle empty
+\listings_params "abovecaptionskip={5.5pt},belowcaptionskip=11pt,captionpos=b"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\paragraph_spacing single
+\noindent
+Implementation, implementation, implementation: 
+\begin_inset Newline newline
+\end_inset
+
+ old and new options for putting surveys and experiments online
+\end_layout
+
+\begin_layout Author
+\paragraph_spacing single
+\noindent
+George MacKerron
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Department of Geography & Environment, 
+\begin_inset Newline newline
+\end_inset
+
+London School of Economics & Political Science, United Kingdom
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+The Internet offers enormous possibilities for surveys and experimental
+ data collection, including randomised treatments, customisation, and interactiv
+ity.
+ These capabilities are well suited to the implementation of choice modelling
+ experiments.
+ 
+\end_layout
+
+\begin_layout Abstract
+However, the implementation of web surveys is not a simple task, and the
+ existing options open to researchers are commonly unsatisfactory in a number
+ of ways.
+ The result is that few Internet surveys and experiments are able to exploit
+ the unique capabilities of the web.
+\end_layout
+
+\begin_layout Abstract
+This paper suggests a new approach, illustrated with a working prototype:
+ an open-source, domain-specific language (DSL) designed for specifying
+ web surveys and experiments, which is called 
+\emph on
+websperiment
+\emph default
+.
+\end_layout
+
+\begin_layout Abstract
+The paper first looks at the existing approaches, highlighting their strengths
+ and weaknesses.
+ It then outlines the concepts underlying 
+\emph on
+websperiment
+\emph default
+, and this DSL's nature and scope, with simple code examples.
+ Finally, it shows how the DSL can be used to concisely specify a highly
+ dynamic choice modelling survey.
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+The Internet offers enormous possibilities for survey and experimental data
+ collection: randomisation, customisation, interactivity, paradata
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Paradata are data that 
+\begin_inset Quotes eld
+\end_inset
+
+do not describe the respondent’s answers but the process of answering the
+ web questionnaire
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "heerwegh:2003"
+
+\end_inset
+
+, for example, the time a respondent spends answering a specific question,
+ or the sequence in which response options are chosen.
+\end_layout
+
+\end_inset
+
+, and more.
+ Web surveying is cheaper and faster than traditional approaches, and as
+ universal Internet access edges ever closer, its biggest single drawback---an
+ incomplete and biased sampling frame---is set to keep on diminishing.
+\end_layout
+
+\begin_layout Standard
+There has, rightly, been much interest in mode effects and in the sampling,
+ validity, and design issues associated with web surveys 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "marta-pedroso:2007,dillman:1998,schonlau:2002,couper:2008"
+
+\end_inset
+
+.
+ There has, however, been rather little discussion regarding the practical
+ implementation of such surveys.
+\end_layout
+
+\begin_layout Standard
+Survey implementation matters, and it matters arguably even more on the
+ web than in some other modes: an online instrument must compensate for
+ the lack of trained interviewers to administer it.
+ Web survey implementation affects accessibility, compatibility and consistency
+ across respondents; it affects respondent motivation and experience; it
+ creates context effects, and has implications for data security.
+ 
+\end_layout
+
+\begin_layout Standard
+Implementation is a genuinely difficult problem.
+ It is subject to the combined challenges both of good generic survey implementa
+tion and of good generic web application implementation
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The latter include not only the general challenges associated with IT service
+ development, in which effective communication of requirements is a key
+ factor, but a further host of technical characteristics related to the
+ web.
+ For example: respondents must be tracked across separate page requests,
+ overcoming the statelessness of the underlying protocol, HTTP; limited,
+ inconsistent and incompatible browser, operating system and hardware capabiliti
+es and settings must all be accommodated; logic must be split or duplicated
+ between the server and untrusted clients; and in spite of all this, an
+ attractive, consistent and easily navigated user interface must be maintained.
+\end_layout
+
+\end_inset
+
+.
+ It is a problem which increases in scale in tandem with the potential rewards:
+ 
+\begin_inset Quotes eld
+\end_inset
+
+the more complexity one builds into the instrument, the greater the cost
+ and effort required to program and test the survey, and the greater the
+ likelihood that something might not work as intended
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "30"
+key "couper:2008"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Implementation is arguably a problem which has yet to be satisfactorily
+ addressed.
+ Few Internet surveys currently exploit the unique capabilities of the web:
+ most function simply as on-screen representations of a paper-and-pencil
+ design.
+ Furthermore, even such unambitious representations are rarely executed
+ well.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "xvi"
+key "couper:2008"
+
+\end_inset
+
+ appears justified in his continuing amazement 
+\begin_inset Quotes eld
+\end_inset
+
+at the poor design of many web surveys
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In the hope of helping to improve web survey implementation, this paper
+ suggests a new approach, embodied in and illustrated by a working prototype.
+ The approach has three distinctive aspects.
+ First, it involves the development of a 'domain-specific' programming language
+ (DSL).
+ Second, it makes liberal use of a mechanism known as 'inheritance', an
+ important element in object-oriented programming.
+ Finally, it is open source.
+ These are somewhat technical concepts
+\emph on
+, 
+\emph default
+and
+\emph on
+ prior knowledge is not assumed
+\emph default
+.
+ They are considered in more detail in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:technical-stuff"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The rest of the paper is structured as follows: 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:current-options"
+
+\end_inset
+
+ looks at the main options currently available to researchers implementing
+ web surveys, and their advantages and limitations; 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:technical-stuff"
+
+\end_inset
+
+ describes the DSL approach; 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:online-choice-experiment"
+
+\end_inset
+
+ illustrates the potential for its application to a web-based choice experiment;
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:conclusion"
+
+\end_inset
+
+ concludes.
+\end_layout
+
+\begin_layout Section
+Existing survey implementation options
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:current-options"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Researchers trying to implement a survey or experiment online generally
+ choose one of four major options: a managed web-based service; a locally-instal
+led software application; a specialist consultancy; or some form of Do-It-Yourse
+lf (that is: pick a programming language, and start writing code).
+\end_layout
+
+\begin_layout Subsubsection*
+(a) Managed web-based service
+\end_layout
+
+\begin_layout Standard
+These services enable a survey to be designed via a web-based Graphical
+ User Interface (GUI), and then hosted on the provider's server.
+ Popular web-based services include: SurveyMonkey, QuestionPro, Zoomerang
+ and Wufoo, which are principally business-focused; Bristol Online Surveys,
+ which has a more academic flavour; and various offerings from Confirmit,
+ which aims more specifically at market research professionals.
+ Typically a web-based service is a relatively low-cost option offering
+ rather basic features.
+ Often it also produces an unattractive and poorly accessible survey 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kuipers:2005"
+
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For example, the popular service Survey Monkey uses non-standard custom
+ form controls (check-boxes, radio buttons and so on).
+ These controls are unfamiliar to web users, and raise accessibility issues
+ both in terms of disabled users (screen reading software will not recognise
+ them) and web browser configuration (respondents without JavaScript enabled,
+ including many who are subject to institutional IT security policies, see
+ only the message 
+\begin_inset Quotes eld
+\end_inset
+
+JavaScript is required for this site to function, please enable
+\begin_inset Quotes erd
+\end_inset
+
+).
+ Bristol Online Surveys, to which many UK academic institutions subscribe,
+ provides no routing capabilities and does not use the HTML 
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+<label>
+\end_layout
+
+\end_inset
+
+ tag for form controls (this is disability-unfriendly, and also makes the
+ controls an inconveniently small click target).
+ Some other services provide no 'previous page' control (and break when
+ the browser's 'back' button is used), require Java or Adobe Flash, or exclude
+ non-Windows users.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+It is possible to implement a choice experiment with these services via
+ the traditional pen-and-paper strategy of creating multiple versions of
+ the survey instrument, differing only in the attribute levels displayed
+ within the choice cards section (this can be coupled with a simple server-side
+ script which redirects visitors to one of the multiple survey versions
+ at random).
+ Depending on the capabilities of the service used, formatted items such
+ as tables may have to be inserted as images, and in this case the information
+ will not be accessible to screen-reader software.
+ 
+\end_layout
+
+\begin_layout Standard
+Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:surveymonkey-builder"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:surveymonkey-display"
+
+\end_inset
+
+ illustrate the use of SurveyMonkey to design a choice card, and the resulting
+ survey display.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename smonkey_builder.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:surveymonkey-builder"
+
+\end_inset
+
+Creating a basic choice card, using an image for the choice presentation,
+ using SurveyMonkey.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename smonkey_survey.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:surveymonkey-display"
+
+\end_inset
+
+Choice card page designed and hosted using SurveyMonkey.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+(b) Locally-installed software application
+\end_layout
+
+\begin_layout Standard
+The boundaries between web-based services and locally-installed software
+ are increasingly becoming blurred, but locally-installed software generally
+ provides a more advanced feature set then the web-based services discussed
+ above.
+ Like web-based services, locally-installed software generally offers a
+ comprehensive GUI for survey design.
+ GUIs should facilitiate discovery of the software's features and eliminate
+ some kinds of input error.
+ Survey design GUIs may be somewhat clumsy, however, with option-heavy dialogue-
+boxes nested many levels deep (see The Survey System software illustrated
+ in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:thesurveysystem"
+
+\end_inset
+
+, for example).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename thesurveysystem.png
+	lyxscale 50
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:thesurveysystem"
+
+\end_inset
+
+Widget overload: The Survey System software
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Locally-installed survey software may be expensive, particularly if the
+ cost cannot be spread across multiple projects, and is generally subject
+ to restrictive licencing terms regarding who may install and use it, on
+ what scale, and for how long.
+ Once a survey is designed, arrangements must then be made for hosting online.
+ Most software providers offer paid hosting options, and/or enable the export
+ of scripting files and supporting resources for hosting on your own server.
+ The latter option will generally require particular server features, such
+ as the availability of a scripting language (e.g.
+ Perl) or the use of a particular platform (e.g.
+ Microsoft Windows with Internet Information Services (IIS) server software).
+\end_layout
+
+\begin_layout Standard
+Some software is designed specifically for the implementation of online
+ choice experiments, and can automatically generate a range of experimental
+ designs based on the attributes and levels specified---an extremely useful
+ capability.
+ Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ssiweb"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ssiwebcard"
+
+\end_inset
+
+ and show the design and display of a choice experiment using one such software
+ package, SSI Web.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ssiweb.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ssiweb"
+
+\end_inset
+
+SSI Web attribute/level specification dialogue
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ssiwebsurvey.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ssiwebcard"
+
+\end_inset
+
+Choice card page produced by SSI Web
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+(c) Specialist consultancy
+\end_layout
+
+\begin_layout Standard
+The results of engaging consultants ultimately depend, obviously, on the
+ skills and experience of the consultants.
+ However, a consultancy itself may well be using one of the options discussed
+ above, in which case the service offered will be subject to the same strengths
+ and limitations.
+ Achieving precise communication of requirements is likely to be a significant
+ challenge, and some level of control will be lost.
+ This option is also liable to be expensive.
+\end_layout
+
+\begin_layout Subsubsection*
+(d) Do-It-Yourself development
+\end_layout
+
+\begin_layout Standard
+Creating a web survey using nothing more than a general purpose programming
+ language allows complete control and flexibility, and is an option that
+ has been advocated elsewhere 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "fraley:2004"
+
+\end_inset
+
+.
+ To do a good job, however, one needs (or needs access to) user interface
+ expertise, visual design and programming skills, and web design experience.
+ Even assuming all these things are available, having researchers everywhere
+ re-implement basic web survey features---and even generic web application
+ features---represents an extraordinary duplication of effort.
+ It is also liable to result in little-tested and therefore buggy software,
+ and to prove costly in time and salaries.
+ 
+\end_layout
+
+\begin_layout Subsection
+General limitations
+\end_layout
+
+\begin_layout Standard
+None of the available options make it easy for researchers to share survey
+ items or item types, or build on such work shared by others (in the way,
+ say, that researchers can share their own work and make use of others'
+ in the form of new routines or libraries for statistical software packages).
+ Nor do these options typically make it easy to describe the underlying
+ mechanics of a survey, either for communicating with co-authors or for
+ reporting research methods externally (for example: What is the page-to-page
+ skip logic? How are dynamic response options calculated? Which options
+ are shown in randomised order?).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Options (a) -- (c) above generally keep the workings of a survey either
+ entirely opaque or spread throughout a series of GUI locations, while option
+ (d) will likely produce code that is verbose and complex, where the house-keepi
+ng noise of saving data, specifying layout and so on overwhelms the details
+ relevant to survey specification.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+A new approach
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:technical-stuff"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The new approach suggested here is the use of a domain-specific language
+ (DSL).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A DSL for surveys is not truly novel: there is one existing example, Topsl,
+ described by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "machenry:2004"
+
+\end_inset
+
+.
+ Topsl's aims, capabilities and implementation are very different, however.
+ First, Topsl requires surveys to be amenable to static analysis, so that
+ the same source can either be displayed as web pages or formatted for printing.
+ While this is undoubtedly useful if a hard copy is required, it removes
+ at one stroke most of the power gained by moving surveys online.
+ Second, Topsl is implemented in the programming language Scheme, a dialect
+ of Lisp.
+ Scheme is elegant, minimalist, and well suited to DSLs.
+ However, it is also littered with parentheses and highly unlike natural
+ language, making it rather difficult to understand (or indeed write) the
+ survey code.
+ Finally, Topsl includes a bare minimum of features and is not a realistic
+ option for presenting real surveys.
+\end_layout
+
+\end_inset
+
+ This DSL approach is related to the Do-It-Yourself development option in
+ the discussion above, and retains its total flexibility.
+ However, it addresses both major drawbacks of that option: first, the need
+ for extensive expertise in web design; and second, the need to re-implement
+ basic web application and web survey features from scratch.
+\end_layout
+
+\begin_layout Subsection
+A domain-specific language...
+\end_layout
+
+\begin_layout Standard
+DSLs are programming languages designed to address a particular, limited
+ problem space (as opposed to the general-purpose languages, such as C,
+ Java, Perl and Python, in which most computer software is written).
+ Many researchers will be familiar with one or more DSLs already.
+ For example, in statistical packages that provide a syntax for describing
+ and combining operations---including R, Stata, Limdep/NLOGIT, and SPSS---this
+ syntax is well described as a DSL.
+ 
+\end_layout
+
+\begin_layout Standard
+Other popular examples are LaTeX (for document typesetting/formatting),
+ PostScript (page layout), SQL (querying and managing databases), CSS (web
+ page formatting), Regular Expressions (text processing), XSLT (transforming
+ XML documents) and the configuration files of the Apache web server and
+ many other Unix tools.
+\end_layout
+
+\begin_layout Subsubsection
+What do DSLs do?
+\end_layout
+
+\begin_layout Standard
+DSLs are designed to reflect the structure and content of the problem domain,
+ making it straightforward to create and connect common items, actions and
+ rules to form larger systems.
+ As 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "16"
+key "sprinkle:2009"
+
+\end_inset
+
+ explain:
+\end_layout
+
+\begin_layout Quote
+Ideally, a DSL follows the domain abstractions and semantics as closely
+ as possible, letting developers perceive themselves as working directly
+ with domain concepts.
+ The created specifications might then represent simultaneously the design,
+ implementation, and documentation of the system...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+DSLs come in various flavours, differing in flexibility, syntax and purpose.
+ Some, such as SQL, are purely or distinctively declarative: they require
+ a description only of what should be done, and give no guarantees as to
+ the order or method for doing it.
+ Others are imperative: they require us to specify and sequence the steps
+ involved.
+ 
+\end_layout
+
+\end_inset
+
+A distinction is sometimes drawn between internal (or embedded) and external
+ (or standalone) DSLs 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fowler:2009a"
+
+\end_inset
+
+.
+ An external DSL has its own syntax, parser, and unique set of capabilities.
+ An internal DSL, meanwhile, is a framework that extends an existing general
+ purpose language.
+ Some general purpose languages are more suited to hosting internal DSLs
+ than others: key factors include the suitability of the syntax and the
+ presence of 'meta-programming' features that make the language easy to
+ extend.
+\end_layout
+
+\begin_layout Standard
+Internal DSLs have several benefits.
+ They are easy to implement.
+ They get the capacities of their host language, including its existing
+ function libraries, completely free.
+ For those who know the host language, they use a familiar syntax; and for
+ those that do not, they offer an easy way in to learning it.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Who are DSLs for?
+\end_layout
+
+\begin_layout Standard
+DSLs are still essentially programming languages.
+ They are picky about punctuation, capital letters and matching brackets,
+ and getting things wrong may sometimes produce unhelpful error messages.
+ In short, they are probably languages which those who have some basic programmi
+ng experience---at the level, say, of writing an R script, Stata DO file,
+ or SPSS syntax file---will feel more comfortable writing in.
+\end_layout
+
+\begin_layout Standard
+For these developers, using a DSL may allow a substantial increase in productivi
+ty.
+ In general, DSLs can cut development time by between 60% and 90% compared
+ to standard, general-purpose programming approaches 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "22--25"
+key "kelly:2008"
+
+\end_inset
+
+.
+ The value of using a DSL is by no means limited to those who write in it,
+ though.
+ As 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "14"
+key "fowler:2009a"
+
+\end_inset
+
+ notes:
+\end_layout
+
+\begin_layout Quote
+the key value is providing a business-readable DSL, where domain experts
+ can read the code, understand what it means, and talk to programmers directly
+ about necessary modifications.
+ It's much easier to make DSLs business readable rather than business writable,
+ but you gain most of the benefits by enhancing communication.
+\end_layout
+
+\begin_layout Subsubsection
+Introducing 
+\emph on
+websperiment
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:introducing-websperiment"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+websperiment 
+\emph default
+is a prototype of an internal DSL for specifying web surveys and experiments.
+ Its host language is Ruby, a dynamic, interpreted language 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "2"
+key "flanagan:2008"
+
+\end_inset
+
+.
+ Ruby's syntax is relatively close to that of natural language, and it has
+ strong facilities for 'meta-programming', a means of extending the language
+ by using code that itself writes code.
+ These attributes make it well suited to creating internal DSLs (in fact,
+ many current Ruby users were introduced to the language by a popular DSL
+ for writing generic web applications, Rails
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://rubyonrails.org/
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+As with other DSLs, the intention of 
+\emph on
+websperiment
+\emph default
+ is that domain experts should be able to understand a survey that is implemente
+d in it just by reading the code, even if they do not initially feel confident
+ writing this code themselves.
+ With that hope in mind, a very simple first example is presented: a survey
+ with two pages and two questions.
+ The DSL code is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:simplequestion"
+
+\end_inset
+
+, and the resulting survey in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:simplelayout"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},commentstyle={\color{grey}},float,frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},keywordstyle={},language=Ruby,morecomment={[s]{\ \:}{\ }},numbers=left,numberstyle={\tiny},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+S::ExampleSurvey = S::Base.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  pages(
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::BasicInformation = P::Base.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "Please tell us a little about yourself."
+\end_layout
+
+\begin_layout Plain Layout
+
+      questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::Male = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "Are you male or female?"
+\end_layout
+
+\begin_layout Plain Layout
+
+          options [1, "Male"],
+\end_layout
+
+\begin_layout Plain Layout
+
+                  [0, "Female"]
+\end_layout
+
+\begin_layout Plain Layout
+
+        end,
+\end_layout
+
+\begin_layout Plain Layout
+
+        Q::HomePostcode = Q::Postcode.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+          text "What is your home postcode?"
+\end_layout
+
+\begin_layout Plain Layout
+
+        end
+\end_layout
+
+\begin_layout Plain Layout
+
+      )
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::ThankYou = P::Base.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "Many thanks for completing this survey."
+\end_layout
+
+\begin_layout Plain Layout
+
+      completes_survey true
+\end_layout
+
+\begin_layout Plain Layout
+
+    end
+\end_layout
+
+\begin_layout Plain Layout
+
+  )
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lst:simplequestion"
+
+\end_inset
+
+
+\emph on
+websperiment 
+\emph default
+code specifying a simple web survey.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename simple_survey_page_one.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:simplelayout"
+
+\end_inset
+
+First page of the survey specified in Listing 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lst:simplequestion"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:simplequestion"
+
+\end_inset
+
+, line 1 creates a new survey.
+ By default the survey's title, which is shown at the top of the browser
+ window and at the top of the web page, is taken from the name given on
+ this line (here, for example 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},keywordstyle={},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+S::ExampleSurvey
+\end_layout
+
+\end_inset
+
+ becomes 
+\begin_inset Quotes eld
+\end_inset
+
+Example survey
+\begin_inset Quotes erd
+\end_inset
+
+).
+ The content of the survey is defined by the block, surrounded by 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},keywordstyle={},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+do ...
+ end
+\end_layout
+
+\end_inset
+
+ markers, that starts on this line and comprises the rest of the listing.
+ Within that block, line 2 introduces the pages of the survey, whose definitions
+ then start on lines 3 and 16.
+ As is the case for the survey as a whole, the content of each page is defined
+ in the 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},keywordstyle={},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+do ...
+ end
+\end_layout
+
+\end_inset
+
+ block immediately following its declaration.
+ The first page contains some text, followed by two questions (again defined
+ by the 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},keywordstyle={},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+do ...
+ end
+\end_layout
+
+\end_inset
+
+ blocks that follow them).
+ The second page contains only some text, and a declaration that this page
+ completes the survey.
+\end_layout
+
+\begin_layout Standard
+Admittedly, this is not a very interesting survey.
+ In fact, it stays well within what is possible using a free web-based service.
+ However, the key advantage of the DSL approach is that it allows for this
+ near-effortless implementation of standard survey features, without constrainin
+g the researcher's freedom to do essentially anything at all.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Later examples will further illustrate both of these ideas.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+For example, with simple declarative statements we could: pick a question
+ completion policy (optional, mandatory or prompted) and a custom prompt
+ message; specify answer validation logic, skip logic (for both pages and
+ questions), and dependencies between questions; and enable quota sample
+ management and referral tracking.
+ But because we are working within a general-purpose programming language,
+ we have the full capabilities of that language and its libraries available
+ too.
+ For example, we could use the outputs of other programs, such as GIS databases,
+ or of calls to external web services.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The example survey page in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:webserviceexample"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:webserviceexample"
+
+\end_inset
+
+ gives a simple illustration of both of these aspects.
+ It specifies how to deal with blank responses using a simple declaration
+ (lines 12 -- 13).
+ It also uses the web service API of the They Work For You (TWFY) web site
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+See 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://theyworkforyou.com
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://github.com/bruce/twfy
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ to look up a UK respondent's local MP based on a postcode entered on the
+ previous page (lines 4 -- 5) and display this as part of the question text
+ (lines 6 -- 7).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In Ruby, and therefore 
+\emph on
+websperiment
+\emph default
+, 
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+#
+\backslash
+{
+\backslash
+}
+\end_layout
+
+\end_inset
+
+ does string interpolation: code placed between the curly braces within
+ a string of text is executed and substituted into that text.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},float,frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},numbers=left,numberstyle={\tiny},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+P::EnvironmentalConcern = P::Base.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+    Q::ContactedMP = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      require "twfy"
+\end_layout
+
+\begin_layout Plain Layout
+
+      mp = Twfy::Client.new("MY_API_KEY").mp(postcode: Q::HomePostcode.answer)
+ rescue nil
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "*#{mp.full_name}* -- #{mp.party} MP for #{mp.constituency.name}
+ -- is your MP.", 
+\end_layout
+
+\begin_layout Plain Layout
+
+           style: :info unless mp.nil?
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "Have you ever contacted your MP about an environmental issue?"
+\end_layout
+
+\begin_layout Plain Layout
+
+      options [1, "Yes"],
+\end_layout
+
+\begin_layout Plain Layout
+
+              [0, "No"],
+\end_layout
+
+\begin_layout Plain Layout
+
+              [99, "Not sure"]
+\end_layout
+
+\begin_layout Plain Layout
+
+      completion :prompted, 
+\end_layout
+
+\begin_layout Plain Layout
+
+                 message: "*Did you miss this question?* You don't have
+ to answer, but knowing whether you have contacted your MP would be very
+ useful to our research."
+\end_layout
+
+\begin_layout Plain Layout
+
+    end
+\end_layout
+
+\begin_layout Plain Layout
+
+  )
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lst:webserviceexample"
+
+\end_inset
+
+Page with a dynamic question, using a previous answer and an external web
+ service.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename twfy_page.png
+	lyxscale 50
+	scale 50
+	groupId myfigures
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:webserviceexample"
+
+\end_inset
+
+Survey page specified in Listing 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lst:webserviceexample"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+...with inheritance...
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+websperiment
+\emph default
+ gains some of its most useful capabilities from an approach known as object-ori
+ented programming (OOP).
+ OOP has its roots in the 1960s, and has been mainstream in software development
+ for several decades.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+OOP is not the only mainstream software paradigm: not all problems are most
+ helpfully represented in terms of objects, and OOP has sometimes been accused
+ as arbitrarily privileging one approach over others (making about as much
+ sense, according to one commentator, as 'pants-oriented clothing').
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The objects of OOP are conceptually cohesive entities that generally model
+ and reflect things in the outside world.
+ Objects consist both of data and of behaviours (or 'methods') that work
+ with that data.
+ Objects interact by passing messages, which ask that specific methods be
+ invoked.
+ OOP uses these objects, and their interactions, in the design and implementatio
+n of larger systems (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "snyder:1986,armstrong:2006"
+
+\end_inset
+
+).
+ For example, OOP is increasingly used in agent-based modelling 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "benenson:2004"
+
+\end_inset
+
+: objects in these studies can model agents such as the vehicles within
+ traffic flows, or households making decisions regarding where to locate
+ within a region 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "torrens:2007"
+
+\end_inset
+
+.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+ For example, a computer game might make use of Monster objects; these might
+ have data fields such as strength and health, and behaviours such as attack,
+ defend and hide; and they might interact with a Player object, and with
+ each other, as the game proceeds.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+OOP systems commonly make a distinction between a 
+\emph on
+class
+\emph default
+, which is the definition or 'blueprint' for an object, and an 
+\emph on
+instance
+\emph default
+, which is a specific realisation of its class.
+ However, since almost every object in 
+\emph on
+websperiment
+\emph default
+ is a 
+\emph on
+singleton
+\emph default
+ object — one which is intended only ever to have a single instance — this
+ distinction not important in the use of the DSL.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+websperiment
+\emph default
+ is built using three main families of objects.
+ At the core are question objects (these have names that start with 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Q::
+\end_layout
+
+\end_inset
+
+).
+ For display, questions are composited into page objects (starting with
+ 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+P::
+\end_layout
+
+\end_inset
+
+), and for navigation from page to page, pages are composited into Survey
+ objects (
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+S::
+\end_layout
+
+\end_inset
+
+).
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+OOP systems have two particularly useful properties for the purposes of
+ a web surveys DSL: encapsulation/polymorphism and inheritance.
+\end_layout
+
+\begin_layout Subsubsection
+Encapsulation and polymorphism
+\end_layout
+
+\begin_layout Plain Layout
+To use an OOP object, we need information about what it can do: this public
+ list of behaviours is known as its interface.
+ For example, in 
+\emph on
+websperiment
+\emph default
+, the 
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+answer
+\end_layout
+
+\end_inset
+
+ method is part of the interface of all types of question objects: it reports
+ the answer given by the current survey respondent to the question represented
+ by that object (this could be used, for example, in routing to subsequent
+ pages).
+\end_layout
+
+\begin_layout Plain Layout
+But the means by which an object executes these methods---its implementation---i
+s private, or encapsulated.
+ For example, one question might call out to a web service to help determine
+ parts of its display text; another might make a calculation based on its
+ answers from all previous respondents.
+ The containing page, survey, and system as a whole need not know anything
+ about this.
+\end_layout
+
+\begin_layout Plain Layout
+Encapsulation benefits the development of a system because it should make
+ different objects relatively decoupled or independent.
+ This means we can implement the same object in any one of many different
+ ways (if we discover a bug in one of our questions, say, or a potential
+ optimisation) without worry that we will accidentally break some other
+ part of the system.
+ It also means we can use the same object in many different places.
+ For example, a newly developed question that follows the standard interface---b
+y offering the 
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+answer
+\end_layout
+
+\end_inset
+
+ method, and a few others---can be slotted in at any point of any survey.
+ This capability is known as polymorphism.
+ It promotes the efficient reuse of code within a survey, and from one survey
+ (and one researcher) to the next.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+The alternative to encapsulation is the kind of 'spaghetti code' system
+ in which many parts are dependent in complex ways on many others (for example,
+ by reading from and writing to a big pool of common data).
+ In this kind of system, change is difficult (as it is liable to break something
+ unforeseen elsewhere) and individual parts have indeterminate boundaries
+ and are difficult or impossible to extract for reuse elsewhere.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Objects in an OOP system can 'inherit' data and behaviours from other objects
+ in a hierarchy or tree.
+ This makes it easy to create objects that build on or modify the abilities
+ of other objects.
+ In OOP terminology, one creates subclasses of (or one simply 'subclasses')
+ the original object class.
+ 
+\end_layout
+
+\begin_layout Standard
+This process was seen in action in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:simplequestion"
+
+\end_inset
+
+.
+ When the first survey page was created, it was declared as a new subclass
+ of the basic page class, 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+P::Base
+\end_layout
+
+\end_inset
+
+ (by the line 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+P::BasicInformation = P::Base.declare_new
+\end_layout
+
+\end_inset
+
+).
+ The new page therefore inherited all the standard data and behaviours required
+ of a survey page: generating an HTML form, displaying progress through
+ the survey as a progress bar, and so on.
+ A block of code was then added, between the 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},keywordstyle={},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+do ...
+ end
+\end_layout
+
+\end_inset
+
+ markers, to augment this with custom data and behaviours (in this case,
+ some text and some questions).
+ 
+\end_layout
+
+\begin_layout Standard
+Similarly, the gender question, 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Q::Male
+\end_layout
+
+\end_inset
+
+, was created as a new subclass of a radio-button question class, 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Q::Radio
+\end_layout
+
+\end_inset
+
+.
+ It thus inherited all the data and behaviours required of a radio-button
+ question: specifying response options, displaying these as radio buttons,
+ and subsequently processing the respondent's selection.
+ Again, additional data and behaviours were then specified in the subsequent
+ block of code (in this case, some question text and two response options).
+\end_layout
+
+\begin_layout Standard
+There is in fact no conceptual distinction between question classes that
+ are built in to 
+\emph on
+websperiment
+\emph default
+ and those that are created by a researcher: all built-in classes are created
+ in exactly the same way that new custom classes are.
+ For example, the 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Q::Postcode
+\end_layout
+
+\end_inset
+
+ class used in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:simplequestion"
+
+\end_inset
+
+ inherits from the 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Q::Text
+\end_layout
+
+\end_inset
+
+ class, which itself inherits from a basic question class, 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Q::Base
+\end_layout
+
+\end_inset
+
+.
+ At each level of the inheritance hierarchy, new data and behaviours build
+ on those already defined.
+ This hierarchy for 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Q::Postcode
+\end_layout
+
+\end_inset
+
+, and some examples of the behaviours defined at each level, are illustrated
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:postcodeinheritance"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Inheritance 02.pdf
+	lyxscale 50
+	scale 50
+	groupId myfigures
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:postcodeinheritance"
+
+\end_inset
+
+Inheritance hierarchy for postcode questions.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Templating with abstract classes
+\end_layout
+
+\begin_layout Standard
+Subclassing is not limited only to the built-in question, page and survey
+ classes.
+ Say, for example, that a researcher wants to ask respondents a sequence
+ of several yes/no questions, and include an indication of their certainty
+ about each response.
+ The researcher could create new intermediate question subclasses for this
+ purpose (they might be named 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Q::YesNo
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Q::Certainty
+\end_layout
+
+\end_inset
+
+).
+ These intermediate subclasses are never themselves displayed, and do not
+ appear when the response data is downloaded from the survey, because they
+ are never directly added to any page.
+ In OOP terminology they are known as 
+\emph on
+abstract
+\emph default
+ classes, and in 
+\emph on
+websperiment 
+\emph default
+they act as templates.
+ Within the pages of a survey, these abstract classes can be subclassed
+ as necessary.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:simpleinheritance"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:simpleinheritance"
+
+\end_inset
+
+ illustrate this.
+ The 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+insert_future_layout
+\end_layout
+
+\end_inset
+
+ declaration (line 2) specifies where the content contributed by any descendant
+ question classes should be inserted.
+ The horizontal scale question class subclassed by the certainty class (line
+ 7) provides a new kind of declaration, 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+scale
+\end_layout
+
+\end_inset
+
+, which is used to define the placement of the response scale and its numeric
+ range and labels (lines 9 -- 11).
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},commentstyle={\color{grey}},float,frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},keywordstyle={},language=Ruby,morecomment={[s]{\ \:}{\ }},numbers=left,numberstyle={\tiny},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Q::YesNo = Q::Radio.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  insert_future_layout
+\end_layout
+
+\begin_layout Plain Layout
+
+  options [1, "Yes"],
+\end_layout
+
+\begin_layout Plain Layout
+
+          [0, "No"]
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q::Certainty = Q::ScaleHorizontal.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  text "How certain are you of this?"
+\end_layout
+
+\begin_layout Plain Layout
+
+  scale range: 1..5,
+\end_layout
+
+\begin_layout Plain Layout
+
+        start: "Uncertain",
+\end_layout
+
+\begin_layout Plain Layout
+
+        end:   "Certain"
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+P::PurchasingDecisions = P::Base.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+    Q::FivePounds = Q::YesNo.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "Would you buy item X for £5?"
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+    Q::FivePoundsCertainty = Q::Certainty.declare_new,
+\end_layout
+
+\begin_layout Plain Layout
+
+    Q::TenPounds = Q::YesNo.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "Would you buy item X for £10?"
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+    Q::TenPoundsCertainty = Q::Certainty.declare_new
+\end_layout
+
+\begin_layout Plain Layout
+
+  )
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lst:simpleinheritance"
+
+\end_inset
+
+Simple inheritance example.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename simple_inheritance.png
+	lyxscale 50
+	scale 50
+	groupId myfigures
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:simpleinheritance"
+
+\end_inset
+
+Survey page specified in Listing 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lst:simpleinheritance"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If the researcher later decides to switch from a 1 -- 5 scale to a 0 --
+ 100% scale, all he or she has to do is modify the 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Q::Certainty
+\end_layout
+
+\end_inset
+
+ class, and the change is automatically reflected in all the questions which
+ subclass and thus inherit from it.
+ This helps to eliminate repetition, reduce inconsistencies, and improve
+ the maintainability of the survey code.
+ The 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Q::Certainty
+\end_layout
+
+\end_inset
+
+ subclass could be reused elsewhere in the same survey, and in any of the
+ researcher's future surveys.
+ It could also be shared with other researchers, for use in their surveys.
+ 
+\end_layout
+
+\begin_layout Standard
+The example given above is short and simple enough that the advantages of
+ these possibilities are not very great.
+ However, question, page and survey classes need not be limited to a few
+ simple lines of layout.
+ As seen in the next subsection, they may include complex customised styling,
+ content and logic, on both the server and the client (the web browser).
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Advanced question types
+\end_layout
+
+\begin_layout Standard
+Question types may be designed to collect survey paradata.
+ Some of these are datum (
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Datum::
+\end_layout
+
+\end_inset
+
+) classes.
+ These are similar to question (
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Q::
+\end_layout
+
+\end_inset
+
+) classes, in that they record an item of information for each respondent;
+ however, they do not cause anything to be shown to the respondent (or even
+ to be sent to their web browser).
+ For example, the following are all available within 
+\emph on
+websperiment
+\emph default
+:
+\end_layout
+
+\begin_layout Itemize
+a 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Datum::TimeViewed
+\end_layout
+
+\end_inset
+
+ class which, rather than asking the respondent any question, records the
+ time he/she arrives on a page (which can be used to calculate the time
+ spent on each page);
+\end_layout
+
+\begin_layout Itemize
+a 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Q::AnswerHistory
+\end_layout
+
+\end_inset
+
+ class, which automatically monitors another question and records the sequence
+ of answers selected; 
+\end_layout
+
+\begin_layout Itemize
+a 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Q::LinkVisited
+\end_layout
+
+\end_inset
+
+ class, which interrogates the respondent's web browser history to determine
+ whether he/she has recently visited a specific web address
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Obviously a respondent's informed consent must be sought before deploying
+ a survey item of this type.
+\end_layout
+
+\end_inset
+
+; and
+\end_layout
+
+\begin_layout Itemize
+a 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Datum::CityFromIPAddress
+\end_layout
+
+\end_inset
+
+ class, which uses public geo-location data to determine where a respondent
+ is located.
+\end_layout
+
+\begin_layout Standard
+Wholly new interactive question types can also be developed, such as visual
+ analog scales 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "couper:2006"
+
+\end_inset
+
+ or interactive maps.
+ For a recent survey in which precise geographical location was an important
+ variable a 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Q::MapLocation
+\end_layout
+
+\end_inset
+
+ class was created.
+ This asks the respondent to pinpoint a precise location by dragging a satellite
+ mapping image, and records the latitude and longitude of that location,
+ as shown in use in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:virtualearth"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:virtualearth"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},commentstyle={\color{grey}},float,frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},keywordstyle={},language=Ruby,morecomment={[s]{\ \:}{\ }},numbers=left,numberstyle={\tiny},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+P::MapLocation = P::Base.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+    Q::HomeMapLocation = Q::MapLocation.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      depends_on Q::HomePostcode
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "*Please click and drag* to move the map so that your home is
+ inside the yellow box."
+\end_layout
+
+\begin_layout Plain Layout
+
+      map start_location: Q::HomePostcode.answer,
+\end_layout
+
+\begin_layout Plain Layout
+
+          size:           "390x300"
+\end_layout
+
+\begin_layout Plain Layout
+
+    end
+\end_layout
+
+\begin_layout Plain Layout
+
+  )
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lst:virtualearth"
+
+\end_inset
+
+Using the map location question class.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename virtual_earth.png
+	lyxscale 50
+	scale 50
+	groupId myfigures
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:virtualearth"
+
+\end_inset
+
+Survey page specified in Listing 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lst:virtualearth"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:virtualearth"
+
+\end_inset
+
+, the map location question provides a new type of declaration, 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+map
+\end_layout
+
+\end_inset
+
+ (lines 6 -- 7), which specifies where the map is to be displayed within
+ the question content, its size in pixels, and its starting location, the
+ latter based in this case on the answer to a previous question.
+ The map question is also declared as dependent on the postcode question
+ whose answer it uses to centre the map initially displayed (line 4).
+ The effect of this is to clear the location recorded if the respondent
+ goes back and changes the postcode entered, with the effect that the map
+ is re-centred on the newly entered postcode.
+ 
+\end_layout
+
+\begin_layout Subsection
+...that is open source
+\end_layout
+
+\begin_layout Standard
+Of course, not every researcher will have the expertise in Ruby (for the
+ server) or HTML, JavaScript, and CSS (for the client) to create advanced
+ subclasses of this kind.
+ However, it is easy to use subclasses created and shared by others.
+ Anyone can use 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Q::MapLocation
+\end_layout
+
+\end_inset
+
+ in the way shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:virtualearth"
+
+\end_inset
+
+ simply by downloading the code for the class and adding it to their 
+\emph on
+websperiment
+\emph default
+ library.
+ This is very similar to the way in which capabilities can be added to R
+ or Stata by downloading modules or packages created by others.
+ For the survey realm, it seems somewhat overdue.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Of course, there is no obligation to share code, and a class that reveals
+ too much about confidential research might be unsuitable for sharing.
+ Additionally, to guard against the proliferation of poorly-written or excessive
+ly similar classes, some form of curated repository might turn out to be
+ of benefit in the longer term.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To facilitate such sharing, 
+\emph on
+websperiment 
+\emph default
+is built wholly from open-source parts, and its own code is also released
+ under an open-source licence.
+ This means that researchers are free to download, modify, run and distribute
+ the code.
+ This makes 
+\emph on
+websperiment
+\emph default
+ particularly compatible with an academic ethos and the scientific method.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For further discussion of the relationship between academia and open source
+ software, see 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "lerner:2005"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ Collaborative working, transparency, peer review, and reproducibility are
+ all made easier to achieve, since surveys (as well as the whole DSL framework)
+ can be easily shared, evaluated, modified, improved, and re-run.
+\end_layout
+
+\begin_layout Subsection
+Technical notes
+\end_layout
+
+\begin_layout Standard
+Although defaults have been chosen with care, the presentation of surveys
+ is entirely customisable.
+ Ease of customisation depends, obviously, on the extent of the customisations
+ desired.
+ Images are easily included within question and page declarations.
+ Colours, fonts, and dimensions can be altered with simple modification
+ to CSS stylesheets.
+ Larger structural changes might require modification of HTML templates,
+ or tweaks to the Ruby code.
+\end_layout
+
+\begin_layout Standard
+On the respondent side, surveys are marked up in standards-compliant HTML,
+ CSS and JavaScript, and are compatible with all major browser platforms,
+ including Internet Explorer 6+, Mozilla (including Firefox), Webkit (including
+ Safari, Chrome, the iPhone's Mobile Safari, and the Android Browser) and
+ Opera.
+ All built-in JavaScript is unobtrusive, in the sense that users without
+ it are still able to complete the survey, although questions that rely
+ on JavaScript may be unavailable, and there may be intra-page routing instructi
+ons to follow.
+ 
+\end_layout
+
+\begin_layout Standard
+On the server side, 
+\emph on
+websperiment
+\emph default
+ requires Ruby 1.9 and various Ruby 
+\emph on
+gems
+\emph default
+ (libraries), including Rails 2.3.
+ Like any Rails application, it can be hosted by various web server packages—Apa
+che or Nginx, with the Phusion Passenger module, are recommended—and it
+ works with major databases including MySQL, PostgreSQL, Oracle and SQL
+ Server.
+ Someone comfortable working at the command line could expect to get these
+ different elements of the system installed and running in well under an
+ hour.
+\end_layout
+
+\begin_layout Section
+Extending 
+\emph on
+websperiment 
+\emph default
+for choice experiments
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:online-choice-experiment"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A surveys DSL is well suited to constructing web-based choice experiments,
+ since these can be relatively complex and dynamic surveys.
+ For a recent study on vehicle fuel choice, several reusable custom object
+ classes were developed within 
+\emph on
+websperiment
+\emph default
+.
+ These classes are now shared as part of the 
+\emph on
+websperiment
+\emph default
+ library for other researchers to use (though the creation of such classes
+ from scratch is not necessarily a major task: those discussed below represent
+ no more than than a day's work).
+ This section discusses a bare-bones choice experiment based on these classes.
+\end_layout
+
+\begin_layout Standard
+The experiment aims to value CO
+\begin_inset Formula $_{2}$
+\end_inset
+
+ emissions and engine performance characteristics of vehicle fuels.
+ It retrieves UK fuel price data in real-time, dynamically setting the 'status
+ quo' fuel price as the current average fuel price within 10 miles of the
+ respondent's postcode,
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+According to 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://petrolprices.com/
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ and all other fuel price attribute levels as deviations from this value.
+ It assembles choice cards (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:choice_exp"
+
+\end_inset
+
+) out of options that are random combinations of attribute levels, eliminating
+ cards where any option is duplicated, or dominated by any other.
+ Finally, it routes respondents who choose the status quo option every time
+ to a special debriefing page (pictured in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:choice_exp_followup"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename choice_card.png
+	lyxscale 50
+	scale 50
+	groupId myfigures
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:choice_exp"
+
+\end_inset
+
+Survey page showing randomised choice card with dynamic price attribute
+ levels.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename choice_follow_up.png
+	lyxscale 50
+	scale 50
+	groupId myfigures
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:choice_exp_followup"
+
+\end_inset
+
+Follow-up survey page to be shown based on choice pattern.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The experiment is viewable online at 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://choicesurvey.websperiment.org/
+\end_layout
+
+\end_inset
+
+.
+ Its DSL source is under 100 lines of code, described further below and
+ shown in full in Listings 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lst:fuel-price"
+
+\end_inset
+
+ -- 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lst:survey-object"
+
+\end_inset
+
+.
+ Note that it is 
+\emph on
+not
+\emph default
+ intended to represent good survey design or good experimental design, but
+ only to demonstrate the potential benefits of a DSL in this context.
+\end_layout
+
+\begin_layout Subsection
+Getting a local fuel price
+\end_layout
+
+\begin_layout Standard
+The first page of the survey simply requests the respondent's postcode,
+ as in the first example (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:introducing-websperiment"
+
+\end_inset
+
+).
+ This postcode is then used by a simple custom 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Datum::
+\end_layout
+
+\end_inset
+
+ class to retrieve the average local fuel price (because it is a 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Datum::
+\end_layout
+
+\end_inset
+
+ class, it stores a value alongside the respondent's answers, but does not
+ display anything to the respondent).
+\end_layout
+
+\begin_layout Standard
+These steps are seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:fuel-price"
+
+\end_inset
+
+.
+ On line 9, the status quo price item is defined as a subclass of the local
+ fuel price item.
+ On line 10, it is made dependent on the postcode question (so that its
+ value will be cleared and recalculated whenever the answer to that question
+ changes).
+ On line 11, it is set to retrieve the price for the postcode provided by
+ the respondent.
+ On line 12, a fallback price is specified: this fallback price will be
+ used if no postcode is provided, or if the postcode is not recognised,
+ or if the request to petrolprices.com fails to return an answer within an
+ acceptable timeout period.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},commentstyle={\color{grey}},float,frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},keywordstyle={},language=Ruby,morecomment={[s]{\ \:}{\ }},numbers=left,numberstyle={\tiny},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+P::HomePostcode = P::Base.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+    Q::HomePostcode = Q::Postcode.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "What is your home postcode?"
+\end_layout
+
+\begin_layout Plain Layout
+
+    end
+\end_layout
+
+\begin_layout Plain Layout
+
+  )
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Datum::StatusQuoPrice = Datum::LocalFuelPrice.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  depends_on Q::HomePostcode
+\end_layout
+
+\begin_layout Plain Layout
+
+  get_price for_postcode:   Q::HomePostcode.answer,
+\end_layout
+
+\begin_layout Plain Layout
+
+            fallback_price: 109
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lst:fuel-price"
+
+\end_inset
+
+Determining the average fuel price in the respondent's local area.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Defining attributes
+\end_layout
+
+\begin_layout Standard
+The next step in creating the choice experiment is defining the attributes
+ and levels.
+ This is accomplished using another reusable custom 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Datum::
+\end_layout
+
+\end_inset
+
+ class, as seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:choice-attribs"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},commentstyle={\color{grey}},float,frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},keywordstyle={},language=Ruby,morecomment={[s]{\ \:}{\ }},numbers=left,numberstyle={\tiny},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Datum::FuelSet = Datum::AttributeSet.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  depends_on Datum::StatusQuoPrice
+\end_layout
+
+\begin_layout Plain Layout
+
+  attribute :co2_emitted,
+\end_layout
+
+\begin_layout Plain Layout
+
+            levels:     1..9,
+\end_layout
+
+\begin_layout Plain Layout
+
+            status_quo: 5,
+\end_layout
+
+\begin_layout Plain Layout
+
+            more_is:    :worse
+\end_layout
+
+\begin_layout Plain Layout
+
+  attribute :engine_performance,
+\end_layout
+
+\begin_layout Plain Layout
+
+            levels:     0..2,
+\end_layout
+
+\begin_layout Plain Layout
+
+            status_quo: 1,
+\end_layout
+
+\begin_layout Plain Layout
+
+            more_is:    :better
+\end_layout
+
+\begin_layout Plain Layout
+
+  attribute :price,
+\end_layout
+
+\begin_layout Plain Layout
+
+            levels:     [-10, -5, 0, 5, 10].map { |d| d + Datum::StatusQuoPrice.va
+lue },
+\end_layout
+
+\begin_layout Plain Layout
+
+            status_quo: Datum::StatusQuoPrice.value,
+\end_layout
+
+\begin_layout Plain Layout
+
+            more_is:    :worse  
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+Datum::ThreeWayFuelSet = Datum::FuelSet.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  random_set labels:           ["a", "b"],
+\end_layout
+
+\begin_layout Plain Layout
+
+             status_quo_label: "c"
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lst:choice-attribs"
+
+\end_inset
+
+Defining choice attributes and levels.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first attribute is defined on lines 3 -- 6.
+ Line 3 gives the attribute a name, by which it can be identified elsewhere
+ in the code.
+ Line 4 defines its levels: the series of integers from 1 to 9 inclusive.
+ Line 5 specifies the status quo level, which will be used as the value
+ for the status quo option to be shown on every choice card.
+ Line 6 specifies that higher values are less desirable: this information
+ enables the randomisation algorithm to detect when one option (i.e.
+ a combination of levels) is dominated by another.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Option A is dominated by option B if it is worse than B in one or more of
+ its attributes, and not better in any.
+\end_layout
+
+\end_inset
+
+ For qualitative attributes, or other attributes where the desirability
+ of different levels is not known in advance, this line would be omitted.
+\end_layout
+
+\begin_layout Standard
+The second attribute is defined similarly on lines 7 -- 10, and the third
+ on lines 11 -- 14.
+ For the third attribute, the status quo level is set dynamically to the
+ respondent's local fuel price as already queried online (line 13).
+ The full set of levels is then defined as deviations from this value (line
+ 12).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The 
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+map
+\end_layout
+
+\end_inset
+
+ method on line 12 maps the array of values on its left to a new array of
+ values, by passing each original value into the block that follows, as
+ the value of the variable 
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+d
+\end_layout
+
+\end_inset
+
+, and using the values returned by the block as the values comprising the
+ new array.
+\end_layout
+
+\end_inset
+
+ For this reason, the whole attribute set is specified as dependent on the
+ status quo price (line 2).
+ This means that if there is a change in the status quo price (which could
+ in this case be caused only by a change to the postcode), the attribute
+ levels will be cleared and recalculated accordingly.
+\end_layout
+
+\begin_layout Standard
+Then, having defined the attributes and their levels, attributes must be
+ combined into options, and options combined into choice cards.
+ This is accomplished by lines 17 -- 20, which specify that two randomised
+ options are to be generated, labelled 'a' and 'b', alongside a status quo
+ option, labelled 'c'.
+\end_layout
+
+\begin_layout Subsection
+Displaying choice cards
+\end_layout
+
+\begin_layout Standard
+Once created, the choice cards must be displayed to respondents (as illustrated
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:choice_exp"
+
+\end_inset
+
+).
+ This is achieved by a custom question (
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Q::
+\end_layout
+
+\end_inset
+
+) class, as seen in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:choice-cards"
+
+\end_inset
+
+.
+ This class allows formatting to be specified for each attribute, and then
+ displays HTML tables based on specific sets of attribute values as generated
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:choice-attribs"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},commentstyle={\color{grey}},float,frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},keywordstyle={},language=Ruby,morecomment={[s]{\ \:}{\ }},numbers=left,numberstyle={\tiny},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Q::FuelsCard = Q::ChoiceCard.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  text "*Which of these fuel brands would you choose?*"
+\end_layout
+
+\begin_layout Plain Layout
+
+  label_format -> l { "!/images/pump_#{l}.png(Brand #{l.upcase})!" }
+\end_layout
+
+\begin_layout Plain Layout
+
+  display :co2_emitted,
+\end_layout
+
+\begin_layout Plain Layout
+
+          title:  "CO[~2~] emitted per litre",
+\end_layout
+
+\begin_layout Plain Layout
+
+          format: -> c { "#{c} kg" }
+\end_layout
+
+\begin_layout Plain Layout
+
+  display :engine_performance,
+\end_layout
+
+\begin_layout Plain Layout
+
+          title:  "Engine performance",
+\end_layout
+
+\begin_layout Plain Layout
+
+          format: -> ep { ["Below average", "Average", "Above average"][ep]
+ }
+\end_layout
+
+\begin_layout Plain Layout
+
+  display :price,
+\end_layout
+
+\begin_layout Plain Layout
+
+          title:  "Price per litre",
+\end_layout
+
+\begin_layout Plain Layout
+
+          format: -> p { "#{p}p" }
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+P::FuelsChoice = P::Base.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  choice_attributes = Datum::ThreeWayFuelSet.declare_new.named_with_suffix(name_su
+ffix)
+\end_layout
+
+\begin_layout Plain Layout
+
+  datum choice_attributes
+\end_layout
+
+\begin_layout Plain Layout
+
+  questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+      Q::FuelsCard.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+        depends_on choice_attributes
+\end_layout
+
+\begin_layout Plain Layout
+
+        attributes choice_attributes.value
+\end_layout
+
+\begin_layout Plain Layout
+
+      end.named_with_suffix(name_suffix)
+\end_layout
+
+\begin_layout Plain Layout
+
+  )
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lst:choice-cards"
+
+\end_inset
+
+Formatting choice cards.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lines 1 -- 13 of 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:choice-cards"
+
+\end_inset
+
+ define the formatting to be used for the choice card.
+ On line 3, the option labels ('a', 'b', and 'c') are used as parts of the
+ file names of images which are used as the table headings.
+ Lines 4 -- 12 define the attribute titles and formatting (on line 9, the
+ engine performance attribute is used as an index to an array of text strings:
+ thus, when the attribute level is 0, 'Below average' will be displayed;
+ when it is 1, 'Average' will be displayed; and so on).
+\end_layout
+
+\begin_layout Standard
+Lines 15 -- 23 define the choice card survey page.
+ Line 16 creates a new set of attribute levels (as a subclass of the second
+ 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Datum::
+\end_layout
+
+\end_inset
+
+ class defined in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:choice-attribs"
+
+\end_inset
+
+).
+ The new class is named not by assignment---the way that has been seen before
+ (e.g.
+ 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+Datum::X = Datum::Y.declare_new
+\end_layout
+
+\end_inset
+
+)---but using the method 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+named_with_suffix
+\end_layout
+
+\end_inset
+
+, which simply appends a number or text string as a suffix to the name of
+ the class that is being subclassed.
+ The argument passed to this method here---
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+name_suffix
+\end_layout
+
+\end_inset
+
+---returns the suffix part of the page's own name (since, as will be seen
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:survey-object"
+
+\end_inset
+
+, the choice card survey pages are themselves named using the 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+named_with_suffix
+\end_layout
+
+\end_inset
+
+ method).
+ The new class is also assigned to a local variable, 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+choice_attributes
+\end_layout
+
+\end_inset
+
+, for later use.
+\end_layout
+
+\begin_layout Standard
+Line 17 adds the newly created set of attribute levels to the page (and
+ hence to the survey: without this line, the levels would not be stored).
+ Finally, the choice card question is added to the page on lines 18 -- 23.
+ Line 21 specifies that the question should display the attribute levels
+ created on line 16.
+ Line 20 specifies the question's dependency on these levels: if the levels
+ change (due to change in the status quo price, due to a change in the postcode)
+, the answer entered for this question will be cleared.
+ On line 22 the choice card question is named using 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+named_with_suffix
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The choice card page and question classes are named using suffixes because
+ they will be subclassed, and added to the survey, multiple times---once
+ each per choice card---but still require unique names by which they may
+ be identified (both elsewhere in the survey and when saving and reporting
+ the respondents' answers).
+\end_layout
+
+\begin_layout Subsection
+Following up response patterns
+\end_layout
+
+\begin_layout Standard
+Once the respondent has made the choices presented, it may be valuable to
+ ask follow-up debriefing questions in response to specific choice patterns.
+ In this example, respondents who always choose option C (the status quo
+ option) are asked their reasons for doing so.
+ This is illustrated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:choice_exp_followup"
+
+\end_inset
+
+, and the DSL code is shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:choice-follow-up"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},commentstyle={\color{grey}},float,frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},keywordstyle={},language=Ruby,morecomment={[s]{\ \:}{\ }},numbers=left,numberstyle={\tiny},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+P::YourChoices = P::Base.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  questions(
+\end_layout
+
+\begin_layout Plain Layout
+
+    Q::StatusQuoAlwaysReason = Q::Checkbox.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "You chose Brand C in every case.
+ Why was this?"
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "Please tick *all* that apply", style: :smaller
+\end_layout
+
+\begin_layout Plain Layout
+
+      options [:price, "It was the same price I usually pay"],
+\end_layout
+
+\begin_layout Plain Layout
+
+              [:other, "Other reason(s)"]
+\end_layout
+
+\begin_layout Plain Layout
+
+    end,
+\end_layout
+
+\begin_layout Plain Layout
+
+    Q::StatusQuoAlwaysOther = Q::Text.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+      show_if "Q::StatusQuoAlwaysReason.answer.include? :other",
+\end_layout
+
+\begin_layout Plain Layout
+
+              human: "you chose 'Other reason(s)' above"
+\end_layout
+
+\begin_layout Plain Layout
+
+      text "What were your other reasons?"
+\end_layout
+
+\begin_layout Plain Layout
+
+      text_box size:       "70x3",
+\end_layout
+
+\begin_layout Plain Layout
+
+               full_width: true
+\end_layout
+
+\begin_layout Plain Layout
+
+    end
+\end_layout
+
+\begin_layout Plain Layout
+
+  )
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lst:choice-follow-up"
+
+\end_inset
+
+Debriefing page for a specific choice pattern, as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:choice_exp_followup"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Of greatest interest here are probably lines 10 -- 11.
+ These lines specify that the second question is to be displayed only where
+ the respondent ticks the 'Other reason(s)' check-box on the first question.
+ Line 10 gives the condition in 
+\emph on
+websperiment
+\emph default
+ (Ruby) format (this condition is also translated into JavaScript, for use
+ by the respondent's web browser
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The 'translation' is accomplished using an enhanced version of a system
+ called HotRuby: see 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://hotruby.yukoba.jp/
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://github.com/STRd6/hotruby
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+).
+ Line 11 gives the condition as it is to be displayed to the respondent,
+ if JavaScript is for any reason unavailable in the browser.
+\end_layout
+
+\begin_layout Subsection
+Putting the experiment together
+\end_layout
+
+\begin_layout Standard
+Finally, the components seen above need to be integrated into a survey,
+ as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lst:survey-object"
+
+\end_inset
+
+.
+ Lines 1 -- 4 define an acknowledgement page.
+ On line 2, note the use of asterisks (*) around some of the text.
+ This is one example of the Textile markup system used by 
+\emph on
+websperiment
+\emph default
+: it causes the text to be displayed in 
+\series bold
+boldface
+\series default
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+For further details, see 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://redcloth.org/textile
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},commentstyle={\color{grey}},float,frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},keywordstyle={},language=Ruby,morecomment={[s]{\ \:}{\ }},numbers=left,numberstyle={\tiny},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+P::Thanks = P::Base.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  text "*Thank you* for completing this survey"
+\end_layout
+
+\begin_layout Plain Layout
+
+  completes_survey true
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+S::FuelChoiceExperiment = S::Base.declare_new do
+\end_layout
+
+\begin_layout Plain Layout
+
+  n = 3
+\end_layout
+
+\begin_layout Plain Layout
+
+  page P::HomePostcode
+\end_layout
+
+\begin_layout Plain Layout
+
+  (1..n).each { |card_no| page P::FuelsChoice.declare_new.named_with_suffix(card_no)
+ }
+\end_layout
+
+\begin_layout Plain Layout
+
+  pages(
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::YourChoices, skip_unless { (1..n).all? { |card_no| eval("Q::FuelsCard#{card_
+no}").answer == 'c' } },
+\end_layout
+
+\begin_layout Plain Layout
+
+    P::Thanks
+\end_layout
+
+\begin_layout Plain Layout
+
+  )
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lst:survey-object"
+
+\end_inset
+
+Pulling the experiment together.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lines 6 -- 14 define the overall survey object, bringing together the previously
+-defined page objects.
+ Line 7 sets the number of choice cards to be displayed, as a local variable
+ 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+n
+\end_layout
+
+\end_inset
+
+.
+ Line 8 adds the postcode question page to the survey.
+ On line 9 all the choice choice card pages are added, as follows: the integers
+ 1 to 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+n
+\end_layout
+
+\end_inset
+
+ are passed into the block as the value of 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+card_no
+\end_layout
+
+\end_inset
+
+, and a new subclass of the 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+P::FuelsChoice
+\end_layout
+
+\end_inset
+
+ page is created each time, named with that integer as a suffix (
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+P::FuelsChoice1
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+P::FuelsChoice2
+\end_layout
+
+\end_inset
+
+, and so on), and added to the survey by the 
+\begin_inset listings
+lstparams "basicstyle={\normalsize\ttfamily},breakautoindent=true,breaklines=true,commentstyle={\color{grey}},frame=tb,framerule={0.25pt},framexbottommargin={5.5pt},framextopmargin={5.5pt},language=Ruby,morecomment={[s]{\ \:}{\ }},showstringspaces=false,stringstyle={\itshape},tabsize=2"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+page
+\end_layout
+
+\end_inset
+
+ declaration.
+ Lines 10 -- 13 add the follow-up debriefing page and the acknowledgement
+ page, and line 11 also defines the condition according to which the debriefing
+ page will be displayed (it will be skipped 
+\emph on
+unless
+\emph default
+ option 'c' was selected on 
+\emph on
+all
+\emph default
+ of the choice cards).
+\end_layout
+
+\begin_layout Section
+Conclusions
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:conclusion"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Researchers have up to now usually had to pick one of four main options
+ when implementing surveys and choice experiments online: web-based services,
+ local software, consultants, or Do-It-Yourself from scratch.
+\end_layout
+
+\begin_layout Standard
+Implementing a web-based survey or experiment using a DSL such as the 
+\emph on
+websperiment
+\emph default
+ prototype, it has been argued, has a number of advantages over the options
+ previously available.
+ These include: improved productivity, leading to reduced time and cost
+ of implementation; greater flexibility and extensibility, enabling arbitrarily
+ advanced features; and wider accessibility and browser compatibility, permittin
+g a broader sampling frame and a superior experience for respondents.
+ 
+\end_layout
+
+\begin_layout Standard
+The advantages also include easier communication and sharing, both within
+ a specific research project and (where relevant) more broadly within the
+ academic process.
+ This is for three main reasons: first, because the DSL is readable by domain
+ experts who need not be experts in web survey implementation; second, because
+ it is designed in a modular way, using reusable, sharable classes; and
+ third, because it is unencumbered by proprietary licence restrictions.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+websperiment 
+\emph default
+has already been used to implement several online surveys and experiments,
+ but it is not a finished product.
+ Researchers are strongly encouraged to use and contribute to the development
+ of the project.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Subsubsection
+Technical details
+\end_layout
+
+\begin_layout Plain Layout
+For the curious and expert, websperiment is built using: on the server:
+ MySQL, Ruby (1.9) on Rails, and various Ruby gems including RedCloth, Hpricot;
+ in the web browser: Prototype + Scriptaculous for simulated class-based
+ OOP, language extensions, and animation support.
+ Produces standards-compliant XHTML, CSS and JavaScript, and is 100% compatible
+ with IE6+, Mozilla (Firefox, Netscape), Webkit (Safari, Chrome, iPhone,
+ Konqueror) and Opera.
+ JavaScript is all unobtrusive, in the sense that those without JavaScript
+ are still able to complete the survey (questions that rely on JavaScript
+ may be unavailable, and there may be intra-page routing instructions to
+ follow).
+ On a Linux VPS with 360MB memory (can be had for < £20/month), it can handle
+ 10 -- 15 requests per second using Passenger---enough for about 100 concurrent
+ respondents.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "../all"
+options "apalike2"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

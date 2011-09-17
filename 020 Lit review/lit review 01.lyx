@@ -195,7 +195,7 @@ Brave New World
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -224,6 +224,17 @@ Number of EconLit journal articles with titles including the terms 'happiness',
  'wellbeing', 'well-being' or 'life satisfaction', by year.
  The series plotted with filled circles excludes articles from the Journal
  of Happiness Studies.
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Number of EconLit journal articles with titles including the terms 'happiness',
+ 'wellbeing', 'well-being' or 'life satisfaction', by year
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

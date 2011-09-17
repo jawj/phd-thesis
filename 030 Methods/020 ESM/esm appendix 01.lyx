@@ -2803,6 +2803,13 @@ create table demographic_answer_sets(
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Press release
 \begin_inset CommandInset label
@@ -3061,7 +3068,8 @@ The following pages show the site as it appeared on 12 May 2011.
 	template PDFPages
 	filename website/combined.pdf
 	lyxscale 30
-	extra LaTeX "pages=-"
+	extra LaTeX "pages=-,pagecommand={}"
+	scale 85
 
 \end_inset
 
@@ -3089,7 +3097,8 @@ These statistics were produced by Google Analytics.
 	template PDFPages
 	filename site_visits_analytics.pdf
 	lyxscale 30
-	extra LaTeX "pages=-"
+	extra LaTeX "pages=-,pagecommand={}"
+	scale 85
 
 \end_inset
 
@@ -3602,7 +3611,8 @@ name "sec:participant-feedback-charts"
 	template PDFPages
 	filename participant_charts_example.pdf
 	lyxscale 30
-	extra LaTeX "pages=-"
+	extra LaTeX "pages=-,pagecommand={}"
+	scale 85
 
 \end_inset
 
@@ -3654,6 +3664,16 @@ status open
 \begin_layout Plain Layout
 User interface mock-ups (created with Interface Builder and OmniGraffle
  Pro)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+User interface mock-ups
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:User-interface-mock-ups"
