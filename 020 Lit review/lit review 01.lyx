@@ -1748,7 +1748,7 @@ key "tella:2005"
  In relation to East Asian cultures 
 \begin_inset CommandInset citation
 LatexCommand citet
-after "226"
+after "p. 226"
 key "uchida:2004"
 
 \end_inset
@@ -1796,7 +1796,7 @@ translation problems
  different levels of happiness than the Germans, Italians and French 
 \begin_inset CommandInset citation
 LatexCommand citep
-after "167"
+after "p. 167"
 key "inglehart:2003"
 
 \end_inset
@@ -1863,7 +1863,7 @@ gay science
  
 \begin_inset CommandInset citation
 LatexCommand citeyearpar
-after "530"
+after "p. 530"
 key "carlyle:1849"
 
 \end_inset
@@ -1872,7 +1872,7 @@ key "carlyle:1849"
  There is evidence of change in the meaning of 'wellbeing' too 
 \begin_inset CommandInset citation
 LatexCommand citep
-after "2--3"
+after "pp. 2 -- 3"
 key "littlewood:2008"
 
 \end_inset
@@ -3978,7 +3978,7 @@ key "clark:2008a"
  negative events and others' SWB assessments --- 
 \begin_inset CommandInset citation
 LatexCommand citet
-after "pp. 370--371"
+after "pp. 370 -- 371"
 key "tella:2005"
 
 \end_inset
@@ -5838,7 +5838,7 @@ status collapsed
 Of the Pareto-optimality principle, 
 \begin_inset CommandInset citation
 LatexCommand citet
-after "22"
+after "p. 22"
 key "sen:1978"
 
 \end_inset
@@ -5879,7 +5879,7 @@ key "ng:1997"
 's arguments 
 \begin_inset CommandInset citation
 LatexCommand citeyearpar
-after "pp. 1849--50"
+after "pp. 1849 -- 1850"
 key "ng:1997"
 
 \end_inset
@@ -5985,7 +5985,7 @@ creative discontent and constructive dissatisfaction
  More specifically, 
 \begin_inset CommandInset citation
 LatexCommand citet
-after "pp. 30--31"
+after "pp. 30 -- 31"
 key "deaton:2008"
 
 \end_inset

@@ -4007,7 +4007,7 @@ aims to create a free digital map of the world and is implemented through
  
 \begin_inset CommandInset citation
 LatexCommand citep
-after "682"
+after "p. 682"
 key "haklay:2010"
 
 \end_inset
@@ -4409,7 +4409,7 @@ Such regions are known as Voronoi, Thiessen or Dirichlet polygons or cells
  
 \begin_inset CommandInset citation
 LatexCommand Citep
-after "124"
+after "p. 124"
 key "smith:2007"
 
 \end_inset

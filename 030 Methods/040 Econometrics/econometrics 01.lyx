@@ -377,7 +377,7 @@ reference "eq:swb-panel"
  using the fixed effects or within estimator, of which 
 \begin_inset CommandInset citation
 LatexCommand citet
-after "481 -- 489"
+after "pp. 481 -- 489"
 key "wooldridge:2009"
 
 \end_inset
@@ -385,7 +385,7 @@ key "wooldridge:2009"
  and 
 \begin_inset CommandInset citation
 LatexCommand citet
-after "287 -- 293"
+after "pp. 287 -- 293"
 key "greene:2003"
 
 \end_inset
@@ -408,7 +408,7 @@ pooled within-person regression
  
 \begin_inset CommandInset citation
 LatexCommand citep
-after "9 -- 10"
+after "pp. 9 -- 10"
 key "schwartz:1998"
 
 \end_inset
@@ -443,7 +443,7 @@ Basic, pooled OLS fixed effects estimation requires that the errors
  are homoskedastic and not serially correlated 
 \begin_inset CommandInset citation
 LatexCommand citep
-after "483"
+after "p. 483"
 key "wooldridge:2009"
 
 \end_inset
@@ -456,7 +456,7 @@ key "wooldridge:2009"
  estimator 
 \begin_inset CommandInset citation
 LatexCommand citep
-after "463"
+after "p. 463"
 key "statacorp:2009"
 
 \end_inset
@@ -465,7 +465,7 @@ key "statacorp:2009"
  of the errors 
 \begin_inset CommandInset citation
 LatexCommand citep
-after "164"
+after "p. 164"
 key "stock:2008"
 
 \end_inset

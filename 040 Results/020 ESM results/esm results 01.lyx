@@ -708,7 +708,7 @@ This is a relatively long allowable delay in relation to what is usual in
  
 \begin_inset CommandInset citation
 LatexCommand citet
-after "239"
+after "p. 239"
 key "stone:2002"
 
 \end_inset
@@ -8615,7 +8615,7 @@ key "stone:2002"
 On the other hand, our rate is not unprecedentedly low: 
 \begin_inset CommandInset citation
 LatexCommand citet
-after "213"
+after "p. 213"
 key "turk:2007"
 
 \end_inset
@@ -12805,7 +12805,7 @@ when no other activity is specified
  
 \begin_inset CommandInset citation
 LatexCommand citep
-after "143, emphasis ours"
+after "p. 143, emphasis ours"
 key "office-for-national-statistics:2003"
 
 \end_inset
@@ -12838,7 +12838,7 @@ hiking This activity is more common in our data (1.2% vs 0.4%).
  on foot to work)' 
 \begin_inset CommandInset citation
 LatexCommand citep
-after "171"
+after "p. 171"
 key "office-for-national-statistics:2003"
 
 \end_inset
@@ -12876,7 +12876,7 @@ event The disparity here (0.5% in Mappiness vs 0.1% in UKTUS) might result
  --- this is not counted by UKTUS 
 \begin_inset CommandInset citation
 LatexCommand citep
-after "169"
+after "p. 169"
 key "office-for-national-statistics:2003"
 
 \end_inset

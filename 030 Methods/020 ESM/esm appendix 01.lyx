@@ -1525,7 +1525,7 @@ is 'best effort' and is not guaranteed
  
 \begin_inset CommandInset citation
 LatexCommand citep
-after "31"
+after "p. 31"
 key "apple-inc.:2010a"
 
 \end_inset
