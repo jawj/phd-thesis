@@ -190,9 +190,9 @@ name "sub:esm-aims-and-objectives"
 We focus on an EQ indicator for which high-resolution UK-wide data are available
 : land cover types (to be discussed further in the next chapter), including
  different types of green and blue space.
- To test our research hypothesis on links between links between momentary
- happiness and EQ will therefore require that we observe amongst our ESM
- assessments some experiences of these natural environments.
+ To test our research hypothesis on links between momentary happiness and
+ EQ will therefore require that we observe amongst our ESM assessments some
+ experiences of these natural environments.
  These experiences are expected to occur with relatively low frequency,
  and may have only a moderate impact on happiness.
  We may thus need to collect a large number of ESM assessments in order
@@ -1169,8 +1169,8 @@ key "stone:2002"
 
 .
  Second, potential participants with an unusual or variable pattern of waking
- hours, such as those working shifts, are still effectively excluded from
- taking part.
+ hours, such as those working shifts, are effectively excluded from taking
+ part.
 \end_layout
 
 \begin_layout Standard
@@ -1590,9 +1590,16 @@ Interface and interaction design
 \end_layout
 
 \begin_layout Standard
-"Designing user interfaces is a complex and highly creative process that
+\begin_inset Quotes eld
+\end_inset
+
+Designing user interfaces is a complex and highly creative process that
  blends intuition, experience, and careful consideration of numerous technical
- issues" 
+ issues
+\begin_inset Quotes erd
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 after "p. 89"
@@ -2140,7 +2147,7 @@ mappiness
  survey mode.
  The notification display is illustrated in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "fig:APNS-notification"
 
 \end_inset
@@ -2172,8 +2179,11 @@ ues the survey, and subsequent screens each provide a 'Back' button to return
 \begin_layout Standard
 Omitted or inconsistent responses are prevented by selective disabling of
  certain response options.
- For example, in the Feelings item of the ESM survey, the 'Next >' button
- is disabled until all three response scale sliders have been interacted
+ For example, in the Feelings item of the ESM survey, the 
+\emph on
+Next >
+\emph default
+ button is disabled until all three response scale sliders have been interacted
  with.
  
 \end_layout
@@ -3242,7 +3252,7 @@ reference "sec:participant-feedback-charts"
 
 \end_inset
 
- of Appendix 
+ of 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "chap:esm-appendix"
@@ -3833,7 +3843,7 @@ reference "tab:App-revisions"
 \end_inset
 
 .
- Elsewhere in this chapter we refer to version 1.1.1, including all updates,
+ Elsewhere in this chapter we refer to version 1.1.2, including all updates,
  unless otherwise stated.
 \end_layout
 
@@ -4214,7 +4224,7 @@ Home provides a brief introduction, shows five screenshots from the app
  (selected using numbered controls), and ends with a 'call to action' in
  the form of two prominent links.
  The 'get the app' link takes visitors who are browsing on their iPhone
- directly to App Store, and instructs those on other platforms to search
+ directly to the App Store, and instructs those on other platforms to search
  the App Store for 'mappiness' (which is the quickest way to download the
  app).
  The 'tell me more' link takes visitors to the More info page.
@@ -4232,7 +4242,7 @@ Meters shows mean happiness levels in graphical form using 'hedonimeters'
  and an accompanying chart.
  Happiness levels are calculated by the data server as discussed in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "sub:web-statistics"
 
 \end_inset
@@ -4279,7 +4289,7 @@ four links, also at the bottom, to facilitate sharing the page to the social
 a red 'Feedback' tab at the left-hand side, which links to the feedback
  forum (see 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "sub:Feedback-forum"
 
 \end_inset
@@ -4295,14 +4305,14 @@ The website was designed to handle extremely high loads, in case of major
  The website received over 70,000 visits in the first nine months of operation.
  These visits are charted week-by-week, and broken down by source, in 
 \begin_inset CommandInset ref
-LatexCommand vpageref
+LatexCommand formatted
 reference "sec:Website-visit-statistics"
 
 \end_inset
 
  
 \begin_inset CommandInset ref
-LatexCommand formatted
+LatexCommand vpageref
 reference "sec:Website-visit-statistics"
 
 \end_inset
@@ -4609,7 +4619,7 @@ As just noted, the main screen of the app displays a one-line status message
 \end_layout
 
 \begin_layout Standard
-Before any ESM assessments have been submitted this messages reads 'If not
+Before any ESM assessments have been submitted this message reads 'If not
  in UK, see our site for timezone info', to try to prevent non-UK participants
  from being caught out by timezone differences.
  When exactly ten responses have been submitted, it requests an App Store
