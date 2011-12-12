@@ -194,7 +194,7 @@ Web surveys are self-completed.
  or assist the respondent.
  The absence of interviewers may permit a more consistent experience of
  the survey instrument across respondents (as long as certain technical
- issues are handled correctly)---on the other hand, since self-completion
+ issues are handled correctly) --- on the other hand, since self-completion
  affords the respondent free choice of when and where to complete, it may
  reduce the consistency of the completion environment.
  The absence of any interviewer may reduce social desirability bias under
@@ -269,7 +269,7 @@ key "chaplin:2009"
 
 \end_inset
 
- .
+.
 \end_layout
 
 \begin_layout Standard
@@ -1097,7 +1097,7 @@ Sometimes I feel that I don't have enough control over the direction my
 
 Across the UK in early 2009, 70% of households had an Internet connection
  (of which 96% had broadband), and 70% of individuals aged 14 or over reported
- having regular Internet access---at home, work, or college, for example
+ having regular Internet access --- at home, work, or college, for example
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1142,7 +1142,7 @@ reference "tab:net-user-stats"
  highlights differences that might be expected to correlate with self-reported
  wellbeing
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 The comparative data in 
@@ -1152,9 +1152,9 @@ key "dutton:2009"
 
 \end_inset
 
- are based on face-to-face surveying by ICM---using a multi-stage, regionally
+ are based on face-to-face surveying by ICM --- using a multi-stage, regionally
  stratified sampling design, with a sample size of 2,013 and response rate
- of 62%---weighted to a UK demographic profile.
+ of 62% --- weighted to a UK demographic profile.
  These data will themselves inevitably be subject to some degree of selection
  bias.
  For example, it seems at least plausible that those who agree to take part
@@ -1175,7 +1175,7 @@ Web user recruitment
 In practice, there is no comprehensive register of Internet users, and hence
  no obvious sampling frame.
  Web respondent recruitment options include mode switching (making initial
- contact by another mode---for example by phone, using Random Digit Dialling,
+ contact by another mode --- for example by phone, using Random Digit Dialling,
  or by post, using the Postcode Address File); pop-up advertising on web
  sites; use of a pre-recruited respondent panel; and convenience methods
  
@@ -1387,8 +1387,8 @@ Location was defined according to Government Office regions.
 \begin_inset Formula $N=$
 \end_inset
 
- 1,000) and---in the case of location, income and work status---were not
- supported by the data available.
+ 1,000) and --- in the case of location, income and work status --- were
+ not supported by the data available.
  Potential respondents who were unsure of or unwilling to disclose any of
  the quota information were routed out of the survey, since they could not
  be accommodated within any quota cell.
@@ -1637,8 +1637,8 @@ reference "tab:item-sources"
 
 .
  Existing items were favoured because in general they are extensively tested,
- potentially familiar to respondents, and enable comparison of these results
- with published data.
+ potentially familiar to respondents, and enable comparison of results with
+ published data.
 \end_layout
 
 \begin_layout Standard
@@ -1699,7 +1699,7 @@ reference "chap:surveys-appendix"
 \end_inset
 
 .
- In this section, page references are those survey page screenshots.
+ In this section, page references are to those survey page screenshots.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1716,8 +1716,9 @@ name "sub:survey-design-happiness"
 \begin_layout Standard
 Items were included to assess subjective wellbeing according to three distinct
  approaches.
- First, a standard single-item life satisfaction (LS) scale was used---item
- B24 on the 2006 European Social Survey (ESS) Round 3, listed as item 
+ First, a standard single-item life satisfaction (LS) scale was used ---
+ item B24 on the 2006 European Social Survey (ESS) Round 3, listed as item
+ 
 \emph on
 O-SLW/c/sq/n/11/cd
 \emph default
@@ -1880,8 +1881,8 @@ subjective
 \emph default
  wellbeing be assessed from outside? On the other hand, the self-assessment
  and vignette items used in this study ask about life satisfaction, a wellbeing
- concept that is predominantly cognitive/evaluative---and one which respondents
- could arguably make an educated guess at, given some observable facts.
+ concept that is predominantly cognitive/evaluative --- and one which respondent
+s could arguably make an educated guess at, given some observable facts.
  If respondents are able to answer vignette questions about life satisfaction,
  their answers may provide valuable information on how they are using the
  response scale for their self-assessments; these outcomes are not certain,
@@ -1975,15 +1976,15 @@ key "king:2006"
 .
  For example, if using one vignette, the median response should match the
  median self-assessment response; if using a set of four, the median responses
- would ideally fall near the quintiles---the 20th, 40th, 60th and 80th percentil
-es---of the self-assessment.
+ would ideally fall near the quintiles --- the 20th, 40th, 60th and 80th
+ percentiles --- of the self-assessment.
  This cannot be guaranteed in advance, of course, since it is a property
  of the empirical data collected; but existing data on self-assessments,
  and the results of piloting, can help in approaching it.
 \end_layout
 
 \begin_layout Plain Layout
-In this study, it was decided to use four vignettes---which can be used
+In this study, it was decided to use four vignettes --- which can be used
  create a 9-point DIF-free scale
 \begin_inset Foot
 status collapsed
@@ -1998,7 +1999,7 @@ Those assessing themselves lower than they assess the lowest of the vignettes
 
 \end_inset
 
----and to present these to all respondents.
+ --- and to present these to all respondents.
  The ESS Round 3 data set was used as a guideline for devising vignettes
  with responses at the appropriate levels.
  In this data set, the quintiles of the LS item (B24) responses are at 6,
@@ -2016,8 +2017,8 @@ A simple Ordinary Least Squares (OLS) regression was run, having the LS
  The coefficients from this regression were then used to predict LS self-ratings
  for hypothetical individuals with a series of plausible combinations of
  the independent variables (UK resident in every case), and four such combinatio
-ns---with predicted self-ratings of approximately 6, 7, 8 and 9---were used
- as the starting point for the four vignettes.
+ns --- with predicted self-ratings of approximately 6, 7, 8 and 9 --- were
+ used as the starting point for the four vignettes.
 \begin_inset Foot
 status collapsed
 
@@ -2030,8 +2031,8 @@ ns.
  independent; and, most fundamentally, it is not clear that individuals
  will be aware of the normal direction and magnitude of influences on LS.
  However, because the regression was used only as a starting point for the
- vignette items---which were piloted, and in some cases amended on that
- basis---these limitations do not present any problem here.
+ vignette items --- which were piloted, and in some cases amended on that
+ basis --- these limitations do not present any problem here.
 \end_layout
 
 \end_inset
@@ -2262,9 +2263,9 @@ name "sub:survey-Map-locations"
 
 \begin_layout Standard
 To calculate environmental quality (EQ) levels to which respondents are
- exposed at a very high resolution---and with a minimum of measurement error---i
-t is necessary to discover respondents' spatial locations as accurately
- as possible.
+ exposed at a very high resolution --- and with a minimum of measurement
+ error --- it is necessary to discover respondents' spatial locations as
+ accurately as possible.
  The survey therefore included a number of items regarding the location
  of the respondent's home and of one additional location in which the most
  time was spent (for example, the workplace).
@@ -2319,10 +2320,10 @@ For locations, respondents were asked initially for a full UK postcode.
  they were immediately asked instead for the name of the street and city/town.
  If neither of these items was supplied, respondents were asked on a later
  page, as a fallback, which was their nearest Tube or railway station.
- However, if either postcode or street and city/town were supplied---and
- as long as the respondent's browser supported JavaScript---these were used
- on the following page to set the starting centre position of an interactive
- map.
+ However, if either postcode or street and city/town were supplied --- and
+ as long as the respondent's browser supported JavaScript --- these were
+ used on the following page to set the starting centre position of an interactiv
+e map.
  Respondents were then asked to pinpoint the precise location by dragging
  the map so that the location was framed by a viewfinder in the centre,
  as illustrated in 
@@ -3227,12 +3228,12 @@ key "couper:2004"
 
 \end_inset
 
- discuss these controls in details.
+ discuss these controls in detail.
  Scale questions were presented with even spacing, and options that were
  not part of the scale were visually separated to prevent confusion 
 \begin_inset CommandInset citation
 LatexCommand citep
-before "see "
+before "see"
 key "tourangeau:2004"
 
 \end_inset
@@ -3441,8 +3442,8 @@ Guidance, confidentiality, and informed consent
 The introductory text was kept very brief (following feedback from the pilot
  phases) but included a link to more detailed information; this link was
  also present on all later pages.
- Information boxes---having a shaded background and a lower-case 'i' symbol
- at top left---were then used throughout the survey to provide additional
+ Information boxes --- having a shaded background and a lower-case 'i' symbol
+ at top left --- were then used throughout the survey to provide additional
  guidance and feedback to respondents, as seen in all the Figures in this
  section.
  
@@ -3488,7 +3489,7 @@ reference "app:survey-screenshots"
 ).
  To ensure confidentiality of responses on the London survey --- in which
  participants identified their home location very precisely --- this survey
- was conducted over an encrypted (https) connection.
+ was conducted over an encrypted (HTTPS) connection.
  In both cases the hosting server was fully updated, firewalled, and accessible
  to the researcher only via an encrypted (SSH) shell.
 \end_layout
@@ -3796,7 +3797,7 @@ http://www.maxmind.com/app/geolitecity
 
 .
  Respondents reported as located outside the UK were automatically excluded
- (unless geolocation placed them in the United States---a relatively common
+ (unless geolocation placed them in the United States --- a relatively common
  error).
  IP addresses were also converted to hostnames by reverse lookup where possible,
  and the hostname top level domain (e.g.
