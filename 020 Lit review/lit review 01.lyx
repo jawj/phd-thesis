@@ -195,7 +195,7 @@ Brave New World
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -248,7 +248,7 @@ This combination of characteristics has assured happiness economics sustained
  media coverage, certainly out of proportion to the volume of economic research
  it represents
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 The UK media regularly reports on happiness research.
@@ -282,9 +282,9 @@ key "the-economist:2006"
 
 \end_inset
 
- Christmas edition--- 'Economics discovers its feelings: not quite as dismal
- as it was'---and an Independent on Sunday supplement early in January 2007
- was devoted to it 
+ Christmas edition --- 'Economics discovers its feelings: not quite as dismal
+ as it was' --- and an Independent on Sunday supplement early in January
+ 2007 was devoted to it 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "leith:2007"
@@ -887,12 +887,12 @@ and measured
 \emph default
  directly
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 We note that utility is in fact modelled directly in various other areas
  of economics, such as in the application of random utility models (and
- that our summary of the PS approach could therefore by argued to be something
+ that our summary of the PS approach could therefore be argued to be something
  of a straw man).
  The PS approach does not extend to direct utility measurement, however.
 \end_layout
@@ -1068,13 +1068,13 @@ key "kahneman:1997,kahneman:2005"
  it would be misleading to portray them, as this terminology might imply,
  as simply prospective and retrospective versions of an equivalent metric
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Although compare 
 \begin_inset CommandInset citation
-LatexCommand citep
-after "487"
+LatexCommand citet
+after "p. 487"
 key "rayo:2007a"
 
 \end_inset
@@ -1142,7 +1142,7 @@ name "sub:measuring-happiness"
 SWB data consist, more or less by definition, of the aggregated self-reports
  of individuals --- what people say about themselves when asked
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Studies of happiness have also used data based on reports by others (the
@@ -1154,7 +1154,7 @@ subjective
 \emph default
 wellbeing data is debatable.
  On the one hand, they are certainly not objective data as understood within
- a strict objective list or preference satisfaction approach---for example,
+ a strict objective list or preference satisfaction approach --- for example,
  data on suicide attempts would not be relevant under these approaches to
  wellbeing, since suicide may be attempted by people who are objectively
  well provided for, and well able to satisfy their consumption preferences.
@@ -1224,14 +1224,14 @@ Authors generally seem to have reflected rather little on the wide range
  of terms employed in research under the SWB banner, and to have shown a
  perhaps surprising lack of unease about this
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Even some who have noted the inconsistency of terminology in a context rather
  critical of SWB have have not flagged it as a potential issue 
 \begin_inset CommandInset citation
 LatexCommand citep
-after "22"
+after "p. 22"
 before "e.g."
 key "johns:2007"
 
@@ -1394,7 +1394,7 @@ key "michalos:2008"
  --- 
 \begin_inset CommandInset citation
 LatexCommand citeyear
-after "360"
+after "p. 360"
 key "michalos:2008"
 
 \end_inset
@@ -2012,12 +2012,12 @@ key "larsen:2001"
 
 
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset CommandInset citation
 LatexCommand citet
-after "684"
+after "p. 684"
 key "larsen:2001"
 
 \end_inset
@@ -2175,8 +2175,8 @@ key "dittmann:2005,putnam:1995"
 ); current data (in this case, ESS Round 3) place median SWB ratings at
  7 out of 10 and have fewer than 1 in 10 respondents answering in the top
  bracket, which suggests substantial room for upward movement; and analysis
- of time-trends against unbounded indicators is just one of many strands
- of SWB research.
+ of bounded SWB time-trends against unbounded indicators is just one of
+ many strands of SWB research.
  Finally, 
 \emph on
 unbounded
@@ -2387,7 +2387,7 @@ Cardinal SWB comparability
 \begin_layout Standard
 Under the cardinality assumption, A3, simple OLS regressions are appropriate
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Alternatively, if respondents are thought to answer scale questions by the
@@ -2395,7 +2395,7 @@ Alternatively, if respondents are thought to answer scale questions by the
  would be suitable 
 \begin_inset CommandInset citation
 LatexCommand citep
-after "36"
+after "p. 36"
 key "praag:2004a"
 
 \end_inset
@@ -2426,8 +2426,8 @@ key "ferrer-i-carbonell:2004"
 \begin_layout Standard
 OLS models have been widely used in the psychology literature.
  In earlier research, happiness economists tended to turn to them principally
- when the use of aggregated (mean) SWB ratings has forced them to assume
- cardinality in any case (
+ when the use of aggregated (mean) SWB ratings forced them to assume cardinality
+ in any case (
 \emph on
 ibid.
 \emph default
@@ -3454,8 +3454,7 @@ Whether these quantities represent the full value of the good is dependent
  If house prices and wages are not included, then only residual values that
  are not capitalised in the housing and labour markets will be recovered.
  And if the markets are in equilibrium, these residual values are expected
- to be zero.
- 
+ to be zero 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "luechinger:2009,ferreira:2010"
@@ -3607,7 +3606,7 @@ key "fujiwara:2011"
  argue that these have implicitly been assumed to most closely resemble
  the conventional PS notion of utility, noting also that using LS as the
  SWB measure produces lower value estimates, since income tends to correlate
- more strongly with life satisfaction than other indicators.
+ more strongly with life satisfaction than with other indicators.
  In this connection, 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -3995,8 +3994,8 @@ key "oswald:2010,gabriel:2003"
 \end_inset
 
 .
- Especially given our evolutionary/genetic similarity, none of this should
- seem terribly surprising 
+ Especially given our evolutionary/genetic similarity to each other, none
+ of this should seem terribly surprising 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "veenhoven:2004"
@@ -4135,7 +4134,7 @@ Ultimately, the status of SWB research is a matter of shifting social consensus
  in the popular definition of economics as 'what economists do' --- 
 \begin_inset CommandInset citation
 LatexCommand citealp
-after "2"
+after "p. 2"
 key "backhouse:1997"
 
 \end_inset
@@ -4612,13 +4611,13 @@ key "dasgupta:2008"
  --- SWB is of interest in part because it makes strong sustainability more
  palatable
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Strong sustainability proposes limits to the substitutability of natural
  capital with other forms, and this implies that the scale of resource extractio
 n and of the production of wastes requiring assimilation, relative to the
- biosphere, is of some importance (the rather unfashionably expressed propositio
+ biosphere, is of some importance (the rather unfashionably-expressed propositio
 n of 'limits to growth' (
 \begin_inset CommandInset citation
 LatexCommand citealp
@@ -4930,7 +4929,7 @@ Recent development research has been increasingly influenced by the capability
  approach described by Sen and others.
  Capability relates to a person's positive freedom --- envisaged as the
  range and quality of opportunities (or 'functionings') that a person both
- has reason to value and is able attain --- and as such represents 
+ has reason to value and is able to attain --- and as such represents 
 \begin_inset Quotes eld
 \end_inset
 
@@ -5814,7 +5813,7 @@ should
  to which there is no clear answer.
  International SWB research often uses mean self-ratings, but this assumes
  cardinality and implies total agnosticism as to the distribution of happiness.
- A 'U-index' is a further possibility (see 
+ A 'U-Index' is a further possibility (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:domains-and-timescales"
@@ -6273,14 +6272,21 @@ key "smith:2008"
 The spatial dimension of SWB also appears somewhat neglected.
  Spatial techniques used in other disciplines and other areas of economics
  (such as hedonic pricing studies) might valuably be applied to SWB data
- (to date, only 
+ --- to date, only 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "stanca:2010"
 
 \end_inset
 
- reports the use of such methods).
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "rehdanz:2007a"
+
+\end_inset
+
+ report the use of such methods.
  The social dimension of SWB is also a promising area, potentially using
  the same spatial methods (since proximity in social network terms can provide
  alternative conceptions of space, distance and neighbourhood).
