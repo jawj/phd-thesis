@@ -336,9 +336,8 @@ reference "sub:econ-eq-swb-Limitations"
 \end_layout
 
 \begin_layout Standard
-We join very high resolution spatial data and with very precise location
- information, where most existing studies have had data only at ward level
- (or worse).
+We join very high resolution spatial data with very precise location information
+, where most existing studies have had data only at ward level (or worse).
  We use more advanced GIS methods, calculating weighted proportions of land
  cover types within a certain radius of respondents' locations.
  We consider multiple EQ characteristics simultaneously, and explore a number
@@ -541,7 +540,7 @@ In relation to both types of research, we have identified causality and
  omitted variables as remaining challenges.
  For questions of causality, exogenous variation is key.
  Such variation in most EQ exposures remains difficult to identify, but
- researchers must remain alert to them (for example, the abolition of the
+ researchers must remain alert to it (for example, the abolition of the
  western extension of London's Congestion Charging zone, or the closure
  of Greenwich Park during the 2012 Olympics, could be investigated as possible
  candidates).

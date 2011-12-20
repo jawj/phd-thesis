@@ -3924,8 +3924,11 @@ LSOAs were created by aggregating 2001 Census Output Areas (typically 4
 \end_inset
 
 .
- We combine these data with Office for National Statistics (ONS) mid-2008
- LSOA population estimates to derive crime rates expressed per person.
+ For violence against the person and total notifiable offences we use Office
+ for National Statistics (ONS) mid-2008 LSOA population estimates to derive
+ crime rates expressed per person.
+ For residential burglary we use Experian Mosaic Public Sector 2010 household
+ counts to calculate the rate per household.
 \end_layout
 
 \begin_layout Subsubsection
@@ -4467,8 +4470,8 @@ A kernel-weighted proportion measures the area of land around a point that
  function, according to proximity to the central point (they can therefore
  usefully be imagined as three-dimensional volumes, for which the height
  dimension at any point represents the weighting applied at that point).
- The kernel function is chosen so that higher weightings are applied to
- nearer locations.
+ The kernel function is usually chosen so that higher weightings are applied
+ to nearer locations.
 \end_layout
 
 \begin_layout Standard
@@ -4485,8 +4488,8 @@ Similarly, a kernel-weighted average measures the average value of some
 \end_inset
 
 Common kernels include the uniform --- in which case the quantities become
- simple proportions or average values within a given radius --- triangular,
- Gaussian (normal), and Epanechnikov.
+ simple proportions within a given radius --- triangular, Gaussian (normal),
+ and Epanechnikov.
  For a given kernel, one must also select the appropriate bandwidth distance,
  which determines the rate at which the applied weightings decline with
  distance.
@@ -4498,8 +4501,8 @@ status collapsed
 \begin_layout Plain Layout
 For the Gaussian kernel one may also choose a truncation distance (for example,
  at two or three standard deviations) beyond which weightings will be approximat
-ed to zero, otherwise all data must be used in calculating all proportions
- or averages, which is computationally expensive.
+ed to zero, otherwise all data must be used in calculating all proportions,
+ which is computationally expensive.
 \end_layout
 
 \end_inset

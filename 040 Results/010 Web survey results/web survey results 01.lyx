@@ -122,7 +122,7 @@ reference "chap:survey-methods"
 \end_inset
 
 , in order to investigate relationships between individuals' retrospective
- SWB evaluations and levels of EQ around their home and workplaces.
+ SWB evaluations and levels of EQ around their homes and workplaces.
  As outlined in earlier chapters, this work incorporates substantial methodologi
 cal improvements over previous research in this area.
  In spite of this, however, our findings are somewhat mixed.
@@ -38987,7 +38987,7 @@ reference "tab:MRS-values"
  These are the marginal rates of substitution (MRS) between the EQ characteristi
 cs and income, at the mean income, calculated according to Equation 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "eq:swb-mrs"
 
 \end_inset
@@ -39465,7 +39465,7 @@ key "gibbons:2011a"
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -39836,7 +39836,7 @@ No
 \end_inset
 
 association Finally, we should consider the possibility that our London
- results tell us simply that LS is not significantly related to EQ.
+ results tell us simply that LS is not significantly related to EQ there.
  LS is a broad, temporally non-specific, primarily cognitive indicator.
  It presumably reflects an individual's evaluation of his or her past, present,
  and possible futures, in relation to his or her hopes and expectations.
@@ -39958,7 +39958,7 @@ key "vries:2003"
  and experimental evidence linking exposure to green space with improved
  mental health as summarised in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "chap:happiness-and-eq"
 
 \end_inset

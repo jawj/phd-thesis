@@ -10909,7 +10909,7 @@ These UKTUS data list the average number of minutes in each 24-hour (1440-minute
 UKTUS responses categorise activities according to a detailed, three-level
  classification, reproduced in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "sec:uktus-activities-classification"
 
 \end_inset
@@ -12790,7 +12790,7 @@ bed Again, this activity appears over ten times more common amongst Mappiness
  users.
  Given the young and wealthy demographic profile of Mappiness participants,
  this initially appears surprising.
- However, the UKTUS state clearly that this category is only 
+ However, the UKTUS states clearly that this category is only 
 \begin_inset Quotes eld
 \end_inset
 
@@ -13499,7 +13499,7 @@ Clients, customers
 
 \end_inset
 
-Participants report being alone or with strangers on 40% of valid response
+Participants report being alone or only with strangers on 40% of valid response
  occasions.
  When not alone, they are most frequently with partners (24% of occasions)
  and/or colleagues (18%).
@@ -25225,11 +25225,8 @@ It may also be that participants initially respond to signals assiduously,
 status collapsed
 
 \begin_layout Plain Layout
-Unfortunately, the design of the 
-\emph on
-Mappiness
-\emph default
- database schema makes this hypothesis particularly difficult to test.
+Unfortunately, the design of the Mappiness database schema makes this hypothesis
+ particularly difficult to test.
  
 \end_layout
 
@@ -29617,8 +29614,8 @@ name "sec:esm-discussion"
 In this chapter we have reported on the findings of a unique investigation
  into links between EQ in an individual's immediate surroundings and his
  or her momentary happiness reports.
- We rely on data set we have collected from thousands of volunteer participants,
- via their own mobile devices, using a novel spatial experience sampling
+ We rely on a data set we have collected from thousands of volunteer participant
+s, via their own mobile devices, using a novel spatial experience sampling
  technique.
 \end_layout
 
