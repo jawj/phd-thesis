@@ -25,10 +25,10 @@ if valid
   // & ! min_hpy & ! max_hpy
   // & weekend
   
-, vce(robust);
+, vce(cluster user_id);
 #delimit cr
 
-outreg2 using "S:\intreg-simple.xls", stats(coef se pval) sideway label alpha(0.001, 0.01, 0.05) symbol(***, **, *) auto(2) pdec(4) pfmt(f) word
+outreg2 using "S:\intreg-cluster.xls", stats(coef se pval) sideway label alpha(0.001, 0.01, 0.05) symbol(***, **, *) auto(2) pdec(4) pfmt(f) word
 
 
 
