@@ -83,6 +83,11 @@
 \filename_suffix 0
 \color #ffffff
 \end_branch
+\branch Response-to-examiners
+\selected 1
+\filename_suffix 0
+\color #ffffff
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -617,7 +622,7 @@ filename "030 Methods/010 Web survey/survey methods 15.lyx"
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 TODO: what do I say to Maddison's objection that I don't include climate
@@ -632,7 +637,7 @@ TODO: what do I say to Maddison's objection that I don't include climate
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 TODO: ignore need to cluster UK errors on 1km square?
@@ -645,7 +650,7 @@ TODO: ignore need to cluster UK errors on 1km square?
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 TODO: why didn't we include population density in ESM models?
@@ -786,6 +791,16 @@ filename "040 Results/010 Web survey results/survey results appendix 01.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "040 Results/020 ESM results/esm results appendix 01.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Corrections/response 01.lyx"
 
 \end_inset
 
