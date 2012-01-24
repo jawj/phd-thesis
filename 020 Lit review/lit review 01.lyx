@@ -1142,7 +1142,7 @@ name "sub:measuring-happiness"
 SWB data consist, more or less by definition, of the aggregated self-reports
  of individuals --- what people say about themselves when asked
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Studies of happiness have also used data based on reports by others (the
@@ -1223,8 +1223,15 @@ on with one's life situation, with life as a whole, or with quality of life;
 Authors generally seem to have reflected rather little on the wide range
  of terms employed in research under the SWB banner, and to have shown a
  perhaps surprising lack of unease about this
+\begin_inset CommandInset label
+LatexCommand label
+name "happiness-ls-unreflective-response"
+
+\end_inset
+
+
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Even some who have noted the inconsistency of terminology in a context rather
@@ -1238,6 +1245,56 @@ key "johns:2007"
 \end_inset
 
 .
+ Other examples include: 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "clark:2005a"
+
+\end_inset
+
+, who note the variety of 
+\begin_inset Quotes eld
+\end_inset
+
+well-being variables
+\begin_inset Quotes erd
+\end_inset
+
+ --- 
+\begin_inset Quotes eld
+\end_inset
+
+some are global indices, such as happiness, life satisfaction or psychological
+ stress, others are domain specific, such as job or income satisfaction
+\begin_inset Quotes erd
+\end_inset
+
+ (p.
+ C118) --- but do not discuss whether they measure the same quantity, and
+ go on to describe the 'satisfaction with financial situation' indicator
+ they use as a 'reported well-being' or 'utility' variable, despite noting
+ (without further explanation) that they 
+\begin_inset Quotes eld
+\end_inset
+
+would have preferred a general life satisfaction measure here
+\begin_inset Quotes erd
+\end_inset
+
+ (P.
+ C120); and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "tella:2006"
+
+\end_inset
+
+ who, despite providing a very thoughtful commentary on other aspects of
+ the reporting of 'happiness' scores, talk about happiness data (e.g.
+ US General Social Survey, p.
+ 27) and life satisfaction data (e.g.
+ German Socio-Economic Panel, p.
+ 30) interchangeably and without comment.
 \end_layout
 
 \end_inset
@@ -1275,7 +1332,26 @@ key "thompson:2008"
  even though in the report of this same workshop those terms are used interchang
 eably and without clarification.
  On the other hand, 'happiness' seems to be used more widely than 'wellbeing'
- in media reporting of SWB research.
+ in media reporting of SWB research
+\begin_inset CommandInset label
+LatexCommand label
+name "media-terms-response"
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For example, a Nexis UK search of UK national newspaper headlines between
+ 24 January 2007 and 24 January 2012 gives 1,393 matches for 'happiness'
+ and 790 matches for 'wellbeing'.
+\end_layout
+
+\end_inset
+
+.
  Hence a study that actually asked respondents about 'life satisfaction'
  may be reported in the media as dealing with 'happiness' and to policy-makers
  as a 'wellbeing' study.
