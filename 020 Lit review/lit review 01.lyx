@@ -1515,7 +1515,89 @@ the last few weeks
 \begin_inset Quotes erd
 \end_inset
 
-, and so on).
+, and so on)
+\begin_inset CommandInset label
+LatexCommand label
+name "general-present-economics-swb-response"
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+For example: the German Socio-Economic Panel (GSOEP), which asks about life
+ satisfaction 
+\begin_inset Quotes eld
+\end_inset
+
+at present
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "luechinger:2009,ferrer-i-carbonell:2005"
+
+\end_inset
+
+; the European Social Survey, which asks about life satisfaction 
+\begin_inset Quotes eld
+\end_inset
+
+nowadays
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "layard:2008a"
+
+\end_inset
+
+; the World Values Survey, which asks about life satisfaction 
+\begin_inset Quotes eld
+\end_inset
+
+these days
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "bruni:2008"
+
+\end_inset
+
+; or the US General Social Survey, which asks about happiness 
+\begin_inset Quotes eld
+\end_inset
+
+these days
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "easterlin:2003"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
  These data are termed 
 \begin_inset Quotes eld
 \end_inset
@@ -1843,9 +1925,15 @@ emphasizing a success of the self may lead to jealousy and envy by others.
 \end_layout
 
 \begin_layout Standard
-This all makes naïve comparisons of SWB between nations --- and perhaps
- even between different ethnic groups within nations --- problematic.
- Unfortunately, this has not stopped naïve comparisons being drawn.
+\begin_inset CommandInset label
+LatexCommand label
+name "naivety-withdrawal-response"
+
+\end_inset
+
+This all makes simple comparisons of SWB between nations --- and perhaps
+ even between different ethnic groups within nations --- problematic, and
+ authors have not always fully addressed these problems.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -3709,7 +3797,14 @@ reference "sub:measuring-happiness"
 .
  We must be persuaded that the SWB regression model takes the correct functional
  form, and that the relationships between the explanatory variables and
- SWB are causal --- points which are rarely highlighted in the literature.
+ SWB are causal
+\begin_inset CommandInset label
+LatexCommand label
+name "rarely-highlighted-removed-response"
+
+\end_inset
+
+.
  And we must be wary of assortment by tastes: for example, when valuing
  air pollution, it may be that less pollution-sensitive individuals live
  in more polluted locations (and vice versa), leading to underestimation
@@ -5191,21 +5286,26 @@ In general, absolute income is found to have a significant and positive
 \end_layout
 
 \begin_layout Standard
-On the assumption of decreasing marginal utility of income, most studies
- use a log income measure as the explanatory variable; 
+\begin_inset CommandInset label
+LatexCommand label
+name "elasticity-unity-layard-response"
+
+\end_inset
+
+Most studies use a log income measure as the explanatory variable, and thus
+ assume that marginal utility is inversely proportional to income (or equivalent
+ly, that the elasticity of marginal utility with respect to income is unity).
+ Testing this assumption, 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "layard:2008a"
 
 \end_inset
 
- assume that the relationship is log-like (in that that the elasticity of
- marginal utility with respect to income is constant), but find that the
- marginal utility of income in fact declines somewhat 
-\emph on
-faster
-\emph default
- than in proportion to the rise in income
+ assume only that the elasticity of marginal utility with respect to income
+ is constant, and find that it is in fact somewhat greater than unity ---
+ so that, for example, someone with an income of $10,000 has more than ten
+ times the marginal utility of someone getting $100,000
 \begin_inset Foot
 status collapsed
 
@@ -5221,11 +5321,16 @@ They assume
 \begin_inset Formula $u$
 \end_inset
 
- is utility (proxied by SWB) and 
+ is utility (proxied by SWB), 
 \begin_inset Formula $y$
 \end_inset
 
- is income, and estimate 
+ is income, and 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is the elasticity of marginal utility with respect to income, and estimate
+ 
 \begin_inset Formula $\rho=1.26$
 \end_inset
 

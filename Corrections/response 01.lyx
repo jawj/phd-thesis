@@ -121,7 +121,9 @@ reference "happiness-ls-unreflective-response"
 \end_layout
 
 \begin_layout Standard
-I have added a footnote to substantiate this (now 
+I have added a footnote to substantiate this, based on a comparison of the
+ number of results from searches of UK national newspaper headlines using
+ the two terms (now 
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "media-terms-response"
@@ -140,7 +142,80 @@ P31.
 \end_layout
 
 \begin_layout Standard
-x
+I have added a footnote giving examples of four major social survey data
+ sets, the time terminology they use, and one or more economics papers that
+ are based on them (now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "general-present-economics-swb-response"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Quote
+P33.
+ The comment about naïve comparisons should be withdrawn.
+\end_layout
+
+\begin_layout Standard
+I have done so.
+ The relevant sentence now reads: 
+\begin_inset Quotes eld
+\end_inset
+
+This all makes simple comparisons of SWB between nations --- and perhaps
+ even between different ethnic groups within nations --- problematic, and
+ authors have not always fully addressed these problems
+\begin_inset Quotes erd
+\end_inset
+
+ (now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "naivety-withdrawal-response"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Quote
+P41.
+ Justify the comment that certain points are rarely highlighted in the literatur
+e.
+\end_layout
+
+\begin_layout Standard
+The comment is not important --- I have simply removed it (now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "rarely-highlighted-removed-response"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Quote
+P47.
+ Including the log of income constrains the elasticity of marginal utility
+ to be unity (not merely constant).
+\end_layout
+
+\begin_layout Standard
+This paragraph was perhaps rather unclearly expressed.
+ I have reworded it to clarify that using log income implies an elasticity
+ of unity, while the elasticity estimated by Layard et al is in fact greater
+ than unity (now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "elasticity-unity-layard-response"
+
+\end_inset
+
+).
 \end_layout
 
 \end_body
