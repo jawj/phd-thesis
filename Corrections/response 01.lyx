@@ -97,6 +97,32 @@
 Response to examiners
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+General comments?
+\begin_inset Newline newline
+\end_inset
+
+Not a big focus on weather/climate -- more interested in other environmental
+ attributes
+\begin_inset Newline newline
+\end_inset
+
+Not convinced that hedonic analysis is so fundamental to this work
+\begin_inset Newline newline
+\end_inset
+
+Nevertheless...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Quote
 P30.
  There are two unsubstantiated statements the first about authors not generally
@@ -188,7 +214,8 @@ e.
 \end_layout
 
 \begin_layout Standard
-The comment is not important --- I have simply removed it (now 
+Although I stand by it, the comment is not important --- I have simply removed
+ it (now 
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "rarely-highlighted-removed-response"
@@ -205,7 +232,7 @@ P47.
 \end_layout
 
 \begin_layout Standard
-This paragraph was perhaps rather unclearly expressed.
+This paragraph was perhaps not clearly expressed.
  I have reworded it to clarify that using log income implies an elasticity
  of unity, while the elasticity estimated by Layard et al is in fact greater
  than unity (now 
@@ -216,6 +243,72 @@ reference "elasticity-unity-layard-response"
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Quote
+P56.
+ It is surprising that the student did not mention climate as a source of
+ wellbeing.
+ There are lots of studies that suggest that climate impacts on happiness,
+ perhaps more than any other environmental variable.
+ 
+\end_layout
+
+\begin_layout Standard
+I did in fact mention climate on page 54 (
+\begin_inset Quotes eld
+\end_inset
+
+...
+ environmental goods — such as natural landscapes, scenic views, 
+\emph on
+preferred climates
+\emph default
+, or biodiversity ...
+\begin_inset Quotes erd
+\end_inset
+
+).
+ I also summarised relevant studies in happiness economics in a paragraph
+ beginning on page 57.
+ It is true that I did not discuss possible reasons for a link between happiness
+ and climate in section 3.1, but I now do so (see my response to the comment
+ on page 60, below).
+\end_layout
+
+\begin_layout Quote
+P57.
+ Roback (1982) and not Moro et al (2008) is the classic reference on interurban
+ hedonic analysis.
+ The student should familiarise himself with her paper.
+ 
+\end_layout
+
+\begin_layout Standard
+I have read the paper, and replaced the reference to Moro et al (now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "roback-ref-response"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Quote
+P60.
+ The student wrote nothing on the Household Production Function approach
+ as an explanation of why environmental quality promotes welfare.
+ The idea is that households combine marketed and non-marketed environmental
+ goods to produce service flows of relevance to the household.
+ Living in an area with environmental amenities reduces the cost of producing
+ these service flows.
+ This idea is explained in most advanced environmental economics textbooks.
+ 
+\end_layout
+
+\begin_layout Standard
+This was an unfortunate omission, which I have now corrected (now ...).
 \end_layout
 
 \end_body

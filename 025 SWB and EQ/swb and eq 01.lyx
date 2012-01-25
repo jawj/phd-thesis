@@ -756,7 +756,14 @@ In economics, relationships between location and quality of life have long
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "moro:2008"
+key "roback:1982"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "roback-ref-response"
 
 \end_inset
 
