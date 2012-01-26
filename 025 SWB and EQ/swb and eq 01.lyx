@@ -143,9 +143,9 @@ In this thesis we define EQ broadly as the presence of environmental goods
  --- such as natural landscapes, scenic views, preferred climates, or biodiversi
 ty --- and the absence of environmental 'bads', such as air pollution or
  noise.
- There are at least three broad reasons for hypothesising that EQ might
- be positively related to SWB.
- 
+ There are at least four broad reasons for hypothesising that EQ might be
+ positively related to SWB (with different reasons being more or less applicable
+ to particular EQ characteristics).
 \end_layout
 
 \begin_layout Subsection
@@ -587,10 +587,10 @@ Associated benefits of natural environments
 \end_layout
 
 \begin_layout Standard
-Finally, natural environments might increase happiness by facilitating and
- encouraging --- for practical, cultural and/or psychological reasons ---
- behaviours that are physically and mentally beneficial, including physical
- exercise, recreation and social interaction 
+Natural environments might increase happiness by facilitating and encouraging
+ --- for practical, cultural and/or psychological reasons --- behaviours
+ that are physically and mentally beneficial, including physical exercise,
+ recreation and social interaction 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
@@ -599,6 +599,68 @@ key "barton:2010a,morris:2003"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsection
+Household production function
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:The-household-production"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finally, EQ characteristics may enter the household production function
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "becker:1965"
+
+\end_inset
+
+, altering the costs of producing commodities or service flows of value
+ to the household.
+ For example, aspects of climate such as temperature and precipitation may
+ alter the costs of achieving a given level of comfort, via expenditures
+ on heating and cooling, clothing and nutrition 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "maddison:2003,maddison:2010a"
+
+\end_inset
+
+.
+ Similarly, since absence of noise may be regarded as an input in the production
+ of sleep 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "raaij:1981"
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Alongside a house, a bed, and time 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 495"
+key "becker:1965"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+, noise may alter the household's costs through defensive expenditures on
+ double glazing, ear plugs or sleeping pills.
 \end_layout
 
 \begin_layout Section

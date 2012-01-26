@@ -308,7 +308,22 @@ P60.
 \end_layout
 
 \begin_layout Standard
-This was an unfortunate omission, which I have now corrected (now ...).
+This was an unfortunate omission, which I have now corrected (in a new subsectio
+n, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:The-household-production"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sub:The-household-production"
+
+\end_inset
+
+).
 \end_layout
 
 \end_body
