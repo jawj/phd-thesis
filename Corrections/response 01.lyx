@@ -326,5 +326,22 @@ reference "sub:The-household-production"
 ).
 \end_layout
 
+\begin_layout Quote
+P68.
+ The student should explain better what are the self and experience factor
+ items of nature-relatedness.
+\end_layout
+
+\begin_layout Standard
+I have added a footnote (now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "nr-self-experience-response"
+
+\end_inset
+
+).
+\end_layout
+
 \end_body
 \end_document

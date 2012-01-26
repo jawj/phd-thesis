@@ -2528,7 +2528,42 @@ hyperlink{ssa.52}{SA-52}
 \end_inset
 
 ), and presented with the 'self' and 'experience' factor items of a nature-relat
-edness scale 
+edness scale
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+The NR-Self factor might be thought of as the ecological self, or how strongly
+ people identify with the natural environment.
+ [...] The NR-Experience factor reflects the physical familiarity and attraction
+ people have to nature
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 18"
+key "nisbet:2008"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "nr-self-experience-response"
+
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "nisbet:2008"
