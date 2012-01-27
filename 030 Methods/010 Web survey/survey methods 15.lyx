@@ -2973,7 +2973,7 @@ hyperlink{ssb.58}{SB-58 -- SB-59}
 
 ).
  However, due to an error in survey implementation, the items regarding
- marital status, children and qualifications (
+ marital and relationship status, children and qualifications (
 \begin_inset ERT
 status open
 
@@ -2990,6 +2990,65 @@ hyperlink{ssb.58}{page SB-58}
  The web panel provider, Toluna, were able to supply some marital status
  and qualification information, but high rates of missing data limit the
  usefulness of this data.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "missing-data-error-response"
+
+\end_inset
+
+As noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:happiness-tells-us-Other-factors"
+
+\end_inset
+
+, evidence from existing studies on links between qualifications and wellbeing,
+ and between having children and wellbeing, is mixed.
+ By contrast, marital status is usually a substantial and significant predictor
+ of SWB.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+What, then, are the implications of this missing data for our research?
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We use living alone as a proxy for marital/relationship status
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In our London data, living alone is significantly correlated with the two
+ marital/relationship status variables we include in our models: not being
+ in a relationship (correlation coefficient 0.37), and being divorced or
+ separated (correlation coefficient 0.26).
+\end_layout
+
+\end_inset
+
+.
+ We are not able to include indicators of qualifications or parenthood.
+ However, in models using the London data, the qualifications and parenthood
+ variables are not significant at the 5% level.
+ Moreover, the inclusion or exclusion of marital/relationship status, qualificat
+ions and parenthood variables in the London models makes no difference in
+ relation to EQ characteristics (that is, it does not cause any change in
+ the sign or significance of coefficients, or any substantial change in
+ their magnitude).
+ It therefore seems likely that this error in survey implementation does
+ not materially affect our findings.
 \end_layout
 
 \begin_layout Subsubsection

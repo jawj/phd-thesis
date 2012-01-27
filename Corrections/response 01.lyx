@@ -308,8 +308,8 @@ P60.
 \end_layout
 
 \begin_layout Standard
-This was an unfortunate omission, which I have now corrected (in a new subsectio
-n, 
+This was an unfortunate omission, which I have now corrected (in a brief
+ new subsection, 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:The-household-production"
@@ -337,6 +337,23 @@ I have added a footnote (now
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "nr-self-experience-response"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Quote
+P70.
+ Comment on the consequences of the error in survey implementation.
+\end_layout
+
+\begin_layout Standard
+I have, as requested, added a discussion of the likely impacts of this error
+ (now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "missing-data-error-response"
 
 \end_inset
 
