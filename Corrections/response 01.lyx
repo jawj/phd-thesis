@@ -360,5 +360,24 @@ reference "missing-data-error-response"
 ).
 \end_layout
 
+\begin_layout Quote
+P79.
+ The student should add a footnote on the link between asthma and air pollution
+ and comment on possibilities for investigating this link using data that
+ he has collected.
+ 
+\end_layout
+
+\begin_layout Standard
+I have done so (now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "asthma-link-response"
+
+\end_inset
+
+).
+\end_layout
+
 \end_body
 \end_document

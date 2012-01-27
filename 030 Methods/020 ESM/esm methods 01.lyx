@@ -354,8 +354,41 @@ We then present a simple, standard self-assessed health item (the response
  We ask this question because health status is invariably an important predictor
  of wellbeing responses in the literature.
  We also ask a simple Yes/No question about asthma and other respiratory
- disease, because these may be important factors mediating the impact of
- air pollution on wellbeing.
+ disease, because these factors may mediate the impact of air pollution
+ on wellbeing
+\begin_inset CommandInset label
+LatexCommand label
+name "asthma-link-response"
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Individuals with underlying diseases of the airways are known to be more
+ susceptible to the respiratory effects of air pollution 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "pp. 121 -- 126"
+key "utell:2005"
+
+\end_inset
+
+.
+ If the Mappiness data were to be used in future research on links between
+ air pollution and SWB, it could be informative to specify a model including
+ an interaction term between respiratory disease and estimated air pollution
+ exposure.
+ One might hypothesise that this interaction term would be negatively related
+ to predicted SWB over and above any negative effect of the simple air pollution
+ exposure variable.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Paragraph
