@@ -333,7 +333,7 @@ P68.
 \end_layout
 
 \begin_layout Standard
-I have added a footnote (now 
+I have done so in a footnote (now 
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "nr-self-experience-response"
@@ -377,6 +377,17 @@ reference "asthma-link-response"
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Quote
+P80.
+ The student should display a much greater awareness of the problems of
+ defining income and collecting survey data on income.
+ 
+\end_layout
+
+\begin_layout Standard
+x
 \end_layout
 
 \end_body

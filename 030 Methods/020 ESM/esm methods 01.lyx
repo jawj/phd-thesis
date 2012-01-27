@@ -364,7 +364,7 @@ name "asthma-link-response"
 
 
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Individuals with underlying diseases of the airways are known to be more
@@ -454,6 +454,10 @@ We ask this question in order to characterise our sample in relation to
  the wider population; because previous research finds a significant positive
  effect of income on wellbeing; and because income information may enable
  us to use wellbeing responses for monetary valuation.
+\end_layout
+
+\begin_layout Standard
+x
 \end_layout
 
 \begin_layout Standard
