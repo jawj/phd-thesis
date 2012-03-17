@@ -457,10 +457,6 @@ We ask this question in order to characterise our sample in relation to
 \end_layout
 
 \begin_layout Standard
-x
-\end_layout
-
-\begin_layout Standard
 Second, we ask up to two somewhat experimental questions about changes in
  income over the past 3 years: whether there has there been a change up
  or down and, if there has been, the magnitude of the change in one of 6
@@ -493,6 +489,50 @@ key "welsch:2009a"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "income-denigration-response"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "bound:2001"
+
+\end_inset
+
+ discuss general problems associated with defining income and collecting
+ income data by survey, while 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "micklewright:2010"
+
+\end_inset
+
+ highlight issues with single-question income measures in relation to household
+ income in particular.
+ As noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:esm-aims-and-objectives"
+
+\end_inset
+
+, we attach great importance to speed and ease of use for participants in
+ our ESM data collection process.
+ We therefore do not attempt to address these income data issues through
+ routes that would add to the burden associated with survey completion ---
+ such as through the use of 'cheap talk' entreaties, listings of potential
+ sources of income (as were provided in our web survey instruments), or
+ presentation of multiple income-related questions.
+ For this reason, it seems possible that the income data we collect are
+ subject to greater bias than the income data collected in some other surveys.
+ This has no bearing on the present work, however, since income data are
+ not used in any of the momentary happiness analyses reported.
 \end_layout
 
 \begin_layout Subsection

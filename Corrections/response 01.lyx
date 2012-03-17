@@ -273,7 +273,7 @@ preferred climates
  beginning on page 57.
  It is true that I did not discuss possible reasons for a link between happiness
  and climate in section 3.1, but I now do so (see my response to the comment
- on page 60, below).
+ on P60, below).
 \end_layout
 
 \begin_layout Quote
@@ -349,8 +349,9 @@ P70.
 \end_layout
 
 \begin_layout Standard
-I have, as requested, added a discussion of the likely impacts of this error
- (now 
+I have, as requested, added a discussion of the likely impacts of this error,
+ concluding that it seems likely that the error does not materially affect
+ our findings (now 
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "missing-data-error-response"
@@ -387,7 +388,15 @@ P80.
 \end_layout
 
 \begin_layout Standard
-x
+I have appended a paragraph to the section, noting the existence of these
+ issues in defining and collecting income data (now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "income-denigration-response"
+
+\end_inset
+
+).
 \end_layout
 
 \end_body
