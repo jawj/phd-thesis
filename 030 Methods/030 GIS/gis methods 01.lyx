@@ -3900,6 +3900,7 @@ These data were selected for their availability and for their high spatial
  The accuracy of the data, which are collected using different equipment
  in different locations, is not specified (use of the Met Office's MIDAS
  Land Surface Stations data might be preferable in future research).
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -4289,7 +4290,7 @@ A convex hull is most easily understood as follows.
 \end_layout
 
 \begin_layout Subsection
-Spatial join types
+Spatial joins
 \end_layout
 
 \begin_layout Subsubsection
@@ -4347,7 +4348,7 @@ r type was calculated: for example, the distance from a respondent's home
 \end_layout
 
 \begin_layout Subsubsection
-Median of nearest 
+House prices: median of nearest 
 \begin_inset Formula $\boldsymbol{N}$
 \end_inset
 
@@ -4387,7 +4388,7 @@ The choice of
 \end_layout
 
 \begin_layout Subsubsection
-Closest in space and time
+Weather conditions: closest in space and time
 \end_layout
 
 \begin_layout Standard
@@ -4446,8 +4447,69 @@ reference "fig:Weather-station-locations"
  'contains' query as above.
 \end_layout
 
+\begin_layout Paragraph
+\begin_inset CommandInset label
+LatexCommand label
+name "par:weather-join-limitations"
+
+\end_inset
+
+Limitations
+\end_layout
+
+\begin_layout Standard
+The weather variables associated with the ESM response data in this way
+ can only be regarded as somewhat noisy proxies for the weather conditions
+ experienced by participants.
+ We cannot account for the potential existence of weather fronts between
+ the observation and response locations.
+ We also do not account for a number of topographical effects, including:
+ adiabatic cooling, which causes lower air temperatures to prevail at higher
+ elevations
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The adiabatic lapse rate --- the rate at which rising air cools due to falling
+ atmospheric pressure --- averages 0.6 -- 0.7ºC globally, but varies depending
+ on humidity and other factors 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "encyclopaedia-britannica:2012"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+; moderation of local air temperatures, and production of sea and land breezes,
+ by oceans and other large water bodies; and variations in wind speed owing
+ to the sheltered or exposed aspects of different locations.
+ We also do not account for the impacts of humidity and wind chill on perspirati
+on rates and, consequently, apparent temperature.
+ Although we do not expect that these sources of noise will have a substantial
+ effect on our results
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For example, in the case of adiabatic cooling, 99.9% of responses are between
+ 0 and 320m above sea level, with expected temperature variation of the
+ order of only 2ºC across that range.
+ Furthermore, since response locations and weather observation locations
+ are near to each other, elevation --- and hence the extent of adiabatic
+ cooling --- are expected to be correlated between them.
+\end_layout
+
+\end_inset
+
+, future researchers might wish to consider a more sophisticated approach.
+\end_layout
+
 \begin_layout Subsubsection
-Proportion of local area
+Land cover: proportion of local area
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:kernel-Proportion-methods"

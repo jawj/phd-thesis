@@ -399,5 +399,30 @@ reference "income-denigration-response"
 ).
 \end_layout
 
+\begin_layout Quote
+P120.
+ When calculating temperature from the nearest weather station the student
+ did not correct for the adiabatic lapse rate.
+ He should explain whether or not this is a serious error and if so consider
+ correcting this mistake.
+ 
+\end_layout
+
+\begin_layout Standard
+There are a number of reasons why the weather variables associated with
+ ESM responses can be regarded only as noisy proxies for actual weather
+ conditions.
+ Adiabatic cooling is one of these.
+ I now deal with this limitation of the weather join methodology in the
+ subsection on spatial joins (now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "par:weather-join-limitations"
+
+\end_inset
+
+).
+\end_layout
+
 \end_body
 \end_document
