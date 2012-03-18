@@ -329,6 +329,97 @@ reference "chap:survey-results-appendix"
  
 \end_layout
 
+\begin_layout Paragraph
+Equivalence scales
+\begin_inset CommandInset label
+LatexCommand label
+name "par:equivalised-income-response"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A household's needs grow with each additional member but, owing to economies
+ of scale in consumption, this growth is not proportional.
+\end_layout
+
+\begin_layout Quote
+\begin_inset Quotes eld
+\end_inset
+
+With the help of equivalence scales each household type in the population
+ is assigned a value in proportion to its needs.
+ The factors commonly taken into account to assign these values are the
+ size of the household and the age of its members (whether they are adults
+ or children).
+ A wide range of equivalence scales exist [...
+ but] there is no accepted method for determining equivalence scales, and
+ no equivalence scale is recommended by the OECD for general use
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "oecd:2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In this study, we employ an equivalence scale that divides household income
+ by a factor of 
+\begin_inset Formula $\sqrt{a+0.7c}$
+\end_inset
+
+, where 
+\begin_inset Formula $a$
+\end_inset
+
+ is the number of adults and 
+\begin_inset Formula $c$
+\end_inset
+
+ the number of children in the household, following 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "joung:1997"
+
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+We also test the sensitivity of our results to the use of the 'OECD-modified'
+ scale, as adopted by EUROSTAT in the late 1990s.
+ This divides by a factor of 
+\begin_inset Formula $0.5+0.5a+0.3c$
+\end_inset
+
+ where, again, 
+\begin_inset Formula $a$
+\end_inset
+
+ is the number of adults and 
+\begin_inset Formula $c$
+\end_inset
+
+ the number of children.
+ The scales are very highly correlated, and our results are entirely unchanged
+ by the substitution.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Subjective wellbeing
 \end_layout
@@ -7218,7 +7309,7 @@ Control variables
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption

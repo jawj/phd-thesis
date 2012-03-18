@@ -424,5 +424,33 @@ reference "par:weather-join-limitations"
 ).
 \end_layout
 
+\begin_layout Quote
+P137.
+ It would be useful to see both standardised and unstandardised beta coefficient
+s.
+\end_layout
+
+\begin_layout Standard
+x
+\end_layout
+
+\begin_layout Quote
+P138.
+ The concept of equivalised household income is not discussed.
+ 
+\end_layout
+
+\begin_layout Standard
+I have corrected this oversight, adding a paragraph to the descriptive treatment
+ of the income data (now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "par:equivalised-income-response"
+
+\end_inset
+
+).
+\end_layout
+
 \end_body
 \end_document
