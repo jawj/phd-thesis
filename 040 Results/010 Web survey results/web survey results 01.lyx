@@ -393,7 +393,7 @@ key "joung:1997"
 
 .
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 We also test the sensitivity of our results to the use of the 'OECD-modified'
@@ -38732,23 +38732,12 @@ We have already described a number of checks on the robustness of our results
 \end_layout
 
 \begin_layout Standard
-It might be objected that our models use household-level spatial variables
- to explain individuals' wellbeing.
- Following 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "ferreira:2010"
+\begin_inset CommandInset label
+LatexCommand label
+name "response-hh-vars-deleted-para"
 
 \end_inset
 
-, we therefore attempted to estimate models in which the household and individua
-l variables coincide, by restricting our sample to individuals living alone.
- However, in both the UK and London data sets this subsample is too small
- (fewer than 400 and than 200 individuals respectively) to permit the discovery
- of any significant EQ effects.
-\end_layout
-
-\begin_layout Standard
 Finally, to check for multicolinearity, we calculate the Variance Inflation
  Factor (VIF) for each explanatory variable in the regression models we
  report.
@@ -39314,6 +39303,156 @@ key "luechinger:2009"
  This makes almost no difference at all either to our coefficient estimates,
  including those on income, or to the mean income, and thus has very little
  effect on the calculated values.
+\end_layout
+
+\begin_layout Paragraph
+Instrumental variables
+\begin_inset CommandInset label
+LatexCommand label
+name "par:response-instrumental-variables"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To try to correct for the costs of income generation, for possible reverse
+ causality (in which greater happiness leads to higher incomes) and other
+ forms of endogeneity, for measurement error, and for possible problems
+ associated with transient income, a small number of studies in happiness
+ economics have used instruments for income
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+See 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p. 29"
+key "fujiwara:2011"
+
+\end_inset
+
+: 
+\begin_inset Quotes eld
+\end_inset
+
+A small number of studies in the well-being literature have used instruments
+ for some of the explanatory variables in the life satisfaction equation
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ For example: 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "luttmer:2005"
+
+\end_inset
+
+ instruments income with the industry 
+\begin_inset Formula $\times$
+\end_inset
+
+ occupation of the respondent and their spouse; 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "oswald:2008b"
+
+\end_inset
+
+ use (non-)observation by the interviewer of the respondent's payslip, and
+ income and regional house prices in the previous period (
+\begin_inset Formula $t-1$
+\end_inset
+
+); 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "luechinger:2009"
+
+\end_inset
+
+ uses industry 
+\begin_inset Formula $\times$
+\end_inset
+
+ occupation of the main income earner who is not the respondent; and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ferreira:2010"
+
+\end_inset
+
+ use an ordinal indicator of social class.
+ In general, the coefficients on these instruments are somewhat larger than
+ on a simple income variable, and thus the valuations derived are somewhat
+ smaller.
+\end_layout
+
+\begin_layout Standard
+However, like the majority of the previous literature, we do not instrument
+ income in this study.
+ First, there are significant caveats associated with such use of instrumental
+ variables.
+ As noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:swb-valuation-Strengths-weaknesses"
+
+\end_inset
+
+, predicted income values arguably also represent an estimate of a respondent's
+ comparator income 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 493"
+key "luechinger:2009"
+
+\end_inset
+
+.
+ Since the sign of the effect of a comparator income on happiness is expected
+ to be negative 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "clark:1996"
+
+\end_inset
+
+, this makes interpretation of the income effect using such instrumental
+ variables problematic.
+ Second, variables typically identified as appropriate instruments --- such
+ as industry, occupation, social class, or previous income of the respondent
+ and/or other household members --- are not available in our survey data
+ set
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In retrospect, one might of course wish that the survey instrument had included
+ such information.
+\end_layout
+
+\end_inset
+
+.
+ Finally, we make contributions to the literature in other areas as discussed
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:research-aims"
+
+\end_inset
+
+, and do not choose to prioritise this area at this time.
 \end_layout
 
 \begin_layout Subsubsection

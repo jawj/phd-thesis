@@ -421,7 +421,8 @@ reference "par:weather-join-limitations"
 
 \end_inset
 
-).
+), and suggest that more sophisticated methodologies might be preferred
+ in future research.
 \end_layout
 
 \begin_layout Quote
@@ -450,6 +451,86 @@ reference "par:equivalised-income-response"
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Quote
+P139.
+ In light of the problems with income the student should attempt to use
+ instrumental variables or otherwise explain why this is impossible.
+ What other papers have adopted such a strategy? The student should also
+ check for geographical stability, perhaps by including a dummy variable
+ for the different parts of the UK or by dividing the country in half along
+ the North-South or East-West axis.
+ The student should include latitude and longitude and explain why they
+ are important (variation in hours of daylight and the depressing effect
+ of getting up in the dark).
+\end_layout
+
+\begin_layout Standard
+In relation to IVs, please see my response to the comment on P150 below.
+\end_layout
+
+\begin_layout Standard
+[location vars -- do this? -- but only change tables if results much changed]
+\end_layout
+
+\begin_layout Quote
+P140.
+ Is there a difference between those who own their homes and those who do
+ not (perhaps wealth is more important than annual income in determining
+ happiness)?
+\end_layout
+
+\begin_layout Standard
+[add in home-owning vars? -- only change tables if results much changed]
+\end_layout
+
+\begin_layout Standard
+X
+\end_layout
+
+\begin_layout Quote
+P146.
+ The student should explain the paragraph beginning “It might be objected…”
+ 
+\end_layout
+
+\begin_layout Standard
+On returning to this paragraph I must admit I do not recall my original
+ reasoning.
+ I have deleted the paragraph (now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "response-hh-vars-deleted-para"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Quote
+P150.
+ Although the student talks about correcting the income coefficient he does
+ not talk about the problems of transient income or measurement error, both
+ of which could be corrected by instrumental variables.
+ Once again if this obvious remedy is not possible then the student should
+ explain why not.
+ It appears that such a strategy has been undertaken in other published
+ research so why is it not possible here? 
+\end_layout
+
+\begin_layout Standard
+I have added a brief section acknowledging the use of instrumental variables
+ for income in some other studies, and explaining why I do not use them
+ here.
+ This is now on 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "par:response-instrumental-variables"
+
+\end_inset
+
+.
 \end_layout
 
 \end_body

@@ -4499,8 +4499,8 @@ For example, in the case of adiabatic cooling, 99.9% of responses are between
  0 and 320m above sea level, with expected temperature variation of the
  order of only 2ºC across that range.
  Furthermore, since response locations and weather observation locations
- are near to each other, elevation --- and hence the extent of adiabatic
- cooling --- are expected to be correlated between them.
+ are near to each other, elevation, and hence the extent of adiabatic cooling,
+ are expected to be correlated between them.
 \end_layout
 
 \end_inset
