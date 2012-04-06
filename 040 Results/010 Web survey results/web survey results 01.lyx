@@ -1792,6 +1792,13 @@ status collapsed
 Spatial variable descriptives, UK web survey data
 \begin_inset CommandInset label
 LatexCommand label
+name "response-not-logging-uk-desc"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
 name "tab:web-uk-spatial-summary"
 
 \end_inset
@@ -2877,7 +2884,7 @@ Inland bare ground
 \begin_layout Plain Layout
 
 \emph on
-Distance, ln(m)
+Distance (m)
 \end_layout
 
 \end_inset
@@ -2945,19 +2952,7 @@ National Park
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-10.28
+44112
 \end_layout
 
 \end_inset
@@ -2966,19 +2961,7 @@ National Park
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-1.36
+30459
 \end_layout
 
 \end_inset
@@ -2987,19 +2970,7 @@ National Park
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-0.00
+0
 \end_layout
 
 \end_inset
@@ -3008,19 +2979,7 @@ National Park
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-12.73
+337661
 \end_layout
 
 \end_inset
@@ -3052,19 +3011,7 @@ AONB
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-9.45
+22045
 \end_layout
 
 \end_inset
@@ -3073,19 +3020,7 @@ AONB
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-1.61
+16202
 \end_layout
 
 \end_inset
@@ -3094,19 +3029,7 @@ AONB
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-0.00
+0
 \end_layout
 
 \end_inset
@@ -3115,19 +3038,7 @@ AONB
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-11.48
+97019
 \end_layout
 
 \end_inset
@@ -3159,19 +3070,7 @@ NNR
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-9.34
+14101
 \end_layout
 
 \end_inset
@@ -3180,19 +3079,7 @@ NNR
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-0.74
+8564
 \end_layout
 
 \end_inset
@@ -3201,19 +3088,7 @@ NNR
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-5.34
+208
 \end_layout
 
 \end_inset
@@ -3222,19 +3097,7 @@ NNR
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-11.14
+69053
 \end_layout
 
 \end_inset
@@ -3266,19 +3129,7 @@ Coast
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-8.89
+19596
 \end_layout
 
 \end_inset
@@ -3287,19 +3138,7 @@ Coast
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-1.71
+22412
 \end_layout
 
 \end_inset
@@ -3308,19 +3147,7 @@ Coast
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-3.21
+24
 \end_layout
 
 \end_inset
@@ -3329,19 +3156,7 @@ Coast
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-11.62
+111751
 \end_layout
 
 \end_inset
@@ -3373,19 +3188,7 @@ River
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-6.62
+1844
 \end_layout
 
 \end_inset
@@ -3394,19 +3197,7 @@ River
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-1.14
+7030
 \end_layout
 
 \end_inset
@@ -3415,19 +3206,7 @@ River
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-0.69
+1
 \end_layout
 
 \end_inset
@@ -3436,19 +3215,7 @@ River
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-11.63
+112692
 \end_layout
 
 \end_inset
@@ -3480,19 +3247,7 @@ Motorway
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-8.89
+18688
 \end_layout
 
 \end_inset
@@ -3501,19 +3256,7 @@ Motorway
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-1.39
+33338
 \end_layout
 
 \end_inset
@@ -3522,19 +3265,7 @@ Motorway
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-4.51
+90
 \end_layout
 
 \end_inset
@@ -3543,19 +3274,7 @@ Motorway
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-13.00
+441751
 \end_layout
 
 \end_inset
@@ -3587,19 +3306,7 @@ Railway line
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-6.90
+3290
 \end_layout
 
 \end_inset
@@ -3608,19 +3315,7 @@ Railway line
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-1.40
+11436
 \end_layout
 
 \end_inset
@@ -3629,19 +3324,7 @@ Railway line
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-2.58
+12
 \end_layout
 
 \end_inset
@@ -3650,19 +3333,7 @@ Railway line
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-12.31
+222153
 \end_layout
 
 \end_inset
@@ -3694,19 +3365,7 @@ Railway station
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-7.51
+4125
 \end_layout
 
 \end_inset
@@ -3715,19 +3374,7 @@ Railway station
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-1.12
+11470
 \end_layout
 
 \end_inset
@@ -3736,19 +3383,7 @@ Railway station
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-4.25
+69
 \end_layout
 
 \end_inset
@@ -3757,19 +3392,7 @@ Railway station
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-12.31
+222153
 \end_layout
 
 \end_inset

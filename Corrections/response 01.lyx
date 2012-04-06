@@ -426,13 +426,97 @@ reference "par:weather-join-limitations"
 \end_layout
 
 \begin_layout Quote
+P125.
+ Equation 6.1 includes wages but wages have not been discussed.
+ This reinforces the point about understanding the theoretical model upon
+ which the model is based and understanding the link to hedonic theory.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+P129.
+ The student should not log the data in table 7.1.
+ It is a moot point whether to drop variables because they are collinear.
+ The student should reconsider his decision to drop collinear variables.
+ The student should conduct a literature survey with the aim of identifying
+ exactly which environmental variables have been used in existing interurban
+ and hedonic and SWB studies.
+ There appear to be some obvious omissions such as the quality of public
+ services, climate, racial mix and locally undesirable land uses.
+ This important point needs to be addressed especially in the light of comments
+ contained in the conclusions and is likely to take some time.
+ Obviously it will not be possible to include all the variables used in
+ earlier studies.
+ But it would at a minimum be important to know how comprehensive the research
+ is compared to earlier analyses.
+ 
+\end_layout
+
+\begin_layout Standard
+Since no data in Table 7.1 are logged, I have assumed that the first comment
+ applies instead to Table 7.2, which previously summarised logged distance
+ measures.
+ This has now been corrected (now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "response-not-logging-uk-desc"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
 P137.
  It would be useful to see both standardised and unstandardised beta coefficient
 s.
 \end_layout
 
 \begin_layout Standard
-x
+P137 has a reference to Table 7.7, 'Basic life satisfaction OLS regressions,
+ UK'.
+ I take the comment as applying also to that table and also to Table 7.8,
+ 'Basic life satisfaction OLS regressions, London'.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: re-run and put in Appendix, by adding 'beta' to regress options ---
+ when a final spec is reached...
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Quote
@@ -471,7 +555,16 @@ In relation to IVs, please see my response to the comment on P150 below.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 [location vars -- do this? -- but only change tables if results much changed]
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Quote
@@ -482,11 +575,20 @@ P140.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 [add in home-owning vars? -- only change tables if results much changed]
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 X
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Quote

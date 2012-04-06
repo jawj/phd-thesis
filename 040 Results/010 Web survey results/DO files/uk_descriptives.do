@@ -51,6 +51,7 @@ home_woodland_r3000
 home_suburban_r3000
 home_inlandbare_r3000
 
+/*
 ln_home_natpark_dist
 ln_home_aonb_dist
 ln_home_nnr_dist
@@ -61,6 +62,18 @@ ln_home_river_dist
 ln_home_mway_dist
 ln_home_railway_dist
 ln_home_station_dist
+*/
+
+home_natpark_dist
+home_aonb_dist
+home_nnr_dist
+
+home_coast_dist
+home_river_dist
+
+home_mway_dist
+home_railway_dist
+home_station_dist
 
 home_lsoa_popdens_ppha 
 home_popdens_ppha 

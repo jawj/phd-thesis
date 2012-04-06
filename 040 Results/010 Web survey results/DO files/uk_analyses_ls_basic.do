@@ -5,7 +5,7 @@ set more off
 foreach lcmsuffix in r1000 r3000 r10000 {;
   
   #delimit ;
-  local lcmsuffix r3000; // for non-looping lcmsuffix use
+  // local lcmsuffix r3000; // for non-looping lcmsuffix use
   foreach lcm in coast water mountain grassland farmland woodland suburban inlandbare {;
   // foreach lcm in coast water greens suburban inlandbare {;
     
@@ -16,8 +16,8 @@ foreach lcmsuffix in r1000 r3000 r10000 {;
 
 regress
  // oprobit 
-  // life_sat__q 
-  sf36_emo_wb 
+  life_sat__q 
+  // sf36_emo_wb 
   // panas_positive 
   // panas_negative
   
@@ -56,8 +56,8 @@ regress
   // num_house_problems // don't include these -- should be compensated in rent
   // house_crowding
   
-  hh_ind_inc_ln
-  // hh_oecd_inc_ln
+  //hh_ind_inc_ln  // -- reportedly used in PhD
+  hh_oecd_inc_ln   // -- actually used in PhD
   
   male__q
   age_mp age_mp_sq
@@ -68,9 +68,9 @@ regress
   // if hh_size_unweighted == 1
   // if ipaq_total_mhw < 300
   // if work_status__q != "self_emp"
-, vce(robust)
+, vce(robust) // beta
 ;
-outreg2 using "/Users/gjm06/Downloads/regs_uk_08.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
+ //outreg2 using "/Users/gjm06/Downloads/regs_uk_09.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
 };
 #delimit CR
 
