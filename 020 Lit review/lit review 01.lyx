@@ -3403,7 +3403,7 @@ From this, the implicit price of the good
 \end_layout
 
 \begin_layout Standard
-The welfare effect of a discrete change in the amenity can also be measured
+The welfare effect of a discrete change in the good can also be measured
  in terms of the compensating or equivalent surplus.
  
 \end_layout
@@ -3600,6 +3600,22 @@ key "brookshire:1980"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsubsection
+Relation to hedonic pricing
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:response-hedonic-relationship"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A large number of the applications of the SWB valuation method in the literature
+ to date have been to environmental amenities and disamenities.
 \end_layout
 
 \begin_layout Paragraph
