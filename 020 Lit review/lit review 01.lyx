@@ -3614,15 +3614,173 @@ name "sub:response-hedonic-relationship"
 \end_layout
 
 \begin_layout Standard
-A large number of the applications of the SWB valuation method in the literature
- to date have been to environmental amenities and disamenities.
+Many applications of the SWB valuation method in the literature to date
+ have been to environmental goods.
+ Spatial characteristics of this kind have traditionally often been valued
+ using hedonic analysis.
 \end_layout
+
+\begin_layout Standard
+An important insight of hedonic theory is that --- assuming housing and
+ employment markets in perfect equilibrium --- local wages and rents will
+ vary with location characteristics such that the utility an individual
+ can achieve is constant across locations.
+ If this were not the case, some individuals would be made better off by
+ moving 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "roback:1982"
+
+\end_inset
+
+.
+ This insight is commonly formalised with a function for indirect utility
+ 
+\begin_inset Formula $v$
+\end_inset
+
+ in location 
+\begin_inset Formula $k$
+\end_inset
+
+, with rents 
+\begin_inset Formula $l$
+\end_inset
+
+ and constant 
+\begin_inset Formula $c$
+\end_inset
+
+, of the following form:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+v^{k}=v[g^{k},y(g^{k}),l(g^{k})]=c\quad\forall k
+\end{equation}
+
+\end_inset
+
+A simple regression of happiness on the level of an environmental good provides
+ the total derivative, 
+\begin_inset Formula $\frac{dv}{dg}$
+\end_inset
+
+.
+ In equilibrium, for the reasons outlined above, this is expected to be
+ zero 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ferreira:2010"
+
+\end_inset
+
+.
+ Some studies have taken this approach to computing a good's 'residual shadow
+ cost' in markets that are significantly out of equilibrium.
+ For example, 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p. 150"
+key "praag:2005"
+
+\end_inset
+
+ calculate this quantity for airport noise in Amsterdam, identifying it
+ as the 
+\begin_inset Quotes eld
+\end_inset
+
+amount that should be compensated for, if authorities decide to compensate
+\begin_inset Quotes erd
+\end_inset
+
+.
+ This type of analysis might be described as complementary to traditional
+ hedonic valuation.
+\end_layout
+
+\begin_layout Standard
+Conversely, to recover the partial derivative 
+\begin_inset Formula $\frac{\delta v}{\delta g}$
+\end_inset
+
+ and thereby calculate the full value of the good, rents and wages must
+ be held constant; that is, they must be controlled for in the regression
+ specification 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luechinger:2009,ferreira:2010"
+
+\end_inset
+
+.
+ This kind of analysis might be used as an alternative to hedonic valuation
+ methods
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p. 150"
+key "frey:2010"
+
+\end_inset
+
+ suggest disagreement in the literature as to whether SWB valuation represents
+ an alternative or a complement to more traditional hedonic analyses but,
+ as seen here, it is potentially able to play both roles.
+ There is also a broader sense in which either form of SWB valuation can
+ be seen as complementary to hedonic analyses, since the use of two different
+ methods, having different strengths and weaknesses (as noted below), may
+ produce more robust results.
+ 
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Utility, wage and rent variables
+\end_layout
+
+\begin_layout Standard
+In SWB valuation, a reported happiness variable is used as a proxy for the
+ latent utility variable 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ Household income may be used as a proxy for wages 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 257"
+before "e.g."
+key "ferreira:2010"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+[how these are operationalised: w = y, l = ?]
+\end_layout
+
+\begin_layout Paragraph
+\begin_inset Note Note
+status collapsed
 
 \begin_layout Paragraph
 Regression specification
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Whether these quantities represent the full value of the good is dependent
  on the specification of the SWB regression.
  For the full value to be derived, the SWB regression must include any other
@@ -3642,6 +3800,11 @@ key "luechinger:2009,ferreira:2010"
 \end_inset
 
 .
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
