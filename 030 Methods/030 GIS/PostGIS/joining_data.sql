@@ -463,3 +463,48 @@ alter table london_survey add column other_popdens_ppkm2 real;
 update london_survey set other_popdens_ppkm2 = (select dn / 100 from ukpop1km where st_contains(the_geom, other_map_osgb));
 
 )
+
+-- Adding weather (
+
+alter table uk_survey add column home_w_rainfall real;
+update uk_survey set home_w_rainfall = (select dn / 1000.0 from ukcp_rainfall_meank where st_contains(the_geom, home_postcode_osgb));
+
+alter table uk_survey add column other_w_rainfall real;
+update uk_survey set other_w_rainfall = (select dn / 1000.0 from ukcp_rainfall_meank where st_contains(the_geom, other_postcode_osgb));
+
+
+alter table uk_survey add column home_w_sunshine real;
+update uk_survey set home_w_sunshine = (select dn / 1000.0 from ukcp_sunshine_meank where st_contains(the_geom, home_postcode_osgb));
+
+alter table uk_survey add column other_w_sunshine real;
+update uk_survey set other_w_sunshine = (select dn / 1000.0 from ukcp_sunshine_meank where st_contains(the_geom, other_postcode_osgb));
+
+
+alter table uk_survey add column home_w_snowlying real;
+update uk_survey set home_w_snowlying = (select dn / 1000.0 from ukcp_snowlying_meank where st_contains(the_geom, home_postcode_osgb));
+
+alter table uk_survey add column other_w_snowlying real;
+update uk_survey set other_w_snowlying = (select dn / 1000.0 from ukcp_snowlying_meank where st_contains(the_geom, other_postcode_osgb));
+
+
+alter table uk_survey add column home_w_meantemp real;
+update uk_survey set home_w_meantemp = (select dn / 1000.0 from ukcp_meantemp_meank where st_contains(the_geom, home_postcode_osgb));
+
+alter table uk_survey add column other_w_meantemp real;
+update uk_survey set other_w_meantemp = (select dn / 1000.0 from ukcp_meantemp_meank where st_contains(the_geom, other_postcode_osgb));
+
+
+alter table uk_survey add column home_w_meanwindspeed real;
+update uk_survey set home_w_meanwindspeed = (select dn / 1000.0 from ukcp_meanwindspeed_meank where st_contains(the_geom, home_postcode_osgb));
+
+alter table uk_survey add column other_w_meanwindspeed real;
+update uk_survey set other_w_meanwindspeed = (select dn / 1000.0 from ukcp_meanwindspeed_meank where st_contains(the_geom, other_postcode_osgb));
+
+
+alter table uk_survey add column home_w_relhumidity real;
+update uk_survey set home_w_relhumidity = (select dn / 1000.0 from ukcp_relhumidity_meank where st_contains(the_geom, home_postcode_osgb));
+
+alter table uk_survey add column other_w_relhumidity real;
+update uk_survey set other_w_relhumidity = (select dn / 1000.0 from ukcp_relhumidity_meank where st_contains(the_geom, other_postcode_osgb));
+
+)
