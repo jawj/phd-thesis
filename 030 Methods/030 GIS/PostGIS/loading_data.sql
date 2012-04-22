@@ -961,4 +961,26 @@ shp2pgsql -D -I -s 27700 "gdpout_ukpop1km.shp" ukpop1km | psql -d phd -U postgre
 
 )
 
+-- Weather (
+  
+cd "/Users/George/GIS/Data/Weather/UKCP09/"
 
+/Library/Frameworks/GDAL.framework/Versions/Current/Programs/gdal_polygonize.py -f "ESRI Shapefile" "Rainfall_MeanK.gtiff" "Rainfall_MeanK.shp"
+shp2pgsql -D -I -s 27700 "Rainfall_MeanK.shp" ukcp_rainfall_meank | psql -d phd -U postgres
+  
+/Library/Frameworks/GDAL.framework/Versions/Current/Programs/gdal_polygonize.py -f "ESRI Shapefile" "Sunshine_MeanK.gtiff" "Sunshine_MeanK.shp"
+shp2pgsql -D -I -s 27700 "Sunshine_MeanK.shp" ukcp_sunshine_meank | psql -d phd -U postgres
+
+/Library/Frameworks/GDAL.framework/Versions/Current/Programs/gdal_polygonize.py -f "ESRI Shapefile" "SnowLying_MeanK.gtiff" "SnowLying_MeanK.shp"
+shp2pgsql -D -I -s 27700 "SnowLying_MeanK.shp" ukcp_snowlying_meank | psql -d phd -U postgres
+
+/Library/Frameworks/GDAL.framework/Versions/Current/Programs/gdal_polygonize.py -f "ESRI Shapefile" "MeanTemp_MeanK.gtiff" "MeanTemp_MeanK.shp"
+shp2pgsql -D -I -s 27700 "MeanTemp_MeanK.shp" ukcp_meantemp_meank | psql -d phd -U postgres
+
+/Library/Frameworks/GDAL.framework/Versions/Current/Programs/gdal_polygonize.py -f "ESRI Shapefile" "MeanWindSpeed_MeanK.gtiff" "MeanWindSpeed_MeanK.shp"
+shp2pgsql -D -I -s 27700 "MeanWindSpeed_MeanK.shp" ukcp_meanwindspeed_meank | psql -d phd -U postgres
+  
+/Library/Frameworks/GDAL.framework/Versions/Current/Programs/gdal_polygonize.py -f "ESRI Shapefile" "RelativeHumidity_MeanK.gtiff" "RelativeHumidity_MeanK.shp"
+shp2pgsql -D -I -s 27700 "RelativeHumidity_MeanK.shp" ukcp_relhumidity_meank | psql -d phd -U postgres
+
+)
