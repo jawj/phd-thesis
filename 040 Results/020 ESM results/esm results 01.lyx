@@ -13862,8 +13862,37 @@ The quietest activity is 'Sleeping, resting, relaxing'; the loudest is 'Theatre,
 \end_inset
 
 , and also by reporting device.
- Noise level measures are not considered further in the present analyses,
- however.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "response-noise-nonuse"
+
+\end_inset
+
+For a number of reasons, these noise level measures are not considered further
+ here.
+ First, the iPhone's built-in microphone is directional and easy to occlude,
+ and noise measures will therefore depend on the orientation and grip in
+ which the device is held.
+ Second, as suggested in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Sound-level-measurement"
+
+\end_inset
+
+ and potentially confirmed by the simple regression reported above, differences
+ in hardware and/or software between device models mean that measured levels
+ are not universally comparable.
+ Finally, since we have only a simple volume measure, we cannot directly
+ establish anything about the nature of the noise detected --- for example,
+ we cannot distinguish between traffic, roadworks, a crowd or a concert.
+ Dealing satisfactorily with these issues is beyond the scope of this thesis,
+ though it might still be possible to make use of the noise data in future
+ research.
 \end_layout
 
 \begin_layout Subsubsection

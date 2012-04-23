@@ -682,16 +682,16 @@ P153.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO
-\end_layout
+I have deleted the remark (now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "response-omit-fishing"
 
 \end_inset
 
-
+).
+ The broader point regarding regression specifications has been addressed
+ above.
 \end_layout
 
 \begin_layout Quote
@@ -721,16 +721,17 @@ P175.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO
-\end_layout
+I have added a paragraph cataloguing the limitations of the noise data,
+ and explaining that their satisfactory use is therefore beyond the scope
+ of the thesis.
+ This is now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "response-noise-nonuse"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Quote

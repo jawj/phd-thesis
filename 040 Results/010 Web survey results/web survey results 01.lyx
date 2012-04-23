@@ -39601,12 +39601,13 @@ tics that we cannot or do not observe; for example, the quality of local
  We have controlled for house prices, for the distance to central London
  and public transport facilities, and for crime.
  Arguably, we could have tried including a wide range of additional controls.
- On the other hand, since it is not obvious 
-\emph on
-a priori
-\emph default
- which additional controls should be used, it is also arguable that this
- would have constituted a 'fishing' expedition for significant results.
+\begin_inset CommandInset label
+LatexCommand label
+name "response-omit-fishing"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
