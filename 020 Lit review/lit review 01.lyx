@@ -3678,7 +3678,11 @@ key "ferreira:2010"
 
 .
  Some studies have taken this approach to computing a good's 'residual shadow
- cost' in markets that are significantly out of equilibrium.
+ cost' in markets that are significantly 
+\emph on
+out
+\emph default
+ of equilibrium.
  For example, 
 \begin_inset CommandInset citation
 LatexCommand citet

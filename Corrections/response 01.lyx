@@ -98,6 +98,24 @@ Response to examiners
 \end_layout
 
 \begin_layout Standard
+I thank the referees for their detailed and constructive comments, which
+ I have now addressed as described below.
+
+\emph on
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Please note that for easy cross-referencing when reading the PDF on-screen,
+ each page reference in these responses is linked to the relevant page.
+ The 'Back' command of the PDF reading application may be used to return
+ the reader to the previous location in these responses after following
+ such a link.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status collapsed
 
@@ -142,7 +160,8 @@ reference "happiness-ls-unreflective-response"
 \end_layout
 
 \begin_layout Quote
-...and secondly happiness being more widely used than wellbeing in the media
+...
+ and secondly happiness being more widely used than wellbeing in the media
  reporting of SWB research.
 \end_layout
 
@@ -218,7 +237,16 @@ P40.
 \end_layout
 
 \begin_layout Standard
-X
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Quote
@@ -462,20 +490,7 @@ TODO
 \begin_layout Quote
 P129.
  The student should not log the data in table 7.1.
- It is a moot point whether to drop variables because they are collinear.
- The student should reconsider his decision to drop collinear variables.
- The student should conduct a literature survey with the aim of identifying
- exactly which environmental variables have been used in existing interurban
- and hedonic and SWB studies.
- There appear to be some obvious omissions such as the quality of public
- services, climate, racial mix and locally undesirable land uses.
- This important point needs to be addressed especially in the light of comments
- contained in the conclusions and is likely to take some time.
- Obviously it will not be possible to include all the variables used in
- earlier studies.
- But it would at a minimum be important to know how comprehensive the research
- is compared to earlier analyses.
- 
+ ...
 \end_layout
 
 \begin_layout Standard
@@ -490,6 +505,42 @@ reference "response-not-logging-uk-desc"
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Quote
+...
+ It is a moot point whether to drop variables because they are collinear.
+ The student should reconsider his decision to drop collinear variables.
+ ...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+...
+ The student should conduct a literature survey with the aim of identifying
+ exactly which environmental variables have been used in existing interurban
+ and hedonic and SWB studies.
+ There appear to be some obvious omissions such as the quality of public
+ services, climate, racial mix and locally undesirable land uses.
+ This important point needs to be addressed especially in the light of comments
+ contained in the conclusions and is likely to take some time.
+ Obviously it will not be possible to include all the variables used in
+ earlier studies.
+ But it would at a minimum be important to know how comprehensive the research
+ is compared to earlier analyses.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -524,7 +575,7 @@ status open
 
 \begin_layout Plain Layout
 TODO: re-run and put in Appendix, by adding 'beta' to regress options ---
- when a final spec is reached...
+ when a final spec is fixed...
 \end_layout
 
 \end_inset
@@ -554,17 +605,22 @@ reference "par:equivalised-income-response"
 P139.
  In light of the problems with income the student should attempt to use
  instrumental variables or otherwise explain why this is impossible.
- What other papers have adopted such a strategy? The student should also
- check for geographical stability, perhaps by including a dummy variable
- for the different parts of the UK or by dividing the country in half along
- the North-South or East-West axis.
- The student should include latitude and longitude and explain why they
- are important (variation in hours of daylight and the depressing effect
- of getting up in the dark).
+ What other papers have adopted such a strategy? ...
+ 
 \end_layout
 
 \begin_layout Standard
-In relation to IVs, please see my response to the comment on P150 below.
+Please see my response to the comment on P150, below.
+\end_layout
+
+\begin_layout Quote
+...
+ The student should also check for geographical stability, perhaps by including
+ a dummy variable for the different parts of the UK or by dividing the country
+ in half along the North-South or East-West axis.
+ The student should include latitude and longitude and explain why they
+ are important (variation in hours of daylight and the depressing effect
+ of getting up in the dark).
 \end_layout
 
 \begin_layout Standard
@@ -572,7 +628,7 @@ In relation to IVs, please see my response to the comment on P150 below.
 status open
 
 \begin_layout Plain Layout
-[location vars -- do this? -- but only change tables if results much changed]
+TODO --- add country dummies, lat + lon
 \end_layout
 
 \end_inset
@@ -592,11 +648,7 @@ P140.
 status open
 
 \begin_layout Plain Layout
-[add in home-owning vars? -- only change tables if results much changed]
-\end_layout
-
-\begin_layout Plain Layout
-X
+TODO
 \end_layout
 
 \end_inset
@@ -638,14 +690,166 @@ P150.
 I have added a brief section acknowledging the use of instrumental variables
  for income in some other studies, and explaining why I do not use them
  here.
- This is now on 
+ This is now 
 \begin_inset CommandInset ref
-LatexCommand vref
+LatexCommand vpageref
 reference "par:response-instrumental-variables"
 
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Quote
+P153.
+ The student makes an odd remark about including lots of variables being
+ akin to a fishing expedition.
+ But is it a fishing expedition to include variables which others have already
+ found to be potentially important in their empirical analyses? Once again
+ this points to the need to know exactly what other people have included
+ in their empirical hedonic and SWB analyses.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+P170.
+ Figure 8.10a strongly suggests that OLS is not the appropriate estimator.
+ The student should re-estimate using a more appropriate estimator.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+P175.
+ The student should explain why noise levels aren’t included in the analysis.
+ ...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+...
+ Does the weather matter only when people are outdoors?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+P182.
+ The student should include a nonlinear time trend to capture seasonal trends.
+ This could be addressed by including sine waves at differing frequencies
+ (Chebyshev polynomials).
+ In particular a great deal has been written about seasonal affective disorder
+ (none of which is included in the thesis but which surely must explain
+ some of the variation in the data over time).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+P188.
+ Dropping the observations with the values 0 or 100 is not the appropriate
+ remedy.
+ This problem needs to be addressed using an estimator combining point and
+ interval data e.g.
+ INTREG in STATA.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+P192.
+ The student says that existing studies include only a narrow range of environme
+ntal quality characteristics.
+ But we are not convinced that the student’s selection of environmental
+ quality characteristics is not also narrow compared to other studies.
+ The student might like to revisit that claim once he has conducted a more
+ thorough literature review.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
