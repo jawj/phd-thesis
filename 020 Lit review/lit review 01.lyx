@@ -3662,8 +3662,14 @@ v^{k}=v[g^{k},y(g^{k}),l(g^{k})]=c\quad\forall k
 
 \end_inset
 
-A simple regression of happiness on the level of an environmental good provides
- the total derivative, 
+In SWB valuation, a reported happiness variable is used as a proxy for the
+ latent utility variable 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ A simple regression of happiness on the level of an environmental good
+ provides the total derivative, 
 \begin_inset Formula $\frac{dv}{dg}$
 \end_inset
 
@@ -3749,17 +3755,20 @@ key "frey:2010"
 \end_layout
 
 \begin_layout Paragraph
+\begin_inset Note Note
+status open
+
+\begin_layout Paragraph
 Utility, wage and rent variables
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 In SWB valuation, a reported happiness variable is used as a proxy for the
  latent utility variable 
 \begin_inset Formula $v$
 \end_inset
 
-.
- Household income may be used as a proxy for wages 
+, and household income is sometimes used as a proxy for wages 
 \begin_inset CommandInset citation
 LatexCommand citep
 after "p. 257"
@@ -3772,13 +3781,18 @@ key "ferreira:2010"
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 [how these are operationalised: w = y, l = ?]
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Paragraph
 Regression specification

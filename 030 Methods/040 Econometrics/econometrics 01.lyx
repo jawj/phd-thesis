@@ -227,6 +227,22 @@ reference "sub:happiness-valuation"
 \end_inset
 
 .
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "response-wages-income-proxy"
+
+\end_inset
+
+Following 
+\begin_inset CommandInset citation
+LatexCommand citet
+after "p. 257"
+key "ferreira:2010"
+
+\end_inset
+
+ we use household income as a proxy for wages.
 \end_layout
 
 \begin_layout Standard
