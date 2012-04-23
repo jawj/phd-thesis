@@ -740,11 +740,28 @@ reference "response-noise-nonuse"
 \end_layout
 
 \begin_layout Standard
+As stated in the thesis, 
+\begin_inset Quotes eld
+\end_inset
+
+although it is possible that these variables are also associated with happiness
+ when participants are indoors or in a vehicle, the same direct link from
+ environmental exposure to mood cannot be posited with any confidence in
+ these cases.
+ In addition, when participants are not outdoors their location is less
+ accurately determined by GPS, making these spatial data less reliable.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-TODO
+TODO Note results of including these vars indoors, in (unshown) regressions?
 \end_layout
 
 \end_inset
