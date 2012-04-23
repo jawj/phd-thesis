@@ -33,6 +33,33 @@ select addgeometrycolumn('uk_survey', 'other_postcode_osgb', 27700, 'POINT', 2);
 update uk_survey l set other_postcode_osgb = the_geom 
   from nspd2010aug n where l.other_postcode = n.postcode_no_sp;
 
+
+alter table uk_survey add column home_e real;
+alter table uk_survey add column home_n real;
+update uk_survey set home_e = st_x(home_postcode_osgb);
+update uk_survey set home_n = st_y(home_postcode_osgb);
+
+alter table uk_survey add column other_e real;
+alter table uk_survey add column other_n real;
+update uk_survey set other_e = st_x(other_postcode_osgb);
+update uk_survey set other_n = st_y(other_postcode_osgb);
+
+select addgeometrycolumn('uk_survey', 'home_postcode_wgs84', 4326, 'POINT', 2);
+update uk_survey l set home_postcode_wgs84 = st_transform(home_postcode_osgb, 4326);
+
+select addgeometrycolumn('uk_survey', 'other_postcode_wgs84', 4326, 'POINT', 2);
+update uk_survey l set other_postcode_wgs84 = st_transform(other_postcode_osgb, 4326);
+
+alter table uk_survey add column home_lat real;
+alter table uk_survey add column home_lon real;
+update uk_survey set home_lat = st_y(home_postcode_wgs84);
+update uk_survey set home_lon = st_x(home_postcode_wgs84);
+
+alter table uk_survey add column other_lat real;
+alter table uk_survey add column other_lon real;
+update uk_survey set other_lat = st_y(other_postcode_wgs84);
+update uk_survey set other_lon = st_x(other_postcode_wgs84);
+
 )
 
 -- Adding postcode polygons (

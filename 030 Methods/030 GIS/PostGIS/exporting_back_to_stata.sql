@@ -253,6 +253,16 @@ create view uk_export as (
     
     s.home_postcode,
     s.other_postcode,
+    
+    s.home_lat,
+    s.home_lon,
+    s.home_e,
+    s.home_n,
+    s.other_lat,
+    s.other_lon,
+    s.other_e,
+    s.other_n,
+    
     s.home_lsoa_or_dzone,
     s.other_lsoa_or_dzone,
     s.home_ttwa,
