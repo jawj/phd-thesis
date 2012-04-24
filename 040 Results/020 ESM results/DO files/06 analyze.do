@@ -82,7 +82,8 @@ xtreg feel_hpy_100
   rseq_0 rseq_10 rseq_50
   wkdayhour_* wkendhour_*
   is_daylight_out sunny_out rain_out snow_out fog_out temp_*_out wind_*_out
-
+  // i.month  // for corrections
+  
 if valid  
   // & loc_h_acc <= 100 & response_lag < 20 * 60
   // & ! min_hpy & ! max_hpy

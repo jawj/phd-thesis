@@ -450,15 +450,22 @@ P125.
 \end_layout
 
 \begin_layout Standard
-The new subsection 
+I had previously made a brief mention of the inclusion wages and rents in
+ the regression specification on page 40, but the new literature review
+ subsection 
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "sub:response-hedonic-relationship"
 
 \end_inset
 
- discusses the role of wages in the hedonic and SWB valuation models.
- Immediately following the equation I now also note that, following 
+ includes a more complete discussion of the role of wages in the hedonic
+ and SWB valuation models.
+ 
+\end_layout
+
+\begin_layout Standard
+Immediately following this equation I now also note that, following 
 \begin_inset CommandInset citation
 LatexCommand citet
 after "p. 257"
@@ -702,16 +709,8 @@ P170.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO
-\end_layout
-
-\end_inset
-
-
+I now use an interval regression as a robustness check on the OLS results
+ --- please see the response to the comment on P188 below.
 \end_layout
 
 \begin_layout Quote
@@ -781,16 +780,33 @@ P182.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO
-\end_layout
+As a simpler means of capturing seasonal trends, I have re-run the main
+ land cover model including month-by-month dummies.
+ The model estimates are shown in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:esm-month-dummies"
 
 \end_inset
 
+.
+ No seasonal effect is detected, however.
+ I have therefore added a footnote to 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Time"
 
+\end_inset
+
+ referring to the potential for seasonal trends, and to their apparent absence
+ (now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "response-sad-month-dummies"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Quote

@@ -16641,7 +16641,7 @@ In the remainder of this chapter we focus exclusively on the the third model,
 
 \begin_layout Standard
 \begin_inset Branch Massive_results_table
-status open
+status collapsed
 
 \begin_layout Standard
 \noindent
@@ -25199,6 +25199,13 @@ Conversely, responses in the company of colleagues and other acquaintances
 
 \begin_layout Subsubsection
 Time
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Time"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -25220,8 +25227,63 @@ Participants are also happier at any time of day during the weekend than
 \end_inset
 
  tests show this weekday/weekend difference to be significant at the 5%
- level for all periods except 3am -- 6am.
+ level for all periods except 3am -- 6am
+\begin_inset CommandInset label
+LatexCommand label
+name "response-sad-month-dummies"
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+It might also seem reasonable to hypothesise seasonal effects on happiness,
+ which could include impacts of Seasonal Affective Disorder (SAD): 
+\begin_inset Quotes eld
+\end_inset
+
+seasonal variation in mood has been documented thoroughly by both retrospective
+ and prospective studies.
+ In the general population, depressive symptoms peak in winter, and the
+ most extreme form of this disposition, SAD, appears to be a relatively
+ common disorder
+\begin_inset Quotes erd
+\end_inset
+
  
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 176"
+key "magnusson:2000"
+
+\end_inset
+
+.
+ In a separate regression specification, shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:lcm-model-month-dummies"
+
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:esm-month-dummies"
+
+\end_inset
+
+, we therefore added month dummy variables to the main land cover model.
+ However, none of the coefficients on these month dummies were significantly
+ different from zero, and none of the other coefficients in the model were
+ meaningfully affected by the inclusion of the dummies.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection

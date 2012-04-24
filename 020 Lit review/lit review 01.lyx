@@ -3643,7 +3643,11 @@ key "roback:1982"
 \begin_inset Formula $k$
 \end_inset
 
-, with rents 
+, with wages 
+\begin_inset Formula $w$
+\end_inset
+
+, rents 
 \begin_inset Formula $l$
 \end_inset
 
@@ -3657,7 +3661,7 @@ key "roback:1982"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-v^{k}=v[g^{k},y(g^{k}),l(g^{k})]=c\quad\forall k
+v^{k}=v[g^{k},w(g^{k}),l(g^{k})]=c\quad\forall k
 \end{equation}
 
 \end_inset
@@ -3722,6 +3726,15 @@ Conversely, to recover the partial derivative
 \begin_inset CommandInset citation
 LatexCommand citep
 key "luechinger:2009,ferreira:2010"
+
+\end_inset
+
+.
+ In this case, an income variable is sometimes used as a wage proxy 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "ferreira:2010"
 
 \end_inset
 

@@ -46,18 +46,30 @@ regress
   home_popdens_ppha  // home_lsoa_popdens_ppha
   home_house_price_med9 // home_lsoa_house_price_fe 
   
+  // *** NEW for corrections
+  home_w_rainfall 
+  home_w_sunshine 
+  home_w_meantemp 
+  home_w_meanwindspeed 
+  home_w_snowlying
+  home_west_half
+  home_south_half
+  home_lat
+  home_lon
+  // *** END  
+  
   // i.home_country  // wipes out all lcm!
   
   // ipaq_total_mhw
   poor_health good_health
   
-  // home_own_outright  // correlates 0.44 with age_mp and 0.48 with age_mp_sq
+  home_own_outright  // // *** NEW for corrections (correlates 0.44 with age_mp and 0.48 with age_mp_sq)
   social_tenant 
   // num_house_problems // don't include these -- should be compensated in rent
   // house_crowding
   
-  //hh_ind_inc_ln  // -- reportedly used in PhD
-  hh_oecd_inc_ln   // -- actually used in PhD
+  hh_ind_inc_ln       // -- reportedly used in PhD, and used in corrections where applicable
+  // hh_oecd_inc_ln   // -- actually used in PhD
   
   male__q
   age_mp age_mp_sq
@@ -73,6 +85,7 @@ regress
  //outreg2 using "/Users/gjm06/Downloads/regs_uk_09.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
 };
 #delimit CR
+
 
 
 // after r3000

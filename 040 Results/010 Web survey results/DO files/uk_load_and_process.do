@@ -12,11 +12,11 @@ keep id home_postcode__q other_postcode__q
 outsheet using "$ukneadir/survey_data/adding_geo_data/20100902_postcodes.csv", comma replace
 
 clear
-insheet using "$phddatadir/pg_data_uk.csv"
-save "$phddatadir/pg_data_uk.dta", replace
+insheet using "$phddatadir/pg_data_uk-2012.csv"
+save "$phddatadir/pg_data_uk-2012.dta", replace
 restore
 
-merge 1:1 id using "$phddatadir/pg_data_uk.dta", generate(_pgmerge)
+merge 1:1 id using "$phddatadir/pg_data_uk-2012.dta", generate(_pgmerge)
 
 * }
 
