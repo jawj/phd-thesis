@@ -22228,7 +22228,7 @@ reference "tab:lcm-intreg"
 
 \end_inset
 
- presents the main land cover model estimated with interval regression.
+ presents the main land cover model estimated using interval regression.
  
 \end_layout
 
