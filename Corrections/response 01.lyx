@@ -780,9 +780,9 @@ P182.
 \end_layout
 
 \begin_layout Standard
-As a simpler means of capturing seasonal trends, I have re-run the main
- land cover model including month-by-month dummies.
- The model estimates are shown in Appendix 
+As a simple means of capturing seasonal trends I have re-run the main land
+ cover model including month-by-month dummies.
+ The new model estimates are presented in Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:esm-month-dummies"
@@ -790,7 +790,7 @@ reference "sec:esm-month-dummies"
 \end_inset
 
 .
- No seasonal effect is detected, however.
+ No seasonal effect is apparent, however.
  I have therefore added a footnote to 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -798,8 +798,8 @@ reference "sub:Time"
 
 \end_inset
 
- referring to the potential for seasonal trends, and to their apparent absence
- (now 
+ referring to SAD and the potential for seasonal trends, and to their apparent
+ absence (now 
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "response-sad-month-dummies"
