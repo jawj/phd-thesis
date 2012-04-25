@@ -605,7 +605,7 @@ Please see my response to the comment on P150, below.
 status open
 
 \begin_layout Plain Layout
-TODO --- add country dummies, lat + lon
+TODO --- Done aboved -- added lat + lon and e/w + n/s splits
 \end_layout
 
 \end_inset
@@ -625,7 +625,7 @@ P140.
 status open
 
 \begin_layout Plain Layout
-TODO
+TODO -- Yes, but who cares? Included in new regression reported above.
 \end_layout
 
 \end_inset
@@ -778,7 +778,7 @@ Other non-interacted weather variable coefficients are not significant.
 \end_layout
 
 \begin_layout Itemize
-Coefficients on the other variables, including the land cover and weather
+Coefficients on all other variables, including the land cover and weather
  interactions with being outdoors, are not much altered.
  
 \end_layout
