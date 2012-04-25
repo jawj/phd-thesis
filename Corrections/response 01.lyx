@@ -756,16 +756,36 @@ although it is possible that these variables are also associated with happiness
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO Note results of including these vars indoors, in (unshown) regressions?
+I have previously run models including land cover and weather variables
+ as themselves in addition to as interactions with being outdoors.
+ In this case: 
 \end_layout
 
-\end_inset
+\begin_layout Itemize
+No coefficient on a non-interacted land cover variable is significant.
+\end_layout
 
+\begin_layout Itemize
+Of the non-interacted weather variables, the coefficient on rain is significant
+ and modestly positive (-0.36, p < 0.001), and the coefficients on the temperature
+ ranges between 0 and < 24° are significant and modestly negative (-0.24
+ -- -0.45, p = 0.03 -- 0.01).
+ 
+\end_layout
 
+\begin_layout Itemize
+Other non-interacted weather variable coefficients are not significant.
+\end_layout
+
+\begin_layout Itemize
+Coefficients on the other variables, including the land cover and weather
+ interactions with being outdoors, are not much altered.
+ 
+\end_layout
+
+\begin_layout Standard
+I plan to investigate weather effects in more detail, using BADC/Met Office
+ data, in future research.
 \end_layout
 
 \begin_layout Quote
@@ -782,9 +802,16 @@ P182.
 \begin_layout Standard
 As a simple means of capturing seasonal trends I have re-run the main land
  cover model including month-by-month dummies.
- The new model estimates are presented in Appendix 
+ The new model estimates are presented in a new Appendix, 
 \begin_inset CommandInset ref
 LatexCommand ref
+reference "sec:esm-month-dummies"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
 reference "sec:esm-month-dummies"
 
 \end_inset
@@ -798,15 +825,15 @@ reference "sub:Time"
 
 \end_inset
 
- referring to SAD and the potential for seasonal trends, and to their apparent
- absence (now 
+, now 
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "response-sad-month-dummies"
 
 \end_inset
 
-).
+, referring to Seasonal Affective Disorder and the potential for seasonal
+ trends --- and to their apparent absence in this data.
 \end_layout
 
 \begin_layout Quote
@@ -828,35 +855,35 @@ intreg
 \noun on
 xtintreg
 \noun default
- models, and discuss these in a completely rewritten 
+ models as suggested, and discuss these in a completely rewritten 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:response-Happiness-spikes"
 
 \end_inset
 
- (
+, now 
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "sub:response-Happiness-spikes"
 
 \end_inset
 
-) and a new Appendix, 
+, and a new Appendix, 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:esm-intreg-model"
 
 \end_inset
 
- (
+, on 
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "sec:esm-intreg-model"
 
 \end_inset
 
-).
+.
 \end_layout
 
 \begin_layout Quote
