@@ -9041,6 +9041,13 @@ reference "tab:Frequencies-of-places"
 
 \begin_layout Subsubsection
 Feelings
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:response-feelings"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -9315,7 +9322,6 @@ Each distribution also shows two artefacts of the response process: large
  slider is moved to its limit, and small troughs on either side of the midpoint,
  where the slider is most commonly either left in its initial position or
  moved a minimum distance to the left or right.
- We check the robustness of our results to excluding the spikes at the extremes.
 \end_layout
 
 \begin_layout Standard
@@ -28413,9 +28419,140 @@ NOT broken
 
 \begin_layout Subsubsection
 Happiness spikes
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:response-Happiness-spikes"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+As noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:response-feelings"
+
+\end_inset
+
+ there are spikes at the top and bottom of the reported happiness distribution,
+ where the response slider has been moved all the way to the left or right.
+ Arguably, these represent happiness self-ratings that are 'off the scale'
+ --- in other words, the true value is higher or lower than the observed
+ value, which has been censored at the scale's top or bottom limit.
+\end_layout
+
+\begin_layout Standard
+Econometric models for use with censored cross-sectional data are available
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 579--583"
+before "e.g."
+key "wooldridge:2003"
+
+\end_inset
+
+, as are random effects models for use with censored panel data 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 180 -- 188"
+key "statacorp:2009"
+
+\end_inset
+
+.
+ However, for censored panel data there are no conditional fixed effects
+ models, and unconditional fixed effects estimates --- such as could be
+ obtained by simply including group dummy variables in a cross-sectional
+ model --- are biased 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "statacorp:2005"
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Group dummy variables cannot be used here in any case, since the number
+ of dummies required is many times greater than Stata supports.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As discussed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Fixed-effects-model"
+
+\end_inset
+
+, the standard fixed effects estimator allows for arbitrary correlation
+ between any individual effects (including unobserved effects) and the observed
+ explanatory variables, and we consider this an important property.
+ Since there exist no fixed effects models for censored data, we therefore
+ do not use a model for censored data as our primary model in the analyses
+ reported above.
+\end_layout
+
+\begin_layout Standard
+However, we assess the impact of censoring on our results by estimating
+ cross-sectional and panel censored data models with the same specification
+ as our main land cover model
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We use the 
+\noun on
+intreg
+\noun default
+ and 
+\noun on
+xtintreg
+\noun default
+ Stata commands 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "statacorp:2009"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ The two censored data models are presented in Appendix 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sec:esm-intreg-model"
+
+\end_inset
+
+.
+ In both cases the results follow an extremely similar pattern to those
+ of the main land cover model, except that --- as is intuitive, given the
+ expanded effective range of the dependent variable --- effect sizes are
+ generally somewhat larger.
+ This suggests that our main estimates are robust to the censoring of the
+ dependent variable, and potentially somewhat conservative.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 To test the extent to which our findings are driven by the relatively large
  numbers of extremely high and low responses --- the spikes seen in the
  histogram in 
@@ -28429,7 +28566,7 @@ reference "fig:Distributions-of-feelings"
  at either extreme of the scale (10,582 at zero and 80,994 at 100).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float table
 wide false
 sideways false
@@ -29549,7 +29686,7 @@ reference "tab:spikeless-esm"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 We also investigated the spikes alone, using probit models (with the same
  explanatory variables) to predict extreme happy and extreme unhappy answers.
  All land cover types except the freshwater and mountain types are positively
@@ -29569,6 +29706,11 @@ These two land cover types are positively predictive of extreme happy answers
 \end_inset
 
 , while none significantly predicts extreme unhappy ones.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection

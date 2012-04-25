@@ -820,17 +820,43 @@ P188.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO Added results to appendix -- need to rewrite 'happiness spikes' robustness
- subsection --- and add intreg write-up to methods too?
-\end_layout
+I have now run 
+\noun on
+intreg
+\noun default
+ and 
+\noun on
+xtintreg
+\noun default
+ models, and discuss these in a completely rewritten 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:response-Happiness-spikes"
 
 \end_inset
 
+ (
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sub:response-Happiness-spikes"
 
+\end_inset
+
+) and a new Appendix, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:esm-intreg-model"
+
+\end_inset
+
+ (
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:esm-intreg-model"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Quote
