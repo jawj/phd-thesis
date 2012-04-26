@@ -468,7 +468,6 @@ reference "sub:response-hedonic-relationship"
 Immediately following this equation I now also note that, following 
 \begin_inset CommandInset citation
 LatexCommand citet
-after "p. 257"
 key "ferreira:2010"
 
 \end_inset
@@ -521,6 +520,131 @@ reference "response-not-logging-uk-desc"
 \end_layout
 
 \begin_layout Standard
+The examiners suggest that a literature survey be conducted to identify
+ environmental variables used in existing 
+\begin_inset Quotes eld
+\end_inset
+
+interurban and hedonic and SWB studies
+\begin_inset Quotes erd
+\end_inset
+
+.
+ In 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:eq-swb-economic-studies"
+
+\end_inset
+
+ of the thesis I have already provided a survey of the existing SWB environmenta
+l valuation literature, including the environmental variables used.
+ This is the literature to which it is my aim to contribute in this thesis.
+\end_layout
+
+\begin_layout Standard
+I do not undertake hedonic valuation work or make interurban comparisons.
+ I therefore do not consider it necessary to review studies on those topics
+ in the same depth.
+ As a courtesy to the examiners, however, I have extended 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:eq-conventional-economic-studies"
+
+\end_inset
+
+ (now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sub:eq-conventional-economic-studies"
+
+\end_inset
+
+) with some additional references.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO Add these references.
+\end_layout
+
+\end_inset
+
+ I now also note, in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:eq-swb-economic-studies"
+
+\end_inset
+
+, that the range of spatial and environmental variables that has been included
+ in SWB valuation studies to date is more limited than in the case of hedonic
+ valuation studies.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO Actually note this (if true)!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since the studies I regard as the antecedents of the present work are SWB
+ environmental valuation studies specifically, I do not entirely accept
+ the examiners' contention regarding 
+\begin_inset Quotes eld
+\end_inset
+
+obvious omissions
+\begin_inset Quotes erd
+\end_inset
+
+.
+ For example, I do not recall the inclusion of 'racial mix' variables in
+ any previous study using SWB data to value the environment.
+\end_layout
+
+\begin_layout Standard
+Some previous SWB valuation studies 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "brereton:2007,ferreira:2010"
+
+\end_inset
+
+ do include indicators of climate and undesirable land uses (waste sites).
+ I do not believe that this invalidates the claims made in the introduction
+ or conclusion of the thesis, which are: that I include multiple EQ characterist
+ics; that some of these characteristics have not previously been included
+ in similar studies; and that previous studies have 
+\emph on
+generally
+\emph default
+ focused on a narrow range of EQ characteristics.
+ 
+\end_layout
+
+\begin_layout Standard
+In the light of the examiners' comments, however, I have made minor amendments
+ to my conclusions.
+ These are detailed in my response to the examiners' last comment, below.
+ 
+\end_layout
+
+\begin_layout Standard
+In addition, I agree that it is desirable to include as broad as possible
+ a range of environmental characteristics in the model --- both as a guard
+ against endogeneity and, in many cases, because the characteristics are
+ of interest in themselves.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -542,8 +666,8 @@ s.
 \begin_layout Standard
 P137 has a reference to Table 7.7, 'Basic life satisfaction OLS regressions,
  UK'.
- I take the comment as applying also to that table and also to Table 7.8,
- 'Basic life satisfaction OLS regressions, London'.
+ I take the comment as applying to that table and also to Table 7.8, 'Basic
+ life satisfaction OLS regressions, London'.
 \end_layout
 
 \begin_layout Standard

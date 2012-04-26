@@ -807,6 +807,13 @@ key "kuo:2001a"
 
 \begin_layout Subsection
 Studies in conventional economics
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:eq-conventional-economic-studies"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
