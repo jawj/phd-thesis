@@ -405,7 +405,7 @@ P80.
 
 \begin_layout Standard
 I have added a paragraph to this section, noting the existence of these
- issues in defining and collecting income data (now 
+ issues in defining income and collecting income data (now 
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "income-denigration-response"
@@ -537,15 +537,15 @@ reference "sub:eq-swb-economic-studies"
 
 \end_inset
 
- of the thesis I have already provided a survey of the existing SWB environmenta
-l valuation literature, including the environmental variables used.
+ of the thesis I already provide a survey of the existing SWB environmental
+ valuation literature, including the environmental variables used.
  This is the literature to which it is my aim to contribute in this thesis.
 \end_layout
 
 \begin_layout Standard
-I do not undertake hedonic valuation work or make interurban comparisons.
- I therefore do not consider it necessary to review studies on those topics
- in the same depth.
+I do not undertake a hedonic valuation study or make interurban comparisons.
+ I therefore do not consider it necessary to review the complete literature
+ on those topics in the same depth.
  As a courtesy to the examiners, however, I have extended 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -621,7 +621,8 @@ key "brereton:2007,ferreira:2010"
  I do not believe that this invalidates the claims made in the introduction
  or conclusion of the thesis, which are: that I include multiple EQ characterist
 ics; that some of these characteristics have not previously been included
- in similar studies; and that previous studies have 
+ in similar studies (i.e.
+ SWB valuation studies); and that previous studies have 
 \emph on
 generally
 \emph default
@@ -630,18 +631,413 @@ generally
 \end_layout
 
 \begin_layout Standard
-In the light of the examiners' comments, however, I have made minor amendments
- to my conclusions.
+Nevertheless, in the light of the examiners' comments, I have made some
+ amendments to my conclusions.
  These are detailed in my response to the examiners' last comment, below.
  
 \end_layout
 
 \begin_layout Standard
-In addition, I agree that it is desirable to include as broad as possible
+I also agree, of course, that it is desirable to include as broad as possible
  a range of environmental characteristics in the model --- both as a guard
  against endogeneity and, in many cases, because the characteristics are
  of interest in themselves.
+ I have therefore now obtained climate data for the UK, and re-run my basic
+ life satisfaction regressions for the UK with these added in.
  
+\end_layout
+
+\begin_layout Standard
+The climate variables I have used are calculated from the UK Climate Projections
+ (UKCP09) 5km gridded monthly observation data sets made available by the
+ Met Office
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+See 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.metoffice.gov.uk/climatechange/science/monitoring/ukcp09/download/monthl
+y/gridded_monthly.html
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ For each variable I have calculated the mean of 72 monthly data sets, for
+ the years 2001 -- 2006 inclusive.
+ I have then joined each UK web survey response with the value for the 5km
+ grid cell containing the centroid of the respondent's home postcode.
+ The variables are listed, and descriptive statistics are presented, in
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:UKCP09-weather-descriptives"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+UKCP09 weather variable descriptives (2001 -- 2006 means), UK web survey
+ data
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:UKCP09-weather-descriptives"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="5">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0pt">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Mean
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Std.
+ dev.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Min.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Max.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Air temperature (°C)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.62
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sunshine duration (hours/day)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.38
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.64
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total precipitation (mm/month)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+65.70
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18.25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+42.21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+212.46
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wind speed (knots)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.95
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.46
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.90
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16.26
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Snow lying (days/month)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.38
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.48
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I have also taken the opportunity to add to the specification latitude,
+ longitude, dummy variables defining an east/west and a north/south split,
+ and an indicator of home ownership, as requested in the examiners' comments
+ on P139 and P140, below.
 \end_layout
 
 \begin_layout Standard
@@ -729,7 +1125,7 @@ Please see my response to the comment on P150, below.
 status open
 
 \begin_layout Plain Layout
-TODO --- Done aboved -- added lat + lon and e/w + n/s splits
+TODO --- Done above -- added lat + lon and e/w + n/s splits
 \end_layout
 
 \end_inset
