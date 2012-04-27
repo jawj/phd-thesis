@@ -6932,7 +6932,7 @@ Control variables
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -15368,7 +15368,31 @@ reference "tab:UK-basic-ls-regs"
 \end_inset
 
  presents three models for the UK, differing only in the set of land cover
- proportion measures used.
+ proportion measures used
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Standardised coefficients for these models are provided in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:UK-basic-ls-regs-standardised"
+
+\end_inset
+
+ in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:survey-results-appendix"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
  There is one model for each of the simple (unweighted or uniform kernel-weighte
 d) proportion measures described in 
 \begin_inset CommandInset ref
@@ -20849,6 +20873,29 @@ reference "tab:london-basic-ls-regs"
 \end_inset
 
 .
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Standardised coefficients for the models are provided in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:london-basic-ls-regs-standardised"
+
+\end_inset
+
+ in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:survey-results-appendix"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
  As in the UK case there is one model for each of the simple proportion
  measures calculated.
  Again, we also estimated models using Gaussian kernel-weighted proportions;

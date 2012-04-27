@@ -8976,20 +8976,22 @@ P137 has a reference to Table 7.7, 'Basic life satisfaction OLS regressions,
  UK'.
  I take the comment as applying to that table and also to Table 7.8, 'Basic
  life satisfaction OLS regressions, London'.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: re-run and put in Appendix, by adding 'beta' to regress options ---
- when a final spec is fixed...
-\end_layout
+ Standardised beta coefficients are now provided in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:response-Standardised-coefficients"
 
 \end_inset
 
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:response-Standardised-coefficients"
 
+\end_inset
+
+, and referenced from footnotes to the discussion of the unstandardised
+ tables.
 \end_layout
 
 \begin_layout Quote
