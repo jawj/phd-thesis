@@ -130,7 +130,7 @@ from nspd2010aug n where l.other_postcode = n.postcode_no_sp;
 
 alter table uk_survey add column home_country integer;
 update uk_survey l set home_country = cast(n.country as integer)
-  from nspd2010aug n where l.other_postcode = n.postcode_no_sp;
+  from nspd2010aug n where l.home_postcode = n.postcode_no_sp;
 
 alter table uk_survey add column other_country integer;
 update uk_survey l set other_country = cast(n.country as integer)

@@ -2,22 +2,13 @@
 set more off
 #delimit ;
 
-/**
-foreach lcmsuffix in r200 r1000 r3000 r10000 {;
-foreach lcm in coast water mountain grassland farmland woodland suburban inlandbare {;
- //foreach lcm in coast water greens suburban inlandbare {;
-  capture drop hc_`lcm';
-  gen hc_`lcm' = home_`lcm'_`lcmsuffix';
-};
-**/
-
  //foreach lcm in osm_green osm_park gigl_green greens {;
-foreach lcm in greens {;
-  foreach lcmsuffix in r200 r1000 r3000 {;
+ //foreach lcm in greens {;
+foreach lcmsuffix in r200 r1000 r3000 {;
 
-  #delimit ;
+  //#delimit ;
   local lcm greens;      // for non-looping use
-  local lcmsuffix r3000; // ditto
+  //local lcmsuffix r3000; // ditto
   
   capture drop hc_green;
   capture drop hc_blue;
@@ -27,7 +18,7 @@ foreach lcm in greens {;
 regress 
   life_sat__q 
 
-  home_map_pm10a
+  
 /**
   hc_coast
   hc_water
@@ -48,6 +39,8 @@ regress
   
   hc_blue
 
+  home_map_pm10a
+  
   home_lhr09_quiet  // home_lhr09_leq
   home_road_quiet   // home_noise_road_lden 
   home_rail_quiet   // home_noise_rail_lden 
@@ -79,10 +72,9 @@ regress
   religious
   
   // if hh_size_unweighted == 1
-, cluster(home_lsoa_or_dzone);
+, cluster(home_lsoa_or_dzone);  // robust beta;
 
-outreg2 using "/Users/gjm06/Downloads/regs_london_green_05.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2 word;
-};
+outreg2 using "/Users/George/Downloads/regs_london_green_11.xls", sideway label alpha(0.001, 0.01, 0.05, 0.1) symbol(***, **, *, +) auto(2) adjr2;
 };
 
 

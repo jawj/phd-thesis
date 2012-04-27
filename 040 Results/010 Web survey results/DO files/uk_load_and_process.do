@@ -503,4 +503,10 @@ label variable religious "Religious"
 * }
 
 
-save "$phddatadir/uk_data_for_analsis.dta", replace
+centile home_e
+gen home_west_half = home_e < 437197
+
+centile home_n
+gen home_south_half = home_n < 282943
+
+save "$phddatadir/uk_data_for_analysis-2012.dta", replace
