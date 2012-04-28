@@ -560,7 +560,7 @@ reference "sub:eq-conventional-economic-studies"
 
 \end_inset
 
-) with some additional references.
+) with some additional references [NOTE: NOT YET DONE].
 \begin_inset Note Note
 status open
 
@@ -579,7 +579,7 @@ reference "sub:eq-swb-economic-studies"
 
 , that the range of spatial and environmental variables that has been included
  in SWB valuation studies to date is more limited than in the case of hedonic
- valuation studies.
+ valuation studies [NOTE: NOT YET DONE].
 \begin_inset Note Note
 status open
 
@@ -8937,11 +8937,18 @@ reference "tab:UK-basic-ls-regs"
 .
  In relation to the new variables: weather variables are not significant,
  except that one weather variable, sunshine, is negative and marginally
- significant (p < 0.1) in one of the three specifications; latitude, longitude,
- country and distance from railway line are not significant in any specification
-; and respondents who own their own homes outright are in all cases significantl
-y and substantially happier (by nearly 0.6 points on the 0 -- 10 scale, p
- < 0.001) than those who do not.
+ significant (
+\begin_inset Formula $0.05\leq p<0.1$
+\end_inset
+
+) in one of the three specifications; latitude, longitude, country and distance
+ from railway line are not significant in any specification; and respondents
+ who own their own homes outright are in all cases significantly and substantial
+ly happier (by nearly 0.6 points on the 0 -- 10 scale, 
+\begin_inset Formula $p<0.001$
+\end_inset
+
+) than those who do not.
  As regards existing variables: the coefficients on the land cover categories
  follow a very similar pattern as before, but are generally slightly reduced
  in magnitude, and have dropped in significance by one step; as before,
@@ -8950,19 +8957,19 @@ y and substantially happier (by nearly 0.6 points on the 0 -- 10 scale, p
 \end_layout
 
 \begin_layout Standard
-In summary, an effect of climate is not detected in the UK survey data,
- and the re-specification of the model does not markedly affect the results
+In summary, no effect of climate is detected in the UK survey data, and
+ the re-specification of the model does not markedly affect the results
  for variables previously included.
  The considerable effort that would be required to update all related tables
  and discussion therefore does not seem justified.
- Instead, I have added one footnote and extended another in 
+ Instead, I have extended the final footnote in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:UK-basic-ls-regs"
 
 \end_inset
 
- to note the results of this alternative model specification.
+ to note the rationale for and results of this alternative model specification.
 \end_layout
 
 \begin_layout Quote
@@ -9048,6 +9055,15 @@ P140.
 \begin_layout Standard
 Again, please refer to my response to the examiners' comments regarding
  P129.
+ I have added an additional footnote in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:UK-basic-ls-regs"
+
+\end_inset
+
+ to note that this variable has a significant effect, but does not alter
+ my other findings.
 \end_layout
 
 \begin_layout Quote
@@ -9184,9 +9200,16 @@ No coefficient on a non-interacted land cover variable is significant.
 
 \begin_layout Itemize
 Of the non-interacted weather variables, the coefficient on rain is significant
- and modestly positive (-0.36, p < 0.001), and the coefficients on the temperature
- ranges between 0 and < 24° are significant and modestly negative (-0.24
- -- -0.45, p = 0.03 -- 0.01).
+ and modestly positive (-0.36, 
+\begin_inset Formula $p<0.001$
+\end_inset
+
+), and the coefficients on the temperature ranges between 0 and < 24° are
+ significant and modestly negative (-0.24 -- -0.45, 
+\begin_inset Formula $p$
+\end_inset
+
+ = 0.03 -- 0.01).
  
 \end_layout
 
@@ -9324,7 +9347,7 @@ TODO
 
 \end_inset
 
-
+[NOTE: NOT YET RESPONDED --- BUT SEE ABOVE]
 \end_layout
 
 \end_body

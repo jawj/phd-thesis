@@ -15552,7 +15552,22 @@ reference "sub:survey-Demographic-info"
 Income and LS show a highly significant positive relationship.
  The magnitude of the coefficient is such that, across the full range of
  incomes seen in the sample, predicted LS ratings would vary by 1.8 points
- (0.85 standard deviations) on the 0 -- 10 scale.
+ (0.85 standard deviations) on the 0 -- 10 scale
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In alternative specifications (not shown), an indicator of owning one's
+ home outright --- with no mortgage --- was included as a measure of wealth.
+ This coefficient on this variable was highly significant (p < 0.001) and
+ also of considerable magnitude (0.56 -- 0.57).
+ However, the inclusion of this variable does not materially alter any of
+ the other results obtained.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -15692,7 +15707,7 @@ As an additional control for local characteristics and amenities we include
  should allow us to estimate total values for the EQ characteristics.
  The coefficient on this variable is not significant in any specification.
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Alternative specifications were tried (not shown) omitting either or both
@@ -15704,6 +15719,25 @@ Alternative specifications were tried (not shown) omitting either or both
  cover types were slightly reduced, with the coefficient on woodland just
  losing significance at the 5% level (p < 0.09) in the model using proportions
  within 3km.
+\end_layout
+
+\begin_layout Plain Layout
+Further alternative specifications were run (not shown) in which we also
+ included latitude, longitude, country dummies, and climate variables.
+ Latitude and longitude were included to account for variation in the hours
+ of daylight and the potentially depressing effect of getting up in the
+ dark.
+ Country dummies were included to check for geographical stability.
+ The climate variables used were calculated from the UK Climate Projections
+ (UKCP09) 5km gridded monthly observation data sets made available by the
+ Met Office, and were means for 2001 -- 2006 of: air temperature (°C); sunshine
+ duration (hours/day); total precipitation (mm/month); wind speed (knots);
+ and snow lying (days/month).
+ None of the coefficients on these additional spatial variables were significant
+ at the 5% level.
+ The coefficients on land cover type variables were slightly reduced in
+ both magnitude and significance when the additional variables were included,
+ but the overall pattern remained highly similar.
 \end_layout
 
 \end_inset
