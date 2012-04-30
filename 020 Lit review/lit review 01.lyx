@@ -3742,7 +3742,7 @@ key "ferreira:2010"
  This kind of analysis might be used as an alternative to hedonic valuation
  methods
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset CommandInset citation
@@ -3754,7 +3754,7 @@ key "frey:2010"
 
  suggest disagreement in the literature as to whether SWB valuation represents
  an alternative or a complement to more traditional hedonic analyses but,
- as seen here, it is potentially able to play both roles.
+ as seen here, it is potentially capable of playing either role.
  There is also a broader sense in which either form of SWB valuation can
  be seen as complementary to hedonic analyses, since the use of two different
  methods, having different strengths and weaknesses (as noted below), may
@@ -3769,7 +3769,7 @@ key "frey:2010"
 
 \begin_layout Paragraph
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Paragraph
 Utility, wage and rent variables
@@ -3805,7 +3805,7 @@ key "ferreira:2010"
 
 \begin_layout Paragraph
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Paragraph
 Regression specification

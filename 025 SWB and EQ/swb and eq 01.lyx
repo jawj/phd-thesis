@@ -817,24 +817,17 @@ name "sub:eq-conventional-economic-studies"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Refer back to lit review
-\end_layout
+As noted in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:response-hedonic-relationship"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-In economics, relationships between location and quality of life have long
- been a subject of interest in the hedonic pricing literature, in which
- environmental and urban amenities have been used to account for regional
- wage and rent differentials and construct 'objective' quality of life indices
- 
+, relationships between location and quality of life have long been a subject
+ of interest in the hedonic pricing literature in economics, in which environmen
+tal and urban amenities have been used to account for regional wage and
+ rent differentials and construct 'objective' quality of life indices 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "roback:1982,rosen:1974"
@@ -850,56 +843,7 @@ name "roback-ref-response"
 
 .
  Hedonic valuation has been used to investigate the impacts of various dimension
-s of EQ, including road noise, air quality, water quality, forests, wetlands,
- view of nature, urban trees and open spaces.
- 
-\end_layout
-
-\begin_layout Standard
-air quality 
-\begin_inset CommandInset citation
-LatexCommand citep
-before "e.g."
-key "ridker:1967,harrison-jr.:1978,kim:2003,chay:2005,bayer:2009"
-
-\end_inset
-
- and 37 studies reviewed by 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "smith:1995"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-water quality 
-\begin_inset CommandInset citation
-LatexCommand citep
-before "e.g."
-key "boyle:1999,poor:2007,leggett:2000"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-contaminated land, landfill, waste sites 
-\begin_inset CommandInset citation
-LatexCommand citep
-before "e.g."
-key "hite:2001,brasington:2005,neupane:2008"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-road, rail and aircraft noise 
+s of EQ, including: road, rail and aircraft noise 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
@@ -907,11 +851,38 @@ key "tomkins:1998,wilhelmsson:2000,espey:2002,day:2007a,andersson:2010"
 
 \end_inset
 
+; air quality (
+\begin_inset CommandInset citation
+LatexCommand citealp
+before "e.g."
+key "ridker:1967,harrison-jr.:1978,kim:2003,chay:2005,bayer:2009"
 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-urban trees 
+ --- or the 37 studies reviewed by 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "smith:1995"
+
+\end_inset
+
+); water quality 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "boyle:1999,poor:2007,leggett:2000"
+
+\end_inset
+
+; waste sites and other contaminated land 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "hite:2001,brasington:2005,neupane:2008"
+
+\end_inset
+
+; urban trees 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
@@ -919,11 +890,7 @@ key "morales:1980,thorsnes:2002,netusil:2010,sander:2010,donovan:2010"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-land cover, including forests, wetlands, parks and green spaces, coasts,
+; and land cover, including forests, parks and green spaces, coasts, wetlands,
  rivers and open water 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -932,39 +899,14 @@ key "correll:1978,garrod:1992,powe:1995,doss:1996,powe:1997,luttik:2000,mahan:20
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
-land use/land cover measures: distance or adjacency 
-\begin_inset CommandInset citation
-LatexCommand citep
-before "e.g."
-key "correll:1978,thorsnes:2002"
-
-\end_inset
-
-, local % 
-\begin_inset CommandInset citation
-LatexCommand citep
-before "e.g."
-key "garrod:1992,netusil:2010"
-
-\end_inset
-
-, viewsheds and visibility 
-\begin_inset CommandInset citation
-LatexCommand citep
-before "e.g."
-key "paterson:2002,cavailhes:2009"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-often a single focus, but some broader/more general/'amenity' studies 
+Studies vary in scale: they may include part or the whole of a neighbourhood,
+ city, region or whole country.
+ Many studies focus on a single environmental (dis-)amenity, but some cover
+ a broader range 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
@@ -972,14 +914,139 @@ key "powe:1995,cavailhes:2009"
 
 \end_inset
 
+.
+ Land use and land cover characteristics have been measured most commonly
+ in terms of adjacency or distance-to-nearest 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "correll:1978,thorsnes:2002"
 
+\end_inset
+
+, but studies have increasingly calculated the proportion of cover within
+ an administrative area, grid cell or radius 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "garrod:1992,netusil:2010,gibbons:2011a"
+
+\end_inset
+
+, or defined indices in relation to viewsheds or visibility 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "paterson:2002,cavailhes:2009"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-varying scale: part of a city, a city, a region (urban or not), country-wide
+Studies' vary widely in terms of the number and types of spatial control
+ variables included in the hedonic regressions.
+ These variations may explained in part by scale (e.g.
+ climate variation is unlikely to be relevant across a single neighbourhood),
+ by socio-cultural factors (e.g.
+ '% (non-)white' variables are prevalent only in US studies), and by the
+ availability of data sets and of the GIS technology to analyse them, which
+ are broadly increasing over time.
+ The following types of control variables may be included:
+\end_layout
+
+\begin_layout Description
+accessibility
+\begin_inset space ~
+\end_inset
+
+and
+\begin_inset space ~
+\end_inset
+
+distance
+\begin_inset space ~
+\end_inset
+
+measures such as to city centres, industrial or commercial zones, shopping
+ or employment centres, roads, motorways, railways, stations, airports,
+ hospitals, schools, universities, swimming pools, post offices or churches;
+\end_layout
+
+\begin_layout Description
+demographic
+\begin_inset space ~
+\end_inset
+
+and
+\begin_inset space ~
+\end_inset
+
+social
+\begin_inset space ~
+\end_inset
+
+class
+\begin_inset space ~
+\end_inset
+
+indicators across limited areas, including: housing stock type, age, ownership
+ and quality, occupation or education profile, unemployment rate, income
+ and benefits, age profile and family composition, car ownership, commuting
+ and commuting time, and dummies for wards or geodemographic segments (such
+ as MOSAIC or ACORN classifications in the UK);
+\end_layout
+
+\begin_layout Description
+taxes
+\begin_inset space ~
+\end_inset
+
+and
+\begin_inset space ~
+\end_inset
+
+services, including local tax rates, per capita government expenditure,
+ availability of arts and cultural facilities, doctors or hospital beds
+ per capita, and school quality indices --- such as raw or 'value added'
+ test scores, pupil-teacher ratios, or truancy rates;
+\end_layout
+
+\begin_layout Description
+other
+\begin_inset space ~
+\end_inset
+
+quality
+\begin_inset space ~
+\end_inset
+
+of
+\begin_inset space ~
+\end_inset
+
+life
+\begin_inset space ~
+\end_inset
+
+and
+\begin_inset space ~
+\end_inset
+
+area
+\begin_inset space ~
+\end_inset
+
+characteristics such as population density, crime and traffic accident rates,
+ density of listed buildings, and climate.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 For example, 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1009,10 +1076,15 @@ key "gibbons:2011a"
  also provide a more complete survey of studies of this type.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Hedonic pricing studies have most commonly used only distances as indicators
  of EQ characteristics, although the two studies cited exploit improved
  GIS capabilities to also consider the local quantities of certain amenities.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
