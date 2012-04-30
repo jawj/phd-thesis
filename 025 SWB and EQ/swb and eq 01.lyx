@@ -837,7 +837,7 @@ In economics, relationships between location and quality of life have long
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "roback:1982"
+key "roback:1982,rosen:1974"
 
 \end_inset
 
@@ -853,6 +853,118 @@ name "roback-ref-response"
 s of EQ, including road noise, air quality, water quality, forests, wetlands,
  view of nature, urban trees and open spaces.
  
+\end_layout
+
+\begin_layout Standard
+air quality 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "ridker:1967,harrison-jr.:1978,kim:2003,chay:2005,bayer:2009"
+
+\end_inset
+
+ and 37 studies reviewed by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "smith:1995"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+water quality 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "boyle:1999,poor:2007,leggett:2000"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+road, rail and aircraft noise 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "tomkins:1998,wilhelmsson:2000,espey:2002,day:2007a,andersson:2010"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+urban trees 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "morales:1980,thorsnes:2002,netusil:2010,sander:2010,donovan:2010"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+land cover, including forests, wetlands, parks and green spaces, coasts,
+ rivers and open water 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "correll:1978,garrod:1992,powe:1995,doss:1996,powe:1997,luttik:2000,mahan:2000,tyrvainen:2000,earnhart:2001,paterson:2002,morancho:2003,kong:2007a,payton:2008,cavailhes:2009,smith:2010,gibbons:2011a"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+land use/land cover measures: distance or adjacency 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "correll:1978,thorsnes:2002"
+
+\end_inset
+
+, local % 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "garrod:1992,netusil:2010"
+
+\end_inset
+
+, viewsheds and visibility 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "paterson:2002,cavailhes:2009"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+often a single focus, but some broader/more general/'amenity' studies 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "powe:1995,cavailhes:2009"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+varying scale: part of a city, a city, a region (urban or not), country-wide
 \end_layout
 
 \begin_layout Standard
