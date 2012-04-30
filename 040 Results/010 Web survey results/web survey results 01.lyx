@@ -15707,7 +15707,7 @@ As an additional control for local characteristics and amenities we include
  should allow us to estimate total values for the EQ characteristics.
  The coefficient on this variable is not significant in any specification.
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Alternative specifications were tried (not shown) omitting either or both
@@ -15723,7 +15723,8 @@ Alternative specifications were tried (not shown) omitting either or both
 
 \begin_layout Plain Layout
 Further alternative specifications were run (not shown) in which we also
- included latitude, longitude, country dummies, and climate variables.
+ included latitude, longitude, country dummies (for Wales, Scotland, and
+ Northern Ireland), and climate variables.
  Latitude and longitude were included to account for variation in the hours
  of daylight and the potentially depressing effect of getting up in the
  dark.

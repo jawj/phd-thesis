@@ -700,11 +700,19 @@ EQ
 \begin_inset space ~
 \end_inset
 
-characteristics Unlike most previous studies, which focus on a single element
- of EQ, we combine a range of EQ characteristics is a single model.
- We intend this to ameliorate problems of omitted variable bias in the case
- of interrelated characteristics, such as air pollution, noise and green
- space.
+characteristics Unlike some previous studies of SWB and EQ, which focus
+ on a single element of EQ, we combine a range of EQ characteristics in
+ a single model.
+ We intend this to somewhat ameliorate problems of omitted variable bias
+ in the case of interrelated characteristics, such as air pollution, noise
+ and green space.
+\begin_inset CommandInset label
+LatexCommand label
+name "response-multiple-eq-claims-intro"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description

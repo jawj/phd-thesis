@@ -830,7 +830,7 @@ tal and urban amenities have been used to account for regional wage and
  rent differentials and construct 'objective' quality of life indices 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "roback:1982,rosen:1974"
+key "roback:1982"
 
 \end_inset
 
@@ -955,7 +955,7 @@ key "paterson:2002,cavailhes:2009"
 \begin_layout Standard
 Studies vary widely in terms of the range of spatial control variables included
  in the hedonic regressions.
- These variations may explained in part by scale (e.g.
+ These variations may be explained in part by scale (e.g.
  climate variation is unlikely to be relevant across a single neighbourhood),
  by socio-cultural factors (e.g.
  '% (non-)white' variables are common only in US studies), and by the availabili
@@ -1016,8 +1016,8 @@ and
 
 services, including local tax rates, per capita government expenditure,
  arts and cultural facilities, doctors or hospital beds per capita, and
- school quality indices --- such as raw or 'value added' test scores, pupil-teac
-her ratios, or truancy rates; and
+ school quality indices (such as raw or 'value added' test scores, pupil-teacher
+ ratios, or truancy rates); and
 \end_layout
 
 \begin_layout Description

@@ -231,14 +231,7 @@ e.
 \end_layout
 
 \begin_layout Standard
-The comment is not important --- I have simply removed it (now 
-\begin_inset CommandInset ref
-LatexCommand vpageref
-reference "rarely-highlighted-removed-response"
-
-\end_inset
-
-).
+The comment is not important --- I have simply removed it.
 \end_layout
 
 \begin_layout Quote
@@ -465,7 +458,7 @@ reference "sub:response-hedonic-relationship"
 
 \end_inset
 
- includes a more complete discussion of the role of wages in the hedonic
+ includes a more explicit discussion of the role of wages in the hedonic
  and SWB valuation models.
  Immediately following this equation I now also note that, following 
 \begin_inset CommandInset citation
@@ -570,7 +563,7 @@ reference "sub:eq-conventional-economic-studies"
 \begin_layout Standard
 Obviously it is desirable to control for as broad a range of potential confounde
 rs as possible in both hedonic pricing and SWB valuation work.
- Although some previous SWB valuation studies 
+ Some previous SWB valuation studies 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
@@ -578,24 +571,15 @@ key "brereton:2007,ferreira:2010"
 
 \end_inset
 
- do include indicators of climate and undesirable land uses (waste sites),
- I am not sure that this invalidates the claims made in the introduction
- or conclusion of the thesis, which are: that I include multiple EQ characterist
-ics; that some of these characteristics have not previously been included
+ do include variables I had not included here, such as those regarding climate
+ and undesirable land uses (waste sites).
+ I have therefore made some amendments to my conclusions (see my response
+ to the examiners' final comment below).
+ The claims that I make are now as follows: that I include multiple EQ character
+istics; that some of these characteristics have not previously been included
  in similar studies (i.e.
- SWB valuation studies); and that previous studies have 
-\emph on
-generally
-\emph default
- focused on a narrow range of EQ characteristics.
- 
-\end_layout
-
-\begin_layout Standard
-Nevertheless, in the light of the examiners' comments, I have made some
- amendments to my conclusions.
- These are detailed in my response to the examiners' final comment below.
- 
+ SWB valuation studies); and that some previous studies have focused on
+ a narrower range of EQ characteristics.
 \end_layout
 
 \begin_layout Standard
@@ -9261,7 +9245,7 @@ reference "sec:esm-intreg-model"
 
 \end_inset
 
-, on 
+, 
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "sec:esm-intreg-model"
@@ -9283,16 +9267,31 @@ ntal quality characteristics.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO
-\end_layout
+I accept that the selection of variables used in this thesis is not more
+ comprehensive than in some previous studies on EQ and SWB, and I have therefore
+ toned down this claim (now 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "chap:Discussion-and-conclusions"
 
 \end_inset
 
-[NOTE: NOT YET RESPONDED --- BUT SEE ABOVE]
+), and also that made in the introduction under the paragraph heading 'multiple
+ EQ characteristics' (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:intro-surveys-Original-contribution"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "response-multiple-eq-claims-intro"
+
+\end_inset
+
+).
 \end_layout
 
 \end_body
