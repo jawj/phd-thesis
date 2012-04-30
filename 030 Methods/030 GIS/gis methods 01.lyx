@@ -4461,7 +4461,7 @@ Limitations
 The weather variables associated with the ESM response data in this way
  can only be regarded as somewhat noisy proxies for the weather conditions
  experienced by participants.
- We cannot account for the potential existence of weather fronts between
+ We cannot account for the possible existence of weather fronts between
  the observation and response locations.
  We also do not account for a number of topographical effects, including:
  adiabatic cooling, which causes lower air temperatures to prevail at higher
@@ -4471,8 +4471,8 @@ status collapsed
 
 \begin_layout Plain Layout
 The adiabatic lapse rate --- the rate at which rising air cools due to falling
- atmospheric pressure --- averages 0.6 -- 0.7ºC globally, but varies depending
- on humidity and other factors 
+ atmospheric pressure --- averages 0.6 -- 0.7°C per 100 metres globally, but
+ varies depending on humidity and other factors 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "encyclopaedia-britannica:2012"
@@ -4497,7 +4497,7 @@ status collapsed
 \begin_layout Plain Layout
 For example, in the case of adiabatic cooling, 99.9% of responses are between
  0 and 320m above sea level, with expected temperature variation of the
- order of only 2ºC across that range.
+ order of only 2°C across that range.
  Furthermore, since response locations and weather observation locations
  are near to each other, elevation, and hence the extent of adiabatic cooling,
  are expected to be correlated between them.

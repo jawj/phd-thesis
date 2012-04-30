@@ -13897,7 +13897,7 @@ reference "sub:Sound-level-measurement"
  establish anything about the nature of the noise detected --- for example,
  we cannot distinguish between traffic, roadworks, a crowd or a concert.
  Dealing satisfactorily with these issues is beyond the scope of this thesis,
- though it might still be possible to make use of the noise data in future
+ though it may well be possible to make use of the noise data in future
  research.
 \end_layout
 
@@ -28540,10 +28540,10 @@ reference "sec:esm-intreg-model"
 \end_inset
 
 .
- In both cases the results follow an extremely similar pattern to those
- of the main land cover model, except that --- as is intuitive, given the
- expanded effective range of the dependent variable --- effect sizes are
- generally somewhat larger.
+ In both cases the results follow a very similar pattern to those of the
+ main land cover model, except that --- as is intuitive, given the expanded
+ effective range of the dependent variable --- effect sizes are generally
+ somewhat larger.
  This suggests that our main estimates are robust to the censoring of the
  dependent variable, and potentially somewhat conservative.
 \end_layout

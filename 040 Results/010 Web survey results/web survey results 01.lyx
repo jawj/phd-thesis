@@ -411,7 +411,7 @@ We also test the sensitivity of our results to the use of the 'OECD-modified'
 \end_inset
 
  the number of children.
- The scales are very highly correlated, and our results are entirely unchanged
+ The scales are very highly correlated, and our results are all but unchanged
  by the substitution.
 \end_layout
 
@@ -15707,7 +15707,7 @@ As an additional control for local characteristics and amenities we include
  should allow us to estimate total values for the EQ characteristics.
  The coefficient on this variable is not significant in any specification.
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Alternative specifications were tried (not shown) omitting either or both
@@ -39030,7 +39030,6 @@ To try to correct for the costs of income generation, for possible reverse
 status collapsed
 
 \begin_layout Plain Layout
-See 
 \begin_inset CommandInset citation
 LatexCommand citet
 after "p. 29"
@@ -39122,7 +39121,7 @@ key "luechinger:2009"
 \end_inset
 
 .
- Since the sign of the effect of a comparator income on happiness is expected
+ Since the sign of the effect of comparator income on happiness is expected
  to be negative 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -39148,15 +39147,6 @@ In retrospect, one might of course wish that the survey instrument had included
 \end_inset
 
 .
- Finally, we make contributions to the literature in other areas as discussed
- in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sec:research-aims"
-
-\end_inset
-
-, and do not choose to prioritise this area at this time.
 \end_layout
 
 \begin_layout Subsubsection

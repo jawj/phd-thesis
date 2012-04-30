@@ -851,6 +851,14 @@ key "tomkins:1998,wilhelmsson:2000,espey:2002,day:2007a,andersson:2010"
 
 \end_inset
 
+; climate 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g."
+key "englin:1996,maddison:2003a,rehdanz:2009"
+
+\end_inset
+
 ; air quality (
 \begin_inset CommandInset citation
 LatexCommand citealp
@@ -903,8 +911,8 @@ key "correll:1978,garrod:1992,powe:1995,doss:1996,powe:1997,luttik:2000,mahan:20
 \end_layout
 
 \begin_layout Standard
-Studies vary in scale: they may include part or the whole of a neighbourhood,
- city, region or whole country.
+Studies vary in scale: they may cover part or all of a neighbourhood, city,
+ region or country.
  Many studies focus on a single environmental (dis-)amenity, but some cover
  a broader range 
 \begin_inset CommandInset citation
@@ -924,8 +932,8 @@ key "correll:1978,thorsnes:2002"
 
 \end_inset
 
-, but studies have increasingly calculated the proportion of cover within
- an administrative area, grid cell or radius 
+, but studies increasingly calculate the proportion of cover within an administr
+ative area, grid cell or radius 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
@@ -933,7 +941,7 @@ key "garrod:1992,netusil:2010,gibbons:2011a"
 
 \end_inset
 
-, or defined indices in relation to viewsheds or visibility 
+, or define indices in relation to viewsheds or visibility 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
@@ -945,15 +953,14 @@ key "paterson:2002,cavailhes:2009"
 \end_layout
 
 \begin_layout Standard
-Studies' vary widely in terms of the number and types of spatial control
- variables included in the hedonic regressions.
+Studies vary widely in terms of the range of spatial control variables included
+ in the hedonic regressions.
  These variations may explained in part by scale (e.g.
  climate variation is unlikely to be relevant across a single neighbourhood),
  by socio-cultural factors (e.g.
- '% (non-)white' variables are prevalent only in US studies), and by the
- availability of data sets and of the GIS technology to analyse them, which
- are broadly increasing over time.
- The following types of control variables may be included:
+ '% (non-)white' variables are common only in US studies), and by the availabili
+ty of data sets and of the GIS technology to analyse them.
+ In general, studies include a limited selection from the following controls:
 \end_layout
 
 \begin_layout Description
@@ -991,11 +998,11 @@ class
 \begin_inset space ~
 \end_inset
 
-indicators across limited areas, including: housing stock type, age, ownership
+indicators across local areas, including housing stock type, age, ownership
  and quality, occupation or education profile, unemployment rate, income
  and benefits, age profile and family composition, car ownership, commuting
- and commuting time, and dummies for wards or geodemographic segments (such
- as MOSAIC or ACORN classifications in the UK);
+ and commuting time, or dummies for wards or geodemographic segmentation
+ classes (such as MOSAIC or ACORN classifications in the UK);
 \end_layout
 
 \begin_layout Description
@@ -1008,9 +1015,9 @@ and
 \end_inset
 
 services, including local tax rates, per capita government expenditure,
- availability of arts and cultural facilities, doctors or hospital beds
- per capita, and school quality indices --- such as raw or 'value added'
- test scores, pupil-teacher ratios, or truancy rates;
+ arts and cultural facilities, doctors or hospital beds per capita, and
+ school quality indices --- such as raw or 'value added' test scores, pupil-teac
+her ratios, or truancy rates; and
 \end_layout
 
 \begin_layout Description
@@ -1039,7 +1046,7 @@ area
 \end_inset
 
 characteristics such as population density, crime and traffic accident rates,
- density of listed buildings, and climate.
+ and the density of listed buildings.
 \end_layout
 
 \begin_layout Standard
@@ -1675,8 +1682,7 @@ key "huang:2000"
 \end_layout
 
 \begin_layout Standard
-In common with studies in other disciplines, those in economics have commonly
- focused on only a single EQ parameter (e.g.
+Studies have commonly focused on only a single EQ parameter (e.g.
  noise), despite probable correlations of that parameter with other EQ and
  broader spatial characteristics (e.g.
  air pollution, land cover type, transport amenities)
@@ -1730,7 +1736,8 @@ reference "sub:happiness-valuation"
 \begin_layout Standard
 None of the studies addresses the potential influence on SWB of green space,
  such as grassland or forest, despite the evidence from other disciplines
- that green space has a positive wellbeing effect.
+ (and hedonic pricing studies) that green space has a positive wellbeing
+ effect.
  Few have considered 'blue space' --- coastal or freshwater environments
  --- while those that have (
 \begin_inset CommandInset citation

@@ -3673,7 +3673,7 @@ In SWB valuation, a reported happiness variable is used as a proxy for the
 
 .
  A simple regression of happiness on the level of an environmental good
- provides the total derivative, 
+ then provides the total derivative, 
 \begin_inset Formula $\frac{dv}{dg}$
 \end_inset
 
@@ -3742,7 +3742,7 @@ key "ferreira:2010"
  This kind of analysis might be used as an alternative to hedonic valuation
  methods
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset CommandInset citation
@@ -5514,8 +5514,11 @@ key "layard:2008a"
 
  assume only that the elasticity of marginal utility with respect to income
  is constant, and find that it is in fact somewhat greater than unity ---
- so that, for example, someone with an income of $10,000 has more than ten
- times the marginal utility of someone getting $100,000
+ so that, for example, someone with an income of $10,000 has 
+\emph on
+more than
+\emph default
+ ten times the marginal utility of someone getting $100,000
 \begin_inset Foot
 status collapsed
 

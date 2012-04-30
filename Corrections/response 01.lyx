@@ -250,8 +250,14 @@ P47.
 \begin_layout Standard
 This paragraph was perhaps not clearly expressed.
  I have reworded it to clarify that using log income implies an elasticity
- of unity, while the elasticity estimated by Layard et al is in fact greater
- than unity (now 
+ of unity, while the elasticity estimated by 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "layard:2008a"
+
+\end_inset
+
+ is in fact greater than unity (now 
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "elasticity-unity-layard-response"
@@ -301,7 +307,7 @@ P57.
 \end_layout
 
 \begin_layout Standard
-I have read the paper, and replaced the reference to Moro et al (now 
+I have read the paper, and replaced the reference (now 
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "roback-ref-response"
@@ -367,7 +373,7 @@ P70.
 \begin_layout Standard
 I have, as requested, added a discussion of the likely impacts of this error,
  concluding that it seems likely that the error does not materially affect
- our findings (now 
+ my findings (now 
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "missing-data-error-response"
@@ -450,8 +456,8 @@ P125.
 \end_layout
 
 \begin_layout Standard
-I had previously made a brief mention of the inclusion wages and rents in
- the regression specification on page 40, but the new literature review
+I had previously made a brief mention of the inclusion of wages and rents
+ in the regression specification on page 40, but the new literature review
  subsection 
 \begin_inset CommandInset ref
 LatexCommand vref
@@ -461,11 +467,7 @@ reference "sub:response-hedonic-relationship"
 
  includes a more complete discussion of the role of wages in the hedonic
  and SWB valuation models.
- 
-\end_layout
-
-\begin_layout Standard
-Immediately following this equation I now also note that, following 
+ Immediately following this equation I now also note that, following 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "ferreira:2010"
@@ -491,7 +493,7 @@ P129.
 \begin_layout Standard
 No data in Table 7.1 are logged, so I have assumed that the comment applies
  instead to Table 7.2, which previously included logged distance measures.
- This has been corrected (now 
+ I have corrected this (now 
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "response-not-logging-uk-desc"
@@ -540,13 +542,14 @@ reference "sub:eq-swb-economic-studies"
  of the thesis I already provide a survey of the existing SWB environmental
  valuation literature, including the environmental variables used.
  This is the literature to which it is my aim to contribute in this thesis.
+ Because I do not undertake a hedonic valuation study or make interurban
+ comparisons, I had not considered it necessary to review the literature
+ on those topics in the same depth.
+ 
 \end_layout
 
 \begin_layout Standard
-I do not undertake a hedonic valuation study or make interurban comparisons.
- I therefore do not consider it necessary to review the full literature
- on those topics in the same depth.
- I have, however, extended 
+However, I have now expanded 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:eq-conventional-economic-studies"
@@ -560,56 +563,14 @@ reference "sub:eq-conventional-economic-studies"
 
 \end_inset
 
-) with some additional references, noting the set of spatial variables used.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO Add these references.
-\end_layout
-
-\end_inset
-
- I now also note, in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sub:eq-swb-economic-studies"
-
-\end_inset
-
-, that the range of spatial and environmental variables that has been included
- in SWB valuation studies to date is more limited than in the case of hedonic
- valuation studies.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO Actually note this (if true)!
-\end_layout
-
-\end_inset
-
-
+) with references to a much wider range of hedonic pricing studies, and
+ a summary of the various spatial control variables used across those studies.
 \end_layout
 
 \begin_layout Standard
-Since the studies I regard as the antecedents of the present work are SWB
- environmental valuation studies specifically, I do not entirely accept
- the examiners' contention regarding 
-\begin_inset Quotes eld
-\end_inset
-
-obvious omissions
-\begin_inset Quotes erd
-\end_inset
-
-.
- For example, I do not recall the inclusion of 'racial mix' variables in
- any previous study using SWB data to value the environment.
-\end_layout
-
-\begin_layout Standard
-Some previous SWB valuation studies 
+Obviously it is desirable to control for as broad a range of potential confounde
+rs as possible in both hedonic pricing and SWB valuation work.
+ Although some previous SWB valuation studies 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "e.g."
@@ -617,8 +578,8 @@ key "brereton:2007,ferreira:2010"
 
 \end_inset
 
- do include indicators of climate and undesirable land uses (waste sites).
- I do not believe that this invalidates the claims made in the introduction
+ do include indicators of climate and undesirable land uses (waste sites),
+ I am not sure that this invalidates the claims made in the introduction
  or conclusion of the thesis, which are: that I include multiple EQ characterist
 ics; that some of these characteristics have not previously been included
  in similar studies (i.e.
@@ -634,10 +595,6 @@ generally
 Nevertheless, in the light of the examiners' comments, I have made some
  amendments to my conclusions.
  These are detailed in my response to the examiners' final comment below.
- I do also agree that it is desirable to include as broad a range of environment
-al characteristics in the model as possible --- both as a guard against
- endogeneity and, in many cases, because the characteristics are of interest
- in themselves.
  
 \end_layout
 
@@ -978,8 +935,8 @@ Snow lying (days/month)
 
 \end_inset
 
-I have therefore now obtained UK climate data, and re-run my basic life
- satisfaction regressions for the UK using some of these.
+I have also now obtained UK climate data, and re-run my basic life satisfaction
+ regressions for the UK using these.
  The climate variables I have used are calculated from the UK Climate Projection
 s (UKCP09) 5km gridded monthly observation data sets made available by the
  Met Office
@@ -8951,14 +8908,14 @@ ly happier (by nearly 0.6 points on the 0 -- 10 scale,
 ) than those who do not.
  As regards existing variables: the coefficients on the land cover categories
  follow a very similar pattern as before, but are generally slightly reduced
- in magnitude, and have dropped in significance by one step; as before,
+ in magnitude, and have each dropped in significance by one step; as before,
  no distance measure is significant; and income coefficients remain very
  nearly exactly the same.
 \end_layout
 
 \begin_layout Standard
-In summary, no effect of climate is detected in the UK survey data, and
- the re-specification of the model does not markedly affect the results
+In summary, little or no climate effect is detected in my UK survey data,
+ and the re-specification of the model does not radically affect the results
  for variables previously included.
  The considerable effort that would be required to update all related tables
  and discussion therefore does not seem justified.
@@ -9062,8 +9019,9 @@ reference "sub:UK-basic-ls-regs"
 
 \end_inset
 
- to note that this variable has a significant effect, but does not alter
- my other findings.
+ to note that this variable has a significant effect when included, but
+ that its inclusion or exclusion does not alter the findings that are the
+ focus of the research.
 \end_layout
 
 \begin_layout Quote
@@ -9075,14 +9033,7 @@ P146.
 \begin_layout Standard
 On returning to this paragraph I must admit I do not recall my original
  reasoning.
- I have deleted the paragraph (now 
-\begin_inset CommandInset ref
-LatexCommand vpageref
-reference "response-hh-vars-deleted-para"
-
-\end_inset
-
-).
+ I have deleted the paragraph.
 \end_layout
 
 \begin_layout Quote
@@ -9122,16 +9073,8 @@ P153.
 \end_layout
 
 \begin_layout Standard
-I have deleted the remark (now 
-\begin_inset CommandInset ref
-LatexCommand vpageref
-reference "response-omit-fishing"
-
-\end_inset
-
-).
- The broader point regarding regression specifications has been addressed
- above.
+I have deleted the remark, and I have tried to address the broader point
+ regarding regression specifications above.
 \end_layout
 
 \begin_layout Quote
@@ -9142,8 +9085,10 @@ P170.
 \end_layout
 
 \begin_layout Standard
-I now use an interval regression as a robustness check on the OLS results
- --- please see the response to the comment on P188 below.
+I had consulted with a statistician on the use of OLS (and fixed effects)
+ with this data in the light of the distribution of the dependent variable.
+ However, I do now use interval regression models as a robustness check
+ on the OLS results --- please see the response to the comment on P188 below.
 \end_layout
 
 \begin_layout Quote
@@ -9189,7 +9134,7 @@ although it is possible that these variables are also associated with happiness
 \end_layout
 
 \begin_layout Standard
-I have previously run models including land cover and weather variables
+However, I have previously run models including land cover and weather variables
  as themselves in addition to as interactions with being outdoors.
  In this case: 
 \end_layout
@@ -9200,7 +9145,7 @@ No coefficient on a non-interacted land cover variable is significant.
 
 \begin_layout Itemize
 Of the non-interacted weather variables, the coefficient on rain is significant
- and modestly positive (-0.36, 
+ and modestly positive (0.36, 
 \begin_inset Formula $p<0.001$
 \end_inset
 
@@ -9291,11 +9236,11 @@ I have now run
 \noun on
 intreg
 \noun default
- and 
+ (and 
 \noun on
 xtintreg
 \noun default
- models as suggested, and discuss these in a completely rewritten 
+) models as suggested, and discuss these in a completely rewritten 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:response-Happiness-spikes"
