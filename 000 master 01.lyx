@@ -47,7 +47,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize 10
-\spacing onehalf
+\spacing single
 \use_hyperref true
 \pdf_title "Happiness and Environmental Quality"
 \pdf_author "George MacKerron"
@@ -103,7 +103,7 @@
 \defskip medskip
 \quotes_language english
 \papercolumns 1
-\papersides 1
+\papersides 2
 \paperpagestyle plain
 \tracking_changes false
 \output_changes false
@@ -799,9 +799,18 @@ filename "040 Results/020 ESM results/esm results appendix 01.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand include
 filename "Corrections/response 01.lyx"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
