@@ -1,0 +1,11 @@
+gem install svn2git
+
+mkdir ~/.svn2git
+echo 'georgesvn = George MacKerron <george@mackerron.co.uk>' > ~/.svn2git/authors
+
+cd ~/Documents
+mkdir phdthesis
+cd phdthesis
+~/.rbenv/versions/1.9.3-p194/bin/svn2git https://mackerron.com:444/svn/phdthesis --rootistrunk --username georgesvn -v
+[type password x 2]
+
