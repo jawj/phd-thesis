@@ -9,3 +9,5 @@ cd phdthesis
 ~/.rbenv/versions/1.9.3-p194/bin/svn2git https://mackerron.com:444/svn/phdthesis --rootistrunk --username georgesvn -v
 [type password x 2]
 
+git remote add origin https://jawj@bitbucket.org/jawj/phdthesis.git
+git push -u origin master
